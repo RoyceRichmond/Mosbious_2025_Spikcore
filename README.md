@@ -1,44 +1,16 @@
-# IIC-OSIC-TOOLS Analog Design Project Template (GlobalFoundries 180nm)
+# Spikcore
 
-This repository is a project template for the IIC-OSIC-TOOLS (https://github.com/iic-jku/IIC-OSIC-TOOLS) analog design workflow for the SSCS 2025 Chipathon, preconfigured for the GlobalFoundries 180nm PDK (gf180mcuD).
+The Spikcore team has the goal to design a reconfigurable neuromorphic chip, this neuromorphic chip can be used to test codification schemes, control strategies and learn about analogic circuits
 
-## What's Included
+The  previously proven MOSbius platform shows the possibility to reconfigure the internal components of the chip; thus achieving different applications with the same hardware
 
-When you use this template, you get:
 
-- **Pre-configured Docker environment** with IIC-OSIC-TOOLS and GlobalFoundries 180nm PDK
-- **Cross-platform scripts** for launching the containerized design environment
-- **Example analog design** (5-Transistor OTA) with proper library structure and testbench
-- **Library organization standards** with validation scripts
-- **VNC and web-based GUI access** for design tools like Xschem, Magic, and KLayout
+## Where's the proposal ?
 
-## Prerequisites
+the proposal presented at the SSCS 2025 on july 11th can be found [here](https://github.com/RoyceRichmond/Mosbious_2025_spiking4all/blob/main/proposal/%5BChipathon%202025%205th%20Weekly%201_2%20-%20TC%20OSE%2011%20July%202025%5D.pdf)
 
-Before you begin, you'll need to install the following software:
+The full proposal of the team can be found [here](https://github.com/RoyceRichmond/Mosbious_2025_spiking4all/blob/main/proposal/Chipathon%202025.pdf)
 
-### 1. GitHub Desktop
-
-- **Download**: [GitHub Desktop](https://desktop.github.com/)
-- Available for Windows, macOS, and Linux
-- Provides a user-friendly graphical interface for Git operations
-
-You don't have to know how to use the git command. Although learning it helps you understand how the version control works. If you are an experienced user, feel free to manage your repository from CLI.
-
-### 2. Docker Desktop
-
-Docker is a lightweight, container-based alternative to virtual machines that ensures consistent development and deployment environments across different platforms by packaging applications with all their dependencies. Docker Desktop is its graphical user interface (GUI). 
-
-**Download and Installation:**
-- **Windows**: [Docker Desktop for Windows](https://docs.docker.com/desktop/install/windows-install/)
-- **macOS**: [Docker Desktop for Mac](https://docs.docker.com/desktop/install/mac-install/)
-- **Linux**: [Docker Desktop for Linux](https://docs.docker.com/desktop/install/linux-install/) or [Docker Engine](https://docs.docker.com/engine/install/)
-
-**System Requirements:**
-- **Windows**: Windows 10/11 with WSL2 enabled
-- **macOS**: macOS 10.15 or newer
-- **Linux**: 64-bit distribution with kernel 3.10+
-
-In this project we will be using the IIC-OSIC-TOOLS docker (https://github.com/iic-jku/IIC-OSIC-TOOLS) to setup our development environments.
 
 ## Getting Started
 
@@ -138,53 +110,6 @@ project-root/
 └── README.md            # This file
 ```
 
-### Step 6: Setup PDK Environment
-
-Run the following command inside the terminal within the VNC session to set up the GlobalFoundries 180nm PDK:
-
-```bash
-source setup_pdk.sh
-```
-
-![Terminal showing PDK setup completion](docs/screenshots/setup_pdk.png)
-
-### Step 7: Launch Design Tools
-
-Launch Xschem for schematic design:
-```bash
-xschem
-```
-
-You should see the Xschem GUI with available devices from `gf180mcu` and their testbenches.
-
-![Xschem interface with PDK libraries loaded](docs/screenshots/start_xschem.png)
-
-## Troubleshooting
-
-### Common Issues:
-
-**Docker container fails to start:**
-- Ensure Docker Desktop is running
-- Check if ports 5901 and 80 are not in use by other applications
-- On Windows, ensure WSL2 is properly configured
-
-**Cannot connect via VNC:**
-- Verify the container is running: `docker ps`
-- Check firewall settings
-- Try connecting to `127.0.0.1:5901` instead of `localhost:5901`
-
-**Permission issues on Linux:**
-- Add your user to the docker group: `sudo usermod -aG docker $USER`
-- Log out and log back in
-
-### Getting Help:
-
-If you encounter issues:
-1. Check the container logs: `docker logs <container-name>`
-2. Restart the container: Stop and run the launch script again
-3. Create an issue in the repository for persistent problems
-
-
 ## Library Structure Conventions
 
 The project follows specific naming conventions for organizing design libraries under `/designs/libs/`:
@@ -240,8 +165,3 @@ This project includes a reference design to demonstrate the library structure an
    ```
 
 This example demonstrates the proper use of the library naming conventions (`core_*` for design libraries, `tb_*` for testbenches) and serves as a starting point for developing your own analog circuits.
-
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
