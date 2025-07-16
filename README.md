@@ -13,7 +13,7 @@ The full proposal of the team can be found [here](https://github.com/RoyceRichmo
 
 ### Timeline
 
-As with any team, we need a timeline and time estimates. You can find the timeline [here](https://docs.google.com/spreadsheets/d/1h9uvjtHTkUqnOoK8iz9vo55vadN7SJWlxGD91V9gLHk/edit?usp=sharing)
+As with any team, we need a timeline and time estimates. You can find the timeline [here]([https://docs.google.com/spreadsheets/d/1h9uvjtHTkUqnOoK8iz9vo55vadN7SJWlxGD91V9gLHk/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1FUSe3ihenKiJLiLIJRhUeNDvfz49FAqhR9erRGoN5aA/edit?usp=sharing))
 
 ## Project Directory Structure
 
