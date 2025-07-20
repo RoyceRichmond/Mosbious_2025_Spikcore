@@ -1,9 +1,4 @@
 # Welcome to the building blocks
-Each project needs fundamental building blocks, this is no exception.
-The proposed elements for the MOSbius chip is shown below.
-
-![Mosbius Proposal](/proposal/mosbius_proposal.png)
-
 The proposal contains:
 - 7 Synapses
 - 7 subthreshold Neuron (AH model)

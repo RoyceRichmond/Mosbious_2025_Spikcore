@@ -11,6 +11,10 @@ the proposal presented at the SSCS 2025 on july 11th can be found [here](https:/
 
 The full proposal of the team can be found [here](https://github.com/RoyceRichmond/Mosbious_2025_spiking4all/blob/main/proposal/Chipathon%202025.pdf)
 
+The proposed overview for the MOSbius chip is shown below.
+
+![Mosbius Proposal](/proposal/mosbius_proposal.png)
+
 ### Timeline
 
 As with any team, we need a timeline and time estimates. You can find the timeline [here](https://docs.google.com/spreadsheets/d/1FUSe3ihenKiJLiLIJRhUeNDvfz49FAqhR9erRGoN5aA/edit?usp=sharing)
