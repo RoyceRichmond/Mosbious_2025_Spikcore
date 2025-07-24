@@ -7,7 +7,7 @@ E {}
 N 110 -50 110 50 {lab=#net1}
 N -20 -20 -20 20 {lab=#net1}
 N -20 0 110 0 {lab=#net1}
-N -60 -50 -60 50 {lab=vmem}
+N -60 -50 -60 50 {lab=Current_in}
 N -20 -100 -20 -80 {lab=vdd}
 N -20 -50 0 -50 {lab=vdd}
 N 0 -80 0 -50 {lab=vdd}
@@ -16,7 +16,7 @@ N 150 -100 150 -80 {lab=vdd}
 N 150 -50 170 -50 {lab=vdd}
 N 170 -80 170 -50 {lab=vdd}
 N 150 -80 170 -80 {lab=vdd}
-N 150 -20 150 20 {lab=vout}
+N 150 -20 150 20 {lab=Vout}
 N -20 80 -20 100 {lab=gnd}
 N -20 50 0 50 {lab=gnd}
 N 0 50 0 80 {lab=gnd}
@@ -25,30 +25,28 @@ N 150 50 170 50 {lab=gnd}
 N 170 50 170 80 {lab=gnd}
 N 150 80 170 80 {lab=gnd}
 N 150 80 150 100 {lab=gnd}
-N 90 -140 260 -140 {lab=vout}
-N 260 -140 260 -10 {lab=vout}
-N 150 0 260 0 {lab=vout}
-N 260 -10 260 0 {lab=vout}
-N -90 -140 30 -140 {lab=vmem}
-N -90 0 -60 0 {lab=vmem}
-N -210 0 -90 0 {lab=vmem}
-N 260 0 260 170 {lab=vout}
-N -90 0 -90 140 {lab=vmem}
-N -90 200 -90 220 {lab=GND}
-N -110 170 -90 170 {lab=GND}
-N -110 170 -110 200 {lab=GND}
-N -110 200 -90 200 {lab=GND}
-N -120 -140 -90 -140 {lab=vmem}
-N -120 -140 -120 0 {lab=vmem}
+N 90 -140 260 -140 {lab=Vout}
+N 260 -140 260 -10 {lab=Vout}
+N 150 0 260 0 {lab=Vout}
+N 260 -10 260 0 {lab=Vout}
+N -90 -140 30 -140 {lab=Current_in}
+N -90 0 -60 0 {lab=Current_in}
+N -210 0 -90 0 {lab=Current_in}
+N 260 0 260 170 {lab=Vout}
+N -90 0 -90 140 {lab=Current_in}
+N -90 200 -90 220 {lab=gnd}
+N -110 170 -90 170 {lab=gnd}
+N -110 170 -110 200 {lab=gnd}
+N -110 200 -90 200 {lab=gnd}
+N -120 -140 -90 -140 {lab=Current_in}
+N -120 -140 -120 0 {lab=Current_in}
 N -50 170 -20 170 {lab=vgl}
-N 40 170 260 170 {lab=vout}
-N 260 0 290 -0 {lab=vout}
-N -90 220 -70 220 {lab=GND}
+N 40 170 260 170 {lab=Vout}
+N 260 0 290 -0 {lab=Vout}
+N -90 220 -70 220 {lab=gnd}
 C {lab_pin.sym} -80 -300 0 0 {name=p2 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -20 -100 0 0 {name=p3 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 150 -100 0 0 {name=p4 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} -150 0 1 0 {name=p5 sig_type=std_logic lab=vmem}
-C {lab_pin.sym} 260 -40 2 0 {name=p6 sig_type=std_logic lab=vout}
 C {symbols/pfet_03v3.sym} -40 -50 0 0 {name=M5
 L=0.28u
 W=0.22u
