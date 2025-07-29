@@ -23,3 +23,5 @@ C {ipin.sym} -20 0 0 0 {name=p3 lab=PHI_1}
 C {ipin.sym} -20 20 0 0 {name=p4 lab=PHI_2}
 C {opin.sym} 470 -40 0 0 {name=p5 lab=Q}
 C {title.sym} 52.5 155 0 0 {name=l2 author="Peter Kinget"}
+C {ipin.sym} -20 -90 0 0 {name=p6 lab=VDD}
+C {ipin.sym} -20 -110 0 0 {name=p7 lab=VSS}
