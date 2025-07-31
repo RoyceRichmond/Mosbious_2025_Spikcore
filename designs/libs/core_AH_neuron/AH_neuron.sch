@@ -104,7 +104,7 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} -70 170 0 1 {name=M4
-L=2.8u
+L=2.4u
 W=0.22u
 nf=1
 m=1
@@ -122,7 +122,7 @@ W=1e-6
 L=1e-6
 model=cap_mim_1f0fF
 spiceprefix=X
-m=3}
+m=7}
 C {symbols/cap_mim_1f0fF.sym} 10 170 1 0 {name=C2
 W=1e-6
 L=1e-6
