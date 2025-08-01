@@ -27,8 +27,8 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 1120 -245 1590 125 {flags=graph
-y1=-6.6e-07
-y2=0.00014
+y1=-6.4e-07
+y2=0.00013
 ypos1=0
 ypos2=2
 divy=5
@@ -40,7 +40,7 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node=i(vdd_c)
+node="\\"PC og scheme;i(vdd_c)\\""
 color=8
 dataset=-1
 unitx=1
@@ -69,10 +69,10 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=1}
+hilight_wave=-1}
 B 2 1120 135 1590 505 {flags=graph
-y1=-2.3e-07
-y2=0.00014
+y1=-6.1e-07
+y2=0.00013
 ypos1=0
 ypos2=2
 divy=5
@@ -84,7 +84,7 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node=i(vdd_c1)
+node="\\"PC zigzag scheme;i(vdd_c1)\\""
 color=8
 dataset=-1
 unitx=1
@@ -155,7 +155,7 @@ C {devices/code_shown.sym} 35 -520 0 0 {name=s1 only_toplevel=false value="
 .save allcurrents
 .control
     let start_v=1.3
-    let stop_v=1.3
+    let stop_v=3.3
     let delta_v=0.5
     let v_act=start_v
     while v_act le stop_v
@@ -246,7 +246,7 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 930 110 0 0 {name=M2
 L=0.28u
-W=2u
+W=3u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -288,7 +288,7 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {lab_pin.sym} 600 260 0 0 {name=p19 sig_type=std_logic lab=spike}
-C {lab_pin.sym} 650 170 0 0 {name=p22 sig_type=std_logic lab=vdd_inv}
+C {lab_pin.sym} 650 170 0 0 {name=p22 sig_type=std_logic lab=vdd_2}
 C {gnd.sym} 650 360 0 0 {name=l8 lab=GND}
 C {vsource.sym} 295 255 0 0 {name=V9 value=3.3 savecurrent=false}
 C {gnd.sym} 295 315 0 0 {name=l9 lab=GND}
