@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.0001
+x1=0.097070652
+x2=0.097218377
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -26,15 +26,15 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 650 -40 1160 270 {flags=graph
-y1=-0.0074
-y2=1
+y1=-0.0083
+y2=1.3
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.0001
+x1=0.097070652
+x2=0.097218377
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -48,6 +48,8 @@ logx=0
 logy=0
 hilight_wave=0
 rainbow=1}
+T {0.9v works
+1.3v synapse interface} -260 -160 0 0 0.4 0.4 {}
 N 0 90 0 120 {lab=GND}
 N 0 -60 0 -50 {lab=vdd}
 N 0 10 0 30 {lab=#net1}
@@ -62,13 +64,13 @@ N 340 170 340 190 {lab=GND}
 C {vsource.sym} 0 60 0 0 {name=V1 value=vd_v savecurrent=false}
 C {devices/code_shown.sym} -430 -100 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
-.tran 1n 100u
+.tran 100n 100m
 .param vd_v=0.9
 .save allcurrents
 .options save currents
 .control
-    let start_v=0.9
-    let stop_v=0.9
+    let start_v=1.3
+    let stop_v=1.3
     let delta_v=0.1
     let v_act=start_v
     while v_act le stop_v
@@ -105,6 +107,6 @@ C {launcher.sym} 200 440 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/sub_th_ah.raw tran"
 }
-C {AH_neuron.sym} 100 110 0 0 {name=x1}
+C {designs/libs/core_AH_neuron/AH_neuron.sym} 100 110 0 0 {name=x1}
 C {gnd.sym} 340 190 0 0 {name=l2 lab=GND}
 C {lab_pin.sym} 240 120 3 0 {name=p4 sig_type=std_logic lab=vmem}
