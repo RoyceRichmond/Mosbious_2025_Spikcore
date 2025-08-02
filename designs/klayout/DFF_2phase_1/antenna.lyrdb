@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>GF180 ANTENNA DRC Run Report at</description>
- <original-file>/foss/designs/Mosbious_2025_spiking4all/designs/klayout/DFF_2phase_1/DFF_2phase_1.gds</original-file>
+ <original-file>/foss/designs/Mosbious_2025_spiking4all/designs/klayout/DFF_2phase_1/DFF_2phase_1_df.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
  <top-cell>DFF_2phase_1</top-cell>
  <tags>
