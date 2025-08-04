@@ -15,6 +15,15 @@ The proposed overview for the MOSbius chip is shown below.
 
 ![Mosbius Proposal](/proposal/mosbius_proposal.png)
 
+The proposal contains:
+- 7 Synapses
+- 7 subthreshold Neuron (AH model)
+- 1 LIF Neuron (ring oscillator based)
+- 1 LIF Neuron (comparator and opamp based)
+- 65x10 switch matrix
+    - D type Flip-flops with non overlaping clock
+    - Transmission gates
+
 ### Timeline
 
 As with any team, we need a timeline and time estimates. You can find the timeline [here](https://docs.google.com/spreadsheets/d/1FUSe3ihenKiJLiLIJRhUeNDvfz49FAqhR9erRGoN5aA/edit?usp=sharing)
