@@ -52,7 +52,7 @@ N -400 -430 -360 -430 {lab=#net1}
 N -400 -430 -400 -410 {lab=#net1}
 N -400 -350 -400 -320 {lab=GND}
 N -240 -440 -240 -420 {lab=spk}
-C {Mosbious_2025_spiking4all/designs/libs/core_LIF/LIF.sym} -270 -530 0 0 {name=x1}
+C {designs/libs/core_LIF/LIF.sym} -270 -530 0 0 {name=x1}
 C {vsource.sym} -480 -370 0 0 {name=V1 value=1.8 savecurrent=false}
 C {devices/code_shown.sym} -910 -530 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
@@ -87,7 +87,7 @@ m=1}
 C {gnd.sym} -480 -310 0 0 {name=l2 lab=GND}
 C {lab_pin.sym} -360 -450 0 0 {name=p2 sig_type=std_logic lab=vdd}
 C {gnd.sym} -360 -410 0 0 {name=l1 lab=GND}
-C {vsource.sym} -400 -380 0 0 {name=V2 value=0 savecurrent=false}
+C {vsource.sym} -400 -380 0 0 {name=V2 value=0.2 savecurrent=false}
 C {gnd.sym} -400 -320 0 0 {name=l3 lab=GND}
 C {launcher.sym} -230 -140 0 0 {name=h5
 descr="load waves" 

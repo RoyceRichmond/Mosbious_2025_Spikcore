@@ -4,7 +4,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 650 270 1160 580 {flags=graph
+B 2 580 170 1090 480 {flags=graph
 y1=-0.24
 y2=1.5
 ypos1=0
@@ -13,7 +13,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.05
+x2=0.5
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -25,16 +25,16 @@ unitx=1
 logx=0
 logy=0
 hilight_wave=-1}
-B 2 650 -40 1160 270 {flags=graph
-y1=-0.0026
-y2=0.74
+B 2 580 -140 1090 170 {flags=graph
+y1=-0.0091
+y2=1.1
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.05
+x2=0.5
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -49,19 +49,19 @@ hilight_wave=-1
 rainbow=1}
 T {0.9v works
 1.3v synapse interface} -260 -160 0 0 0.4 0.4 {}
-N 0 90 0 120 {lab=GND}
-N 0 -100 0 -90 {lab=vdd}
-N 130 20 130 40 {lab=#net1}
-N 130 100 130 120 {lab=vmem}
-N 130 -60 130 -40 {lab=vdd}
-N 130 120 210 120 {lab=vmem}
-N 340 40 340 70 {lab=vdd}
-N 210 120 290 120 {lab=vmem}
-N 390 120 410 120 {lab=vout}
-N 340 170 340 190 {lab=GND}
-N 410 180 410 190 {lab=GND}
-N 340 190 410 190 {lab=GND}
-C {vsource.sym} 0 60 0 0 {name=V1 value=vd_v savecurrent=false}
+N 80 50 80 80 {lab=GND}
+N 80 -140 80 -130 {lab=vdd}
+N 210 -20 210 0 {lab=#net1}
+N 210 60 210 80 {lab=vmem}
+N 210 -100 210 -80 {lab=vdd}
+N 210 80 290 80 {lab=vmem}
+N 420 0 420 30 {lab=vdd}
+N 290 80 370 80 {lab=vmem}
+N 470 80 490 80 {lab=vout}
+N 420 130 420 150 {lab=GND}
+N 490 140 490 150 {lab=GND}
+N 420 150 490 150 {lab=GND}
+C {vsource.sym} 80 20 0 0 {name=V1 value=vd_v savecurrent=false}
 C {devices/code_shown.sym} -430 -100 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
 .tran 100n 500m
@@ -85,12 +85,12 @@ C {devices/code_shown.sym} -430 -100 0 0 {name=s1 only_toplevel=false value="
 .endc
 "
 spice_ignore=False}
-C {lab_pin.sym} 0 -100 0 0 {name=p1 sig_type=std_logic lab=vdd}
-C {ammeter.sym} 0 -60 2 0 {name=Vdd_c savecurrent=true spice_ignore=0}
-C {isource.sym} 130 -10 0 0 {name=I0 value="PULSE(0 1000p 1u 10n 10n 5u 10u)"}
-C {ammeter.sym} 130 70 0 0 {name=Vin savecurrent=true spice_ignore=0}
-C {lab_pin.sym} 130 -60 0 0 {name=p2 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 340 40 0 0 {name=p3 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 80 -140 0 0 {name=p1 sig_type=std_logic lab=vdd}
+C {ammeter.sym} 80 -100 2 0 {name=Vdd_c savecurrent=true spice_ignore=0}
+C {isource.sym} 210 -50 0 0 {name=I0 value="PULSE(0 1000p 1u 10n 10n 5u 10u)"}
+C {ammeter.sym} 210 30 0 0 {name=Vin savecurrent=true spice_ignore=0}
+C {lab_pin.sym} 210 -100 0 0 {name=p2 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 420 0 0 0 {name=p3 sig_type=std_logic lab=vdd}
 C {devices/code_shown.sym} -480 380 0 0 {name=MODELS1 only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -101,21 +101,21 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 "}
-C {lab_pin.sym} 410 120 2 0 {name=p6 sig_type=std_logic lab=vout}
-C {launcher.sym} 200 440 0 0 {name=h5
+C {lab_pin.sym} 490 80 2 0 {name=p6 sig_type=std_logic lab=vout}
+C {launcher.sym} 430 200 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/sub_th_ah.raw tran"
 }
-C {designs/libs/core_AH_neuron/AH_neuron.sym} 100 110 0 0 {name=x1}
-C {lab_pin.sym} 240 120 3 0 {name=p4 sig_type=std_logic lab=vmem}
-C {res.sym} 0 0 0 0 {name=R1
+C {designs/libs/core_AH_neuron/AH_neuron.sym} 180 70 0 0 {name=x1}
+C {lab_pin.sym} 320 80 3 0 {name=p4 sig_type=std_logic lab=vmem}
+C {res.sym} 80 -40 0 0 {name=R1
 value=10
 footprint=1206
 device=resistor
 m=1}
-C {gnd.sym} 340 190 0 0 {name=l1 lab=GND}
-C {gnd.sym} 0 120 0 0 {name=l2 lab=GND}
-C {res.sym} 410 150 0 0 {name=R2
+C {gnd.sym} 420 150 0 0 {name=l1 lab=GND}
+C {gnd.sym} 80 80 0 0 {name=l2 lab=GND}
+C {res.sym} 490 110 0 0 {name=R2
 value=250k
 footprint=1206
 device=resistor
