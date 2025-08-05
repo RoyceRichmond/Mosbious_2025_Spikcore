@@ -1,4 +1,5 @@
 ** sch_path: /foss/designs/Mosbious_2025_spiking4all/switch_matrix_gf180mcu_9t5v0/DFF_2phase_1/DFF_2phase_1.sch
+.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/cdl/gf180mcu_fd_sc_mcu9t5v0.cdl
 .subckt DFF_2phase_1 D Q PHI_1 PHI_2
 *.PININFO D:I PHI_1:I PHI_2:I Q:O
 xmain D PHI_1 out_m VDDd VDDd VSSd VSSd gf180mcu_fd_sc_mcu9t5v0__latq_1
