@@ -1,23 +1,23 @@
-* Extracted by KLayout with GF180 LVS runset on : 06/08/2025 21:27
+* Extracted by KLayout with GF180 LVS runset on : 06/08/2025 21:37
 
-.SUBCKT DFF_2phase_1 D phi_1 out_m vss vdd q phi_2 gf180mcu_gnd
-X$1 vss out_m phi_1 D vdd vdd gf180mcu_gnd gf180mcu_fd_sc_mcu9t5v0__latq_1
-X$4 vss q phi_2 out_m vdd vdd gf180mcu_gnd gf180mcu_fd_sc_mcu9t5v0__latq_1
+.SUBCKT DFF_2phase_1 q vss vdd D phi_1 out_m phi_2 gf180mcu_gnd
+X$1 vss q phi_2 out_m vdd vdd gf180mcu_gnd gf180mcu_fd_sc_mcu9t5v0__latq_1
+X$3 vss out_m phi_1 D vdd vdd gf180mcu_gnd gf180mcu_fd_sc_mcu9t5v0__latq_1
 .ENDS DFF_2phase_1
 
-.SUBCKT gf180mcu_fd_sc_mcu9t5v0__latq_1 VSS Q E D VDD \$20 gf180mcu_gnd
-M$1 VDD \$4 Q \$20 pfet_05v0 L=0.5U W=1.83U AS=0.8052P AD=0.8052P PS=4.54U
+.SUBCKT gf180mcu_fd_sc_mcu9t5v0__latq_1 VSS Q E D VDD \$21 gf180mcu_gnd
+M$1 VDD \$4 Q \$21 pfet_05v0 L=0.5U W=1.83U AS=0.8052P AD=0.8052P PS=4.54U
 + PD=4.54U
-M$2 \$17 D VDD \$20 pfet_05v0 L=0.5U W=1U AS=0.44P AD=0.12P PS=2.88U PD=1.24U
-M$3 \$4 \$2 \$17 \$20 pfet_05v0 L=0.5U W=1U AS=0.12P AD=0.26P PS=1.24U PD=1.52U
-M$4 \$4 \$3 \$18 \$20 pfet_05v0 L=0.5U W=1U AS=0.426P AD=0.26P PS=2.08U PD=1.52U
-M$5 VDD \$5 \$18 \$20 pfet_05v0 L=0.5U W=1.38U AS=0.426P AD=0.3588P PS=2.08U
+M$2 \$17 D VDD \$21 pfet_05v0 L=0.5U W=1U AS=0.44P AD=0.12P PS=2.88U PD=1.24U
+M$3 \$4 \$2 \$17 \$21 pfet_05v0 L=0.5U W=1U AS=0.12P AD=0.26P PS=1.24U PD=1.52U
+M$4 \$4 \$3 \$18 \$21 pfet_05v0 L=0.5U W=1U AS=0.426P AD=0.26P PS=2.08U PD=1.52U
+M$5 VDD \$5 \$18 \$21 pfet_05v0 L=0.5U W=1.38U AS=0.426P AD=0.3588P PS=2.08U
 + PD=1.9U
-M$6 \$5 \$4 VDD \$20 pfet_05v0 L=0.5U W=1.38U AS=0.3588P AD=0.6072P PS=1.9U
+M$6 \$5 \$4 VDD \$21 pfet_05v0 L=0.5U W=1.38U AS=0.3588P AD=0.6072P PS=1.9U
 + PD=3.64U
-M$7 VDD E \$2 \$20 pfet_05v0 L=0.5U W=1.38U AS=0.6072P AD=0.476P PS=3.64U
+M$7 VDD E \$2 \$21 pfet_05v0 L=0.5U W=1.38U AS=0.6072P AD=0.476P PS=3.64U
 + PD=2.18U
-M$8 \$3 \$2 VDD \$20 pfet_05v0 L=0.5U W=1U AS=0.476P AD=0.44P PS=2.18U PD=2.88U
+M$8 \$3 \$2 VDD \$21 pfet_05v0 L=0.5U W=1U AS=0.476P AD=0.44P PS=2.18U PD=2.88U
 M$9 VSS \$4 Q gf180mcu_gnd nfet_05v0 L=0.6U W=1.32U AS=0.5808P AD=0.5808P
 + PS=3.52U PD=3.52U
 M$10 \$10 D VSS gf180mcu_gnd nfet_05v0 L=0.6U W=0.7U AS=0.308P AD=0.084P
