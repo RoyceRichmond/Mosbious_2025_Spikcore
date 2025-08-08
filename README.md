@@ -34,19 +34,16 @@ The `/foss/designs` directory inside the Docker container is mounted from the `d
 
 ```
 project-root/
-├── designs/             # remanents from fork
-├── designs_testing/     # folder for testing designs
-│   ├── libs/            # Design libraries
-│   ├── simulations/     # Simulation folder
-│   │   ├──schematic/    # Schematics simulations
-│   │   ├──Post-layout/  # post-layout simulations
-│   ├── layout/          # Layout
-├── proposal/            # Proposal files 
-└── README.md            # This file
+├── designs/             	# Main folder
+│   ├── libs/            	# Design libraries
+│   │   ├──core_*/       	# Design libraries (core functionality)
+│   │   └──tb_*/         	# Testbench libraries
+│   ├── simulations/     	# Simulation folder
+│   └── klayout/         	# klayout files
+├── proposal/            	# Proposal files 
+├── start_chipathon_vnc.bat     # Container launch script (Windows)
+└── README.md            	# This file
 ```
-
-
-
 
 <!--
 ## Project Directory Structure
@@ -60,7 +57,6 @@ project-root/
 │   ├── simulations/     # Simulation results
 │   └── setup_pdk.sh     # PDK setup script
 ├── start_vnc.sh         # Container launch script (Unix/Linux/Mac)
-├── start_vnc.bat        # Container launch script (Windows)
 └── README.md            # This file
 ```
 
