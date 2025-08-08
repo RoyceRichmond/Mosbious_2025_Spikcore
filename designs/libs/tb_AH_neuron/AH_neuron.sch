@@ -120,3 +120,4 @@ value=250k
 footprint=1206
 device=resistor
 m=1}
+C {title.sym} -170 570 0 0 {name=l3 author="Royce Richmond"}

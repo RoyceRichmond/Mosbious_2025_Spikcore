@@ -406,3 +406,4 @@ C {lab_pin.sym} 300 530 1 1 {name=p42 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 300 660 3 1 {name=p43 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 370 600 0 1 {name=p45 sig_type=std_logic lab=vout}
 C {lab_pin.sym} 240 600 0 0 {name=p46 sig_type=std_logic lab=vin}
+C {title.sym} -120 1250 0 0 {name=l4 author="Rosendo Valdes"}

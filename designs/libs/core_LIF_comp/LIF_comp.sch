@@ -10,3 +10,4 @@ C {designs/libs/core_ota_2stage/ota_2stage.sym} 30 150 0 0 {name=x3}
 C {designs/libs/core_switch/switch.sym} 60 -90 0 0 {name=x4}
 C {designs/libs/core_conmutator/conmutator.sym} 430 200 0 0 {name=x5}
 C {designs/libs/core_conmutator/conmutator.sym} 580 360 0 0 {name=x6}
+C {title.sym} -50 450 0 0 {name=l1 author="Oscar Islas"}

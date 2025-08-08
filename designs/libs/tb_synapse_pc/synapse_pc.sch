@@ -311,3 +311,4 @@ value=10
 footprint=1206
 device=resistor
 m=1}
+C {title.sym} 300 510 0 0 {name=l1 author="Royce Richmond"}

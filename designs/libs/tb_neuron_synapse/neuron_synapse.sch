@@ -4,8 +4,8 @@ K {}
 V {}
 S {}
 E {}
-B 2 620 -1820 1100 -1490 {flags=graph
-y1=-3.6e-10
+B 2 1100 -2150 1580 -1820 {flags=graph
+y1=-0.004
 y2=6.7
 ypos1=0
 ypos2=2
@@ -27,8 +27,8 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 1110 -1490 1580 -1120 {flags=graph
-y1=-6.2e-07
-y2=0.00014
+y1=-1.3e-05
+y2=0.00018
 ypos1=0
 ypos2=2
 divy=5
@@ -48,8 +48,8 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 1100 -1820 1580 -1490 {flags=graph
-y1=0.26
-y2=3.1
+y1=0.25
+y2=3.2
 ypos1=0
 ypos2=2
 divy=5
@@ -80,6 +80,9 @@ N 655 -1190 655 -1150 {lab=GND}
 N 605 -1150 655 -1150 {lab=GND}
 N 595 -1340 655 -1340 {lab=GND}
 N 595 -1340 595 -1320 {lab=GND}
+N 430 -1400 430 -1370 {lab=GND}
+N 430 -1510 430 -1460 {lab=VSSd}
+N 430 -1630 430 -1570 {lab=VDDd}
 C {launcher.sym} 660 -1045 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/neuron_synapse.raw tran"
@@ -110,7 +113,7 @@ C {devices/code_shown.sym} -45 -1710 0 0 {name=s2 only_toplevel=false value="
 "
 spice_ignore=False}
 C {lab_pin.sym} 930 -1405 0 0 {name=p2 sig_type=std_logic lab=vdd}
-C {devices/code_shown.sym} -30 -1240 0 0 {name=MODELS2 only_toplevel=true
+C {devices/code_shown.sym} -40 -1220 0 0 {name=MODELS2 only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
@@ -119,6 +122,7 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice res_typical
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
 "}
 C {gnd.sym} 930 -1255 0 0 {name=l2 lab=GND}
 C {lab_pin.sym} 820 -1305 0 0 {name=p7 sig_type=std_logic lab=vi}
@@ -139,7 +143,7 @@ C {gnd.sym} 535 -1120 0 0 {name=l11 lab=GND}
 C {lab_pin.sym} 535 -1360 0 0 {name=p28 sig_type=std_logic lab=vdd}
 C {ammeter.sym} 535 -1260 2 0 {name=Vdd_c savecurrent=true spice_ignore=0}
 C {vsource.sym} 605 -1180 0 0 {name=V11 value="PULSE(0 3.3 9u 10n 10n 11u 20u)" savecurrent=false}
-C {lab_pin.sym} 605 -1270 0 0 {name=p29 sig_type=std_logic lab=v_ctrl}
+C {lab_pin.sym} 605 -1270 0 0 {name=p29 sig_type=std_logic lab=v_ctrl_i}
 C {vsource.sym} 655 -1220 0 0 {name=V12 value="PULSE(0 V_S 0 10n 10n 0.5u 5u)"  savecurrent=false}
 C {lab_pin.sym} 715 -1250 2 0 {name=p30 sig_type=std_logic lab=spike}
 C {vsource.sym} 595 -1370 0 0 {name=V13 value=vi  savecurrent=false}
@@ -172,3 +176,13 @@ value=10
 footprint=1206
 device=resistor
 m=1}
+C {title.sym} 220 -970 0 0 {name=l1 author="Royce Richmond"}
+C {/foss/designs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 620 -1600 0 0 {name=x1 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {/foss/designs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 700 -1600 0 0 {name=x3 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {lab_pin.sym} 740 -1600 2 0 {name=p3 sig_type=std_logic lab=v_ctrl}
+C {lab_pin.sym} 580 -1600 0 0 {name=p5 sig_type=std_logic lab=v_ctrl_i}
+C {devices/vsource.sym} 430 -1430 0 0 {name=V5 value=0 savecurrent=false}
+C {devices/gnd.sym} 430 -1370 0 0 {name=l5 lab=GND}
+C {devices/vsource.sym} 430 -1540 0 0 {name=V6 value=3.3 savecurrent=false}
+C {devices/lab_wire.sym} 430 -1480 0 0 {name=p6 sig_type=std_logic lab=VSSd}
+C {devices/lab_wire.sym} 430 -1600 0 0 {name=p11 sig_type=std_logic lab=VDDd}

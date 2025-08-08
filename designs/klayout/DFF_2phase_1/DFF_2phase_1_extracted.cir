@@ -1,4 +1,4 @@
-* Extracted by KLayout with GF180 LVS runset on : 06/08/2025 21:37
+* Extracted by KLayout with GF180 LVS runset on : 08/08/2025 08:07
 
 .SUBCKT DFF_2phase_1 q vss vdd D phi_1 out_m phi_2 gf180mcu_gnd
 X$1 vss q phi_2 out_m vdd vdd gf180mcu_gnd gf180mcu_fd_sc_mcu9t5v0__latq_1

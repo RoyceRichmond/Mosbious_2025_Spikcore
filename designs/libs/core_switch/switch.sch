@@ -4,7 +4,7 @@ K {}
 V {}
 S {}
 E {}
-N -90 130 -70 130 {lab=vss}
+N -50 -310 -30 -310 {lab=vss}
 N 40 -230 40 -70 {lab=in2}
 N 100 -230 100 -70 {lab=out}
 N 70 -230 70 -190 {lab=vss}
@@ -51,11 +51,12 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {iopin.sym} -40 -330 0 0 {name=p5 lab=vdd}
-C {iopin.sym} -70 130 0 0 {name=p8 lab=vss}
+C {iopin.sym} -30 -310 0 0 {name=p8 lab=vss}
 C {iopin.sym} 20 -150 2 0 {name=p9 lab=in}
 C {iopin.sym} 120 -150 0 0 {name=p10 lab=out}
-C {lab_pin.sym} -90 130 0 0 {name=p11 sig_type=std_logic lab=vss}
+C {lab_pin.sym} -50 -310 0 0 {name=p11 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 70 -190 0 0 {name=p12 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -100 -80 0 0 {name=p7 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -100 90 0 0 {name=p13 sig_type=std_logic lab=vss}
 C {iopin.sym} -200 10 2 0 {name=p14 lab=cntrl}
+C {title.sym} -290 160 0 0 {name=l1 author="Oscar Islas"}

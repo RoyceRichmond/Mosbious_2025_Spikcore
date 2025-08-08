@@ -52,7 +52,6 @@ N -400 -430 -360 -430 {lab=#net1}
 N -400 -430 -400 -410 {lab=#net1}
 N -400 -350 -400 -320 {lab=GND}
 N -240 -440 -240 -420 {lab=spk}
-C {designs/libs/core_LIF/LIF.sym} -270 -530 0 0 {name=x1}
 C {vsource.sym} -480 -370 0 0 {name=V1 value=1.8 savecurrent=false}
 C {devices/code_shown.sym} -910 -530 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
@@ -94,3 +93,5 @@ descr="load waves"
 tclcommand="xschem raw_read $netlist_dir/lif.raw tran"
 }
 C {lab_pin.sym} -240 -430 2 0 {name=p3 sig_type=std_logic lab=spk}
+C {designs/libs/core_LIF_ring/LIF.sym} -270 -530 0 0 {name=x1}
+C {title.sym} -810 290 0 0 {name=l4 author="Royce Richmond"}

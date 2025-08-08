@@ -73,8 +73,8 @@ N 120 -270 120 -80 {lab=#net2}
 N 20 -270 120 -270 {lab=#net2}
 N 270 50 390 50 {lab=v_out}
 N 390 50 400 50 {lab=v_out}
-N -20 -390 -0 -390 {lab=vdd}
-N -40 360 -30 360 {lab=gnd}
+N -10 -410 10 -410 {lab=vdd}
+N 0 -390 10 -390 {lab=gnd}
 C {lab_pin.sym} -20 -340 0 0 {name=p4 sig_type=std_logic lab=vdd}
 C {symbols/pfet_03v3.sym} 0 -270 0 1 {name=M5
 L=0.28u
@@ -252,11 +252,12 @@ C {iopin.sym} 190 50 2 0 {name=p6 lab=v_ctrl}
 C {iopin.sym} -90 -110 2 0 {name=p10 lab=ve}
 C {iopin.sym} -100 80 2 0 {name=p11 lab=vi}
 C {iopin.sym} -320 -190 2 0 {name=p12 lab=v_in}
-C {iopin.sym} -20 -390 2 0 {name=p3 lab=vdd}
-C {lab_pin.sym} 0 -390 2 0 {name=p5 sig_type=std_logic lab=vdd}
-C {iopin.sym} -40 360 2 0 {name=p9 lab=vss}
-C {lab_pin.sym} -30 360 2 0 {name=p13 sig_type=std_logic lab=vss}
+C {iopin.sym} -10 -410 2 0 {name=p3 lab=vdd}
+C {lab_pin.sym} 10 -410 2 0 {name=p5 sig_type=std_logic lab=vdd}
+C {iopin.sym} 0 -390 2 0 {name=p9 lab=vss}
+C {lab_pin.sym} 10 -390 2 0 {name=p13 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -20 310 2 0 {name=p14 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 270 260 2 0 {name=p15 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -200 260 2 0 {name=p16 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 20 -50 2 0 {name=p17 sig_type=std_logic lab=vss}
+C {title.sym} -270 420 0 0 {name=l1 author="Royce Richmond"}
