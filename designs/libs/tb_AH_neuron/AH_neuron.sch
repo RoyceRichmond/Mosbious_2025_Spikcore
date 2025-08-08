@@ -5,15 +5,15 @@ V {}
 S {}
 E {}
 B 2 580 170 1090 480 {flags=graph
-y1=-0.24
-y2=1.5
+y1=-0.6
+y2=2
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.5
+x1=-0.00017009033
+x2=0.0010847394
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -26,15 +26,15 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 580 -140 1090 170 {flags=graph
-y1=-0.0091
-y2=1.1
+y1=-2.2e-09
+y2=1.4
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.5
+x1=-0.00017009033
+x2=0.0010847394
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -51,7 +51,7 @@ T {0.9v works
 1.3v synapse interface} -260 -160 0 0 0.4 0.4 {}
 N 80 50 80 80 {lab=GND}
 N 80 -140 80 -130 {lab=vdd}
-N 210 -20 210 0 {lab=#net1}
+N 210 -20 210 0 {lab=vmem}
 N 210 60 210 80 {lab=vmem}
 N 210 -100 210 -80 {lab=vdd}
 N 210 80 290 80 {lab=vmem}
@@ -61,16 +61,17 @@ N 470 80 490 80 {lab=vout}
 N 420 130 420 150 {lab=GND}
 N 490 140 490 150 {lab=GND}
 N 420 150 490 150 {lab=GND}
+N 210 0 210 60 {lab=vmem}
 C {vsource.sym} 80 20 0 0 {name=V1 value=vd_v savecurrent=false}
 C {devices/code_shown.sym} -430 -100 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
-.tran 100n 500m
-.param vd_v=0.9
+.tran 100n 5m
+.param vd_v=1.6
 .save allcurrents
 .options save currents
 .control
-    let start_v=1.3
-    let stop_v=1.3
+    let start_v=1.6
+    let stop_v=1.6
     let delta_v=0.1
     let v_act=start_v
     while v_act le stop_v
@@ -88,7 +89,6 @@ spice_ignore=False}
 C {lab_pin.sym} 80 -140 0 0 {name=p1 sig_type=std_logic lab=vdd}
 C {ammeter.sym} 80 -100 2 0 {name=Vdd_c savecurrent=true spice_ignore=0}
 C {isource.sym} 210 -50 0 0 {name=I0 value="PULSE(0 1000p 1u 10n 10n 5u 10u)"}
-C {ammeter.sym} 210 30 0 0 {name=Vin savecurrent=true spice_ignore=0}
 C {lab_pin.sym} 210 -100 0 0 {name=p2 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 420 0 0 0 {name=p3 sig_type=std_logic lab=vdd}
 C {devices/code_shown.sym} -480 380 0 0 {name=MODELS1 only_toplevel=true
