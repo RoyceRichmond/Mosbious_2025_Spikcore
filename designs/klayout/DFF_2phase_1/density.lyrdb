@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>GF180 DENSITY DRC Run Report at</description>
- <original-file>/foss/designs/Mosbious_2025_spiking4all/designs/klayout/DFF_2phase_1/DFF_2phase_1_df.gds</original-file>
+ <original-file>/foss/designs/Mosbious_2025_spiking4all/designs/klayout/DFF_2phase_1 - copia/DFF_2phase_1.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
  <top-cell>DFF_2phase_1</top-cell>
  <tags>
+  <tag>
+   <name>waived</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>red</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>green</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>blue</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>yellow</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>important</name>
+   <description/>
+  </tag>
  </tags>
  <categories>
   <category>
@@ -56,17 +80,6 @@
    <references>
    </references>
   </cell>
-  <cell>
-   <name>via_dev$1</name>
-   <variant/>
-   <layout-name>via_dev$1</layout-name>
-   <references>
-    <ref>
-     <parent>DFF_2phase_1</parent>
-     <trans>r0 *1 -0.315,7.32</trans>
-    </ref>
-   </references>
-  </cell>
  </cells>
  <items>
   <item>
@@ -78,7 +91,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (2.535,5.79;2.535,7.015;2.815,7.015;2.815,5.79)</value>
+    <value>polygon: (-4.885,-4.08;-4.885,-4.025;-6.565,-4.025;-6.565,-3.725;-4.885,-3.725;-4.885,-3.68;-4.485,-3.68;-4.485,-4.08)</value>
    </values>
   </item>
   <item>
@@ -90,7 +103,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-2.425,5.79;-2.425,6.07;2.535,6.07;2.535,5.79)</value>
+    <value>polygon: (3.305,-2.71;3.305,-2.65;-6.58,-2.65;-6.58,-2.35;3.305,-2.35;3.305,-2.31;3.705,-2.31;3.705,-2.71)</value>
    </values>
   </item>
   <item>
@@ -102,7 +115,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-2.425,7.325;-2.425,7.695;0.085,7.695;0.085,7.325)</value>
+    <value>polygon: (-2.235,-5.025;-2.235,-4.625;-1.835,-4.625;-1.835,-4.725;5.18,-4.725;5.18,0.665;5.14,0.665;5.14,1.065;5.54,1.065;5.54,0.665;5.48,0.665;5.48,-5.02;-1.835,-5.02;-1.835,-5.025)</value>
    </values>
   </item>
   <item>
@@ -114,7 +127,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (8.145,5.075;8.145,7.38;8.545,7.38;8.545,5.075)</value>
+    <value>polygon: (-6.565,1.27;-6.565,1.57;-1.125,1.57;-1.125,1.67;-0.725,1.67;-0.725,1.27)</value>
    </values>
   </item>
   <item>
@@ -126,43 +139,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (2.47,0.755;2.47,5.37;2.87,5.37;2.87,0.755)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M2.4'</category>
-   <cell>DFF_2phase_1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (2.47,5.075;2.47,5.37;8.545,5.37;8.545,5.075)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M2.4'</category>
-   <cell>DFF_2phase_1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-2.555,1.13;-2.555,1.5;-0.045,1.5;-0.045,1.13)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M2.4'</category>
-   <cell>via_dev$1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (0,0;0,0.4;0.4,0.4;0.4,0)</value>
+    <value>polygon: (-3.775,2.295;-3.775,2.37;-6.565,2.37;-6.565,2.67;-3.775,2.67;-3.775,2.695;-3.375,2.695;-3.375,2.295)</value>
    </values>
   </item>
  </items>
