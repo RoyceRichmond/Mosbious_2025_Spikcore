@@ -5,8 +5,8 @@ V {}
 S {}
 E {}
 B 2 -1150 -60 -580 280 {flags=graph
-y1=-0.23
-y2=3.6
+y1=-0.21
+y2=3.5
 ypos1=0
 ypos2=2
 divy=5
@@ -26,8 +26,8 @@ logx=0
 logy=0
 }
 B 2 -1150 280 -580 620 {flags=graph
-y1=-0.28
-y2=0.37
+y1=-0.21
+y2=3.5
 ypos1=0
 ypos2=2
 divy=5
@@ -47,8 +47,8 @@ logx=0
 logy=0
 }
 B 2 -580 -60 -10 280 {flags=graph
-y1=-0.1
-y2=3.4
+y1=-0.23
+y2=3.8
 ypos1=0
 ypos2=2
 divy=5
@@ -64,8 +64,8 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="6 6"
-node="vin
+color="4 6"
+node="\\"vin; vin clk * 0.30303 *\\"
 vout"}
 N -530 -170 -530 -140 {lab=GND}
 N -530 -360 -530 -350 {lab=vdd}
