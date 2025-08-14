@@ -24,6 +24,14 @@ The proposal contains:
     - D type Flip-flops with non overlaping clock
     - Transmission gates
 
+The number of proposed pins is 64:
+
+- 3 Control pins per synapse (21 pins total)
+- 1 input, 1 output per synapse (14 pins total)
+- 1 input voltage per neuron (9 pins total)
+- 1 input, 1 output per neuron (18 pins total)
+
+The pinout can be reduced to 43 pins if shared between neurons voltage supply, and sharing the signals from the vexc and vinh on the synapses.
 ### Timeline
 
 As with any team, we need a timeline and time estimates. You can find the timeline [here](https://docs.google.com/spreadsheets/d/1FUSe3ihenKiJLiLIJRhUeNDvfz49FAqhR9erRGoN5aA/edit?usp=sharing)
