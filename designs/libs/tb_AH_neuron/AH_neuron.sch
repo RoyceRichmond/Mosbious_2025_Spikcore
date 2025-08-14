@@ -5,15 +5,15 @@ V {}
 S {}
 E {}
 B 2 580 170 1090 480 {flags=graph
-y1=-0.56
-y2=1.9
+y1=-0.68
+y2=2.2
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.005
+x1=0.37137815
+x2=0.37576888
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -27,15 +27,15 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 580 -140 1090 170 {flags=graph
-y1=-0.0017
-y2=1.4
+y1=-0.0088
+y2=1.5
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.005
+x1=0.37137815
+x2=0.37576888
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -70,7 +70,7 @@ N 270 80 290 80 {lab=vmem}
 C {vsource.sym} 80 20 0 0 {name=V1 value=vd_v savecurrent=false}
 C {devices/code_shown.sym} -435 -100 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
-.tran 100n 5m
+.tran 100n 500m
 .param vd_v=1.6
 .save allcurrents
 .options save currents
@@ -93,7 +93,7 @@ C {devices/code_shown.sym} -435 -100 0 0 {name=s1 only_toplevel=false value="
 spice_ignore=False}
 C {lab_pin.sym} 80 -140 0 0 {name=p1 sig_type=std_logic lab=vdd}
 C {ammeter.sym} 80 -100 2 0 {name=Vdd_c savecurrent=true spice_ignore=0}
-C {isource.sym} 210 -50 0 0 {name=I0 value="PULSE(0 1000p 1u 10n 10n 1u 50u)"}
+C {isource.sym} 210 -50 0 0 {name=I0 value="PULSE(0 1000p 1u 10n 10n 1u 5u)"}
 C {lab_pin.sym} 210 -100 0 0 {name=p2 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 420 0 0 0 {name=p3 sig_type=std_logic lab=vdd}
 C {devices/code_shown.sym} -480 380 0 0 {name=MODELS1 only_toplevel=true
@@ -107,7 +107,7 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 "}
 C {lab_pin.sym} 490 80 2 0 {name=p6 sig_type=std_logic lab=vout}
-C {launcher.sym} 430 200 0 0 {name=h5
+C {launcher.sym} 430 190 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/sub_th_ah.raw tran"
 }

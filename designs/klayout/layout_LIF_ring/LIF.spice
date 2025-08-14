@@ -1,0 +1,17 @@
+** sch_path: /foss/designs/Mosbious_2025_spiking4all/designs/libs/core_LIF_ring/LIF.sch
+.subckt LIF vdd vlk vout vfb vss
+*.PININFO vdd:B vss:B vout:B vfb:B vlk:B
+M2 inv1 vlk vdd vdd pfet_03v3 L=50u W=0.45u nf=1 m=1
+M4 net2 inv1 vdd vdd pfet_03v3 L=0.28u W=0.45u nf=1 m=1
+M1 net1 vfb vss vss nfet_03v3 L=10u W=3u nf=1 m=1
+M3 net3 inv1 vss vss nfet_03v3 L=0.28u W=0.45u nf=1 m=1
+Vmeas3 inv1 net1 0
+.save i(vmeas3)
+Vmeas1 net2 net3 0
+.save i(vmeas1)
+Vmeas2 net4 vout 0
+.save i(vmeas2)
+M5 net4 net3 vdd vdd pfet_03v3 L=0.28u W=0.45u nf=1 m=1
+M6 vout net3 vss vss nfet_03v3 L=0.28u W=0.45u nf=1 m=1
+XC2 inv1 vss cap_mim_2f0fF c_width=1e-6 c_length=1e-6 m=130
+.ends
