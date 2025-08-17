@@ -30,7 +30,7 @@ N 90 0 90 280 {lab=cntrl}
 N 160 -90 160 -60 {lab=vdd}
 N 160 60 160 80 {lab=vss}
 N 60 0 90 0 {lab=cntrl}
-C {designs/libs/core_not/not.sym} -20 -10 0 0 {name=x1}
+C {designs/libs/core_LIF_comp/core_not/not.sym} -20 -10 0 0 {name=x1}
 C {lab_pin.sym} 330 -370 0 0 {name=p3 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 330 -100 0 0 {name=p4 sig_type=std_logic lab=vdd}
 C {symbols/pfet_03v3.sym} 330 -60 3 0 {name=M3
