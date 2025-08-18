@@ -12,7 +12,7 @@ N 90 -60 90 -30 {lab=vdd}
 N 60 -60 90 -60 {lab=vdd}
 N 10 -120 10 -60 {lab=vdd}
 N -60 0 -60 40 {lab=inv1}
-N -60 100 -60 130 {lab=#net1}
+N -60 100 -60 130 {lab=inv1}
 N 20 -30 20 160 {lab=inv1}
 N -60 30 20 30 {lab=inv1}
 N 60 160 90 160 {lab=vss}
@@ -24,16 +24,16 @@ N -60 220 60 220 {lab=vss}
 N -60 160 -30 160 {lab=vss}
 N -30 160 -30 220 {lab=vss}
 N 10 220 10 250 {lab=vss}
-N 60 -0 60 20 {lab=#net2}
-N 60 80 60 130 {lab=#net3}
+N 60 -0 60 20 {lab=#net1}
+N 60 80 60 130 {lab=#net1}
 N 90 -60 200 -60 {lab=vdd}
 N 200 -30 230 -30 {lab=vdd}
 N 230 -60 230 -30 {lab=vdd}
 N 200 -60 230 -60 {lab=vdd}
-N 160 -30 160 160 {lab=#net3}
-N 200 0 200 20 {lab=#net4}
+N 160 -30 160 160 {lab=#net1}
+N 200 0 200 20 {lab=vout}
 N 200 80 200 130 {lab=vout}
-N 60 110 160 110 {lab=#net3}
+N 60 110 160 110 {lab=#net1}
 N 200 190 200 220 {lab=vss}
 N 90 220 200 220 {lab=vss}
 N 200 160 230 160 {lab=vss}
@@ -44,6 +44,9 @@ N -130 160 -100 160 {lab=vfb}
 N -160 -30 -150 -30 {lab=vlk}
 N -210 -30 -160 -30 {lab=vlk}
 N -190 160 -130 160 {lab=vfb}
+N -60 40 -60 100 {lab=inv1}
+N 60 20 60 80 {lab=#net1}
+N 200 20 200 80 {lab=vout}
 C {symbols/pfet_03v3.sym} -80 -30 0 0 {name=M2
 L=50u
 W=0.45u
@@ -105,10 +108,7 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {title.sym} -260 390 0 0 {name=l1 author="Abraham Alejandro"}
-C {ammeter.sym} -60 70 0 0 {name=Vmeas3 savecurrent=true spice_ignore=0}
 C {lab_pin.sym} 20 100 0 0 {name=p6 sig_type=std_logic lab=inv1}
-C {ammeter.sym} 60 50 0 0 {name=Vmeas1 savecurrent=true spice_ignore=0}
-C {ammeter.sym} 200 50 0 0 {name=Vmeas2 savecurrent=true spice_ignore=0}
 C {symbols/pfet_03v3.sym} 180 -30 0 0 {name=M5
 L=0.28u
 W=0.45u

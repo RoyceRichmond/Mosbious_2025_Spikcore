@@ -33,7 +33,7 @@ C {designs/libs/core_LIF_comp/core_ota_2stage/ota_2stage.sym} 30 150 0 0 {name=x
 C {designs/libs/core_LIF_comp/core_switch/switch.sym} 60 -90 0 0 {name=x4}
 C {designs/libs/core_LIF_comp/core_conmutator/conmutator.sym} 500 130 0 0 {name=x5}
 C {designs/libs/core_LIF_comp/core_conmutator/conmutator.sym} 500 320 0 0 {name=x6}
-C {title.sym} -50 450 0 0 {name=l1 author="Oscar Islas"}
+C {title.sym} -60 580 0 0 {name=l1 author="Oscar Islas"}
 C {iopin.sym} -240 90 2 0 {name=p1 lab=vin}
 C {iopin.sym} -240 110 2 0 {name=p2 lab=vth}
 C {iopin.sym} -240 130 2 0 {name=p3 lab=vref}
@@ -77,3 +77,4 @@ C {lab_pin.sym} 160 310 1 0 {name=p40 sig_type=std_logic lab=vref}
 C {lab_pin.sym} 30 370 0 0 {name=p41 sig_type=std_logic lab=phi_fire}
 C {lab_pin.sym} 170 380 3 0 {name=p42 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 90 280 1 0 {name=p43 sig_type=std_logic lab=vdd}
+C {designs/libs/core_LIF_comp/core_phaseUpulse/phaseUpulse.sym} -440 570 0 0 {name=x7}
