@@ -53,6 +53,18 @@ project-root/
 └── README.md            	# This file
 ```
 
+## Clone and assemble submodules
+First things first, clone the repo, you'll know how ;)
+
+Inside the `/foss/designs/libs` directory there are two submodules gf180mcu and switch_matrix; said modules have to initiated, this can be done like this (of course in the root folder):
+
+```
+# 1) Initialize all submodules listed in .gitmodules
+git submodule update --init
+
+# 2) (Optional but handy) See what you have now
+git submodule status
+```
 <!--
 ## Project Directory Structure
 
