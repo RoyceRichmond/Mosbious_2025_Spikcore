@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=5.5e-07
+x1=2.75e-08
+x2=5.775e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -33,8 +33,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=5.5e-07
+x1=2.75e-08
+x2=5.775e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -54,8 +54,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=5.5e-07
+x1=2.75e-08
+x2=5.775e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -65,7 +65,7 @@ unitx=1
 logx=0
 logy=0
 color="4 6"
-node="\\"vin; vin clk * 0.30303 *\\"
+node="\\"vin; vin \\"
 vout"}
 N -530 -170 -530 -140 {lab=GND}
 N -530 -360 -530 -350 {lab=vdd}
@@ -158,20 +158,19 @@ C {launcher.sym} -240 -340 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/TG_bootstrapped.raw tran"
 }
-C {symbols/cap_mim_2f0fF.sym} -10 -180 0 0 {name=C1
-W=1e-6
-L=1e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {/foss/designs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} -470 -370 3 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {/foss/designs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} -470 -450 3 0 {name=x3 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} -470 -370 3 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_pin.sym} -470 -490 0 0 {name=p10 sig_type=std_logic lab=clk}
-C {/foss/designs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} -410 -420 3 0 {name=x4 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {/foss/designs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} -410 -500 3 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {title.sym} -980 670 0 0 {name=l4 author="Rosendo Valdes"}
 C {devices/vsource.sym} -620 -290 0 0 {name=V5 value=0 savecurrent=false}
 C {devices/gnd.sym} -620 -230 0 0 {name=l5 lab=GND}
 C {devices/vsource.sym} -620 -400 0 0 {name=V6 value=3.3 savecurrent=false}
 C {devices/lab_wire.sym} -620 -340 0 0 {name=p2 sig_type=std_logic lab=VSSd}
 C {devices/lab_wire.sym} -620 -460 0 0 {name=p11 sig_type=std_logic lab=VDDd}
+C {designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} -470 -450 3 0 {name=x3 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} -410 -420 3 0 {name=x4 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} -410 -500 3 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {capa.sym} -10 -180 0 0 {name=C1
+m=1
+value=1p
+footprint=1206
+device="ceramic capacitor"}
