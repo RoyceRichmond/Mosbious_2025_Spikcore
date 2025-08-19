@@ -43,10 +43,7 @@ N -120 -140 -120 0 {lab=Current_in}
 N -50 170 -20 170 {lab=vgl}
 N 40 170 260 170 {lab=Vout}
 N 260 0 290 -0 {lab=Vout}
-N -260 -70 -240 -70 {lab=vss}
 N -90 200 -90 220 {lab=vss}
-N -260 -100 -240 -100 {lab=vdd}
-C {lab_pin.sym} -260 -100 0 0 {name=p2 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -20 -100 0 0 {name=p3 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 150 -100 0 0 {name=p4 sig_type=std_logic lab=vdd}
 C {symbols/pfet_03v3.sym} 130 -50 0 0 {name=M5
@@ -136,7 +133,6 @@ C {iopin.sym} -240 -100 0 0 {name=p1 lab=vdd}
 C {iopin.sym} -240 -70 0 0 {name=p8 lab=vss}
 C {iopin.sym} -210 0 2 0 {name=p9 lab=Current_in}
 C {iopin.sym} 290 0 0 0 {name=p10 lab=Vout}
-C {lab_pin.sym} -260 -70 0 0 {name=p11 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -20 100 0 0 {name=p12 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 150 100 0 0 {name=p13 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -90 220 0 0 {name=p5 sig_type=std_logic lab=vss}
