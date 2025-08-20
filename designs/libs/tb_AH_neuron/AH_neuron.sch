@@ -5,8 +5,8 @@ V {}
 S {}
 E {}
 B 2 580 170 1090 480 {flags=graph
-y1=-0.68
-y2=2.2
+y1=-0.88
+y2=4.4
 ypos1=0
 ypos2=2
 divy=5
@@ -27,8 +27,8 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 580 -140 1090 170 {flags=graph
-y1=-0.0078
-y2=1.5
+y1=-0.0023
+y2=3.3
 ypos1=0
 ypos2=2
 divy=5
@@ -40,13 +40,13 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node="\\"vout_0.7;vout %0\\""
+node=vout
 color=6
 dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=-1
+hilight_wave=0
 rainbow=1}
 T {1.3v synapse interface} -260 -160 0 0 0.2 0.2 {}
 T {PULSE(0 1000p 1u 10n 10n 5u 10u)} -260 -180 0 0 0.2 0.2 {}
@@ -62,22 +62,18 @@ N 420 130 420 150 {lab=GND}
 N 490 140 490 150 {lab=GND}
 N 420 150 490 150 {lab=GND}
 N 210 0 210 60 {lab=#net1}
-N 265 -80 265 -75 {lab=vdd}
-N 210 -80 265 -80 {lab=vdd}
-N 265 -15 265 -5 {lab=#net1}
-N 210 -5 265 -5 {lab=#net1}
 N 270 80 290 80 {lab=vmem}
 C {vsource.sym} 80 20 0 0 {name=V1 value=vd_v savecurrent=false}
 C {devices/code_shown.sym} -435 -100 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
-.tran 10n 5m
-.param vd_v=1.6
+.tran 100n 5m
+.param vd_v=3.3
 .save allcurrents
 .options save currents
 .control
-    let start_v=1.6
-    let stop_v=1.6
-    let delta_v=0.1
+    let start_v=3.3
+    let stop_v=3.3
+    let delta_v=1.6
     let v_act=start_v
     while v_act le stop_v
 	alterparam vd_v = $&v_act
@@ -107,7 +103,7 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 "}
 C {lab_pin.sym} 490 80 2 0 {name=p6 sig_type=std_logic lab=vout}
-C {launcher.sym} 430 190 0 0 {name=h5
+C {launcher.sym} 420 190 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/sub_th_ah.raw tran"
 }

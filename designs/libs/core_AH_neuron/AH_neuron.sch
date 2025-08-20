@@ -4,7 +4,8 @@ K {}
 V {}
 S {}
 E {}
-T {og 0.22/2.4} -250 100 0 0 0.2 0.2 {}
+T {og 0.22/2.4
+1.6 0.42u/4.2u} -250 100 0 0 0.2 0.2 {}
 N 110 -50 110 50 {lab=#net1}
 N -20 -20 -20 20 {lab=#net1}
 N -20 0 110 0 {lab=#net1}
@@ -47,7 +48,7 @@ N -90 200 -90 220 {lab=vss}
 C {lab_pin.sym} -20 -100 0 0 {name=p3 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 150 -100 0 0 {name=p4 sig_type=std_logic lab=vdd}
 C {symbols/pfet_03v3.sym} 130 -50 0 0 {name=M5
-L=0.28u
+L=1.28u
 W=0.42u
 nf=1
 m=1
@@ -75,7 +76,7 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 130 50 0 0 {name=M2
-L=0.28u
+L=0.78u
 W=0.42u
 nf=1
 m=1
@@ -103,8 +104,8 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} -70 170 0 1 {name=M4
-L=4.2u
-W=0.42u
+L=11.2u
+W=0.84u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -116,18 +117,6 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/cap_mim_1f0fF.sym} 60 -140 3 0 {name=C1
-W=1e-6
-L=1e-6
-model=cap_mim_1f0fF
-spiceprefix=X
-m=25}
-C {symbols/cap_mim_1f0fF.sym} 10 170 1 0 {name=C2
-W=1e-6
-L=1e-6
-model=cap_mim_1f0fF
-spiceprefix=X
-m=1}
 C {lab_pin.sym} -30 170 1 0 {name=p7 sig_type=std_logic lab=vgl}
 C {iopin.sym} -240 -100 0 0 {name=p1 lab=vdd}
 C {iopin.sym} -240 -70 0 0 {name=p8 lab=vss}
@@ -137,3 +126,15 @@ C {lab_pin.sym} -20 100 0 0 {name=p12 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 150 100 0 0 {name=p13 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -90 220 0 0 {name=p5 sig_type=std_logic lab=vss}
 C {title.sym} -260 310 0 0 {name=l1 author="Royce Richmond"}
+C {symbols/cap_mim_2f0fF.sym} 60 -140 1 0 {name=C3
+W=1e-6
+L=1e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=25}
+C {symbols/cap_mim_2f0fF.sym} 10 170 1 0 {name=C1
+W=1e-6
+L=1e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
