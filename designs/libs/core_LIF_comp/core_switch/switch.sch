@@ -19,6 +19,9 @@ N -100 -80 -100 -50 {lab=vdd}
 N -100 70 -100 90 {lab=vss}
 N -200 10 -170 10 {lab=cntrl}
 N 100 -150 120 -150 {lab=out}
+N -100 -50 -100 -30 {lab=vdd}
+N -20 10 -0 10 {lab=#net1}
+N -100 50 -100 70 {lab=vss}
 C {designs/libs/core_LIF_comp/core_not/not.sym} -280 0 0 0 {name=x1}
 C {lab_pin.sym} -40 -330 0 0 {name=p3 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 70 -90 0 0 {name=p4 sig_type=std_logic lab=vdd}

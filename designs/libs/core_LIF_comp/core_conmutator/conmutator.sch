@@ -30,6 +30,9 @@ N 90 0 90 280 {lab=cntrl}
 N 160 -90 160 -60 {lab=vdd}
 N 160 60 160 80 {lab=vss}
 N 60 0 90 0 {lab=cntrl}
+N 160 -60 160 -40 {lab=vdd}
+N 160 40 160 60 {lab=vss}
+N 240 0 260 0 {lab=#net1}
 C {designs/libs/core_LIF_comp/core_not/not.sym} -20 -10 0 0 {name=x1}
 C {lab_pin.sym} 330 -370 0 0 {name=p3 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 330 -100 0 0 {name=p4 sig_type=std_logic lab=vdd}
