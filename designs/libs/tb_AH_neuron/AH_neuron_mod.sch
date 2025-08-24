@@ -5,8 +5,8 @@ V {}
 S {}
 E {}
 B 2 580 170 1090 480 {flags=graph
-y1=-0.83
-y2=3.8
+y1=-0.87
+y2=4.2
 ypos1=0
 ypos2=2
 divy=5
@@ -27,7 +27,7 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 580 -140 1090 170 {flags=graph
-y1=-1.2e-07
+y1=-0.00094
 y2=3
 ypos1=0
 ypos2=2
@@ -53,17 +53,15 @@ T {1.3v synapse interface} -260 -160 0 0 0.2 0.2 {}
 T {PULSE(0 1000p 1u 10n 10n 5u 10u)} -260 -180 0 0 0.2 0.2 {}
 N 80 50 80 80 {lab=GND}
 N 80 -140 80 -130 {lab=vdd}
-N 210 -20 210 0 {lab=#net1}
-N 210 60 210 80 {lab=#net1}
+N 210 -20 210 80 {lab=#net1}
 N 210 -100 210 -80 {lab=vdd}
 N 420 0 420 30 {lab=vdd}
-N 290 80 370 80 {lab=vmem}
 N 470 80 490 80 {lab=vout}
 N 420 130 420 150 {lab=GND}
 N 490 140 490 150 {lab=GND}
 N 420 150 490 150 {lab=GND}
-N 210 0 210 60 {lab=#net1}
-N 270 80 290 80 {lab=vmem}
+N 270 80 370 80 {lab=vmem}
+N 80 360 80 390 {lab=GND}
 C {vsource.sym} 80 20 0 0 {name=V1 value=vd_v savecurrent=false}
 C {devices/code_shown.sym} -435 -100 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
@@ -108,7 +106,6 @@ C {launcher.sym} 420 190 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/sub_th_ah.raw tran"
 }
-C {designs/libs/core_AH_neuron/AH_neuron.sym} 180 70 0 0 {name=x1}
 C {lab_pin.sym} 320 80 3 0 {name=p4 sig_type=std_logic lab=vmem}
 C {res.sym} 80 -40 0 0 {name=R1
 value=10
@@ -124,3 +121,13 @@ device=resistor
 m=1}
 C {title.sym} -170 570 0 0 {name=l3 author="Royce Richmond"}
 C {ammeter.sym} 240 80 3 0 {name=Vdd_c1 savecurrent=true spice_ignore=0}
+C {designs/libs/core_AH_neuron_mod_high/AH_neuron_mod_high.sym} 180 70 0 0 {name=x1}
+C {lab_pin.sym} 380 100 0 0 {name=p7 sig_type=std_logic lab=v_bias}
+C {vsource.sym} 80 330 0 0 {name=V2 value=0.51 savecurrent=false}
+C {lab_pin.sym} 80 240 0 0 {name=p5 sig_type=std_logic lab=v_bias}
+C {res.sym} 80 270 0 0 {name=R3
+value=10
+footprint=1206
+device=resistor
+m=1}
+C {gnd.sym} 80 390 0 0 {name=l4 lab=GND}
