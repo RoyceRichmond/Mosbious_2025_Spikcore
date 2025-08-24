@@ -4007,17 +4007,5 @@
   </cell>
  </cells>
  <items>
-  <item>
-   <tags/>
-   <category>'MIMTM.3'</category>
-   <cell>AH_neuron</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-0.535,3.785;-0.535,8.785;4.465,8.785;4.465,3.785)</value>
-   </values>
-  </item>
  </items>
 </report-database>
