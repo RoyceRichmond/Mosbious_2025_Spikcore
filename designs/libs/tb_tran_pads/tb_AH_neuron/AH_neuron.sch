@@ -5,15 +5,15 @@ V {}
 S {}
 E {}
 B 2 580 170 1090 480 {flags=graph
-y1=-0.85
+y1=-0.75
 y2=4
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.00036942931
-x2=0.00096316566
+x1=0
+x2=0.005
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -27,27 +27,27 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 580 -140 1090 170 {flags=graph
-y1=1.6e-08
-y2=2.9
+y1=-2e-07
+y2=2.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.00036942931
-x2=0.00096316566
+x1=0
+x2=0.005
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node=vout
-color=6
 dataset=-1
 unitx=1
 logx=0
 logy=0
 hilight_wave=0
-rainbow=1}
+rainbow=1
+color=4
+node=pad}
 T {1.3v synapse interface} -260 -160 0 0 0.2 0.2 {}
 T {PULSE(0 1000p 1u 10n 10n 5u 10u)} -260 -180 0 0 0.2 0.2 {}
 N 80 50 80 80 {lab=GND}
@@ -57,12 +57,18 @@ N 210 60 210 80 {lab=#net1}
 N 210 -100 210 -80 {lab=vdd}
 N 420 0 420 30 {lab=vdd}
 N 290 80 370 80 {lab=vmem}
-N 470 80 490 80 {lab=vout}
+N 470 80 490 80 {lab=ASIG}
 N 420 130 420 150 {lab=GND}
-N 490 140 490 150 {lab=GND}
-N 420 150 490 150 {lab=GND}
 N 210 0 210 60 {lab=#net1}
 N 270 80 290 80 {lab=vmem}
+N -360 -430 -360 -390 {lab=GND}
+N -160 -430 -160 -390 {lab=GND}
+N -60 -430 -60 -390 {lab=GND}
+N -360 -530 -360 -490 {lab=DVDD}
+N -160 -530 -160 -490 {lab=DVSS}
+N -60 -530 -60 -490 {lab=VSS}
+N -360 -390 -60 -390 {lab=GND}
+N -210 -390 -210 -370 {lab=GND}
 C {vsource.sym} 80 20 0 0 {name=V1 value=vd_v savecurrent=false}
 C {devices/code_shown.sym} -435 -100 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
@@ -96,14 +102,15 @@ C {devices/code_shown.sym} -480 380 0 0 {name=MODELS1 only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
+.lib $::180MCU_MODELS/sm141064.ngspice diode_typical
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 .lib $::180MCU_MODELS/sm141064.ngspice cap_mim
 .lib $::180MCU_MODELS/sm141064.ngspice res_typical
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 "}
-C {lab_pin.sym} 490 80 2 0 {name=p6 sig_type=std_logic lab=vout}
-C {launcher.sym} 420 190 0 0 {name=h5
+C {lab_pin.sym} 490 80 2 0 {name=p6 sig_type=std_logic lab=ASIG}
+C {launcher.sym} 420 200 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/sub_th_ah.raw tran"
 }
@@ -116,10 +123,25 @@ device=resistor
 m=1}
 C {gnd.sym} 420 150 0 0 {name=l1 lab=GND}
 C {gnd.sym} 80 80 0 0 {name=l2 lab=GND}
-C {res.sym} 490 110 0 0 {name=R2
+C {res.sym} 180 240 0 0 {name=R2
 value=250k
 footprint=1206
 device=resistor
 m=1}
 C {title.sym} -170 570 0 0 {name=l3 author="Royce Richmond"}
 C {ammeter.sym} 240 80 3 0 {name=Vdd_c1 savecurrent=true spice_ignore=0}
+C {devices/code_shown.sym} -420 -300 0 0 {name=DUT only_toplevel=true
+format="tcleval( @value )"
+value="
+.include "/foss/designs/sscs-chipathon-2025/resources/Integration/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice"
+XDUT DVSS DVDD VSS VDD PAD ASIG gf180mcu_fd_io__asig_5p0_extracted
+"}
+C {vsource.sym} -360 -460 0 0 {name=V2 value=5 savecurrent=false}
+C {vsource.sym} -160 -460 0 0 {name=V4 value=0 savecurrent=false}
+C {vsource.sym} -60 -460 0 0 {name=V5 value=0 savecurrent=false}
+C {lab_wire.sym} -360 -530 0 0 {name=p5 sig_type=std_logic lab=DVDD}
+C {gnd.sym} -210 -370 0 0 {name=l4 lab=GND}
+C {lab_wire.sym} -160 -530 0 0 {name=p8 sig_type=std_logic lab=DVSS}
+C {lab_wire.sym} -60 -530 0 0 {name=p9 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 180 210 0 0 {name=p7 sig_type=std_logic lab=pad}
+C {gnd.sym} 180 270 0 0 {name=l5 lab=GND}

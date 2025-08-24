@@ -5,15 +5,15 @@ V {}
 S {}
 E {}
 B 2 1450 -2150 1930 -1820 {flags=graph
-y1=-8.2e-07
+y1=-6.4e-07
 y2=6.7
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.00025
+x1=6.25e-05
+x2=0.0003125
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -34,8 +34,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.00025
+x1=6.25e-05
+x2=0.0003125
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -49,15 +49,15 @@ logx=0
 logy=0
 hilight_wave=3}
 B 2 1790 -1490 2270 -1160 {flags=graph
-y1=1.08e-05
-y2=6.38e-05
+y1=-5.2e-05
+y2=4.7e-05
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.00025
+x1=6.25e-05
+x2=0.0003125
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -78,15 +78,17 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.00025
+x1=6.25e-05
+x2=0.0003125
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
 node="out_neuron2
-out_spike2"
-color="9 6"
+out_spike2
+out_neuron3
+out_spike3"
+color="9 6 7 4"
 dataset=-1
 unitx=1
 logx=0
@@ -114,6 +116,8 @@ N 1010 -1760 1020 -1760 {lab=#net5}
 N 1090 -1530 1100 -1530 {lab=#net6}
 N 1280 -1450 1280 -1370 {lab=out_spike2}
 N 1280 -1370 1320 -1370 {lab=out_spike2}
+N 1660 -1090 1670 -1090 {lab=#net7}
+N 1280 -1350 1320 -1350 {lab=out_spike3}
 C {launcher.sym} 660 -1045 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/neuron_synapse.raw tran"
@@ -244,3 +248,14 @@ C {lab_pin.sym} 1160 -1530 1 0 {name=p24 sig_type=std_logic lab=out_spike2}
 C {ammeter.sym} 1130 -1530 3 0 {name=Vmeas2 savecurrent=true spice_ignore=0}
 C {lab_pin.sym} 1280 -1450 1 0 {name=p25 sig_type=std_logic lab=out_spike2}
 C {lab_pin.sym} 1530 -1370 2 0 {name=p26 sig_type=std_logic lab=out_neuron2}
+C {lab_pin.sym} 1560 -1170 0 0 {name=p27 sig_type=std_logic lab=vdd}
+C {gnd.sym} 1560 -1020 0 0 {name=l8 lab=GND}
+C {lab_pin.sym} 1450 -1070 0 0 {name=p33 sig_type=std_logic lab=vi}
+C {lab_pin.sym} 1450 -1050 0 0 {name=p34 sig_type=std_logic lab=ve}
+C {lab_pin.sym} 1450 -1140 0 0 {name=p36 sig_type=std_logic lab=v_ctrl}
+C {designs/libs/core_synapse/synapse.sym} 1530 -900 0 0 {name=x8}
+C {lab_pin.sym} 1730 -1090 1 0 {name=p37 sig_type=std_logic lab=out_spike3}
+C {ammeter.sym} 1700 -1090 3 0 {name=Vmeas3 savecurrent=true spice_ignore=0}
+C {lab_pin.sym} 1450 -1090 0 0 {name=p38 sig_type=std_logic lab=out_neuron2}
+C {lab_pin.sym} 1280 -1350 3 0 {name=p35 sig_type=std_logic lab=out_spike3}
+C {lab_pin.sym} 1530 -1350 2 0 {name=p39 sig_type=std_logic lab=out_neuron3}
