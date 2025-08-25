@@ -13,7 +13,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.002
+x2=0.0005
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -27,15 +27,15 @@ logx=0
 logy=0
 hilight_wave=0}
 B 2 1450 -1820 1930 -1490 {flags=graph
-y1=-0.24
-y2=0.97
+y1=-0.23
+y2=0.85
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.002
+x2=0.0005
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -47,7 +47,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=1}
+hilight_wave=0}
 B 2 1790 -1490 2270 -1160 {flags=graph
 y1=-5.2e-05
 y2=4.7e-05
@@ -57,7 +57,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.002
+x2=0.0005
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -66,34 +66,54 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=0
+hilight_wave=1
 color="6 4"
 node="i(vmeas1)
 i(vmeas)"}
 B 2 1930 -1820 2410 -1490 {flags=graph
-y1=-0.8
-y2=3.6
+y1=-0.33
+y2=3.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.002
+x2=0.0005
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
 node="out_neuron2
-out_spike2
-out_neuron3
-out_spike3"
-color="9 6 7 4"
+out_spike2"
+color="9 6"
 dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=2}
+hilight_wave=1}
+B 2 2410 -1820 2890 -1490 {flags=graph
+y1=-0.19
+y2=3.4
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.0005
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node="out_neuron3
+out_spike3"
+color="9 6"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+hilight_wave=0}
 N 1030 -1320 1040 -1320 {lab=#net1}
 N 535 -1150 535 -1120 {lab=GND}
 N 535 -1300 535 -1290 {lab=#net2}
@@ -118,13 +138,14 @@ N 1280 -1450 1280 -1370 {lab=out_spike2}
 N 1280 -1370 1320 -1370 {lab=out_spike2}
 N 1660 -1090 1670 -1090 {lab=#net7}
 N 1280 -1350 1320 -1350 {lab=out_spike3}
-C {launcher.sym} 660 -1045 0 0 {name=h5
+N 430 -1170 430 -1140 {lab=GND}
+C {launcher.sym} 1640 -1455 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/neuron_synapse.raw tran"
 }
 C {devices/code_shown.sym} -45 -1710 0 0 {name=s2 only_toplevel=false value="
 .option method=gear seed=12
-.tran 100n 2m
+.tran 100n 500u
 .param ve=0.37
 .param vi=0
 .param vi2=0.3
@@ -251,7 +272,7 @@ C {lab_pin.sym} 1530 -1370 2 0 {name=p26 sig_type=std_logic lab=out_neuron2}
 C {lab_pin.sym} 1560 -1170 0 0 {name=p27 sig_type=std_logic lab=vdd}
 C {gnd.sym} 1560 -1020 0 0 {name=l8 lab=GND}
 C {lab_pin.sym} 1450 -1070 0 0 {name=p33 sig_type=std_logic lab=vi}
-C {lab_pin.sym} 1450 -1050 0 0 {name=p34 sig_type=std_logic lab=ve}
+C {lab_pin.sym} 1450 -1050 0 0 {name=p34 sig_type=std_logic lab=vi2}
 C {lab_pin.sym} 1450 -1140 0 0 {name=p36 sig_type=std_logic lab=v_ctrl}
 C {designs/libs/core_synapse/synapse.sym} 1530 -900 0 0 {name=x8}
 C {lab_pin.sym} 1730 -1090 1 0 {name=p37 sig_type=std_logic lab=out_spike3}
@@ -259,3 +280,12 @@ C {ammeter.sym} 1700 -1090 3 0 {name=Vmeas3 savecurrent=true spice_ignore=0}
 C {lab_pin.sym} 1450 -1090 0 0 {name=p38 sig_type=std_logic lab=out_neuron2}
 C {lab_pin.sym} 1280 -1350 3 0 {name=p35 sig_type=std_logic lab=out_spike3}
 C {lab_pin.sym} 1530 -1350 2 0 {name=p39 sig_type=std_logic lab=out_neuron3}
+C {vsource.sym} 430 -1200 0 0 {name=V2 value=0.6 savecurrent=false}
+C {lab_pin.sym} 430 -1290 0 0 {name=p40 sig_type=std_logic lab=v_bias}
+C {res.sym} 430 -1260 0 0 {name=R3
+value=10
+footprint=1206
+device=resistor
+m=1}
+C {gnd.sym} 430 -1140 0 0 {name=l9 lab=GND}
+C {lab_pin.sym} 1320 -1250 3 0 {name=p41 sig_type=std_logic lab=v_bias}

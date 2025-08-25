@@ -64,6 +64,7 @@ N 490 140 490 150 {lab=GND}
 N 420 150 490 150 {lab=GND}
 N 210 0 210 60 {lab=#net1}
 N 270 80 290 80 {lab=vmem}
+N 80 260 80 290 {lab=GND}
 C {vsource.sym} 80 20 0 0 {name=V1 value=vd_v savecurrent=false}
 C {devices/code_shown.sym} -435 -100 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
@@ -124,3 +125,12 @@ device=resistor
 m=1}
 C {title.sym} -170 570 0 0 {name=l3 author="Royce Richmond"}
 C {ammeter.sym} 240 80 3 0 {name=Vdd_c1 savecurrent=true spice_ignore=0}
+C {vsource.sym} 80 230 0 0 {name=V2 value=0.50 savecurrent=false}
+C {lab_pin.sym} 80 140 0 0 {name=p5 sig_type=std_logic lab=v_bias}
+C {res.sym} 80 170 0 0 {name=R3
+value=10
+footprint=1206
+device=resistor
+m=1}
+C {gnd.sym} 80 290 0 0 {name=l4 lab=GND}
+C {lab_pin.sym} 380 100 3 0 {name=p7 sig_type=std_logic lab=v_bias}

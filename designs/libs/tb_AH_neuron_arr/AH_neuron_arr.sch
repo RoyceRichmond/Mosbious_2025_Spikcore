@@ -28,8 +28,8 @@ node="vin_0
 vin_1
 vin_2"}
 B 2 580 -140 1090 170 {flags=graph
-y1=-0.0098
-y2=1.5
+y1=-0.014
+y2=1.1
 ypos1=0
 ypos2=2
 divy=5
@@ -56,7 +56,6 @@ T {PULSE(0 1000p 1u 10n 10n 5u 10u)} -260 -180 0 0 0.2 0.2 {}
 N 80 50 80 80 {lab=GND}
 N 80 -140 80 -130 {lab=vdd}
 N 200 50 200 60 {lab=GND}
-N 30 350 30 370 {lab=GND}
 N 30 330 30 350 {lab=GND}
 N 30 310 30 330 {lab=GND}
 N 30 290 30 310 {lab=GND}
@@ -86,6 +85,7 @@ N 490 -20 490 -10 {lab=vout_5}
 N 550 -20 550 -10 {lab=vout_6}
 N 350 -410 350 -390 {lab=vdd}
 N 350 -330 350 -320 {lab=vin_2}
+N -30 40 -30 70 {lab=GND}
 C {vsource.sym} 80 20 0 0 {name=V1 value=vd_v savecurrent=false}
 C {devices/code_shown.sym} -485 100 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
@@ -135,7 +135,7 @@ device=resistor
 m=1}
 C {title.sym} -170 570 0 0 {name=l3 author="Royce Richmond"}
 C {designs/libs/core_AH_neuron_arr/AH_neuron_arr.sym} 270 320 0 0 {name=x2}
-C {gnd.sym} 30 370 0 0 {name=l4 lab=GND}
+C {gnd.sym} 30 350 1 0 {name=l4 lab=GND}
 C {gnd.sym} 240 370 0 0 {name=l5 lab=GND}
 C {lab_pin.sym} 30 210 0 0 {name=p5 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 200 -20 1 0 {name=p3 sig_type=std_logic lab=vout_0}
@@ -196,3 +196,12 @@ C {lab_pin.sym} 30 270 0 0 {name=p23 sig_type=std_logic lab=vin_2}
 C {isource.sym} 350 -360 0 0 {name=I2 value="PULSE(0 600p 1u 10n 10n 1u 5u)"}
 C {lab_pin.sym} 350 -410 0 0 {name=p24 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 350 -320 0 0 {name=p25 sig_type=std_logic lab=vin_2}
+C {vsource.sym} -30 10 0 0 {name=V2 value=0.50 savecurrent=false}
+C {lab_pin.sym} -30 -80 0 0 {name=p26 sig_type=std_logic lab=v_bias}
+C {res.sym} -30 -50 0 0 {name=R9
+value=10
+footprint=1206
+device=resistor
+m=1}
+C {gnd.sym} -30 70 0 0 {name=l12 lab=GND}
+C {lab_pin.sym} 30 370 3 0 {name=p27 sig_type=std_logic lab=v_bias}

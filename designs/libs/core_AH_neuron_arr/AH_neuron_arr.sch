@@ -84,3 +84,11 @@ C {iopin.sym} -110 -20 2 0 {name=p41 lab=I_in_4}
 C {iopin.sym} -90 -20 0 0 {name=p42 lab=vout_4}
 C {iopin.sym} -110 0 2 0 {name=p43 lab=I_in_5}
 C {iopin.sym} -90 0 0 0 {name=p44 lab=vout_5}
+C {iopin.sym} -80 -140 2 0 {name=p45 lab=vbias}
+C {lab_pin.sym} 140 -160 0 0 {name=p46 sig_type=std_logic lab=vbias}
+C {lab_pin.sym} 420 -160 0 0 {name=p47 sig_type=std_logic lab=vbias}
+C {lab_pin.sym} 140 10 0 0 {name=p48 sig_type=std_logic lab=vbias}
+C {lab_pin.sym} 420 10 0 0 {name=p49 sig_type=std_logic lab=vbias}
+C {lab_pin.sym} 420 180 0 0 {name=p50 sig_type=std_logic lab=vbias}
+C {lab_pin.sym} 690 10 0 0 {name=p51 sig_type=std_logic lab=vbias}
+C {lab_pin.sym} 690 -160 0 0 {name=p52 sig_type=std_logic lab=vbias}
