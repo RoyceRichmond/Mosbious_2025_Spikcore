@@ -5,15 +5,15 @@ V {}
 S {}
 E {}
 B 2 -740 -260 60 140 {flags=graph
-y1=-0.22032241
-y2=3.8925941
+y1=-0.8104233
+y2=4.9783767
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=4e-07
+x1=1.5655197e-07
+x2=3.4781835e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -36,8 +36,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=4e-07
+x1=1.5655197e-07
+x2=3.4781835e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -110,7 +110,7 @@ N 470 -240 490 -240 {lab=vdd}
 N 470 -240 470 -210 {lab=vdd}
 N 470 -210 490 -210 {lab=vdd}
 C {symbols/pfet_03v3.sym} 290 -170 0 0 {name=M2
-L=0.28u
+L=0.5u
 W=2u
 nf=1
 m=1
@@ -170,7 +170,7 @@ C {lab_pin.sym} 130 -140 0 0 {name=p9 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 430 -200 0 1 {name=p10 sig_type=std_logic lab=outx}
 C {symbols/nfet_03v3.sym} 290 70 0 0 {name=M1
 L=0.28u
-W=2u
+W=4u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -184,7 +184,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 290 -10 0 0 {name=M4
 L=0.28u
-W=2u
+W=3u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -198,7 +198,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 290 -90 0 0 {name=M3
 L=0.28u
-W=2u
+W=2.5u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -211,8 +211,8 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 450 -20 0 0 {name=M5
-L=0.28u
-W=2u
+L=0.5u
+W=6u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -225,8 +225,8 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 460 -120 0 0 {name=M6
-L=0.28u
-W=2u
+L=0.3u
+W=5u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
