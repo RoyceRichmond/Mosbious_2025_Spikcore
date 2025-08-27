@@ -1,0 +1,17 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 27/08/2025 21:03
+
+.SUBCKT AH_neuron v_bias Current_in vss vout vdd
+M$1 \$17 Current_in vdd vdd pfet_03v3 L=0.56U W=0.44U AS=0.286P AD=0.286P
++ PS=2.18U PD=2.18U
+M$2 vout \$17 vdd vdd pfet_03v3 L=1.4U W=0.84U AS=0.546P AD=0.546P PS=2.98U
++ PD=2.98U
+M$3 \$6 vout vss vss nfet_03v3_dn L=1.68U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U
++ PD=2.1U
+M$4 \$6 v_bias Current_in vss nfet_03v3_dn L=5.6U W=0.42U AS=0.2646P AD=0.2646P
++ PS=2.1U PD=2.1U
+M$5 \$17 Current_in vss vss nfet_03v3_dn L=0.56U W=0.44U AS=0.2684P AD=0.2684P
++ PS=2.1U PD=2.1U
+M$6 vout \$17 vss vss nfet_03v3_dn L=0.78U W=0.42U AS=0.2646P AD=0.2646P
++ PS=2.1U PD=2.1U
+C$7 vout \$24 6e-14 cap_mim_2f0_m5m6_noshield A=30P P=22U
+.ENDS AH_neuron
