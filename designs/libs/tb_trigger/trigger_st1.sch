@@ -12,53 +12,54 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.5655197e-07
-x2=3.4781835e-07
+x1=0
+x2=8e-09
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
 node="out
-
+outy
 outx
 sig"
-color="4 9 13"
+color="4 6 13 9"
 dataset=-1
 unitx=1
 logx=0
 logy=0
-}
+hilight_wave=1}
 B 2 500 70 1300 470 {flags=graph
-y1=-0.023
-y2=3.5
+y1=-0.077
+y2=3.4
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.5655197e-07
-x2=3.4781835e-07
+x1=0
+x2=8e-09
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node=out
-color=13
+node="out
+sig"
+color="13 9"
 dataset=-1
 unitx=1
 logx=0
 logy=0
 }
 N 310 20 310 40 {lab=#net1}
-N 310 -60 310 -40 {lab=#net2}
+N 310 -60 310 -40 {lab=outy}
 N 310 -140 310 -120 {lab=outx}
 N 310 30 470 30 {lab=#net1}
 N 470 10 470 30 {lab=#net1}
-N 310 -50 430 -50 {lab=#net2}
-N 430 -50 430 -20 {lab=#net2}
+N 310 -50 430 -50 {lab=outy}
+N 430 -50 430 -20 {lab=outy}
 N 470 -20 490 -20 {lab=GND}
-N 430 -90 430 -50 {lab=#net2}
-N 430 -90 480 -90 {lab=#net2}
+N 430 -90 430 -50 {lab=outy}
+N 430 -90 480 -90 {lab=outy}
 N 310 -130 420 -130 {lab=outx}
 N 420 -180 420 -130 {lab=outx}
 N 420 -180 540 -180 {lab=outx}
@@ -109,6 +110,38 @@ N 490 -260 490 -240 {lab=vdd}
 N 470 -240 490 -240 {lab=vdd}
 N 470 -240 470 -210 {lab=vdd}
 N 470 -210 490 -210 {lab=vdd}
+N 870 -140 900 -140 {lab=GND}
+N 870 -110 880 -110 {lab=GND}
+N 880 -140 880 -110 {lab=GND}
+N 870 -170 890 -170 {lab=GND}
+N 890 -170 890 -140 {lab=GND}
+N 800 -140 830 -140 {lab=outx}
+N 900 -240 930 -240 {lab=vdd}
+N 900 -210 910 -210 {lab=vdd}
+N 910 -240 910 -210 {lab=vdd}
+N 900 -270 920 -270 {lab=vdd}
+N 920 -270 920 -240 {lab=vdd}
+N 830 -240 860 -240 {lab=outx}
+N 1130 -150 1160 -150 {lab=GND}
+N 1130 -120 1140 -120 {lab=GND}
+N 1140 -150 1140 -120 {lab=GND}
+N 1130 -180 1150 -180 {lab=GND}
+N 1150 -180 1150 -150 {lab=GND}
+N 1060 -150 1090 -150 {lab=outy}
+N 1130 -240 1160 -240 {lab=vdd}
+N 1130 -210 1140 -210 {lab=vdd}
+N 1140 -240 1140 -210 {lab=vdd}
+N 1130 -270 1150 -270 {lab=vdd}
+N 1150 -270 1150 -240 {lab=vdd}
+N 1060 -240 1090 -240 {lab=outy}
+N 1390 -160 1420 -160 {lab=GND}
+N 1390 -130 1400 -130 {lab=GND}
+N 1400 -160 1400 -130 {lab=GND}
+N 1320 -160 1350 -160 {lab=vdd}
+N 1420 -260 1450 -260 {lab=vdd}
+N 1420 -230 1430 -230 {lab=vdd}
+N 1430 -260 1430 -230 {lab=vdd}
+N 1350 -260 1380 -260 {lab=GND}
 C {symbols/pfet_03v3.sym} 290 -170 0 0 {name=M2
 L=0.5u
 W=2u
@@ -136,7 +169,7 @@ value="
 "}
 C {devices/code_shown.sym} 185 160 0 0 {name=s2 only_toplevel=false value="
 *.option method=gear seed=12
-.param frec=10000k
+.param frec=1000000k
 .param period=1/frec
 .param half_period=period/2
 .tran \{period/1000\} \{4*period\} 0
@@ -158,7 +191,7 @@ C {gnd.sym} 350 -10 0 0 {name=l4 lab=GND}
 C {gnd.sym} 600 -100 0 0 {name=l5 lab=GND}
 C {lab_pin.sym} 600 -270 0 0 {name=p5 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 630 -180 0 1 {name=p6 sig_type=std_logic lab=out}
-C {launcher.sym} -80 160 0 0 {name=h5
+C {launcher.sym} -70 160 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/trigger_st1.raw tran"
 }
@@ -267,9 +300,28 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {gnd.sym} 330 -90 0 0 {name=l7 lab=GND}
-C {symbols/pfet_03v3.sym} 510 -210 0 1 {name=M9
-L=1u
-W=0.22u
+C {lab_pin.sym} 490 -260 0 0 {name=p4 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 400 -50 1 1 {name=p13 sig_type=std_logic lab=outy}
+C {symbols/nfet_03v3.sym} 850 -140 0 0 {name=M10
+L=0.8u
+W=2.5u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {gnd.sym} 900 -140 0 0 {name=l9 lab=GND}
+C {lab_pin.sym} 800 -140 0 0 {name=p12 sig_type=std_logic lab=outx}
+C {lab_pin.sym} 830 -240 0 0 {name=p11 sig_type=std_logic lab=outx}
+C {symbols/pfet_03v3.sym} 880 -240 2 1 {name=M11
+L=0.8u
+W=2.5u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -281,4 +333,70 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {lab_pin.sym} 490 -260 0 0 {name=p4 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 930 -240 0 1 {name=p14 sig_type=std_logic lab=vdd}
+C {symbols/nfet_03v3.sym} 1110 -150 0 0 {name=M12
+L=0.8u
+W=2.2u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {gnd.sym} 1160 -150 0 0 {name=l8 lab=GND}
+C {lab_pin.sym} 1060 -150 0 0 {name=p15 sig_type=std_logic lab=outy}
+C {symbols/pfet_03v3.sym} 1110 -240 2 1 {name=M13
+L=0.8u
+W=2.5u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {lab_pin.sym} 1160 -240 0 1 {name=p17 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 1060 -240 0 0 {name=p16 sig_type=std_logic lab=outy}
+C {symbols/nfet_03v3.sym} 1370 -160 0 0 {name=M9
+L=2u
+W=0.4u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {gnd.sym} 1420 -160 0 0 {name=l10 lab=GND}
+C {symbols/pfet_03v3.sym} 1400 -260 2 1 {name=M14
+L=1u
+W=0.4u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {lab_pin.sym} 1450 -260 0 1 {name=p18 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 1320 -160 0 0 {name=p19 sig_type=std_logic lab=vdd}
+C {gnd.sym} 1350 -260 0 0 {name=l11 lab=GND}
+C {lab_pin.sym} 1390 -190 0 1 {name=p20 sig_type=std_logic lab=out}
+C {lab_pin.sym} 1420 -290 0 1 {name=p21 sig_type=std_logic lab=out}
