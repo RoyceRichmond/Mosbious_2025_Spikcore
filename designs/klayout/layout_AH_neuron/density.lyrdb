@@ -5,30 +5,6 @@
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
  <top-cell>AH_neuron</top-cell>
  <tags>
-  <tag>
-   <name>waived</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>red</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>green</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>blue</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>yellow</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>important</name>
-   <description/>
-  </tag>
  </tags>
  <categories>
   <category>
@@ -106,7 +82,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (6.755,0.045;6.755,1.425;8.435,1.425;8.435,0.045)</value>
+    <value>polygon: (5.355,0.045;5.355,1.425;7.035,1.425;7.035,0.045)</value>
    </values>
   </item>
   <item>
@@ -190,7 +166,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (1.675,-0.85;1.675,1.115;2.075,1.115;2.075,-0.45;8.635,-0.45;8.635,0.745;9.035,0.745;9.035,-0.85)</value>
+    <value>polygon: (1.675,-0.85;1.675,1.115;2.075,1.115;2.075,-0.45;7.245,-0.45;7.245,0.745;7.645,0.745;7.645,-0.85)</value>
    </values>
   </item>
   <item>
@@ -226,7 +202,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (2.395,0.365;2.395,2.88;-1.01,2.88;-1.01,3.84;0.19,3.84;0.19,4.845;1.505,4.845;1.505,4.465;0.805,4.465;0.805,3.84;3.415,3.84;3.415,1.485;6.545,1.485;6.545,0.365)</value>
+    <value>polygon: (2.395,0.365;2.395,2.88;-1.01,2.88;-1.01,3.84;0.19,3.84;0.19,4.845;1.505,4.845;1.505,4.465;0.805,4.465;0.805,3.84;3.415,3.84;3.415,1.005;5.145,1.005;5.145,0.365)</value>
    </values>
   </item>
   <item>
@@ -262,7 +238,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (6.895,1.055;6.895,4.465;2.705,4.465;2.705,7.135;3.28,7.135;3.28,9.905;8.295,9.905;8.295,1.055)</value>
+    <value>polygon: (5.495,1.055;5.495,4.465;2.705,4.465;2.705,7.135;3.28,7.135;3.28,9.905;6.895,9.905;6.895,1.055)</value>
    </values>
   </item>
   <item>
@@ -274,7 +250,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-10.77,-5.815;-10.77,11.4;15.075,11.4;15.075,-5.815/-10.37,-5.415;14.675,-5.415;14.675,11;-10.37,11)</value>
+    <value>polygon: (-10.77,-5.815;-10.77,11.4;13.675,11.4;13.675,-5.815/-10.37,-5.415;13.275,-5.415;13.275,11;-10.37,11)</value>
    </values>
   </item>
   <item>
