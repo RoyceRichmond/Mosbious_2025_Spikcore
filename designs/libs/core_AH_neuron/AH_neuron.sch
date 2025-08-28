@@ -51,7 +51,7 @@ N -90 0 -90 80 {lab=Current_in}
 C {lab_pin.sym} -20 -100 0 0 {name=p3 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 150 -100 0 0 {name=p4 sig_type=std_logic lab=vdd}
 C {symbols/pfet_03v3.sym} 130 -50 0 0 {name=M5
-L=1.68u
+L=1.4u
 W=0.84u
 nf=1
 m=1
@@ -107,8 +107,8 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} -70 170 0 1 {name=M4
-L=5.6u
-W=0.28u
+L=1.68u
+W=0.42u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -136,7 +136,7 @@ spiceprefix=X
 m=30}
 C {symbols/nfet_03v3.sym} -70 110 0 1 {name=M6
 L=5.6u
-W=0.28u
+W=0.42u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"

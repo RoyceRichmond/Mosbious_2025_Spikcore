@@ -91,7 +91,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=1}
+hilight_wave=0}
 B 2 2410 -1820 2890 -1490 {flags=graph
 y1=-0.19
 y2=3.4
@@ -113,7 +113,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=0}
+hilight_wave=1}
 N 1030 -1320 1040 -1320 {lab=#net1}
 N 535 -1150 535 -1120 {lab=GND}
 N 535 -1300 535 -1290 {lab=#net2}
@@ -245,7 +245,7 @@ C {gnd.sym} 1240 -1200 0 0 {name=l4 lab=GND}
 C {lab_pin.sym} 1300 -1460 1 0 {name=p1 sig_type=std_logic lab=out_spike}
 C {lab_pin.sym} 1100 -1320 1 0 {name=p18 sig_type=std_logic lab=out_spike}
 C {ammeter.sym} 1070 -1320 3 0 {name=Vmeas savecurrent=true spice_ignore=0}
-C {designs/libs/core_AH_neuron_arr/AH_neuron_arr.sym} 1560 -1300 0 0 {name=x4}
+C {designs/libs/core_AH_neuron_arr/AH_neuron_arr.sym} 1550 -1300 0 0 {name=x4}
 C {lab_pin.sym} 1530 -1390 2 0 {name=p4 sig_type=std_logic lab=out_neuron}
 C {gnd.sym} 1530 -1250 0 0 {name=l3 lab=GND}
 C {lab_pin.sym} 910 -1840 0 0 {name=p9 sig_type=std_logic lab=vdd}

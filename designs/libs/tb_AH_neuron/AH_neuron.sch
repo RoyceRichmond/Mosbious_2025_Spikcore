@@ -125,7 +125,7 @@ device=resistor
 m=1}
 C {title.sym} -170 570 0 0 {name=l3 author="Royce Richmond"}
 C {ammeter.sym} 240 80 3 0 {name=Vdd_c1 savecurrent=true spice_ignore=0}
-C {vsource.sym} 80 230 0 0 {name=V2 value=0.50 savecurrent=false}
+C {vsource.sym} 80 230 0 0 {name=V2 value=0.49	 savecurrent=false}
 C {lab_pin.sym} 80 140 0 0 {name=p5 sig_type=std_logic lab=v_bias}
 C {res.sym} 80 170 0 0 {name=R3
 value=10
