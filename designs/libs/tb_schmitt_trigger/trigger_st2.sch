@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.1375787e-09
-x2=1.6661704e-08
+x1=8.8569539e-09
+x2=1.02539e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -31,23 +31,23 @@ logx=0
 logy=0
 hilight_wave=2}
 B 2 1310 -480 2110 -80 {flags=graph
-y1=-0.24
-y2=3.6
+y1=0
+y2=3.3
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.1375787e-09
-x2=1.6661704e-08
+x1=8.8569539e-09
+x2=1.02539e-08
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
 node="out
-out2
+
 sig"
-color="13 9 6"
+color="13 9"
 dataset=-1
 unitx=1
 logx=0
@@ -61,8 +61,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.1375787e-09
-x2=1.6661704e-08
+x1=8.8569539e-09
+x2=1.02539e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -162,32 +162,6 @@ N 2160 -810 2190 -810 {lab=GND}
 N 1940 -850 1940 -820 {lab=outy}
 N 1710 -840 1710 -820 {lab=outx}
 N 1680 -740 1680 -720 {lab=outx}
-N 2540 -770 2540 -750 {lab=out2}
-N 2500 -800 2500 -720 {lab=#net5}
-N 2480 -760 2500 -760 {lab=#net5}
-N 2540 -690 2540 -680 {lab=GND}
-N 2540 -690 2570 -690 {lab=GND}
-N 2570 -720 2570 -690 {lab=GND}
-N 2540 -720 2570 -720 {lab=GND}
-N 2540 -830 2570 -830 {lab=vcc}
-N 2570 -830 2570 -800 {lab=vcc}
-N 2540 -800 2570 -800 {lab=vcc}
-N 2540 -850 2540 -830 {lab=vcc}
-N 2540 -760 2570 -760 {lab=out2}
-N 2570 -760 2630 -760 {lab=out2}
-N 2410 -770 2410 -750 {lab=#net5}
-N 2370 -800 2370 -720 {lab=sig}
-N 2350 -760 2370 -760 {lab=sig}
-N 2410 -690 2410 -680 {lab=GND}
-N 2410 -690 2440 -690 {lab=GND}
-N 2440 -720 2440 -690 {lab=GND}
-N 2410 -720 2440 -720 {lab=GND}
-N 2410 -830 2440 -830 {lab=vcc}
-N 2440 -830 2440 -800 {lab=vcc}
-N 2410 -800 2440 -800 {lab=vcc}
-N 2410 -850 2410 -830 {lab=vcc}
-N 2410 -760 2440 -760 {lab=#net5}
-N 2440 -760 2480 -760 {lab=#net5}
 N 1800 -580 1830 -580 {lab=vdd}
 N 1800 -550 1810 -550 {lab=vdd}
 N 1810 -580 1810 -550 {lab=vdd}
@@ -196,7 +170,7 @@ N 1800 -630 1800 -610 {lab=outz}
 N 1290 -790 1300 -790 {lab=vdd}
 N 1290 -790 1290 -770 {lab=vdd}
 N 2740 -700 2740 -690 {lab=GND}
-N 2740 -790 2740 -760 {lab=#net6}
+N 2740 -790 2740 -760 {lab=#net5}
 N 1730 -620 1730 -580 {lab=outz}
 N 1730 -620 1800 -620 {lab=outz}
 C {symbols/pfet_03v3.sym} 1100 -720 0 0 {name=M2
@@ -460,66 +434,6 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {gnd.sym} 2540 -680 0 0 {name=l14 lab=GND}
-C {lab_pin.sym} 2630 -760 0 1 {name=p25 sig_type=std_logic lab=out2}
-C {symbols/nfet_03v3.sym} 2520 -720 0 0 {name=M15
-L=0.28u
-W=2u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=nfet_03v3
-spiceprefix=X
-}
-C {symbols/pfet_03v3.sym} 2520 -800 0 0 {name=M16
-L=0.28u
-W=2u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=pfet_03v3
-spiceprefix=X
-}
-C {gnd.sym} 2410 -680 0 0 {name=l15 lab=GND}
-C {symbols/nfet_03v3.sym} 2390 -720 0 0 {name=M17
-L=0.28u
-W=2u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=nfet_03v3
-spiceprefix=X
-}
-C {symbols/pfet_03v3.sym} 2390 -800 0 0 {name=M18
-L=0.28u
-W=2u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=pfet_03v3
-spiceprefix=X
-}
-C {lab_pin.sym} 2350 -760 0 0 {name=p27 sig_type=std_logic lab=sig}
 C {lab_pin.sym} 1230 -520 1 0 {name=p28 sig_type=std_logic lab=outz}
 C {lab_pin.sym} 1800 -630 0 0 {name=p29 sig_type=std_logic lab=outz}
 C {lab_pin.sym} 1830 -580 0 1 {name=p30 sig_type=std_logic lab=vdd}
@@ -546,5 +460,3 @@ C {devices/vsource.sym} 2740 -730 0 0 {name=V3 value=3.3}
 C {gnd.sym} 2740 -690 0 0 {name=l18 lab=GND}
 C {lab_pin.sym} 2740 -850 0 0 {name=p7 sig_type=std_logic lab=vcc}
 C {ammeter.sym} 2740 -820 2 0 {name=Vmeas5 savecurrent=true spice_ignore=0}
-C {lab_pin.sym} 2540 -850 0 0 {name=p24 sig_type=std_logic lab=vcc}
-C {lab_pin.sym} 2410 -850 0 0 {name=p26 sig_type=std_logic lab=vcc}
