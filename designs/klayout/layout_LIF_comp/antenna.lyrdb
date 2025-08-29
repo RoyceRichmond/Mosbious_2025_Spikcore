@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>GF180 ANTENNA DRC Run Report at</description>
- <original-file>/foss/designs/Mosbious_2025_Spikcore/designs/klayout/layout_LIF_comp/conmutador.gds</original-file>
+ <original-file>/foss/designs/Mosbious_2025_Spikcore/designs/klayout/layout_LIF_comp/ota_1stage.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>conmutator</top-cell>
+ <top-cell>ota_1stage</top-cell>
  <tags>
  </tags>
  <categories>
@@ -139,7 +139,7 @@
  </categories>
  <cells>
   <cell>
-   <name>conmutator</name>
+   <name>ota_1stage</name>
    <variant/>
    <layout-name/>
    <references>
