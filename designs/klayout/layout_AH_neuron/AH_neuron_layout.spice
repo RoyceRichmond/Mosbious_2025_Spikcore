@@ -31,10 +31,10 @@ X0 a_194_0# a_38_n132# a_n84_n2# w_n710_n726# nfet_03v3 ad=0.2646p pd=2.1u as=0.
 .subckt AH_neuron vdd Current_in v_bias vss vout
 Xpfet_0 m2_381_1901# vout vdd vdd pfet
 Xnfet$7_0 m1_335_n170# vss nfet_0/dw_n710_n726# vout vss nfet$7
-Xnfet_0 vss nfet_0/dw_n710_n726# m2_381_1901# m1_n945_147# vss nfet
-Xcap_mim$1_0 m1_n945_147# vout cap_mim$1
-Xnfet$6_0 m1_335_n170# m1_n945_147# nfet_0/dw_n710_n726# v_bias vss nfet$6
-Xpfet$1_0 vdd m1_n945_147# m2_381_1901# vdd pfet$1
+Xnfet_0 vss nfet_0/dw_n710_n726# m2_381_1901# Current_in vss nfet
+Xcap_mim$1_0 Current_in vout cap_mim$1
+Xnfet$6_0 m1_335_n170# Current_in nfet_0/dw_n710_n726# v_bias vss nfet$6
+Xpfet$1_0 vdd Current_in m2_381_1901# vdd pfet$1
 Xnfet$4_0 vout vss nfet_0/dw_n710_n726# m2_381_1901# vss nfet$4
 .ends
 

@@ -40,7 +40,6 @@ Flattening unmatched subcell nfet$6 in circuit AH_neuron (0)(1 instance)
 Flattening unmatched subcell pfet$1 in circuit AH_neuron (0)(1 instance)
 Flattening unmatched subcell nfet$4 in circuit AH_neuron (0)(1 instance)
 
-Cell AH_neuron (0) disconnected node: Current_in
 Subcircuit summary:
 Circuit 1: AH_neuron                       |Circuit 2: AH_neuron                       
 -------------------------------------------|-------------------------------------------
@@ -143,7 +142,7 @@ Net: m1_335_n170#                          |Net: net2
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Net: m1_n945_147#                          |Net: Current_in                            
+Net: Current_in                            |Net: Current_in                            
   nfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
   cap_mim_2f0_m4m5_noshield/2 = 1          |  nfet_03v3/gate = 1                       
   nfet_03v3/(1|3) = 1                      |  cap_mim_2f0fF/2 = 1                      
@@ -159,7 +158,7 @@ Net: m2_381_1901#                          |Net: net1
   pfet_03v3/(1|3) = 1                      |  nfet_03v3/gate = 1                       
   nfet_03v3/2 = 1                          |  nfet_03v3/(drain|source) = 1             
                                            |                                           
-Net: vout                                  |Net: Vout                                  
+Net: vout                                  |Net: vout                                  
   pfet_03v3/(1|3) = 1                      |  pfet_03v3/(drain|source) = 1             
   nfet_03v3/2 = 1                          |  nfet_03v3/(drain|source) = 1             
   cap_mim_2f0_m4m5_noshield/1 = 1          |  nfet_03v3/gate = 1                       
@@ -239,11 +238,10 @@ Circuit 1: AH_neuron                       |Circuit 2: AH_neuron
 -------------------------------------------|-------------------------------------------
 v_bias                                     |v_bias                                     
 vss                                        |vss                                        
+Current_in                                 |Current_in                                 
 vdd                                        |vdd                                        
 vout                                       |(no pin, node is net1)                     
-(no pin, node is m2_381_1901#)             |Current_in                                 
-(no pin, node is m2_381_1901#)             |Vout                                       
-Current_in                                 |(no matching pin)                          
+(no pin, node is m2_381_1901#)             |vout                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists for AH_neuron and AH_neuron altered to match.
 Device classes AH_neuron and AH_neuron are equivalent.
