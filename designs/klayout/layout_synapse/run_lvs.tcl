@@ -7,7 +7,8 @@ set pdklib ${PDK_ROOT}/${PDK}
 set techlibs ${pdklib}/libs.tech
 set reflibs ${pdklib}/libs.ref
 
-set setupfile ${techlibs}/netgen/gf180mcuD_setup.tcl
+#set setupfile ${techlibs}/netgen/gf180mcuD_setup.tcl
+set setupfile /foss/designs/Mosbious_2025_spiking4all/designs/klayout/gf180mcuD_setup.tcl
 set sclib ${reflibs}/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
 
 set circuit1 [readnet spice synapse_layout.spice]

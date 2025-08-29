@@ -12,6 +12,7 @@ fi
 TARGET_DIR="$1"
 FOLDER_NAME=$(basename "$TARGET_DIR")
 CIRCUIT_NAME=${FOLDER_NAME#layout_}
+SCRIPT_DIR=$(dirname "$(realpath "$0")")
 
 echo "Target folder: $TARGET_DIR"
 echo "Running LVS for circuit: $CIRCUIT_NAME"
@@ -54,7 +55,8 @@ set pdklib \${PDK_ROOT}/\${PDK}
 set techlibs \${pdklib}/libs.tech
 set reflibs \${pdklib}/libs.ref
 
-set setupfile \${techlibs}/netgen/${PDK}_setup.tcl
+#set setupfile \${techlibs}/netgen/${PDK}_setup.tcl
+set setupfile ${SCRIPT_DIR}/${PDK}_setup.tcl
 set sclib \${reflibs}/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
 
 set circuit1 [readnet spice ${CIRCUIT_NAME}_layout.spice]

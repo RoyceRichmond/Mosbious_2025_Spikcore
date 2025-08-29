@@ -178,7 +178,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (28.04,-4.338;28.04,0.538;28.46,0.538;28.46,-4.338)</value>
+    <value>polygon: (28.04,-4.34;28.04,0.535;28.46,0.535;28.46,-4.34)</value>
    </values>
   </item>
   <item>
@@ -190,7 +190,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (28.98,-4.338;28.98,0.538;29.4,0.538;29.4,-4.338)</value>
+    <value>polygon: (28.98,-4.34;28.98,0.535;29.4,0.535;29.4,-4.34)</value>
    </values>
   </item>
   <item>
@@ -202,7 +202,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (29.92,-4.338;29.92,0.538;30.34,0.538;30.34,-4.338)</value>
+    <value>polygon: (29.92,-4.34;29.92,0.535;30.34,0.535;30.34,-4.34)</value>
    </values>
   </item>
   <item>
@@ -214,7 +214,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (30.86,-4.338;30.86,0.538;31.28,0.538;31.28,-4.338)</value>
+    <value>polygon: (30.86,-4.34;30.86,0.535;31.28,0.535;31.28,-4.34)</value>
    </values>
   </item>
   <item>
@@ -226,7 +226,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (31.8,-4.338;31.8,0.538;32.22,0.538;32.22,-4.338)</value>
+    <value>polygon: (31.8,-4.34;31.8,0.535;32.22,0.535;32.22,-4.34)</value>
    </values>
   </item>
   <item>
@@ -238,7 +238,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (32.74,-4.338;32.74,0.538;33.16,0.538;33.16,-4.338)</value>
+    <value>polygon: (32.74,-4.34;32.74,0.535;33.16,0.535;33.16,-4.34)</value>
    </values>
   </item>
   <item>
@@ -250,7 +250,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (33.68,-4.338;33.68,0.538;34.1,0.538;34.1,-4.338)</value>
+    <value>polygon: (33.68,-4.34;33.68,0.535;34.1,0.535;34.1,-4.34)</value>
    </values>
   </item>
   <item>
@@ -262,7 +262,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (34.62,-4.338;34.62,0.538;35.04,0.538;35.04,-4.338)</value>
+    <value>polygon: (34.62,-4.34;34.62,0.535;35.04,0.535;35.04,-4.34)</value>
    </values>
   </item>
   <item>
@@ -274,7 +274,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (35.56,-4.338;35.56,0.538;35.98,0.538;35.98,-4.338)</value>
+    <value>polygon: (35.56,-4.34;35.56,0.535;35.98,0.535;35.98,-4.34)</value>
    </values>
   </item>
   <item>
@@ -286,7 +286,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (36.5,-4.338;36.5,0.538;36.92,0.538;36.92,-4.338)</value>
+    <value>polygon: (36.5,-4.34;36.5,0.535;36.92,0.535;36.92,-4.34)</value>
    </values>
   </item>
   <item>
@@ -298,7 +298,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (37.44,-4.338;37.44,0.538;37.86,0.538;37.86,-4.338)</value>
+    <value>polygon: (37.44,-4.34;37.44,0.535;37.86,0.535;37.86,-4.34)</value>
    </values>
   </item>
   <item>
@@ -310,7 +310,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (38.38,-4.338;38.38,0.538;38.8,0.538;38.8,-4.338)</value>
+    <value>polygon: (38.38,-4.34;38.38,0.535;38.8,0.535;38.8,-4.34)</value>
    </values>
   </item>
   <item>
@@ -322,7 +322,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (39.32,-4.338;39.32,0.538;39.74,0.538;39.74,-4.338)</value>
+    <value>polygon: (39.32,-4.34;39.32,0.535;39.74,0.535;39.74,-4.34)</value>
    </values>
   </item>
   <item>
@@ -334,7 +334,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (40.26,-4.338;40.26,0.538;40.68,0.538;40.68,-4.338)</value>
+    <value>polygon: (40.26,-4.34;40.26,0.535;40.68,0.535;40.68,-4.34)</value>
    </values>
   </item>
   <item>
@@ -346,7 +346,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (41.2,-4.338;41.2,0.538;41.62,0.538;41.62,-4.338)</value>
+    <value>polygon: (41.2,-4.34;41.2,0.535;41.62,0.535;41.62,-4.34)</value>
    </values>
   </item>
   <item>
@@ -358,7 +358,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (42.14,-4.338;42.14,0.538;42.56,0.538;42.56,-4.338)</value>
+    <value>polygon: (42.14,-4.34;42.14,0.535;42.56,0.535;42.56,-4.34)</value>
    </values>
   </item>
   <item>
@@ -406,7 +406,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-9.48,3.87;-9.48,6.53;-8.64,6.53;-8.64,3.87)</value>
+    <value>polygon: (-9.575,3.825;-9.575,6.485;-8.735,6.485;-8.735,3.825)</value>
    </values>
   </item>
   <item>
@@ -658,7 +658,19 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-13.96,9.29;-13.96,11.01;-14.01,11.01;-14.01,11.39;-13.63,11.39;-13.63,11.01;-13.68,11.01;-13.68,9.29)</value>
+    <value>polygon: (-15.41,9.3;-15.41,11.02;-15.46,11.02;-15.46,11.4;-15.08,11.4;-15.08,11.02;-15.13,11.02;-15.13,9.3)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>TG_bootstrapped</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (11.92,11.06;11.92,11.44;11.97,11.44;11.97,13.16;12.25,13.16;12.25,11.44;12.3,11.44;12.3,11.06)</value>
    </values>
   </item>
   <item>
@@ -683,18 +695,6 @@
    <image/>
    <values>
     <value>polygon: (37.36,13.195;37.36,15.855;38.2,15.855;38.2,13.195)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'PL.8'</category>
-   <cell>TG_bootstrapped</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (14.422,14.756;14.422,15.136;14.472,15.136;14.472,16.856;14.752,16.856;14.752,15.136;14.802,15.136;14.802,14.756)</value>
    </values>
   </item>
   <item>
@@ -874,7 +874,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (26.18,6.879;26.18,7.261;44.42,7.261;44.42,6.879)</value>
+    <value>polygon: (26.18,6.88;26.18,7.26;44.42,7.26;44.42,6.88)</value>
    </values>
   </item>
   <item>
@@ -970,7 +970,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (31.77,14.015;31.77,17.565;31.79,17.565;31.79,17.566;32.17,17.566;32.17,14.015)</value>
+    <value>polygon: (31.77,14.015;31.77,17.565;32.17,17.565;32.17,14.015)</value>
    </values>
   </item>
   <item>
@@ -982,7 +982,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (33.43,14.015;33.43,17.566;33.81,17.566;33.81,17.565;33.83,17.565;33.83,14.015)</value>
+    <value>polygon: (33.43,14.015;33.43,17.565;33.83,17.565;33.83,14.015)</value>
    </values>
   </item>
   <item>
@@ -994,7 +994,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (36.75,14.015;36.75,17.565;36.77,17.565;36.77,17.566;37.15,17.566;37.15,14.015)</value>
+    <value>polygon: (36.75,14.015;36.75,17.565;37.15,17.565;37.15,14.015)</value>
    </values>
   </item>
   <item>
@@ -1006,7 +1006,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (38.41,14.015;38.41,17.566;38.79,17.566;38.79,17.565;38.81,17.565;38.81,14.015)</value>
+    <value>polygon: (38.41,14.015;38.41,17.565;38.81,17.565;38.81,14.015)</value>
    </values>
   </item>
   <item>
@@ -1030,7 +1030,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (32.61,18.084;32.61,18.085;32.38,18.085;32.38,19.35;33.22,19.35;33.22,18.085;32.99,18.085;32.99,18.084)</value>
+    <value>polygon: (32.38,18.085;32.38,19.35;33.22,19.35;33.22,18.085)</value>
    </values>
   </item>
   <item>
@@ -1042,7 +1042,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (37.59,18.084;37.59,18.085;37.36,18.085;37.36,19.35;38.2,19.35;38.2,18.085;37.97,18.085;37.97,18.084)</value>
+    <value>polygon: (37.36,18.085;37.36,19.35;38.2,19.35;38.2,18.085)</value>
    </values>
   </item>
   <item>
@@ -1066,7 +1066,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (34.14,17.184;34.14,20.1;36.44,20.1;36.44,17.184;36.06,17.184;36.06,17.185;34.52,17.185;34.52,17.184)</value>
+    <value>polygon: (34.14,17.185;34.14,20.1;36.44,20.1;36.44,17.185)</value>
    </values>
   </item>
   <item>
@@ -1078,7 +1078,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-14.57,9.705;-14.57,10.595;-14.19,10.595;-14.19,9.705)</value>
+    <value>polygon: (-16.02,9.715;-16.02,10.605;-15.64,10.605;-15.64,9.715)</value>
    </values>
   </item>
   <item>
@@ -1090,7 +1090,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-13.45,9.705;-13.45,10.595;-13.07,10.595;-13.07,9.705)</value>
+    <value>polygon: (-14.9,9.715;-14.9,10.605;-14.52,10.605;-14.52,9.715)</value>
    </values>
   </item>
   <item>
@@ -1102,7 +1102,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-12.72,9.705;-12.72,10.595;-12.34,10.595;-12.34,9.705)</value>
+    <value>polygon: (-14.17,9.715;-14.17,10.605;-13.79,10.605;-13.79,9.715)</value>
    </values>
   </item>
   <item>
@@ -1114,7 +1114,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-14.01,11.009;-14.01,11.391;-13.63,11.391;-13.63,11.009)</value>
+    <value>polygon: (-15.46,11.02;-15.46,11.4;-15.08,11.4;-15.08,11.02)</value>
    </values>
   </item>
   <item>
@@ -1126,7 +1126,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-12.47,4.399;-12.47,4.781;-12.09,4.781;-12.09,4.399)</value>
+    <value>polygon: (11.92,11.06;11.92,11.44;12.3,11.44;12.3,11.06)</value>
    </values>
   </item>
   <item>
@@ -1138,7 +1138,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-13.72,5.159;-13.72,5.541;-13.34,5.541;-13.34,5.159)</value>
+    <value>polygon: (11.36,11.855;11.36,12.745;11.74,12.745;11.74,11.855)</value>
    </values>
   </item>
   <item>
@@ -1150,7 +1150,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (14.422,14.755;14.422,15.137;14.802,15.137;14.802,14.755)</value>
+    <value>polygon: (12.48,11.855;12.48,12.745;12.86,12.745;12.86,11.855)</value>
    </values>
   </item>
   <item>
@@ -1162,7 +1162,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-10.09,4.31;-10.09,5.71;-9.71,5.71;-9.71,4.31)</value>
+    <value>polygon: (-13.18,4.4;-13.18,4.78;-12.8,4.78;-12.8,4.4)</value>
    </values>
   </item>
   <item>
@@ -1174,7 +1174,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (13.862,15.551;13.862,16.441;14.242,16.441;14.242,15.551)</value>
+    <value>polygon: (-12.47,4.4;-12.47,4.78;-12.09,4.78;-12.09,4.4)</value>
    </values>
   </item>
   <item>
@@ -1186,7 +1186,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (14.982,15.551;14.982,16.441;15.362,16.441;15.362,15.551)</value>
+    <value>polygon: (10.455,10.375;10.455,13.855;13.755,13.855;13.755,10.375/10.835,10.76;13.37,10.76;13.37,13.475;10.835,13.475)</value>
    </values>
   </item>
   <item>
@@ -1198,7 +1198,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-8.41,4.31;-8.41,5.71;-8.03,5.71;-8.03,4.31)</value>
+    <value>polygon: (-13.72,5.16;-13.72,5.54;-13.34,5.54;-13.34,5.16)</value>
    </values>
   </item>
   <item>
@@ -1210,7 +1210,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-7.68,4.31;-7.68,5.71;-7.3,5.71;-7.3,4.31)</value>
+    <value>polygon: (-10.185,4.265;-10.185,5.665;-9.805,5.665;-9.805,4.265)</value>
    </values>
   </item>
   <item>
@@ -1222,7 +1222,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-10.025,1.764;-10.025,2.146;-9.645,2.146;-9.645,1.764)</value>
+    <value>polygon: (-8.505,4.265;-8.505,5.665;-8.125,5.665;-8.125,4.265)</value>
    </values>
   </item>
   <item>
@@ -1234,7 +1234,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-9.25,6.149;-9.25,6.531;-8.87,6.531;-8.87,6.149)</value>
+    <value>polygon: (-7.775,4.265;-7.775,5.665;-7.395,5.665;-7.395,4.265)</value>
    </values>
   </item>
   <item>
@@ -1246,7 +1246,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-8.385,1.764;-8.385,2.146;-8.005,2.146;-8.005,1.764)</value>
+    <value>polygon: (-9.345,6.105;-9.345,6.485;-8.965,6.485;-8.965,6.105)</value>
    </values>
   </item>
   <item>
@@ -1258,7 +1258,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-7.675,1.764;-7.675,2.146;-7.295,2.146;-7.295,1.764)</value>
+    <value>polygon: (-10.025,1.765;-10.025,2.145;-9.645,2.145;-9.645,1.765)</value>
    </values>
   </item>
   <item>
@@ -1270,7 +1270,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-9.205,2.664;-9.205,3.046;-8.825,3.046;-8.825,2.664)</value>
+    <value>polygon: (-8.385,1.765;-8.385,2.145;-8.005,2.145;-8.005,1.765)</value>
    </values>
   </item>
   <item>
@@ -1282,7 +1282,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-14.26,4.399;-14.26,4.781;-13.88,4.781;-13.88,4.399)</value>
+    <value>polygon: (-7.675,1.765;-7.675,2.145;-7.295,2.145;-7.295,1.765)</value>
    </values>
   </item>
   <item>
@@ -1294,7 +1294,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-13.18,4.399;-13.18,4.781;-12.8,4.781;-12.8,4.399)</value>
+    <value>polygon: (-9.205,2.665;-9.205,3.045;-8.825,3.045;-8.825,2.665)</value>
    </values>
   </item>
   <item>
@@ -1306,7 +1306,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-9.915,-3.87;-9.915,-2.47;-9.535,-2.47;-9.535,-3.87)</value>
+    <value>polygon: (-14.26,4.4;-14.26,4.78;-13.88,4.78;-13.88,4.4)</value>
    </values>
   </item>
   <item>
@@ -1342,7 +1342,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-9.075,-2.031;-9.075,-1.649;-8.695,-1.649;-8.695,-2.031)</value>
+    <value>polygon: (-9.075,-2.03;-9.075,-1.65;-8.695,-1.65;-8.695,-2.03)</value>
    </values>
   </item>
   <item>
@@ -1354,7 +1354,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-10.07,-0.676;-10.07,-0.294;-9.69,-0.294;-9.69,-0.676)</value>
+    <value>polygon: (-10.07,-0.675;-10.07,-0.295;-9.69,-0.295;-9.69,-0.675)</value>
    </values>
   </item>
   <item>
@@ -1366,7 +1366,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-8.43,-0.676;-8.43,-0.294;-8.05,-0.294;-8.05,-0.676)</value>
+    <value>polygon: (-8.43,-0.675;-8.43,-0.295;-8.05,-0.295;-8.05,-0.675)</value>
    </values>
   </item>
   <item>
@@ -1378,7 +1378,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-7.72,-0.676;-7.72,-0.294;-7.34,-0.294;-7.34,-0.676)</value>
+    <value>polygon: (-7.72,-0.675;-7.72,-0.295;-7.34,-0.295;-7.34,-0.675)</value>
    </values>
   </item>
   <item>
@@ -1390,7 +1390,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-9.25,0.224;-9.25,0.606;-8.87,0.606;-8.87,0.224)</value>
+    <value>polygon: (-9.25,0.225;-9.25,0.605;-8.87,0.605;-8.87,0.225)</value>
    </values>
   </item>
   <item>
@@ -1438,7 +1438,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-7.505,-15.191;-7.505,-14.809;-7.125,-14.809;-7.125,-15.191)</value>
+    <value>polygon: (-7.505,-15.19;-7.505,-14.81;-7.125,-14.81;-7.125,-15.19)</value>
    </values>
   </item>
   <item>
@@ -1450,7 +1450,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-8.875,-13.321;-8.875,-12.939;-8.495,-12.939;-8.495,-13.321)</value>
+    <value>polygon: (-8.875,-13.32;-8.875,-12.94;-8.495,-12.94;-8.495,-13.32)</value>
    </values>
   </item>
   <item>
@@ -1462,7 +1462,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-7.235,-13.321;-7.235,-12.939;-6.855,-12.939;-6.855,-13.321)</value>
+    <value>polygon: (-7.235,-13.32;-7.235,-12.94;-6.855,-12.94;-6.855,-13.32)</value>
    </values>
   </item>
   <item>
@@ -1474,7 +1474,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-6.525,-13.321;-6.525,-12.939;-6.145,-12.939;-6.145,-13.321)</value>
+    <value>polygon: (-6.525,-13.32;-6.525,-12.94;-6.145,-12.94;-6.145,-13.32)</value>
    </values>
   </item>
   <item>
@@ -1486,7 +1486,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-12.69,-13.151;-12.69,-12.769;-12.31,-12.769;-12.31,-13.151)</value>
+    <value>polygon: (-12.69,-13.15;-12.69,-12.77;-12.31,-12.77;-12.31,-13.15)</value>
    </values>
   </item>
   <item>
@@ -1498,7 +1498,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-11.05,-13.151;-11.05,-12.769;-10.67,-12.769;-10.67,-13.151)</value>
+    <value>polygon: (-11.05,-13.15;-11.05,-12.77;-10.67,-12.77;-10.67,-13.15)</value>
    </values>
   </item>
   <item>
@@ -1510,7 +1510,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-10.34,-13.151;-10.34,-12.769;-9.96,-12.769;-9.96,-13.151)</value>
+    <value>polygon: (-10.34,-13.15;-10.34,-12.77;-9.96,-12.77;-9.96,-13.15)</value>
    </values>
   </item>
   <item>
@@ -1522,7 +1522,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-8.055,-12.421;-8.055,-12.039;-7.675,-12.039;-7.675,-12.421)</value>
+    <value>polygon: (-8.055,-12.42;-8.055,-12.04;-7.675,-12.04;-7.675,-12.42)</value>
    </values>
   </item>
   <item>
@@ -1534,7 +1534,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-11.87,-12.251;-11.87,-11.869;-11.49,-11.869;-11.49,-12.251)</value>
+    <value>polygon: (-11.87,-12.25;-11.87,-11.87;-11.49,-11.87;-11.49,-12.25)</value>
    </values>
   </item>
   <item>
@@ -1546,7 +1546,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-13.82,-7.851;-13.82,-7.469;-13.44,-7.469;-13.44,-7.851)</value>
+    <value>polygon: (-13.82,-7.85;-13.82,-7.47;-13.44,-7.47;-13.44,-7.85)</value>
    </values>
   </item>
   <item>
@@ -1558,7 +1558,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-12.74,-7.851;-12.74,-7.469;-12.36,-7.469;-12.36,-7.851)</value>
+    <value>polygon: (-12.74,-7.85;-12.74,-7.47;-12.36,-7.47;-12.36,-7.85)</value>
    </values>
   </item>
   <item>
@@ -1570,7 +1570,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-12.03,-7.851;-12.03,-7.469;-11.65,-7.469;-11.65,-7.851)</value>
+    <value>polygon: (-12.03,-7.85;-12.03,-7.47;-11.65,-7.47;-11.65,-7.85)</value>
    </values>
   </item>
   <item>
@@ -1618,7 +1618,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-13.28,-7.091;-13.28,-6.709;-12.9,-6.709;-12.9,-7.091)</value>
+    <value>polygon: (-13.28,-7.09;-13.28,-6.71;-12.9,-6.71;-12.9,-7.09)</value>
    </values>
   </item>
   <item>
@@ -1630,7 +1630,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-9.025,-7.026;-9.025,-6.644;-8.645,-6.644;-8.645,-7.026)</value>
+    <value>polygon: (-9.025,-7.025;-9.025,-6.645;-8.645,-6.645;-8.645,-7.025)</value>
    </values>
   </item>
   <item>
@@ -1642,7 +1642,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (43.48,-3.44;43.48,0;43.86,0;43.86,-3.44)</value>
+    <value>polygon: (-9.915,-3.87;-9.915,-2.47;-9.535,-2.47;-9.535,-3.87)</value>
    </values>
   </item>
   <item>
@@ -1654,7 +1654,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (34.64,-4.349;34.64,-3.967;35.02,-3.967;35.02,-4.349)</value>
+    <value>polygon: (34.64,-4.35;34.64,-3.97;35.02,-3.97;35.02,-4.35)</value>
    </values>
   </item>
   <item>
@@ -1666,7 +1666,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (35.58,-4.349;35.58,-3.967;35.96,-3.967;35.96,-4.349)</value>
+    <value>polygon: (35.58,-4.35;35.58,-3.97;35.96,-3.97;35.96,-4.35)</value>
    </values>
   </item>
   <item>
@@ -1678,7 +1678,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (36.52,-4.349;36.52,-3.967;36.9,-3.967;36.9,-4.349)</value>
+    <value>polygon: (36.52,-4.35;36.52,-3.97;36.9,-3.97;36.9,-4.35)</value>
    </values>
   </item>
   <item>
@@ -1690,7 +1690,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (37.46,-4.349;37.46,-3.967;37.84,-3.967;37.84,-4.349)</value>
+    <value>polygon: (37.46,-4.35;37.46,-3.97;37.84,-3.97;37.84,-4.35)</value>
    </values>
   </item>
   <item>
@@ -1702,7 +1702,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (38.4,-4.349;38.4,-3.967;38.78,-3.967;38.78,-4.349)</value>
+    <value>polygon: (38.4,-4.35;38.4,-3.97;38.78,-3.97;38.78,-4.35)</value>
    </values>
   </item>
   <item>
@@ -1714,7 +1714,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (39.34,-4.349;39.34,-3.967;39.72,-3.967;39.72,-4.349)</value>
+    <value>polygon: (39.34,-4.35;39.34,-3.97;39.72,-3.97;39.72,-4.35)</value>
    </values>
   </item>
   <item>
@@ -1726,7 +1726,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (40.28,-4.349;40.28,-3.967;40.66,-3.967;40.66,-4.349)</value>
+    <value>polygon: (40.28,-4.35;40.28,-3.97;40.66,-3.97;40.66,-4.35)</value>
    </values>
   </item>
   <item>
@@ -1738,7 +1738,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (41.22,-4.349;41.22,-3.967;41.6,-3.967;41.6,-4.349)</value>
+    <value>polygon: (41.22,-4.35;41.22,-3.97;41.6,-3.97;41.6,-4.35)</value>
    </values>
   </item>
   <item>
@@ -1750,7 +1750,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (42.16,-4.349;42.16,-3.967;42.54,-3.967;42.54,-4.349)</value>
+    <value>polygon: (42.16,-4.35;42.16,-3.97;42.54,-3.97;42.54,-4.35)</value>
    </values>
   </item>
   <item>
@@ -1762,7 +1762,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (28.06,-4.349;28.06,-3.967;28.44,-3.967;28.44,-4.349)</value>
+    <value>polygon: (28.06,-4.35;28.06,-3.97;28.44,-3.97;28.44,-4.35)</value>
    </values>
   </item>
   <item>
@@ -1774,7 +1774,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (29,-4.349;29,-3.967;29.38,-3.967;29.38,-4.349)</value>
+    <value>polygon: (29,-4.35;29,-3.97;29.38,-3.97;29.38,-4.35)</value>
    </values>
   </item>
   <item>
@@ -1786,7 +1786,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (29.94,-4.349;29.94,-3.967;30.32,-3.967;30.32,-4.349)</value>
+    <value>polygon: (29.94,-4.35;29.94,-3.97;30.32,-3.97;30.32,-4.35)</value>
    </values>
   </item>
   <item>
@@ -1798,7 +1798,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (30.88,-4.349;30.88,-3.967;31.26,-3.967;31.26,-4.349)</value>
+    <value>polygon: (30.88,-4.35;30.88,-3.97;31.26,-3.97;31.26,-4.35)</value>
    </values>
   </item>
   <item>
@@ -1810,7 +1810,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (31.82,-4.349;31.82,-3.967;32.2,-3.967;32.2,-4.349)</value>
+    <value>polygon: (31.82,-4.35;31.82,-3.97;32.2,-3.97;32.2,-4.35)</value>
    </values>
   </item>
   <item>
@@ -1822,7 +1822,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (32.76,-4.349;32.76,-3.967;33.14,-3.967;33.14,-4.349)</value>
+    <value>polygon: (32.76,-4.35;32.76,-3.97;33.14,-3.97;33.14,-4.35)</value>
    </values>
   </item>
   <item>
@@ -1834,7 +1834,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (33.7,-4.349;33.7,-3.967;34.08,-3.967;34.08,-4.349)</value>
+    <value>polygon: (33.7,-4.35;33.7,-3.97;34.08,-3.97;34.08,-4.35)</value>
    </values>
   </item>
   <item>
@@ -1931,6 +1931,18 @@
    <image/>
    <values>
     <value>polygon: (41.69,-3.44;41.69,-3.325;41.68,-3.325;41.68,-0.125;41.69,-0.125;41.69,0;42.07,0;42.07,-0.125;42.08,-0.125;42.08,-3.325;42.07,-3.325;42.07,-3.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>TG_bootstrapped</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (43.48,-3.44;43.48,0;43.86,0;43.86,-3.44)</value>
    </values>
   </item>
   <item>
