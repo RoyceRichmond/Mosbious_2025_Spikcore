@@ -7,12 +7,6 @@ the LVS is modified to be called like this
 ```
 
 
-## updating ciel (12/08/2025)
+## LVS pass but not exactly
 
-[Ciel is a version manager (and builder) for builds of open-source process design kits (PDKs).](https://github.com/fossi-foundation/ciel)
-
-The docker container doesnt give oyu access by default, it can be bypassed with this instruction, [credits](https://github.com/stineje/CharLib/issues/71#issuecomment-3140300378)
-
-```
-docker exec -u root -t -i <your_docker_container_id> /bin/sh
-```
+The run_lvs script works fine except for the name on the cmos devices which are names m2, m*, but should be named on the spice file as xm*, replacing this eliminates the problem and passes the lvs
