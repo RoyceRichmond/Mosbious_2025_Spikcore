@@ -129,11 +129,11 @@ C {lab_pin.sym} 150 100 0 0 {name=p13 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -90 220 0 0 {name=p5 sig_type=std_logic lab=vss}
 C {title.sym} -260 310 0 0 {name=l1 author="Royce Richmond"}
 C {symbols/cap_mim_2f0fF.sym} 60 -140 1 0 {name=C3
-W=1e-6
-L=1e-6
+W=6e-6
+L=5e-6
 model=cap_mim_2f0fF
 spiceprefix=X
-m=30}
+m=1}
 C {symbols/nfet_03v3.sym} -70 110 0 1 {name=M6
 L=5.6u
 W=0.42u

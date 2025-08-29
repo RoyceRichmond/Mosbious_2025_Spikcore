@@ -53,18 +53,12 @@ Subcircuit summary:
 Circuit 1: AH_neuron                       |Circuit 2: AH_neuron                       
 -------------------------------------------|-------------------------------------------
 pfet_03v3 (2)                              |pfet_03v3 (2)                              
-nfet_03v3 (4)                              |nfet_03v3 (-719940029->4)                  
-cap_mim_2f0_m4m5_noshield (1)              |cap_mim_2f0fF (30->1)                      
+nfet_03v3 (4)                              |nfet_03v3 (4)                              
+cap_mim_2f0_m4m5_noshield (1)              |cap_mim_2f0fF (1)                          
 Number of devices: 7                       |Number of devices: 7                       
 Number of nets: 7                          |Number of nets: 7                          
 ---------------------------------------------------------------------------------------
-Netlists match uniquely with property errors.
-cap_mim$1_0/cap_mim_2f0_m4m5_noshield:0 vs. cap_mim_2f0fF:C3:
- c_length circuit1: 5e-06   circuit2: 1e-06   (delta=133%, cutoff=1%)
- c_width circuit1: 6e-06   circuit2: 1e-06   (delta=143%, cutoff=1%)
- M circuit1: 1   circuit2: 30   (delta=29, cutoff=0)
-nfet$6_0/nfet_03v3:0 vs. nfet_03v3:M6:
- M circuit1: 1   "1X"  (property type mismatch)
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: AH_neuron                       |Circuit 2: AH_neuron                       
@@ -79,7 +73,4 @@ Cell pin lists are equivalent.
 Device classes AH_neuron and AH_neuron are equivalent.
 
 Final result: Circuits match uniquely.
-Property errors were found.
-
-The following cells had property errors:
- AH_neuron
+.
