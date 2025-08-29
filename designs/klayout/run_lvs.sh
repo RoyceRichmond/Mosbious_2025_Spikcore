@@ -1,10 +1,19 @@
 #!/bin/bash
 #
 
-# Detect folder name and extract circuit name (strip "layout_")
-FOLDER_NAME=$(basename "$PWD")
+#-------------------------------------------
+# Check input
+#-------------------------------------------
+if [ $# -lt 1 ]; then
+    echo "Usage: $0 /path/to/layout_xxxx"
+    exit 1
+fi
+
+TARGET_DIR="$1"
+FOLDER_NAME=$(basename "$TARGET_DIR")
 CIRCUIT_NAME=${FOLDER_NAME#layout_}
 
+echo "Target folder: $TARGET_DIR"
 echo "Running LVS for circuit: $CIRCUIT_NAME"
 
 #-------------------------------------------
@@ -15,6 +24,8 @@ echo ${PDK:=gf180mcuD} > /dev/null
 
 echo "PDK_ROOT is $PDK_ROOT"
 echo "PDK is $PDK"
+
+cd "$TARGET_DIR" || { echo "Error: cannot cd into $TARGET_DIR"; exit 1; }
 
 #-------------------------------------------
 # Extract layout for LVS from magic
