@@ -5,30 +5,6 @@
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
  <top-cell>synapse</top-cell>
  <tags>
-  <tag>
-   <name>waived</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>red</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>green</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>blue</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>yellow</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>important</name>
-   <description/>
-  </tag>
  </tags>
  <categories>
   <category>
@@ -106,7 +82,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-6.79,-15.57;-6.79,-14.55;-6.84,-14.55;-6.84,-14.17;-6.46,-14.17;-6.46,-14.55;-6.51,-14.55;-6.51,-15.57)</value>
+    <value>polygon: (11.92,-4.96;11.92,-3.94;11.88,-3.94;11.88,-3.58;12.24,-3.58;12.24,-3.94;12.2,-3.94;12.2,-4.96)</value>
    </values>
   </item>
   <item>
@@ -118,7 +94,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (2.74,-15.005;2.74,-13.985;2.7,-13.985;2.7,-13.625;3.06,-13.625;3.06,-13.985;3.02,-13.985;3.02,-15.005)</value>
+    <value>polygon: (7.72,-4.95;7.72,-4.59;7.76,-4.59;7.76,-3.57;8.04,-3.57;8.04,-4.59;8.08,-4.59;8.08,-4.95)</value>
    </values>
   </item>
   <item>
@@ -130,7 +106,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (11.92,-15.005;11.92,-13.985;11.88,-13.985;11.88,-13.625;12.24,-13.625;12.24,-13.985;12.2,-13.985;12.2,-15.005)</value>
+    <value>polygon: (7.76,-2.67;7.76,-1.65;7.72,-1.65;7.72,-1.29;8.08,-1.29;8.08,-1.65;8.04,-1.65;8.04,-2.67)</value>
    </values>
   </item>
   <item>
@@ -142,7 +118,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-6.79,-13.73;-6.79,-12.71;-6.84,-12.71;-6.84,-12.33;-6.46,-12.33;-6.46,-12.71;-6.51,-12.71;-6.51,-13.73)</value>
+    <value>polygon: (11.88,-2.66;11.88,-2.3;11.92,-2.3;11.92,-0.7;12.2,-0.7;12.2,-2.3;12.24,-2.3;12.24,-2.66)</value>
    </values>
   </item>
   <item>
@@ -154,7 +130,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-6.79,-11.89;-6.79,-10.87;-6.84,-10.87;-6.84,-10.49;-6.46,-10.49;-6.46,-10.87;-6.51,-10.87;-6.51,-11.89)</value>
+    <value>polygon: (7.72,-0.74;7.72,-0.38;7.76,-0.38;7.76,0.64;8.04,0.64;8.04,-0.38;8.08,-0.38;8.08,-0.74)</value>
    </values>
   </item>
   <item>
@@ -166,7 +142,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (2.7,-7.685;2.7,-7.325;2.74,-7.325;2.74,-6.305;3.02,-6.305;3.02,-7.325;3.06,-7.325;3.06,-7.685)</value>
+    <value>polygon: (11.92,0.2;11.92,2.8;11.88,2.8;11.88,3.16;12.24,3.16;12.24,2.8;12.2,2.8;12.2,0.2)</value>
    </values>
   </item>
   <item>
@@ -178,7 +154,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (11.88,-7.685;11.88,-7.325;11.92,-7.325;11.92,-5.725;12.2,-5.725;12.2,-7.325;12.24,-7.325;12.24,-7.685)</value>
+    <value>polygon: (0.78,9.745;0.78,10.125;0.83,10.125;0.83,11.145;1.11,11.145;1.11,10.125;1.16,10.125;1.16,9.745)</value>
    </values>
   </item>
   <item>
@@ -190,7 +166,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (2.74,-0.385;2.74,0.635;2.7,0.635;2.7,0.995;3.06,0.995;3.06,0.635;3.02,0.635;3.02,-0.385)</value>
+    <value>polygon: (3.81,10.125;3.81,11.145;3.76,11.145;3.76,11.525;4.14,11.525;4.14,11.145;4.09,11.145;4.09,10.125)</value>
    </values>
   </item>
   <item>
@@ -202,19 +178,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (11.92,0.195;11.92,2.795;11.88,2.795;11.88,3.155;12.24,3.155;12.24,2.795;12.2,2.795;12.2,0.195)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'PL.8'</category>
-   <cell>synapse</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (3.76,9.745;3.76,10.125;3.81,10.125;3.81,11.145;3.76,11.145;3.76,11.525;4.14,11.525;4.14,11.145;4.09,11.145;4.09,10.125;4.14,10.125;4.14,9.745)</value>
+    <value>polygon: (0.78,11.585;0.78,11.965;0.83,11.965;0.83,12.985;1.11,12.985;1.11,11.965;1.16,11.965;1.16,11.585)</value>
    </values>
   </item>
   <item>
@@ -243,14 +207,14 @@
   </item>
   <item>
    <tags/>
-   <category>'M1.4'</category>
+   <category>'PL.8'</category>
    <cell>synapse</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-7.4,-15.25;-7.4,-14.87;-7.02,-14.87;-7.02,-15.25)</value>
+    <value>polygon: (0.83,13.805;0.83,14.825;0.78,14.825;0.78,15.205;1.16,15.205;1.16,14.825;1.11,14.825;1.11,13.805)</value>
    </values>
   </item>
   <item>
@@ -262,7 +226,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-6.28,-15.25;-6.28,-14.87;-5.9,-14.87;-5.9,-15.25)</value>
+    <value>polygon: (5.185,-4.98;5.185,-4.58;8.09,-4.58;8.09,-4.98)</value>
    </values>
   </item>
   <item>
@@ -274,7 +238,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-5.55,-15.25;-5.55,-14.87;-5.17,-14.87;-5.17,-15.25)</value>
+    <value>polygon: (7.17,-4.27;7.17,-2.86;8.25,-2.86;8.25,-1.97;8.63,-1.97;8.63,-3.21;7.55,-3.21;7.55,-4.27)</value>
    </values>
   </item>
   <item>
@@ -286,7 +250,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (2.15,-14.685;2.15,-14.305;2.53,-14.305;2.53,-14.685)</value>
+    <value>polygon: (7.7,-1.67;7.7,-1.27;7.71,-1.27;7.71,-0.37;8.09,-0.37;8.09,-1.27;8.1,-1.27;8.1,-1.67)</value>
    </values>
   </item>
   <item>
@@ -298,7 +262,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (3.23,-14.685;3.23,-14.305;3.61,-14.305;3.61,-14.685)</value>
+    <value>polygon: (8.96,-7.26;8.96,-4.27;8.25,-4.27;8.25,-3.89;8.96,-3.89;8.96,-0.06;8.25,-0.06;8.25,0.32;8.96,0.32;8.96,2.2;11,2.2;11,-1.31;11.71,-1.31;11.71,-1.69;11,-1.69;11,-4.26;11.71,-4.26;11.71,-4.64;11,-4.64;11,-7.26)</value>
    </values>
   </item>
   <item>
@@ -310,7 +274,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-6.84,-14.55;-6.84,-14.17;-6.46,-14.17;-6.46,-14.55)</value>
+    <value>polygon: (12.41,-1.69;12.41,-0.41;11.33,-0.41;11.33,2.2;11.73,2.2;11.73,-0.095;12.81,-0.095;12.81,-1.69)</value>
    </values>
   </item>
   <item>
@@ -322,7 +286,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (2.69,-13.995;2.69,-13.615;3.07,-13.615;3.07,-13.995)</value>
+    <value>polygon: (12.41,0.8;12.41,2.2;12.82,2.2;12.82,7.25;13.22,7.25;13.22,0.8)</value>
    </values>
   </item>
   <item>
@@ -334,7 +298,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-7.4,-13.41;-7.4,-13.03;-7.02,-13.03;-7.02,-13.41)</value>
+    <value>polygon: (3.2,-2.36;3.2,8.085;3.6,8.085;3.6,-1.96;7.56,-1.96;7.56,-2.36)</value>
    </values>
   </item>
   <item>
@@ -346,7 +310,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-6.28,-13.41;-6.28,-13.03;-5.9,-13.03;-5.9,-13.41)</value>
+    <value>polygon: (4.28,-0.07;4.28,8.085;4.68,8.085;4.68,0.33;7.17,0.33;7.17,0.32;7.55,0.32;7.55,-0.06;7.17,-0.06;7.17,-0.07)</value>
    </values>
   </item>
   <item>
@@ -358,7 +322,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-5.55,-13.41;-5.55,-13.03;-5.17,-13.03;-5.17,-13.41)</value>
+    <value>polygon: (11.87,2.79;11.87,8.325;12.27,8.325;12.27,7.925;12.25,7.925;12.25,2.79)</value>
    </values>
   </item>
   <item>
@@ -370,7 +334,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-6.84,-12.71;-6.84,-12.33;-6.46,-12.33;-6.46,-12.71)</value>
+    <value>polygon: (12.41,-4.64;12.41,-3.95;11.87,-3.95;11.87,-2.29;12.25,-2.29;12.25,-3.565;12.79,-3.565;12.79,-4.24;13.635,-4.24;13.635,8.325;14.035,8.325;14.035,-4.64)</value>
    </values>
   </item>
   <item>
@@ -382,7 +346,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-7.4,-11.57;-7.4,-11.19;-7.02,-11.19;-7.02,-11.57)</value>
+    <value>polygon: (1.12,-10.82;1.12,9.03;18.85,9.03;18.85,-10.82/1.52,-10.42;18.45,-10.42;18.45,8.63;1.52,8.63)</value>
    </values>
   </item>
   <item>
@@ -394,7 +358,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-6.28,-11.57;-6.28,-11.19;-5.9,-11.19;-5.9,-11.57)</value>
+    <value>polygon: (0.42,-1.67;0.42,10.125;1.16,10.125;1.16,9.725;0.82,9.725;0.82,-1.67)</value>
    </values>
   </item>
   <item>
@@ -406,7 +370,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-5.55,-11.57;-5.55,-11.19;-5.17,-11.19;-5.17,-11.57)</value>
+    <value>polygon: (4.28,9.725;4.28,10.125;4.68,10.125;4.68,9.725)</value>
    </values>
   </item>
   <item>
@@ -418,7 +382,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-6.84,-10.87;-6.84,-10.49;-6.46,-10.49;-6.46,-10.87)</value>
+    <value>polygon: (1.33,10.435;1.33,10.835;1.34,10.835;1.34,11.585;0.78,11.585;0.78,11.965;1.72,11.965;1.72,10.835;1.73,10.835;1.73,10.435)</value>
    </values>
   </item>
   <item>
@@ -430,7 +394,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (0.565,-7.695;0.565,-7.315;3.07,-7.315;3.07,-7.695)</value>
+    <value>polygon: (4.32,10.445;4.32,10.825;6.5,10.825;6.5,12.565;6.9,12.565;6.9,12.865;8.01,12.865;8.01,10.445)</value>
    </values>
   </item>
   <item>
@@ -442,175 +406,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (12.41,-14.685;12.41,-14.305;12.415,-14.305;12.415,-13.995;11.87,-13.995;11.87,-7.315;12.25,-7.315;12.25,-13.615;12.79,-13.615;12.79,-14.685)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>synapse</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (2.15,-0.065;2.15,0.315;2.53,0.315;2.53,-0.065)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>synapse</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (2.15,-7.005;2.15,-2.815;3.23,-2.815;3.23,0.315;3.61,0.315;3.61,-3.185;2.53,-3.185;2.53,-7.005)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>synapse</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (3.23,-7.005;3.23,-6.625;3.94,-6.625;3.94,0.315;4.32,0.315;4.32,-7.005)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>synapse</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (2.69,0.625;2.69,1.005;3.07,1.005;3.07,0.625)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>synapse</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (3.94,-14.685;3.94,-14.305;10.62,-14.305;10.62,2.195;11,2.195;11,-6.335;11.71,-6.335;11.71,-6.715;11,-6.715;11,-14.305;11.71,-14.305;11.71,-14.685)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>synapse</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (12.41,-6.715;12.41,-5.045;11.33,-5.045;11.33,2.195;11.73,2.195;11.73,-4.645;12.81,-4.645;12.81,-6.715)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>synapse</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-6.82,4.12;-6.82,4.52;-6.42,4.52;-6.42,4.12)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>synapse</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-6.79,5.295;-6.79,5.695;-6.39,5.695;-6.39,5.295)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>synapse</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (12.41,0.795;12.41,2.195;12.82,2.195;12.82,7.25;13.22,7.25;13.22,0.795)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>synapse</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (11.87,2.785;11.87,8.325;12.27,8.325;12.27,7.925;12.25,7.925;12.25,2.785)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>synapse</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-3.9,-20.865;-3.9,9.03;18.85,9.03;18.85,-20.865/-3.5,-20.465;18.45,-20.465;18.45,8.63;-3.5,8.63)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>synapse</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (3.76,9.485;3.76,10.125;4.14,10.125;4.14,9.885;4.16,9.885;4.16,9.485)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>synapse</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (4.32,10.445;4.32,10.825;5.05,10.825;5.05,11.34;6.5,11.34;6.5,11.885;6.9,11.885;6.9,12.865;8.01,12.865;8.01,10.445)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.4'</category>
-   <cell>synapse</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (10.19,10.445;10.19,11.885;10.59,11.885;10.59,12.865;10.97,12.865;10.97,10.445)</value>
+    <value>polygon: (10.59,10.445;10.59,11.125;10.19,11.125;10.19,12.565;10.59,12.565;10.59,12.865;10.97,12.865;10.97,10.445)</value>
    </values>
   </item>
   <item>
@@ -634,7 +430,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (8.75,10.445;8.75,12.865;9.595,12.865;9.595,13.695;11.72,13.695;11.72,10.445;11.32,10.445;11.32,13.295;9.995,13.295;9.995,12.465;9.13,12.465;9.13,10.445)</value>
+    <value>polygon: (8.75,10.445;8.75,12.865;9.375,12.865;9.375,13.695;11.72,13.695;11.72,10.445;11.32,10.445;11.32,13.295;9.89,13.295;9.89,12.465;9.13,12.465;9.13,10.445)</value>
    </values>
   </item>
   <item>
@@ -646,7 +442,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (3.2,10.445;3.2,11.525;3.74,11.525;3.74,13.745;8.57,13.745;8.57,13.345;4.14,13.345;4.14,11.145;3.58,11.145;3.58,10.445)</value>
+    <value>polygon: (3.2,9.725;3.2,11.525;3.74,11.525;3.74,13.745;8.57,13.745;8.57,13.345;4.14,13.345;4.14,11.145;3.6,11.145;3.6,9.725)</value>
    </values>
   </item>
   <item>
@@ -658,7 +454,55 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (11.87,9.565;11.87,9.965;13.635,9.965;13.635,14.25;-5.42,14.25;-5.42,14.65;14.035,14.65;14.035,9.565)</value>
+    <value>polygon: (1.72,12.275;1.72,12.285;1.34,12.285;1.34,12.665;1.72,12.665;1.72,12.675;3.035,12.675;3.035,14.445;13.335,14.445;13.335,14.045;3.435,14.045;3.435,12.275)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-0.51,10.445;-0.51,11.125;-0.91,11.125;-0.91,12.565;-0.51,12.565;-0.51,14.505;0.6,14.505;0.6,14.125;-0.13,14.125;-0.13,10.825;0.6,10.825;0.6,10.445)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0.22,12.285;0.22,13.695;1.34,13.695;1.34,14.505;1.72,14.505;1.72,13.345;0.6,13.345;0.6,12.285)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-1.955,14.825;-1.955,15.205;1.16,15.205;1.16,14.825)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (11.87,9.565;11.87,9.965;13.635,9.965;13.635,15.505;-1.955,15.505;-1.955,15.905;14.035,15.905;14.035,9.565)</value>
    </values>
   </item>
   <item>
@@ -670,7 +514,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-6.82,4.12;-6.82,4.52;-6.42,4.52;-6.42,4.12)</value>
+    <value>polygon: (-1.82,-7.26;-1.82,-5.55;11,-5.55;11,-7.26)</value>
    </values>
   </item>
   <item>
@@ -682,7 +526,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-6.79,5.295;-6.79,5.695;-6.39,5.695;-6.39,5.295)</value>
+    <value>polygon: (-1.955,-4.98;-1.955,-4.58;5.585,-4.58;5.585,-4.98)</value>
    </values>
   </item>
   <item>
@@ -694,7 +538,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (3.76,9.485;3.76,9.885;4.16,9.885;4.16,9.485)</value>
+    <value>polygon: (-1.955,-1.67;-1.955,-1.27;8.1,-1.27;8.1,-1.67)</value>
    </values>
   </item>
   <item>
@@ -718,7 +562,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (6.5,10.445;6.5,11.885;10.59,11.885;10.59,10.445)</value>
+    <value>polygon: (3.2,7.685;3.2,10.125;3.6,10.125;3.6,7.685)</value>
    </values>
   </item>
   <item>
@@ -730,7 +574,43 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-13.03,6.85;-13.03,7.25;12.82,7.25;12.82,11.885;13.22,11.885;13.22,6.85)</value>
+    <value>polygon: (4.28,7.685;4.28,10.435;1.33,10.435;1.33,10.835;4.68,10.835;4.68,7.685)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-1.955,6.85;-1.955,7.25;12.82,7.25;12.82,11.885;13.22,11.885;13.22,6.85)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-1.955,11.125;-1.955,12.56;-0.91,12.56;-0.91,12.565;10.59,12.565;10.59,11.125)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (13.635,7.925;13.635,14.045;12.935,14.045;12.935,14.445;14.035,14.445;14.035,7.925)</value>
    </values>
   </item>
  </items>

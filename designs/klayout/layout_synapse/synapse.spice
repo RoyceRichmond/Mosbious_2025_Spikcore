@@ -1,16 +1,16 @@
 ** sch_path: /foss/designs/Mosbious_2025_spiking4all/designs/libs/core_synapse/synapse.sch
 .subckt synapse vdd v_in ve v_ctrl v_out vi vss
 *.PININFO v_out:B v_ctrl:B ve:B vi:B v_in:B vdd:B vss:B
-M5 net2 net2 vdd vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
-M1 net1 v_in vdd vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
-M3 net1 v_in vss vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
-M4 net2 v_in net3 vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
-M6 net3 ve vss vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
-M7 net5 vi vdd vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
-M8 net4 net1 net5 vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
-M9 net4 net4 vss vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
-M2 net7 net2 vdd vdd pfet_03v3 L=0.28u W=2.8u nf=1 m=1
-M10 v_out v_ctrl net7 vdd pfet_03v3 L=0.28u W=2.8u nf=1 m=1
-M11 v_out v_ctrl net6 vss nfet_03v3 L=0.28u W=2u nf=1 m=1
-M12 net6 net4 vss vss nfet_03v3 L=0.28u W=1u nf=1 m=1
+XM5 net2 net2 vdd vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+XM1 net1 v_in vdd vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+XM3 net1 v_in vss vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+XM4 net2 v_in net3 vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+XM6 net3 ve vss vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+XM7 net5 vi vdd vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+XM8 net4 net1 net5 vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+XM9 net4 net4 vss vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+XM2 net7 net2 vdd vdd pfet_03v3 L=0.28u W=2.8u nf=1 m=1
+XM10 v_out v_ctrl net7 vdd pfet_03v3 L=0.28u W=2.8u nf=1 m=1
+XM11 v_out v_ctrl net6 vss nfet_03v3 L=0.28u W=2u nf=1 m=1
+XM12 net6 net4 vss vss nfet_03v3 L=0.28u W=1u nf=1 m=1
 .ends
