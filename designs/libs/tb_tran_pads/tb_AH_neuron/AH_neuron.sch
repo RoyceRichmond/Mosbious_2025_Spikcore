@@ -69,6 +69,7 @@ N -160 -530 -160 -490 {lab=DVSS}
 N -60 -530 -60 -490 {lab=VSS}
 N -360 -390 -60 -390 {lab=GND}
 N -210 -390 -210 -370 {lab=GND}
+N 90 280 90 310 {lab=GND}
 C {vsource.sym} 80 20 0 0 {name=V1 value=vd_v savecurrent=false}
 C {devices/code_shown.sym} -435 -100 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
@@ -102,6 +103,7 @@ C {devices/code_shown.sym} -480 380 0 0 {name=MODELS1 only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
+.include "/foss/designs/sscs-chipathon-2025/resources/Integration/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice"
 .lib $::180MCU_MODELS/sm141064.ngspice diode_typical
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 .lib $::180MCU_MODELS/sm141064.ngspice cap_mim
@@ -115,7 +117,7 @@ descr="load waves"
 tclcommand="xschem raw_read $netlist_dir/sub_th_ah.raw tran"
 }
 C {designs/libs/core_AH_neuron/AH_neuron.sym} 180 70 0 0 {name=x1}
-C {lab_pin.sym} 320 80 3 0 {name=p4 sig_type=std_logic lab=vmem}
+C {lab_pin.sym} 300 80 1 0 {name=p4 sig_type=std_logic lab=vmem}
 C {res.sym} 80 -40 0 0 {name=R1
 value=10
 footprint=1206
@@ -130,12 +132,6 @@ device=resistor
 m=1}
 C {title.sym} -170 570 0 0 {name=l3 author="Royce Richmond"}
 C {ammeter.sym} 240 80 3 0 {name=Vdd_c1 savecurrent=true spice_ignore=0}
-C {devices/code_shown.sym} -420 -300 0 0 {name=DUT only_toplevel=true
-format="tcleval( @value )"
-value="
-.include "/foss/designs/sscs-chipathon-2025/resources/Integration/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice"
-XDUT DVSS DVDD VSS VDD PAD ASIG gf180mcu_fd_io__asig_5p0_extracted
-"}
 C {vsource.sym} -360 -460 0 0 {name=V2 value=5 savecurrent=false}
 C {vsource.sym} -160 -460 0 0 {name=V4 value=0 savecurrent=false}
 C {vsource.sym} -60 -460 0 0 {name=V5 value=0 savecurrent=false}
@@ -145,3 +141,22 @@ C {lab_wire.sym} -160 -530 0 0 {name=p8 sig_type=std_logic lab=DVSS}
 C {lab_wire.sym} -60 -530 0 0 {name=p9 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 180 210 0 0 {name=p7 sig_type=std_logic lab=pad}
 C {gnd.sym} 180 270 0 0 {name=l5 lab=GND}
+C {/foss/designs/sscs-chipathon-2025/resources/Integration/Chipathon2025_pads/xschem/symbols/io_asig_5p0.sym} 260 410 0 0 {name=IO1
+model=gf180mcu_fd_io__asig_5p0_extracted
+spiceprefix=X
+}
+C {vsource.sym} 90 250 0 0 {name=V3 value=0.49	 savecurrent=false}
+C {lab_pin.sym} 90 160 0 0 {name=p10 sig_type=std_logic lab=v_bias}
+C {res.sym} 90 190 0 0 {name=R3
+value=10
+footprint=1206
+device=resistor
+m=1}
+C {gnd.sym} 90 310 0 0 {name=l6 lab=GND}
+C {lab_pin.sym} 380 100 0 0 {name=p11 sig_type=std_logic lab=v_bias}
+C {lab_pin.sym} 460 330 2 0 {name=p12 sig_type=std_logic lab=ASIG}
+C {lab_wire.sym} 340 250 0 0 {name=p13 sig_type=std_logic lab=DVDD}
+C {lab_wire.sym} 340 410 0 0 {name=p14 sig_type=std_logic lab=DVSS}
+C {lab_wire.sym} 380 410 0 0 {name=p15 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 380 250 0 0 {name=p16 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 260 330 0 0 {name=p17 sig_type=std_logic lab=pad}
