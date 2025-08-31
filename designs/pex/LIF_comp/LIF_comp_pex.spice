@@ -1,0 +1,648 @@
+* SPICE3 file created from LIF_comp.ext - technology: gf180mcuD
+
+.option scale=5n
+
+X0 ota_2stages_0/vdd ota_2stages_0/m2_n346_983# ota_2stages_0/vout ota_2stages_0/pfet_1/w_n352_n286# pfet_03v3 ad=21.84n pd=0.596m as=21.84n ps=0.596m w=168 l=56
+X1 ota_2stages_0/m2_n346_983# ota_2stages_0/m2_n346_983# ota_2stages_0/vdd ota_2stages_0/pfet_1/w_n352_n286# pfet_03v3 ad=21.84n pd=0.596m as=87.36n ps=2.124m w=168 l=56
+X2 ota_2stages_0/vout ota_2stages_0/m2_n516_n58# VSUBS VSUBS nfet_03v3 ad=13.664n pd=0.468m as=13.664n ps=0.468m w=112 l=56
+X3 ota_2stages_0/m2_n516_n58# ota_2stages_0/vp ota_2stages_0/vout VSUBS nfet_03v3 ad=75.152n pd=1.476m as=75.152n ps=1.476m w=616 l=56
+X4 ota_2stages_0/m2_n346_983# ota_2stages_0/vn ota_2stages_0/m2_n516_n58# VSUBS nfet_03v3 ad=75.152n pd=1.476m as=0.1708u ps=3.532m w=616 l=56
+X5 ota_2stages_0/vout ota_2stages_0/vout ota_2stages_0/vdd ota_2stages_0/pfet_1/w_n352_n286# pfet_03v3 ad=43.68n pd=0.932m as=43.68n ps=0.932m w=336 l=56
+X6 VSUBS ota_2stages_0/m2_n1824_n806# ota_2stages_0/m2_n1824_n806# VSUBS nfet_03v3 ad=20.496n pd=0.58m as=20.496n ps=0.58m w=168 l=56
+X7 ota_2stages_0/m2_n516_n58# ota_2stages_0/m2_n1824_n806# VSUBS VSUBS nfet_03v3 ad=0 pd=0 as=0.55144u ps=0.0149 w=168 l=56
+X8 ota_2stages_0/vdd ota_2stages_0/vdd ota_2stages_0/m2_n1824_n806# VSUBS nfet_03v3 ad=9.12n pd=0.396m as=9.12n ps=0.396m w=72 l=1708
+X9 switch$3_0/vdd switch$3_0/cntrl switch$3_0/m2_n331_n296# switch$3_0/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=70
+X10 switch$3_0/out switch$3_0/m2_n331_n296# switch$3_0/in switch$3_0/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=70
+X11 VSUBS switch$3_0/cntrl switch$3_0/m2_n331_n296# VSUBS nfet_03v3 ad=24.4n pd=0.644m as=24.4n ps=0.644m w=200 l=56
+X12 switch$3_0/out switch$3_0/cntrl switch$3_0/in VSUBS nfet_03v3 ad=24.4n pd=0.644m as=24.4n ps=0.644m w=200 l=56
+X13 conmutator$3_0/in1 conmutator$3_0/m2_n850_n472# conmutator$3_0/out VSUBS nfet_03v3 ad=24.4n pd=0.644m as=24.4n ps=0.644m w=200 l=56
+X14 conmutator$3_0/out conmutator$3_0/cntrl conmutator$3_0/in2 VSUBS nfet_03v3 ad=48.8n pd=1.288m as=24.4n ps=0.644m w=200 l=56
+X15 VSUBS conmutator$3_0/cntrl conmutator$3_0/m2_n850_n472# VSUBS nfet_03v3 ad=0 pd=0 as=24.4n ps=0.644m w=200 l=56
+X16 conmutator$3_0/in1 conmutator$3_0/cntrl conmutator$3_0/out conmutator$3_0/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=70
+X17 conmutator$3_0/vdd conmutator$3_0/cntrl conmutator$3_0/m2_n850_n472# conmutator$3_0/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=70
+X18 conmutator$3_0/out conmutator$3_0/m2_n850_n472# conmutator$3_0/in2 conmutator$3_0/vdd pfet_03v3 ad=52n pd=1.32m as=26n ps=0.66m w=200 l=70
+X19 conmutator$3_2/in1 conmutator$3_2/m2_n850_n472# conmutator$3_2/out VSUBS nfet_03v3 ad=24.4n pd=0.644m as=48.8n ps=1.288m w=200 l=56
+X20 conmutator$3_2/out conmutator$3_2/cntrl conmutator$3_2/in2 VSUBS nfet_03v3 ad=0 pd=0 as=24.4n ps=0.644m w=200 l=56
+X21 VSUBS conmutator$3_2/cntrl conmutator$3_2/m2_n850_n472# VSUBS nfet_03v3 ad=0 pd=0 as=24.4n ps=0.644m w=200 l=56
+X22 conmutator$3_2/in1 conmutator$3_2/cntrl conmutator$3_2/out conmutator$3_2/vdd pfet_03v3 ad=26n pd=0.66m as=52n ps=1.32m w=200 l=70
+X23 conmutator$3_2/vdd conmutator$3_2/cntrl conmutator$3_2/m2_n850_n472# conmutator$3_2/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=70
+X24 conmutator$3_2/out conmutator$3_2/m2_n850_n472# conmutator$3_2/in2 conmutator$3_2/vdd pfet_03v3 ad=0 pd=0 as=26n ps=0.66m w=200 l=70
+X25 conmutator$3_1/in1 conmutator$3_1/m2_n850_n472# conmutator$3_1/out VSUBS nfet_03v3 ad=24.4n pd=0.644m as=48.8n ps=1.288m w=200 l=56
+X26 conmutator$3_1/out conmutator$3_1/cntrl conmutator$3_1/in2 VSUBS nfet_03v3 ad=0 pd=0 as=24.4n ps=0.644m w=200 l=56
+X27 VSUBS conmutator$3_1/cntrl conmutator$3_1/m2_n850_n472# VSUBS nfet_03v3 ad=0 pd=0 as=24.4n ps=0.644m w=200 l=56
+X28 conmutator$3_1/in1 conmutator$3_1/cntrl conmutator$3_1/out conmutator$3_1/vdd pfet_03v3 ad=26n pd=0.66m as=52n ps=1.32m w=200 l=70
+X29 conmutator$3_1/vdd conmutator$3_1/cntrl conmutator$3_1/m2_n850_n472# conmutator$3_1/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=70
+X30 conmutator$3_1/out conmutator$3_1/m2_n850_n472# conmutator$3_1/in2 conmutator$3_1/vdd pfet_03v3 ad=0 pd=0 as=26n ps=0.66m w=200 l=70
+X31 ota_1stage$3_0/m2_n516_n58# ota_1stage$3_0/vn ota_1stage$3_0/vout VSUBS nfet_03v3 ad=75.152n pd=1.476m as=75.152n ps=1.476m w=616 l=56
+X32 ota_1stage$3_0/m2_n346_983# ota_1stage$3_0/vp ota_1stage$3_0/m2_n516_n58# VSUBS nfet_03v3 ad=75.152n pd=1.476m as=0.1708u ps=3.532m w=616 l=56
+X33 VSUBS ota_1stage$3_0/m2_n1824_n806# ota_1stage$3_0/m2_n1824_n806# VSUBS nfet_03v3 ad=20.496n pd=0.58m as=20.496n ps=0.58m w=168 l=56
+X34 ota_1stage$3_0/m2_n516_n58# ota_1stage$3_0/m2_n1824_n806# VSUBS VSUBS nfet_03v3 ad=0 pd=0 as=0 ps=0 w=168 l=56
+X35 ota_1stage$3_0/vdd ota_1stage$3_0/m2_n346_983# ota_1stage$3_0/vout ota_1stage$3_0/pfet$1$6_1/w_n352_n286# pfet_03v3 ad=21.84n pd=0.596m as=21.84n ps=0.596m w=168 l=56
+X36 ota_1stage$3_0/m2_n346_983# ota_1stage$3_0/m2_n346_983# ota_1stage$3_0/vdd ota_1stage$3_0/pfet$1$6_1/w_n352_n286# pfet_03v3 ad=21.84n pd=0.596m as=43.68n ps=1.192m w=168 l=56
+X37 ota_1stage$3_0/vdd ota_1stage$3_0/vdd ota_1stage$3_0/m2_n1824_n806# VSUBS nfet_03v3 ad=9.12n pd=0.396m as=9.12n ps=0.396m w=72 l=1708
+X38 VSUBS phaseUpulse_0/switch_0/cntrl phaseUpulse_0/switch_0/m2_n331_n296# VSUBS nfet_03v3 ad=24.4n pd=0.644m as=24.4n ps=0.644m w=200 l=56
+X39 phaseUpulse_0/switch_0/vdd phaseUpulse_0/switch_0/cntrl phaseUpulse_0/switch_0/m2_n331_n296# phaseUpulse_0/switch_0/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=70
+X40 phaseUpulse_0/switch_0/out phaseUpulse_0/switch_0/cntrl phaseUpulse_0/switch_0/in VSUBS nfet_03v3 ad=24.4n pd=0.644m as=24.4n ps=0.644m w=200 l=56
+X41 phaseUpulse_0/switch_0/out phaseUpulse_0/switch_0/m2_n331_n296# phaseUpulse_0/switch_0/in phaseUpulse_0/switch_0/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=70
+X42 VSUBS phaseUpulse_0/switch_1/cntrl phaseUpulse_0/switch_1/m2_n331_n296# VSUBS nfet_03v3 ad=0 pd=0 as=24.4n ps=0.644m w=200 l=56
+X43 phaseUpulse_0/switch_1/vdd phaseUpulse_0/switch_1/cntrl phaseUpulse_0/switch_1/m2_n331_n296# phaseUpulse_0/switch_1/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=70
+X44 phaseUpulse_0/switch_1/out phaseUpulse_0/switch_1/cntrl phaseUpulse_0/switch_1/in VSUBS nfet_03v3 ad=24.4n pd=0.644m as=24.4n ps=0.644m w=200 l=56
+X45 phaseUpulse_0/switch_1/out phaseUpulse_0/switch_1/m2_n331_n296# phaseUpulse_0/switch_1/in phaseUpulse_0/switch_1/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=70
+X46 VSUBS phaseUpulse_0/switch_2/cntrl phaseUpulse_0/switch_2/m2_n331_n296# VSUBS nfet_03v3 ad=0 pd=0 as=24.4n ps=0.644m w=200 l=56
+X47 phaseUpulse_0/switch_2/vdd phaseUpulse_0/switch_2/cntrl phaseUpulse_0/switch_2/m2_n331_n296# phaseUpulse_0/switch_2/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=70
+X48 phaseUpulse_0/switch_2/out phaseUpulse_0/switch_2/cntrl phaseUpulse_0/switch_2/in VSUBS nfet_03v3 ad=24.4n pd=0.644m as=24.4n ps=0.644m w=200 l=56
+X49 phaseUpulse_0/switch_2/out phaseUpulse_0/switch_2/m2_n331_n296# phaseUpulse_0/switch_2/in phaseUpulse_0/switch_2/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=70
+X50 phaseUpulse_0/nfet$13_0/a_118_0# phaseUpulse_0/nfet$13_0/a_54_n132# phaseUpulse_0/nfet$13_0/a_n84_n2# VSUBS nfet_03v3 ad=10.848n pd=0.444m as=10.848n ps=0.444m w=72 l=56
+X51 phaseUpulse_0/ota_1stage_0/vdd phaseUpulse_0/ota_1stage_0/m2_n346_983# phaseUpulse_0/ota_1stage_0/vout phaseUpulse_0/ota_1stage_0/pfet$1$5_1/w_n352_n286# pfet_03v3 ad=21.84n pd=0.596m as=21.84n ps=0.596m w=168 l=56
+X52 phaseUpulse_0/ota_1stage_0/m2_n346_983# phaseUpulse_0/ota_1stage_0/m2_n346_983# phaseUpulse_0/ota_1stage_0/vdd phaseUpulse_0/ota_1stage_0/pfet$1$5_1/w_n352_n286# pfet_03v3 ad=21.84n pd=0.596m as=43.68n ps=1.192m w=168 l=56
+X53 VSUBS phaseUpulse_0/ota_1stage_0/m2_n1824_n806# phaseUpulse_0/ota_1stage_0/m2_n1824_n806# VSUBS nfet_03v3 ad=20.496n pd=0.58m as=20.496n ps=0.58m w=168 l=56
+X54 phaseUpulse_0/ota_1stage_0/vdd phaseUpulse_0/ota_1stage_0/vdd phaseUpulse_0/ota_1stage_0/m2_n1824_n806# VSUBS nfet_03v3 ad=9.12n pd=0.396m as=9.12n ps=0.396m w=72 l=1708
+X55 phaseUpulse_0/ota_1stage_0/m2_n516_n58# phaseUpulse_0/ota_1stage_0/m2_n1824_n806# VSUBS VSUBS nfet_03v3 ad=0.1708u pd=3.532m as=0 ps=0 w=168 l=56
+X56 phaseUpulse_0/ota_1stage_0/m2_n516_n58# phaseUpulse_0/ota_1stage_0/vn phaseUpulse_0/ota_1stage_0/vout VSUBS nfet_03v3 ad=75.152n pd=1.476m as=75.152n ps=1.476m w=616 l=56
+X57 phaseUpulse_0/ota_1stage_0/m2_n346_983# phaseUpulse_0/ota_1stage_0/vp phaseUpulse_0/ota_1stage_0/m2_n516_n58# VSUBS nfet_03v3 ad=75.152n pd=1.476m as=0 ps=0 w=616 l=56
+X58 phaseUpulse_0/nfet$13_1/a_118_0# phaseUpulse_0/nfet$13_1/a_54_n132# phaseUpulse_0/nfet$13_1/a_n84_n2# VSUBS nfet_03v3 ad=10.848n pd=0.444m as=10.848n ps=0.444m w=72 l=56
+X59 phaseUpulse_0/nfet$13_2/a_118_0# phaseUpulse_0/nfet$13_2/a_54_n132# phaseUpulse_0/nfet$13_2/a_n84_n2# VSUBS nfet_03v3 ad=10.848n pd=0.444m as=10.848n ps=0.444m w=72 l=56
+X60 phaseUpulse_0/nfet$13_3/a_118_0# phaseUpulse_0/nfet$13_3/a_54_n132# phaseUpulse_0/nfet$13_3/a_n84_n2# VSUBS nfet_03v3 ad=10.848n pd=0.444m as=10.848n ps=0.444m w=72 l=56
+X61 phaseUpulse_0/nfet$13_4/a_118_0# phaseUpulse_0/nfet$13_4/a_54_n132# phaseUpulse_0/nfet$13_4/a_n84_n2# VSUBS nfet_03v3 ad=10.848n pd=0.444m as=10.848n ps=0.444m w=72 l=56
+X62 phaseUpulse_0/nfet$13_5/a_118_0# phaseUpulse_0/nfet$13_5/a_54_n132# phaseUpulse_0/nfet$13_5/a_n84_n2# VSUBS nfet_03v3 ad=10.848n pd=0.444m as=10.848n ps=0.444m w=72 l=56
+X63 phaseUpulse_0/not_0/vdd phaseUpulse_0/not_0/in phaseUpulse_0/not_0/in phaseUpulse_0/not_0/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=70
+X64 VSUBS phaseUpulse_0/not_0/in phaseUpulse_0/not_0/in VSUBS nfet_03v3 ad=24.4n pd=0.644m as=24.4n ps=0.644m w=200 l=56
+X65 phaseUpulse_0/not_1/vdd phaseUpulse_0/not_1/in phaseUpulse_0/not_1/in phaseUpulse_0/not_1/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=70
+X66 VSUBS phaseUpulse_0/not_1/in phaseUpulse_0/not_1/in VSUBS nfet_03v3 ad=0 pd=0 as=24.4n ps=0.644m w=200 l=56
+X67 phaseUpulse_0/not_2/vdd phaseUpulse_0/not_2/in phaseUpulse_0/not_2/in phaseUpulse_0/not_2/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=70
+X68 VSUBS phaseUpulse_0/not_2/in phaseUpulse_0/not_2/in VSUBS nfet_03v3 ad=0 pd=0 as=24.4n ps=0.644m w=200 l=56
+X69 phaseUpulse_0/not_3/vdd phaseUpulse_0/not_3/in phaseUpulse_0/not_3/in phaseUpulse_0/not_3/vdd pfet_03v3 ad=78n pd=1.98m as=26n ps=0.66m w=200 l=70
+X70 VSUBS phaseUpulse_0/not_3/in phaseUpulse_0/not_3/in VSUBS nfet_03v3 ad=0 pd=0 as=24.4n ps=0.644m w=200 l=56
+X71 phaseUpulse_0/not_4/vdd phaseUpulse_0/not_4/in phaseUpulse_0/not_4/in phaseUpulse_0/not_4/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=70
+X72 VSUBS phaseUpulse_0/not_4/in phaseUpulse_0/not_4/in VSUBS nfet_03v3 ad=0 pd=0 as=24.4n ps=0.644m w=200 l=56
+X73 phaseUpulse_0/not_0/vdd phaseUpulse_0/nor_0/A phaseUpulse_0/nor_0/pfet$1$4_0/a_94_0# phaseUpulse_0/not_0/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=56
+X74 VSUBS phaseUpulse_0/nor_0/A phaseUpulse_0/nor_0/Z VSUBS nfet_03v3 ad=24.4n pd=0.644m as=24.4n ps=0.644m w=200 l=56
+X75 phaseUpulse_0/nor_0/Z phaseUpulse_0/nor_0/B VSUBS VSUBS nfet_03v3 ad=24.4n pd=0.644m as=24.4n ps=0.644m w=200 l=56
+X76 phaseUpulse_0/nor_0/pfet$1$4_0/a_94_0# phaseUpulse_0/nor_0/B phaseUpulse_0/nor_0/Z phaseUpulse_0/not_0/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=56
+X77 phaseUpulse_0/conmutator_0/in1 phaseUpulse_0/conmutator_0/cntrl phaseUpulse_0/conmutator_0/out phaseUpulse_0/conmutator_0/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=70
+X78 phaseUpulse_0/conmutator_0/out phaseUpulse_0/conmutator_0/m2_n850_n472# phaseUpulse_0/conmutator_0/in2 phaseUpulse_0/conmutator_0/vdd pfet_03v3 ad=52n pd=1.32m as=26n ps=0.66m w=200 l=70
+X79 phaseUpulse_0/conmutator_0/vdd phaseUpulse_0/conmutator_0/cntrl phaseUpulse_0/conmutator_0/m2_n850_n472# phaseUpulse_0/conmutator_0/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=70
+X80 phaseUpulse_0/conmutator_0/in1 phaseUpulse_0/conmutator_0/m2_n850_n472# phaseUpulse_0/conmutator_0/out VSUBS nfet_03v3 ad=24.4n pd=0.644m as=24.4n ps=0.644m w=200 l=56
+X81 phaseUpulse_0/conmutator_0/out phaseUpulse_0/conmutator_0/cntrl phaseUpulse_0/conmutator_0/in2 VSUBS nfet_03v3 ad=48.8n pd=1.288m as=24.4n ps=0.644m w=200 l=56
+X82 VSUBS phaseUpulse_0/conmutator_0/cntrl phaseUpulse_0/conmutator_0/m2_n850_n472# VSUBS nfet_03v3 ad=0 pd=0 as=24.4n ps=0.644m w=200 l=56
+X83 phaseUpulse_0/nand_0/Z phaseUpulse_0/nand_0/A phaseUpulse_0/not_3/vdd phaseUpulse_0/not_3/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=56
+X84 phaseUpulse_0/not_3/vdd phaseUpulse_0/nand_0/B phaseUpulse_0/nand_0/Z phaseUpulse_0/not_3/vdd pfet_03v3 ad=26n pd=0.66m as=26n ps=0.66m w=200 l=56
+X85 VSUBS phaseUpulse_0/nand_0/B phaseUpulse_0/nand_0/nfet$3$2_0/a_94_0# VSUBS nfet_03v3 ad=24.4n pd=0.644m as=24.4n ps=0.644m w=200 l=56
+X86 phaseUpulse_0/nand_0/nfet$3$2_0/a_94_0# phaseUpulse_0/nand_0/A phaseUpulse_0/nand_0/Z VSUBS nfet_03v3 ad=24.4n pd=0.644m as=24.4n ps=0.644m w=200 l=56
+X87 phaseUpulse_0/nand_1/Z phaseUpulse_0/nand_1/A phaseUpulse_0/nand_1/vdd phaseUpulse_0/nand_1/vdd pfet_03v3 ad=33.601n pd=0.737m as=52n ps=1.32m w=200 l=56
+X88 phaseUpulse_0/nand_1/vdd phaseUpulse_0/nand_1/B phaseUpulse_0/nand_1/Z phaseUpulse_0/nand_1/vdd pfet_03v3 ad=0 pd=0 as=0 ps=0 w=200 l=56
+X89 VSUBS phaseUpulse_0/nand_1/B phaseUpulse_0/nand_1/nfet$3$2_0/a_94_0# VSUBS nfet_03v3 ad=0 pd=0 as=32.001n ps=0.721m w=200 l=56
+X90 phaseUpulse_0/nand_1/nfet$3$2_0/a_94_0# phaseUpulse_0/nand_1/A phaseUpulse_0/nand_1/Z VSUBS nfet_03v3 ad=0 pd=0 as=24.4n ps=0.644m w=200 l=56
+C0 phaseUpulse_0/not_3/in phaseUpulse_0/not_0/vdd 0.00283f
+C1 phaseUpulse_0/nand_1/A phaseUpulse_0/nand_1/nfet$3$2_0/a_94_0# 0.00412f
+C2 phaseUpulse_0/conmutator_0/vdd ota_1stage$3_0/m2_n1824_n806# 0
+C3 phaseUpulse_0/cap_mim_1/m2_n120_n120# ota_2stages_0/m2_n1824_n806# 0.00326f
+C4 phaseUpulse_0/conmutator_0/cntrl phaseUpulse_0/conmutator_0/m2_n850_n472# 0.84169f
+C5 phaseUpulse_0/cap_mim_0/m2_n120_n120# phaseUpulse_0/not_2/in 0.02003f
+C6 phaseUpulse_0/switch_0/cntrl phaseUpulse_0/switch_0/m2_n331_n296# 0.49399f
+C7 ota_2stages_0/vp ota_2stages_0/vn 0.00883f
+C8 phaseUpulse_0/nand_1/vdd phaseUpulse_0/nor_0/Z 0
+C9 ota_1stage$3_0/pfet$1$6_1/w_n352_n286# ota_1stage$3_0/m2_n1824_n806# 0.00206f
+C10 conmutator$3_2/in1 conmutator$3_2/in2 0.00566f
+C11 phaseUpulse_0/nand_0/A phaseUpulse_0/not_1/in 0
+C12 phaseUpulse_0/switch_0/out phaseUpulse_0/conmutator_0/cntrl 0
+C13 conmutator$3_2/vdd conmutator$3_2/m2_n850_n472# 0.2779f
+C14 phaseUpulse_0/not_2/vdd phaseUpulse_0/nand_0/B 0.00659f
+C15 ota_1stage$3_0/vdd phaseUpulse_0/conmutator_0/cntrl 0.00486f
+C16 switch$3_0/cntrl conmutator$3_2/in2 0
+C17 phaseUpulse_0/ota_1stage_0/vdd phaseUpulse_0/ota_1stage_0/m2_n1824_n806# 0.14345f
+C18 ota_2stages_0/vout conmutator$3_2/in2 0.00559f
+C19 phaseUpulse_0/cap_mim_0/m2_n120_n120# phaseUpulse_0/cap_mim_1/m4_0_0# 0.00465f
+C20 phaseUpulse_0/nfet$13_4/a_n84_n2# phaseUpulse_0/nfet$13_4/a_54_n132# 0.00326f
+C21 phaseUpulse_0/nfet$13_4/a_n84_n2# phaseUpulse_0/nfet$13_4/a_118_0# 0.02058f
+C22 conmutator$3_1/in1 conmutator$3_1/m2_n850_n472# 0.08059f
+C23 phaseUpulse_0/conmutator_0/out phaseUpulse_0/switch_0/in 0
+C24 phaseUpulse_0/switch_2/vdd phaseUpulse_0/switch_2/cntrl 0.17559f
+C25 phaseUpulse_0/not_3/vdd phaseUpulse_0/cap_mim_0/m2_n120_n120# 0.01218f
+C26 phaseUpulse_0/switch_2/vdd phaseUpulse_0/switch_2/m2_n331_n296# 0.28779f
+C27 phaseUpulse_0/cap_mim_1/m4_0_0# ota_2stages_0/m2_n1824_n806# 0
+C28 conmutator$3_0/cntrl conmutator$3_0/in1 0.12768f
+C29 phaseUpulse_0/nand_1/vdd phaseUpulse_0/nor_0/B 0
+C30 phaseUpulse_0/conmutator_0/in1 phaseUpulse_0/conmutator_0/m2_n850_n472# 0.08059f
+C31 phaseUpulse_0/not_4/in phaseUpulse_0/nand_1/nfet$3$2_0/a_94_0# 0
+C32 phaseUpulse_0/cap_mim_0/m2_n120_n120# phaseUpulse_0/cap_mim_0/m4_0_0# 1.58658f
+C33 phaseUpulse_0/nfet$13_3/a_118_0# phaseUpulse_0/nfet$13_3/a_n84_n2# 0.02058f
+C34 phaseUpulse_0/switch_0/cntrl phaseUpulse_0/conmutator_0/vdd 0.00343f
+C35 ota_2stages_0/m2_n516_n58# ota_2stages_0/pfet_1/w_n352_n286# 0.03485f
+C36 phaseUpulse_0/ota_1stage_0/vdd phaseUpulse_0/nfet$13_5/a_118_0# 0.01131f
+C37 phaseUpulse_0/switch_0/out phaseUpulse_0/conmutator_0/in1 0
+C38 ota_2stages_0/vdd conmutator$3_2/m2_n850_n472# 0.00581f
+C39 phaseUpulse_0/switch_2/cntrl phaseUpulse_0/ota_1stage_0/vdd 0
+C40 phaseUpulse_0/nand_0/Z phaseUpulse_0/not_1/in 0
+C41 phaseUpulse_0/ota_1stage_0/vp phaseUpulse_0/ota_1stage_0/m2_n1824_n806# 0.00784f
+C42 phaseUpulse_0/cap_mim_0/m2_n120_n120# phaseUpulse_0/not_2/vdd 0.07995f
+C43 phaseUpulse_0/ota_1stage_0/vp phaseUpulse_0/ota_1stage_0/vdd 0.00102f
+C44 switch$3_0/m2_n331_n296# conmutator$3_2/out 0
+C45 phaseUpulse_0/nand_0/Z phaseUpulse_0/nand_1/vdd 0
+C46 conmutator$3_0/out conmutator$3_0/in1 0.13616f
+C47 phaseUpulse_0/not_4/in phaseUpulse_0/not_0/vdd 0.003f
+C48 ota_1stage$3_0/m2_n516_n58# ota_1stage$3_0/m2_n1824_n806# 0.03239f
+C49 phaseUpulse_0/conmutator_0/vdd phaseUpulse_0/switch_0/m2_n331_n296# 0.00665f
+C50 phaseUpulse_0/switch_0/cntrl phaseUpulse_0/conmutator_0/out 0
+C51 ota_2stages_0/vdd phaseUpulse_0/cap_mim_1/m2_n120_n120# 0.00206f
+C52 conmutator$3_2/vdd switch$3_0/out 0
+C53 phaseUpulse_0/nfet$13_3/a_118_0# phaseUpulse_0/ota_1stage_0/m2_n1824_n806# 0
+C54 phaseUpulse_0/nfet$13_3/a_118_0# phaseUpulse_0/ota_1stage_0/vdd 0
+C55 ota_2stages_0/vout ota_2stages_0/m2_n346_983# 0.13518f
+C56 ota_1stage$3_0/vp ota_1stage$3_0/pfet$1$6_1/w_n352_n286# 0.00362f
+C57 phaseUpulse_0/nfet$13_0/a_n84_n2# phaseUpulse_0/nfet$13_0/a_118_0# 0.02058f
+C58 phaseUpulse_0/nfet$13_4/a_54_n132# phaseUpulse_0/cap_mim_0/m4_0_0# 0.00162f
+C59 phaseUpulse_0/cap_mim_0/m4_0_0# phaseUpulse_0/nfet$13_4/a_118_0# 0
+C60 phaseUpulse_0/switch_1/m2_n331_n296# phaseUpulse_0/switch_0/in 0.00256f
+C61 phaseUpulse_0/nor_0/pfet$1$4_0/a_94_0# phaseUpulse_0/nor_0/Z 0.04255f
+C62 phaseUpulse_0/switch_1/m2_n331_n296# phaseUpulse_0/switch_1/in 0.47344f
+C63 conmutator$3_2/vdd switch$3_0/vdd 0
+C64 switch$3_0/m2_n331_n296# conmutator$3_2/m2_n850_n472# 0
+C65 phaseUpulse_0/nand_0/A phaseUpulse_0/nand_0/nfet$3$2_0/a_94_0# 0.00412f
+C66 conmutator$3_2/vdd conmutator$3_2/cntrl 0.57591f
+C67 phaseUpulse_0/switch_2/cntrl phaseUpulse_0/switch_2/m2_n331_n296# 0.49399f
+C68 ota_2stages_0/vout ota_2stages_0/m2_n1824_n806# 0
+C69 phaseUpulse_0/cap_mim_1/m4_0_0# ota_2stages_0/vdd 0
+C70 phaseUpulse_0/nfet$13_5/a_n84_n2# phaseUpulse_0/nfet$13_5/a_54_n132# 0.00326f
+C71 ota_2stages_0/cap_mim$1$1_0/m4_0_0# conmutator$3_2/cntrl 0
+C72 phaseUpulse_0/not_0/in phaseUpulse_0/nfet$13_5/a_54_n132# 0
+C73 ota_2stages_0/m2_n516_n58# ota_2stages_0/vn 0.05928f
+C74 phaseUpulse_0/switch_0/out phaseUpulse_0/switch_0/vdd 0.12786f
+C75 ota_1stage$3_0/vout ota_1stage$3_0/m2_n1824_n806# 0
+C76 conmutator$3_0/cntrl conmutator$3_0/in2 0.17089f
+C77 phaseUpulse_0/conmutator_0/m2_n850_n472# ota_1stage$3_0/m2_n1824_n806# 0
+C78 conmutator$3_1/cntrl conmutator$3_1/in2 0.17089f
+C79 phaseUpulse_0/switch_1/in phaseUpulse_0/switch_1/cntrl 0.15354f
+C80 conmutator$3_0/m2_n850_n472# conmutator$3_0/in1 0.08059f
+C81 phaseUpulse_0/switch_2/vdd phaseUpulse_0/switch_1/m2_n331_n296# 0
+C82 conmutator$3_2/in1 conmutator$3_2/vdd 0.11534f
+C83 ota_2stages_0/pfet_1/w_n352_n286# ota_2stages_0/vn 0.00362f
+C84 phaseUpulse_0/switch_0/in phaseUpulse_0/conmutator_0/m2_n850_n472# 0
+C85 phaseUpulse_0/cap_mim_1/m2_n120_n120# phaseUpulse_0/nfet$13_1/a_118_0# 0.00364f
+C86 phaseUpulse_0/nor_0/pfet$1$4_0/a_94_0# phaseUpulse_0/nor_0/B 0.0048f
+C87 conmutator$3_2/vdd switch$3_0/cntrl 0.00844f
+C88 phaseUpulse_0/conmutator_0/out phaseUpulse_0/conmutator_0/vdd 0.25402f
+C89 conmutator$3_2/vdd ota_2stages_0/vout 0.01269f
+C90 ota_1stage$3_0/vdd ota_1stage$3_0/m2_n1824_n806# 0.14345f
+C91 phaseUpulse_0/switch_0/cntrl phaseUpulse_0/switch_1/m2_n331_n296# 0.00344f
+C92 phaseUpulse_0/switch_0/out phaseUpulse_0/switch_0/in 0.13855f
+C93 ota_1stage$3_0/vp ota_1stage$3_0/m2_n516_n58# 0.04674f
+C94 phaseUpulse_0/not_2/in phaseUpulse_0/not_1/in 0.05281f
+C95 ota_2stages_0/vdd conmutator$3_2/cntrl 0.00264f
+C96 conmutator$3_0/out conmutator$3_0/in2 0.13947f
+C97 phaseUpulse_0/nand_1/vdd phaseUpulse_0/nand_1/Z 0.19127f
+C98 phaseUpulse_0/nand_0/Z phaseUpulse_0/nand_0/nfet$3$2_0/a_94_0# 0.0436f
+C99 conmutator$3_1/vdd conmutator$3_1/out 0.25402f
+C100 ota_2stages_0/vout ota_2stages_0/cap_mim$1$1_0/m4_0_0# 5.01741f
+C101 phaseUpulse_0/cap_mim_1/m2_n120_n120# phaseUpulse_0/nfet$13_1/a_n84_n2# 0.00364f
+C102 phaseUpulse_0/switch_1/m2_n331_n296# phaseUpulse_0/switch_0/m2_n331_n296# 0
+C103 phaseUpulse_0/nand_1/vdd phaseUpulse_0/nand_1/B 0.17422f
+C104 conmutator$3_2/vdd conmutator$3_2/in2 0.04768f
+C105 switch$3_0/m2_n331_n296# switch$3_0/out 0.12068f
+C106 phaseUpulse_0/switch_0/cntrl phaseUpulse_0/switch_1/cntrl 0
+C107 phaseUpulse_0/ota_1stage_0/vout phaseUpulse_0/ota_1stage_0/m2_n1824_n806# 0
+C108 phaseUpulse_0/cap_mim_1/m4_0_0# phaseUpulse_0/nfet$13_1/a_118_0# 0
+C109 phaseUpulse_0/nfet$13_0/a_54_n132# phaseUpulse_0/nfet$13_0/a_118_0# 0.00326f
+C110 conmutator$3_2/in1 ota_2stages_0/vdd 0.00189f
+C111 phaseUpulse_0/ota_1stage_0/vout phaseUpulse_0/ota_1stage_0/vdd 0.19392f
+C112 phaseUpulse_0/switch_1/out phaseUpulse_0/switch_1/vdd 0.12786f
+C113 ota_1stage$3_0/vn ota_1stage$3_0/m2_n346_983# 0
+C114 phaseUpulse_0/switch_0/cntrl phaseUpulse_0/conmutator_0/m2_n850_n472# 0.00527f
+C115 phaseUpulse_0/not_0/in phaseUpulse_0/not_0/vdd 0.32437f
+C116 phaseUpulse_0/ota_1stage_0/m2_n346_983# phaseUpulse_0/ota_1stage_0/m2_n1824_n806# 0.00222f
+C117 phaseUpulse_0/ota_1stage_0/vdd phaseUpulse_0/ota_1stage_0/m2_n346_983# 0.69706f
+C118 phaseUpulse_0/not_3/vdd phaseUpulse_0/nand_1/vdd 0
+C119 ota_2stages_0/vout ota_2stages_0/vdd 1.16885f
+C120 phaseUpulse_0/switch_0/cntrl phaseUpulse_0/switch_0/out 0.07857f
+C121 phaseUpulse_0/cap_mim_0/m4_0_0# phaseUpulse_0/not_1/in 0.00269f
+C122 ota_1stage$3_0/pfet$1$6_1/w_n352_n286# ota_1stage$3_0/m2_n516_n58# 0.02757f
+C123 phaseUpulse_0/switch_2/in phaseUpulse_0/switch_2/out 0.13855f
+C124 switch$3_0/m2_n331_n296# switch$3_0/vdd 0.28779f
+C125 switch$3_0/m2_n331_n296# conmutator$3_2/cntrl 0.00303f
+C126 phaseUpulse_0/nand_1/vdd phaseUpulse_0/nand_1/A 0.16116f
+C127 ota_2stages_0/m2_n346_983# ota_2stages_0/m2_n1824_n806# 0.0018f
+C128 phaseUpulse_0/switch_0/m2_n331_n296# phaseUpulse_0/conmutator_0/m2_n850_n472# 0
+C129 phaseUpulse_0/cap_mim_1/m4_0_0# phaseUpulse_0/nfet$13_1/a_n84_n2# 0
+C130 ota_1stage$3_0/vp ota_1stage$3_0/vout 0
+C131 phaseUpulse_0/not_2/vdd phaseUpulse_0/not_1/in 0.04633f
+C132 phaseUpulse_0/conmutator_0/in2 phaseUpulse_0/conmutator_0/cntrl 0.17089f
+C133 phaseUpulse_0/nand_0/A phaseUpulse_0/not_4/vdd 0
+C134 phaseUpulse_0/switch_0/out phaseUpulse_0/switch_0/m2_n331_n296# 0.12068f
+C135 phaseUpulse_0/ota_1stage_0/m2_n516_n58# phaseUpulse_0/ota_1stage_0/m2_n1824_n806# 0.03239f
+C136 conmutator$3_0/out conmutator$3_0/cntrl 0.39355f
+C137 ota_2stages_0/vdd conmutator$3_2/in2 0.00135f
+C138 phaseUpulse_0/ota_1stage_0/m2_n516_n58# phaseUpulse_0/ota_1stage_0/vdd 0.03122f
+C139 conmutator$3_1/in1 conmutator$3_1/out 0.13616f
+C140 conmutator$3_1/out conmutator$3_1/m2_n850_n472# 0.40341f
+C141 phaseUpulse_0/not_1/vdd phaseUpulse_0/nand_0/Z 0
+C142 phaseUpulse_0/ota_1stage_0/vp phaseUpulse_0/ota_1stage_0/vout 0
+C143 conmutator$3_0/m2_n850_n472# conmutator$3_0/in2 0.47479f
+C144 ota_1stage$3_0/vp ota_1stage$3_0/vdd 0.00102f
+C145 phaseUpulse_0/ota_1stage_0/vp phaseUpulse_0/ota_1stage_0/m2_n346_983# 0.02673f
+C146 switch$3_0/m2_n331_n296# switch$3_0/cntrl 0.49399f
+C147 phaseUpulse_0/cap_mim_0/m2_n120_n120# phaseUpulse_0/nfet$13_4/a_54_n132# 0.00926f
+C148 phaseUpulse_0/nor_0/A phaseUpulse_0/not_0/vdd 0.1788f
+C149 phaseUpulse_0/cap_mim_0/m2_n120_n120# phaseUpulse_0/nfet$13_4/a_118_0# 0.0042f
+C150 conmutator$3_2/vdd ota_2stages_0/m2_n346_983# 0.00133f
+C151 phaseUpulse_0/not_2/in phaseUpulse_0/nand_0/nfet$3$2_0/a_94_0# 0
+C152 ota_2stages_0/pfet_1/w_n352_n286# conmutator$3_2/m2_n850_n472# 0.00875f
+C153 phaseUpulse_0/conmutator_0/vdd phaseUpulse_0/conmutator_0/m2_n850_n472# 0.2779f
+C154 phaseUpulse_0/ota_1stage_0/m2_n516_n58# phaseUpulse_0/nfet$13_5/a_118_0# 0
+C155 phaseUpulse_0/ota_1stage_0/pfet$1$5_1/w_n352_n286# phaseUpulse_0/ota_1stage_0/m2_n1824_n806# 0.00206f
+C156 ota_2stages_0/vp ota_2stages_0/vout 0.03609f
+C157 phaseUpulse_0/not_4/in phaseUpulse_0/nand_1/vdd 0.04561f
+C158 phaseUpulse_0/conmutator_0/in1 phaseUpulse_0/conmutator_0/in2 0.00566f
+C159 ota_2stages_0/m2_n346_983# ota_2stages_0/cap_mim$1$1_0/m4_0_0# 0.00105f
+C160 phaseUpulse_0/ota_1stage_0/pfet$1$5_1/w_n352_n286# phaseUpulse_0/ota_1stage_0/vdd 0.60478f
+C161 ota_1stage$3_0/pfet$1$6_1/w_n352_n286# ota_1stage$3_0/vout 0.04924f
+C162 phaseUpulse_0/nfet$13_4/a_n84_n2# ota_2stages_0/m2_n516_n58# 0
+C163 phaseUpulse_0/ota_1stage_0/vp phaseUpulse_0/ota_1stage_0/m2_n516_n58# 0.04674f
+C164 phaseUpulse_0/conmutator_0/vdd ota_1stage$3_0/vdd 0.00351f
+C165 phaseUpulse_0/cap_mim_1/m2_n120_n120# phaseUpulse_0/nfet$13_1/a_54_n132# 0.00799f
+C166 phaseUpulse_0/nand_0/Z phaseUpulse_0/not_4/vdd 0.0029f
+C167 ota_1stage$3_0/vdd ota_1stage$3_0/pfet$1$6_1/w_n352_n286# 0.60478f
+C168 phaseUpulse_0/not_3/in phaseUpulse_0/nand_0/nfet$3$2_0/a_94_0# 0
+C169 phaseUpulse_0/conmutator_0/out phaseUpulse_0/conmutator_0/m2_n850_n472# 0.40341f
+C170 phaseUpulse_0/nor_0/B phaseUpulse_0/nor_0/Z 0.07381f
+C171 phaseUpulse_0/not_3/vdd phaseUpulse_0/nand_0/nfet$3$2_0/a_94_0# 0.00321f
+C172 phaseUpulse_0/nand_1/vdd phaseUpulse_0/nand_1/nfet$3$2_0/a_94_0# 0.00321f
+C173 ota_2stages_0/vdd ota_2stages_0/m2_n346_983# 0.69876f
+C174 phaseUpulse_0/nfet$13_4/a_54_n132# phaseUpulse_0/nfet$13_4/a_118_0# 0.00326f
+C175 phaseUpulse_0/not_1/in phaseUpulse_0/nand_0/B 0
+C176 conmutator$3_0/cntrl conmutator$3_0/m2_n850_n472# 0.84169f
+C177 phaseUpulse_0/ota_1stage_0/vp phaseUpulse_0/ota_1stage_0/pfet$1$5_1/w_n352_n286# 0.00362f
+C178 phaseUpulse_0/nand_0/A phaseUpulse_0/nand_0/Z 0.07297f
+C179 phaseUpulse_0/cap_mim_1/m4_0_0# phaseUpulse_0/nfet$13_1/a_54_n132# 0.00154f
+C180 phaseUpulse_0/not_0/in phaseUpulse_0/nor_0/A 0.02541f
+C181 conmutator$3_0/out conmutator$3_0/m2_n850_n472# 0.40341f
+C182 ota_2stages_0/vdd ota_2stages_0/m2_n1824_n806# 0.14345f
+C183 phaseUpulse_0/not_2/in phaseUpulse_0/not_1/vdd 0.00762f
+C184 phaseUpulse_0/nfet$13_2/a_118_0# phaseUpulse_0/nfet$13_2/a_n84_n2# 0.02058f
+C185 conmutator$3_2/vdd ota_2stages_0/cap_mim$1$1_0/m4_0_0# 0.00602f
+C186 ota_1stage$3_0/vout ota_1stage$3_0/m2_n516_n58# 0.30254f
+C187 phaseUpulse_0/nfet$13_0/a_54_n132# phaseUpulse_0/nfet$13_0/a_n84_n2# 0.00326f
+C188 switch$3_0/in switch$3_0/out 0.13855f
+C189 phaseUpulse_0/cap_mim_1/m2_n120_n120# phaseUpulse_0/not_4/vdd 0.06417f
+C190 phaseUpulse_0/nfet$13_2/a_54_n132# phaseUpulse_0/nfet$13_2/a_118_0# 0.00326f
+C191 ota_1stage$3_0/vdd ota_1stage$3_0/m2_n516_n58# 0.03122f
+C192 phaseUpulse_0/cap_mim_0/m2_n120_n120# phaseUpulse_0/not_1/in 0.01563f
+C193 phaseUpulse_0/switch_1/m2_n331_n296# phaseUpulse_0/switch_1/cntrl 0.49399f
+C194 ota_1stage$3_0/vn ota_1stage$3_0/m2_n1824_n806# 0
+C195 conmutator$3_1/cntrl conmutator$3_1/vdd 0.57591f
+C196 ota_2stages_0/pfet_1/w_n352_n286# conmutator$3_2/cntrl 0.00345f
+C197 phaseUpulse_0/ota_1stage_0/vout phaseUpulse_0/ota_1stage_0/m2_n346_983# 0.11328f
+C198 ota_2stages_0/vp ota_2stages_0/m2_n346_983# 0
+C199 phaseUpulse_0/cap_mim_0/m2_n120_n120# ota_2stages_0/vp 0.00233f
+C200 phaseUpulse_0/not_1/vdd phaseUpulse_0/cap_mim_0/m4_0_0# 0.00533f
+C201 switch$3_0/in switch$3_0/vdd 0.04768f
+C202 switch$3_0/in conmutator$3_2/cntrl 0.00783f
+C203 phaseUpulse_0/not_4/vdd phaseUpulse_0/nand_1/Z 0.00378f
+C204 ota_2stages_0/vdd ota_2stages_0/cap_mim$1$1_0/m4_0_0# 0.01948f
+C205 phaseUpulse_0/switch_2/vdd phaseUpulse_0/switch_2/in 0.04768f
+C206 phaseUpulse_0/ota_1stage_0/vdd phaseUpulse_0/nfet$13_5/a_54_n132# 0.02018f
+C207 phaseUpulse_0/not_1/vdd phaseUpulse_0/not_2/vdd 1.11185f
+C208 phaseUpulse_0/cap_mim_1/m4_0_0# phaseUpulse_0/not_4/vdd 0.01447f
+C209 phaseUpulse_0/not_4/vdd phaseUpulse_0/nand_1/B 0.00659f
+C210 ota_2stages_0/vout ota_2stages_0/m2_n516_n58# 0.43898f
+C211 conmutator$3_2/in1 ota_2stages_0/pfet_1/w_n352_n286# 0.00107f
+C212 ota_2stages_0/vp ota_2stages_0/m2_n1824_n806# 0
+C213 phaseUpulse_0/conmutator_0/in1 phaseUpulse_0/conmutator_0/cntrl 0.12768f
+C214 phaseUpulse_0/ota_1stage_0/vout phaseUpulse_0/ota_1stage_0/m2_n516_n58# 0.30254f
+C215 phaseUpulse_0/nfet$13_3/a_54_n132# phaseUpulse_0/nfet$13_3/a_n84_n2# 0.00326f
+C216 phaseUpulse_0/not_3/in phaseUpulse_0/not_4/vdd 0.04633f
+C217 ota_2stages_0/vout ota_2stages_0/pfet_1/w_n352_n286# 0.55842f
+C218 phaseUpulse_0/switch_0/vdd phaseUpulse_0/switch_1/vdd 0
+C219 phaseUpulse_0/nand_0/nfet$3$2_0/a_94_0# phaseUpulse_0/nand_0/B 0.00405f
+C220 phaseUpulse_0/ota_1stage_0/m2_n516_n58# phaseUpulse_0/ota_1stage_0/m2_n346_983# 0.38218f
+C221 phaseUpulse_0/nor_0/Z phaseUpulse_0/nand_1/Z 0
+C222 phaseUpulse_0/not_3/vdd phaseUpulse_0/not_4/vdd 1.11185f
+C223 switch$3_0/in switch$3_0/cntrl 0.15354f
+C224 phaseUpulse_0/nand_0/A phaseUpulse_0/not_2/in 0.00118f
+C225 phaseUpulse_0/switch_1/in phaseUpulse_0/switch_1/out 0.13855f
+C226 conmutator$3_2/vdd switch$3_0/m2_n331_n296# 0
+C227 phaseUpulse_0/switch_0/out phaseUpulse_0/conmutator_0/m2_n850_n472# 0
+C228 ota_1stage$3_0/vdd ota_1stage$3_0/vout 0.19392f
+C229 ota_1stage$3_0/vdd phaseUpulse_0/conmutator_0/m2_n850_n472# 0
+C230 conmutator$3_2/out conmutator$3_2/m2_n850_n472# 0.40341f
+C231 phaseUpulse_0/nor_0/pfet$1$4_0/a_94_0# phaseUpulse_0/not_0/vdd 0.05777f
+C232 phaseUpulse_0/nfet$13_5/a_118_0# phaseUpulse_0/nfet$13_5/a_54_n132# 0.00326f
+C233 phaseUpulse_0/switch_0/in phaseUpulse_0/switch_1/vdd 0
+C234 phaseUpulse_0/nor_0/Z phaseUpulse_0/nand_1/B 0.00409f
+C235 conmutator$3_1/cntrl conmutator$3_1/in1 0.12768f
+C236 phaseUpulse_0/switch_1/in phaseUpulse_0/switch_1/vdd 0.04768f
+C237 conmutator$3_1/cntrl conmutator$3_1/m2_n850_n472# 0.84169f
+C238 conmutator$3_1/in2 conmutator$3_1/vdd 0.04768f
+C239 ota_2stages_0/pfet_1/w_n352_n286# conmutator$3_2/in2 0
+C240 phaseUpulse_0/nfet$13_3/a_54_n132# phaseUpulse_0/ota_1stage_0/m2_n1824_n806# 0
+C241 phaseUpulse_0/nfet$13_3/a_54_n132# phaseUpulse_0/ota_1stage_0/vdd 0.00172f
+C242 phaseUpulse_0/ota_1stage_0/vout phaseUpulse_0/ota_1stage_0/pfet$1$5_1/w_n352_n286# 0.04924f
+C243 phaseUpulse_0/nand_0/A phaseUpulse_0/not_3/in 0.01565f
+C244 ota_1stage$3_0/vp ota_1stage$3_0/vn 0.00883f
+C245 phaseUpulse_0/switch_2/vdd phaseUpulse_0/switch_1/out 0.00485f
+C246 conmutator$3_0/in1 conmutator$3_0/vdd 0.11534f
+C247 phaseUpulse_0/ota_1stage_0/pfet$1$5_1/w_n352_n286# phaseUpulse_0/ota_1stage_0/m2_n346_983# 0.43863f
+C248 phaseUpulse_0/nand_0/A phaseUpulse_0/not_3/vdd 0.17278f
+C249 phaseUpulse_0/nand_1/vdd phaseUpulse_0/nor_0/A 0
+C250 ota_2stages_0/vp ota_2stages_0/cap_mim$1$1_0/m4_0_0# 0
+C251 phaseUpulse_0/switch_2/in phaseUpulse_0/switch_2/cntrl 0.15354f
+C252 phaseUpulse_0/switch_0/cntrl phaseUpulse_0/switch_1/out 0
+C253 phaseUpulse_0/switch_2/vdd phaseUpulse_0/switch_1/vdd 0.01219f
+C254 ota_1stage$3_0/m2_n346_983# ota_1stage$3_0/m2_n1824_n806# 0.00222f
+C255 phaseUpulse_0/not_2/in phaseUpulse_0/nand_0/Z 0.01043f
+C256 phaseUpulse_0/ota_1stage_0/vn phaseUpulse_0/ota_1stage_0/m2_n1824_n806# 0
+C257 phaseUpulse_0/switch_2/in phaseUpulse_0/switch_2/m2_n331_n296# 0.47344f
+C258 phaseUpulse_0/ota_1stage_0/vn phaseUpulse_0/ota_1stage_0/vdd 0
+C259 phaseUpulse_0/switch_0/cntrl phaseUpulse_0/switch_1/vdd 0.00247f
+C260 phaseUpulse_0/not_1/vdd phaseUpulse_0/nand_0/B 0
+C261 phaseUpulse_0/switch_0/vdd phaseUpulse_0/conmutator_0/cntrl 0.01258f
+C262 ota_2stages_0/vp ota_2stages_0/vdd 0
+C263 phaseUpulse_0/not_4/in phaseUpulse_0/not_4/vdd 0.27712f
+C264 phaseUpulse_0/ota_1stage_0/pfet$1$5_1/w_n352_n286# phaseUpulse_0/ota_1stage_0/m2_n516_n58# 0.02757f
+C265 ota_2stages_0/vout ota_2stages_0/vn 0
+C266 phaseUpulse_0/conmutator_0/vdd phaseUpulse_0/conmutator_0/in2 0.04768f
+C267 phaseUpulse_0/conmutator_0/cntrl ota_1stage$3_0/m2_n1824_n806# 0
+C268 ota_2stages_0/m2_n516_n58# ota_2stages_0/m2_n346_983# 0.40494f
+C269 phaseUpulse_0/not_3/in phaseUpulse_0/nand_0/Z 0.02851f
+C270 phaseUpulse_0/switch_0/in phaseUpulse_0/conmutator_0/cntrl 0
+C271 conmutator$3_1/in2 conmutator$3_1/in1 0.00566f
+C272 phaseUpulse_0/nor_0/pfet$1$4_0/a_94_0# phaseUpulse_0/not_0/in 0.00177f
+C273 phaseUpulse_0/switch_1/vdd phaseUpulse_0/switch_0/m2_n331_n296# 0
+C274 ota_1stage$3_0/vn ota_1stage$3_0/pfet$1$6_1/w_n352_n286# 0.00366f
+C275 conmutator$3_1/in2 conmutator$3_1/m2_n850_n472# 0.47479f
+C276 phaseUpulse_0/not_3/vdd phaseUpulse_0/nand_0/Z 0.21147f
+C277 ota_2stages_0/pfet_1/w_n352_n286# ota_2stages_0/m2_n346_983# 0.44528f
+C278 phaseUpulse_0/nfet$13_3/a_54_n132# phaseUpulse_0/nfet$13_3/a_118_0# 0.00326f
+C279 phaseUpulse_0/conmutator_0/out phaseUpulse_0/conmutator_0/in2 0.13947f
+C280 phaseUpulse_0/ota_1stage_0/vp phaseUpulse_0/ota_1stage_0/vn 0.00883f
+C281 phaseUpulse_0/nand_0/A phaseUpulse_0/not_4/in 0
+C282 conmutator$3_2/out conmutator$3_2/cntrl 0.39355f
+C283 ota_2stages_0/m2_n516_n58# ota_2stages_0/m2_n1824_n806# 0.03799f
+C284 phaseUpulse_0/ota_1stage_0/vdd phaseUpulse_0/nfet$13_5/a_n84_n2# 0.01131f
+C285 phaseUpulse_0/switch_0/vdd phaseUpulse_0/conmutator_0/in1 0.00568f
+C286 phaseUpulse_0/cap_mim_0/m2_n120_n120# phaseUpulse_0/not_1/vdd 0.02882f
+C287 phaseUpulse_0/nand_0/Z phaseUpulse_0/not_2/vdd 0.00378f
+C288 ota_2stages_0/pfet_1/w_n352_n286# ota_2stages_0/m2_n1824_n806# 0.00206f
+C289 phaseUpulse_0/switch_2/cntrl phaseUpulse_0/switch_1/vdd 0
+C290 conmutator$3_0/in2 conmutator$3_0/vdd 0.04768f
+C291 phaseUpulse_0/nor_0/Z phaseUpulse_0/nand_1/nfet$3$2_0/a_94_0# 0
+C292 phaseUpulse_0/switch_2/vdd phaseUpulse_0/switch_2/out 0.12786f
+C293 phaseUpulse_0/switch_0/in phaseUpulse_0/conmutator_0/in1 0.00272f
+C294 ota_1stage$3_0/vp ota_1stage$3_0/m2_n346_983# 0.02673f
+C295 phaseUpulse_0/switch_0/cntrl phaseUpulse_0/conmutator_0/cntrl 0.00304f
+C296 phaseUpulse_0/switch_2/m2_n331_n296# phaseUpulse_0/switch_1/vdd 0
+C297 ota_2stages_0/m2_n516_n58# phaseUpulse_0/nfet$13_4/a_54_n132# 0
+C298 ota_2stages_0/m2_n516_n58# phaseUpulse_0/nfet$13_4/a_118_0# 0
+C299 conmutator$3_2/in1 conmutator$3_2/out 0.13616f
+C300 phaseUpulse_0/nor_0/pfet$1$4_0/a_94_0# phaseUpulse_0/nor_0/A 0.00408f
+C301 phaseUpulse_0/cap_mim_1/m4_0_0# phaseUpulse_0/cap_mim_1/m2_n120_n120# 1.58658f
+C302 conmutator$3_2/out switch$3_0/cntrl 0
+C303 phaseUpulse_0/nand_0/A phaseUpulse_0/nand_0/B 0.09232f
+C304 phaseUpulse_0/nfet$13_5/a_118_0# phaseUpulse_0/nfet$13_5/a_n84_n2# 0.02058f
+C305 ota_2stages_0/vout conmutator$3_2/out 0.00279f
+C306 ota_1stage$3_0/vn ota_1stage$3_0/m2_n516_n58# 0.04199f
+C307 phaseUpulse_0/nor_0/Z phaseUpulse_0/not_0/vdd 0.08546f
+C308 conmutator$3_2/m2_n850_n472# switch$3_0/vdd 0
+C309 phaseUpulse_0/not_3/in phaseUpulse_0/cap_mim_1/m2_n120_n120# 0.0207f
+C310 conmutator$3_2/cntrl conmutator$3_2/m2_n850_n472# 0.84169f
+C311 phaseUpulse_0/nfet$13_1/a_118_0# phaseUpulse_0/nfet$13_1/a_n84_n2# 0.02058f
+C312 phaseUpulse_0/switch_0/m2_n331_n296# phaseUpulse_0/conmutator_0/cntrl 0.01151f
+C313 phaseUpulse_0/not_3/vdd phaseUpulse_0/cap_mim_1/m2_n120_n120# 0.0629f
+C314 phaseUpulse_0/not_4/in phaseUpulse_0/nand_0/Z 0.0012f
+C315 ota_2stages_0/m2_n516_n58# ota_2stages_0/cap_mim$1$1_0/m4_0_0# 0.00774f
+C316 conmutator$3_2/vdd switch$3_0/in 0.00141f
+C317 phaseUpulse_0/nfet$13_4/a_n84_n2# phaseUpulse_0/cap_mim_0/m4_0_0# 0
+C318 phaseUpulse_0/cap_mim_1/m2_n120_n120# phaseUpulse_0/cap_mim_0/m4_0_0# 0.00465f
+C319 phaseUpulse_0/nand_1/B phaseUpulse_0/nand_1/Z 0.0183f
+C320 ota_2stages_0/m2_n346_983# ota_2stages_0/vn 0.02634f
+C321 ota_2stages_0/pfet_1/w_n352_n286# ota_2stages_0/cap_mim$1$1_0/m4_0_0# 0.02628f
+C322 phaseUpulse_0/cap_mim_0/m2_n120_n120# ota_2stages_0/vn 0.00233f
+C323 conmutator$3_2/out conmutator$3_2/in2 0.13947f
+C324 phaseUpulse_0/switch_0/cntrl phaseUpulse_0/conmutator_0/in1 0.01214f
+C325 phaseUpulse_0/not_3/in phaseUpulse_0/not_2/in 0.00236f
+C326 phaseUpulse_0/not_3/in phaseUpulse_0/nand_1/Z 0
+C327 conmutator$3_2/in1 conmutator$3_2/m2_n850_n472# 0.08059f
+C328 phaseUpulse_0/ota_1stage_0/m2_n516_n58# phaseUpulse_0/nfet$13_5/a_54_n132# 0
+C329 phaseUpulse_0/not_3/vdd phaseUpulse_0/not_2/in 0.04702f
+C330 ota_1stage$3_0/m2_n346_983# ota_1stage$3_0/pfet$1$6_1/w_n352_n286# 0.43863f
+C331 phaseUpulse_0/not_3/vdd phaseUpulse_0/nand_1/Z 0
+C332 switch$3_0/cntrl conmutator$3_2/m2_n850_n472# 0
+C333 phaseUpulse_0/nor_0/B phaseUpulse_0/not_0/vdd 0.15334f
+C334 ota_2stages_0/vout conmutator$3_2/m2_n850_n472# 0.01792f
+C335 ota_2stages_0/m2_n516_n58# ota_2stages_0/vdd 0.03347f
+C336 conmutator$3_0/cntrl conmutator$3_0/vdd 0.57591f
+C337 phaseUpulse_0/not_0/in phaseUpulse_0/not_4/vdd 0.00111f
+C338 phaseUpulse_0/not_3/in phaseUpulse_0/cap_mim_1/m4_0_0# 0.00655f
+C339 phaseUpulse_0/not_2/in phaseUpulse_0/cap_mim_0/m4_0_0# 0.00639f
+C340 phaseUpulse_0/not_3/in phaseUpulse_0/nand_1/B 0
+C341 phaseUpulse_0/nand_0/Z phaseUpulse_0/nand_0/B 0.0183f
+C342 ota_2stages_0/vn ota_2stages_0/m2_n1824_n806# 0.00754f
+C343 phaseUpulse_0/not_3/vdd phaseUpulse_0/cap_mim_1/m4_0_0# 0.01255f
+C344 phaseUpulse_0/conmutator_0/vdd phaseUpulse_0/conmutator_0/cntrl 0.57591f
+C345 phaseUpulse_0/switch_2/cntrl phaseUpulse_0/switch_2/out 0.07857f
+C346 ota_2stages_0/vdd ota_2stages_0/pfet_1/w_n352_n286# 1.03327f
+C347 phaseUpulse_0/not_3/vdd phaseUpulse_0/nand_1/B 0
+C348 phaseUpulse_0/switch_0/m2_n331_n296# phaseUpulse_0/conmutator_0/in1 0.01028f
+C349 phaseUpulse_0/nand_1/A phaseUpulse_0/nand_1/Z 0.07297f
+C350 phaseUpulse_0/switch_0/in phaseUpulse_0/switch_0/vdd 0.04768f
+C351 phaseUpulse_0/not_2/in phaseUpulse_0/not_2/vdd 0.27712f
+C352 ota_1stage$3_0/vn ota_1stage$3_0/vout 0.03152f
+C353 phaseUpulse_0/not_3/vdd phaseUpulse_0/not_3/in 0.28718f
+C354 phaseUpulse_0/cap_mim_1/m4_0_0# phaseUpulse_0/cap_mim_0/m4_0_0# 0.05794f
+C355 phaseUpulse_0/switch_2/m2_n331_n296# phaseUpulse_0/switch_2/out 0.12068f
+C356 phaseUpulse_0/conmutator_0/in2 phaseUpulse_0/conmutator_0/m2_n850_n472# 0.47479f
+C357 phaseUpulse_0/switch_1/m2_n331_n296# phaseUpulse_0/switch_1/out 0.12068f
+C358 conmutator$3_0/out conmutator$3_0/vdd 0.25402f
+C359 conmutator$3_1/cntrl conmutator$3_1/out 0.39355f
+C360 phaseUpulse_0/nand_1/A phaseUpulse_0/nand_1/B 0.09232f
+C361 conmutator$3_2/in2 conmutator$3_2/m2_n850_n472# 0.47479f
+C362 phaseUpulse_0/ota_1stage_0/pfet$1$5_1/w_n352_n286# phaseUpulse_0/nfet$13_5/a_54_n132# 0.00298f
+C363 switch$3_0/vdd switch$3_0/out 0.12786f
+C364 conmutator$3_2/cntrl switch$3_0/out 0.00693f
+C365 phaseUpulse_0/ota_1stage_0/vn phaseUpulse_0/ota_1stage_0/vout 0.03152f
+C366 phaseUpulse_0/not_0/in phaseUpulse_0/nor_0/Z 0.00867f
+C367 ota_1stage$3_0/vn ota_1stage$3_0/vdd 0
+C368 phaseUpulse_0/conmutator_0/out phaseUpulse_0/conmutator_0/cntrl 0.39355f
+C369 phaseUpulse_0/not_3/in phaseUpulse_0/nand_1/A 0
+C370 phaseUpulse_0/not_4/in phaseUpulse_0/cap_mim_1/m2_n120_n120# 0.01705f
+C371 phaseUpulse_0/not_3/vdd phaseUpulse_0/cap_mim_0/m4_0_0# 0
+C372 phaseUpulse_0/switch_1/m2_n331_n296# phaseUpulse_0/switch_1/vdd 0.28779f
+C373 phaseUpulse_0/switch_1/in phaseUpulse_0/switch_0/in 0
+C374 phaseUpulse_0/ota_1stage_0/vn phaseUpulse_0/ota_1stage_0/m2_n346_983# 0
+C375 phaseUpulse_0/not_3/in phaseUpulse_0/not_2/vdd 0
+C376 phaseUpulse_0/switch_1/out phaseUpulse_0/switch_1/cntrl 0.07857f
+C377 ota_1stage$3_0/m2_n346_983# ota_1stage$3_0/m2_n516_n58# 0.38218f
+C378 phaseUpulse_0/conmutator_0/vdd phaseUpulse_0/conmutator_0/in1 0.11534f
+C379 phaseUpulse_0/nor_0/A phaseUpulse_0/not_4/vdd 0
+C380 conmutator$3_2/cntrl switch$3_0/vdd 0.00971f
+C381 phaseUpulse_0/nfet$13_1/a_118_0# phaseUpulse_0/nfet$13_1/a_54_n132# 0.00326f
+C382 phaseUpulse_0/not_4/in phaseUpulse_0/nand_1/Z 0.01043f
+C383 phaseUpulse_0/not_2/vdd phaseUpulse_0/cap_mim_0/m4_0_0# 0.02053f
+C384 phaseUpulse_0/switch_0/cntrl phaseUpulse_0/switch_0/vdd 0.17559f
+C385 switch$3_0/cntrl switch$3_0/out 0.07857f
+C386 ota_2stages_0/vp ota_2stages_0/m2_n516_n58# 0.05451f
+C387 phaseUpulse_0/switch_1/vdd phaseUpulse_0/switch_1/cntrl 0.17559f
+C388 phaseUpulse_0/not_0/in phaseUpulse_0/nor_0/B 0.00145f
+C389 phaseUpulse_0/switch_1/out phaseUpulse_0/switch_0/out 0
+C390 switch$3_0/m2_n331_n296# switch$3_0/in 0.47344f
+C391 phaseUpulse_0/ota_1stage_0/vn phaseUpulse_0/ota_1stage_0/m2_n516_n58# 0.04199f
+C392 phaseUpulse_0/not_1/vdd phaseUpulse_0/not_1/in 0.27712f
+C393 ota_2stages_0/vp ota_2stages_0/pfet_1/w_n352_n286# 0.00477f
+C394 phaseUpulse_0/not_4/in phaseUpulse_0/cap_mim_1/m4_0_0# 0.00284f
+C395 phaseUpulse_0/not_4/in phaseUpulse_0/nand_1/B 0.02419f
+C396 phaseUpulse_0/conmutator_0/out phaseUpulse_0/conmutator_0/in1 0.13616f
+C397 phaseUpulse_0/switch_0/cntrl phaseUpulse_0/switch_0/in 0.15354f
+C398 phaseUpulse_0/switch_0/cntrl phaseUpulse_0/switch_1/in 0
+C399 phaseUpulse_0/nor_0/A phaseUpulse_0/nor_0/Z 0.01781f
+C400 ota_2stages_0/vdd ota_2stages_0/vn 0.00102f
+C401 conmutator$3_2/in1 switch$3_0/vdd 0
+C402 phaseUpulse_0/switch_0/vdd phaseUpulse_0/switch_0/m2_n331_n296# 0.28779f
+C403 conmutator$3_2/in1 conmutator$3_2/cntrl 0.12768f
+C404 phaseUpulse_0/not_4/in phaseUpulse_0/not_3/in 0.05281f
+C405 phaseUpulse_0/nand_1/nfet$3$2_0/a_94_0# phaseUpulse_0/nand_1/Z 0.0436f
+C406 phaseUpulse_0/nfet$13_2/a_54_n132# phaseUpulse_0/nfet$13_2/a_n84_n2# 0.00326f
+C407 phaseUpulse_0/nfet$13_1/a_n84_n2# phaseUpulse_0/nfet$13_1/a_54_n132# 0.00326f
+C408 conmutator$3_1/in2 conmutator$3_1/out 0.13947f
+C409 switch$3_0/cntrl switch$3_0/vdd 0.17559f
+C410 switch$3_0/cntrl conmutator$3_2/cntrl 0.02706f
+C411 phaseUpulse_0/not_4/in phaseUpulse_0/not_3/vdd 0.00762f
+C412 conmutator$3_0/m2_n850_n472# conmutator$3_0/vdd 0.2779f
+C413 phaseUpulse_0/not_2/in phaseUpulse_0/nand_0/B 0.02419f
+C414 ota_2stages_0/vout conmutator$3_2/cntrl 0.02326f
+C415 ota_1stage$3_0/vp ota_1stage$3_0/m2_n1824_n806# 0.00784f
+C416 phaseUpulse_0/switch_0/in phaseUpulse_0/switch_0/m2_n331_n296# 0.47344f
+C417 phaseUpulse_0/nand_1/nfet$3$2_0/a_94_0# phaseUpulse_0/nand_1/B 0.00405f
+C418 conmutator$3_1/in1 conmutator$3_1/vdd 0.11534f
+C419 conmutator$3_1/vdd conmutator$3_1/m2_n850_n472# 0.2779f
+C420 phaseUpulse_0/not_0/vdd phaseUpulse_0/nand_1/Z 0
+C421 phaseUpulse_0/not_4/in phaseUpulse_0/nand_1/A 0.00118f
+C422 phaseUpulse_0/ota_1stage_0/vn phaseUpulse_0/ota_1stage_0/pfet$1$5_1/w_n352_n286# 0.00366f
+C423 conmutator$3_2/vdd conmutator$3_2/out 0.25402f
+C424 ota_1stage$3_0/m2_n346_983# ota_1stage$3_0/vout 0.11328f
+C425 phaseUpulse_0/nfet$13_4/a_n84_n2# phaseUpulse_0/cap_mim_0/m2_n120_n120# 0.0042f
+C426 phaseUpulse_0/cap_mim_0/m2_n120_n120# phaseUpulse_0/cap_mim_1/m2_n120_n120# 0.11559f
+C427 phaseUpulse_0/nor_0/B phaseUpulse_0/nor_0/A 0.09232f
+C428 conmutator$3_0/in2 conmutator$3_0/in1 0.00566f
+C429 phaseUpulse_0/ota_1stage_0/m2_n516_n58# phaseUpulse_0/nfet$13_5/a_n84_n2# 0
+C430 phaseUpulse_0/not_3/in phaseUpulse_0/nand_0/B 0
+C431 conmutator$3_2/in1 ota_2stages_0/vout 0.00318f
+C432 phaseUpulse_0/not_0/vdd phaseUpulse_0/nand_1/B 0.00144f
+C433 conmutator$3_2/cntrl conmutator$3_2/in2 0.17089f
+C434 phaseUpulse_0/nfet$13_3/a_n84_n2# phaseUpulse_0/ota_1stage_0/m2_n1824_n806# 0
+C435 phaseUpulse_0/nfet$13_3/a_n84_n2# phaseUpulse_0/ota_1stage_0/vdd 0
+C436 phaseUpulse_0/not_3/vdd phaseUpulse_0/nand_0/B 0.1743f
+C437 ota_1stage$3_0/m2_n346_983# ota_1stage$3_0/vdd 0.69706f
+C438 phaseUpulse_0/conmutator_0/vdd phaseUpulse_0/switch_0/vdd 0.04713f
+C439 phaseUpulse_0/nand_1/Z VSUBS 0.29123f
+C440 phaseUpulse_0/nand_1/B VSUBS 0.30274f
+C441 phaseUpulse_0/nand_1/A VSUBS 0.3031f
+C442 phaseUpulse_0/nand_1/nfet$3$2_0/a_94_0# VSUBS 0.05873f **FLOATING
+C443 phaseUpulse_0/nand_1/vdd VSUBS 1.75497f
+C444 phaseUpulse_0/nand_0/Z VSUBS 0.29633f
+C445 phaseUpulse_0/nand_0/B VSUBS 0.30312f
+C446 phaseUpulse_0/nand_0/A VSUBS 0.30419f
+C447 phaseUpulse_0/nand_0/nfet$3$2_0/a_94_0# VSUBS 0.05968f **FLOATING
+C448 phaseUpulse_0/not_3/vdd VSUBS 2.95346f
+C449 phaseUpulse_0/conmutator_0/in1 VSUBS 0.2834f
+C450 phaseUpulse_0/conmutator_0/m2_n850_n472# VSUBS 0.54022f **FLOATING
+C451 phaseUpulse_0/conmutator_0/cntrl VSUBS 0.94597f
+C452 phaseUpulse_0/conmutator_0/in2 VSUBS 0.10244f
+C453 phaseUpulse_0/conmutator_0/out VSUBS 0.30087f
+C454 phaseUpulse_0/conmutator_0/vdd VSUBS 3.27327f
+C455 phaseUpulse_0/nor_0/A VSUBS 0.30466f
+C456 phaseUpulse_0/nor_0/B VSUBS 0.31158f
+C457 phaseUpulse_0/not_0/vdd VSUBS 3.04711f
+C458 phaseUpulse_0/nor_0/Z VSUBS 0.4128f
+C459 phaseUpulse_0/nor_0/pfet$1$4_0/a_94_0# VSUBS 0.00354f **FLOATING
+C460 phaseUpulse_0/not_4/in VSUBS 0.67026f
+C461 phaseUpulse_0/not_4/vdd VSUBS 1.39498f
+C462 phaseUpulse_0/not_3/in VSUBS 0.65647f
+C463 phaseUpulse_0/not_2/in VSUBS 0.67029f
+C464 phaseUpulse_0/not_2/vdd VSUBS 1.39498f
+C465 phaseUpulse_0/not_1/in VSUBS 0.65566f
+C466 phaseUpulse_0/not_1/vdd VSUBS 1.39498f
+C467 phaseUpulse_0/not_0/in VSUBS 0.67231f
+C468 phaseUpulse_0/nfet$13_5/a_118_0# VSUBS 0.0474f **FLOATING
+C469 phaseUpulse_0/nfet$13_5/a_n84_n2# VSUBS 0.0474f **FLOATING
+C470 phaseUpulse_0/nfet$13_5/a_54_n132# VSUBS 0.34691f **FLOATING
+C471 phaseUpulse_0/nfet$13_4/a_118_0# VSUBS 0.0517f **FLOATING
+C472 phaseUpulse_0/nfet$13_4/a_n84_n2# VSUBS 0.0517f **FLOATING
+C473 phaseUpulse_0/nfet$13_4/a_54_n132# VSUBS 0.35372f **FLOATING
+C474 phaseUpulse_0/nfet$13_3/a_118_0# VSUBS 0.0492f **FLOATING
+C475 phaseUpulse_0/nfet$13_3/a_n84_n2# VSUBS 0.04501f **FLOATING
+C476 phaseUpulse_0/nfet$13_3/a_54_n132# VSUBS 0.35163f **FLOATING
+C477 phaseUpulse_0/cap_mim_1/m4_0_0# VSUBS 0.53772f
+C478 phaseUpulse_0/cap_mim_1/m2_n120_n120# VSUBS 1.9721f
+C479 phaseUpulse_0/nfet$13_2/a_118_0# VSUBS 0.05158f **FLOATING
+C480 phaseUpulse_0/nfet$13_2/a_n84_n2# VSUBS 0.05158f **FLOATING
+C481 phaseUpulse_0/nfet$13_2/a_54_n132# VSUBS 0.35349f **FLOATING
+C482 phaseUpulse_0/cap_mim_0/m4_0_0# VSUBS 0.54948f
+C483 phaseUpulse_0/cap_mim_0/m2_n120_n120# VSUBS 1.99205f
+C484 phaseUpulse_0/nfet$13_1/a_118_0# VSUBS 0.04501f **FLOATING
+C485 phaseUpulse_0/nfet$13_1/a_n84_n2# VSUBS 0.04501f **FLOATING
+C486 phaseUpulse_0/nfet$13_1/a_54_n132# VSUBS 0.3441f **FLOATING
+C487 phaseUpulse_0/ota_1stage_0/vn VSUBS 0.3686f
+C488 phaseUpulse_0/ota_1stage_0/vp VSUBS 0.35945f
+C489 phaseUpulse_0/ota_1stage_0/vout VSUBS 0.51985f
+C490 phaseUpulse_0/ota_1stage_0/m2_n516_n58# VSUBS 1.40687f **FLOATING
+C491 phaseUpulse_0/ota_1stage_0/m2_n346_983# VSUBS 0.72004f **FLOATING
+C492 phaseUpulse_0/ota_1stage_0/vdd VSUBS 7.3427f
+C493 phaseUpulse_0/ota_1stage_0/m2_n1824_n806# VSUBS 1.83431f **FLOATING
+C494 phaseUpulse_0/ota_1stage_0/pfet$1$5_1/w_n352_n286# VSUBS 3.94607f **FLOATING
+C495 phaseUpulse_0/nfet$13_0/a_118_0# VSUBS 0.04501f **FLOATING
+C496 phaseUpulse_0/nfet$13_0/a_n84_n2# VSUBS 0.04501f **FLOATING
+C497 phaseUpulse_0/nfet$13_0/a_54_n132# VSUBS 0.3441f **FLOATING
+C498 phaseUpulse_0/switch_2/cntrl VSUBS 0.63006f
+C499 phaseUpulse_0/switch_2/in VSUBS 0.11056f
+C500 phaseUpulse_0/switch_2/vdd VSUBS 2.33767f
+C501 phaseUpulse_0/switch_2/out VSUBS 0.26433f
+C502 phaseUpulse_0/switch_2/m2_n331_n296# VSUBS 0.27852f **FLOATING
+C503 phaseUpulse_0/switch_1/cntrl VSUBS 0.63003f
+C504 phaseUpulse_0/switch_1/in VSUBS 0.11056f
+C505 phaseUpulse_0/switch_1/vdd VSUBS 2.39628f
+C506 phaseUpulse_0/switch_1/out VSUBS 0.26444f
+C507 phaseUpulse_0/switch_1/m2_n331_n296# VSUBS 0.27897f **FLOATING
+C508 phaseUpulse_0/switch_0/cntrl VSUBS 0.62993f
+C509 phaseUpulse_0/switch_0/in VSUBS 0.11086f
+C510 phaseUpulse_0/switch_0/vdd VSUBS 2.33767f
+C511 phaseUpulse_0/switch_0/out VSUBS 0.26433f
+C512 phaseUpulse_0/switch_0/m2_n331_n296# VSUBS 0.2788f **FLOATING
+C513 ota_1stage$3_0/vn VSUBS 0.3686f
+C514 ota_1stage$3_0/vp VSUBS 0.35945f
+C515 ota_1stage$3_0/vout VSUBS 0.51985f
+C516 ota_1stage$3_0/m2_n516_n58# VSUBS 1.40687f **FLOATING
+C517 ota_1stage$3_0/m2_n346_983# VSUBS 0.72004f **FLOATING
+C518 ota_1stage$3_0/vdd VSUBS 7.33967f
+C519 ota_1stage$3_0/pfet$1$6_1/w_n352_n286# VSUBS 3.94605f **FLOATING
+C520 ota_1stage$3_0/m2_n1824_n806# VSUBS 1.83506f **FLOATING
+C521 conmutator$3_1/in1 VSUBS 0.28099f
+C522 conmutator$3_1/vdd VSUBS 3.25234f
+C523 conmutator$3_1/m2_n850_n472# VSUBS 0.53266f **FLOATING
+C524 conmutator$3_1/cntrl VSUBS 0.93622f
+C525 conmutator$3_1/in2 VSUBS 0.10238f
+C526 conmutator$3_1/out VSUBS 0.30087f
+C527 conmutator$3_2/in1 VSUBS 0.28114f
+C528 conmutator$3_2/vdd VSUBS 3.56814f
+C529 conmutator$3_2/m2_n850_n472# VSUBS 0.53306f **FLOATING
+C530 conmutator$3_2/cntrl VSUBS 0.95882f
+C531 conmutator$3_2/in2 VSUBS 0.10238f
+C532 conmutator$3_2/out VSUBS 0.30087f
+C533 conmutator$3_0/in1 VSUBS 0.28099f
+C534 conmutator$3_0/vdd VSUBS 3.25234f
+C535 conmutator$3_0/m2_n850_n472# VSUBS 0.53266f **FLOATING
+C536 conmutator$3_0/cntrl VSUBS 0.93622f
+C537 conmutator$3_0/in2 VSUBS 0.10238f
+C538 conmutator$3_0/out VSUBS 0.30087f
+C539 switch$3_0/cntrl VSUBS 0.62994f
+C540 switch$3_0/in VSUBS 0.11056f
+C541 switch$3_0/out VSUBS 0.26433f
+C542 switch$3_0/m2_n331_n296# VSUBS 0.27851f **FLOATING
+C543 switch$3_0/vdd VSUBS 2.33767f
+C544 ota_2stages_0/vp VSUBS 0.36598f
+C545 ota_2stages_0/m2_n516_n58# VSUBS 2.2827f **FLOATING
+C546 ota_2stages_0/vout VSUBS 4.86686f
+C547 ota_2stages_0/vdd VSUBS 8.05282f
+C548 ota_2stages_0/m2_n346_983# VSUBS 0.70099f **FLOATING
+C549 ota_2stages_0/cap_mim$1$1_0/m4_0_0# VSUBS 1.01192f
+C550 ota_2stages_0/vn VSUBS 0.35945f
+C551 ota_2stages_0/m2_n1824_n806# VSUBS 1.82998f **FLOATING
+C552 ota_2stages_0/pfet_1/w_n352_n286# VSUBS 6.65589f **FLOATING

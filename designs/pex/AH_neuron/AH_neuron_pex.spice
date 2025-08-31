@@ -1,0 +1,37 @@
+* SPICE3 file created from AH_neuron.ext - technology: gf180mcuD
+
+.option scale=5n
+
+X0 vdd m2_381_1901# vout vdd pfet_03v3 ad=21.84n pd=0.596m as=21.84n ps=0.596m w=168 l=280
+X1 vss vout m1_335_n170# vss nfet_03v3 ad=10.584n pd=0.42m as=10.584n ps=0.42m w=84 l=336
+X2 vss Current_in m2_381_1901# vss nfet_03v3 ad=10.736n pd=0.42m as=10.736n ps=0.42m w=88 l=112
+X3 vout Current_in cap_mim_2f0_m4m5_noshield c_width=1200 c_length=1000
+X4 m1_335_n170# v_bias Current_in vss nfet_03v3 ad=10.584n pd=0.42m as=10.584n ps=0.42m w=84 l=1120
+X5 vdd Current_in m2_381_1901# vdd pfet_03v3 ad=11.44n pd=0.436m as=11.44n ps=0.436m w=88 l=112
+X6 vss m2_381_1901# vout vss nfet_03v3 ad=10.584n pd=0.42m as=10.584n ps=0.42m w=84 l=156
+C0 m2_381_1901# vdd 0.42487f
+C1 vss m1_335_n170# 0.28668f
+C2 vdd vout 0.08722f
+C3 vss Current_in 0.72071f
+C4 m2_381_1901# v_bias 0.00606f
+C5 v_bias vout 0.02757f
+C6 m2_381_1901# m1_335_n170# 0
+C7 m2_381_1901# Current_in 1.13323f
+C8 m1_335_n170# vout 0.09984f
+C9 Current_in vout 1.48366f
+C10 vss m2_381_1901# 0.46038f
+C11 vdd Current_in 0.28528f
+C12 vss vout 0.83061f
+C13 vss vdd 0.07165f
+C14 v_bias m1_335_n170# 0.06375f
+C15 v_bias Current_in 0.19794f
+C16 vss v_bias 1.45399f
+C17 m2_381_1901# vout 0.89851f
+C18 m1_335_n170# Current_in 0.00635f
+C19 v_bias pfet_0/VSUBS 1.52626f
+C20 Current_in pfet_0/VSUBS 2.39572f
+C21 vss pfet_0/VSUBS 1.60974f
+C22 vdd pfet_0/VSUBS 3.64981f
+C23 m2_381_1901# pfet_0/VSUBS 1.56654f **FLOATING
+C24 vout pfet_0/VSUBS 3.79579f
+C25 m1_335_n170# pfet_0/VSUBS 0.5658f **FLOATING

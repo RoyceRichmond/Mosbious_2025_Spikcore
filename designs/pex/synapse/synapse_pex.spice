@@ -1,0 +1,190 @@
+* SPICE3 file created from synapse.ext - technology: gf180mcuD
+
+.option scale=5n
+
+X0 vdd vi m1_44_2533# vdd pfet_03v3 ad=11.288n pd=0.436m as=11.288n ps=0.436m w=84 l=56
+X1 vdd m2_640_1617# m1_1750_2493# vdd pfet_03v3 ad=72.8n pd=1.38m as=72.8n ps=1.38m w=560 l=56
+X2 vss m1_344_2455# m1_2266_n82# vss nfet_03v3 ad=24.4n pd=0.644m as=24.4n ps=0.644m w=200 l=56
+X3 vdd v_in m1_856_n14# vdd pfet_03v3 ad=11.288n pd=0.436m as=11.288n ps=0.436m w=84 l=56
+X4 m1_44_2533# m1_856_n14# m1_344_2455# vdd pfet_03v3 ad=22.576n pd=0.872m as=11.288n ps=0.436m w=84 l=56
+X5 vdd m2_640_1617# m2_640_1617# vdd pfet_03v3 ad=0.10666u pd=2.688m as=11.288n ps=0.436m w=84 l=56
+X6 vss ve m1_1434_n778# vss nfet_03v3 ad=10.584n pd=0.42m as=10.584n ps=0.42m w=84 l=56
+X7 m1_1750_2493# v_ctrl v_out vdd pfet_03v3 ad=72.8n pd=1.38m as=72.8n ps=1.38m w=560 l=56
+X8 vss m1_344_2455# m1_344_2455# vss nfet_03v3 ad=56.152n pd=1.904m as=10.584n ps=0.42m w=84 l=56
+X9 vss v_in m1_856_n14# vss nfet_03v3 ad=0 pd=0 as=10.584n ps=0.42m w=84 l=56
+X10 m1_2266_n82# v_ctrl v_out vss nfet_03v3 ad=48.8n pd=1.044m as=48.8n ps=1.044m w=400 l=56
+X11 m1_1434_n778# v_in m2_640_1617# vss nfet_03v3 ad=10.584n pd=0.42m as=10.584n ps=0.42m w=84 l=56
+X12 v_out.t1 v_ctrl.t0 a_1704_2051# vdd.t2 pfet_03v3 ad=72.8n pd=1.38m as=72.8n ps=1.38m w=0 l=0
+X13 v_out.t0 v_ctrl.t1 a_2262_100# vss.t0 nfet_03v3 ad=48.8n pd=1.044m as=48.8n ps=1.044m w=0 l=0
+X14 a_156_2317# v_in.t0 vdd.t3 vdd.t0 pfet_03v3 ad=11.288n pd=0.436m as=11.288n ps=0.436m w=0 l=0
+X15 a_1704_2051# a_632_2083# vdd.t7 vdd.t6 pfet_03v3 ad=72.8n pd=1.38m as=72.8n ps=1.38m w=0 l=0
+X16 a_36_2451# vi.t0 vdd.t1 vdd.t0 pfet_03v3 ad=11.288n pd=0.436m as=11.288n ps=0.436m w=0 l=0
+X17 a_222_2453# a_156_2317# a_36_2451# vdd.t0 pfet_03v3 ad=11.288n pd=0.436m as=11.288n ps=0.436m w=0 l=0
+X18 a_2262_100# a_222_2453# vss.t2 vss.t0 nfet_03v3 ad=24.4n pd=0.644m as=24.4n ps=0.644m w=0 l=0
+X19 vss.t4 ve.t0 a_1430_n860# vss.t3 nfet_03v3 ad=10.584n pd=0.42m as=10.584n ps=0.42m w=0 l=0
+X20 a_1430_n860# v_in.t1 a_632_2083# vss.t3 nfet_03v3 ad=10.584n pd=0.42m as=10.584n ps=0.42m w=0 l=0
+X21 a_222_2453# a_222_2453# vss.t1 vss.t0 nfet_03v3 ad=10.584n pd=0.42m as=10.584n ps=0.42m w=0 l=0
+X22 vdd.t5 a_632_2083# a_632_2083# vdd.t4 pfet_03v3 ad=11.288n pd=0.436m as=11.288n ps=0.436m w=0 l=0
+X23 vss.t5 v_in.t2 a_156_2317# vss.t3 nfet_03v3 ad=10.584n pd=0.42m as=10.584n ps=0.42m w=0 l=0
+C0 v_in m1_44_2533# 0.00272f
+C1 v_in v_ctrl 0
+C2 ve m2_640_1617# 0.04326f
+C3 m1_344_2455# vi 0
+C4 m1_1434_n778# ve 0.08986f
+C5 vss v_ctrl 0.1902f
+C6 vdd v_out 0.25294f
+C7 m1_344_2455# m2_640_1617# 1.03828f
+C8 m1_344_2455# m1_1434_n778# 0
+C9 v_in m1_856_n14# 0.06293f
+C10 m1_856_n14# vss 0.08568f
+C11 m1_344_2455# ve 0.00215f
+C12 m1_2266_n82# m1_344_2455# 0.14377f
+C13 vdd m1_1750_2493# 1.00974f
+C14 v_in m2_640_1617# 0.16116f
+C15 v_in m1_1434_n778# 0.03439f
+C16 vss m2_640_1617# 0.04575f
+C17 m1_1434_n778# vss 0.27293f
+C18 m1_44_2533# vdd 0.42354f
+C19 vdd v_ctrl 0.27013f
+C20 v_in ve 0.11959f
+C21 v_in m1_2266_n82# 0
+C22 v_out m1_1750_2493# 0.17926f
+C23 ve vss 0.66801f
+C24 v_in m1_344_2455# 0.00164f
+C25 m1_2266_n82# vss 0.46842f
+C26 m1_344_2455# vss 0.49744f
+C27 m1_856_n14# vdd 0.84381f
+C28 v_out v_ctrl 0.91889f
+C29 vdd vi 0.37889f
+C30 m1_856_n14# v_out 0.11396f
+C31 vdd m2_640_1617# 0.91088f
+C32 v_in vss 0.47732f
+C33 v_ctrl m1_1750_2493# 0.04569f
+C34 v_out vi 0
+C35 m1_44_2533# v_ctrl 0.02153f
+C36 v_out m2_640_1617# 0.0772f
+C37 m1_344_2455# vdd 0.27275f
+C38 m1_856_n14# m1_1750_2493# 0.00118f
+C39 m1_2266_n82# v_out 0.12989f
+C40 m1_856_n14# m1_44_2533# 0.02974f
+C41 m1_856_n14# v_ctrl 0.04488f
+C42 m1_344_2455# v_out 1.05741f
+C43 v_in vdd 0.21025f
+C44 m2_640_1617# m1_1750_2493# 0.04785f
+C45 m1_44_2533# vi 0.0351f
+C46 v_ctrl vi 0.50619f
+C47 vdd vss 0.11016f
+C48 m1_44_2533# m2_640_1617# 0
+C49 v_ctrl m2_640_1617# 0.00304f
+C50 v_in v_out 0.05786f
+C51 m1_344_2455# m1_1750_2493# 0.35494f
+C52 m1_856_n14# vi 0.00443f
+C53 v_out vss 0.00892f
+C54 m1_2266_n82# v_ctrl 0.0318f
+C55 m1_856_n14# m2_640_1617# 0.86755f
+C56 m1_856_n14# m1_1434_n778# 0
+C57 m1_344_2455# m1_44_2533# 0.09839f
+C58 m1_344_2455# v_ctrl 0.69807f
+C59 m1_2266_n82# m1_856_n14# 0
+C60 vss m1_1750_2493# 0.01507f
+C61 m1_1434_n778# m2_640_1617# 0.06381f
+C62 m1_344_2455# m1_856_n14# 0.06578f
+R0 v_ctrl.n0 v_ctrl.t1 56.1285
+R1 v_ctrl.n0 v_ctrl.t0 55.9719
+R2 v_ctrl v_ctrl.n0 4.685
+R3 v_out.n0 v_out.t0 9.02953
+R4 v_out.n0 v_out.t1 4.45283
+R5 v_out v_out.n0 3.35075
+R6 vdd.t0 vdd.t4 1079.71
+R7 vdd.n7 vdd.n3 725.532
+R8 vdd.t4 vdd.n7 701.087
+R9 vdd.t6 vdd.n2 574.163
+R10 vdd.n2 vdd.t2 308.613
+R11 vdd.n3 vdd.t6 308.613
+R12 vdd.n8 vdd.t0 233.696
+R13 vdd.n9 vdd.n8 12.6005
+R14 vdd.n7 vdd.n6 12.6005
+R15 vdd.n1 vdd.t1 12.3868
+R16 vdd.n6 vdd.t5 12.1992
+R17 vdd.n9 vdd.t3 12.1992
+R18 vdd.n8 vdd.n1 6.20745
+R19 vdd.n2 vdd.n0 4.27348
+R20 vdd.n4 vdd.n3 2.5205
+R21 vdd.n4 vdd.t7 2.0905
+R22 vdd vdd.n10 1.8392
+R23 vdd.n5 vdd.n0 1.50551
+R24 vdd.n6 vdd.n5 0.353583
+R25 vdd.n10 vdd.n1 0.261178
+R26 vdd.n10 vdd.n9 0.154661
+R27 vdd vdd.n0 0.09925
+R28 vdd.n5 vdd.n4 0.00757601
+R29 vss.n19 vss.n10 142472
+R30 vss.n10 vss.t3 923.903
+R31 vss.t0 vss.n19 660.044
+R32 vss.n19 vss.n18 390.74
+R33 vss.n14 vss.n11 319.288
+R34 vss.n14 vss.n12 318.938
+R35 vss.n18 vss.n11 317.625
+R36 vss.n18 vss.n12 317.45
+R37 vss.n20 vss.t0 199.29
+R38 vss.n24 vss.t3 199.29
+R39 vss.n24 vss.n9 140.299
+R40 vss.n20 vss.n9 124.356
+R41 vss.n14 vss.n10 122.895
+R42 vss.n23 vss.t5 12.4237
+R43 vss.n25 vss.t4 12.4237
+R44 vss.n8 vss.t1 12.4237
+R45 vss.n20 vss.n8 10.4005
+R46 vss.n25 vss.n24 10.4005
+R47 vss.n24 vss.n0 10.4005
+R48 vss.n24 vss.n23 10.4005
+R49 vss.n21 vss.t2 8.94366
+R50 vss.n3 vss.n2 4.5005
+R51 vss.n15 vss.n13 4.10562
+R52 vss.n16 vss.n15 4.10113
+R53 vss.n17 vss.n13 4.08425
+R54 vss.n17 vss.n16 4.082
+R55 vss.n22 vss.n20 2.62132
+R56 vss.n6 vss.n5 2.25942
+R57 vss.n4 vss.n1 2.25942
+R58 vss.n5 vss.n4 2.25612
+R59 vss.n7 vss.n1 2.24418
+R60 vss.n16 vss.n12 0.149071
+R61 vss.n12 vss.n9 0.149071
+R62 vss.n13 vss.n11 0.149071
+R63 vss.n11 vss.n9 0.149071
+R64 vss.n18 vss.n17 0.133833
+R65 vss.n15 vss.n14 0.133833
+R66 vss vss.n0 0.06425
+R67 vss.n8 vss.n7 0.0635882
+R68 vss.n22 vss.n21 0.0544239
+R69 vss.n21 vss.n0 0.0296176
+R70 vss vss.n25 0.0214559
+R71 vss.n23 vss.n22 0.0191185
+R72 vss.n25 vss.n8 0.0168235
+R73 vss.n3 vss.n1 0.0146427
+R74 vss.n5 vss.n3 0.0146427
+R75 vss.n6 vss.n2 0.0124414
+R76 vss.n4 vss.n2 0.0124414
+R77 vss.n7 vss.n6 0.0124414
+R78 v_in.n1 v_in.t0 32.0446
+R79 v_in.n0 v_in.t2 25.1601
+R80 v_in.n0 v_in.t1 24.9469
+R81 v_in.n1 v_in.n0 6.1385
+R82 v_in v_in.n1 0.298625
+R83 vi vi.t0 25.5213
+R84 ve ve.t0 31.4596
+C63 ve nfet_2/VSUBS 0.49793f
+C64 vss nfet_2/VSUBS 2.79374f
+C65 v_ctrl nfet_2/VSUBS 1.68979f
+C66 m1_1434_n778# nfet_2/VSUBS 0.14953f **FLOATING
+C67 v_in nfet_2/VSUBS 3.11125f
+C68 m1_2266_n82# nfet_2/VSUBS 0.11799f **FLOATING
+C69 v_out nfet_2/VSUBS 1.24275f
+C70 m1_856_n14# nfet_2/VSUBS 0.88862f **FLOATING
+C71 m1_344_2455# nfet_2/VSUBS 1.84578f **FLOATING
+C72 m1_1750_2493# nfet_2/VSUBS 0.05291f **FLOATING
+C73 m2_640_1617# nfet_2/VSUBS 1.46928f **FLOATING
+C74 m1_44_2533# nfet_2/VSUBS 0.01235f **FLOATING
+C75 vdd nfet_2/VSUBS 7.99802f
+C76 vi nfet_2/VSUBS 0.13876f

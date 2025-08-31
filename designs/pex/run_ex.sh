@@ -1,46 +1,40 @@
 #!/bin/bash
 #
-# Automatic extraction script
-# Works from anywhere, infers circuit name from folder or argument
-#
 
-#-------------------------------------------
-# Setup PDK environment
-#-------------------------------------------
 echo ${PDK_ROOT:=/usr/share/pdk} > /dev/null
 echo ${PDK:=gf180mcuD} > /dev/null
 
-echo "PDK_ROOT is $PDK_ROOT"
-echo "PDK is $PDK"
-
 #-------------------------------------------
-# Detect circuit name
+# Detect circuit name from folder
 #-------------------------------------------
-if [ -n "$1" ]; then
-    # If user gave a path, strip trailing slash and basename it
-    TARGET_DIR=$(realpath "$1")
-    CIRCUIT_NAME=$(basename "$TARGET_DIR")
-    cd "$TARGET_DIR" || exit 1
-else
-    # Otherwise, use current directory
-    CIRCUIT_NAME=$(basename "$PWD")
+if [ $# -lt 1 ]; then
+    echo "Usage: $0 <folder>"
+    exit 1
 fi
 
+CIRCUIT_DIR="$1"
+CIRCUIT_DIR="${CIRCUIT_DIR%/}"   # remove trailing slash if any
+CIRCUIT_NAME=$(basename "$CIRCUIT_DIR")
+
+echo "PDK_ROOT is $PDK_ROOT"
+echo "PDK is $PDK"
 echo "Detected circuit: $CIRCUIT_NAME"
 
 #-------------------------------------------
-# Run magic to extract netlist
+# Extract layout for PEX from magic
 #-------------------------------------------
+
 magic -dnull -noconsole -rcfile $PDK_ROOT/$PDK/libs.tech/magic/$PDK.magicrc << EOF
-gds read ${CIRCUIT_NAME}.gds
+gds read ${CIRCUIT_DIR}/${CIRCUIT_NAME}.gds
 load ${CIRCUIT_NAME}
 select top cell
-extract path extfiles
+extract path ${CIRCUIT_DIR}/extfiles
 extract all
-ext2spice lvs
-ext2spice -p extfiles -o ${CIRCUIT_NAME}_layout.spice
+ext2spice cthresh 0
+ext2spice rthresh 0
+ext2spice extresist on
+ext2spice -p ${CIRCUIT_DIR}/extfiles -o ${CIRCUIT_DIR}/${CIRCUIT_NAME}_pex.spice
 quit -noprompt
 EOF
 
-echo "Extraction complete for $CIRCUIT_NAME"
-exit 0
+echo "PEX extraction complete: ${CIRCUIT_DIR}/${CIRCUIT_NAME}_pex.spice"
