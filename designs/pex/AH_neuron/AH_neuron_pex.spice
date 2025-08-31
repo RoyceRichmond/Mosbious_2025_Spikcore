@@ -1,6 +1,5 @@
 * NGSPICE file created from AH_neuron.ext - technology: gf180mcuD
-
-.subckt AH_neuron vdd Current_in v_bias vss vout
+.subckt AH_neuron vdd Current_in vout vss v_bias
 X0 vout.t1 a_n571_885# vdd.t3 vdd.t2 pfet_03v3 ad=0.546p pd=2.98u as=0.546p ps=2.98u w=0.84u l=1.4u
 X1 a_n571_885# Current_in.t2 vss.t1 vss.t0 nfet_03v3 ad=0.2684p pd=2.1u as=0.2684p ps=2.1u w=0.44u l=0.56u
 X2 a_295_143# v_bias.t0 Current_in.t1 vss.t4 nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=5.6u
