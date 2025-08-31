@@ -1,0 +1,256 @@
+* NGSPICE file created from LIF_comp.ext - technology: gf180mcuD
+
+.subckt pfet w_n352_n286# a_n92_0# a_94_0# a_28_228#
+X0 a_94_0# a_28_228# a_n92_0# w_n352_n286# pfet_03v3 ad=0.546p pd=2.98u as=0.546p ps=2.98u w=0.84u l=0.28u
+.ends
+
+.subckt nfet$7 a_n256_n272# a_30_n132# a_n84_0# a_94_0#
+X0 a_94_0# a_30_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.3416p pd=2.34u as=0.3416p ps=2.34u w=0.56u l=0.28u
+.ends
+
+.subckt nfet$5 a_n256_n272# a_30_n132# a_n84_0# a_94_0#
+X0 a_94_0# a_30_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=1.8788p pd=7.38u as=1.8788p ps=7.38u w=3.08u l=0.28u
+.ends
+
+.subckt pfet$3 a_28_n136# a_n92_0# a_94_0# w_n352_n362#
+X0 a_94_0# a_28_n136# a_n92_0# w_n352_n362# pfet_03v3 ad=1.092p pd=4.66u as=1.092p ps=4.66u w=1.68u l=0.28u
+.ends
+
+.subckt nfet$6 a_n256_n272# a_30_n132# a_n84_0# a_94_0#
+X0 a_94_0# a_30_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.5124p pd=2.9u as=0.5124p ps=2.9u w=0.84u l=0.28u
+.ends
+
+.subckt nfet$4 a_n84_n2# a_n256_n198# a_1746_0# a_38_n60#
+X0 a_1746_0# a_38_n60# a_n84_n2# a_n256_n198# nfet_03v3 ad=0.228p pd=1.98u as=0.228p ps=1.98u w=0.36u l=8.54u
+.ends
+
+.subckt ota_2stages vss vdd vn vp vout
+Xpfet_0 pfet_1/w_n352_n286# vout vdd m2_n346_983# pfet
+Xpfet_1 pfet_1/w_n352_n286# vdd m2_n346_983# m2_n346_983# pfet
+Xnfet$7_0 vss m2_n516_n58# vss vout nfet$7
+Xnfet$5_0 vss vp vout m2_n516_n58# nfet$5
+Xnfet$5_1 vss vn m2_n516_n58# m2_n346_983# nfet$5
+Xpfet$3_0 vout vdd vout pfet_1/w_n352_n286# pfet$3
+Xnfet$6_0 vss m2_n1824_n806# m2_n1824_n806# vss nfet$6
+Xnfet$6_1 vss m2_n1824_n806# vss m2_n516_n58# nfet$6
+Xnfet$4_0 m2_n1824_n806# vss vdd vdd nfet$4
+.ends
+
+.subckt pfet$12 a_n92_0# a_35_n136# a_108_0# w_n230_n138#
+X0 a_108_0# a_35_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.35u
+.ends
+
+.subckt nfet$14 a_216_0# a_30_260# a_n84_0# a_94_0#
+X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt switch$3 vdd vss out in cntrl
+Xpfet$12_0 m2_n331_n296# cntrl vdd vdd pfet$12
+Xpfet$12_1 in m2_n331_n296# out vdd pfet$12
+Xnfet$14_0 vss cntrl m2_n331_n296# vss nfet$14
+Xnfet$14_1 vss cntrl in out nfet$14
+.ends
+
+.subckt nfet$15 a_216_0# a_30_260# a_n84_0# a_94_0#
+X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt pfet$13 a_n92_0# a_35_n136# a_108_0# w_n230_n138#
+X0 a_108_0# a_35_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.35u
+.ends
+
+.subckt conmutator$3 vdd cntrl out in2 in1 vss
+Xnfet$15_0 vss m2_n850_n472# out in1 nfet$15
+Xnfet$15_1 vss cntrl in2 out nfet$15
+Xnfet$15_2 vss cntrl m2_n850_n472# vss nfet$15
+Xpfet$13_0 out cntrl in1 vdd pfet$13
+Xpfet$13_2 m2_n850_n472# cntrl vdd vdd pfet$13
+Xpfet$13_1 in2 m2_n850_n472# out vdd pfet$13
+.ends
+
+.subckt nfet$1$4 a_n256_n272# a_30_n132# a_n84_0# a_94_0#
+X0 a_94_0# a_30_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=1.8788p pd=7.38u as=1.8788p ps=7.38u w=3.08u l=0.28u
+.ends
+
+.subckt nfet$16 a_n256_n272# a_30_n132# a_n84_0# a_94_0#
+X0 a_94_0# a_30_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.5124p pd=2.9u as=0.5124p ps=2.9u w=0.84u l=0.28u
+.ends
+
+.subckt pfet$1$6 w_n352_n286# a_n92_0# a_94_0# a_28_228#
+X0 a_94_0# a_28_228# a_n92_0# w_n352_n286# pfet_03v3 ad=0.546p pd=2.98u as=0.546p ps=2.98u w=0.84u l=0.28u
+.ends
+
+.subckt nfet$3$4 a_n84_n2# a_n256_n198# a_1746_0# a_38_n60#
+X0 a_1746_0# a_38_n60# a_n84_n2# a_n256_n198# nfet_03v3 ad=0.228p pd=1.98u as=0.228p ps=1.98u w=0.36u l=8.54u
+.ends
+
+.subckt ota_1stage$3 vss vdd vp vn vout
+Xnfet$1$4_0 vss vn vout m2_n516_n58# nfet$1$4
+Xnfet$1$4_1 vss vp m2_n516_n58# m2_n346_983# nfet$1$4
+Xnfet$16_0 vss m2_n1824_n806# m2_n1824_n806# vss nfet$16
+Xnfet$16_1 vss m2_n1824_n806# vss m2_n516_n58# nfet$16
+Xpfet$1$6_0 pfet$1$6_1/w_n352_n286# vout vdd m2_n346_983# pfet$1$6
+Xpfet$1$6_1 pfet$1$6_1/w_n352_n286# vdd m2_n346_983# m2_n346_983# pfet$1$6
+Xnfet$3$4_0 m2_n1824_n806# vss vdd vdd nfet$3$4
+.ends
+
+.subckt nfet$12 a_216_0# a_30_260# a_n84_0# a_94_0#
+X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt pfet$11 a_n92_0# a_35_n136# a_108_0# w_n230_n138#
+X0 a_108_0# a_35_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.35u
+.ends
+
+.subckt switch vdd vss out in cntrl
+Xnfet$12_0 vss cntrl m2_n331_n296# vss nfet$12
+Xpfet$11_0 m2_n331_n296# cntrl vdd vdd pfet$11
+Xnfet$12_1 vss cntrl in out nfet$12
+Xpfet$11_1 in m2_n331_n296# out vdd pfet$11
+.ends
+
+.subckt nfet$13 VSUBS
+X0 a_118_0# a_54_n132# a_n84_n2# VSUBS nfet_03v3 ad=0.2712p pd=2.22u as=0.2712p ps=2.22u w=0.36u l=0.28u
+.ends
+
+.subckt pfet$1$5 w_n352_n286# a_n92_0# a_94_0# a_28_228#
+X0 a_94_0# a_28_228# a_n92_0# w_n352_n286# pfet_03v3 ad=0.546p pd=2.98u as=0.546p ps=2.98u w=0.84u l=0.28u
+.ends
+
+.subckt nfet$11 a_n256_n272# a_30_n132# a_n84_0# a_94_0#
+X0 a_94_0# a_30_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.5124p pd=2.9u as=0.5124p ps=2.9u w=0.84u l=0.28u
+.ends
+
+.subckt nfet$3$3 a_n84_n2# a_n256_n198# a_1746_0# a_38_n60#
+X0 a_1746_0# a_38_n60# a_n84_n2# a_n256_n198# nfet_03v3 ad=0.228p pd=1.98u as=0.228p ps=1.98u w=0.36u l=8.54u
+.ends
+
+.subckt nfet$1$3 a_n256_n272# a_30_n132# a_n84_0# a_94_0#
+X0 a_94_0# a_30_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=1.8788p pd=7.38u as=1.8788p ps=7.38u w=3.08u l=0.28u
+.ends
+
+.subckt ota_1stage vss vdd vp vn vout
+Xpfet$1$5_0 pfet$1$5_1/w_n352_n286# vout vdd m2_n346_983# pfet$1$5
+Xpfet$1$5_1 pfet$1$5_1/w_n352_n286# vdd m2_n346_983# m2_n346_983# pfet$1$5
+Xnfet$11_0 vss m2_n1824_n806# m2_n1824_n806# vss nfet$11
+Xnfet$3$3_0 m2_n1824_n806# vss vdd vdd nfet$3$3
+Xnfet$11_1 vss m2_n1824_n806# vss m2_n516_n58# nfet$11
+Xnfet$1$3_0 vss vn vout m2_n516_n58# nfet$1$3
+Xnfet$1$3_1 vss vp m2_n516_n58# m2_n346_983# nfet$1$3
+.ends
+
+.subckt pfet$10 a_n92_0# a_35_n136# a_108_0# w_n230_n138#
+X0 a_108_0# a_35_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.35u
+.ends
+
+.subckt nfet$10 a_216_0# a_30_260# a_n84_0# a_94_0#
+X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt not vss in vdd
+Xpfet$10_0 in in vdd vdd pfet$10
+Xnfet$10_0 vss in in vss nfet$10
+.ends
+
+.subckt pfet$2$3 a_28_n136# a_n92_0# a_94_0# w_n230_n138#
+X0 a_94_0# a_28_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.28u
+.ends
+
+.subckt nfet$9 a_216_0# a_30_260# a_n84_0# a_94_0#
+X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt nfet$1$2 a_30_260# a_n84_0# a_94_0# VSUBS
+X0 a_94_0# a_30_260# a_n84_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt pfet$1$4 a_28_n136# w_n180_n88# a_n92_0# a_94_0#
+X0 a_94_0# a_28_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.28u
+.ends
+
+.subckt nor vss A B Z vdd
+Xpfet$2$3_0 A pfet$1$4_0/a_94_0# vdd vdd pfet$2$3
+Xnfet$9_0 vss A Z vss nfet$9
+Xnfet$1$2_0 B vss Z vss nfet$1$2
+Xpfet$1$4_0 B vdd Z pfet$1$4_0/a_94_0# pfet$1$4
+.ends
+
+.subckt pfet$7 a_n92_0# a_35_n136# a_108_0# w_n230_n138#
+X0 a_108_0# a_35_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.35u
+.ends
+
+.subckt nfet$8 a_216_0# a_30_260# a_n84_0# a_94_0#
+X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt conmutator vdd cntrl out in2 in1 vss
+Xpfet$7_0 out cntrl in1 vdd pfet$7
+Xpfet$7_1 in2 m2_n850_n472# out vdd pfet$7
+Xpfet$7_2 m2_n850_n472# cntrl vdd vdd pfet$7
+Xnfet$8_0 vss m2_n850_n472# out in1 nfet$8
+Xnfet$8_1 vss cntrl in2 out nfet$8
+Xnfet$8_2 vss cntrl m2_n850_n472# vss nfet$8
+.ends
+
+.subckt pfet$8 a_28_n136# w_n180_n88# a_n92_0# a_94_0#
+X0 a_94_0# a_28_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.28u
+.ends
+
+.subckt pfet$1$3 a_28_n136# a_n92_0# a_94_0# w_n230_n138#
+X0 a_94_0# a_28_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.28u
+.ends
+
+.subckt nfet$2$1 a_216_0# a_30_260# a_n84_0# a_94_0#
+X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt nfet$3$2 a_30_260# a_n84_0# a_94_0# VSUBS
+X0 a_94_0# a_30_260# a_n84_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt nand vss B A Z vdd
+Xpfet$8_0 A vdd vdd Z pfet$8
+Xpfet$1$3_0 B Z vdd vdd pfet$1$3
+Xnfet$2$1_0 vss B nfet$3$2_0/a_94_0# vss nfet$2$1
+Xnfet$3$2_0 A Z nfet$3$2_0/a_94_0# vss nfet$3$2
+.ends
+
+.subckt phaseUpulse VSUBS
+Xswitch_0 switch_0/vdd VSUBS switch_0/out switch_0/in switch_0/cntrl switch
+Xswitch_1 switch_1/vdd VSUBS switch_1/out switch_1/in switch_1/cntrl switch
+Xswitch_2 switch_2/vdd VSUBS switch_2/out switch_2/in switch_2/cntrl switch
+Xnfet$13_0 VSUBS nfet$13
+Xota_1stage_0 VSUBS ota_1stage_0/vdd ota_1stage_0/vp ota_1stage_0/vn ota_1stage_0/vout
++ ota_1stage
+Xnfet$13_1 VSUBS nfet$13
+Xnfet$13_2 VSUBS nfet$13
+Xnfet$13_3 VSUBS nfet$13
+Xnfet$13_4 VSUBS nfet$13
+Xnfet$13_5 VSUBS nfet$13
+Xnot_0 VSUBS not_0/in not_0/vdd not
+Xnot_1 VSUBS not_1/in not_1/vdd not
+Xnot_2 VSUBS not_2/in not_2/vdd not
+Xnot_3 VSUBS not_3/in not_3/vdd not
+Xnot_4 VSUBS not_4/in not_4/vdd not
+Xnor_0 VSUBS nor_0/A nor_0/B nor_0/Z not_0/vdd nor
+Xconmutator_0 conmutator_0/vdd conmutator_0/cntrl conmutator_0/out conmutator_0/in2
++ conmutator_0/in1 VSUBS conmutator
+Xnand_0 VSUBS nand_0/B nand_0/A nand_0/Z not_3/vdd nand
+Xnand_1 VSUBS nand_1/B nand_1/A nand_1/Z nand_1/vdd nand
+.ends
+
+.subckt LIF_comp
+Xota_2stages_0 VSUBS ota_2stages_0/vdd ota_2stages_0/vn ota_2stages_0/vp ota_2stages_0/vout
++ ota_2stages
+Xswitch$3_0 switch$3_0/vdd VSUBS switch$3_0/out switch$3_0/in switch$3_0/cntrl switch$3
+Xconmutator$3_0 conmutator$3_0/vdd conmutator$3_0/cntrl conmutator$3_0/out conmutator$3_0/in2
++ conmutator$3_0/in1 VSUBS conmutator$3
+Xconmutator$3_2 conmutator$3_2/vdd conmutator$3_2/cntrl conmutator$3_2/out conmutator$3_2/in2
++ conmutator$3_2/in1 VSUBS conmutator$3
+Xconmutator$3_1 conmutator$3_1/vdd conmutator$3_1/cntrl conmutator$3_1/out conmutator$3_1/in2
++ conmutator$3_1/in1 VSUBS conmutator$3
+Xota_1stage$3_0 VSUBS ota_1stage$3_0/vdd ota_1stage$3_0/vp ota_1stage$3_0/vn ota_1stage$3_0/vout
++ ota_1stage$3
+XphaseUpulse_0 VSUBS phaseUpulse
+.ends
+
