@@ -213,4 +213,4 @@ W=1e-6
 L=1e-6
 model=cap_mim_2f0fF
 spiceprefix=X
-m=100}
+m=9}
