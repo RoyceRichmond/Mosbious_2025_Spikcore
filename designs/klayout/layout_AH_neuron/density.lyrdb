@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>GF180 DENSITY DRC Run Report at</description>
- <original-file>/foss/designs/Mosbious_2025_spiking4all/designs/klayout/layout_AH_neuron/AH_neuron.gds</original-file>
+ <original-file>/foss/designs/Mosbious_2025_Spikcore/designs/klayout/layout_AH_neuron/AH_neuron.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
  <top-cell>AH_neuron</top-cell>
  <tags>
@@ -214,7 +214,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-3.325,5.155;-3.325,5.695;-3.84,5.695;-3.84,9.095;-3.325,9.095;-3.325,9.505;-3.335,9.505;-3.335,9.905;-2.935,9.905;-2.935,9.505;-2.945,9.505;-2.945,5.155)</value>
+    <value>polygon: (-3.84,5.155;-3.84,9.095;-3.325,9.095;-3.325,9.505;-3.335,9.505;-3.335,9.905;-2.935,9.905;-2.935,9.505;-2.945,9.505;-2.945,5.155)</value>
    </values>
   </item>
   <item>
@@ -310,7 +310,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-4.755,12.65;-4.755,13.615;-9.26,13.615;-9.26,14.015;1.725,14.015;1.725,12.85;0.615,12.85;0.615,13.56;-3.645,13.56;-3.645,12.65)</value>
+    <value>polygon: (-4.755,12.65;-4.755,13.615;-13.41,13.615;-13.41,14.41;1.725,14.41;1.725,12.85;0.615,12.85;0.615,13.56;-3.645,13.56;-3.645,12.65)</value>
    </values>
   </item>
   <item>
@@ -322,7 +322,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-9.095,0.035;-9.095,0.435;-5.665,0.435;-5.665,0.035)</value>
+    <value>polygon: (-13.41,0.035;-13.41,0.435;-5.665,0.435;-5.665,0.035)</value>
    </values>
   </item>
   <item>
@@ -334,7 +334,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-4.715,2.88;-4.715,3.435;-9.2,3.435;-9.2,3.835;-4.715,3.835;-4.715,3.84;-0.61,3.84;-0.61,2.88)</value>
+    <value>polygon: (-10.77,2.875;-10.77,2.88;-13.38,2.88;-13.38,3.835;-4.715,3.835;-4.715,3.84;-0.61,3.84;-0.61,2.88;-10.37,2.88;-10.37,2.875)</value>
    </values>
   </item>
   <item>
@@ -430,7 +430,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-9.205,9.505;-9.205,9.905;-3.335,9.905;-3.335,12.33;-2.935,12.33;-2.935,9.505)</value>
+    <value>polygon: (-13.43,9.505;-13.43,9.905;-3.335,9.905;-3.335,12.33;-2.935,12.33;-2.935,9.505)</value>
    </values>
   </item>
   <item>
@@ -466,7 +466,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-9.09,8.495;-9.09,8.895;3.58,8.895;3.58,13.24;3.98,13.24;3.98,8.495)</value>
+    <value>polygon: (-13.43,8.495;-13.43,8.895;3.58,8.895;3.58,13.24;3.98,13.24;3.98,8.495)</value>
    </values>
   </item>
   <item>

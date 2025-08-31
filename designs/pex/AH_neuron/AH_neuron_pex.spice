@@ -1,37 +1,98 @@
-* SPICE3 file created from AH_neuron.ext - technology: gf180mcuD
+* NGSPICE file created from AH_neuron.ext - technology: gf180mcuD
 
-.option scale=5n
+.subckt AH_neuron vdd Current_in v_bias vss vout
+X0 vout.t1 a_n571_885# vdd.t3 vdd.t2 pfet_03v3 ad=0.546p pd=2.98u as=0.546p ps=2.98u w=0.84u l=1.4u
+X1 a_n571_885# Current_in.t2 vss.t1 vss.t0 nfet_03v3 ad=0.2684p pd=2.1u as=0.2684p ps=2.1u w=0.44u l=0.56u
+X2 a_295_143# v_bias.t0 Current_in.t1 vss.t4 nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=5.6u
+X3 a_n571_885# Current_in.t3 vdd.t1 vdd.t0 pfet_03v3 ad=0.286p pd=2.18u as=0.286p ps=2.18u w=0.44u l=0.56u
+X4 a_295_143# vout.t2 vss.t3 vss.t2 nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=1.68u
+X5 vout.t3 Current_in.t0 cap_mim_2f0_m4m5_noshield c_width=6u c_length=5u
+X6 vout.t0 a_n571_885# vss.t6 vss.t5 nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=0.78u
+R0 vdd.n0 vdd.t2 845.933
+R1 vdd.n1 vdd.t0 798.314
+R2 vdd.n1 vdd.t1 11.8823
+R3 vdd.n0 vdd.t3 8.7005
+R4 vdd vdd.n2 0.791584
+R5 vdd.n2 vdd.n0 0.52818
+R6 vdd.n2 vdd.n1 0.0933378
+R7 vout.n2 vout.t1 14.1342
+R8 vout.n0 vout.t0 12.4797
+R9 vout.n0 vout.t2 5.90562
+R10 vout.n1 vout.t3 4.68293
+R11 vout.n2 vout.n1 4.53554
+R12 vout vout.n2 3.5735
+R13 vout.n1 vout.n0 0.0403816
+R14 Current_in.t2 Current_in.t1 30.3289
+R15 Current_in.n1 Current_in.t3 22.2565
+R16 Current_in.n0 Current_in.t2 17.282
+R17 Current_in.n1 Current_in.n0 4.86375
+R18 Current_in.n0 Current_in.t0 4.48077
+R19 Current_in Current_in.n1 2.02213
+R20 vss.n10 vss.n5 66473.4
+R21 vss.n20 vss.n5 24758.4
+R22 vss.n17 vss.n5 4991.07
+R23 vss.n20 vss.n19 903.846
+R24 vss.n10 vss.n9 784.045
+R25 vss.t2 vss.n10 547.62
+R26 vss.n11 vss.t2 357.144
+R27 vss.n9 vss.n3 355.514
+R28 vss.n9 vss.n4 354.901
+R29 vss.n21 vss.n3 353.151
+R30 vss.n21 vss.n4 352.538
+R31 vss.t0 vss.t4 331.502
+R32 vss.n12 vss.n11 304.029
+R33 vss.n17 vss.n16 260.074
+R34 vss.n19 vss.t0 254.579
+R35 vss.n21 vss.n20 201.629
+R36 vss.n16 vss.n6 142.857
+R37 vss.t5 vss.n6 131.869
+R38 vss.t4 vss.n17 93.4071
+R39 vss.n12 vss.t5 87.9126
+R40 vss.n15 vss.t6 12.4213
+R41 vss.n7 vss.t3 12.4003
+R42 vss.n18 vss.t1 12.1024
+R43 vss.n11 vss.n7 10.4005
+R44 vss.n13 vss.n12 10.4005
+R45 vss.n19 vss.n18 10.4005
+R46 vss.n16 vss.n15 10.4005
+R47 vss.n8 vss.n1 4.57138
+R48 vss.n8 vss.n2 4.5635
+R49 vss.n22 vss.n2 4.53313
+R50 vss.n23 vss.n1 4.41013
+R51 vss.n14 vss.n0 2.71644
+R52 vss.n18 vss.n0 2.42745
+R53 vss.n24 vss.n23 2.21993
+R54 vss.n24 vss.n0 0.57478
+R55 vss.n14 vss.n13 0.393478
+R56 vss vss.n24 0.211128
+R57 vss.n9 vss.n8 0.163
+R58 vss.n22 vss.n21 0.163
+R59 vss.n13 vss.n7 0.138395
+R60 vss.n23 vss.n22 0.13063
+R61 vss.n15 vss.n14 0.119768
+R62 vss.n4 vss.n2 0.111138
+R63 vss.n6 vss.n4 0.111138
+R64 vss.n3 vss.n1 0.111138
+R65 vss.n6 vss.n3 0.111138
+R66 v_bias v_bias.t0 8.79386
+C0 vout vdd 0.08722f
+C1 a_n571_885# v_bias 0.00606f
+C2 v_bias Current_in 0.19794f
+C3 a_n571_885# a_295_143# 0
+C4 a_295_143# Current_in 0.00635f
+C5 a_295_143# v_bias 0.06375f
+C6 a_n571_885# vdd 0.42487f
+C7 vdd Current_in 0.28528f
+C8 a_n571_885# vout 0.89851f
+C9 vout Current_in 1.48366f
+C10 vout v_bias 0.02757f
+C11 a_295_143# vout 0.09984f
+C12 a_n571_885# Current_in 1.13323f
+C13 v_bias vss 2.98026f
+C14 vout vss 4.49334f
+C15 Current_in vss 2.93291f
+C16 vdd vss 3.72146f
+C17 a_295_143# vss 0.85248f
+C18 a_n571_885# vss 2.02692f
+.ends
 
-X0 vdd m2_381_1901# vout vdd pfet_03v3 ad=21.84n pd=0.596m as=21.84n ps=0.596m w=168 l=280
-X1 vss vout m1_335_n170# vss nfet_03v3 ad=10.584n pd=0.42m as=10.584n ps=0.42m w=84 l=336
-X2 vss Current_in m2_381_1901# vss nfet_03v3 ad=10.736n pd=0.42m as=10.736n ps=0.42m w=88 l=112
-X3 vout Current_in cap_mim_2f0_m4m5_noshield c_width=1200 c_length=1000
-X4 m1_335_n170# v_bias Current_in vss nfet_03v3 ad=10.584n pd=0.42m as=10.584n ps=0.42m w=84 l=1120
-X5 vdd Current_in m2_381_1901# vdd pfet_03v3 ad=11.44n pd=0.436m as=11.44n ps=0.436m w=88 l=112
-X6 vss m2_381_1901# vout vss nfet_03v3 ad=10.584n pd=0.42m as=10.584n ps=0.42m w=84 l=156
-C0 m2_381_1901# vdd 0.42487f
-C1 vss m1_335_n170# 0.28668f
-C2 vdd vout 0.08722f
-C3 vss Current_in 0.72071f
-C4 m2_381_1901# v_bias 0.00606f
-C5 v_bias vout 0.02757f
-C6 m2_381_1901# m1_335_n170# 0
-C7 m2_381_1901# Current_in 1.13323f
-C8 m1_335_n170# vout 0.09984f
-C9 Current_in vout 1.48366f
-C10 vss m2_381_1901# 0.46038f
-C11 vdd Current_in 0.28528f
-C12 vss vout 0.83061f
-C13 vss vdd 0.07165f
-C14 v_bias m1_335_n170# 0.06375f
-C15 v_bias Current_in 0.19794f
-C16 vss v_bias 1.45399f
-C17 m2_381_1901# vout 0.89851f
-C18 m1_335_n170# Current_in 0.00635f
-C19 v_bias pfet_0/VSUBS 1.52626f
-C20 Current_in pfet_0/VSUBS 2.39572f
-C21 vss pfet_0/VSUBS 1.60974f
-C22 vdd pfet_0/VSUBS 3.64981f
-C23 m2_381_1901# pfet_0/VSUBS 1.56654f **FLOATING
-C24 vout pfet_0/VSUBS 3.79579f
-C25 m1_335_n170# pfet_0/VSUBS 0.5658f **FLOATING
