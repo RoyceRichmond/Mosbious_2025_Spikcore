@@ -5,8 +5,8 @@ V {}
 S {}
 E {}
 B 2 630 -580 1110 -250 {flags=graph
-y1=-5.4e-09
-y2=6.7
+y1=0
+y2=6.6
 ypos1=0
 ypos2=2
 divy=5
@@ -27,7 +27,7 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 1120 -245 1590 125 {flags=graph
-y1=-6.2e-07
+y1=-1.5e-06
 y2=0.00019
 ypos1=0
 ypos2=2
@@ -48,7 +48,7 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 1110 -580 1590 -250 {flags=graph
-y1=0.25
+y1=0.16
 y2=3.1
 ypos1=0
 ypos2=2
@@ -69,8 +69,8 @@ logx=0
 logy=0
 hilight_wave=-1}
 N 605 170 605 200 {lab=GND}
-N 605 20 605 30 {lab=#net1}
-N 605 90 605 110 {lab=#net2}
+N 605 -100 605 -90 {lab=#net1}
+N 605 -30 605 -10 {lab=#net2}
 N 605 170 675 170 {lab=GND}
 N 725 130 725 170 {lab=GND}
 N 675 170 725 170 {lab=GND}
@@ -79,11 +79,14 @@ N 675 -20 675 0 {lab=GND}
 N 1050 -130 1050 -100 {lab=out_spike}
 N 1040 -130 1050 -130 {lab=out_spike}
 N 1050 -40 1050 -10 {lab=#net3}
-N 1050 50 1050 70 {lab=GND}
-C {vsource.sym} 605 140 0 0 {name=V1 value=3.3 savecurrent=false}
-C {devices/code_shown.sym} 85 -520 0 0 {name=s1 only_toplevel=false value="
+N 1050 50 1050 70 {lab=vss}
+N 605 50 605 80 {lab=vss}
+N 605 80 605 110 {lab=vss}
+C {vsource.sym} 605 20 0 0 {name=V1 value=3.3 savecurrent=false}
+C {devices/code_shown.sym} -165 -530 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
 .tran 1n 20u
+.include /foss/designs/Mosbious_2025_Spikcore/designs/pex/synapse/synapse.spice
 .param ve=3.3
 .param vi=0
 .param RL=25k
@@ -107,10 +110,10 @@ C {devices/code_shown.sym} 85 -520 0 0 {name=s1 only_toplevel=false value="
 "
 spice_ignore=False}
 C {gnd.sym} 605 200 0 0 {name=l1 lab=GND}
-C {lab_pin.sym} 605 -40 0 0 {name=p1 sig_type=std_logic lab=vdd}
-C {ammeter.sym} 605 60 2 0 {name=Vdd_c savecurrent=true spice_ignore=0}
+C {lab_pin.sym} 605 -160 0 0 {name=p1 sig_type=std_logic lab=vdd}
+C {ammeter.sym} 605 -60 2 0 {name=Vdd_c savecurrent=true spice_ignore=0}
 C {lab_pin.sym} 940 -210 0 0 {name=p4 sig_type=std_logic lab=vdd}
-C {devices/code_shown.sym} 35 -50 0 0 {name=MODELS1 only_toplevel=true
+C {devices/code_shown.sym} -155 -50 0 0 {name=MODELS1 only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
@@ -124,7 +127,6 @@ C {launcher.sym} 740 205 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/synapse.raw tran"
 }
-C {gnd.sym} 940 -60 0 0 {name=l5 lab=GND}
 C {lab_pin.sym} 830 -110 0 0 {name=p3 sig_type=std_logic lab=vi}
 C {lab_pin.sym} 830 -90 0 0 {name=p5 sig_type=std_logic lab=ve}
 C {lab_pin.sym} 830 -130 0 0 {name=p6 sig_type=std_logic lab=spike}
@@ -145,9 +147,7 @@ value=RL
 footprint=1206
 device=resistor
 m=1}
-C {gnd.sym} 1050 70 0 0 {name=l7 lab=GND}
-C {designs/libs/core_synapse/synapse.sym} 910 60 0 0 {name=x1}
-C {res.sym} 605 -10 0 0 {name=R2
+C {res.sym} 605 -130 0 0 {name=R2
 value=10
 footprint=1206
 device=resistor
@@ -173,3 +173,8 @@ footprint=1206
 device=resistor
 m=1}
 C {title.sym} 280 280 0 0 {name=l4 author="Royce Richmond"}
+C {designs/pex/synapse/synapse.sym} 910 60 0 0 {name=x1}
+C {vsource.sym} 605 140 0 0 {name=V7 value=0 savecurrent=false}
+C {lab_pin.sym} 605 80 0 0 {name=p2 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 940 -60 0 0 {name=p7 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 1050 70 0 0 {name=p8 sig_type=std_logic lab=vss}

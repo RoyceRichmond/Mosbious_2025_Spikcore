@@ -1,6 +1,6 @@
 v {xschem version=3.4.7 file_version=1.2}
 G {}
-K {type=subcircuit
+K {type=primitive
 format="@name @pinlist @symname"
 template="name=x1"
 }
@@ -44,3 +44,4 @@ T {vi} -65 -184 0 1 0.2 0.2 {}
 T {vss} 25 -134 0 1 0.2 0.2 {}
 T {@symname} -19.5 -246 0 0 0.3 0.3 {}
 T {@name} 5 -212 0 0 0.2 0.2 {}
+T {PEX} 80 -270 0 0 0.3 0.3 {}

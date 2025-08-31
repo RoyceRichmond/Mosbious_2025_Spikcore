@@ -1,6 +1,6 @@
 * NGSPICE file created from synapse.ext - technology: gf180mcuD
 
-.subckt synapse vi v_ctrl vss v_in ve vdd v_out
+.subckt synapse vdd v_in ve v_ctrl v_out vi vss
 X0 v_out.t1 v_ctrl.t0 a_1704_2051# vdd.t6 pfet_03v3 ad=1.82p pd=6.9u as=1.82p ps=6.9u w=2.8u l=0.28u
 X1 v_out.t0 v_ctrl.t1 a_2262_100# vss.t0 nfet_03v3 ad=1.22p pd=5.22u as=1.22p ps=5.22u w=2u l=0.28u
 X2 a_156_2317# v_in.t0 vdd.t7 vdd.t0 pfet_03v3 ad=0.2822p pd=2.18u as=0.2822p ps=2.18u w=0.42u l=0.28u

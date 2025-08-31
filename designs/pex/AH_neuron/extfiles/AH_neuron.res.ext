@@ -10,12 +10,12 @@ rnode "vss.n4" 0 0 277 -1123 0
 rnode "vss.n5" 0 0 -303 2816 0
 rnode "vss.n6" 0 0 277 2243 0
 rnode "vss.t6" 0 0 343 931 0
-rnode "vss.t3" 0 0 1071 111 0
+rnode "vss.t4" 0 0 1071 111 0
 rnode "vss.n7" 0 0 849 111 0
 rnode "vss.n8" 0 0 2693 555 0
 rnode "vss.n9" 0 0 2693 555 0
 rnode "vss.n10" 0 0 1837 2386 0
-rnode "vss.t2" 0 0 1239 111 0
+rnode "vss.t3" 0 0 1239 111 0
 rnode "vss.n11" 0 0 849 111 0
 rnode "vss.t5" 0 0 421 931 0
 rnode "vss.n12" 0 0 517 185 0
@@ -24,9 +24,9 @@ rnode "vss.n14" 0 0 99 768 0
 rnode "vss.n15" 0 0 121 931 0
 rnode "vss.n16" 0 0 121 931 0
 rnode "vss.n17" 0 0 -163 2386 0
-rnode "vss.t4" 0 0 -265 185 0
-rnode "vss.t0" 0 0 -627 929 0
-rnode "vss.t1" 0 0 -683 929 0
+rnode "vss.t0" 0 0 -265 185 0
+rnode "vss.t1" 0 0 -627 929 0
+rnode "vss.t2" 0 0 -683 929 0
 rnode "vss.n18" 0 0 -905 929 0
 rnode "vss.n19" 0 0 -905 929 0
 rnode "vss.n20" 0 0 -1892 2386 0
@@ -58,42 +58,42 @@ resist "vss.n16" "vss.n15" 10.4
 resist "vss.n19" "vss.n18" 10.4
 resist "vss.n13" "vss.n12" 10.4
 resist "vss.n11" "vss.n7" 10.4
-resist "vss.n18" "vss.t1" 12.1019
-resist "vss.n7" "vss.t3" 12.3998
+resist "vss.n18" "vss.t2" 12.1019
+resist "vss.n7" "vss.t4" 12.3998
 resist "vss.n15" "vss.t6" 12.4208
 resist "vss.n12" "vss.t5" 87.9121
-resist "vss.t4" "vss.n17" 93.4066
+resist "vss.t0" "vss.n17" 93.4066
 resist "vss.t5" "vss.n6" 131.868
 resist "vss.n16" "vss.n6" 142.857
 resist "vss.n21" "vss.n20" 201.628
-resist "vss.n19" "vss.t0" 254.579
+resist "vss.n19" "vss.t1" 254.579
 resist "vss.n17" "vss.n16" 260.073
 resist "vss.n12" "vss.n11" 304.029
-resist "vss.t0" "vss.t4" 331.502
+resist "vss.t1" "vss.t0" 331.502
 resist "vss.n21" "vss.n4" 352.538
 resist "vss.n21" "vss.n3" 353.15
 resist "vss.n9" "vss.n4" 354.9
 resist "vss.n9" "vss.n3" 355.513
-resist "vss.n11" "vss.t2" 357.143
-resist "vss.t2" "vss.n10" 547.619
+resist "vss.n11" "vss.t3" 357.143
+resist "vss.t3" "vss.n10" 547.619
 resist "vss.n10" "vss.n9" 784.045
 resist "vss.n20" "vss.n19" 903.846
 resist "vss.n17" "vss.n5" 4991.07
 resist "vss.n20" "vss.n5" 24758.4
 resist "vss.n10" "vss.n5" 66473.4
 rnode "Current_in.t3" 0 0 -627 2568 0
-rnode "Current_in.t0" 0 0 -568 1481 0
-rnode "Current_in.t1" 0 0 -825 185 0
+rnode "Current_in.t1" 0 0 -568 1481 0
+rnode "Current_in.t0" 0 0 -825 185 0
 rnode "Current_in.t2" 0 0 -627 929 0
 rnode "Current_in.n0" 0 0 -728 1379 0
 rnode "Current_in.n1" 0 0 -627 1941 0
 rnode "Current_in" 0 0 -2424 1957 0
 resist "Current_in" "Current_in.n1" 2.02163
-resist "Current_in.n0" "Current_in.t0" 4.48027
+resist "Current_in.n0" "Current_in.t1" 4.48027
 resist "Current_in.n1" "Current_in.n0" 4.86325
 resist "Current_in.n0" "Current_in.t2" 17.2815
 resist "Current_in.n1" "Current_in.t3" 22.256
-resist "Current_in.t2" "Current_in.t1" 30.3284
+resist "Current_in.t2" "Current_in.t0" 30.3284
 rnode "vout.t1" 0 0 671 2608 0
 rnode "vout.t0" 0 0 499 931 0
 rnode "vout.t2" 0 0 1239 111 0
@@ -125,9 +125,9 @@ resist "vdd.n1" "vdd.t1" 11.8818
 resist "vdd.n1" "vdd.t0" 798.314
 resist "vdd.n0" "vdd.t2" 845.933
 device msubckt nfet_03v3 343 889 344 890  "vss.t5" "a_n571_885#" 312 0 "vss.t6" 84 10584,420 "vout.t0" 84 10584,420
-device csubckt cap_mim_2f0_m4m5_noshield -568 981 -567 982  "None" "vout.t3" 8064 0 "Current_in.t0" -3100 213333,3306
-device msubckt nfet_03v3 1071 69 1072 70  "vss.t2" "vout.t2" 672 0 "vss.t3" 84 10584,420 "a_295_143#" 84 10584,420
+device csubckt cap_mim_2f0_m4m5_noshield -568 981 -567 982  "None" "vout.t3" 8064 0 "Current_in.t1" -3100 213333,3306
+device msubckt nfet_03v3 1071 69 1072 70  "vss.t3" "vout.t2" 672 0 "vss.t4" 84 10584,420 "a_295_143#" 84 10584,420
 device msubckt pfet_03v3 -683 2524 -682 2525  "vdd.t0" "Current_in.t3" 224 0 "vdd.t1" 88 11440,436 "a_n571_885#" 88 11440,436
-device msubckt nfet_03v3 -825 143 -824 144  "vss.t4" "v_bias.t0" 2240 0 "Current_in.t1" 84 10584,420 "a_295_143#" 84 10584,420
-device msubckt nfet_03v3 -683 885 -682 886  "vss.t0" "Current_in.t2" 224 0 "vss.t1" 88 10736,420 "a_n571_885#" 88 10736,420
+device msubckt nfet_03v3 -825 143 -824 144  "vss.t0" "v_bias.t0" 2240 0 "Current_in.t0" 84 10584,420 "a_295_143#" 84 10584,420
+device msubckt nfet_03v3 -683 885 -682 886  "vss.t1" "Current_in.t2" 224 0 "vss.t2" 88 10736,420 "a_n571_885#" 88 10736,420
 device msubckt pfet_03v3 391 2524 392 2525  "vdd.t2" "a_n571_885#" 560 0 "vdd.t3" 168 21840,596 "vout.t1" 168 21840,596
