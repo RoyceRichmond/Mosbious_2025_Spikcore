@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>DRC Run Report at</description>
- <original-file>/foss/designs/Mosbious_2025_Spikcore/designs/klayout/layout_LIF_comp/ota_2stage.gds</original-file>
+ <original-file>/foss/designs/Mosbious_2025_Spikcore/designs/klayout/layout_LIF_comp/phaseUpulse.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>ota_2stages</top-cell>
+ <top-cell>phaseUpulse</top-cell>
  <tags>
  </tags>
  <categories>
@@ -3975,7 +3975,7 @@
  </categories>
  <cells>
   <cell>
-   <name>ota_2stages</name>
+   <name>phaseUpulse</name>
    <variant/>
    <layout-name/>
    <references>
@@ -3983,17 +3983,5 @@
   </cell>
  </cells>
  <items>
-  <item>
-   <tags/>
-   <category>'MIMTM.3'</category>
-   <cell>ota_2stages</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (8.68,-3.595;8.68,5.405;17.68,5.405;17.68,-3.595)</value>
-   </values>
-  </item>
  </items>
 </report-database>
