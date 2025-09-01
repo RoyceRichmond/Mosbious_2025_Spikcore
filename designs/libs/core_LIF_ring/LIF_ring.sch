@@ -142,8 +142,8 @@ C {iopin.sym} -210 -30 2 0 {name=p2 lab=vlk}
 C {lab_pin.sym} 140 220 3 0 {name=p7 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -200 90 0 0 {name=p9 sig_type=std_logic lab=vss}
 C {symbols/cap_mim_2f0fF.sym} -200 60 0 0 {name=C2
-W=1e-6
-L=1e-6
+W=13e-6
+L=10e-6
 model=cap_mim_2f0fF
 spiceprefix=X
-m=130}
+m=1}
