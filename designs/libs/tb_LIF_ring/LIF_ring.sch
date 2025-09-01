@@ -93,5 +93,5 @@ descr="load waves"
 tclcommand="xschem raw_read $netlist_dir/lif.raw tran"
 }
 C {lab_pin.sym} -240 -430 2 0 {name=p3 sig_type=std_logic lab=spk}
-C {designs/libs/core_LIF_ring/LIF.sym} -270 -530 0 0 {name=x1}
+C {designs/libs/core_LIF_ring/LIF_ring.sym} -270 -530 0 0 {name=x1}
 C {title.sym} -810 290 0 0 {name=l4 author="Royce Richmond"}
