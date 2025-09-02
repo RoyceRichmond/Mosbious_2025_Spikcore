@@ -1,0 +1,20 @@
+| units: 0.5 tech: gf180mcuD format: MIT
+x a_n5979_1278# vss a_n50_12# vss s=10980,424 d=10980,424 l=56 w=90 x=-49 y=-43 nfet_03v3
+x a_n50_12# vout vdd vdd s=11700,440 d=11700,440 l=56 w=90 x=477 y=1037 pfet_03v3
+x a_n5979_1278# a_n50_12# vdd vdd s=11700,440 d=11700,440 l=56 w=90 x=-49 y=1037 pfet_03v3
+x vout a_n5979_1278# vss vss s=97600,1844 d=97600,1844 l=5000 w=800 x=-5852 y=-489 nfet_03v3
+x vlk a_n5979_1278# vdd vdd s=11700,440 d=11700,440 l=5000 w=90 x=-5848 y=1278 pfet_03v3
+x a_n50_12# vss vout vss s=10980,424 d=10980,424 l=56 w=90 x=477 y=-43 nfet_03v3
+x a_n5979_1278# vss s=741608,7969 l=2000 w=2600 x=-4161 y=-574 cap_mim_2f0_m4m5_noshield
+C a_n5979_1278# vout 2.2
+C vlk vdd 3.7
+C vout0 12.3
+R vout 68
+C vlk0 6.4
+R vlk 130
+C vdd0 9.1
+R vdd 18287
+R vss 170
+R a_n50_12# 114
+C a_n5979_1278#0 6.7
+R a_n5979_1278# 148
