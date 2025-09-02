@@ -42,15 +42,24 @@ The `/foss/designs` directory inside the Docker container is mounted from the `d
 
 ```
 project-root/
-├── designs/             	# Main folder
-│   ├── libs/            	# Design libraries
-│   │   ├──core_*/       	# Design libraries (core functionality)
-│   │   └──tb_*/         	# Testbench libraries
-│   ├── simulations/     	# Simulation folder
-│   └── klayout/         	# klayout files
-├── proposal/            	# Proposal files 
-├── start_chipathon_vnc.bat     # Container launch script (Windows)
-└── README.md            	# This file
+├── designs/             		# Main folder
+│   ├── libs/            		# Design libraries
+│   │   ├──core_*/       		# Design libraries (core functionality)
+│   │   ├──tb_core_analogs/    		# Testbench libraries for analog elements
+│   │   │   └──tb_*/       		# Testbenchs for individual analog elements
+│   │   ├──tb_core_analogs_pads/    	# Testbench libraries for analog elements with parasitic extraction pads
+│   │   │   └──tb_*/       		# Testbenchs for individual analog elements
+│   │   ├──tb_core_swmatrix/    	# Testbench libraries for switch matrix
+│   │   │   └──tb_*/       		# Testbenchs for switch matrix elements
+│   │   └──gf180mcu_fd_sc.../    	# Submodule to gf180 symbols
+│   │   └──switch_matrix_.../    	# Submodule to sw matrix Mosbius fork
+│   │   └──tb_top/    			# Top integration for final sims
+│   ├── klayout/         		# GDS files for layout
+│   │   └──layout_*/    		# layout for individual cells of the chip
+│   └── pex/         			# Parasitic Extraction for analog elements
+├── proposal/            		# Proposal files 
+├── start_chipathon_vnc.bat     	# Container launch script (Windows)
+└── README.md            		# This file
 ```
 
 ## Clone and assemble submodules

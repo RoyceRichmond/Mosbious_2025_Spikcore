@@ -1,0 +1,177 @@
+* NGSPICE file created from synapse.ext - technology: gf180mcuD
+
+.subckt synapse vdd v_in ve v_ctrl v_out vi vss
+X0 v_out.t1 v_ctrl.t0 a_1704_2051# vdd.t6 pfet_03v3 ad=1.82p pd=6.9u as=1.82p ps=6.9u w=2.8u l=0.28u
+X1 v_out.t0 v_ctrl.t1 a_2262_100# vss.t0 nfet_03v3 ad=1.22p pd=5.22u as=1.22p ps=5.22u w=2u l=0.28u
+X2 a_156_2317# v_in.t0 vdd.t7 vdd.t0 pfet_03v3 ad=0.2822p pd=2.18u as=0.2822p ps=2.18u w=0.42u l=0.28u
+X3 a_1704_2051# a_632_2083# vdd.t4 vdd.t3 pfet_03v3 ad=1.82p pd=6.9u as=1.82p ps=6.9u w=2.8u l=0.28u
+X4 a_36_2451# vi.t0 vdd.t5 vdd.t0 pfet_03v3 ad=0.2822p pd=2.18u as=0.2822p ps=2.18u w=0.42u l=0.28u
+X5 a_222_2453# a_156_2317# a_36_2451# vdd.t0 pfet_03v3 ad=0.2822p pd=2.18u as=0.2822p ps=2.18u w=0.42u l=0.28u
+X6 a_2262_100# a_222_2453# vss.t5 vss.t0 nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+X7 vss.t3 ve.t0 a_1430_n860# vss.t1 nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=0.28u
+X8 a_1430_n860# v_in.t1 a_632_2083# vss.t1 nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=0.28u
+X9 a_222_2453# a_222_2453# vss.t4 vss.t0 nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=0.28u
+X10 vdd.t2 a_632_2083# a_632_2083# vdd.t1 pfet_03v3 ad=0.2822p pd=2.18u as=0.2822p ps=2.18u w=0.42u l=0.28u
+X11 vss.t2 v_in.t2 a_156_2317# vss.t1 nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=0.28u
+R0 v_ctrl.n0 v_ctrl.t1 56.1285
+R1 v_ctrl.n0 v_ctrl.t0 55.9719
+R2 v_ctrl v_ctrl.n0 4.685
+R3 v_out.n0 v_out.t0 9.02953
+R4 v_out.n0 v_out.t1 4.45283
+R5 v_out v_out.n0 3.35075
+R6 vdd.t0 vdd.t1 1079.71
+R7 vdd.n7 vdd.n3 725.532
+R8 vdd.t1 vdd.n7 701.087
+R9 vdd.t3 vdd.n2 574.163
+R10 vdd.n2 vdd.t6 308.613
+R11 vdd.n3 vdd.t3 308.613
+R12 vdd.n8 vdd.t0 233.696
+R13 vdd.n9 vdd.n8 12.6005
+R14 vdd.n7 vdd.n6 12.6005
+R15 vdd.n1 vdd.t5 12.3868
+R16 vdd.n6 vdd.t2 12.1992
+R17 vdd.n9 vdd.t7 12.1992
+R18 vdd.n8 vdd.n1 6.20745
+R19 vdd.n2 vdd.n0 4.27348
+R20 vdd.n4 vdd.n3 2.5205
+R21 vdd.n4 vdd.t4 2.0905
+R22 vdd vdd.n10 1.8392
+R23 vdd.n5 vdd.n0 1.50551
+R24 vdd.n6 vdd.n5 0.353583
+R25 vdd.n10 vdd.n1 0.261178
+R26 vdd.n10 vdd.n9 0.154661
+R27 vdd vdd.n0 0.09925
+R28 vdd.n5 vdd.n4 0.00757601
+R29 vss.n19 vss.n10 142472
+R30 vss.n10 vss.t1 923.903
+R31 vss.t0 vss.n19 660.044
+R32 vss.n19 vss.n18 390.74
+R33 vss.n14 vss.n11 319.288
+R34 vss.n14 vss.n12 318.938
+R35 vss.n18 vss.n11 317.625
+R36 vss.n18 vss.n12 317.45
+R37 vss.n20 vss.t0 199.29
+R38 vss.n24 vss.t1 199.29
+R39 vss.n24 vss.n9 140.299
+R40 vss.n20 vss.n9 124.356
+R41 vss.n14 vss.n10 122.895
+R42 vss.n23 vss.t2 12.4237
+R43 vss.n25 vss.t3 12.4237
+R44 vss.n8 vss.t4 12.4237
+R45 vss.n20 vss.n8 10.4005
+R46 vss.n25 vss.n24 10.4005
+R47 vss.n24 vss.n0 10.4005
+R48 vss.n24 vss.n23 10.4005
+R49 vss.n21 vss.t5 8.94366
+R50 vss.n3 vss.n2 4.5005
+R51 vss.n15 vss.n13 4.10562
+R52 vss.n16 vss.n15 4.10113
+R53 vss.n17 vss.n13 4.08425
+R54 vss.n17 vss.n16 4.082
+R55 vss.n22 vss.n20 2.62132
+R56 vss.n6 vss.n5 2.25942
+R57 vss.n4 vss.n1 2.25942
+R58 vss.n5 vss.n4 2.25612
+R59 vss.n7 vss.n1 2.24418
+R60 vss.n16 vss.n12 0.149071
+R61 vss.n12 vss.n9 0.149071
+R62 vss.n13 vss.n11 0.149071
+R63 vss.n11 vss.n9 0.149071
+R64 vss.n18 vss.n17 0.133833
+R65 vss.n15 vss.n14 0.133833
+R66 vss vss.n0 0.06425
+R67 vss.n8 vss.n7 0.0635882
+R68 vss.n22 vss.n21 0.0544239
+R69 vss.n21 vss.n0 0.0296176
+R70 vss vss.n25 0.0214559
+R71 vss.n23 vss.n22 0.0191185
+R72 vss.n25 vss.n8 0.0168235
+R73 vss.n3 vss.n1 0.0146427
+R74 vss.n5 vss.n3 0.0146427
+R75 vss.n6 vss.n2 0.0124414
+R76 vss.n4 vss.n2 0.0124414
+R77 vss.n7 vss.n6 0.0124414
+R78 v_in.n1 v_in.t0 32.0446
+R79 v_in.n0 v_in.t2 25.1601
+R80 v_in.n0 v_in.t1 24.9469
+R81 v_in.n1 v_in.n0 6.1385
+R82 v_in v_in.n1 0.298625
+R83 vi vi.t0 25.5213
+R84 ve ve.t0 31.4596
+C0 a_632_2083# a_156_2317# 0.86755f
+C1 v_out vi 0
+C2 a_36_2451# a_632_2083# 0
+C3 v_ctrl a_632_2083# 0.00304f
+C4 a_222_2453# a_156_2317# 0.06578f
+C5 a_36_2451# a_222_2453# 0.09839f
+C6 vss v_out 0.0088f
+C7 v_ctrl a_222_2453# 0.69807f
+C8 v_out a_1704_2051# 0.17926f
+C9 v_out a_632_2083# 0.0772f
+C10 vdd v_in 0.21025f
+C11 a_1430_n860# v_in 0.03439f
+C12 vi a_222_2453# 0
+C13 vss a_632_2083# 0.01116f
+C14 v_out a_222_2453# 1.05741f
+C15 a_632_2083# a_1704_2051# 0.04785f
+C16 a_2262_100# v_in 0
+C17 vss ve 0.66783f
+C18 a_1430_n860# a_156_2317# 0
+C19 vdd a_156_2317# 0.84381f
+C20 vdd a_36_2451# 0.42354f
+C21 vss a_222_2453# 0.45839f
+C22 vdd v_ctrl 0.27013f
+C23 a_1704_2051# a_222_2453# 0.35494f
+C24 a_2262_100# a_156_2317# 0
+C25 ve a_632_2083# 0.04326f
+C26 a_2262_100# v_ctrl 0.0318f
+C27 a_632_2083# a_222_2453# 1.03828f
+C28 v_in a_156_2317# 0.06293f
+C29 v_in a_36_2451# 0.00272f
+C30 vdd vi 0.37889f
+C31 ve a_222_2453# 0.00215f
+C32 v_in v_ctrl 0
+C33 vdd v_out 0.25294f
+C34 a_36_2451# a_156_2317# 0.02974f
+C35 a_2262_100# v_out 0.12989f
+C36 a_1430_n860# vss 0.27015f
+C37 v_ctrl a_156_2317# 0.04488f
+C38 v_ctrl a_36_2451# 0.02153f
+C39 vdd a_1704_2051# 1.00974f
+C40 v_out v_in 0.05786f
+C41 vss a_2262_100# 0.46803f
+C42 vdd a_632_2083# 0.91088f
+C43 a_1430_n860# a_632_2083# 0.06381f
+C44 vi a_156_2317# 0.00443f
+C45 vss v_in 0.41991f
+C46 vi a_36_2451# 0.0351f
+C47 a_1430_n860# ve 0.08986f
+C48 vi v_ctrl 0.50619f
+C49 v_out a_156_2317# 0.11396f
+C50 vdd a_222_2453# 0.27275f
+C51 a_1430_n860# a_222_2453# 0
+C52 v_out v_ctrl 0.91889f
+C53 v_in a_632_2083# 0.16116f
+C54 vss a_156_2317# 0.0452f
+C55 a_2262_100# a_222_2453# 0.14377f
+C56 a_1704_2051# a_156_2317# 0.00118f
+C57 v_in ve 0.11959f
+C58 vss v_ctrl 0.15735f
+C59 v_ctrl a_1704_2051# 0.04569f
+C60 v_in a_222_2453# 0.00164f
+C61 ve a_224_n2164# 0.49812f
+C62 v_out a_224_n2164# 1.13054f
+C63 v_in a_224_n2164# 3.16866f
+C64 v_ctrl a_224_n2164# 2.15707f
+C65 vi a_224_n2164# 0.13876f
+C66 vss a_224_n2164# 2.30516f
+C67 vdd a_224_n2164# 7.77121f
+C68 a_1430_n860# a_224_n2164# 0.15231f
+C69 a_2262_100# a_224_n2164# 0.11838f
+C70 a_1704_2051# a_224_n2164# 0.06799f
+C71 a_222_2453# a_224_n2164# 1.88483f
+C72 a_156_2317# a_224_n2164# 0.9291f
+C73 a_632_2083# a_224_n2164# 1.50387f
+C74 a_36_2451# a_224_n2164# 0.01235f
+.ends
+
