@@ -80,6 +80,14 @@ N 1050 -130 1050 -100 {lab=out_spike}
 N 1040 -130 1050 -130 {lab=out_spike}
 N 1050 -40 1050 -10 {lab=#net3}
 N 1050 50 1050 70 {lab=GND}
+N 170 -740 170 -700 {lab=GND}
+N 370 -740 370 -700 {lab=GND}
+N 470 -740 470 -700 {lab=GND}
+N 170 -840 170 -800 {lab=DVDD}
+N 370 -840 370 -800 {lab=DVSS}
+N 470 -840 470 -800 {lab=VSS}
+N 170 -700 470 -700 {lab=GND}
+N 320 -700 320 -680 {lab=GND}
 C {vsource.sym} 605 140 0 0 {name=V1 value=3.3 savecurrent=false}
 C {devices/code_shown.sym} 85 -520 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
@@ -114,6 +122,7 @@ C {devices/code_shown.sym} 35 -50 0 0 {name=MODELS1 only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
+.include "/foss/designs/Mosbious_2025_Spikcore/miscellaneous/sscs-chipathon/resources/Integration/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice"
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 .lib $::180MCU_MODELS/sm141064.ngspice cap_mim
 .lib $::180MCU_MODELS/sm141064.ngspice res_typical
@@ -173,3 +182,20 @@ footprint=1206
 device=resistor
 m=1}
 C {title.sym} 280 280 0 0 {name=l4 author="Royce Richmond"}
+C {vsource.sym} 170 -770 0 0 {name=V7 value=5 savecurrent=false}
+C {vsource.sym} 370 -770 0 0 {name=V8 value=0 savecurrent=false}
+C {vsource.sym} 470 -770 0 0 {name=V9 value=0 savecurrent=false}
+C {lab_wire.sym} 170 -840 0 0 {name=p2 sig_type=std_logic lab=DVDD}
+C {gnd.sym} 320 -680 0 0 {name=l2 lab=GND}
+C {lab_wire.sym} 370 -840 0 0 {name=p8 sig_type=std_logic lab=DVSS}
+C {lab_wire.sym} 470 -840 0 0 {name=p7 sig_type=std_logic lab=VSS}
+C {/foss/designs/sscs-chipathon-2025/resources/Integration/Chipathon2025_pads/xschem/symbols/io_asig_5p0.sym} 780 -670 0 1 {name=IO1
+model=gf180mcu_fd_io__asig_5p0_extracted
+spiceprefix=X
+}
+C {lab_pin.sym} 580 -750 2 1 {name=p15 sig_type=std_logic lab=ASIG}
+C {lab_wire.sym} 700 -830 0 1 {name=p16 sig_type=std_logic lab=DVDD}
+C {lab_wire.sym} 700 -670 0 1 {name=p17 sig_type=std_logic lab=DVSS}
+C {lab_wire.sym} 660 -670 0 1 {name=p18 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 660 -830 0 1 {name=p19 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 780 -750 0 1 {name=p20 sig_type=std_logic lab=pad}
