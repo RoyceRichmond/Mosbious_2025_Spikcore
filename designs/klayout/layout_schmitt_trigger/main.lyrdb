@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>DRC Run Report at</description>
- <original-file>/foss/designs/testing/Mosbious_2025_Spikcore/designs/klayout/layout_trigger/trigger.gds</original-file>
+ <original-file>designs/klayout/layout_schmitt_trigger/trigger.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
- <top-cell>TOP</top-cell>
+ <top-cell>Schmitt_trigger</top-cell>
  <tags>
  </tags>
  <categories>
@@ -3975,7 +3975,7 @@
  </categories>
  <cells>
   <cell>
-   <name>TOP</name>
+   <name>Schmitt_trigger</name>
    <variant/>
    <layout-name/>
    <references>
@@ -3985,578 +3985,206 @@
  <items>
   <item>
    <tags/>
-   <category>'PP.2'</category>
-   <cell>TOP</cell>
+   <category>metal1_OFFGRID</category>
+   <cell>Schmitt_trigger</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-37.825,-36.394;-37.825,-35.13)|(-38.085,-34.826;-38.085,-36.09)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M3.2a'</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-39.375,-35.17;-39.375,-33.9)|(-39.52,-34.14;-39.52,-34.93)</value>
+    <value>edge-pair: (-32.75,-32.221;-32.75,-32.221)/(-32.75,-32.221;-32.75,-32.221)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
+   <cell>Schmitt_trigger</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-35.465,-35.991;-35.465,-35.991)/(-35.465,-35.991;-35.465,-35.991)</value>
+    <value>edge-pair: (-32.75,-31.839;-32.75,-31.839)/(-32.75,-31.839;-32.75,-31.839)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
+   <cell>Schmitt_trigger</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-35.845,-35.991;-35.845,-35.991)/(-35.845,-35.991;-35.845,-35.991)</value>
+    <value>edge-pair: (-32.37,-31.839;-32.37,-31.839)/(-32.37,-31.839;-32.37,-31.839)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
+   <cell>Schmitt_trigger</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-35.845,-35.609;-35.845,-35.609)/(-35.845,-35.609;-35.845,-35.609)</value>
+    <value>edge-pair: (-32.37,-32.221;-32.37,-32.221)/(-32.37,-32.221;-32.37,-32.221)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
+   <cell>Schmitt_trigger</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-35.465,-35.609;-35.465,-35.609)/(-35.465,-35.609;-35.465,-35.609)</value>
+    <value>edge-pair: (-33.41,-31.561;-33.41,-31.561)/(-33.41,-31.561;-33.41,-31.561)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
+   <cell>Schmitt_trigger</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-36.385,-35.011;-36.385,-35.011)/(-36.385,-35.011;-36.385,-35.011)</value>
+    <value>edge-pair: (-33.41,-31.179;-33.41,-31.179)/(-33.41,-31.179;-33.41,-31.179)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
+   <cell>Schmitt_trigger</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-36.385,-34.629;-36.385,-34.629)/(-36.385,-34.629;-36.385,-34.629)</value>
+    <value>edge-pair: (-33.03,-31.179;-33.03,-31.179)/(-33.03,-31.179;-33.03,-31.179)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
+   <cell>Schmitt_trigger</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-36.005,-34.629;-36.005,-34.629)/(-36.005,-34.629;-36.005,-34.629)</value>
+    <value>edge-pair: (-33.03,-31.561;-33.03,-31.561)/(-33.03,-31.561;-33.03,-31.561)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
+   <cell>Schmitt_trigger</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-36.005,-35.011;-36.005,-35.011)/(-36.005,-35.011;-36.005,-35.011)</value>
+    <value>edge-pair: (-32.09,-31.561;-32.09,-31.561)/(-32.09,-31.561;-32.09,-31.561)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
+   <cell>Schmitt_trigger</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-38.955,-34.006;-38.955,-34.006)/(-38.955,-34.006;-38.955,-34.006)</value>
+    <value>edge-pair: (-32.09,-31.179;-32.09,-31.179)/(-32.09,-31.179;-32.09,-31.179)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
+   <cell>Schmitt_trigger</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-38.955,-33.624;-38.955,-33.624)/(-38.955,-33.624;-38.955,-33.624)</value>
+    <value>edge-pair: (-31.71,-31.179;-31.71,-31.179)/(-31.71,-31.179;-31.71,-31.179)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
+   <cell>Schmitt_trigger</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-38.575,-33.624;-38.575,-33.624)/(-38.575,-33.624;-38.575,-33.624)</value>
+    <value>edge-pair: (-31.71,-31.561;-31.71,-31.561)/(-31.71,-31.561;-31.71,-31.561)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
+   <cell>Schmitt_trigger</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-38.575,-34.006;-38.575,-34.006)/(-38.575,-34.006;-38.575,-34.006)</value>
+    <value>edge-pair: (-32.75,-30.901;-32.75,-30.901)/(-32.75,-30.901;-32.75,-30.901)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
+   <cell>Schmitt_trigger</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-45.295,-32.534;-45.295,-32.534)/(-45.295,-32.534;-45.295,-32.534)</value>
+    <value>edge-pair: (-32.75,-30.519;-32.75,-30.519)/(-32.75,-30.519;-32.75,-30.519)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
+   <cell>Schmitt_trigger</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-44.915,-32.534;-44.915,-32.534)/(-44.915,-32.534;-44.915,-32.534)</value>
+    <value>edge-pair: (-32.37,-30.519;-32.37,-30.519)/(-32.37,-30.519;-32.37,-30.519)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
+   <cell>Schmitt_trigger</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-42.08,-33.951;-42.08,-33.951)/(-42.08,-33.951;-42.08,-33.951)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-42.46,-33.951;-42.46,-33.951)/(-42.46,-33.951;-42.46,-33.951)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-39.875,-33.016;-39.875,-33.016)/(-39.875,-33.016;-39.875,-33.016)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-39.875,-32.634;-39.875,-32.634)/(-39.875,-32.634;-39.875,-32.634)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-39.495,-32.634;-39.495,-32.634)/(-39.495,-32.634;-39.495,-32.634)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-39.495,-33.016;-39.495,-33.016)/(-39.495,-33.016;-39.495,-33.016)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-39.21,-31.566;-39.21,-31.566)/(-39.21,-31.566;-39.21,-31.566)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-39.215,-31.566;-39.215,-31.566)/(-39.215,-31.566;-39.215,-31.566)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-39.215,-31.184;-39.215,-31.184)/(-39.215,-31.184;-39.215,-31.184)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-39.21,-31.184;-39.21,-31.184)/(-39.21,-31.184;-39.21,-31.184)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-36.01,-31.481;-36.01,-31.481)/(-36.01,-31.481;-36.01,-31.481)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-36.01,-31.099;-36.01,-31.099)/(-36.01,-31.099;-36.01,-31.099)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-35.63,-31.099;-35.63,-31.099)/(-35.63,-31.099;-35.63,-31.099)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-35.63,-31.481;-35.63,-31.481)/(-35.63,-31.481;-35.63,-31.481)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-44.625,-32.216;-44.625,-32.216)/(-44.625,-32.216;-44.625,-32.216)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-44.245,-32.216;-44.245,-32.216)/(-44.245,-32.216;-44.245,-32.216)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-38.035,-33.016;-38.035,-33.016)/(-38.035,-33.016;-38.035,-33.016)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-38.035,-32.634;-38.035,-32.634)/(-38.035,-32.634;-38.035,-32.634)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-37.655,-32.634;-37.655,-32.634)/(-37.655,-32.634;-37.655,-32.634)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-45.585,-32.216;-45.585,-32.216)/(-45.585,-32.216;-45.585,-32.216)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-45.965,-32.216;-45.965,-32.216)/(-45.965,-32.216;-45.965,-32.216)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-46.315,-32.216;-46.315,-32.216)/(-46.315,-32.216;-46.315,-32.216)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-46.695,-32.216;-46.695,-32.216)/(-46.695,-32.216;-46.695,-32.216)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-36.925,-33.016;-36.925,-33.016)/(-36.925,-33.016;-36.925,-33.016)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-37.305,-33.016;-37.305,-33.016)/(-37.305,-33.016;-37.305,-33.016)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>metal1_OFFGRID</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-37.655,-33.016;-37.655,-33.016)/(-37.655,-33.016;-37.655,-33.016)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M2.2a'</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-42.082,-35.165;-41.378,-35.165)|(-41.53,-34.93;-41.93,-34.93)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'NW.2b_LV'</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-39.422,-31.635;-36.195,-31.635)|(-34.803,-31.49;-38.03,-31.49)</value>
+    <value>edge-pair: (-32.37,-30.901;-32.37,-30.901)/(-32.37,-30.901;-32.37,-30.901)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'DF.16_LV'</category>
-   <cell>TOP</cell>
+   <cell>Schmitt_trigger</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
     <value>edge-pair: (-38.265,-29.895;-38.265,-30.895)/(-38.03,-31.255;-38.03,-29.535)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.2a'</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-39.875,-32.635;-39.875,-32.634)|(-39.915,-32.408;-39.915,-32.635)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.2a'</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-35.46,-35.61;-35.46,-35.6)|(-35.465,-35.609;-35.465,-35.61)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.2a'</category>
-   <cell>TOP</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-35.46,-36;-35.46,-35.99)|(-35.465,-35.99;-35.465,-35.991)</value>
    </values>
   </item>
  </items>

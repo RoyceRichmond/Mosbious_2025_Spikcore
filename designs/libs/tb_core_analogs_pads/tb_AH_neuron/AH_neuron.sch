@@ -76,6 +76,7 @@ C {devices/code_shown.sym} -855 -130 0 0 {name=s1 only_toplevel=false value="
 .save allcurrents
 .options save currents
 .control
+set num_threads=16
 reset
 save all
 run
