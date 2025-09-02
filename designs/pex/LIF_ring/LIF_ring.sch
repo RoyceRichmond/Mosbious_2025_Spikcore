@@ -5,8 +5,8 @@ V {}
 S {}
 E {}
 B 2 -160 -590 640 -190 {flags=graph
-y1=-1.5e-05
-y2=1.7
+y1=-9.6e-06
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
@@ -52,9 +52,10 @@ N -400 -430 -360 -430 {lab=#net1}
 N -400 -430 -400 -410 {lab=#net1}
 N -400 -350 -400 -320 {lab=GND}
 C {vsource.sym} -480 -370 0 0 {name=V1 value=1.8 savecurrent=false}
-C {devices/code_shown.sym} -910 -530 0 0 {name=s1 only_toplevel=false value="
+C {devices/code_shown.sym} -900 -840 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
 .tran 0.01n 5u
+.include /foss/designs/Mosbious_2025_Spikcore/designs/pex/LIF_ring/LIF_ring_pex.spice
 .save allcurrents
 .options save currents
 .control
@@ -89,8 +90,8 @@ C {vsource.sym} -400 -380 0 0 {name=V2 value=0.2 savecurrent=false}
 C {gnd.sym} -400 -320 0 0 {name=l3 lab=GND}
 C {launcher.sym} -230 -140 0 0 {name=h5
 descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/lif.raw tran"
+tclcommand="xschem raw_read $netlist_dir/lif_ring.raw tran"
 }
 C {lab_pin.sym} -240 -440 2 0 {name=p3 sig_type=std_logic lab=spk}
-C {designs/libs/core_LIF_ring/LIF_ring.sym} -270 -530 0 0 {name=x1}
 C {title.sym} -810 290 0 0 {name=l4 author="Royce Richmond"}
+C {designs/pex/LIF_ring/LIF_ring.sym} -270 -530 0 0 {name=x1}

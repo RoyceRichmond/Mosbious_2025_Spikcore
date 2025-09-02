@@ -1,0 +1,87 @@
+* NGSPICE file created from LIF_ring.ext - technology: gf180mcuD
+
+.subckt LIF_ring vdd vlk vout vss
+X0 a_n50_12# a_n5979_1278.t2 vss.t2 vss.t1 nfet_03v3 ad=0.2745p pd=2.12u as=0.2745p ps=2.12u w=0.45u l=0.28u
+X1 vdd.t5 a_n50_12# vout.t1 vdd.t4 pfet_03v3 ad=0.2925p pd=2.2u as=0.2925p ps=2.2u w=0.45u l=0.28u
+X2 vdd.t1 a_n5979_1278.t3 a_n50_12# vdd.t0 pfet_03v3 ad=0.2925p pd=2.2u as=0.2925p ps=2.2u w=0.45u l=0.28u
+X3 vss.t6 vout.t2 a_n5979_1278.t1 vss.t5 nfet_03v3 ad=2.44p pd=9.22u as=2.44p ps=9.22u w=4u l=25u
+X4 vdd.t3 vlk.t0 a_n5979_1278.t0 vdd.t2 pfet_03v3 ad=0.2925p pd=2.2u as=0.2925p ps=2.2u w=0.45u l=25u
+X5 vout.t0 a_n50_12# vss.t4 vss.t3 nfet_03v3 ad=0.2745p pd=2.12u as=0.2745p ps=2.12u w=0.45u l=0.28u
+X6 a_n5979_1278.t4 vss.t0 cap_mim_2f0_m4m5_noshield c_width=13u c_length=10u
+R0 a_n5979_1278.n0 a_n5979_1278.t2 30.1777
+R1 a_n5979_1278.n0 a_n5979_1278.t3 29.8979
+R2 a_n5979_1278.t0 a_n5979_1278.n2 16.403
+R3 a_n5979_1278.n2 a_n5979_1278.t1 2.73456
+R4 a_n5979_1278.n1 a_n5979_1278.t4 1.06818
+R5 a_n5979_1278.n1 a_n5979_1278.n0 0.752709
+R6 a_n5979_1278.n2 a_n5979_1278.n1 0.124096
+R7 vss.n3 vss.t5 4571.83
+R8 vss.t1 vss.n3 1124.33
+R9 vss.t1 vss.t3 1095.11
+R10 vss.n4 vss.t2 11.9455
+R11 vss.n2 vss.t4 11.9455
+R12 vss.t3 vss.n2 10.4005
+R13 vss.n4 vss.t1 10.4005
+R14 vss.n5 vss.t0 1.74567
+R15 vss.n0 vss.t6 1.5305
+R16 vss.n3 vss.n1 1.48621
+R17 vss.n1 vss.n0 0.24775
+R18 vss vss.n0 0.246816
+R19 vss.n4 vss.n2 0.0754289
+R20 vss.n6 vss.n5 0.0503594
+R21 vss.n5 vss.n4 0.0480135
+R22 vss.n6 vss.n1 0.0461338
+R23 vss vss.n6 0.0105948
+R24 vout vout.t1 16.5251
+R25 vout.n0 vout.t0 16.4433
+R26 vout.n0 vout.t2 4.23363
+R27 vout vout.n0 0.0761904
+R28 vdd.n2 vdd.t2 7459.02
+R29 vdd.n2 vdd.t0 1425.56
+R30 vdd.t0 vdd.t4 714.092
+R31 vdd.t4 vdd.n1 12.6005
+R32 vdd.t0 vdd.n0 12.6005
+R33 vdd.n3 vdd.n2 12.6005
+R34 vdd.n0 vdd.t1 11.7788
+R35 vdd.n1 vdd.t5 11.7788
+R36 vdd.n4 vdd.t3 11.7338
+R37 vdd.n3 vdd.n0 0.144782
+R38 vdd.n1 vdd.n0 0.124338
+R39 vdd.n4 vdd.n3 0.0348081
+R40 vdd vdd.n4 0.0094295
+R41 vlk vlk.t0 1.66864
+C0 vout vlk 0.11111f
+C1 vout a_n50_12# 0.27386f
+C2 vdd vlk 3.68949f
+C3 vout vdd 0.09101f
+C4 vdd a_n50_12# 0.37149f
+C5 vout vss 12.33808f
+C6 vlk vss 7.36351f
+C7 vdd vss 9.11459f
+C8 a_n50_12# vss 0.7573f
+C9 vlk.t0 vss 2.77824f
+C10 vdd.t1 vss 0.00807f
+C11 vdd.n0 vss 0.24468f
+C12 vdd.t5 vss 0.00807f
+C13 vdd.n1 vss 0.13117f
+C14 vdd.t4 vss 0.35581f
+C15 vdd.t0 vss 0.41465f
+C16 vdd.t2 vss 1.66659f
+C17 vdd.n2 vss 0.65814f
+C18 vdd.n3 vss 0.15311f
+C19 vdd.t3 vss 0.00803f
+C20 vdd.n4 vss 0.04368f
+C21 vout.t1 vss 0.0045f
+C22 vout.t0 vss 0.00389f
+C23 vout.t2 vss 1.81279f
+C24 vout.n0 vss 0.30144f
+C25 a_n5979_1278.t1 vss 0.01695f
+C26 a_n5979_1278.t2 vss 0.0011f
+C27 a_n5979_1278.t3 vss 0.00105f
+C28 a_n5979_1278.n0 vss 0.23003f
+C29 a_n5979_1278.t4 vss 1.57759f
+C30 a_n5979_1278.n1 vss 0.30688f
+C31 a_n5979_1278.n2 vss 0.06488f
+C32 a_n5979_1278.t0 vss 0.00152f
+.ends
+

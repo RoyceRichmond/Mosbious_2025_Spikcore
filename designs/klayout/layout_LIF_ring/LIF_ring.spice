@@ -1,11 +1,11 @@
-** sch_path: /foss/designs/Mosbious_2025_spiking4all/designs/libs/core_LIF_ring/LIF_ring.sch
-.subckt LIF_ring vdd vlk vout vfb vss
-*.PININFO vdd:B vss:B vout:B vfb:B vlk:B
-XM2 inv1 vlk vdd vdd pfet_03v3 L=50u W=0.45u nf=1 m=1
-XM4 net2 inv1 vdd vdd pfet_03v3 L=0.28u W=0.45u nf=1 m=1
-XM1 net1 vfb vss vss nfet_03v3 L=10u W=3u nf=1 m=1
-XM3 net3 inv1 vss vss nfet_03v3 L=0.28u W=0.45u nf=1 m=1
-XM5 net4 net3 vdd vdd pfet_03v3 L=0.28u W=0.45u nf=1 m=1
-XM6 vout net3 vss vss nfet_03v3 L=0.28u W=0.45u nf=1 m=1
-XC2 inv1 vss cap_mim_2f0fF c_width=13e-6 c_length=10e-6 m=1
+** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_ring/LIF_ring.sch
+.subckt LIF_ring vdd vlk vout vss
+*.PININFO vdd:B vss:B vout:B vlk:B
+XM2 inv1 vlk vdd vdd pfet_03v3 L=25u W=0.45u nf=1 m=1
+XM4 net1 inv1 vdd vdd pfet_03v3 L=0.28u W=0.45u nf=1 m=1
+XM1 inv1 vout vss vss nfet_03v3 L=25u W=4u nf=1 m=1
+XM3 net1 inv1 vss vss nfet_03v3 L=0.28u W=0.45u nf=1 m=1
+XM5 vout net1 vdd vdd pfet_03v3 L=0.28u W=0.45u nf=1 m=1
+XM6 vout net1 vss vss nfet_03v3 L=0.28u W=0.45u nf=1 m=1
+XC2 inv1 vss cap_mim_2f0fF c_width=10e-6 c_length=13e-6 m=1
 .ends
