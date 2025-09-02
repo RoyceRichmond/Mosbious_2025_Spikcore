@@ -40,15 +40,18 @@ N 200 160 230 160 {lab=vss}
 N 230 160 230 220 {lab=vss}
 N 200 220 230 220 {lab=vss}
 N -150 -30 -100 -30 {lab=vlk}
-N -130 160 -100 160 {lab=vfb}
+N -130 160 -100 160 {lab=vout}
 N -160 -30 -150 -30 {lab=vlk}
 N -210 -30 -160 -30 {lab=vlk}
-N -190 160 -130 160 {lab=vfb}
 N -60 40 -60 100 {lab=inv1}
 N 60 20 60 80 {lab=#net1}
 N 200 20 200 80 {lab=vout}
+N -130 160 -130 280 {lab=vout}
+N -130 280 320 280 {lab=vout}
+N 320 120 320 280 {lab=vout}
+N 200 120 320 120 {lab=vout}
 C {symbols/pfet_03v3.sym} -80 -30 0 0 {name=M2
-L=50u
+L=25u
 W=0.45u
 nf=1
 m=1
@@ -77,8 +80,8 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} -80 160 0 0 {name=M1
-L=10u
-W=3u
+L=25u
+W=4u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -91,8 +94,7 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {iopin.sym} 10 250 0 0 {name=p3 lab=vss}
-C {iopin.sym} 200 100 0 0 {name=p4 lab=vout}
-C {iopin.sym} -190 160 2 0 {name=p5 lab=vfb}
+C {iopin.sym} 320 120 0 0 {name=p4 lab=vout}
 C {symbols/nfet_03v3.sym} 40 160 0 0 {name=M3
 L=0.28u
 W=0.45u
@@ -142,8 +144,8 @@ C {iopin.sym} -210 -30 2 0 {name=p2 lab=vlk}
 C {lab_pin.sym} 140 220 3 0 {name=p7 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -200 90 0 0 {name=p9 sig_type=std_logic lab=vss}
 C {symbols/cap_mim_2f0fF.sym} -200 60 0 0 {name=C2
-W=13e-6
-L=10e-6
+W=10e-6
+L=13e-6
 model=cap_mim_2f0fF
 spiceprefix=X
 m=1}

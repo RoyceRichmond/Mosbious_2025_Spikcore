@@ -1,0 +1,32 @@
+* NGSPICE file created from LIF_ring.ext - technology: gf180mcuD
+
+.subckt pfet$4 a_5038_0# a_38_n60# a_n92_0# w_n230_n138#
+X0 a_5038_0# a_38_n60# a_n92_0# w_n230_n138# pfet_03v3 ad=0.2925p pd=2.2u as=0.2925p ps=2.2u w=0.45u l=25u
+.ends
+
+.subckt nfet$1 a_5160_0# a_5038_0# a_n84_0# a_38_n132#
+X0 a_5038_0# a_38_n132# a_n84_0# a_5160_0# nfet_03v3 ad=2.44p pd=9.22u as=2.44p ps=9.22u w=4u l=25u
+.ends
+
+.subckt nfet a_216_0# a_30_n132# a_n84_0# a_94_0#
+X0 a_94_0# a_30_n132# a_n84_0# a_216_0# nfet_03v3 ad=0.2745p pd=2.12u as=0.2745p ps=2.12u w=0.45u l=0.28u
+.ends
+
+.subckt cap_mim$1 m4_n120_n120# m4_0_0#
+X0 m4_0_0# m4_n120_n120# cap_mim_2f0_m4m5_noshield c_width=10u c_length=13u
+.ends
+
+.subckt pfet$3 a_n92_0# a_94_0# a_28_150# w_n230_n138#
+X0 a_94_0# a_28_150# a_n92_0# w_n230_n138# pfet_03v3 ad=0.2925p pd=2.2u as=0.2925p ps=2.2u w=0.45u l=0.28u
+.ends
+
+.subckt LIF_ring vdd vlk vss vout
+Xpfet$4_0 vdd vlk m5_n4989_521# vdd pfet$4
+Xnfet$1_0 vss vss m5_n4989_521# vout nfet$1
+Xnfet_0 vss m2_35_52# vout vss nfet
+Xnfet_1 vss m5_n4989_521# m2_35_52# vss nfet
+Xcap_mim$1_0 vss m5_n4989_521# cap_mim$1
+Xpfet$3_0 m2_35_52# vdd m5_n4989_521# vdd pfet$3
+Xpfet$3_1 vout vdd m2_35_52# vdd pfet$3
+.ends
+
