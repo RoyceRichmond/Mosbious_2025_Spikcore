@@ -1,0 +1,1340 @@
+timestamp 1585450699
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use via_dev$22 via_dev$22_0 1 0 3923 0 1 -1736
+use via_dev$22 via_dev$22_1 1 0 -1410 0 1 4065
+use via_dev$22 via_dev$22_2 1 0 4521 0 1 272
+use via_dev$24 via_dev$24_0 1 0 1942 0 1 4065
+use via_dev$24 via_dev$24_1 1 0 1252 0 1 -128
+use via_dev$24 via_dev$24_2 1 0 3235 0 1 3495
+use via_dev$22 via_dev$22_3 1 0 -113 0 1 2661
+use via_dev$24 via_dev$24_3 1 0 2930 0 1 -1392
+use via_dev$14 via_dev$14_0 1 0 2886 0 1 -780
+use vdiv vdiv_0 1 0 5286 0 -1 -1707
+use via_dev$14 via_dev$14_1 1 0 2750 0 1 -1524
+use via_dev$14 via_dev$14_2 1 0 2074 0 1 -1557
+use via_dev$14 via_dev$14_3 1 0 1870 0 1 -780
+use via_dev$14 via_dev$14_4 1 0 2130 0 1 -780
+use via_dev$14 via_dev$14_5 1 0 2626 0 1 -780
+use nfet$8$1 nfet$8$1_0 -1 0 2128 0 1 -790
+use nfet$16 nfet$16_0 1 0 1940 0 1 -1616
+use nfet$15 nfet$15_0 1 0 2652 0 1 -1388
+use nfet$8$1 nfet$8$1_1 1 0 2708 0 1 -790
+use ota_1stage$1 ota_1stage$1_0 1 0 1042 0 1 -929
+use nfet$8$1 nfet$8$1_2 1 0 -231 0 1 1737
+use cap_mim$1 cap_mim$1_0 1 0 -1642 0 1 929
+use via_dev$11 via_dev$11_0 1 0 -1510 0 1 2289
+use via_dev$13 via_dev$13_0 1 0 -865 0 1 2661
+use via_dev$12 via_dev$12_0 1 0 -313 0 1 1747
+use via_dev$14 via_dev$14_6 1 0 -183 0 1 1601
+use not not_0 -1 0 -787 0 1 2957
+use not not_1 -1 0 -35 0 1 2957
+use nand$4 nand$4_0 -1 0 -1539 0 1 2957
+use via_dev$22 via_dev$22_4 1 0 2997 0 1 3495
+use via_dev$22 via_dev$22_5 1 0 1701 0 1 3495
+use via_dev$22 via_dev$22_6 1 0 405 0 1 3495
+use via_dev$22 via_dev$22_7 1 0 -891 0 1 3495
+use switch$1 switch$1_0 1 0 924 0 -1 3477
+use switch$1 switch$1_1 1 0 2220 0 -1 3477
+use switch$1 switch$1_2 1 0 3516 0 -1 3477
+use conmutator$1 conmutator$1_0 1 0 -372 0 -1 3477
+use not$1 not$1_0 -1 0 4145 0 1 2957
+use via_dev$19$1 via_dev$19$1_0 1 0 1208 0 1 2477
+use via_dev$19$1 via_dev$19$1_1 1 0 848 0 1 2477
+use nand$4 nand$4_1 -1 0 927 0 1 2957
+use nfet$8$1 nfet$8$1_3 1 0 2235 0 1 1737
+use cap_mim$1 cap_mim$1_1 1 0 824 0 1 929
+use via_dev$11 via_dev$11_1 1 0 956 0 1 2289
+use via_dev$13 via_dev$13_1 1 0 1601 0 1 2661
+use via_dev$12 via_dev$12_1 1 0 2153 0 1 1747
+use via_dev$14 via_dev$14_7 1 0 2283 0 1 1601
+use nor$2 nor$2_0 -1 0 3393 0 1 2957
+use not not_2 -1 0 2431 0 1 2957
+use not not_3 -1 0 1679 0 1 2957
+port "vspike" 8 -857 3529 -857 3529 m3
+port "vspike_up" 5 -1383 4117 -1383 4117 m2
+port "reward" 1 -514 3902 -514 3902 m2
+port "vspike" 8 52 3527 52 3527 m3
+port "vin" 7 -2177 2505 -2177 2505 m2
+port "phi_int" 2 3740 2693 3740 2693 m2
+port "vneg" 6 -374 2706 -374 2706 m2
+port "phi_2" 3 2754 2687 2754 2687 m2
+port "phi_1" 4 365 2523 365 2523 m2
+node "vspike" 0 0 -857 3529 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vspike_up" 0 0 -1383 4117 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "reward" 0 0 -514 3902 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m5_948_1929#" 0 165.491 948 1929 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42240 1072
+node "m5_n1518_1929#" 0 166.146 -1518 1929 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42240 1072
+node "m4_1944_1747#" 0 85.698 1944 1747 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16720 578 0 0
+node "m4_n522_1747#" 0 87.9676 -522 1747 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16720 578 0 0
+node "m4_1601_2049#" 1 188.528 1601 2049 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49440 1396 0 0
+node "m4_n865_2049#" 1 197.321 -865 2049 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49440 1396 0 0
+node "m3_1332_n128#" 6 1232.13 1332 -128 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 442080 11212 0 0 0 0
+node "m3_927_2477#" 0 78.7276 927 2477 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30432 826 0 0 0 0
+node "m3_n113_n1392#" 8 2240.87 -113 -1392 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 561280 14192 0 0 0 0
+node "vspike" 4 604.627 52 3527 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 304640 7776 0 0 0 0
+node "m3_n1410_3780#" 13 1976.43 -1410 3780 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 890720 22428 0 0 0 0
+node "m3_2022_4065#" 7 1372.62 2022 4065 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 503360 12744 0 0 0 0
+node "m2_3923_n1736#" 2 716.279 3923 -1736 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 152080 3962 0 0 0 0 0 0
+node "m2_554_n1578#" 3 956.042 554 -1578 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 184480 4772 0 0 0 0 0 0
+node "m2_1346_n1442#" 2 788.154 1346 -1442 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 155360 4044 0 0 0 0 0 0
+node "m2_1332_n780#" 1 195.485 1332 -780 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43040 1236 0 0 0 0 0 0
+node "m2_4521_272#" 1 323.289 4521 272 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80880 2182 0 0 0 0 0 0
+node "m2_2886_n700#" 5 1340.16 2886 -700 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 369760 9404 0 0 0 0 0 0
+node "m2_n103_1601#" 3 858.772 -103 1601 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 190880 4932 0 0 0 0 0 0
+node "m2_2363_1601#" 4 1025.83 2363 1601 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 305524 7852 0 0 0 0 0 0
+node "m2_1276_2485#" 2 402.932 1276 2485 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 186384 4412 0 0 0 0 0 0
+node "vin" 1 237.977 -2177 2505 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 57236 1560 0 0 0 0 0 0
+node "phi_int" 1 152.978 3740 2693 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 37920 1108 0 0 0 0 0 0
+node "m2_3531_2859#" 2 306.1 3531 2859 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68670 2306 0 0 0 0 0 0
+node "m2_552_2661#" 3 554.585 552 2661 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 198880 5132 0 0 0 0 0 0
+node "vneg" 3 764.224 -374 2706 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 198880 5132 0 0 0 0 0 0
+node "phi_2" 2 479.556 2754 2687 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 160960 4184 0 0 0 0 0 0
+node "phi_1" 3 674.469 365 2523 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 209364 5356 0 0 0 0 0 0
+node "m1_2572_n1522#" 0 297.001 2572 -1522 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17936 624 0 0 0 0 0 0 0 0
+node "m1_2834_n924#" 0 252.319 2834 -924 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 552 0 0 0 0 0 0 0 0
+node "m1_2078_n924#" 0 252.319 2078 -924 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15200 552 0 0 0 0 0 0 0 0
+node "m1_n651_3297#" 0 114.394 -651 3297 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16400 564 0 0 0 0 0 0 0 0
+node "m1_n1725_4265#" 6 2589.11 -1725 4265 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 458160 11614 0 0 0 0 0 0 0 0
+node "w_n1725_3137#" 35800 2756.26 -1725 3137 nw 916480 11776 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "a_n471_1626#" 0 0 -471 1626 psc 0 0 0 0 0 0 166496 15136 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1804724 24970 0 0 0 0 0 0 0 0
+cap "m2_n103_1601#" "m2_1276_2485#" 55.1091
+cap "m2_3531_2859#" "m3_1332_n128#" 22.6177
+cap "m4_1601_2049#" "m2_552_2661#" 2.2207
+cap "m1_2834_n924#" "m2_1346_n1442#" 0.81328
+cap "phi_2" "m4_1601_2049#" 0.149578
+cap "m2_1346_n1442#" "m3_1332_n128#" 8.69371
+cap "m4_1601_2049#" "m2_n103_1601#" 3.06265
+cap "m5_948_1929#" "m3_927_2477#" 5.98513
+cap "m4_1944_1747#" "m3_1332_n128#" 0.381171
+cap "m3_927_2477#" "w_n1725_3137#" 3.43996
+cap "m2_1332_n780#" "m3_1332_n128#" 4.94666
+cap "vspike" "m3_n113_n1392#" 6.05353
+cap "m2_2886_n700#" "m2_4521_272#" 50.8409
+cap "m2_1332_n780#" "m2_1346_n1442#" 158.335
+cap "m3_n1410_3780#" "m2_4521_272#" 2.9409
+cap "m2_2363_1601#" "w_n1725_3137#" 0.501933
+cap "m2_552_2661#" "m3_927_2477#" 5.10539
+cap "m3_2022_4065#" "m2_2886_n700#" 64.7532
+cap "w_n1725_3137#" "m4_n865_2049#" 0.741898
+cap "m3_1332_n128#" "m2_4521_272#" 0.080019
+cap "m2_n103_1601#" "m3_927_2477#" 1.73424
+cap "phi_1" "w_n1725_3137#" 54.5968
+cap "m3_n1410_3780#" "m3_2022_4065#" 860.218
+cap "vin" "m4_n865_2049#" 3.05024
+cap "m3_n113_n1392#" "m2_554_n1578#" 177.539
+cap "m1_n651_3297#" "w_n1725_3137#" 4.5122
+cap "phi_1" "vneg" 37.1743
+cap "vneg" "m4_n865_2049#" 4.38268
+cap "m2_552_2661#" "m4_n865_2049#" 0.0129049
+cap "m2_n103_1601#" "m2_2363_1601#" 28.7606
+cap "phi_1" "m2_552_2661#" 99.5197
+cap "m3_n113_n1392#" "m2_2886_n700#" 1.03186
+cap "m2_3531_2859#" "m3_2022_4065#" 6.58814
+cap "m1_n651_3297#" "vneg" 6.1259
+cap "phi_1" "m2_n103_1601#" 46.0793
+cap "m3_n1410_3780#" "m3_n113_n1392#" 5.17292
+cap "m1_2834_n924#" "m3_n113_n1392#" 1.33131
+cap "m3_n113_n1392#" "m3_1332_n128#" 91.8178
+cap "m3_n113_n1392#" "m2_1346_n1442#" 95.9758
+cap "m1_n1725_4265#" "w_n1725_3137#" 31.992
+cap "vspike" "m5_948_1929#" 0.346481
+cap "phi_int" "m2_2363_1601#" 21.5076
+cap "m1_n1725_4265#" "vneg" 3.14976
+cap "m3_n113_n1392#" "m2_1332_n780#" 4.15455
+cap "m3_2022_4065#" "m2_4521_272#" 18.4647
+cap "vspike" "w_n1725_3137#" 52.1149
+cap "m1_n1725_4265#" "m2_552_2661#" 4.03025
+cap "phi_2" "m1_n1725_4265#" 9.17766
+cap "vspike" "vneg" 7.92751
+cap "vspike" "m2_552_2661#" 26.9269
+cap "vspike" "phi_2" 66.9063
+cap "m2_554_n1578#" "m1_2572_n1522#" 28.5641
+cap "m3_n1410_3780#" "m5_948_1929#" 0.240552
+cap "m4_1601_2049#" "m2_1276_2485#" 27.652
+cap "m1_n1725_4265#" "phi_int" 0.540115
+cap "m3_n1410_3780#" "w_n1725_3137#" 26.9083
+cap "m3_n1410_3780#" "m1_2572_n1522#" 0.121098
+cap "m3_1332_n128#" "w_n1725_3137#" 25.4518
+cap "m3_n113_n1392#" "m5_n1518_1929#" 2.07139
+cap "m3_n1410_3780#" "vneg" 5.51171
+cap "m2_3531_2859#" "w_n1725_3137#" 29.4931
+cap "m3_n1410_3780#" "m2_552_2661#" 4.28766
+cap "m2_1346_n1442#" "m1_2572_n1522#" 0.275044
+cap "phi_2" "m3_n1410_3780#" 76.7842
+cap "m2_552_2661#" "m3_1332_n128#" 1.42579
+cap "m4_1944_1747#" "w_n1725_3137#" 1.07697
+cap "phi_2" "m3_1332_n128#" 15.9857
+cap "m2_n103_1601#" "m3_1332_n128#" 0.881369
+cap "m2_1276_2485#" "m3_927_2477#" 27.1057
+cap "m2_3531_2859#" "phi_2" 50.3382
+cap "m4_1601_2049#" "m3_927_2477#" 3.77357
+cap "m4_1944_1747#" "m2_552_2661#" 0.954861
+cap "m2_2363_1601#" "m2_1276_2485#" 56.4225
+cap "m4_1944_1747#" "m2_n103_1601#" 6.06137
+cap "phi_1" "m2_1276_2485#" 9.87076
+cap "m3_n1410_3780#" "phi_int" 54.9607
+cap "phi_1" "m4_1601_2049#" 3.32118
+cap "phi_int" "m3_1332_n128#" 4.42113
+cap "m2_3531_2859#" "phi_int" 0.27819
+cap "m3_n113_n1392#" "m5_948_1929#" 3.23872
+cap "m3_2022_4065#" "m2_552_2661#" 0.231024
+cap "m3_n113_n1392#" "w_n1725_3137#" 0.938827
+cap "phi_2" "m3_2022_4065#" 19.7537
+cap "m3_n113_n1392#" "vin" 0.223877
+cap "m3_n113_n1392#" "m1_2572_n1522#" 2.74614
+cap "m5_n1518_1929#" "w_n1725_3137#" 0.693575
+cap "phi_1" "m3_927_2477#" 28.0565
+cap "m1_n1725_4265#" "m4_1601_2049#" 0.00584882
+cap "m5_n1518_1929#" "vneg" 1.89241
+cap "m3_n113_n1392#" "m2_n103_1601#" 50.4805
+cap "vspike" "m2_1276_2485#" 4.39497
+cap "m1_2078_n924#" "m2_1346_n1442#" 35.1281
+cap "phi_1" "m4_n865_2049#" 2.95724
+cap "vspike" "m4_1601_2049#" 1.0786
+cap "m3_2022_4065#" "phi_int" 1.44593
+cap "m1_n651_3297#" "phi_1" 1.36421
+cap "m2_1332_n780#" "m1_2078_n924#" 0.0273683
+cap "m5_948_1929#" "w_n1725_3137#" 0.693575
+cap "vspike" "m3_927_2477#" 21.9217
+cap "m3_n1410_3780#" "m2_1276_2485#" 1.81088
+cap "m1_n1725_4265#" "phi_1" 12.5033
+cap "m1_n1725_4265#" "m4_n865_2049#" 0.00584882
+cap "m3_n1410_3780#" "m4_1601_2049#" 0.121787
+cap "m3_n113_n1392#" "m4_n522_1747#" 5.08973
+cap "m3_1332_n128#" "m2_1276_2485#" 62.1631
+cap "m1_n651_3297#" "m1_n1725_4265#" 4.38256
+cap "m2_552_2661#" "m5_948_1929#" 1.89241
+cap "m4_1601_2049#" "m3_1332_n128#" 0.535356
+cap "m3_n1410_3780#" "m2_3923_n1736#" 41.3977
+cap "m5_948_1929#" "m2_n103_1601#" 2.74271
+cap "vspike" "m4_n865_2049#" 0.350544
+cap "w_n1725_3137#" "vneg" 35.7519
+cap "vspike" "phi_1" 71.099
+cap "vin" "vneg" 54.1322
+cap "m2_552_2661#" "w_n1725_3137#" 40.3515
+cap "vspike" "m1_n651_3297#" 4.64235
+cap "m4_1944_1747#" "m2_1276_2485#" 2.24383
+cap "phi_2" "w_n1725_3137#" 52.6056
+cap "m2_n103_1601#" "w_n1725_3137#" 0.692447
+cap "phi_2" "m2_552_2661#" 46.5834
+cap "m2_552_2661#" "m2_n103_1601#" 11.8803
+cap "m2_2886_n700#" "m2_2363_1601#" 419.198
+cap "m3_n1410_3780#" "m2_2363_1601#" 63.4138
+cap "m3_n1410_3780#" "m4_n865_2049#" 0.434768
+cap "m3_n1410_3780#" "phi_1" 98.0229
+cap "vspike" "m1_n1725_4265#" 10.7195
+cap "m3_2022_4065#" "m2_1276_2485#" 0.29443
+cap "m2_2363_1601#" "m3_1332_n128#" 64.5862
+cap "phi_int" "w_n1725_3137#" 6.90079
+cap "m3_n1410_3780#" "m1_n651_3297#" 0.537078
+cap "m2_3531_2859#" "m2_2363_1601#" 2.35964
+cap "m4_n522_1747#" "w_n1725_3137#" 1.07697
+cap "phi_2" "phi_int" 6.91105
+cap "m4_n522_1747#" "vneg" 1.53998
+cap "m3_n1410_3780#" "m1_n1725_4265#" 66.5635
+cap "m1_n1725_4265#" "m3_1332_n128#" 1.25143
+cap "vspike" "m3_n1410_3780#" 887.905
+cap "m2_3531_2859#" "m1_n1725_4265#" 3.23019
+cap "m3_2022_4065#" "m2_2363_1601#" 67.1905
+cap "m3_n113_n1392#" "m3_927_2477#" 6.40075
+cap "m2_3531_2859#" "vspike" 1.62261
+cap "m3_n1410_3780#" "m2_554_n1578#" 0.557917
+cap "m3_n113_n1392#" "m4_n865_2049#" 4.34134
+cap "m3_n113_n1392#" "phi_1" 18.9337
+cap "m5_n1518_1929#" "m4_n865_2049#" 4.62536
+cap "m2_554_n1578#" "m3_1332_n128#" 0.105004
+cap "m3_n1410_3780#" "m2_2886_n700#" 68.231
+cap "m4_1601_2049#" "m5_948_1929#" 4.62536
+cap "m2_554_n1578#" "m2_1346_n1442#" 196.853
+cap "m2_1276_2485#" "w_n1725_3137#" 5.64494
+cap "m1_2834_n924#" "m2_2886_n700#" 9.35393
+cap "m2_2886_n700#" "m3_1332_n128#" 170.057
+cap "m1_2834_n924#" "m3_n1410_3780#" 0.688739
+cap "m3_2022_4065#" "m1_n1725_4265#" 50.4962
+cap "m4_1601_2049#" "w_n1725_3137#" 0.741898
+cap "m3_n1410_3780#" "m3_1332_n128#" 376.346
+cap "m1_2834_n924#" "m3_1332_n128#" 1.12536
+cap "m2_554_n1578#" "m2_1332_n780#" 0.851958
+cap "m2_3531_2859#" "m3_n1410_3780#" 68.4572
+cap "m3_n1410_3780#" "m2_1346_n1442#" 0.374094
+cap "m2_552_2661#" "m2_1276_2485#" 237.227
+cap "phi_2" "m2_1276_2485#" 212.325
+cap "ota_1stage$1_0/vss" "via_dev$24_3/m1_0_0#" -0.781816
+cap "ota_1stage$1_0/vss" "ota_1stage$1_0/vp" 7.65842
+cap "ota_1stage$1_0/vss" "via_dev$22_0/m2_0_0#" -0.00295196
+cap "vdiv_0/vdd" "vdiv_0/vspike_up" 74.6795
+cap "vdiv_0/vspike_up" "vdiv_0/ppolyf_u_resistor_21/a_160_0#" 23.9742
+cap "vdiv_0/vspike_up" "vdiv_0/vdd" 7.43018
+cap "vdiv_0/vspike_up" "vdiv_0/ppolyf_u_resistor_21/a_160_0#" 10.546
+cap "ota_1stage$1_0/nfet$3$6_0/a_n84_n2#" "m3_n113_n1392#" 101.843
+cap "ota_1stage$1_0/nfet$3$6_0/a_n84_n2#" "ota_1stage$1_0/vss" -0.364666
+cap "ota_1stage$1_0/vdd" "ota_1stage$1_0/vp" 0.0436926
+cap "ota_1stage$1_0/vdd" "m3_n113_n1392#" 22.0627
+cap "ota_1stage$1_0/nfet$14_1/a_94_0#" "m3_n113_n1392#" 9.39007
+cap "ota_1stage$1_0/vout" "ota_1stage$1_0/nfet$3$6_0/a_n84_n2#" 0.0226435
+cap "ota_1stage$1_0/vss" "m3_n113_n1392#" 83.111
+cap "ota_1stage$1_0/nfet$3$6_0/a_n84_n2#" "ota_1stage$1_0/vp" 2.43342
+cap "ota_1stage$1_0/pfet$1$9_1/w_n352_n286#" "ota_1stage$1_0/vout" 0.726705
+cap "ota_1stage$1_0/vdd" "ota_1stage$1_0/vout" 0.497842
+cap "ota_1stage$1_0/vdd" "ota_1stage$1_0/vp" 0.256168
+cap "ota_1stage$1_0/nfet$14_1/a_94_0#" "ota_1stage$1_0/vss" -14.946
+cap "ota_1stage$1_0/pfet$1$9_1/a_28_228#" "ota_1stage$1_0/vss" 0.00450751
+cap "ota_1stage$1_0/vout" "via_dev$14_0/m1_0_0#" 6.28741
+cap "ota_1stage$1_0/vn" "ota_1stage$1_0/vss" -10.1713
+cap "ota_1stage$1_0/nfet$14_1/a_94_0#" "via_dev$24_3/m1_0_0#" 70.1981
+cap "ota_1stage$1_0/nfet$14_1/a_94_0#" "ota_1stage$1_0/pfet$1$9_1/w_n352_n286#" -0.544425
+cap "via_dev$24_3/m1_0_0#" "ota_1stage$1_0/pfet$1$9_1/a_28_228#" 20.0851
+cap "ota_1stage$1_0/vdd" "ota_1stage$1_0/nfet$14_1/a_94_0#" -0.136116
+cap "via_dev$24_3/m1_0_0#" "ota_1stage$1_0/vn" 16.3657
+cap "cap_mim$1_1/m4_n120_n120#" "ota_1stage$1_0/vn" 0.0592363
+cap "ota_1stage$1_0/vp" "ota_1stage$1_0/vout" 5.16284
+cap "ota_1stage$1_0/vn" "cap_mim$1_1/m4_0_0#" 0.0189316
+cap "via_dev$24_3/m1_0_0#" "ota_1stage$1_0/vss" 248.383
+cap "ota_1stage$1_0/nfet$14_1/a_94_0#" "ota_1stage$1_0/vout" 2.85389
+cap "ota_1stage$1_0/vdd" "via_dev$24_3/m1_0_0#" 15.9759
+cap "ota_1stage$1_0/pfet$1$9_1/w_n352_n286#" "via_dev$24_3/m1_0_0#" 20.4702
+cap "ota_1stage$1_0/vout" "ota_1stage$1_0/pfet$1$9_1/a_28_228#" 0.73159
+cap "ota_1stage$1_0/nfet$14_1/a_94_0#" "ota_1stage$1_0/vp" 52.6509
+cap "ota_1stage$1_0/vn" "ota_1stage$1_0/vout" 0.155004
+cap "ota_1stage$1_0/vp" "ota_1stage$1_0/pfet$1$9_1/a_28_228#" 6.01479
+cap "ota_1stage$1_0/vp" "ota_1stage$1_0/vn" 35.8112
+cap "ota_1stage$1_0/vp" "ota_1stage$1_0/nfet$3$6_0/a_n84_n2#" 2.43342
+cap "ota_1stage$1_0/nfet$14_1/a_94_0#" "ota_1stage$1_0/pfet$1$9_1/a_28_228#" -0.577844
+cap "ota_1stage$1_0/vout" "ota_1stage$1_0/vss" 8.36127
+cap "ota_1stage$1_0/nfet$14_1/a_94_0#" "ota_1stage$1_0/vn" 3.25799
+cap "ota_1stage$1_0/vp" "ota_1stage$1_0/vss" 292.647
+cap "via_dev$24_3/m1_0_0#" "ota_1stage$1_0/vout" 16.3822
+cap "ota_1stage$1_0/vn" "ota_1stage$1_0/pfet$1$9_1/a_28_228#" 0.0216558
+cap "ota_1stage$1_0/vp" "via_dev$24_3/m1_0_0#" 23.1722
+cap "via_dev$24_3/m1_0_0#" "ota_1stage$1_0/pfet$1$9_1/w_n352_n286#" 4.77369
+cap "ota_1stage$1_0/vss" "ota_1stage$1_0/pfet$1$9_1/w_n352_n286#" 15.2824
+cap "via_dev$14_0/m1_0_0#" "ota_1stage$1_0/vdd" 0.084976
+cap "via_dev$14_0/m1_0_0#" "ota_1stage$1_0/vn" 16.258
+cap "cap_mim$1_1/m4_n120_n120#" "ota_1stage$1_0/vss" 0.44761
+cap "ota_1stage$1_0/vout" "ota_1stage$1_0/vp" -0.0276379
+cap "ota_1stage$1_0/vss" "cap_mim$1_1/m4_0_0#" 0.00208357
+cap "ota_1stage$1_0/vout" "ota_1stage$1_0/nfet$14_1/a_94_0#" 49.3967
+cap "via_dev$14_0/m1_0_0#" "via_dev$24_3/m1_0_0#" 0.275878
+cap "ota_1stage$1_0/vout" "ota_1stage$1_0/vdd" 12.0764
+cap "via_dev$14_0/m1_0_0#" "ota_1stage$1_0/vss" 12.4331
+cap "ota_1stage$1_0/vp" "ota_1stage$1_0/nfet$14_1/a_94_0#" 0.0735313
+cap "ota_1stage$1_0/vout" "ota_1stage$1_0/vn" 46.9638
+cap "ota_1stage$1_0/vn" "ota_1stage$1_0/vp" 13.8181
+cap "via_dev$22_0/m2_0_0#" "ota_1stage$1_0/vp" -0.084352
+cap "ota_1stage$1_0/vdd" "ota_1stage$1_0/nfet$14_1/a_94_0#" -0.808617
+cap "ota_1stage$1_0/vout" "ota_1stage$1_0/pfet$1$9_1/a_28_228#" 4.03841
+cap "ota_1stage$1_0/vn" "ota_1stage$1_0/nfet$14_1/a_94_0#" 71.6421
+cap "ota_1stage$1_0/vout" "via_dev$24_3/m1_0_0#" 0.674607
+cap "ota_1stage$1_0/vout" "ota_1stage$1_0/vss" 109.599
+cap "via_dev$22_0/m2_0_0#" "ota_1stage$1_0/vn" -0.0696546
+cap "ota_1stage$1_0/vp" "via_dev$24_3/m1_0_0#" 15.4895
+cap "ota_1stage$1_0/vss" "ota_1stage$1_0/vp" 254.497
+cap "ota_1stage$1_0/vout" "ota_1stage$1_0/pfet$1$9_1/w_n352_n286#" 17.881
+cap "ota_1stage$1_0/pfet$1$9_1/a_28_228#" "ota_1stage$1_0/nfet$14_1/a_94_0#" -3.04446
+cap "ota_1stage$1_0/vout" "cap_mim$1_1/m4_n120_n120#" 0.603029
+cap "ota_1stage$1_0/pfet$1$9_1/a_28_228#" "ota_1stage$1_0/vn" 2.23719
+cap "ota_1stage$1_0/vdd" "via_dev$24_3/m1_0_0#" 2.10977
+cap "via_dev$24_3/m1_0_0#" "ota_1stage$1_0/nfet$14_1/a_94_0#" 9.59498
+cap "ota_1stage$1_0/vdd" "ota_1stage$1_0/vss" 40.4879
+cap "ota_1stage$1_0/vss" "ota_1stage$1_0/nfet$14_1/a_94_0#" -6.54798
+cap "ota_1stage$1_0/vn" "via_dev$24_3/m1_0_0#" 4.95696
+cap "ota_1stage$1_0/vn" "ota_1stage$1_0/vss" 287.808
+cap "ota_1stage$1_0/pfet$1$9_1/w_n352_n286#" "ota_1stage$1_0/nfet$14_1/a_94_0#" -1.75106
+cap "ota_1stage$1_0/vout" "via_dev$14_0/m1_0_0#" 0.0138538
+cap "via_dev$14_0/m1_0_0#" "ota_1stage$1_0/vp" 0.648962
+cap "ota_1stage$1_0/pfet$1$9_1/a_28_228#" "via_dev$24_3/m1_0_0#" 0.250713
+cap "ota_1stage$1_0/pfet$1$9_1/a_28_228#" "ota_1stage$1_0/vss" 0.0177473
+cap "ota_1stage$1_0/vss" "via_dev$24_3/m1_0_0#" 21.6867
+cap "via_dev$22_0/m2_0_0#" "vdiv_0/ppolyf_u_resistor_21/a_160_0#" 0.21329
+cap "ota_1stage$1_0/vn" "ota_1stage$1_0/vss" -0.279283
+cap "via_dev$22_0/m2_0_0#" "via_dev$24_3/m1_0_0#" 0.551987
+cap "via_dev$24_3/m1_0_0#" "via_dev$14_1/m1_0_0#" 19.6173
+cap "ota_1stage$1_0/vout" "via_dev$14_1/m1_0_0#" 0.0862304
+cap "via_dev$14_0/m1_0_0#" "via_dev$24_3/m1_0_0#" 8.3022
+cap "via_dev$14_0/m1_0_0#" "ota_1stage$1_0/vout" 6.27963
+cap "via_dev$22_0/m2_0_0#" "vdiv_0/ppolyf_u_resistor_17/a_160_0#" 1.31872
+cap "via_dev$24_3/m1_0_0#" "ota_1stage$1_0/vss" 103.128
+cap "ota_1stage$1_0/vss" "ota_1stage$1_0/vout" 2.22045e-16
+cap "ota_1stage$1_0/vn" "via_dev$24_3/m1_0_0#" 1.38477
+cap "via_dev$22_0/m2_0_0#" "vdiv_0/ppolyf_u_resistor_16/a_160_0#" 0.213455
+cap "via_dev$24_3/m1_0_0#" "ota_1stage$1_0/vout" 2.24729
+cap "via_dev$22_0/m2_0_0#" "via_dev$14_1/m1_0_0#" 1.49353
+cap "via_dev$14_0/m1_0_0#" "via_dev$14_1/m1_0_0#" 5.10956
+cap "via_dev$22_0/m2_0_0#" "via_dev$14_0/m1_0_0#" 1.80582
+cap "ota_1stage$1_0/pfet$1$9_0/w_n352_n286#" "via_dev$14_0/m1_0_0#" 1.89773
+cap "via_dev$14_0/m1_0_0#" "ota_1stage$1_0/nfet$1$4_0/a_94_0#" 0.0309187
+cap "via_dev$22_0/m2_0_0#" "vdiv_0/ppolyf_u_resistor_19/a_160_0#" 0.999963
+cap "ota_1stage$1_0/vss" "via_dev$14_1/m1_0_0#" 126.583
+cap "via_dev$22_0/m2_0_0#" "ota_1stage$1_0/vss" 6.91697
+cap "ota_1stage$1_0/vn" "via_dev$22_0/m2_0_0#" 0.327552
+cap "via_dev$14_0/m1_0_0#" "ota_1stage$1_0/vss" 133.725
+cap "vdiv_0/ppolyf_u_resistor_19/a_n132_0#" "via_dev$22_0/m2_0_0#" 3.81013
+cap "ota_1stage$1_0/vn" "via_dev$14_0/m1_0_0#" 10.4734
+cap "via_dev$14_0/m1_0_0#" "ota_1stage$1_0/vdd" 0.448191
+cap "vdiv_0/vdd" "vdiv_0/ppolyf_u_resistor_19/a_n132_0#" -3.21653
+cap "vdiv_0/vspike_up" "vdiv_0/ppolyf_u_resistor_19/a_n132_0#" 25.1284
+cap "vdiv_0/vspike_up" "vdiv_0/ppolyf_u_resistor_19/a_160_0#" 3.41861
+cap "vdiv_0/ppolyf_u_resistor_17/a_160_0#" "vdiv_0/vspike_up" 1.71054
+cap "vdiv_0/vdd" "vdiv_0/vspike_up" 40.8075
+cap "vdiv_0/ppolyf_u_resistor_14/a_n132_0#" "vdiv_0/ppolyf_u_resistor_19/a_n132_0#" -0.329585
+cap "vdiv_0/vref" "vdiv_0/ppolyf_u_resistor_19/a_n132_0#" 3.57004
+cap "vdiv_0/vspike_up" "vdiv_0/ppolyf_u_resistor_21/a_160_0#" 11.2995
+cap "vdiv_0/vspike_up" "vdiv_0/ppolyf_u_resistor_19/a_n132_0#" 1.13527
+cap "vdiv_0/vspike_up" "vdiv_0/ppolyf_u_resistor_19/a_160_0#" 2.57648
+cap "vdiv_0/vspike_up" "vdiv_0/ppolyf_u_resistor_16/a_160_0#" 1.71054
+cap "vdiv_0/vspike_up" "vdiv_0/ppolyf_u_resistor_21/a_160_0#" 5.30394
+cap "vdiv_0/vspike_up" "vdiv_0/vdd" -0.346499
+cap "cap_mim$1_1/m4_n120_n120#" "nand$4_0/Z" 0.47683
+cap "not_1/out" "not_0/out" 9.298
+cap "ota_1stage$1_0/vss" "nand$4_0/Z" 4.88828
+cap "ota_1stage$1_0/vss" "ota_1stage$1_0/vdd" 8.84333
+cap "ota_1stage$1_0/vdd" "nand$4_0/Z" 26.7434
+cap "ota_1stage$1_0/vss" "not_1/out" 21.9123
+cap "cap_mim$1_1/m4_n120_n120#" "not_0/out" 8.91169
+cap "nand$4_1/Z" "nand$4_0/Z" 7.44318
+cap "ota_1stage$1_0/vss" "not_0/out" 9.77428
+cap "not_1/out" "nand$4_0/Z" 6.58774
+cap "not_1/out" "ota_1stage$1_0/vdd" 31.3552
+cap "ota_1stage$1_0/vdd" "not_0/out" 24.1288
+cap "ota_1stage$1_0/vdd" "ota_1stage$1_0/vout" 9.83666
+cap "ota_1stage$1_0/vdd" "via_dev$14_7/m1_0_0#" 1.08401
+cap "not_1/out" "ota_1stage$1_0/vss" 3.06924
+cap "ota_1stage$1_0/pfet$1$9_1/a_28_228#" "ota_1stage$1_0/nfet$14_1/a_94_0#" -0.867732
+cap "ota_1stage$1_0/pfet$1$9_1/a_28_228#" "ota_1stage$1_0/vout" 7.4496
+cap "ota_1stage$1_0/pfet$1$9_1/a_28_228#" "via_dev$14_7/m1_0_0#" 11.4488
+cap "ota_1stage$1_0/vn" "nand$4_1/Z" 0.00259923
+cap "ota_1stage$1_0/vdd" "nand$4_1/Z" 26.6146
+cap "ota_1stage$1_0/nfet$14_1/a_94_0#" "ota_1stage$1_0/vout" 0.894481
+cap "ota_1stage$1_0/pfet$1$9_1/w_n352_n286#" "ota_1stage$1_0/vout" 3.39973
+cap "not_3/out" "ota_1stage$1_0/vss" 2.69978
+cap "ota_1stage$1_0/pfet$1$9_1/a_28_228#" "nand$4_1/Z" 11.7541
+cap "not_3/out" "not_0/out" 8.91169
+cap "not_1/out" "not_3/out" 3.59726
+cap "ota_1stage$1_0/vdd" "not_1/out" 41.279
+cap "ota_1stage$1_0/vdd" "ota_1stage$1_0/vss" 4.85985
+cap "ota_1stage$1_0/pfet$1$9_1/a_28_228#" "not_1/out" 6.17556
+cap "ota_1stage$1_0/pfet$1$9_1/w_n352_n286#" "nand$4_1/Z" 5.23775
+cap "ota_1stage$1_0/vout" "nand$4_1/Z" 3.45305
+cap "via_dev$14_0/m1_0_0#" "ota_1stage$1_0/vout" 3.39448
+cap "not_3/out" "ota_1stage$1_0/vn" 0.0170213
+cap "ota_1stage$1_0/vout" "ota_1stage$1_0/vss" 0.269803
+cap "ota_1stage$1_0/vout" "not_1/out" 2.89424
+cap "ota_1stage$1_0/pfet$1$9_1/w_n352_n286#" "not_1/out" 17.5489
+cap "ota_1stage$1_0/vdd" "not_3/out" 28.3285
+cap "nand$4_1/Z" "nand$4_0/Z" 7.44318
+cap "ota_1stage$1_0/pfet$1$9_1/a_28_228#" "not_3/out" 12.3921
+cap "ota_1stage$1_0/pfet$1$9_1/a_28_228#" "ota_1stage$1_0/vp" 0.00365777
+cap "ota_1stage$1_0/pfet$1$9_1/a_28_228#" "ota_1stage$1_0/vn" -0.0247937
+cap "ota_1stage$1_0/vss" "nand$4_1/Z" 1.98884
+cap "not_0/out" "nand$4_1/Z" 0.47683
+cap "not_1/out" "nand$4_1/Z" 3.18719
+cap "ota_1stage$1_0/nfet$14_1/a_94_0#" "not_3/out" 0.0140254
+cap "ota_1stage$1_0/pfet$1$9_1/w_n352_n286#" "not_3/out" 6.70974
+cap "ota_1stage$1_0/vout" "not_3/out" 2.90444
+cap "ota_1stage$1_0/vout" "ota_1stage$1_0/vn" 1.3936
+cap "via_dev$14_0/m1_0_0#" "not_3/out" 1.18126
+cap "ota_1stage$1_0/pfet$1$9_1/w_n352_n286#" "nand$4_1/Z" 7.79409
+cap "via_dev$14_0/m1_0_0#" "ota_1stage$1_0/vout" 0.244044
+cap "ota_1stage$1_0/vn" "ota_1stage$1_0/vout" 2.91566
+cap "nand$4_1/Z" "ota_1stage$1_0/vout" 6.56811
+cap "ota_1stage$1_0/vout" "ota_1stage$1_0/vp" 0.157108
+cap "ota_1stage$1_0/vdd" "not_3/out" 15.6169
+cap "ota_1stage$1_0/pfet$1$9_1/a_28_228#" "not_1/out" 0.0289087
+cap "ota_1stage$1_0/pfet$1$9_1/a_28_228#" "via_dev$14_7/m1_0_0#" 1.37452
+cap "ota_1stage$1_0/vss" "nand$4_1/Z" 2.02695
+cap "ota_1stage$1_0/vdd" "ota_1stage$1_0/vout" 48.5438
+cap "ota_1stage$1_0/nfet$14_1/a_94_0#" "not_3/out" 0.0586977
+cap "via_dev$14_0/m1_0_0#" "ota_1stage$1_0/pfet$1$9_1/a_28_228#" 1.34362
+cap "ota_1stage$1_0/vp" "ota_1stage$1_0/pfet$1$9_1/a_28_228#" 0.00214422
+cap "ota_1stage$1_0/vn" "ota_1stage$1_0/pfet$1$9_1/a_28_228#" 0.0489809
+cap "nand$4_1/Z" "ota_1stage$1_0/pfet$1$9_1/a_28_228#" 3.0892
+cap "ota_1stage$1_0/pfet$1$9_1/w_n352_n286#" "not_3/out" 8.71891
+cap "ota_1stage$1_0/nfet$14_1/a_94_0#" "ota_1stage$1_0/vout" 2.78954
+cap "ota_1stage$1_0/vss" "ota_1stage$1_0/vdd" 2.14617
+cap "ota_1stage$1_0/vout" "not_3/out" 5.72499
+cap "ota_1stage$1_0/pfet$1$9_1/w_n352_n286#" "ota_1stage$1_0/vout" 19.4365
+cap "ota_1stage$1_0/nfet$14_1/a_94_0#" "ota_1stage$1_0/pfet$1$9_1/a_28_228#" -2.73908
+cap "ota_1stage$1_0/vss" "not_3/out" 2.46263
+cap "nand$4_1/Z" "via_dev$14_0/m1_0_0#" 0.787953
+cap "ota_1stage$1_0/pfet$1$9_1/a_28_228#" "not_3/out" 1.7348
+cap "ota_1stage$1_0/vss" "ota_1stage$1_0/vout" 4.60792
+cap "ota_1stage$1_0/vdd" "via_dev$14_7/m1_0_0#" 0.43698
+cap "ota_1stage$1_0/vout" "ota_1stage$1_0/pfet$1$9_1/a_28_228#" 12.6066
+cap "via_dev$14_0/m1_0_0#" "ota_1stage$1_0/vdd" 0.699035
+cap "nand$4_1/Z" "ota_1stage$1_0/vdd" 19.9429
+cap "ota_1stage$1_0/pfet$1$9_0/w_n352_n286#" "vdiv_0/vspike_down" 5.39164
+cap "vdiv_0/vspike_down" "ota_1stage$1_0/vout" 6.29536
+cap "vdiv_0/vref" "via_dev$22_0/m2_0_0#" 2.22606
+cap "vdiv_0/vspike_down" "cap_mim$1_1/m4_0_0#" 1.84209
+cap "ota_1stage$1_0/vdd" "vdiv_0/vspike_down" 2.92143
+cap "ota_1stage$1_0/vss" "via_dev$22_0/m2_0_0#" 2.68592
+cap "via_dev$14_1/m1_0_0#" "ota_1stage$1_0/vout" 0.311871
+cap "vdiv_0/vspike_down" "ota_1stage$1_0/pfet$1$9_0/a_28_228#" 1.64127
+cap "vdiv_0/vref" "vdiv_0/vspike_down" 1.11022e-16
+cap "via_dev$24_3/m1_0_0#" "ota_1stage$1_0/vout" 2.20764
+cap "not_3/out" "vdiv_0/vspike_down" 2.2159
+cap "vdiv_0/ppolyf_u_resistor_14/a_n132_0#" "via_dev$22_0/m2_0_0#" 2.19495
+cap "ota_1stage$1_0/pfet$1$9_0/w_n352_n286#" "ota_1stage$1_0/vout" 1.24028
+cap "cap_mim$1_1/m4_0_0#" "ota_1stage$1_0/vout" 0.338461
+cap "ota_1stage$1_0/vdd" "ota_1stage$1_0/vout" 1.10458
+cap "vdiv_0/ppolyf_u_resistor_16/a_160_0#" "via_dev$22_0/m2_0_0#" 0.154015
+cap "via_dev$22_0/m2_0_0#" "vdiv_0/ppolyf_u_resistor_17/a_160_0#" 0.664084
+cap "ota_1stage$1_0/vss" "ota_1stage$1_0/vout" -0.257651
+cap "not_3/out" "ota_1stage$1_0/vout" 0.647014
+cap "via_dev$22_0/m2_0_0#" "ota_1stage$1_0/vout" -1.42109e-14
+cap "vdiv_0/vref" "vdiv_0/ppolyf_u_resistor_11/a_n132_0#" 8.41588
+cap "vdiv_0/vspike_up" "nor$2_0/vss" 3.53336
+cap "m3_1332_n128#" "nor$2_0/vss" 1.18977
+cap "vdiv_0/vref" "vdiv_0/vspike_up" 4.64242
+cap "vdiv_0/vref" "vdiv_0/ppolyf_u_resistor_10/a_n132_0#" 1.1769
+cap "vdiv_0/vref" "vdiv_0/ppolyf_u_resistor_17/a_160_0#" 4.60695
+cap "vdiv_0/ppolyf_u_resistor_14/a_n132_0#" "vdiv_0/vspike_up" 0.221165
+cap "vdiv_0/vref" "vdiv_0/ppolyf_u_resistor_15/a_n132_0#" 0.51696
+cap "vdiv_0/ppolyf_u_resistor_19/a_160_0#" "vdiv_0/vref" 0.497826
+cap "vdiv_0/vref" "nor$2_0/vss" 75.043
+cap "vdiv_0/vref" "vdiv_0/ppolyf_u_resistor_19/a_n132_0#" 5.18097
+cap "vdiv_0/ppolyf_u_resistor_14/a_n132_0#" "vdiv_0/vref" 43.325
+cap "vdiv_0/vref" "vdiv_0/vspike_down" 0.321825
+cap "vdiv_0/vspike_up" "vdiv_0/ppolyf_u_resistor_11/a_n132_0#" 0.110582
+cap "not$1_0/nfet$11_0/a_216_0#" "vdiv_0/vref" 1.42109e-14
+cap "vdiv_0/ppolyf_u_resistor_15/a_n132_0#" "vdiv_0/vref" 7.10543e-15
+cap "nand$4_0/Z" "nand$4_0/B" 2.8037
+cap "nand$4_0/B" "nand$4_0/nfet$2$4_0/a_n84_0#" 0.00575868
+cap "nand$4_0/vdd" "nand$4_0/Z" 12.5111
+cap "nand$4_0/vss" "nand$4_0/B" 1.60678
+cap "not_0/out" "nand$4_0/A" 13.4335
+cap "nand$4_0/Z" "not_0/out" 45.1391
+cap "not_0/out" "nand$4_0/nfet$2$4_0/a_n84_0#" 2.46309
+cap "nand$4_0/vss" "not_0/out" 9.5227
+cap "not_0/out" "nand$4_0/B" 1.12958
+cap "nand$4_0/vdd" "not_0/out" 6.01912
+cap "nand$4_0/Z" "nand$4_0/A" 9.48565
+cap "nand$4_0/nfet$2$4_0/a_n84_0#" "nand$4_0/A" 9.16003
+cap "nand$4_0/Z" "nand$4_0/nfet$2$4_0/a_n84_0#" 5.07281
+cap "nand$4_0/vss" "nand$4_0/A" 31.8683
+cap "nand$4_0/vss" "nand$4_0/Z" 22.4933
+cap "nand$4_0/B" "nand$4_0/A" 13.4296
+cap "nand$4_0/nfet$2$4_0/a_n84_0#" "nand$4_0/B" 0.796829
+cap "via_dev$14_6/m1_0_0#" "nand$4_0/Z" 10.777
+cap "conmutator$1_0/nfet$12_0/a_30_260#" "not_0/out" 0.275811
+cap "not_0/out" "nand$4_1/B" 0.554935
+cap "not_1/out" "nand$4_0/Z" 1.57965
+cap "nand$4_0/vss" "nand$4_0/A" 0.766426
+cap "nand$4_0/vss" "nand$4_0/Z" 94.1953
+cap "via_dev$14_6/m1_0_0#" "nand$4_0/vdd" 0.707348
+cap "nand$4_0/vss" "nand$4_0/vdd" -2.19978
+cap "cap_mim$1_1/m4_n120_n120#" "nand$4_0/Z" 2.0328
+cap "nand$4_0/Z" "nand$4_0/B" 44.1019
+cap "nand$4_0/A" "nand$4_0/B" 0.723144
+cap "via_dev$14_6/m1_0_0#" "not_0/out" 10.4155
+cap "nand$4_0/vss" "not_0/out" 195.877
+cap "reward" "nand$4_0/Z" 1.90617
+cap "not_0/out" "nand$4_1/nfet$2$4_0/a_n84_0#" 0.661976
+cap "not_1/out" "not_0/out" 1.81322
+cap "not_0/out" "nand$4_0/B" 70.4688
+cap "vspike_up" "nand$4_0/Z" 0.715325
+cap "cap_mim$1_1/m4_n120_n120#" "not_0/out" 27.6377
+cap "reward" "not_0/out" 2.10811
+cap "vspike" "nand$4_0/Z" 1.07278
+cap "nand$4_1/Z" "nand$4_0/Z" 31.7314
+cap "vspike_up" "not_0/out" 0.67548
+cap "via_dev$14_6/m1_0_0#" "not_1/out" 0.03453
+cap "nand$4_0/vss" "via_dev$14_6/m1_0_0#" 132.154
+cap "nand$4_1/B" "nand$4_0/B" 0.981206
+cap "nand$4_0/nfet$2$4_0/a_n84_0#" "not_0/out" 1.0001
+cap "nand$4_0/A" "nand$4_0/Z" 0.272841
+cap "vspike" "not_0/out" 1.60757
+cap "ota_1stage$1_0/vdd" "not_0/out" 1.04471
+cap "nand$4_1/Z" "not_0/out" 0.78593
+cap "nand$4_0/vdd" "nand$4_0/Z" 19.342
+cap "cap_mim$1_1/m4_n120_n120#" "via_dev$14_6/m1_0_0#" 0.21102
+cap "via_dev$14_6/m1_0_0#" "nand$4_0/B" 19.1036
+cap "not_1/out" "nand$4_0/B" 4.09759
+cap "nand$4_0/vss" "nand$4_0/B" 48.7041
+cap "not_0/out" "nand$4_0/Z" 82.5668
+cap "nand$4_0/A" "not_0/out" 2.98983
+cap "nand$4_0/vdd" "not_0/out" 29.1834
+cap "nand$4_0/nfet$2$4_0/a_n84_0#" "nand$4_0/vss" 1.00765
+cap "via_dev$14_6/m1_0_0#" "ota_1stage$1_0/vdd" 0.254355
+cap "via_dev$14_6/m1_0_0#" "vspike" 0.0007944
+cap "nand$4_0/vss" "vspike" -0.434126
+cap "conmutator$1_0/nfet$12_0/a_30_260#" "nand$4_0/Z" 0.127569
+cap "nand$4_0/vss" "ota_1stage$1_0/vdd" 8.84333
+cap "nand$4_1/Z" "via_dev$14_6/m1_0_0#" 0.867698
+cap "nand$4_1/Z" "vspike_up" 0.0774717
+cap "not_3/out" "not_1/out" 8.05403
+cap "not_1/out" "nand$4_1/nfet$2$4_0/a_n84_0#" 10.1526
+cap "ota_1stage$1_0/vdd" "not_1/vss" 4.85985
+cap "not_1/out" "nand$4_1/Z" 97.0763
+cap "nand$4_1/Z" "switch$1_0/pfet$15_1/a_35_n136#" 0.199168
+cap "via_dev$14_7/m1_0_0#" "ota_1stage$1_0/pfet$1$9_1/w_n352_n286#" 2.83585
+cap "via_dev$14_7/m1_0_0#" "not_3/out" 38.9492
+cap "nand$4_1/B" "not_1/out" 2.76252
+cap "not_1/vss" "not_1/out" 69.7402
+cap "nand$4_0/Z" "nand$4_1/Z" 31.7314
+cap "nand$4_1/Z" "not_1/vdd" 16.6481
+cap "via_dev$14_7/m1_0_0#" "nand$4_1/B" -2.66706
+cap "not_3/out" "switch$1_0/in" 0.0977357
+cap "nand$4_1/Z" "nand$4_1/nfet$2$4_0/a_n84_0#" 5.07281
+cap "not_1/vss" "not_1/vdd" -5.58619
+cap "nand$4_1/B" "not_3/out" 2.32872
+cap "not_1/out" "not_1/out" 14.6585
+cap "not_3/out" "not_0/out" 27.633
+cap "not_1/vss" "nand$4_1/nfet$2$4_0/a_n84_0#" 1.00765
+cap "via_dev$14_7/m1_0_0#" "ota_1stage$1_0/vdd" 4.72958
+cap "not_1/vss" "nand$4_1/Z" 91.1072
+cap "via_dev$14_7/m1_0_0#" "not_1/out" 9.7601
+cap "nand$4_1/Z" "vspike" 0.518735
+cap "not_1/out" "not_3/out" 21.5126
+cap "not_1/out" "nand$4_1/nfet$2$4_0/a_n84_0#" 1.9731
+cap "not_1/vss" "vspike" -0.160353
+cap "not_3/out" "switch$1_0/pfet$15_1/a_35_n136#" 0.465737
+cap "via_dev$14_7/m1_0_0#" "not_1/vdd" 1.52137
+cap "nand$4_1/Z" "not_1/out" 20.1244
+cap "via_dev$14_7/m1_0_0#" "ota_1stage$1_0/pfet$1$9_1/a_28_228#" 11.4144
+cap "not_1/out" "not_2/out" 0.0316011
+cap "not_1/out" "nand$4_1/B" 17.8646
+cap "not_3/out" "not_1/vdd" 15.2372
+cap "via_dev$14_7/m1_0_0#" "nand$4_1/nfet$2$4_0/a_n84_0#" 2.59731
+cap "not_1/out" "not_0/out" 0.0788597
+cap "not_1/vss" "not_1/out" 20.9757
+cap "not_3/out" "nand$4_1/nfet$2$4_0/a_n84_0#" 2.46309
+cap "via_dev$14_7/m1_0_0#" "nand$4_1/Z" 93.5794
+cap "nand$4_1/Z" "not_3/out" 90.4115
+cap "via_dev$14_7/m1_0_0#" "not_1/vss" 38.4
+cap "not_1/vss" "not_3/out" 30.0628
+cap "nand$4_1/B" "nand$4_1/nfet$2$4_0/a_n84_0#" 0.00575868
+cap "nand$4_1/Z" "not_2/out" 1.35609
+cap "nand$4_0/Z" "not_1/out" 0.534665
+cap "nand$4_1/Z" "nand$4_1/B" 8.0832
+cap "nand$4_1/Z" "not_0/out" 3.21147
+cap "not_3/out" "vspike" 0.529374
+cap "via_dev$14_7/m1_0_0#" "not_1/out" 0.277464
+cap "not_1/vss" "nand$4_1/B" 2.36752
+cap "not_1/vss" "not_0/out" 0.0653709
+cap "ota_1stage$1_0/vout" "not_2/out" 0.350163
+cap "nor$2_0/Z" "not_2/out" 0.908516
+cap "ota_1stage$1_0/vout" "nand$4_1/Z" 2.02966
+cap "not_3/out" "switch$1_1/pfet$15_1/a_35_n136#" 0.428503
+cap "ota_1stage$1_0/vout" "not_3/out" 3.67481
+cap "not_2/out" "m3_n1410_3780#" 0.0412247
+cap "not_2/out" "not_1/vss" 9.36439
+cap "nor$2_0/Z" "not_3/out" 0.393841
+cap "ota_1stage$1_0/vout" "via_dev$14_7/m1_0_0#" 0.0963477
+cap "not_1/vss" "nand$4_1/Z" 39.7265
+cap "not_1/vdd" "not_1/vss" -3.40867
+cap "switch$1_1/in" "not_3/out" 0.180084
+cap "nand$4_1/nfet$2$4_0/a_n84_0#" "not_3/out" 1.0001
+cap "not_2/out" "not_3/out" 2.37706
+cap "not_1/out" "not_2/out" 23.8297
+cap "not_1/out" "not_1/vss" 64.9483
+cap "not_1/vss" "not_3/out" 191.645
+cap "nand$4_1/Z" "m2_2886_n700#" 2.19911
+cap "via_dev$14_7/m1_0_0#" "ota_1stage$1_0/vdd" 1.70565
+cap "via_dev$14_7/m1_0_0#" "ota_1stage$1_0/pfet$1$9_1/a_28_228#" 1.34016
+cap "not_3/out" "m2_2886_n700#" 2.12452
+cap "switch$1_0/out" "not_1/vss" -0.594479
+cap "via_dev$14_7/m1_0_0#" "m3_n1410_3780#" 0.0287689
+cap "via_dev$14_7/m1_0_0#" "not_2/out" 2.19199
+cap "via_dev$14_7/m1_0_0#" "not_1/vss" 162.022
+cap "not_1/vdd" "nand$4_1/Z" 11.2155
+cap "nand$4_1/nfet$2$4_0/a_n84_0#" "nand$4_1/B" 0.435357
+cap "nand$4_1/B" "not_1/vss" 20.8541
+cap "nand$4_1/B" "not_2/out" 8.75914
+cap "not_1/out" "nand$4_1/Z" 8.89072
+cap "not_3/out" "nand$4_1/Z" 34.9364
+cap "not_1/vdd" "not_3/out" 21.752
+cap "not_1/out" "not_3/out" 36.6443
+cap "switch$1_0/out" "nand$4_1/Z" 0.676471
+cap "via_dev$14_7/m1_0_0#" "nand$4_1/Z" 76.8832
+cap "switch$1_0/out" "not_3/out" 0.962977
+cap "via_dev$14_7/m1_0_0#" "not_1/vdd" 0.912172
+cap "nand$4_1/B" "nand$4_1/Z" 7.53243
+cap "not_1/out" "via_dev$14_7/m1_0_0#" 1.88203
+cap "via_dev$14_7/m1_0_0#" "not_3/out" 86.4431
+cap "nand$4_1/B" "not_3/out" 18.3659
+cap "via_dev$14_7/m1_0_0#" "ota_1stage$1_0/pfet$1$9_1/w_n352_n286#" 2.13671
+cap "switch$1_0/out" "via_dev$14_7/m1_0_0#" 0.000600644
+cap "not_1/out" "nand$4_1/B" 38.0115
+cap "nand$4_1/B" "via_dev$14_7/m1_0_0#" 4.41072
+cap "vdiv_0/vres" "not_2/out" 1.7027
+cap "not$1_0/out" "nor$2_0/Z" 1.85084
+cap "not_3/vss" "not_3/vdd" -7.10543e-15
+cap "nor$2_0/Z" "m3_n1410_3780#" 10.0105
+cap "not$1_0/out" "nor$2_0/m1_n7_n472#" 0.0517395
+cap "nor$2_0/Z" "switch$1_2/pfet$15_1/a_35_n136#" 0.898344
+cap "not_3/vss" "vdiv_0/vspike_down" 3.62842
+cap "vdiv_0/ppolyf_u_resistor_4/a_n132_0#" "nor$2_0/Z" 0.428234
+cap "nor$2_0/m1_n7_n472#" "m3_n1410_3780#" 1.28348
+cap "not_3/out" "not_3/vss" 0.802545
+cap "ota_1stage$1_0/vout" "not_3/vss" 51.4348
+cap "not$1_0/out" "vdiv_0/vres" 0.451353
+cap "switch$1_1/in" "not_3/vss" 0.40745
+cap "not_3/out" "ota_1stage$1_0/vout" 1.88212
+cap "not_3/out" "vdiv_0/vspike_down" 0.804637
+cap "vdiv_0/vres" "m3_n1410_3780#" -7.10543e-15
+cap "nor$2_0/Z" "not_3/vdd" -2.91526
+cap "switch$1_1/in" "vdiv_0/vspike_down" 6.93889e-18
+cap "nor$2_0/Z" "not_3/vss" 13.0775
+cap "nor$2_0/Z" "vdiv_0/vspike_down" 0.0759008
+cap "not_3/out" "ota_1stage$1_0/vout" 4.28132
+cap "not_3/out" "nor$2_0/Z" 0.720292
+cap "nor$2_0/m1_n7_n472#" "not_3/vss" 29.0522
+cap "nor$2_0/Z" "ota_1stage$1_0/vout" 54.5665
+cap "nor$2_0/m1_n7_n472#" "vdiv_0/vspike_down" 0.0759008
+cap "not_3/vss" "not_2/out" 11.0511
+cap "not_3/out" "nor$2_0/Z" 0.177272
+cap "not_2/out" "vdiv_0/vspike_down" 0.0759008
+cap "not$1_0/out" "m3_n1410_3780#" 5.31542
+cap "vdiv_0/vres" "not_3/vdd" -0.388455
+cap "switch$1_1/in" "nor$2_0/Z" 0.590596
+cap "not_3/out" "not_2/out" 1.23356
+cap "vdiv_0/vres" "not_3/vss" 31.1966
+cap "nor$2_0/m1_n7_n472#" "ota_1stage$1_0/vout" -5.24937
+cap "ota_1stage$1_0/vout" "not_2/out" 4.49246
+cap "switch$1_1/in" "nor$2_0/m1_n7_n472#" -0.0386751
+cap "nor$2_0/m1_n7_n472#" "nor$2_0/Z" 39.7514
+cap "vdiv_0/vres" "ota_1stage$1_0/vout" 0.799927
+cap "nor$2_0/Z" "not_2/out" 1.07871
+cap "cap_mim$1_1/m4_0_0#" "vdiv_0/vspike_down" 2.29776
+cap "nor$2_0/m1_n7_n472#" "not_2/out" 13.7486
+cap "not$1_0/out" "not_3/vss" 2.54173
+cap "vdiv_0/vres" "nor$2_0/Z" 31.7115
+cap "m3_n1410_3780#" "not_3/vss" 44.0025
+cap "nor$2_0/Z" "nor$2_0/pfet$1$8_0/a_94_0#" -2.156
+cap "cap_mim$1_1/m4_0_0#" "ota_1stage$1_0/vout" 1.3004
+cap "vdiv_0/vres" "nor$2_0/m1_n7_n472#" -9.44569
+cap "vdiv_0/ppolyf_u_resistor_11/a_n132_0#" "vdiv_0/vspike_down" 43.8783
+cap "nor$2_0/Z" "vdiv_0/vref" 2.06561
+cap "vdiv_0/vref" "nor$2_0/vss" 37.2367
+cap "vdiv_0/ppolyf_u_resistor_4/a_n132_0#" "vdiv_0/vref" 3.47373
+cap "vdiv_0/vres" "vdiv_0/vspike_down" 88.1266
+cap "not$1_0/out" "switch$1_2/in" 0.0840627
+cap "vdiv_0/ppolyf_u_resistor_14/a_n132_0#" "vdiv_0/vspike_down" 0.290453
+cap "nor$2_0/vss" "vdiv_0/vspike_down" 55.4233
+cap "vdiv_0/vres" "vdiv_0/ppolyf_u_resistor_7/a_160_0#" 18.2627
+cap "not$1_0/out" "m3_n1410_3780#" 0.905934
+cap "not$1_0/out" "nor$2_0/A" 0.0562892
+cap "vdiv_0/vref" "vdiv_0/vspike_down" 11.5582
+cap "vdiv_0/vref" "vdiv_0/ppolyf_u_resistor_7/a_160_0#" 2.31254
+cap "vdiv_0/ppolyf_u_resistor_5/a_n132_0#" "vdiv_0/vref" 0.944193
+cap "vdiv_0/ppolyf_u_resistor_10/a_n132_0#" "vdiv_0/vref" 0.939802
+cap "not$1_0/out" "vdiv_0/vres" 4.87524
+cap "not$1_0/out" "nor$2_0/Z" 0.374549
+cap "not$1_0/out" "nor$2_0/vss" 21.7846
+cap "vdiv_0/ppolyf_u_resistor_7/a_160_0#" "vdiv_0/vspike_down" -0.238822
+cap "not$1_0/out" "vdiv_0/ppolyf_u_resistor_4/a_n132_0#" 0.165282
+cap "vdiv_0/vss" "vdiv_0/vres" 0.105364
+cap "not$1_0/out" "vdiv_0/vref" 6.38633
+cap "vdiv_0/ppolyf_u_resistor_11/a_n132_0#" "m3_n1410_3780#" 0.0552912
+cap "not$1_0/out" "nor$2_0/m1_n7_n472#" 0.139105
+cap "m3_n1410_3780#" "vdiv_0/vres" 0.11331
+cap "nor$2_0/vss" "switch$1_2/in" 0.740556
+cap "m3_n1410_3780#" "nor$2_0/vss" 2.34716
+cap "vdiv_0/ppolyf_u_resistor_11/a_n132_0#" "vdiv_0/vres" 1.17594
+cap "vdiv_0/ppolyf_u_resistor_4/a_n132_0#" "m3_n1410_3780#" 0.0552912
+cap "vdiv_0/vres" "vdiv_0/ppolyf_u_resistor_3/a_160_0#" 1.05884
+cap "vdiv_0/ppolyf_u_resistor_4/a_n132_0#" "vdiv_0/vres" 3.0813
+cap "vdiv_0/ppolyf_u_resistor_11/a_n132_0#" "vdiv_0/vref" 2.21767
+cap "nor$2_0/Z" "vdiv_0/vres" 0.2911
+cap "nor$2_0/vss" "vdiv_0/vres" 60.6981
+cap "nor$2_0/vdd" "vdiv_0/vres" 2.97247
+cap "m3_n1410_3780#" "vdiv_0/vspike_down" 0.178568
+cap "vdiv_0/vref" "vdiv_0/vres" 4.78384
+cap "nor$2_0/Z" "nor$2_0/vss" 0.407394
+cap "nor$2_0/Z" "vdiv_0/ppolyf_u_resistor_4/a_n132_0#" 0.0598151
+cap "vdiv_0/ppolyf_u_resistor_4/a_n132_0#" "nor$2_0/vss" 0.242691
+cap "vdiv_0/vres" "not$1_0/nfet$11_0/a_216_0#" 7.38373
+cap "vdiv_0/vres" "not$1_0/vss" 0.44368
+cap "vdiv_0/vres" "vdiv_0/vspike_down" 21.7316
+cap "vdiv_0/vres" "not$1_0/in" 0.0688267
+cap "vdiv_0/vspike_down" "vdiv_0/ppolyf_u_resistor_7/a_160_0#" -2.38063
+cap "vdiv_0/vres" "vdiv_0/ppolyf_u_resistor_7/a_160_0#" 41.9622
+cap "nand$4_0/vss" "nand$4_0/B" 0.0532468
+cap "nand$4_0/nfet$2$4_0/a_n84_0#" "nand$4_0/B" -0.349689
+cap "not_0/out" "nand$4_0/B" 0.255863
+cap "nand$4_0/vdd" "nand$4_0/Z" -21.3252
+cap "nand$4_0/A" "nand$4_0/B" 26.8534
+cap "nand$4_0/Z" "nand$4_0/vss" -0.381006
+cap "nand$4_0/vdd" "nand$4_0/vss" -3.55271e-15
+cap "not_0/out" "nand$4_0/Z" 0.118563
+cap "nand$4_0/nfet$2$4_0/a_n84_0#" "nand$4_0/Z" -2.07477
+cap "nand$4_0/A" "nand$4_0/Z" 16.264
+cap "nand$4_0/A" "nand$4_0/vdd" 46.7346
+cap "nand$4_0/Z" "nand$4_0/B" 156.935
+cap "nand$4_0/A" "nand$4_0/vss" 0.0626269
+cap "nand$4_0/vdd" "nand$4_0/B" 169.654
+cap "nand$4_0/A" "not_0/out" 8.61193
+cap "vspike" "nand$4_0/Z" 0.0488609
+cap "vspike_up" "not_0/out" -0.266599
+cap "nand$4_0/B" "vspike" 5.42093
+cap "nand$4_0/vss" "vspike" 3.85801
+cap "vspike" "nand$4_0/vdd" 73.0972
+cap "not_0/out" "nand$4_0/A" 10.3816
+cap "vspike" "reward" 90.4123
+cap "vspike" "conmutator$1_0/nfet$12_0/a_30_260#" 69.0496
+cap "vspike_up" "nand$4_0/Z" 0.801638
+cap "nand$4_0/B" "vspike_up" 3.45659
+cap "nand$4_0/vss" "vspike_up" 13.1578
+cap "nand$4_0/vdd" "vspike_up" 44.3012
+cap "not_0/out" "nand$4_0/Z" 17.0625
+cap "reward" "vspike_up" 128.113
+cap "vspike_up" "not_1/out" 1.38778e-17
+cap "nand$4_0/B" "not_0/out" 85.0854
+cap "vspike_up" "conmutator$1_0/nfet$12_0/a_30_260#" 166.008
+cap "nand$4_0/B" "nand$4_0/A" 0.65499
+cap "nand$4_0/B" "via_dev$14_6/m1_0_0#" 4.48847
+cap "nand$4_0/vss" "not_0/out" 1.13406
+cap "reward" "not_0/out" 1.08696
+cap "nand$4_0/vdd" "not_0/out" 35.2617
+cap "not_0/out" "not_1/out" 1.30968
+cap "nand$4_0/vdd" "nand$4_0/A" 0.0139189
+cap "not_0/out" "conmutator$1_0/nfet$12_0/a_30_260#" 0.428647
+cap "not_0/out" "nand$4_1/B" 0.540091
+cap "nand$4_0/B" "nand$4_0/Z" 68.1989
+cap "nand$4_0/vdd" "nand$4_0/Z" 8.4706
+cap "reward" "nand$4_0/Z" 0.0931845
+cap "reward" "switch$1_0/pfet$15_1/a_35_n136#" 1.33592
+cap "nand$4_0/Z" "not_1/out" 2.36689
+cap "nand$4_0/B" "nand$4_0/vss" 18.0351
+cap "conmutator$1_0/nfet$12_0/a_30_260#" "nand$4_0/Z" 0.0931845
+cap "nand$4_0/B" "reward" 122.902
+cap "nand$4_0/B" "nand$4_0/vdd" 375.529
+cap "nand$4_0/vss" "nand$4_0/vdd" -2.19128
+cap "nand$4_0/vss" "reward" 0.249913
+cap "reward" "nand$4_0/vdd" 101.834
+cap "nand$4_0/B" "not_1/out" -1.43645
+cap "vspike" "vspike_up" 59.4729
+cap "nand$4_0/vss" "conmutator$1_0/nfet$12_0/a_30_260#" 0.0411343
+cap "nand$4_0/B" "conmutator$1_0/nfet$12_0/a_30_260#" 0.871049
+cap "nand$4_0/vdd" "not_1/out" 0.768675
+cap "reward" "not_1/out" 33.8063
+cap "reward" "conmutator$1_0/nfet$12_0/a_30_260#" -0.254996
+cap "nand$4_0/vdd" "conmutator$1_0/nfet$12_0/a_30_260#" 22.1635
+cap "via_dev$14_6/m1_0_0#" "vspike" 0.00419749
+cap "conmutator$1_0/nfet$12_0/a_30_260#" "not_1/out" 0.51854
+cap "vspike" "not_0/out" 10.7652
+cap "vspike" "not_1/out" 81.4409
+cap "vspike" "nand$4_1/nfet$2$4_0/a_n84_0#" 1.19875
+cap "not_1/vss" "vspike_up" 11.843
+cap "not_1/out" "via_dev$14_7/m1_0_0#" 0.228627
+cap "nand$4_1/Z" "via_dev$14_7/m1_0_0#" 0.532821
+cap "vspike" "vspike_up" 17.9147
+cap "not_1/vss" "not_1/out" 0.197258
+cap "nand$4_1/Z" "not_1/vss" -0.381006
+cap "not_1/out" "vspike_up" 67.0014
+cap "vspike" "not_1/out" 0.223348
+cap "switch$1_0/pfet$15_1/a_35_n136#" "switch$1_1/in" 0.333745
+cap "not_1/out" "not_1/out" 37.0347
+cap "not_2/out" "not_1/out" 1.63501
+cap "nand$4_1/Z" "vspike" 4.89178
+cap "vspike" "conmutator$1_0/nfet$12_0/a_30_260#" 3.2159
+cap "nand$4_1/B" "not_3/out" 0.561623
+cap "nand$4_1/Z" "not_1/out" 75.6834
+cap "nand$4_1/Z" "nand$4_1/nfet$2$4_0/a_n84_0#" -2.07477
+cap "not_1/out" "vspike_up" 0.0201903
+cap "nand$4_1/Z" "not_1/out" 0.282574
+cap "nand$4_1/Z" "not_2/out" 0.0904888
+cap "switch$1_0/pfet$15_1/a_35_n136#" "switch$1_1/pfet$15_1/a_35_n136#" 4.48863
+cap "reward" "switch$1_0/pfet$15_1/a_35_n136#" 1.36883
+cap "nand$4_1/B" "not_1/vdd" 283.957
+cap "vspike" "not_3/out" 0.274895
+cap "nand$4_1/B" "switch$1_0/in" 3.86081
+cap "not_1/out" "not_3/out" 10.8839
+cap "nand$4_1/B" "switch$1_0/pfet$15_1/a_35_n136#" 29.7585
+cap "switch$1_0/pfet$15_1/a_35_n136#" "not_1/vdd" 28.6433
+cap "nand$4_0/Z" "not_1/out" 2.23301
+cap "nand$4_1/B" "via_dev$14_7/m1_0_0#" -4.36626
+cap "not_1/vss" "not_1/vdd" -1.64924
+cap "reward" "vspike" 7.25638
+cap "not_1/vss" "nand$4_1/B" 0.808298
+cap "not_1/out" "switch$1_1/pfet$15_1/a_35_n136#" 1.33592
+cap "reward" "not_1/out" 30.7717
+cap "nand$4_1/Z" "not_3/out" 6.17743
+cap "vspike" "not_1/vdd" 141.619
+cap "not_1/vss" "switch$1_0/pfet$15_1/a_35_n136#" 0.0777161
+cap "vspike" "nand$4_1/B" 2.023
+cap "nand$4_1/B" "not_1/out" 66.2469
+cap "not_1/out" "not_1/vdd" 425.083
+cap "nand$4_1/B" "nand$4_1/nfet$2$4_0/a_n84_0#" -0.349689
+cap "vspike" "switch$1_0/in" 9.578
+cap "not_1/out" "switch$1_0/in" 2.4616
+cap "vspike" "switch$1_0/pfet$15_1/a_35_n136#" 76.9413
+cap "switch$1_0/pfet$15_1/a_35_n136#" "not_1/out" 28.058
+cap "not_1/vdd" "vspike_up" 21.4602
+cap "nand$4_1/B" "vspike_up" -0.883487
+cap "not_1/out" "not_0/out" 0.322909
+cap "switch$1_0/in" "vspike_up" 12.3824
+cap "not_1/out" "via_dev$14_7/m1_0_0#" 1.53111
+cap "not_1/out" "not_1/vdd" 12.5455
+cap "not_1/vss" "vspike" 3.97767
+cap "nand$4_1/B" "not_1/out" 5.58372
+cap "not_1/vss" "not_1/out" 0.653444
+cap "switch$1_0/pfet$15_1/a_35_n136#" "vspike_up" 57.9786
+cap "nand$4_1/Z" "nand$4_1/B" 210.525
+cap "nand$4_1/Z" "not_1/vdd" -12.8287
+cap "not_1/out" "m3_n1410_3780#" -0.0968701
+cap "switch$1_1/in" "m3_n1410_3780#" 19.2165
+cap "not_2/out" "via_dev$14_7/m1_0_0#" 0.0755995
+cap "not_2/out" "switch$1_2/pfet$15_1/a_35_n136#" 9.91266
+cap "not_1/vss" "not_2/out" -0.139758
+cap "switch$1_0/out" "switch$1_0/pfet$15_1/a_35_n136#" 5.60517
+cap "not_2/out" "m3_n1410_3780#" 68.14
+cap "switch$1_1/pfet$15_1/a_35_n136#" "switch$1_0/pfet$15_1/a_35_n136#" 4.16925
+cap "switch$1_2/in" "not_3/out" 1.74413
+cap "nand$4_1/Z" "switch$1_0/out" 0.111889
+cap "nand$4_1/Z" "not_3/out" 7.95696
+cap "nand$4_1/B" "nand$4_1/Z" 7.87651
+cap "not_2/out" "switch$1_0/pfet$15_1/a_35_n136#" 0.0520873
+cap "not_1/vss" "m3_n1410_3780#" 4.84734
+cap "switch$1_2/in" "not_2/out" 1.96579
+cap "switch$1_0/out" "not_1/vdd" 139.575
+cap "switch$1_0/out" "not_3/out" 7.87507
+cap "switch$1_1/pfet$15_1/a_35_n136#" "switch$1_0/out" 71.7338
+cap "nand$4_1/B" "switch$1_0/out" 17.1339
+cap "not_1/vdd" "not_3/out" 37.323
+cap "switch$1_1/pfet$15_1/a_35_n136#" "not_1/vdd" 26.5389
+cap "nand$4_1/B" "not_3/out" 71.2811
+cap "switch$1_1/pfet$15_1/a_35_n136#" "not_3/out" 0.174574
+cap "nand$4_1/B" "not_1/vdd" 312.704
+cap "switch$1_1/in" "switch$1_0/out" 9.578
+cap "switch$1_0/out" "not_1/out" 6.97684
+cap "nand$4_1/B" "switch$1_1/pfet$15_1/a_35_n136#" 23.7447
+cap "switch$1_1/in" "not_1/vdd" 0.936089
+cap "not_1/out" "not_1/vdd" 22.1591
+cap "not_1/out" "not_3/out" 65.3917
+cap "switch$1_1/in" "switch$1_1/pfet$15_1/a_35_n136#" 0.0443314
+cap "switch$1_1/pfet$15_1/a_35_n136#" "not_1/out" 1.95178
+cap "switch$1_0/out" "not_2/out" 21.4735
+cap "nand$4_1/B" "not_1/out" 73.8524
+cap "switch$1_1/in" "nand$4_1/B" 1.35247
+cap "not_2/out" "not_1/vdd" 327.413
+cap "not_2/out" "not_3/out" 3.91047
+cap "switch$1_1/pfet$15_1/a_35_n136#" "not_2/out" 41.0686
+cap "nand$4_1/B" "not_2/out" 38.3734
+cap "not_2/out" "nor$2_0/Z" -0.468642
+cap "not$1_0/out" "not_2/out" 0.0174987
+cap "switch$1_1/in" "not_2/out" 1.39362
+cap "not_2/out" "not_1/out" 25.2857
+cap "switch$1_0/out" "via_dev$14_7/m1_0_0#" 0.00524686
+cap "nor$2_0/pfet$1$8_0/a_94_0#" "not_2/out" 3.3835
+cap "not_1/vss" "switch$1_0/out" 7.14603
+cap "switch$1_0/out" "m3_n1410_3780#" 19.7361
+cap "not_3/out" "via_dev$14_7/m1_0_0#" 0.161948
+cap "not_1/vss" "not_1/vdd" 0.0845762
+cap "nand$4_1/B" "via_dev$14_7/m1_0_0#" 0.0164332
+cap "not_1/vss" "not_3/out" 0.995852
+cap "not_1/vss" "switch$1_1/pfet$15_1/a_35_n136#" 0.0411343
+cap "not_1/vdd" "m3_n1410_3780#" 21.1239
+cap "nand$4_1/B" "not_1/vss" -0.564649
+cap "not_3/out" "m3_n1410_3780#" 0.0896204
+cap "switch$1_1/pfet$15_1/a_35_n136#" "m3_n1410_3780#" 55.7209
+cap "nand$4_1/B" "m3_n1410_3780#" -0.612491
+cap "switch$1_1/out" "not_2/out" 19.2906
+cap "not_3/vss" "not_2/out" -0.289606
+cap "not_3/out" "not_3/vdd" 1.01815
+cap "m3_n1410_3780#" "switch$1_2/in" 23.0186
+cap "switch$1_2/pfet$15_1/a_35_n136#" "m3_n1410_3780#" 66.2976
+cap "vdiv_0/vres" "not_2/out" 0.00350652
+cap "not_2/out" "switch$1_1/in" -0.0447166
+cap "switch$1_2/pfet$15_1/a_35_n136#" "switch$1_2/in" 55.6249
+cap "switch$1_1/out" "nor$2_0/m1_n7_n472#" 0.193812
+cap "switch$1_2/pfet$15_1/a_35_n136#" "vdiv_0/vss" 1.00518
+cap "nor$2_0/m1_n7_n472#" "not_3/vss" 0.0379456
+cap "switch$1_1/pfet$15_1/a_35_n136#" "switch$1_2/in" 0.633545
+cap "nor$2_0/Z" "not_2/out" -8.19813
+cap "not_3/out" "switch$1_2/in" 3.02241
+cap "vdiv_0/vres" "nor$2_0/m1_n7_n472#" 0.00876631
+cap "nor$2_0/m1_n7_n472#" "switch$1_1/in" -0.204578
+cap "vdiv_0/ppolyf_u_resistor_4/a_n132_0#" "nor$2_0/Z" 1.02588
+cap "not_2/out" "not_3/vdd" 68.6639
+cap "nor$2_0/m1_n7_n472#" "nor$2_0/pfet$1$8_0/a_94_0#" 5.10192
+cap "nor$2_0/Z" "vdiv_0/vspike_down" 0.00221044
+cap "nor$2_0/m1_n7_n472#" "nor$2_0/Z" 25.9546
+cap "switch$1_1/out" "not_3/vss" 2.78565
+cap "m3_n1410_3780#" "not_2/out" 1.73229
+cap "not_2/out" "switch$1_2/in" 12.7573
+cap "switch$1_2/pfet$15_1/a_35_n136#" "not_2/out" 14.9507
+cap "nor$2_0/m1_n7_n472#" "not_3/vdd" 27.6319
+cap "switch$1_1/out" "switch$1_1/in" 0.44141
+cap "nor$2_0/m1_n7_n472#" "m3_n1410_3780#" 5.15248
+cap "not_3/out" "not_2/out" 1.98797
+cap "vdiv_0/ppolyf_u_resistor_2/a_160_0#" "nor$2_0/Z" 0.0224432
+cap "nor$2_0/Z" "not_3/vss" 14.5489
+cap "switch$1_1/out" "nor$2_0/Z" -0.12106
+cap "vdiv_0/ppolyf_u_resistor_3/a_160_0#" "nor$2_0/Z" 0.0322762
+cap "nor$2_0/m1_n7_n472#" "switch$1_2/in" 12.1483
+cap "switch$1_2/pfet$15_1/a_35_n136#" "nor$2_0/m1_n7_n472#" 7.40267
+cap "not_3/vss" "not_3/vdd" 8.19498
+cap "switch$1_1/out" "not_3/vdd" 55.232
+cap "vdiv_0/vres" "nor$2_0/Z" 0.615992
+cap "nor$2_0/Z" "switch$1_1/in" 1.54878
+cap "nor$2_0/Z" "nor$2_0/pfet$1$8_0/a_94_0#" 1.57796
+cap "not_3/vdd" "switch$1_1/in" 3.55264
+cap "switch$1_1/out" "m3_n1410_3780#" 31.4829
+cap "not_3/vss" "m3_n1410_3780#" 3.74225
+cap "not_3/vdd" "nor$2_0/pfet$1$8_0/a_94_0#" 1.11412
+cap "not_3/vss" "switch$1_2/in" 0.0596638
+cap "switch$1_1/out" "switch$1_2/in" 40.7034
+cap "switch$1_2/pfet$15_1/a_35_n136#" "switch$1_1/out" -10.3901
+cap "switch$1_2/pfet$15_1/a_35_n136#" "not_3/vss" 0.100806
+cap "nor$2_0/Z" "not_3/vdd" 279.586
+cap "switch$1_1/out" "switch$1_1/pfet$15_1/a_35_n136#" 3.2159
+cap "not_3/out" "switch$1_2/in" 2.07237
+cap "vdiv_0/vspike_down" "not_2/out" 0.00221044
+cap "not$1_0/out" "nor$2_0/Z" 5.49452
+cap "m3_n1410_3780#" "nor$2_0/pfet$1$8_0/a_94_0#" 1.29188
+cap "switch$1_1/in" "switch$1_2/in" 0.301674
+cap "nor$2_0/m1_n7_n472#" "not_2/out" 48.2923
+cap "switch$1_2/pfet$15_1/a_35_n136#" "switch$1_1/in" 0.513348
+cap "nor$2_0/Z" "m3_n1410_3780#" 79.0808
+cap "switch$1_2/pfet$15_1/a_35_n136#" "nor$2_0/pfet$1$8_0/a_94_0#" 1.13859
+cap "nor$2_0/pfet$1$8_0/a_94_0#" "switch$1_2/in" 12.3674
+cap "nor$2_0/Z" "vdiv_0/vss" 0.7943
+cap "switch$1_2/pfet$15_1/a_35_n136#" "nor$2_0/Z" 136.687
+cap "nor$2_0/Z" "switch$1_2/in" 24.6303
+cap "m3_n1410_3780#" "not_3/vdd" 157.308
+cap "nor$2_0/m1_n7_n472#" "vdiv_0/vspike_down" 0.00552611
+cap "not$1_0/out" "m3_n1410_3780#" 9.07572
+cap "not_3/out" "nor$2_0/Z" 0.133608
+cap "vdiv_0/vss" "not_3/vdd" 3.63667
+cap "not_3/vdd" "switch$1_2/in" 122.604
+cap "switch$1_2/pfet$15_1/a_35_n136#" "not_3/vdd" 0.758044
+cap "vdiv_0/ppolyf_u_resistor_5/a_n132_0#" "not$1_0/out" 0.00729907
+cap "nor$2_0/Z" "m3_2022_4065#" 4.89057
+cap "nor$2_0/vss" "nor$2_0/Z" 0.501303
+cap "m3_2022_4065#" "not$1_0/out" 11.8905
+cap "nor$2_0/Z" "vdiv_0/ppolyf_u_resistor_4/a_n132_0#" 0.42818
+cap "nor$2_0/Z" "vdiv_0/vss" 0.147704
+cap "nor$2_0/vss" "not$1_0/out" 35.813
+cap "vdiv_0/ppolyf_u_resistor_4/a_n132_0#" "not$1_0/out" 0.578231
+cap "nor$2_0/A" "not$1_0/out" 0.166053
+cap "m3_2022_4065#" "nor$2_0/vdd" 17.7094
+cap "nor$2_0/vss" "nor$2_0/vdd" 31.3277
+cap "vdiv_0/ppolyf_u_resistor_4/a_n132_0#" "nor$2_0/vdd" 1.99146
+cap "nor$2_0/vdd" "vdiv_0/vss" 6.54578
+cap "vdiv_0/ppolyf_u_resistor_3/a_160_0#" "not$1_0/out" 0.218637
+cap "vdiv_0/ppolyf_u_resistor_2/a_160_0#" "m3_2022_4065#" 3.11279
+cap "m3_2022_4065#" "switch$1_2/in" 0.0184981
+cap "nor$2_0/pfet$1$8_0/a_94_0#" "not$1_0/out" 0.460869
+cap "nor$2_0/vss" "m3_n1410_3780#" 0.663768
+cap "nor$2_0/m1_n7_n472#" "not$1_0/out" 0.262459
+cap "nor$2_0/Z" "not$1_0/out" 3.83097
+cap "vdiv_0/ppolyf_u_resistor_4/a_n132_0#" "m3_n1410_3780#" 0.0414684
+cap "vdiv_0/vss" "m3_n1410_3780#" 0.536882
+cap "vdiv_0/vres" "not$1_0/out" 1.52235
+cap "nor$2_0/vdd" "not$1_0/out" 4.28179
+cap "m3_2022_4065#" "switch$1_2/out" 0.0916835
+cap "m3_2022_4065#" "vdiv_0/ppolyf_u_resistor_5/a_n132_0#" 1.17251
+cap "vdiv_0/ppolyf_u_resistor_2/a_160_0#" "not$1_0/out" 0.149984
+cap "switch$1_2/pfet$15_1/a_35_n136#" "m3_2022_4065#" 0.0229983
+cap "switch$1_2/in" "not$1_0/out" 0.247985
+cap "nor$2_0/vss" "m3_2022_4065#" 20.418
+cap "vdiv_0/ppolyf_u_resistor_4/a_n132_0#" "m3_2022_4065#" 4.42015
+cap "m3_2022_4065#" "vdiv_0/vss" 10.666
+cap "not$1_0/out" "m3_n1410_3780#" 2.5344
+cap "switch$1_2/pfet$15_1/a_35_n136#" "vdiv_0/vss" 1.06521
+cap "m3_2022_4065#" "vdiv_0/ppolyf_u_resistor_3/a_160_0#" 4.55766
+cap "nand$4_0/vdd" "conmutator$1_0/vss" -1.59818
+cap "nand$4_0/B" "conmutator$1_0/vss" -0.255193
+cap "conmutator$1_0/vss" "nand$4_0/B" -0.987141
+cap "conmutator$1_0/vss" "not_0/out" -0.00170039
+cap "conmutator$1_0/vss" "nand$4_0/vdd" -9.24603
+cap "reward" "vspike" 0.978668
+cap "vspike_up" "reward" 2.01346
+cap "nand$4_0/vdd" "vspike" 0.328504
+cap "not_1/out" "reward" 3.46627
+cap "conmutator$1_0/nfet$12_0/a_30_260#" "conmutator$1_0/vss" 0.522644
+cap "nand$4_0/B" "vspike_up" 1.80622
+cap "vspike_up" "nand$4_0/vdd" 1.91995
+cap "conmutator$1_0/nfet$12_0/a_30_260#" "vspike" 2.9468
+cap "not_1/out" "nand$4_0/vdd" 0.168736
+cap "conmutator$1_0/nfet$12_0/a_30_260#" "vspike_up" 8.7682
+cap "conmutator$1_0/vss" "vspike" -1.67735
+cap "conmutator$1_0/vss" "vspike_up" 1.47371
+cap "vspike_up" "vspike" 6.98483
+cap "switch$1_0/in" "nand$4_0/vdd" 1.59406
+cap "reward" "nand$4_0/vdd" -1.42109e-14
+cap "conmutator$1_0/vss" "reward" 0.115497
+cap "not_1/out" "vspike" 19.6892
+cap "vspike" "conmutator$1_0/nfet$12_0/a_30_260#" 3.12451
+cap "not_2/out" "not_1/out" 1.75801
+cap "switch$1_0/in" "conmutator$1_0/nfet$12_0/a_30_260#" 0.297006
+cap "switch$1_0/pfet$15_1/a_35_n136#" "conmutator$1_0/vss" 0.522644
+cap "vspike_up" "switch$1_0/pfet$15_1/a_35_n136#" 0.119594
+cap "vspike_up" "conmutator$1_0/vss" -1.46978
+cap "reward" "vspike" 1.20278
+cap "switch$1_0/in" "not_1/vdd" 1.48091
+cap "switch$1_0/in" "reward" 0.217798
+cap "not_1/out" "conmutator$1_0/vss" 8.0357
+cap "vspike_up" "not_1/out" -0.0220771
+cap "switch$1_0/in" "vspike" 0.328504
+cap "switch$1_0/in" "not_2/out" 0.168736
+cap "conmutator$1_0/vss" "not_1/vdd" -7.82481
+cap "switch$1_0/pfet$15_1/a_35_n136#" "vspike" 2.9468
+cap "conmutator$1_0/vss" "vspike" -0.432872
+cap "switch$1_1/in" "switch$1_0/in" 1.59406
+cap "vspike_up" "vspike" 0.224239
+cap "switch$1_0/in" "switch$1_0/pfet$15_1/a_35_n136#" -5.68434e-14
+cap "nand$4_1/B" "conmutator$1_0/vss" -0.954049
+cap "reward" "not_1/out" 2.62799
+cap "vspike_up" "switch$1_0/in" 0.134976
+cap "switch$1_0/in" "conmutator$1_0/vss" 1.32134
+cap "conmutator$1_0/vss" "not_2/out" 19.6763
+cap "conmutator$1_0/vss" "switch$1_1/pfet$15_1/a_35_n136#" 0.522644
+cap "not_1/out" "switch$1_1/in" 0.596923
+cap "switch$1_0/out" "not_2/out" 1.18444
+cap "nor$2_0/Z" "not_2/out" 1.41782
+cap "switch$1_0/out" "switch$1_1/pfet$15_1/a_35_n136#" 2.9468
+cap "m3_n1410_3780#" "conmutator$1_0/vss" -1.60142
+cap "switch$1_1/in" "conmutator$1_0/vss" 21.6247
+cap "switch$1_0/out" "m3_n1410_3780#" 0.224239
+cap "switch$1_0/out" "switch$1_1/in" 2.53935
+cap "nor$2_0/Z" "switch$1_1/in" 0.168736
+cap "switch$1_0/out" "switch$1_0/pfet$15_1/a_35_n136#" 3.12451
+cap "switch$1_1/in" "not_2/out" 26.8871
+cap "m3_n1410_3780#" "switch$1_1/pfet$15_1/a_35_n136#" 0.119594
+cap "switch$1_1/in" "switch$1_1/pfet$15_1/a_35_n136#" 9.244
+cap "switch$1_1/in" "m3_n1410_3780#" 9.40383
+cap "switch$1_0/out" "not_1/out" 1.19482
+cap "conmutator$1_0/vss" "not_3/out" -0.00170039
+cap "switch$1_0/out" "conmutator$1_0/vss" -0.194722
+cap "switch$1_0/in" "switch$1_1/in" 1.70553
+cap "conmutator$1_0/vss" "not_1/vdd" -7.71538
+cap "switch$1_1/in" "switch$1_0/pfet$15_1/a_35_n136#" 0.717641
+cap "nand$4_1/B" "conmutator$1_0/vss" -0.958385
+cap "not_1/out" "not_2/out" 1.75801
+cap "switch$1_2/in" "switch$1_1/in" 1.59406
+cap "switch$1_1/out" "not_2/out" 1.61064
+cap "switch$1_0/vss" "switch$1_2/in" -0.303972
+cap "nor$2_0/Z" "not_2/out" 1.57332
+cap "switch$1_1/pfet$15_1/a_35_n136#" "switch$1_2/in" 0.297006
+cap "switch$1_1/in" "switch$1_2/in" 43.8197
+cap "switch$1_0/vss" "switch$1_1/out" 1.53042
+cap "switch$1_1/pfet$15_1/a_35_n136#" "switch$1_1/out" 3.12451
+cap "switch$1_1/in" "switch$1_1/out" 10.8501
+cap "nor$2_0/Z" "switch$1_0/vss" -3.33243
+cap "m3_n1410_3780#" "switch$1_2/in" 0.134976
+cap "nor$2_0/Z" "switch$1_1/in" 34.499
+cap "m3_n1410_3780#" "switch$1_1/out" 0.224239
+cap "switch$1_2/in" "switch$1_1/out" -7.10543e-15
+cap "nor$2_0/Z" "switch$1_2/in" -1.42109e-14
+cap "switch$1_2/pfet$15_1/a_35_n136#" "switch$1_1/in" 9.44251
+cap "switch$1_0/vss" "not_2/out" -0.183666
+cap "switch$1_2/pfet$15_1/a_35_n136#" "m3_n1410_3780#" 0.119594
+cap "switch$1_1/in" "not$1_0/out" 0.12476
+cap "switch$1_1/in" "switch$1_0/vss" 25.186
+cap "not_3/vdd" "switch$1_0/vss" -7.11093
+cap "not_3/vdd" "switch$1_1/in" 2.27716
+cap "switch$1_2/in" "not_2/out" 0.217798
+cap "m3_n1410_3780#" "switch$1_0/vss" -1.86691
+cap "nor$2_0/vdd" "m3_2022_4065#" 4.73546
+cap "switch$1_2/pfet$15_1/a_35_n136#" "m3_2022_4065#" 0.467567
+cap "switch$1_2/out" "m3_2022_4065#" 0.365265
+cap "m3_2022_4065#" "switch$1_2/in" 0.366965
+cap "switch$1_1/vss" "m3_2022_4065#" 1.1102
+cap "nor$2_0/Z" "m3_2022_4065#" 0.783851
+cap "not$1_0/out" "m3_2022_4065#" 1.4631
+merge "via_dev$24_2/VSUBS" "via_dev$22_4/VSUBS" -2360.84 0 0 0 0 0 0 -166496 -15136 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13528 -7830 0 0 0 0 0 0 0 0
+merge "via_dev$22_4/VSUBS" "via_dev$24_0/VSUBS"
+merge "via_dev$24_0/VSUBS" "switch$1_2/VSUBS"
+merge "switch$1_2/VSUBS" "via_dev$22_5/VSUBS"
+merge "via_dev$22_5/VSUBS" "switch$1_1/VSUBS"
+merge "switch$1_1/VSUBS" "via_dev$22_6/VSUBS"
+merge "via_dev$22_6/VSUBS" "switch$1_0/VSUBS"
+merge "switch$1_0/VSUBS" "via_dev$22_7/VSUBS"
+merge "via_dev$22_7/VSUBS" "conmutator$1_0/VSUBS"
+merge "conmutator$1_0/VSUBS" "via_dev$22_1/VSUBS"
+merge "via_dev$22_1/VSUBS" "not$1_0/VSUBS"
+merge "not$1_0/VSUBS" "not$1_0/vss"
+merge "not$1_0/vss" "via_dev$13_1/VSUBS"
+merge "via_dev$13_1/VSUBS" "via_dev$12_1/VSUBS"
+merge "via_dev$12_1/VSUBS" "nor$2_0/VSUBS"
+merge "nor$2_0/VSUBS" "nor$2_0/vss"
+merge "nor$2_0/vss" "not_2/VSUBS"
+merge "not_2/VSUBS" "not_2/vss"
+merge "not_2/vss" "via_dev$14_7/VSUBS"
+merge "via_dev$14_7/VSUBS" "nfet$8$1_3/a_138_0#"
+merge "nfet$8$1_3/a_138_0#" "nfet$8$1_3/a_n256_n272#"
+merge "nfet$8$1_3/a_n256_n272#" "via_dev$19$1_0/VSUBS"
+merge "via_dev$19$1_0/VSUBS" "via_dev$19$1_1/VSUBS"
+merge "via_dev$19$1_1/VSUBS" "via_dev$11_1/VSUBS"
+merge "via_dev$11_1/VSUBS" "not_3/VSUBS"
+merge "not_3/VSUBS" "not_3/vss"
+merge "not_3/vss" "nand$4_1/vss"
+merge "nand$4_1/vss" "via_dev$13_0/VSUBS"
+merge "via_dev$13_0/VSUBS" "via_dev$22_3/VSUBS"
+merge "via_dev$22_3/VSUBS" "via_dev$14_6/VSUBS"
+merge "via_dev$14_6/VSUBS" "nand$4_1/VSUBS"
+merge "nand$4_1/VSUBS" "nfet$8$1_2/a_138_0#"
+merge "nfet$8$1_2/a_138_0#" "nfet$8$1_2/a_n256_n272#"
+merge "nfet$8$1_2/a_n256_n272#" "via_dev$12_0/VSUBS"
+merge "via_dev$12_0/VSUBS" "not_0/vss"
+merge "not_0/vss" "nand$4_0/vss"
+merge "nand$4_0/vss" "not_1/VSUBS"
+merge "not_1/VSUBS" "not_1/vss"
+merge "not_1/vss" "via_dev$11_0/VSUBS"
+merge "via_dev$11_0/VSUBS" "not_0/VSUBS"
+merge "not_0/VSUBS" "nand$4_0/VSUBS"
+merge "nand$4_0/VSUBS" "via_dev$22_2/VSUBS"
+merge "via_dev$22_2/VSUBS" "cap_mim$1_1/VSUBS"
+merge "cap_mim$1_1/VSUBS" "cap_mim$1_0/VSUBS"
+merge "cap_mim$1_0/VSUBS" "via_dev$24_3/VSUBS"
+merge "via_dev$24_3/VSUBS" "via_dev$14_0/VSUBS"
+merge "via_dev$14_0/VSUBS" "via_dev$14_3/VSUBS"
+merge "via_dev$14_3/VSUBS" "via_dev$14_4/VSUBS"
+merge "via_dev$14_4/VSUBS" "via_dev$14_5/VSUBS"
+merge "via_dev$14_5/VSUBS" "nfet$8$1_0/a_n256_n272#"
+merge "nfet$8$1_0/a_n256_n272#" "nfet$8$1_1/a_n256_n272#"
+merge "nfet$8$1_1/a_n256_n272#" "via_dev$24_1/VSUBS"
+merge "via_dev$24_1/VSUBS" "vdiv_0/VSUBS"
+merge "vdiv_0/VSUBS" "via_dev$22_0/VSUBS"
+merge "via_dev$22_0/VSUBS" "via_dev$14_1/VSUBS"
+merge "via_dev$14_1/VSUBS" "via_dev$14_2/VSUBS"
+merge "via_dev$14_2/VSUBS" "nfet$16_0/a_30_n132#"
+merge "nfet$16_0/a_30_n132#" "nfet$16_0/a_n84_0#"
+merge "nfet$16_0/a_n84_0#" "nfet$16_0/a_n256_n272#"
+merge "nfet$16_0/a_n256_n272#" "nfet$15_0/a_n256_n272#"
+merge "nfet$15_0/a_n256_n272#" "ota_1stage$1_0/vss"
+merge "ota_1stage$1_0/vss" "a_n471_1626#"
+merge "via_dev$11_1/m2_0_0#" "nand$4_1/Z" -635.827 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 -6400 -512
+merge "nand$4_1/Z" "cap_mim$1_1/m4_0_0#"
+merge "cap_mim$1_1/m4_0_0#" "m5_948_1929#"
+merge "switch$1_0/cntrl" "via_dev$13_0/m2_0_0#" -2939.94 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12816 -640 -33216 -2604 -3552 -618 -480 -652 0 0
+merge "via_dev$13_0/m2_0_0#" "not_0/in"
+merge "not_0/in" "not_0/out"
+merge "not_0/out" "nfet$8$1_2/a_n84_0#"
+merge "nfet$8$1_2/a_n84_0#" "via_dev$12_0/m1_0_0#"
+merge "via_dev$12_0/m1_0_0#" "cap_mim$1_0/m4_n120_n120#"
+merge "cap_mim$1_0/m4_n120_n120#" "m4_n522_1747#"
+merge "m4_n522_1747#" "m4_n865_2049#"
+merge "m4_n865_2049#" "via_dev$22_3/m2_0_0#"
+merge "via_dev$22_3/m2_0_0#" "nor$2_0/m1_n7_n472#"
+merge "nor$2_0/m1_n7_n472#" "via_dev$19$1_0/m1_0_0#"
+merge "via_dev$19$1_0/m1_0_0#" "m2_1276_2485#"
+merge "m2_1276_2485#" "via_dev$19$1_1/m1_0_0#"
+merge "via_dev$19$1_1/m1_0_0#" "m3_927_2477#"
+merge "m3_927_2477#" "nand$4_1/A"
+merge "nand$4_1/A" "phi_1"
+merge "phi_1" "via_dev$24_3/m1_0_0#"
+merge "via_dev$24_3/m1_0_0#" "m3_n113_n1392#"
+merge "m3_n113_n1392#" "nfet$15_0/a_238_0#"
+merge "nfet$15_0/a_238_0#" "not_1/in"
+merge "not_1/in" "not_1/out"
+merge "not_1/out" "nand$4_0/B"
+merge "nand$4_0/B" "vneg"
+merge "via_dev$22_4/m2_0_0#" "switch$1_2/out" -963.872 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25600 -1280 -12800 -960 0 0 0 0
+merge "switch$1_2/out" "via_dev$22_5/m2_0_0#"
+merge "via_dev$22_5/m2_0_0#" "switch$1_1/out"
+merge "switch$1_1/out" "via_dev$22_6/m2_0_0#"
+merge "via_dev$22_6/m2_0_0#" "switch$1_0/out"
+merge "switch$1_0/out" "conmutator$1_0/out"
+merge "conmutator$1_0/out" "via_dev$22_7/m2_0_0#"
+merge "via_dev$22_7/m2_0_0#" "vspike"
+merge "switch$1_2/pfet$15_0/w_n230_n138#" "conmutator$1_0/pfet$14_1/w_n230_n138#" -4115.24 0 -32432 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13384 0 0 0 0 0 0 0 0
+merge "conmutator$1_0/pfet$14_1/w_n230_n138#" "switch$1_1/pfet$15_0/w_n230_n138#"
+merge "switch$1_1/pfet$15_0/w_n230_n138#" "switch$1_0/pfet$15_0/w_n230_n138#"
+merge "switch$1_0/pfet$15_0/w_n230_n138#" "not$1_0/vdd"
+merge "not$1_0/vdd" "switch$1_2/vdd"
+merge "switch$1_2/vdd" "nor$2_0/vdd"
+merge "nor$2_0/vdd" "conmutator$1_0/pfet$14_2/w_n230_n138#"
+merge "conmutator$1_0/pfet$14_2/w_n230_n138#" "switch$1_2/pfet$15_1/w_n230_n138#"
+merge "switch$1_2/pfet$15_1/w_n230_n138#" "not_2/vdd"
+merge "not_2/vdd" "not_3/vdd"
+merge "not_3/vdd" "switch$1_1/vdd"
+merge "switch$1_1/vdd" "switch$1_1/pfet$15_1/w_n230_n138#"
+merge "switch$1_1/pfet$15_1/w_n230_n138#" "nand$4_1/vdd"
+merge "nand$4_1/vdd" "switch$1_0/vdd"
+merge "switch$1_0/vdd" "switch$1_0/pfet$15_1/w_n230_n138#"
+merge "switch$1_0/pfet$15_1/w_n230_n138#" "conmutator$1_0/vdd"
+merge "conmutator$1_0/vdd" "conmutator$1_0/in2"
+merge "conmutator$1_0/in2" "m1_n651_3297#"
+merge "m1_n651_3297#" "not_1/vdd"
+merge "not_1/vdd" "conmutator$1_0/pfet$14_0/w_n230_n138#"
+merge "conmutator$1_0/pfet$14_0/w_n230_n138#" "not_0/vdd"
+merge "not_0/vdd" "not$1_0/pfet$13_0/w_n230_n138#"
+merge "not$1_0/pfet$13_0/w_n230_n138#" "nand$4_0/vdd"
+merge "nand$4_0/vdd" "w_n1725_3137#"
+merge "w_n1725_3137#" "nor$2_0/w_n265_n296#"
+merge "nor$2_0/w_n265_n296#" "nor$2_0/pfet$2$7_0/w_n230_n138#"
+merge "nor$2_0/pfet$2$7_0/w_n230_n138#" "not_2/pfet$7_0/w_n230_n138#"
+merge "not_2/pfet$7_0/w_n230_n138#" "not_3/pfet$7_0/w_n230_n138#"
+merge "not_3/pfet$7_0/w_n230_n138#" "nand$4_1/w_n265_n296#"
+merge "nand$4_1/w_n265_n296#" "not_0/pfet$7_0/w_n230_n138#"
+merge "not_0/pfet$7_0/w_n230_n138#" "not_1/pfet$7_0/w_n230_n138#"
+merge "not_1/pfet$7_0/w_n230_n138#" "nand$4_0/w_n265_n296#"
+merge "switch$1_2/cntrl" "nor$2_0/Z" -511.532 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10160 -894 0 0 0 0 0 0
+merge "nor$2_0/Z" "m2_3531_2859#"
+merge "m2_3531_2859#" "not$1_0/in"
+merge "not$1_0/in" "nor$2_0/m2_n201_n668#"
+merge "nor$2_0/m2_n201_n668#" "phi_int"
+merge "via_dev$24_0/m1_0_0#" "switch$1_1/in" -975.313 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 -12800 -800 -159200 -4300 0 0 0 0
+merge "switch$1_1/in" "via_dev$22_2/m2_0_0#"
+merge "via_dev$22_2/m2_0_0#" "m3_2022_4065#"
+merge "m3_2022_4065#" "vdiv_0/vref"
+merge "vdiv_0/vref" "m2_4521_272#"
+merge "conmutator$1_0/cntrl" "reward" -255.361 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "switch$1_1/cntrl" "via_dev$13_1/m2_0_0#" -2110.23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5776 -304 -11760 -1414 0 0 -480 -652 0 0
+merge "via_dev$13_1/m2_0_0#" "nor$2_0/A"
+merge "nor$2_0/A" "phi_2"
+merge "phi_2" "not_2/out"
+merge "not_2/out" "nand$4_1/B"
+merge "nand$4_1/B" "m2_552_2661#"
+merge "m2_552_2661#" "not_3/in"
+merge "not_3/in" "not_3/out"
+merge "not_3/out" "via_dev$12_1/m1_0_0#"
+merge "via_dev$12_1/m1_0_0#" "nfet$8$1_3/a_n84_0#"
+merge "nfet$8$1_3/a_n84_0#" "cap_mim$1_1/m4_n120_n120#"
+merge "cap_mim$1_1/m4_n120_n120#" "m4_1944_1747#"
+merge "m4_1944_1747#" "m4_1601_2049#"
+merge "conmutator$1_0/in1" "via_dev$22_1/m2_0_0#" -1138.83 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12800 -800 -430960 -11094 0 0 0 0
+merge "via_dev$22_1/m2_0_0#" "vspike_up"
+merge "vspike_up" "vdiv_0/vspike_up"
+merge "vdiv_0/vspike_up" "via_dev$22_0/m2_0_0#"
+merge "via_dev$22_0/m2_0_0#" "m3_n1410_3780#"
+merge "m3_n1410_3780#" "m2_3923_n1736#"
+merge "switch$1_2/vss" "switch$1_1/vss" -2800.38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -457680 -12082 0 0 0 0 0 0 0 0
+merge "switch$1_1/vss" "switch$1_0/vss"
+merge "switch$1_0/vss" "conmutator$1_0/vss"
+merge "conmutator$1_0/vss" "m1_n1725_4265#"
+merge "vdiv_0/vres" "via_dev$14_7/m1_0_0#" -617.099 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11552 -608 0 -632 0 0 0 0 0 0
+merge "via_dev$14_7/m1_0_0#" "m2_2363_1601#"
+merge "m2_2363_1601#" "nfet$8$1_3/a_38_n132#"
+merge "nfet$8$1_3/a_38_n132#" "via_dev$14_6/m1_0_0#"
+merge "via_dev$14_6/m1_0_0#" "m2_n103_1601#"
+merge "m2_n103_1601#" "nfet$8$1_2/a_38_n132#"
+merge "via_dev$24_2/m1_0_0#" "switch$1_2/in" -837.261 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18222 -936 -6400 -640 0 -320 0 0 0 0
+merge "switch$1_2/in" "via_dev$14_3/m1_0_0#"
+merge "via_dev$14_3/m1_0_0#" "nfet$8$1_0/a_138_0#"
+merge "nfet$8$1_0/a_138_0#" "via_dev$24_1/m1_0_0#"
+merge "via_dev$24_1/m1_0_0#" "m3_1332_n128#"
+merge "m3_1332_n128#" "ota_1stage$1_0/vout"
+merge "ota_1stage$1_0/vout" "m2_1332_n780#"
+merge "via_dev$14_4/m1_0_0#" "nfet$8$1_0/a_38_n132#" -521.089 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11704 -916 -6400 -640 0 0 0 0 0 0
+merge "nfet$8$1_0/a_38_n132#" "nfet$8$1_0/a_n84_0#"
+merge "nfet$8$1_0/a_n84_0#" "m1_2078_n924#"
+merge "m1_2078_n924#" "via_dev$14_5/m1_0_0#"
+merge "via_dev$14_5/m1_0_0#" "nfet$8$1_1/a_n84_0#"
+merge "nfet$8$1_1/a_n84_0#" "ota_1stage$1_0/vn"
+merge "ota_1stage$1_0/vn" "m2_1346_n1442#"
+merge "vdiv_0/vspike_down" "vdiv_0/via_dev$2$8_1/m1_0_0#" -336.403 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5928 -612 0 -320 0 0 0 0 0 0
+merge "vdiv_0/via_dev$2$8_1/m1_0_0#" "via_dev$14_0/m1_0_0#"
+merge "via_dev$14_0/m1_0_0#" "m2_2886_n700#"
+merge "m2_2886_n700#" "nfet$8$1_1/a_38_n132#"
+merge "nfet$8$1_1/a_38_n132#" "nfet$8$1_1/a_138_0#"
+merge "nfet$8$1_1/a_138_0#" "m1_2834_n924#"
+merge "nfet$15_0/a_n84_n2#" "ota_1stage$1_0/vp" -632.888 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11856 -920 -6400 -640 0 0 0 0 0 0
+merge "ota_1stage$1_0/vp" "via_dev$14_1/m1_0_0#"
+merge "via_dev$14_1/m1_0_0#" "nfet$15_0/a_38_n132#"
+merge "nfet$15_0/a_38_n132#" "m1_2572_n1522#"
+merge "m1_2572_n1522#" "via_dev$14_2/m1_0_0#"
+merge "via_dev$14_2/m1_0_0#" "m2_554_n1578#"
+merge "m2_554_n1578#" "nfet$16_0/a_94_0#"
+merge "via_dev$11_0/m2_0_0#" "nand$4_0/Z" -524.362 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 -6400 -512
+merge "nand$4_0/Z" "cap_mim$1_0/m4_0_0#"
+merge "cap_mim$1_0/m4_0_0#" "m5_n1518_1929#"
+merge "nand$4_0/A" "vin" -145.235 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 0 0
