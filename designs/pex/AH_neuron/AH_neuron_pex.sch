@@ -58,11 +58,11 @@ N 540 -890 540 -880 {lab=vss}
 N 470 -880 540 -880 {lab=vss}
 N 260 -1030 260 -970 {lab=#net1}
 N 320 -950 340 -950 {lab=vmem}
-N 130 -770 130 -740 {lab=GND}
-N 30 -780 30 -750 {lab=GND}
-N 30 -920 30 -840 {lab=vss}
-C {vsource.sym} 30 -950 0 0 {name=V1 value=3.3 savecurrent=false}
-C {devices/code_shown.sym} -455 -400 0 0 {name=s1 only_toplevel=false value="
+N 370 -610 370 -580 {lab=GND}
+N 270 -620 270 -590 {lab=GND}
+N 270 -760 270 -680 {lab=vss}
+C {vsource.sym} 270 -790 0 0 {name=V1 value=3.3 savecurrent=false}
+C {devices/code_shown.sym} -405 -1230 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
 .include /foss/designs/Mosbious_2025_Spikcore/designs/pex/AH_neuron/AH_neuron_pex.spice
 .tran 100n 5m
@@ -77,11 +77,11 @@ C {devices/code_shown.sym} -455 -400 0 0 {name=s1 only_toplevel=false value="
 .endc
 "
 spice_ignore=False}
-C {lab_pin.sym} 30 -1040 1 0 {name=p1 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 270 -880 1 0 {name=p1 sig_type=std_logic lab=vdd}
 C {isource.sym} 260 -1080 0 0 {name=I0 value="PULSE(0 1000p 1u 10n 10n 1u 5u)"}
 C {lab_pin.sym} 260 -1130 0 0 {name=p2 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 470 -1030 0 0 {name=p3 sig_type=std_logic lab=vdd}
-C {devices/code_shown.sym} -430 -650 0 0 {name=MODELS2 only_toplevel=true
+C {devices/code_shown.sym} -410 -950 0 0 {name=MODELS2 only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
@@ -93,7 +93,7 @@ value="
 "}
 C {lab_pin.sym} 540 -950 2 0 {name=p6 sig_type=std_logic lab=vout}
 C {lab_pin.sym} 370 -950 3 0 {name=p4 sig_type=std_logic lab=vmem}
-C {res.sym} 30 -1010 0 0 {name=R1
+C {res.sym} 270 -850 0 0 {name=R1
 value=10
 footprint=1206
 device=resistor
@@ -105,18 +105,18 @@ device=resistor
 m=1}
 C {title.sym} -120 -460 0 0 {name=l4 author="Royce Richmond"}
 C {ammeter.sym} 290 -950 3 0 {name=Vdd_c1 savecurrent=true spice_ignore=0}
-C {vsource.sym} 130 -800 0 0 {name=V2 value=0.49	 savecurrent=false}
-C {lab_pin.sym} 130 -890 0 0 {name=p5 sig_type=std_logic lab=v_bias}
-C {res.sym} 130 -860 0 0 {name=R3
+C {vsource.sym} 370 -640 0 0 {name=V2 value=0.49	 savecurrent=false}
+C {lab_pin.sym} 370 -730 0 0 {name=p5 sig_type=std_logic lab=v_bias}
+C {res.sym} 370 -700 0 0 {name=R3
 value=10
 footprint=1206
 device=resistor
 m=1}
-C {gnd.sym} 130 -740 0 0 {name=l5 lab=GND}
+C {gnd.sym} 370 -580 0 0 {name=l5 lab=GND}
 C {lab_pin.sym} 430 -930 3 0 {name=p7 sig_type=std_logic lab=v_bias}
-C {vsource.sym} 30 -810 0 0 {name=V3 value=0	 savecurrent=false}
-C {lab_pin.sym} 30 -900 0 0 {name=p8 sig_type=std_logic lab=vss}
-C {gnd.sym} 30 -750 0 0 {name=l3 lab=GND}
+C {vsource.sym} 270 -650 0 0 {name=V3 value=0	 savecurrent=false}
+C {lab_pin.sym} 270 -740 0 0 {name=p8 sig_type=std_logic lab=vss}
+C {gnd.sym} 270 -590 0 0 {name=l3 lab=GND}
 C {designs/pex/AH_neuron/AH_neuron.sym} 230 -960 0 0 {name=x1}
 C {launcher.sym} 450 -820 0 0 {name=h5
 descr="load waves" 

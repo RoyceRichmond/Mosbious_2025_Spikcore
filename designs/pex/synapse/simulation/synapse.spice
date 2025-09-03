@@ -37,7 +37,7 @@ V7 vss GND 0
 	reset
 	save all
         run
-        write synapse.raw
+        write synapse_pex.raw
 	let v_act=v_act+delta_v
 	set appendwrite
     end

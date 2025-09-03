@@ -18,7 +18,7 @@ x1 vdd net1 spk GND LIF_ring
 	reset
 	save all
         run
-        write LIF_ring.raw
+        write LIF_ring_pex.raw
 .endc
 
 

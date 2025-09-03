@@ -25,7 +25,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=-1}
+hilight_wave=0}
 B 2 1120 -245 1590 125 {flags=graph
 y1=-1.5e-06
 y2=0.00019
@@ -40,13 +40,13 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node="\\"i(vdd_c);i(vdd_c) %4\\""
+node="\\"i(vdd_c);i(vdd_c)\\""
 color=8
 dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=-1}
+hilight_wave=0}
 B 2 1110 -580 1590 -250 {flags=graph
 y1=0.16
 y2=3.1
@@ -61,13 +61,13 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node="\\"out_spike;out_spike %4\\""
+node="\\"out_spike;out_spike \\""
 color=5
 dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=-1}
+hilight_wave=0}
 N 605 170 605 200 {lab=GND}
 N 605 -100 605 -90 {lab=#net1}
 N 605 -30 605 -10 {lab=#net2}
@@ -102,7 +102,7 @@ C {devices/code_shown.sym} -165 -530 0 0 {name=s1 only_toplevel=false value="
 	reset
 	save all
         run
-        write synapse.raw
+        write synapse_pex.raw
 	let v_act=v_act+delta_v
 	set appendwrite
     end
@@ -125,7 +125,7 @@ value="
 "}
 C {launcher.sym} 740 205 0 0 {name=h5
 descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/synapse.raw tran"
+tclcommand="xschem raw_read $netlist_dir/synapse_pex.raw tran"
 }
 C {lab_pin.sym} 830 -110 0 0 {name=p3 sig_type=std_logic lab=vi}
 C {lab_pin.sym} 830 -90 0 0 {name=p5 sig_type=std_logic lab=ve}
