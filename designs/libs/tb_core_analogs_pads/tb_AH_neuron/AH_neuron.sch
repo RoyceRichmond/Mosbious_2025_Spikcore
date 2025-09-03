@@ -5,8 +5,8 @@ V {}
 S {}
 E {}
 B 2 660 -120 1170 190 {flags=graph
-y1=0
-y2=1.4
+y1=0.28
+y2=1.68
 ypos1=0
 ypos2=2
 divy=5
@@ -72,9 +72,10 @@ N 370 -230 450 -230 {lab=ASIG_in}
 N -190 -210 -190 -170 {lab=GND}
 N -190 -170 -30 -170 {lab=GND}
 C {vsource.sym} -360 0 0 0 {name=V1 value=vd_v savecurrent=false}
-C {devices/code_shown.sym} -855 -130 0 0 {name=s1 only_toplevel=false value="
+C {devices/code_shown.sym} -855 -120 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
 .tran 10u 5m
+.options num_threads=14
 .include /foss/designs/Mosbious_2025_Spikcore/designs/pex/AH_neuron/AH_neuron_pex.spice
 .include /foss/designs/Mosbious_2025_Spikcore/miscellaneous/sscs-chipathon/resources/Integration/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice
 .param vd_v=3.3
@@ -153,9 +154,7 @@ C {lab_pin.sym} 330 60 0 1 {name=p17 sig_type=std_logic lab=pad}
 C {lab_pin.sym} 370 -230 2 1 {name=p18 sig_type=std_logic lab=ASIG_in}
 C {lab_pin.sym} -170 60 2 1 {name=p24 sig_type=std_logic lab=ASIG_in}
 C {designs/pex/AH_neuron/AH_neuron.sym} -260 50 0 0 {name=x2}
-C {designs/libs/core_AH_neuron/AH_neuron.sym} -260 230 0 0 {name=x1
-spice_ignore=true}
-C {devices/code_shown.sym} -865 -630 0 0 {name=s2 only_toplevel=false value="
+C {devices/code_shown.sym} -885 -790 0 0 {name=s2 only_toplevel=false value="
 .option method=gear seed=12
 .tran 10u 5m
 .include /foss/designs/Mosbious_2025_Spikcore/miscellaneous/sscs-chipathon/resources/Integration/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice
