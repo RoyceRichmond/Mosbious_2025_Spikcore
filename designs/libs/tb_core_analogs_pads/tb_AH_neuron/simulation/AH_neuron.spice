@@ -20,7 +20,7 @@ x2 vdd ASIG_in ASIG GND v_bias AH_neuron
 
 
 .option method=gear seed=12
-.tran 1u 5m
+.tran 100n 3m
 .include /foss/designs/Mosbious_2025_Spikcore/designs/pex/AH_neuron/AH_neuron_pex.spice
 .include /foss/designs/Mosbious_2025_Spikcore/miscellaneous/sscs-chipathon/resources/Integration/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice
 .param vd_v=3.3

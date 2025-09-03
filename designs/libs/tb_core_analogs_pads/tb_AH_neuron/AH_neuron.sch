@@ -13,7 +13,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.002
+x2=0.005
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -27,15 +27,15 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 660 -430 1170 -120 {flags=graph
-y1=0.048
-y2=0.2
+y1=-0.61
+y2=4
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.002
+x2=0.005
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -44,19 +44,22 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=0
+hilight_wave=1
 rainbow=1
-color=4
-node=pad_in}
+color="4 12 13 10"
+node="pad_in
+asig_in
+asig
+pad"}
 N -360 30 -360 60 {lab=GND}
 N -360 -160 -360 -150 {lab=vdd}
-N 450 -310 450 -290 {lab=#net1}
+N 450 -310 450 -290 {lab=ASIG_in}
 N 450 -390 450 -370 {lab=vdd}
 N -20 -20 -20 10 {lab=vdd}
 N -150 60 -70 60 {lab=ASIG_in}
 N 30 60 50 60 {lab=ASIG}
 N -20 110 -20 130 {lab=GND}
-N 450 -290 450 -230 {lab=#net1}
+N 450 -290 450 -230 {lab=ASIG_in}
 N -170 60 -150 60 {lab=ASIG_in}
 N -130 -210 -130 -170 {lab=GND}
 N -30 -210 -30 -170 {lab=GND}
@@ -65,13 +68,13 @@ N -130 -310 -130 -270 {lab=DVSS}
 N -30 -310 -30 -270 {lab=VSS}
 N -180 -170 -180 -150 {lab=GND}
 N -350 260 -350 290 {lab=GND}
-N 370 -230 450 -230 {lab=#net1}
+N 370 -230 450 -230 {lab=ASIG_in}
 N -190 -210 -190 -170 {lab=GND}
 N -190 -170 -30 -170 {lab=GND}
 C {vsource.sym} -360 0 0 0 {name=V1 value=vd_v savecurrent=false}
 C {devices/code_shown.sym} -855 -130 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
-.tran 1u 5m
+.tran 10u 5m
 .include /foss/designs/Mosbious_2025_Spikcore/designs/pex/AH_neuron/AH_neuron_pex.spice
 .include /foss/designs/Mosbious_2025_Spikcore/miscellaneous/sscs-chipathon/resources/Integration/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice
 .param vd_v=3.3
@@ -119,7 +122,6 @@ footprint=1206
 device=resistor
 m=1}
 C {title.sym} -170 570 0 0 {name=l3 author="Royce Richmond"}
-C {ammeter.sym} 340 -230 1 0 {name=Vdd_c1 savecurrent=true spice_ignore=0}
 C {vsource.sym} -190 -240 0 0 {name=V2 value=5 savecurrent=false}
 C {vsource.sym} -130 -240 0 0 {name=V4 value=0 savecurrent=false}
 C {vsource.sym} -30 -240 0 0 {name=V5 value=0 savecurrent=false}
@@ -148,15 +150,23 @@ C {lab_wire.sym} 250 140 0 1 {name=p14 sig_type=std_logic lab=DVSS}
 C {lab_wire.sym} 210 140 0 1 {name=p15 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 210 -20 0 1 {name=p16 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 330 60 0 1 {name=p17 sig_type=std_logic lab=pad}
-C {/foss/designs/sscs-chipathon-2025/resources/Integration/Chipathon2025_pads/xschem/symbols/io_asig_5p0.sym} 310 -150 0 1 {name=IO2
-model=gf180mcu_fd_io__asig_5p0_extracted
-spiceprefix=X
-}
-C {lab_pin.sym} 110 -230 2 1 {name=p18 sig_type=std_logic lab=ASIG_in}
-C {lab_wire.sym} 230 -310 0 1 {name=p19 sig_type=std_logic lab=DVDD}
-C {lab_wire.sym} 230 -150 0 1 {name=p20 sig_type=std_logic lab=DVSS}
-C {lab_wire.sym} 190 -150 0 1 {name=p21 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 190 -310 0 1 {name=p22 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 310 -230 3 1 {name=p23 sig_type=std_logic lab=pad_in}
+C {lab_pin.sym} 370 -230 2 1 {name=p18 sig_type=std_logic lab=ASIG_in}
 C {lab_pin.sym} -170 60 2 1 {name=p24 sig_type=std_logic lab=ASIG_in}
 C {designs/pex/AH_neuron/AH_neuron.sym} -260 50 0 0 {name=x2}
+C {designs/libs/core_AH_neuron/AH_neuron.sym} -260 230 0 0 {name=x1
+spice_ignore=true}
+C {devices/code_shown.sym} -865 -630 0 0 {name=s2 only_toplevel=false value="
+.option method=gear seed=12
+.tran 10u 5m
+.include /foss/designs/Mosbious_2025_Spikcore/miscellaneous/sscs-chipathon/resources/Integration/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice
+.param vd_v=3.3
+.save allcurrents
+.options save currents
+.control
+reset
+save all
+run
+write AH_neuron_pad.raw
+.endc
+"
+spice_ignore=true}
