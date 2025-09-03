@@ -5,15 +5,15 @@ V {}
 S {}
 E {}
 B 2 660 -120 1170 190 {flags=graph
-y1=4.2
-y2=9.03
+y1=0
+y2=1.4
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-0.00075
-x2=0.00425
+x1=0
+x2=0.002
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -27,15 +27,15 @@ logx=0
 logy=0
 hilight_wave=-1}
 B 2 660 -430 1170 -120 {flags=graph
-y1=-0.00022
-y2=3.1
+y1=0.048
+y2=0.2
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-0.00075
-x2=0.00425
+x1=0
+x2=0.002
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -71,7 +71,9 @@ N -190 -170 -30 -170 {lab=GND}
 C {vsource.sym} -360 0 0 0 {name=V1 value=vd_v savecurrent=false}
 C {devices/code_shown.sym} -855 -130 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
-.tran 100n 5m
+.tran 1u 5m
+.include /foss/designs/Mosbious_2025_Spikcore/designs/pex/AH_neuron/AH_neuron_pex.spice
+.include /foss/designs/Mosbious_2025_Spikcore/miscellaneous/sscs-chipathon/resources/Integration/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice
 .param vd_v=3.3
 .save allcurrents
 .options save currents
@@ -92,7 +94,6 @@ C {devices/code_shown.sym} -840 360 0 0 {name=MODELS1 only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
-.include "/foss/designs/Mosbious_2025_Spikcore/miscellaneous/sscs-chipathon/resources/Integration/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice"
 .lib $::180MCU_MODELS/sm141064.ngspice diode_typical
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 .lib $::180MCU_MODELS/sm141064.ngspice cap_mim
@@ -101,11 +102,10 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 "}
 C {lab_pin.sym} 50 60 1 0 {name=p6 sig_type=std_logic lab=ASIG}
-C {launcher.sym} -20 300 0 0 {name=h5
+C {launcher.sym} 460 210 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/AH_neuron_pad.raw tran"
 }
-C {designs/libs/core_AH_neuron/AH_neuron.sym} -260 50 0 0 {name=x1}
 C {res.sym} -360 -60 0 0 {name=R1
 value=10
 footprint=1206
@@ -159,3 +159,4 @@ C {lab_wire.sym} 190 -150 0 1 {name=p21 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 190 -310 0 1 {name=p22 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 310 -230 3 1 {name=p23 sig_type=std_logic lab=pad_in}
 C {lab_pin.sym} -170 60 2 1 {name=p24 sig_type=std_logic lab=ASIG_in}
+C {designs/pex/AH_neuron/AH_neuron.sym} -260 50 0 0 {name=x2}
