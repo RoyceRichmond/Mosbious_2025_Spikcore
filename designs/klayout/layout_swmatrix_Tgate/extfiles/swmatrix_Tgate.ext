@@ -1,0 +1,359 @@
+timestamp 1584420956
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use via_dev$6 via_dev$6_11 1 0 1128 0 1 1637
+use via_dev$5 via_dev$5_13 1 0 942 0 1 1500
+use nfet nfet_0 1 0 1022 0 1 756
+use via_dev via_dev_0 1 0 967 0 1 620
+use gf180mcu_fd_sc_mcu9t5v0__inv_1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0 -1 0 818 0 -1 1664
+use via_dev via_dev_2 1 0 674 0 1 1207
+use via_dev via_dev_3 1 0 419 0 1 990
+use gf180mcu_fd_sc_mcu9t5v0__endcap gf180mcu_fd_sc_mcu9t5v0__endcap_0 -1 0 318 0 -1 1664
+use via_dev$5 via_dev$5_9 1 0 2362 0 1 1501
+use via_dev$5 via_dev$5_10 1 0 1957 0 1 1500
+use via_dev$6 via_dev$6_9 1 0 1768 0 1 1637
+use via_dev$5 via_dev$5_11 1 0 1608 0 1 1500
+use via_dev$6 via_dev$6_10 1 0 1448 0 1 1637
+use via_dev$5 via_dev$5_12 1 0 1288 0 1 1500
+use via_dev via_dev_1 1 0 2394 0 1 620
+use via_dev$5 via_dev$5_8 1 0 2712 0 1 1501
+use via_dev$6 via_dev$6_8 1 0 2552 0 1 1637
+use via_dev$4 via_dev$4_0 1 0 5322 0 1 453
+use via_dev$6 via_dev$6_6 1 0 3192 0 1 1637
+use via_dev$5 via_dev$5_7 1 0 3032 0 1 1501
+use via_dev$6 via_dev$6_7 1 0 2872 0 1 1637
+use via_dev$5 via_dev$5_5 1 0 3672 0 1 1501
+use via_dev$6 via_dev$6_5 1 0 3512 0 1 1637
+use via_dev$5 via_dev$5_6 1 0 3352 0 1 1501
+use via_dev$6 via_dev$6_3 1 0 4152 0 1 1637
+use via_dev$5 via_dev$5_4 1 0 3992 0 1 1501
+use via_dev$6 via_dev$6_4 1 0 3832 0 1 1637
+use via_dev$5 via_dev$5_2 1 0 4632 0 1 1501
+use via_dev$5 via_dev$5_3 1 0 4312 0 1 1501
+use via_dev$6 via_dev$6_2 1 0 4472 0 1 1637
+use via_dev$6 via_dev$6_0 1 0 5112 0 1 1637
+use via_dev$5 via_dev$5_1 1 0 4952 0 1 1501
+use via_dev$6 via_dev$6_1 1 0 4792 0 1 1637
+use via_dev$5 via_dev$5_0 1 0 5302 0 1 1501
+use via_dev$4 via_dev$4_1 1 0 5278 0 1 1782
+use pfet$1 pfet$1_0 1 0 2446 0 1 757
+port "T2" 5 2848 1737 2848 1737 m4
+port "T1" 6 123 1117 123 1117 m3
+port "gated_controlb" 3 2239 840 2239 840 m2
+port "gated_control" 4 353 1265 353 1265 m2
+port "VDD" 2 535 487 535 487 m1
+port "VSS" 1 433 1858 433 1858 m1
+node "T2" 6 1416.9 2848 1737 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 462852 11062 0 0
+node "T1" 10 1988.69 123 1117 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 881040 19494 0 0 0 0
+node "gated_controlb" 2 665.026 2239 840 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 198250 4820 0 0 0 0 0 0
+node "gated_control" 2 464.583 353 1265 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 147744 3734 0 0 0 0 0 0
+node "m1_2474_620#" 3 664.244 2474 620 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 218088 5748 0 0 0 0 0 0 0 0
+node "m1_1047_621#" 1 225.867 1047 621 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69441 1916 0 0 0 0 0 0 0 0
+node "VDD" 4 2226.43 535 487 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 808108 12034 0 0 0 0 0 0 0 0
+node "m1_5114_1501#" 0 59.8355 5114 1501 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10412 426 0 0 0 0 0 0 0 0
+node "m1_4794_1501#" 0 44.1618 4794 1501 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10564 430 0 0 0 0 0 0 0 0
+node "m1_4474_1501#" 0 43.6855 4474 1501 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10488 428 0 0 0 0 0 0 0 0
+node "m1_4154_1501#" 0 43.9233 4154 1501 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10564 430 0 0 0 0 0 0 0 0
+node "m1_3834_1501#" 0 43.9916 3834 1501 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10564 430 0 0 0 0 0 0 0 0
+node "m1_3514_1501#" 0 43.6855 3514 1501 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10488 428 0 0 0 0 0 0 0 0
+node "m1_3194_1501#" 0 43.7364 3194 1501 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10488 428 0 0 0 0 0 0 0 0
+node "m1_2874_1501#" 0 43.4986 2874 1501 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10412 426 0 0 0 0 0 0 0 0
+node "m1_2554_1501#" 0 47.4727 2554 1501 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10488 428 0 0 0 0 0 0 0 0
+node "m1_1770_1500#" 0 44.2177 1770 1500 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10564 430 0 0 0 0 0 0 0 0
+node "m1_1450_1500#" 0 44.6002 1450 1500 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10792 436 0 0 0 0 0 0 0 0
+node "m1_1130_1500#" 0 63.0645 1130 1500 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12084 470 0 0 0 0 0 0 0 0
+node "VSS" 4 2584.61 433 1858 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 763116 12040 0 0 0 0 0 0 0 0
+node "a_5322_453#" 6 0 5322 453 ndif 0 0 0 0 8100 360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "a_5278_1782#" 0 0 5278 1782 ppd 0 0 0 0 0 0 8100 360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_5114_1501#" "T2" 1.61971
+cap "m1_4474_1501#" "VSS" 26.7731
+cap "T2" "VDD" 60.1715
+cap "m1_3834_1501#" "T1" 2.20186
+cap "m1_2474_620#" "m1_2554_1501#" 3.88261
+cap "gated_controlb" "m1_1450_1500#" 0.794031
+cap "m1_1130_1500#" "gated_controlb" 0.847284
+cap "T2" "VSS" 127.718
+cap "m1_4474_1501#" "T2" 1.72149
+cap "T1" "gated_controlb" 108.142
+cap "m1_1770_1500#" "m1_1450_1500#" 24.0648
+cap "gated_control" "m1_1047_621#" 18.4654
+cap "T1" "m1_1770_1500#" 2.20868
+cap "a_5322_453#" "VDD" 6.17666
+cap "m1_2474_620#" "m1_3514_1501#" 3.88261
+cap "gated_control" "VDD" 141.12
+cap "m1_2474_620#" "m1_3194_1501#" 3.88261
+cap "m1_1047_621#" "m1_2474_620#" 5.79819
+cap "gated_control" "VSS" 16.725
+cap "m1_5114_1501#" "m1_2474_620#" 3.88261
+cap "m1_2874_1501#" "m1_2554_1501#" 23.7186
+cap "m1_2474_620#" "VDD" 2592.73
+cap "m1_2474_620#" "VSS" 81.024
+cap "m1_4474_1501#" "m1_2474_620#" 3.88261
+cap "T1" "m1_2554_1501#" 2.18648
+cap "T2" "m1_2474_620#" 31.3727
+cap "m1_2874_1501#" "m1_3194_1501#" 23.7186
+cap "m1_1770_1500#" "gated_controlb" 0.784397
+cap "m1_1047_621#" "m1_1450_1500#" 3.89736
+cap "m1_1047_621#" "m1_1130_1500#" 3.89736
+cap "T1" "m1_3514_1501#" 2.18958
+cap "T1" "m1_1047_621#" 16.7841
+cap "T1" "m1_3194_1501#" 2.18846
+cap "m1_4154_1501#" "VSS" 27.008
+cap "m1_2874_1501#" "VSS" 26.5423
+cap "m1_4154_1501#" "m1_4474_1501#" 23.8917
+cap "m1_5114_1501#" "T1" 2.18642
+cap "T1" "VDD" 87.6359
+cap "gated_control" "m1_2474_620#" 0.0544299
+cap "m1_1450_1500#" "VSS" 27.7058
+cap "m1_1130_1500#" "VSS" 38.08
+cap "m1_4154_1501#" "T2" 2.09667
+cap "m1_4794_1501#" "m1_5114_1501#" 23.7186
+cap "m1_2874_1501#" "T2" 3.99609
+cap "T1" "VSS" 126.121
+cap "m1_4474_1501#" "T1" 2.21217
+cap "T2" "m1_1450_1500#" 2.22552
+cap "m1_1130_1500#" "T2" 2.74437
+cap "m1_4794_1501#" "VSS" 27.008
+cap "m1_4474_1501#" "m1_4794_1501#" 23.8917
+cap "T1" "T2" 324.84
+cap "m1_4794_1501#" "T2" 1.73918
+cap "m1_3834_1501#" "m1_3514_1501#" 23.8917
+cap "m1_1047_621#" "gated_controlb" 67.1819
+cap "m1_1047_621#" "m1_1770_1500#" 3.89736
+cap "T1" "gated_control" 136.462
+cap "m1_4154_1501#" "m1_2474_620#" 3.88261
+cap "m1_2874_1501#" "m1_2474_620#" 3.88261
+cap "gated_controlb" "VDD" 71.1409
+cap "m1_3834_1501#" "VSS" 27.008
+cap "gated_controlb" "VSS" 11.1638
+cap "T1" "m1_2474_620#" 54.5499
+cap "m1_3834_1501#" "T2" 2.2802
+cap "m1_1770_1500#" "VSS" 49.8517
+cap "T2" "gated_controlb" 22.8405
+cap "m1_4794_1501#" "m1_2474_620#" 3.88261
+cap "m1_1770_1500#" "T2" 2.22062
+cap "m1_2554_1501#" "m1_3194_1501#" 0.0731264
+cap "m1_4154_1501#" "T1" 2.20653
+cap "T1" "m1_2874_1501#" 2.17641
+cap "gated_control" "gated_controlb" 299.503
+cap "m1_2554_1501#" "VSS" 41.9651
+cap "m1_1130_1500#" "m1_1450_1500#" 24.5842
+cap "m1_3514_1501#" "m1_3194_1501#" 23.8917
+cap "T1" "m1_1450_1500#" 2.23516
+cap "m1_4154_1501#" "m1_4794_1501#" 0.0731264
+cap "T1" "m1_1130_1500#" 2.4005
+cap "m1_3834_1501#" "m1_2474_620#" 3.88261
+cap "gated_controlb" "m1_2474_620#" 6.13766
+cap "T2" "m1_2554_1501#" 3.49106
+cap "m1_1047_621#" "VDD" 796.343
+cap "m1_4794_1501#" "T1" 2.22222
+cap "VSS" "m1_3514_1501#" 26.7731
+cap "VSS" "m1_3194_1501#" 26.7731
+cap "m1_1047_621#" "VSS" 25.0221
+cap "T2" "m1_3514_1501#" 2.45284
+cap "m1_5114_1501#" "VSS" 26.5423
+cap "m1_1047_621#" "T2" 6.53606
+cap "T2" "m1_3194_1501#" 2.78367
+cap "VSS" "VDD" 63.9762
+cap "m1_3834_1501#" "m1_4154_1501#" 24.0648
+cap "nfet_0/vss" "pfet$1_0/a_414_0#" 91.2801
+cap "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 184.521
+cap "nfet_0/vss" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 84.2096
+cap "pfet$1_0/a_414_0#" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 50.9749
+cap "nfet_0/vss" "pfet$1_0/a_254_0#" 130.952
+cap "pfet$1_0/a_254_0#" "pfet$1_0/a_414_0#" 172.997
+cap "pfet$1_0/a_254_0#" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 193.828
+cap "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VDD" "pfet$1_0/w_n230_n138#" 0.304523
+cap "nfet_0/vss" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 38.9502
+cap "pfet$1_0/a_414_0#" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 41.8556
+cap "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 146.222
+cap "nfet_0/vss" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VDD" -38.4688
+cap "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VDD" "pfet$1_0/a_414_0#" 1.30626
+cap "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 388.982
+cap "pfet$1_0/a_254_0#" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 136
+cap "pfet$1_0/a_254_0#" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VDD" 111.311
+cap "pfet$1_0/w_n230_n138#" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 0.881547
+cap "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VDD" 74.3356
+cap "pfet$1_0/a_1854_0#" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 84.3248
+cap "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "nfet_0/vss" 22.9829
+cap "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VDD" "pfet$1_0/w_n230_n138#" 21.4289
+cap "pfet$1_0/a_1854_0#" "pfet$1_0/a_1694_0#" 469.675
+cap "pfet$1_0/a_1694_0#" "nfet_0/vss" 225.056
+cap "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "pfet$1_0/w_n230_n138#" 43.0279
+cap "pfet$1_0/a_1854_0#" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VDD" 22.2839
+cap "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VDD" "nfet_0/vss" 11.0476
+cap "pfet$1_0/a_1854_0#" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" 237.194
+cap "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "nfet_0/vss" 50.8202
+cap "pfet$1_0/w_n230_n138#" "nfet_0/vss" 77.2077
+cap "pfet$1_0/a_1854_0#" "pfet$1_0/w_n230_n138#" 41.6799
+cap "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "pfet$1_0/a_1694_0#" 102.749
+cap "pfet$1_0/a_1854_0#" "nfet_0/vss" 375.028
+cap "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VDD" 7.26358
+cap "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" 38.6598
+cap "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "pfet$1_0/w_n230_n138#" 6.56654
+cap "pfet$1_0/a_1694_0#" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VDD" -0.060012
+cap "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN" "pfet$1_0/a_1694_0#" 144.657
+cap "pfet$1_0/a_1694_0#" "pfet$1_0/w_n230_n138#" 57.2876
+cap "pfet$1_0/a_2654_0#" "nfet_0/vss" 335.67
+cap "pfet$1_0/a_2814_0#" "pfet$1_0/w_n230_n138#" 23.819
+cap "pfet$1_0/a_2748_n136#" "pfet$1_0/w_n230_n138#" 38.6816
+cap "pfet$1_0/a_2654_0#" "pfet$1_0/w_n230_n138#" 139.744
+cap "pfet$1_0/a_2814_0#" "pfet$1_0/a_2748_n136#" 267.955
+cap "pfet$1_0/w_n230_n138#" "nfet_0/vss" 34.0475
+cap "pfet$1_0/a_2654_0#" "pfet$1_0/a_2814_0#" 672.846
+cap "pfet$1_0/a_2654_0#" "pfet$1_0/a_2748_n136#" 254
+cap "pfet$1_0/a_2814_0#" "nfet_0/vss" 84.6377
+cap "pfet$1_0/a_2748_n136#" "nfet_0/vss" 51.3372
+cap "pfet$1_0/w_n230_n138#" "via_dev$4_1/m1_0_0#" 50.9412
+cap "pfet$1_0/w_n230_n138#" "pfet$1_0/a_2654_0#" 114.294
+cap "pfet$1_0/w_n230_n138#" "pfet$1_0/a_2748_n136#" 30.5872
+cap "via_dev$4_1/m1_0_0#" "pfet$1_0/a_2654_0#" 237.052
+cap "pfet$1_0/a_2748_n136#" "pfet$1_0/a_2654_0#" 159.302
+cap "pfet$1_0/a_2748_n136#" "via_dev$4_1/m1_0_0#" 40.6774
+cap "pfet$1_0/w_n230_n138#" "pfet$1_0/a_2814_0#" 100.58
+cap "pfet$1_0/a_2814_0#" "pfet$1_0/a_2654_0#" 511.215
+cap "pfet$1_0/a_2814_0#" "pfet$1_0/a_2748_n136#" 213.391
+cap "pfet$1_0/a_2814_0#" "via_dev$4_1/m1_0_0#" 88.1034
+merge "pfet$1_0/a_2748_n136#" "pfet$1_0/a_2588_n136#" -1636.58 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -103968 -5788 -5200 -450 0 0 0 0 0 0
+merge "pfet$1_0/a_2588_n136#" "pfet$1_0/a_2428_n136#"
+merge "pfet$1_0/a_2428_n136#" "pfet$1_0/a_2268_n136#"
+merge "pfet$1_0/a_2268_n136#" "pfet$1_0/a_2108_n136#"
+merge "pfet$1_0/a_2108_n136#" "pfet$1_0/a_1948_n136#"
+merge "pfet$1_0/a_1948_n136#" "pfet$1_0/a_1788_n136#"
+merge "pfet$1_0/a_1788_n136#" "pfet$1_0/a_1628_n136#"
+merge "pfet$1_0/a_1628_n136#" "pfet$1_0/a_1468_n136#"
+merge "pfet$1_0/a_1468_n136#" "pfet$1_0/a_1308_n136#"
+merge "pfet$1_0/a_1308_n136#" "pfet$1_0/a_1148_n136#"
+merge "pfet$1_0/a_1148_n136#" "pfet$1_0/a_988_n136#"
+merge "pfet$1_0/a_988_n136#" "pfet$1_0/a_828_n136#"
+merge "pfet$1_0/a_828_n136#" "pfet$1_0/a_668_n136#"
+merge "pfet$1_0/a_668_n136#" "pfet$1_0/a_508_n136#"
+merge "pfet$1_0/a_508_n136#" "pfet$1_0/a_348_n136#"
+merge "pfet$1_0/a_348_n136#" "pfet$1_0/a_188_n136#"
+merge "pfet$1_0/a_188_n136#" "pfet$1_0/a_28_n136#"
+merge "pfet$1_0/a_28_n136#" "via_dev_1/m1_0_0#"
+merge "via_dev_1/m1_0_0#" "m1_2474_620#"
+merge "m1_2474_620#" "via_dev_3/m1_0_0#"
+merge "via_dev_3/m1_0_0#" "gated_controlb"
+merge "gated_controlb" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN"
+merge "via_dev$4_1/VSUBS" "via_dev$4_1/m1_0_0#" -1220.44 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25892 -2580 0 0 0 0 0 0 0 0
+merge "via_dev$4_1/m1_0_0#" "via_dev$5_0/VSUBS"
+merge "via_dev$5_0/VSUBS" "via_dev$6_1/VSUBS"
+merge "via_dev$6_1/VSUBS" "via_dev$5_1/VSUBS"
+merge "via_dev$5_1/VSUBS" "via_dev$6_0/VSUBS"
+merge "via_dev$6_0/VSUBS" "via_dev$6_2/VSUBS"
+merge "via_dev$6_2/VSUBS" "via_dev$5_2/VSUBS"
+merge "via_dev$5_2/VSUBS" "via_dev$4_0/VSUBS"
+merge "via_dev$4_0/VSUBS" "via_dev$5_3/VSUBS"
+merge "via_dev$5_3/VSUBS" "via_dev$6_4/VSUBS"
+merge "via_dev$6_4/VSUBS" "via_dev$5_4/VSUBS"
+merge "via_dev$5_4/VSUBS" "via_dev$6_3/VSUBS"
+merge "via_dev$6_3/VSUBS" "via_dev$5_6/VSUBS"
+merge "via_dev$5_6/VSUBS" "via_dev$6_5/VSUBS"
+merge "via_dev$6_5/VSUBS" "via_dev$5_5/VSUBS"
+merge "via_dev$5_5/VSUBS" "via_dev$5_7/VSUBS"
+merge "via_dev$5_7/VSUBS" "via_dev$6_6/VSUBS"
+merge "via_dev$6_6/VSUBS" "pfet$1_0/VSUBS"
+merge "pfet$1_0/VSUBS" "via_dev$6_7/VSUBS"
+merge "via_dev$6_7/VSUBS" "via_dev$6_8/VSUBS"
+merge "via_dev$6_8/VSUBS" "via_dev$5_8/VSUBS"
+merge "via_dev$5_8/VSUBS" "via_dev_1/VSUBS"
+merge "via_dev_1/VSUBS" "via_dev$5_12/VSUBS"
+merge "via_dev$5_12/VSUBS" "via_dev$6_10/VSUBS"
+merge "via_dev$6_10/VSUBS" "via_dev$5_11/VSUBS"
+merge "via_dev$5_11/VSUBS" "via_dev$6_9/VSUBS"
+merge "via_dev$6_9/VSUBS" "via_dev$5_10/VSUBS"
+merge "via_dev$5_10/VSUBS" "via_dev$5_9/VSUBS"
+merge "via_dev$5_9/VSUBS" "gf180mcu_fd_sc_mcu9t5v0__endcap_0/VSS"
+merge "gf180mcu_fd_sc_mcu9t5v0__endcap_0/VSS" "via_dev_3/VSUBS"
+merge "via_dev_3/VSUBS" "via_dev_2/VSUBS"
+merge "via_dev_2/VSUBS" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VPW"
+merge "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VPW" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS"
+merge "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VSS" "via_dev_0/VSUBS"
+merge "via_dev_0/VSUBS" "nfet_0/vss"
+merge "nfet_0/vss" "VSS"
+merge "VSS" "via_dev$5_13/VSUBS"
+merge "via_dev$5_13/VSUBS" "via_dev$6_11/VSUBS"
+merge "via_dev$6_11/VSUBS" "a_5278_1782#"
+merge "pfet$1_0/a_2814_0#" "pfet$1_0/a_2494_0#" -3551.86 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2128 0 0 -80 -2242 0 0 0 0
+merge "pfet$1_0/a_2494_0#" "pfet$1_0/a_2174_0#"
+merge "pfet$1_0/a_2174_0#" "via_dev$5_0/m1_0_0#"
+merge "via_dev$5_0/m1_0_0#" "via_dev$5_1/m1_0_0#"
+merge "via_dev$5_1/m1_0_0#" "via_dev$5_2/m1_0_0#"
+merge "via_dev$5_2/m1_0_0#" "pfet$1_0/a_1854_0#"
+merge "pfet$1_0/a_1854_0#" "pfet$1_0/a_1534_0#"
+merge "pfet$1_0/a_1534_0#" "pfet$1_0/a_1214_0#"
+merge "pfet$1_0/a_1214_0#" "pfet$1_0/a_894_0#"
+merge "pfet$1_0/a_894_0#" "pfet$1_0/a_574_0#"
+merge "pfet$1_0/a_574_0#" "via_dev$5_3/m1_0_0#"
+merge "via_dev$5_3/m1_0_0#" "via_dev$5_4/m1_0_0#"
+merge "via_dev$5_4/m1_0_0#" "via_dev$5_6/m1_0_0#"
+merge "via_dev$5_6/m1_0_0#" "via_dev$5_5/m1_0_0#"
+merge "via_dev$5_5/m1_0_0#" "via_dev$5_7/m1_0_0#"
+merge "via_dev$5_7/m1_0_0#" "pfet$1_0/a_254_0#"
+merge "pfet$1_0/a_254_0#" "pfet$1_0/a_n92_0#"
+merge "pfet$1_0/a_n92_0#" "via_dev$5_8/m1_0_0#"
+merge "via_dev$5_8/m1_0_0#" "via_dev$5_12/m1_0_0#"
+merge "via_dev$5_12/m1_0_0#" "nfet_0/a_254_0#"
+merge "nfet_0/a_254_0#" "via_dev$5_11/m1_0_0#"
+merge "via_dev$5_11/m1_0_0#" "nfet_0/a_574_0#"
+merge "nfet_0/a_574_0#" "via_dev$5_10/m1_0_0#"
+merge "via_dev$5_10/m1_0_0#" "nfet_0/a_894_0#"
+merge "nfet_0/a_894_0#" "via_dev$5_9/m1_0_0#"
+merge "via_dev$5_9/m1_0_0#" "nfet_0/a_n84_0#"
+merge "nfet_0/a_n84_0#" "via_dev$5_13/m1_0_0#"
+merge "via_dev$5_13/m1_0_0#" "T1"
+merge "pfet$1_0/a_2654_0#" "pfet$1_0/a_2334_0#" -3332.54 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3648 -3744 0 0 0 0 -76720 -3838 0 0
+merge "pfet$1_0/a_2334_0#" "pfet$1_0/a_2014_0#"
+merge "pfet$1_0/a_2014_0#" "via_dev$6_1/m1_0_0#"
+merge "via_dev$6_1/m1_0_0#" "m1_4794_1501#"
+merge "m1_4794_1501#" "via_dev$6_0/m1_0_0#"
+merge "via_dev$6_0/m1_0_0#" "m1_5114_1501#"
+merge "m1_5114_1501#" "via_dev$6_2/m1_0_0#"
+merge "via_dev$6_2/m1_0_0#" "m1_4474_1501#"
+merge "m1_4474_1501#" "pfet$1_0/a_1694_0#"
+merge "pfet$1_0/a_1694_0#" "pfet$1_0/a_1374_0#"
+merge "pfet$1_0/a_1374_0#" "pfet$1_0/a_1054_0#"
+merge "pfet$1_0/a_1054_0#" "pfet$1_0/a_734_0#"
+merge "pfet$1_0/a_734_0#" "via_dev$6_4/m1_0_0#"
+merge "via_dev$6_4/m1_0_0#" "m1_3834_1501#"
+merge "m1_3834_1501#" "via_dev$6_3/m1_0_0#"
+merge "via_dev$6_3/m1_0_0#" "m1_4154_1501#"
+merge "m1_4154_1501#" "via_dev$6_5/m1_0_0#"
+merge "via_dev$6_5/m1_0_0#" "m1_3514_1501#"
+merge "m1_3514_1501#" "via_dev$6_6/m1_0_0#"
+merge "via_dev$6_6/m1_0_0#" "m1_3194_1501#"
+merge "m1_3194_1501#" "pfet$1_0/a_414_0#"
+merge "pfet$1_0/a_414_0#" "pfet$1_0/a_94_0#"
+merge "pfet$1_0/a_94_0#" "via_dev$6_7/m1_0_0#"
+merge "via_dev$6_7/m1_0_0#" "m1_2874_1501#"
+merge "m1_2874_1501#" "via_dev$6_8/m1_0_0#"
+merge "via_dev$6_8/m1_0_0#" "m1_2554_1501#"
+merge "m1_2554_1501#" "via_dev$6_10/m1_0_0#"
+merge "via_dev$6_10/m1_0_0#" "nfet_0/a_414_0#"
+merge "nfet_0/a_414_0#" "m1_1450_1500#"
+merge "m1_1450_1500#" "via_dev$6_9/m1_0_0#"
+merge "via_dev$6_9/m1_0_0#" "nfet_0/a_734_0#"
+merge "nfet_0/a_734_0#" "m1_1770_1500#"
+merge "m1_1770_1500#" "nfet_0/a_94_0#"
+merge "nfet_0/a_94_0#" "via_dev$6_11/m1_0_0#"
+merge "via_dev$6_11/m1_0_0#" "T2"
+merge "T2" "m1_1130_1500#"
+merge "via_dev_2/m1_0_0#" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" -765.094 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -34816 -2146 -156 -320 0 0 0 0 0 0
+merge "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I" "via_dev_0/m1_0_0#"
+merge "via_dev_0/m1_0_0#" "gated_control"
+merge "gated_control" "nfet_0/a_830_n132#"
+merge "nfet_0/a_830_n132#" "nfet_0/a_670_n132#"
+merge "nfet_0/a_670_n132#" "nfet_0/a_510_n132#"
+merge "nfet_0/a_510_n132#" "nfet_0/a_350_n132#"
+merge "nfet_0/a_350_n132#" "nfet_0/a_190_n132#"
+merge "nfet_0/a_190_n132#" "nfet_0/a_30_n132#"
+merge "nfet_0/a_30_n132#" "m1_1047_621#"
+merge "pfet$1_0/w_n230_n138#" "via_dev$4_0/m1_0_0#" -1963.95 -397420 -2522 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27316 -2608 0 0 0 0 0 0 0 0
+merge "via_dev$4_0/m1_0_0#" "gf180mcu_fd_sc_mcu9t5v0__endcap_0/VDD"
+merge "gf180mcu_fd_sc_mcu9t5v0__endcap_0/VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VNW"
+merge "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VNW" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VDD"
+merge "gf180mcu_fd_sc_mcu9t5v0__inv_1_0/VDD" "VDD"

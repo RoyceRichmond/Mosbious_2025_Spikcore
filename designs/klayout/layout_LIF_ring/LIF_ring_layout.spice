@@ -20,7 +20,7 @@ X0 m4_0_0# m4_n120_n120# cap_mim_2f0_m4m5_noshield c_width=10u c_length=13u
 X0 a_94_0# a_28_150# a_n92_0# w_n230_n138# pfet_03v3 ad=0.2925p pd=2.2u as=0.2925p ps=2.2u w=0.45u l=0.28u
 .ends
 
-.subckt LIF_ring vdd vlk vss vout
+.subckt LIF_ring vlk vdd vss vout
 Xpfet$4_0 vdd vlk m5_n4989_521# vdd pfet$4
 Xnfet$1_0 vss vss m5_n4989_521# vout nfet$1
 Xnfet_0 vss m2_35_52# vout vss nfet

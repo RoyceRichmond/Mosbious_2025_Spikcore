@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>GF180 DENSITY DRC Run Report at</description>
+ <original-file>/foss/designs/Mosbious_2025_Spikcore/designs/klayout/layout_synapse/synapse.gds</original-file>
+ <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
+ <top-cell>synapse</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>PL.8</name>
+   <description>PL.8 : Poly2 coverage over the entire die shall be 14%.
+                Dummy poly2 lines must be added to meet the minimum poly2 density requirement. : 14%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M1.4</name>
+   <description>M1.4 : Metal1 coverage over the entire die shall be &gt;30%
+                (Refer to section 13.0 for Dummy Metal fill guidelines.
+                 Customer needs to ensure enough dummy metal to satisfy Metal1 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M2.4</name>
+   <description>M2.4 : Metal2 coverage over the entire die shall be &gt;30%
+                (Refer to section 13.0 for Dummy Metal fill guidelines.
+                 Customer needs to ensure enough dummy metal to satisfy Metal2 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M3.4</name>
+   <description>M3.4 : metal3 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal3 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M4.4</name>
+   <description>M4.4 : metal4 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal4 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M5.4</name>
+   <description>M5.4 : metal5 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal5 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MT.3</name>
+   <description>MT.3 : MetalTop coverage over the entire die shall be &gt;30%
+                                (Refer to section 10.3 for Dummy Metal-fill guidelines.
+                                Customer needs to ensure enough dummy metal to satisfy Metaln coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>synapse</name>
+   <variant/>
+   <layout-name/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (11.92,-4.96;11.92,-3.94;11.88,-3.94;11.88,-3.58;12.24,-3.58;12.24,-3.94;12.2,-3.94;12.2,-4.96)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (7.72,-4.95;7.72,-4.59;7.76,-4.59;7.76,-3.57;8.04,-3.57;8.04,-4.59;8.08,-4.59;8.08,-4.95)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (7.76,-2.67;7.76,-1.65;7.72,-1.65;7.72,-1.29;8.08,-1.29;8.08,-1.65;8.04,-1.65;8.04,-2.67)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (11.88,-2.66;11.88,-2.3;11.92,-2.3;11.92,-0.7;12.2,-0.7;12.2,-2.3;12.24,-2.3;12.24,-2.66)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (7.72,-0.74;7.72,-0.38;7.76,-0.38;7.76,0.64;8.04,0.64;8.04,-0.38;8.08,-0.38;8.08,-0.74)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (11.92,0.2;11.92,2.8;11.88,2.8;11.88,3.16;12.24,3.16;12.24,2.8;12.2,2.8;12.2,0.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0.78,9.745;0.78,10.125;0.83,10.125;0.83,11.145;1.11,11.145;1.11,10.125;1.16,10.125;1.16,9.745)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.81,10.125;3.81,11.145;3.76,11.145;3.76,11.525;4.14,11.525;4.14,11.145;4.09,11.145;4.09,10.125)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0.78,11.585;0.78,11.965;0.83,11.965;0.83,12.985;1.11,12.985;1.11,11.965;1.16,11.965;1.16,11.585)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (11.88,9.575;11.88,9.955;11.93,9.955;11.93,13.355;12.21,13.355;12.21,9.955;12.26,9.955;12.26,9.575)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (8.24,9.955;8.24,13.355;8.19,13.355;8.19,13.735;8.57,13.735;8.57,13.355;8.52,13.355;8.52,9.955)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0.83,13.805;0.83,14.825;0.78,14.825;0.78,15.205;1.16,15.205;1.16,14.825;1.11,14.825;1.11,13.805)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (5.185,-4.98;5.185,-4.58;8.09,-4.58;8.09,-4.98)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (7.17,-4.27;7.17,-2.86;8.25,-2.86;8.25,-1.97;8.63,-1.97;8.63,-3.21;7.55,-3.21;7.55,-4.27)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (7.7,-1.67;7.7,-1.27;7.71,-1.27;7.71,-0.37;8.09,-0.37;8.09,-1.27;8.1,-1.27;8.1,-1.67)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (8.96,-7.26;8.96,-4.27;8.25,-4.27;8.25,-3.89;8.96,-3.89;8.96,-0.06;8.25,-0.06;8.25,0.32;8.96,0.32;8.96,2.2;11,2.2;11,-1.31;11.71,-1.31;11.71,-1.69;11,-1.69;11,-4.26;11.71,-4.26;11.71,-4.64;11,-4.64;11,-7.26)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (12.41,-1.69;12.41,-0.41;11.33,-0.41;11.33,2.2;11.73,2.2;11.73,-0.095;12.81,-0.095;12.81,-1.69)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (12.41,0.8;12.41,2.2;12.82,2.2;12.82,7.25;13.22,7.25;13.22,0.8)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.2,-2.36;3.2,8.085;3.6,8.085;3.6,-1.96;7.56,-1.96;7.56,-2.36)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.28,-0.07;4.28,8.085;4.68,8.085;4.68,0.33;7.17,0.33;7.17,0.32;7.55,0.32;7.55,-0.06;7.17,-0.06;7.17,-0.07)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (11.87,2.79;11.87,8.325;12.27,8.325;12.27,7.925;12.25,7.925;12.25,2.79)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (12.41,-4.64;12.41,-3.95;11.87,-3.95;11.87,-2.29;12.25,-2.29;12.25,-3.565;12.79,-3.565;12.79,-4.24;13.635,-4.24;13.635,8.325;14.035,8.325;14.035,-4.64)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1.12,-10.82;1.12,9.03;18.85,9.03;18.85,-10.82/1.52,-10.42;18.45,-10.42;18.45,8.63;1.52,8.63)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0.42,-1.67;0.42,10.125;1.16,10.125;1.16,9.725;0.82,9.725;0.82,-1.67)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.28,9.725;4.28,10.125;4.68,10.125;4.68,9.725)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1.33,10.435;1.33,10.835;1.34,10.835;1.34,11.585;0.78,11.585;0.78,11.965;1.72,11.965;1.72,10.835;1.73,10.835;1.73,10.435)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.32,10.445;4.32,10.825;6.5,10.825;6.5,12.565;6.9,12.565;6.9,12.865;8.01,12.865;8.01,10.445)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (10.59,10.445;10.59,11.125;10.19,11.125;10.19,12.565;10.59,12.565;10.59,12.865;10.97,12.865;10.97,10.445)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (12.44,10.445;12.44,12.865;12.82,12.865;12.82,11.885;13.22,11.885;13.22,10.445)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (8.75,10.445;8.75,12.865;9.375,12.865;9.375,13.695;11.72,13.695;11.72,10.445;11.32,10.445;11.32,13.295;9.89,13.295;9.89,12.465;9.13,12.465;9.13,10.445)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.2,9.725;3.2,11.525;3.74,11.525;3.74,13.745;8.57,13.745;8.57,13.345;4.14,13.345;4.14,11.145;3.6,11.145;3.6,9.725)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1.72,12.275;1.72,12.285;1.34,12.285;1.34,12.665;1.72,12.665;1.72,12.675;3.035,12.675;3.035,14.445;13.335,14.445;13.335,14.045;3.435,14.045;3.435,12.275)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-0.51,10.445;-0.51,11.125;-0.91,11.125;-0.91,12.565;-0.51,12.565;-0.51,14.505;0.6,14.505;0.6,14.125;-0.13,14.125;-0.13,10.825;0.6,10.825;0.6,10.445)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (0.22,12.285;0.22,13.695;1.34,13.695;1.34,14.505;1.72,14.505;1.72,13.345;0.6,13.345;0.6,12.285)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-1.955,14.825;-1.955,15.205;1.16,15.205;1.16,14.825)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (11.87,9.565;11.87,9.965;13.635,9.965;13.635,15.505;-1.955,15.505;-1.955,15.905;14.035,15.905;14.035,9.565)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-1.82,-7.26;-1.82,-5.55;11,-5.55;11,-7.26)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-1.955,-4.98;-1.955,-4.58;5.585,-4.58;5.585,-4.98)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-1.955,-1.67;-1.955,-1.27;8.1,-1.27;8.1,-1.67)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (11.87,7.925;11.87,9.965;12.27,9.965;12.27,7.925)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (3.2,7.685;3.2,10.125;3.6,10.125;3.6,7.685)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (4.28,7.685;4.28,10.435;1.33,10.435;1.33,10.835;4.68,10.835;4.68,7.685)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-1.955,6.85;-1.955,7.25;12.82,7.25;12.82,11.885;13.22,11.885;13.22,6.85)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-1.955,11.125;-1.955,12.56;-0.91,12.56;-0.91,12.565;10.59,12.565;10.59,11.125)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>synapse</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (13.635,7.925;13.635,14.045;12.935,14.045;12.935,14.445;14.035,14.445;14.035,7.925)</value>
+   </values>
+  </item>
+ </items>
+</report-database>

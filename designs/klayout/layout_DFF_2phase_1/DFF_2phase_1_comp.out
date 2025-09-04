@@ -1,0 +1,658 @@
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__latq_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__latq_1 
+-------------------------------------------|-------------------------------------------
+nfet_05v0 (8)                              |(no matching element)                      
+pfet_05v0 (8)                              |(no matching element)                      
+(no matching element)                      |nfet_06v0 (8)                              
+(no matching element)                      |pfet_06v0 (8)                              
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 15                         |Number of nets: 15                         
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__latq_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__latq_1 
+
+---------------------------------------------------------------------------------------
+Net: a_1364_532#                           |Net: net6                                  
+  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
+  pfet_05v0/2 = 1                          |  nfet_06v0/(1|3) = 1                      
+  pfet_05v0/(1|3) = 1                      |  pfet_06v0/2 = 1                          
+  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+                                           |                                           
+Net: a_504_110#                            |Net: net7                                  
+  pfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
+  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
+  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  pfet_05v0/2 = 1                          |  pfet_06v0/2 = 1                          
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: a_872_107#                            |Net: net0                                  
+  nfet_05v0/(1|3) = 2                      |  pfet_06v0/(1|3) = 2                      
+                                           |                                           
+Net: a_1264_107#                           |Net: net1                                  
+  nfet_05v0/(1|3) = 2                      |  pfet_06v0/(1|3) = 2                      
+                                           |                                           
+Net: Q                                     |Net: Q                                     
+  nfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
+  pfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+                                           |                                           
+Net: a_1224_652#                           |Net: net2                                  
+  pfet_05v0/(1|3) = 2                      |  nfet_06v0/(1|3) = 2                      
+                                           |                                           
+Net: a_872_652#                            |Net: net3                                  
+  pfet_05v0/(1|3) = 2                      |  nfet_06v0/(1|3) = 2                      
+                                           |                                           
+Net: D                                     |Net: D                                     
+  pfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
+  nfet_05v0/2 = 1                          |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: E                                     |Net: E                                     
+  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
+  pfet_05v0/2 = 1                          |  pfet_06v0/2 = 1                          
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VNW                                   |Net: VNW                                   
+  pfet_05v0/4 = 8                          |  pfet_06v0/4 = 8                          
+                                           |                                           
+Net: a_1020_652#                           |Net: net5                                  
+  nfet_05v0/2 = 2                          |  nfet_06v0/(1|3) = 2                      
+  pfet_05v0/2 = 2                          |  nfet_06v0/2 = 2                          
+  nfet_05v0/(1|3) = 2                      |  pfet_06v0/(1|3) = 2                      
+  pfet_05v0/(1|3) = 2                      |  pfet_06v0/2 = 2                          
+                                           |                                           
+Net: VPW                                   |Net: VPW                                   
+  nfet_05v0/4 = 8                          |  nfet_06v0/4 = 8                          
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VDD                                   |Net: VDD                                   
+  pfet_05v0/(1|3) = 6                      |  pfet_06v0/(1|3) = 6                      
+                                           |                                           
+Net: a_36_92#                              |Net: net4                                  
+  pfet_05v0/2 = 2                          |  nfet_06v0/(1|3) = 1                      
+  nfet_05v0/2 = 2                          |  nfet_06v0/2 = 2                          
+  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  pfet_05v0/(1|3) = 1                      |  pfet_06v0/2 = 2                          
+                                           |                                           
+Net: VSS                                   |Net: VSS                                   
+  nfet_05v0/(1|3) = 6                      |  nfet_06v0/(1|3) = 6                      
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__latq_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__latq_1 
+
+---------------------------------------------------------------------------------------
+Instance: nfet_05v0:0                      |Instance: nfet_06v0:_tn0                   
+  (1,3) = (6,2)                            |  (1,3) = (6,6)                            
+  2 = 8                                    |  2 = 2                                    
+  4 = 8                                    |  4 = 8                                    
+                                           |                                           
+Instance: nfet_05v0:3                      |Instance: nfet_06v0:_tn8                   
+  (1,3) = (8,2)                            |  (1,3) = (6,4)                            
+  2 = 6                                    |  2 = 6                                    
+  4 = 8                                    |  4 = 8                                    
+                                           |                                           
+Instance: nfet_05v0:4                      |Instance: nfet_06v0:_tn4                   
+  (1,3) = (6,6)                            |  (1,3) = (6,2)                            
+  2 = 2                                    |  2 = 2                                    
+  4 = 8                                    |  4 = 8                                    
+                                           |                                           
+Instance: nfet_05v0:5                      |Instance: nfet_06v0:_tn5                   
+  (1,3) = (6,2)                            |  (1,3) = (8,2)                            
+  2 = 4                                    |  2 = 4                                    
+  4 = 8                                    |  4 = 8                                    
+                                           |                                           
+Instance: nfet_05v0:10                     |Instance: nfet_06v0:_tn1                   
+  (1,3) = (8,2)                            |  (1,3) = (8,2)                            
+  2 = 4                                    |  2 = 6                                    
+  4 = 8                                    |  4 = 8                                    
+                                           |                                           
+Instance: nfet_05v0:11                     |Instance: nfet_06v0:_tn2                   
+  (1,3) = (6,2)                            |  (1,3) = (6,2)                            
+  2 = 2                                    |  2 = 4                                    
+  4 = 8                                    |  4 = 8                                    
+                                           |                                           
+Instance: nfet_05v0:13                     |Instance: nfet_06v0:_tn3                   
+  (1,3) = (6,4)                            |  (1,3) = (6,4)                            
+  2 = 6                                    |  2 = 8                                    
+  4 = 8                                    |  4 = 8                                    
+                                           |                                           
+Instance: nfet_05v0:14                     |Instance: nfet_06v0:_tn6                   
+  (1,3) = (6,4)                            |  (1,3) = (6,2)                            
+  2 = 8                                    |  2 = 8                                    
+  4 = 8                                    |  4 = 8                                    
+                                           |                                           
+Instance: pfet_05v0:1                      |Instance: pfet_06v0:_tp0                   
+  (1,3) = (6,4)                            |  (1,3) = (6,6)                            
+  2 = 6                                    |  2 = 2                                    
+  4 = 8                                    |  4 = 8                                    
+                                           |                                           
+Instance: pfet_05v0:2                      |Instance: pfet_06v0:_tp8                   
+  (1,3) = (6,2)                            |  (1,3) = (6,4)                            
+  2 = 8                                    |  2 = 6                                    
+  4 = 8                                    |  4 = 8                                    
+                                           |                                           
+Instance: pfet_05v0:6                      |Instance: pfet_06v0:_tp5                   
+  (1,3) = (6,6)                            |  (1,3) = (6,2)                            
+  2 = 2                                    |  2 = 2                                    
+  4 = 8                                    |  4 = 8                                    
+                                           |                                           
+Instance: pfet_05v0:7                      |Instance: pfet_06v0:_tp4                   
+  (1,3) = (6,2)                            |  (1,3) = (8,2)                            
+  2 = 4                                    |  2 = 6                                    
+  4 = 8                                    |  4 = 8                                    
+                                           |                                           
+Instance: pfet_05v0:8                      |Instance: pfet_06v0:_tp2                   
+  (1,3) = (6,2)                            |  (1,3) = (8,2)                            
+  2 = 2                                    |  2 = 4                                    
+  4 = 8                                    |  4 = 8                                    
+                                           |                                           
+Instance: pfet_05v0:9                      |Instance: pfet_06v0:_tp1                   
+  (1,3) = (6,4)                            |  (1,3) = (6,2)                            
+  2 = 8                                    |  2 = 4                                    
+  4 = 8                                    |  4 = 8                                    
+                                           |                                           
+Instance: pfet_05v0:12                     |Instance: pfet_06v0:_tp3                   
+  (1,3) = (8,2)                            |  (1,3) = (6,4)                            
+  2 = 6                                    |  2 = 8                                    
+  4 = 8                                    |  4 = 8                                    
+                                           |                                           
+Instance: pfet_05v0:15                     |Instance: pfet_06v0:_tp6                   
+  (1,3) = (8,2)                            |  (1,3) = (6,2)                            
+  2 = 4                                    |  2 = 8                                    
+  4 = 8                                    |  4 = 8                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits gf180mcu_fd_sc_mcu9t5v0__latq_1 gf180mcu_fd_sc_mcu9t5v0__latq_1
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__nand2_ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__nand2_ 
+-------------------------------------------|-------------------------------------------
+pfet_05v0 (2)                              |(no matching element)                      
+nfet_05v0 (2)                              |(no matching element)                      
+(no matching element)                      |nfet_06v0 (2)                              
+(no matching element)                      |pfet_06v0 (2)                              
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__nand2_ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__nand2_ 
+
+---------------------------------------------------------------------------------------
+Net: VSS                                   |Net: VSS                                   
+  nfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VNW                                   |Net: VNW                                   
+  pfet_05v0/4 = 2                          |  pfet_06v0/4 = 2                          
+                                           |                                           
+Net: VDD                                   |Net: VDD                                   
+  pfet_05v0/(1|3) = 2                      |  pfet_06v0/(1|3) = 2                      
+                                           |                                           
+Net: A1                                    |Net: A1                                    
+  pfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
+  nfet_05v0/2 = 1                          |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: VPW                                   |Net: VPW                                   
+  nfet_05v0/4 = 2                          |  nfet_06v0/4 = 2                          
+                                           |                                           
+Net: A2                                    |Net: A2                                    
+  pfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
+  nfet_05v0/2 = 1                          |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: a_245_69#                             |Net: net_0                                 
+  nfet_05v0/(1|3) = 2                      |  nfet_06v0/(1|3) = 2                      
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: ZN                                    |Net: ZN                                    
+  pfet_05v0/(1|3) = 2                      |  nfet_06v0/(1|3) = 1                      
+  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 2                      
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__nand2_ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__nand2_ 
+
+---------------------------------------------------------------------------------------
+Instance: pfet_05v0:0                      |Instance: nfet_06v0:_i_1                   
+  (1,3) = (3,2)                            |  (1,3) = (2,1)                            
+  2 = 2                                    |  2 = 2                                    
+  4 = 2                                    |  4 = 2                                    
+                                           |                                           
+Instance: pfet_05v0:1                      |Instance: nfet_06v0:_i_0                   
+  (1,3) = (3,2)                            |  (1,3) = (3,2)                            
+  2 = 2                                    |  2 = 2                                    
+  4 = 2                                    |  4 = 2                                    
+                                           |                                           
+Instance: nfet_05v0:2                      |Instance: pfet_06v0:_i_3                   
+  (1,3) = (3,2)                            |  (1,3) = (3,2)                            
+  2 = 2                                    |  2 = 2                                    
+  4 = 2                                    |  4 = 2                                    
+                                           |                                           
+Instance: nfet_05v0:3                      |Instance: pfet_06v0:_i_2                   
+  (1,3) = (2,1)                            |  (1,3) = (3,2)                            
+  2 = 2                                    |  2 = 2                                    
+  4 = 2                                    |  4 = 2                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits gf180mcu_fd_sc_mcu9t5v0__nand2_1 gf180mcu_fd_sc_mcu9t5v0__nand2_1
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
+-------------------------------------------|-------------------------------------------
+pfet_05v0 (1)                              |(no matching element)                      
+nfet_05v0 (1)                              |(no matching element)                      
+(no matching element)                      |nfet_06v0 (1)                              
+(no matching element)                      |pfet_06v0 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
+
+---------------------------------------------------------------------------------------
+Net: VNW                                   |Net: VNW                                   
+  pfet_05v0/4 = 1                          |  pfet_06v0/4 = 1                          
+                                           |                                           
+Net: VDD                                   |Net: VDD                                   
+  pfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+                                           |                                           
+Net: VPW                                   |Net: VPW                                   
+  nfet_05v0/4 = 1                          |  nfet_06v0/4 = 1                          
+                                           |                                           
+Net: VSS                                   |Net: VSS                                   
+  nfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: I                                     |Net: I                                     
+  pfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
+  nfet_05v0/2 = 1                          |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: ZN                                    |Net: ZN                                    
+  pfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
+  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
+
+---------------------------------------------------------------------------------------
+Instance: pfet_05v0:0                      |Instance: nfet_06v0:_i_0                   
+  (1,3) = (2,1)                            |  (1,3) = (2,1)                            
+  2 = 2                                    |  2 = 2                                    
+  4 = 1                                    |  4 = 1                                    
+                                           |                                           
+Instance: nfet_05v0:1                      |Instance: pfet_06v0:_i_1                   
+  (1,3) = (2,1)                            |  (1,3) = (2,1)                            
+  2 = 2                                    |  2 = 2                                    
+  4 = 1                                    |  4 = 1                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits gf180mcu_fd_sc_mcu9t5v0__inv_1 gf180mcu_fd_sc_mcu9t5v0__inv_1
+
+Cell DFF_2phase_1 (0) disconnected node: Q
+Subcircuit summary:
+Circuit 1: DFF_2phase_1                    |Circuit 2: DFF_2phase_1                    
+-------------------------------------------|-------------------------------------------
+nfet_05v0 (19)                             |(no matching element)                      
+pfet_05v0 (19)                             |(no matching element)                      
+(no matching element)                      |nfet_06v0 (19)                             
+(no matching element)                      |pfet_06v0 (19)                             
+Number of devices: 38                      |Number of devices: 38                      
+Number of nets: 27                         |Number of nets: 27                         
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: DFF_2phase_1                    |Circuit 2: DFF_2phase_1                    
+
+---------------------------------------------------------------------------------------
+Net: /gf180mcu_fd_sc_mcu9t5v0__latq_1_1/a_ |Net: gf180mcu_fd_sc_mcu9t5v0__latq_1:secon 
+  pfet_05v0/2 = 2                          |  nfet_06v0/(1|3) = 1                      
+  nfet_05v0/2 = 2                          |  nfet_06v0/2 = 2                          
+  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  pfet_05v0/(1|3) = 1                      |  pfet_06v0/2 = 2                          
+                                           |                                           
+Net: /gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_ |Net: gf180mcu_fd_sc_mcu9t5v0__latq_1:main/ 
+  pfet_05v0/2 = 2                          |  nfet_06v0/(1|3) = 1                      
+  nfet_05v0/2 = 2                          |  nfet_06v0/2 = 2                          
+  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  pfet_05v0/(1|3) = 1                      |  pfet_06v0/2 = 2                          
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /gf180mcu_fd_sc_mcu9t5v0__latq_1_1/a_ |Net: gf180mcu_fd_sc_mcu9t5v0__latq_1:secon 
+  nfet_05v0/2 = 2                          |  nfet_06v0/(1|3) = 2                      
+  pfet_05v0/2 = 2                          |  nfet_06v0/2 = 2                          
+  nfet_05v0/(1|3) = 2                      |  pfet_06v0/(1|3) = 2                      
+  pfet_05v0/(1|3) = 2                      |  pfet_06v0/2 = 2                          
+                                           |                                           
+Net: /gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_ |Net: gf180mcu_fd_sc_mcu9t5v0__latq_1:main/ 
+  nfet_05v0/2 = 2                          |  nfet_06v0/(1|3) = 2                      
+  pfet_05v0/2 = 2                          |  nfet_06v0/2 = 2                          
+  nfet_05v0/(1|3) = 2                      |  pfet_06v0/(1|3) = 2                      
+  pfet_05v0/(1|3) = 2                      |  pfet_06v0/2 = 2                          
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I    |Net: net1                                  
+  pfet_05v0/(1|3) = 2                      |  nfet_06v0/2 = 1                          
+  nfet_05v0/(1|3) = 1                      |  pfet_06v0/2 = 1                          
+  pfet_05v0/2 = 1                          |  nfet_06v0/(1|3) = 1                      
+  nfet_05v0/2 = 1                          |  pfet_06v0/(1|3) = 2                      
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VSS                                   |Net: VSSd                                  
+  nfet_05v0/(1|3) = 14                     |  nfet_06v0/(1|3) = 14                     
+  nfet_05v0/4 = 19                         |  nfet_06v0/4 = 19                         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VDD                                   |Net: VDDd                                  
+  pfet_05v0/(1|3) = 15                     |  pfet_06v0/(1|3) = 15                     
+  pfet_05v0/4 = 19                         |  pfet_06v0/4 = 19                         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /gf180mcu_fd_sc_mcu9t5v0__nand2_1_0/a |Net: gf180mcu_fd_sc_mcu9t5v0__nand2_1:2/ne 
+  nfet_05v0/(1|3) = 2                      |  nfet_06v0/(1|3) = 2                      
+                                           |                                           
+Net: /gf180mcu_fd_sc_mcu9t5v0__latq_1_1/a_ |Net: gf180mcu_fd_sc_mcu9t5v0__latq_1:secon 
+  nfet_05v0/(1|3) = 2                      |  pfet_06v0/(1|3) = 2                      
+                                           |                                           
+Net: /gf180mcu_fd_sc_mcu9t5v0__latq_1_1/a_ |Net: gf180mcu_fd_sc_mcu9t5v0__latq_1:main/ 
+  pfet_05v0/(1|3) = 2                      |  pfet_06v0/(1|3) = 2                      
+                                           |                                           
+Net: /gf180mcu_fd_sc_mcu9t5v0__latq_1_1/a_ |Net: gf180mcu_fd_sc_mcu9t5v0__latq_1:secon 
+  pfet_05v0/(1|3) = 2                      |  pfet_06v0/(1|3) = 2                      
+                                           |                                           
+Net: /gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_ |Net: gf180mcu_fd_sc_mcu9t5v0__latq_1:secon 
+  pfet_05v0/(1|3) = 2                      |  nfet_06v0/(1|3) = 2                      
+                                           |                                           
+Net: /gf180mcu_fd_sc_mcu9t5v0__latq_1_1/a_ |Net: gf180mcu_fd_sc_mcu9t5v0__latq_1:main/ 
+  nfet_05v0/(1|3) = 2                      |  nfet_06v0/(1|3) = 2                      
+                                           |                                           
+Net: /gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_ |Net: gf180mcu_fd_sc_mcu9t5v0__latq_1:secon 
+  nfet_05v0/(1|3) = 2                      |  nfet_06v0/(1|3) = 2                      
+                                           |                                           
+Net: /gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_ |Net: gf180mcu_fd_sc_mcu9t5v0__latq_1:main/ 
+  nfet_05v0/(1|3) = 2                      |  pfet_06v0/(1|3) = 2                      
+                                           |                                           
+Net: /gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_ |Net: gf180mcu_fd_sc_mcu9t5v0__latq_1:main/ 
+  pfet_05v0/(1|3) = 2                      |  nfet_06v0/(1|3) = 2                      
+                                           |                                           
+Net: EN                                    |Net: EN                                    
+  pfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
+  nfet_05v0/2 = 1                          |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: gated_control                         |Net: gated_control                         
+  pfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
+  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+                                           |                                           
+Net: PHI_2                                 |Net: PHI_2                                 
+  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
+  pfet_05v0/2 = 1                          |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: PHI_1                                 |Net: PHI_1                                 
+  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
+  pfet_05v0/2 = 1                          |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: D                                     |Net: D                                     
+  pfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
+  nfet_05v0/2 = 1                          |  pfet_06v0/2 = 1                          
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /gf180mcu_fd_sc_mcu9t5v0__latq_1_1/a_ |Net: gf180mcu_fd_sc_mcu9t5v0__latq_1:secon 
+  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
+  pfet_05v0/2 = 1                          |  nfet_06v0/(1|3) = 1                      
+  pfet_05v0/(1|3) = 1                      |  pfet_06v0/2 = 1                          
+  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+                                           |                                           
+Net: /gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_ |Net: gf180mcu_fd_sc_mcu9t5v0__latq_1:main/ 
+  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
+  pfet_05v0/2 = 1                          |  nfet_06v0/(1|3) = 1                      
+  pfet_05v0/(1|3) = 1                      |  pfet_06v0/2 = 1                          
+  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+                                           |                                           
+Net: gf180mcu_fd_sc_mcu9t5v0__latq_1_1/Q   |Net: out_m                                 
+  pfet_05v0/2 = 1                          |  nfet_06v0/(1|3) = 1                      
+  nfet_05v0/2 = 1                          |  pfet_06v0/(1|3) = 1                      
+  nfet_05v0/(1|3) = 1                      |  nfet_06v0/2 = 1                          
+  pfet_05v0/(1|3) = 1                      |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: /gf180mcu_fd_sc_mcu9t5v0__latq_1_1/a_ |Net: gf180mcu_fd_sc_mcu9t5v0__latq_1:secon 
+  pfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
+  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
+  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  pfet_05v0/2 = 1                          |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: /gf180mcu_fd_sc_mcu9t5v0__latq_1_0/a_ |Net: gf180mcu_fd_sc_mcu9t5v0__latq_1:main/ 
+  pfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
+  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
+  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  pfet_05v0/2 = 1                          |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: gf180mcu_fd_sc_mcu9t5v0__latq_1_0/Q   |Net: Q                                     
+  nfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
+  pfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  pfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
+  nfet_05v0/2 = 1                          |  pfet_06v0/2 = 1                          
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: DFF_2phase_1                    |Circuit 2: DFF_2phase_1                    
+
+---------------------------------------------------------------------------------------
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (33,4)                           |  (1,3) = (33,6)                           
+  2 = 8                                    |  2 = 2                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (33,4)                           |  (1,3) = (33,6)                           
+  2 = 8                                    |  2 = 2                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (33,4)                           |  (1,3) = (33,4)                           
+  2 = 8                                    |  2 = 6                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (33,4)                           |  (1,3) = (33,4)                           
+  2 = 8                                    |  2 = 6                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (8,2)                            |  (1,3) = (33,2)                           
+  2 = 6                                    |  2 = 2                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__nand2_1 
+  (1,3) = (8,2)                            |  (1,3) = (33,2)                           
+  2 = 6                                    |  2 = 2                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (33,6)                           |  (1,3) = (8,2)                            
+  2 = 2                                    |  2 = 4                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (33,6)                           |  (1,3) = (8,2)                            
+  2 = 2                                    |  2 = 4                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (33,2)                           |  (1,3) = (8,2)                            
+  2 = 4                                    |  2 = 6                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (33,2)                           |  (1,3) = (8,2)                            
+  2 = 4                                    |  2 = 6                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__nand2_1 |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (33,2)                           |  (1,3) = (33,2)                           
+  2 = 4                                    |  2 = 4                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (33,2)                           |  (1,3) = (33,2)                           
+  2 = 4                                    |  2 = 4                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (8,2)                            |  (1,3) = (33,2)                           
+  2 = 4                                    |  2 = 4                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (8,2)                            |  (1,3) = (33,4)                           
+  2 = 4                                    |  2 = 8                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (33,4)                           |  (1,3) = (33,4)                           
+  2 = 6                                    |  2 = 8                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (33,4)                           |  (1,3) = (33,4)                           
+  2 = 6                                    |  2 = 8                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__nand2_1 |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (5,2)                            |  (1,3) = (33,4)                           
+  2 = 2                                    |  2 = 8                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__inv_1:1 
+  (1,3) = (33,2)                           |  (1,3) = (33,2)                           
+  2 = 2                                    |  2 = 5                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__inv_1_0 |Instance: gf180mcu_fd_sc_mcu9t5v0__nand2_1 
+  (1,3) = (33,2)                           |  (1,3) = (5,2)                            
+  2 = 5                                    |  2 = 4                                    
+  4 = 33                                   |  4 = 33                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (34,4)                           |  (1,3) = (34,6)                           
+  2 = 6                                    |  2 = 2                                    
+  4 = 34                                   |  4 = 34                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (34,4)                           |  (1,3) = (34,6)                           
+  2 = 6                                    |  2 = 2                                    
+  4 = 34                                   |  4 = 34                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (34,4)                           |  (1,3) = (34,4)                           
+  2 = 8                                    |  2 = 6                                    
+  4 = 34                                   |  4 = 34                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (34,4)                           |  (1,3) = (34,4)                           
+  2 = 8                                    |  2 = 6                                    
+  4 = 34                                   |  4 = 34                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (34,4)                           |  (1,3) = (34,2)                           
+  2 = 8                                    |  2 = 2                                    
+  4 = 34                                   |  4 = 34                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (34,4)                           |  (1,3) = (8,2)                            
+  2 = 8                                    |  2 = 6                                    
+  4 = 34                                   |  4 = 34                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (34,6)                           |  (1,3) = (8,2)                            
+  2 = 2                                    |  2 = 6                                    
+  4 = 34                                   |  4 = 34                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (34,6)                           |  (1,3) = (8,2)                            
+  2 = 2                                    |  2 = 4                                    
+  4 = 34                                   |  4 = 34                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (34,2)                           |  (1,3) = (8,2)                            
+  2 = 4                                    |  2 = 4                                    
+  4 = 34                                   |  4 = 34                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (34,2)                           |  (1,3) = (34,2)                           
+  2 = 4                                    |  2 = 4                                    
+  4 = 34                                   |  4 = 34                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (34,2)                           |  (1,3) = (34,2)                           
+  2 = 4                                    |  2 = 4                                    
+  4 = 34                                   |  4 = 34                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (8,2)                            |  (1,3) = (34,2)                           
+  2 = 6                                    |  2 = 4                                    
+  4 = 34                                   |  4 = 34                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (8,2)                            |  (1,3) = (34,4)                           
+  2 = 6                                    |  2 = 8                                    
+  4 = 34                                   |  4 = 34                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (8,2)                            |  (1,3) = (34,4)                           
+  2 = 4                                    |  2 = 8                                    
+  4 = 34                                   |  4 = 34                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (8,2)                            |  (1,3) = (34,4)                           
+  2 = 4                                    |  2 = 8                                    
+  4 = 34                                   |  4 = 34                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__nand2_1 |Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1: 
+  (1,3) = (34,5)                           |  (1,3) = (34,4)                           
+  2 = 4                                    |  2 = 8                                    
+  4 = 34                                   |  4 = 34                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__nand2_1 |Instance: gf180mcu_fd_sc_mcu9t5v0__inv_1:1 
+  (1,3) = (34,5)                           |  (1,3) = (34,2)                           
+  2 = 2                                    |  2 = 5                                    
+  4 = 34                                   |  4 = 34                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__latq_1_ |Instance: gf180mcu_fd_sc_mcu9t5v0__nand2_1 
+  (1,3) = (34,2)                           |  (1,3) = (34,5)                           
+  2 = 2                                    |  2 = 2                                    
+  4 = 34                                   |  4 = 34                                   
+                                           |                                           
+Instance: gf180mcu_fd_sc_mcu9t5v0__inv_1_0 |Instance: gf180mcu_fd_sc_mcu9t5v0__nand2_1 
+  (1,3) = (34,2)                           |  (1,3) = (34,5)                           
+  2 = 5                                    |  2 = 4                                    
+  4 = 34                                   |  4 = 34                                   
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: DFF_2phase_1                    |Circuit 2: DFF_2phase_1                    
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSSd **Mismatch**                          
+VDD                                        |VDDd **Mismatch**                          
+gated_control                              |EN **Mismatch**                            
+PHI_1                                      |gated_control **Mismatch**                 
+PHI_2                                      |PHI_2                                      
+D                                          |PHI_1 **Mismatch**                         
+EN                                         |D **Mismatch**                             
+(no pin, node is gf180mcu_fd_sc_mcu9t5v0__ |Q                                          
+Q                                          |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for DFF_2phase_1 and DFF_2phase_1 altered to match.
+Device classes DFF_2phase_1 and DFF_2phase_1 are equivalent.
+
+Final result: Top level cell failed pin matching.
