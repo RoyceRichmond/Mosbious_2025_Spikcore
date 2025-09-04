@@ -136,13 +136,13 @@ value="
 .include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
 "}
 C {devices/code_shown.sym} 955 -455 0 0 {name=s2 only_toplevel=false value="
-*.option method=gear seed=12
+
 .param frec=20000k
 .param period=1/frec
 .param half_period=period/2
-.tran \{period/1000\} \{4*period\} 0
+.tran \{period/1000000\} \{4*period\} 0
 .control
-	set num_threads=12
+	set num_threads=16
 	run
 	write triggerAddV.raw
 .endc
