@@ -5,9 +5,12 @@
 [submodule "designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols"]
 	path = designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols
 	url = https://github.com/peterkinget/gf180mcu_fd_sc_mcu9t5v0_symbols.git
+	branch= main	
 [submodule "miscellaneous/openfasoc-tapeouts"]
 	path = miscellaneous/openfasoc-tapeouts
 	url = https://github.com/idea-fasoc/openfasoc-tapeouts.git
+	branch= main	
 [submodule "miscellaneous/sscs-chipathon"]
 	path = miscellaneous/sscs-chipathon
 	url = https://github.com/sscs-ose/sscs-chipathon-2025.git
+	branch= main	
