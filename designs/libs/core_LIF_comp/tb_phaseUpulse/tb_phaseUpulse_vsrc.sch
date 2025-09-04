@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3e-06
-x2=3.3e-05
+x1=0
+x2=5e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -35,8 +35,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3e-06
-x2=3.3e-05
+x1=0
+x2=5e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -58,8 +58,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3e-06
-x2=3.3e-05
+x1=0
+x2=5e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -73,15 +73,15 @@ logx=0
 logy=0
 legend=1}
 B 2 1640 -400 2440 0 {flags=graph
-y1=0.049
+y1=0.0
 y2=3.4
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3e-06
-x2=3.3e-05
+x1=0
+x2=5e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -101,8 +101,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3e-06
-x2=3.3e-05
+x1=0
+x2=5e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -119,14 +119,14 @@ vres
 vss"}
 B 2 1110 530 1910 930 {flags=graph
 y1=0
-y2=3.4
+y2=3.3
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3e-06
-x2=3.3e-05
+x1=0
+x2=5e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -135,12 +135,12 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="5 4 6 8 9"
-node="vq1
-vq2
-vq3
-vq4
-vq5"}
+color="4 5 6 7 8"
+node="vspike_up
+vref
+vspike_down
+vres
+vss"}
 N 460 -850 480 -850 {lab=vin}
 N 660 -710 680 -710 {lab=vss}
 N 680 -710 680 -680 {lab=vss}
@@ -217,44 +217,38 @@ N 400 690 400 730 {lab=vdd}
 N 380 760 380 850 {lab=vdd}
 N 380 710 380 760 {lab=vdd}
 N 380 710 400 710 {lab=vdd}
-N 400 790 400 820 {lab=vq1}
+N 400 790 400 820 {lab=vspike_up}
 N 400 880 400 910 {lab=vss}
 N 520 690 520 730 {lab=vdd}
 N 500 760 500 850 {lab=vdd}
 N 500 710 500 760 {lab=vdd}
 N 500 710 520 710 {lab=vdd}
-N 520 790 520 820 {lab=vq2}
+N 520 790 520 820 {lab=vref}
 N 520 880 520 910 {lab=vss}
 N 640 690 640 730 {lab=vdd}
 N 620 760 620 850 {lab=vdd}
 N 620 710 620 760 {lab=vdd}
 N 620 710 640 710 {lab=vdd}
-N 640 790 640 820 {lab=vq3}
+N 640 790 640 820 {lab=vspike_down}
 N 640 880 640 910 {lab=vss}
-N 760 690 760 730 {lab=vdd}
-N 740 760 740 850 {lab=vdd}
-N 740 710 740 760 {lab=vdd}
-N 740 710 760 710 {lab=vdd}
-N 760 790 760 820 {lab=vq4}
-N 760 880 760 910 {lab=vss}
-N 880 690 880 730 {lab=vdd}
-N 860 760 860 850 {lab=vdd}
-N 860 710 860 760 {lab=vdd}
-N 860 710 880 710 {lab=vdd}
-N 880 790 880 820 {lab=vq5}
-N 880 880 880 910 {lab=vss}
+N 780 690 780 730 {lab=vdd}
+N 760 760 760 850 {lab=vdd}
+N 760 710 760 760 {lab=vdd}
+N 760 710 780 710 {lab=vdd}
+N 780 790 780 820 {lab=vres}
+N 780 880 780 910 {lab=vss}
 N 350 310 390 310 {lab=vdd}
-N 450 310 490 310 {lab=vspike_up}
+N 450 310 490 310 {lab=vspike_up0}
 N 550 310 590 310 {lab=#net9}
 N 590 310 590 370 {lab=#net9}
-N 650 310 650 370 {lab=vref}
-N 690 310 690 370 {lab=vref}
-N 750 310 750 370 {lab=vspike_down}
-N 750 310 790 310 {lab=vspike_down}
-N 850 310 890 310 {lab=vres}
-N 890 310 890 370 {lab=vres}
+N 650 310 650 370 {lab=vref0}
+N 690 310 690 370 {lab=vref0}
+N 750 310 750 370 {lab=vspike_down0}
+N 750 310 790 310 {lab=vspike_down0}
+N 850 310 890 310 {lab=vres0}
+N 890 310 890 370 {lab=vres0}
 N 950 310 950 370 {lab=vss}
-N 650 310 690 310 {lab=vref}
+N 650 310 690 310 {lab=vref0}
 N 950 310 990 310 {lab=vss}
 N 420 330 920 330 {lab=vdd}
 N 620 330 620 350 {lab=vdd}
@@ -263,18 +257,18 @@ N 920 330 920 350 {lab=vdd}
 N 350 310 350 330 {lab=vdd}
 N 350 330 420 330 {lab=vdd}
 N 350 180 350 310 {lab=vdd}
-N 470 180 470 310 {lab=vspike_up}
+N 470 180 470 310 {lab=vspike_up0}
 N 570 180 570 310 {lab=#net9}
-N 670 180 670 310 {lab=vref}
-N 770 180 770 310 {lab=vspike_down}
-N 870 180 870 310 {lab=vres}
+N 670 180 670 310 {lab=vref0}
+N 770 180 770 310 {lab=vspike_down0}
+N 870 180 870 310 {lab=vres0}
 N 990 180 990 310 {lab=vss}
 C {designs/libs/core_LIF_comp/core_not/not.sym} 500 -870 0 0 {name=x2}
 C {title.sym} 160 0 0 0 {name=l1 author="Oscar Islas"}
 C {lab_pin.sym} 460 -850 0 0 {name=p10 sig_type=std_logic lab=vin}
 C {lab_pin.sym} 500 -900 2 0 {name=p13 sig_type=std_logic lab=vdd}
 C {symbols/nfet_03v3.sym} 640 -710 0 0 {name=M2
-L=0.5u
+L=0.4u
 W=0.5u
 nf=1
 m=1
@@ -315,7 +309,7 @@ C {lab_pin.sym} 920 -860 2 0 {name=p53 sig_type=std_logic lab=phi_1}
 C {devices/code_shown.sym} 65 -460 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
 .control
-    tran 1u 30u
+    tran 10n 50u
     write tb_phaseUpulse_vsrc.raw
 .endc
 .save all
@@ -399,7 +393,7 @@ C {lab_pin.sym} 730 -290 2 0 {name=p116 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 730 -170 2 0 {name=p117 sig_type=std_logic lab=vss}
 C {symbols/nfet_03v3.sym} 740 -350 3 0 {name=M9
 L=0.5u
-W=0.5u
+W=0.28u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -414,7 +408,7 @@ spiceprefix=X
 C {lab_pin.sym} 740 -390 1 0 {name=p123 sig_type=std_logic lab=vss}
 C {symbols/nfet_03v3.sym} 620 -270 3 0 {name=M10
 L=0.5u
-W=0.5u
+W=0.28u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -427,7 +421,7 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 620 -190 3 1 {name=M11
-L=3u
+L=4u
 W=0.3u
 nf=1
 m=1
@@ -442,7 +436,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 700 -100 0 0 {name=M12
 L=0.28u
-W=1.5u
+W=6u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -478,21 +472,8 @@ C {lab_pin.sym} 1420 -560 2 0 {name=p102 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 1420 -450 2 0 {name=p103 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 1480 -530 2 0 {name=p105 sig_type=std_logic lab=vspike_up}
 C {lab_pin.sym} 1480 -490 2 0 {name=p106 sig_type=std_logic lab=reward}
-C {symbols/ppolyf_u_3k.sym} 400 850 0 0 {name=R1
-W=1e-6
-L=1e-6
-model=ppolyf_u_3k
-spiceprefix=X
-m=1}
-C {symbols/ppolyf_u_1k.sym} 400 760 0 0 {name=R2
-W=1e-6
-L=1e-6
-model=ppolyf_u_1k
-spiceprefix=X
-m=1}
 C {lab_pin.sym} 400 690 0 1 {name=p21 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 400 910 0 1 {name=p22 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 400 800 0 1 {name=p23 sig_type=std_logic lab=vq1}
 C {lab_pin.sym} 350 180 0 1 {name=p24 sig_type=std_logic lab=vdd}
 C {symbols/ppolyf_u_2k.sym} 420 310 3 0 {name=R4
 W=1e-6
@@ -550,68 +531,17 @@ spiceprefix=X
 m=1}
 C {lab_pin.sym} 520 690 0 1 {name=p31 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 520 910 0 1 {name=p32 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 520 800 0 1 {name=p33 sig_type=std_logic lab=vq2}
-C {symbols/ppolyf_u_3k.sym} 640 850 0 0 {name=R15
-W=1e-6
-L=1e-6
-model=ppolyf_u_3k
-spiceprefix=X
-m=1}
-C {symbols/ppolyf_u_1k.sym} 640 760 0 0 {name=R16
-W=1e-6
-L=1e-6
-model=ppolyf_u_1k
-spiceprefix=X
-m=1}
+C {lab_pin.sym} 520 800 0 1 {name=p33 sig_type=std_logic lab=vref}
 C {lab_pin.sym} 640 690 0 1 {name=p34 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 640 910 0 1 {name=p35 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 640 800 0 1 {name=p36 sig_type=std_logic lab=vq3}
-C {symbols/ppolyf_u_3k.sym} 760 850 0 0 {name=R17
-W=1e-6
-L=1e-6
-model=ppolyf_u_3k
-spiceprefix=X
-m=1}
-C {symbols/ppolyf_u_1k.sym} 760 760 0 0 {name=R18
-W=1e-6
-L=1e-6
-model=ppolyf_u_1k
-spiceprefix=X
-m=1}
-C {lab_pin.sym} 760 690 0 1 {name=p37 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 760 910 0 1 {name=p38 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 760 800 0 1 {name=p39 sig_type=std_logic lab=vq4}
-C {symbols/ppolyf_u_3k.sym} 880 850 0 0 {name=R19
-W=1e-6
-L=1e-6
-model=ppolyf_u_3k
-spiceprefix=X
-m=1}
-C {symbols/ppolyf_u_1k.sym} 880 760 0 0 {name=R20
-W=1e-6
-L=1e-6
-model=ppolyf_u_1k
-spiceprefix=X
-m=1}
-C {lab_pin.sym} 880 690 0 1 {name=p40 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 880 910 0 1 {name=p41 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 880 800 0 1 {name=p42 sig_type=std_logic lab=vq5}
-C {symbols/ppolyf_u_1k.sym} 520 850 0 0 {name=R14
-W=1e-6
-L=1e-6
-model=ppolyf_u_1k
-spiceprefix=X
-m=5}
-C {symbols/ppolyf_u_1k.sym} 520 760 0 0 {name=R13
-W=1e-6
-L=1e-6
-model=ppolyf_u_1k
-spiceprefix=X
-m=6}
-C {lab_pin.sym} 470 180 0 1 {name=p25 sig_type=std_logic lab=vspike_up}
-C {lab_pin.sym} 670 180 0 1 {name=p27 sig_type=std_logic lab=vref}
-C {lab_pin.sym} 770 180 0 1 {name=p28 sig_type=std_logic lab=vspike_down}
-C {lab_pin.sym} 870 180 0 1 {name=p29 sig_type=std_logic lab=vres}
+C {lab_pin.sym} 640 800 0 1 {name=p36 sig_type=std_logic lab=vspike_down}
+C {lab_pin.sym} 780 690 0 1 {name=p37 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 780 910 0 1 {name=p38 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 780 800 0 1 {name=p39 sig_type=std_logic lab=vres}
+C {lab_pin.sym} 470 180 0 1 {name=p25 sig_type=std_logic lab=vspike_up0}
+C {lab_pin.sym} 670 180 0 1 {name=p27 sig_type=std_logic lab=vref0}
+C {lab_pin.sym} 770 180 0 1 {name=p28 sig_type=std_logic lab=vspike_down0}
+C {lab_pin.sym} 870 210 0 1 {name=p29 sig_type=std_logic lab=vres0}
 C {lab_pin.sym} 990 180 0 1 {name=p30 sig_type=std_logic lab=vss}
 C {designs/libs/core_LIF_comp/core_vdiv/vdiv.sym} 1130 -170 0 0 {name=x5}
 C {lab_pin.sym} 1480 -510 2 0 {name=p26 sig_type=std_logic lab=vdd}
@@ -619,3 +549,56 @@ C {launcher.sym} 1400 -190 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_phaseUpulse_vsrc.raw tran"
 }
+C {symbols/ppolyf_u.sym} 400 760 0 0 {name=R3
+W=3e-6
+L=1e-6
+model=ppolyf_u
+spiceprefix=X
+m=1}
+C {symbols/ppolyf_u.sym} 400 850 0 0 {name=R1
+W=0.8e-6
+L=1e-6
+model=ppolyf_u
+spiceprefix=X
+m=1}
+C {symbols/ppolyf_u.sym} 520 850 0 0 {name=R2
+W=1e-6
+L=1e-6
+model=ppolyf_u
+spiceprefix=X
+m=1}
+C {symbols/ppolyf_u.sym} 520 760 0 0 {name=R13
+W=1e-6
+L=1e-6
+model=ppolyf_u
+spiceprefix=X
+m=1}
+C {symbols/ppolyf_u.sym} 640 760 0 0 {name=R14
+W=1e-6
+L=1e-6
+model=ppolyf_u
+spiceprefix=X
+m=1}
+C {symbols/ppolyf_u.sym} 640 850 0 0 {name=R15
+W=2e-6
+L=1e-6
+model=ppolyf_u
+spiceprefix=X
+m=1}
+C {symbols/ppolyf_u.sym} 780 850 0 0 {name=R16
+W=4.3e-6
+L=1e-6
+model=ppolyf_u
+spiceprefix=X
+m=1}
+C {symbols/ppolyf_u.sym} 780 760 0 0 {name=R17
+W=0.8e-6
+L=1e-6
+model=ppolyf_u
+spiceprefix=X
+m=1}
+C {launcher.sym} 950 580 0 0 {name=h1
+descr="load waves" 
+tclcommand="xschem raw_read $netlist_dir/tb_phaseUpulse_vsrc.raw tran"
+}
+C {lab_pin.sym} 400 810 0 1 {name=p40 sig_type=std_logic lab=vspike_up}

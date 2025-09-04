@@ -56,7 +56,7 @@ C {lab_pin.sym} 120 -1320 0 1 {name=p17 sig_type=std_logic lab=vdd}
 C {vsource.sym} 200 -1230 0 0 {name=V2 value=0 savecurrent=false}
 C {gnd.sym} 200 -1200 0 0 {name=l3 lab=GND}
 C {lab_pin.sym} 200 -1320 0 1 {name=p23 sig_type=std_logic lab=vss}
-C {vsource.sym} 450 -1230 0 0 {name=V4 value="pulse(0 3.3 20u 1n 1n 20u 40u)" savecurrent=false}
+C {vsource.sym} 450 -1230 0 0 {name=V4 value="pulse(0 3.3 50u 1n 1n 50u 100u)" savecurrent=false}
 C {gnd.sym} 450 -1200 0 0 {name=l5 lab=GND}
 C {lab_pin.sym} 450 -1320 0 1 {name=p33 sig_type=std_logic lab=v_rew}
 C {devices/code_shown.sym} 465 -790 0 0 {name=s1 only_toplevel=false value="
