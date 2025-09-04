@@ -31,8 +31,8 @@ x1.outz
 x1.outy
 x1.outx"}
 B 2 1420 -500 2220 -100 {flags=graph
-y1=-0.01
-y2=3.3
+y1=1.314
+y2=4.624
 ypos1=0
 ypos2=2
 divy=5
@@ -140,7 +140,7 @@ C {devices/code_shown.sym} 955 -455 0 0 {name=s2 only_toplevel=false value="
 .param frec=20000k
 .param period=1/frec
 .param half_period=period/2
-.tran \{period/1000000\} \{4*period\} 0
+.tran \{period/1000\} \{4*period\} 0
 .control
 	set num_threads=16
 	run
@@ -153,7 +153,7 @@ C {lab_pin.sym} 980 -955 0 1 {name=p1 sig_type=std_logic lab=sig}
 C {devices/vsource.sym} 950 -735 0 0 {name=V1 value=3.3}
 C {gnd.sym} 950 -695 0 0 {name=l6 lab=GND}
 C {lab_pin.sym} 950 -855 0 0 {name=p9 sig_type=std_logic lab=vdd}
-C {/foss/designs/Mosbious_2025_Spikcore/designs/libs/core_schmitt_trigger/schmitt_trigger.sym} 1240 -745 0 0 {name=x1}
+C {designs/libs/core_schmitt_trigger/schmitt_trigger.sym} 1240 -745 0 0 {name=x1}
 C {gnd.sym} 1130 -695 0 0 {name=l2 lab=GND}
 C {lab_pin.sym} 1130 -795 1 0 {name=p2 sig_type=std_logic lab=vdd}
 C {gnd.sym} 1070 -525 0 0 {name=l5 lab=GND}
