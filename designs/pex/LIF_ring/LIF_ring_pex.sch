@@ -18,18 +18,21 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node=spk
-color=4
+node="\\"vout pre layout;spk\\"
+\\"vout pex;spk_pex\\""
+color="4 5"
 dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=0}
+hilight_wave=-1}
 N -480 -340 -480 -310 {lab=GND}
 N -480 -530 -480 -520 {lab=vdd}
 N -400 -430 -360 -430 {lab=#net1}
 N -400 -430 -400 -410 {lab=#net1}
 N -400 -350 -400 -320 {lab=GND}
+N -400 -560 -350 -560 {lab=#net1}
+N -400 -560 -400 -430 {lab=#net1}
 C {vsource.sym} -480 -370 0 0 {name=V1 value=1.8 savecurrent=false}
 C {devices/code_shown.sym} -910 -780 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
@@ -69,8 +72,12 @@ C {vsource.sym} -400 -380 0 0 {name=V2 value=0.2 savecurrent=false}
 C {gnd.sym} -400 -320 0 0 {name=l3 lab=GND}
 C {launcher.sym} -230 -140 0 0 {name=h5
 descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/lif_ring_pex.raw tran"
+tclcommand="xschem raw_read $netlist_dir/LIF_ring_pex.raw tran"
 }
-C {lab_pin.sym} -240 -440 2 0 {name=p3 sig_type=std_logic lab=spk}
+C {lab_pin.sym} -240 -440 2 0 {name=p3 sig_type=std_logic lab=spk_pex}
 C {title.sym} -760 70 0 0 {name=l4 author="Royce Richmond"}
-C {designs/pex/LIF_ring/LIF_ring.sym} -270 -530 0 0 {name=x1}
+C {designs/pex/LIF_ring/LIF_ring_pex.sym} -270 -530 0 0 {name=x1}
+C {designs/libs/core_LIF_ring/LIF_ring.sym} -260 -660 0 0 {name=x2}
+C {lab_pin.sym} -350 -580 0 0 {name=p4 sig_type=std_logic lab=vdd}
+C {gnd.sym} -350 -540 0 0 {name=l5 lab=GND}
+C {lab_pin.sym} -230 -570 2 0 {name=p5 sig_type=std_logic lab=spk}

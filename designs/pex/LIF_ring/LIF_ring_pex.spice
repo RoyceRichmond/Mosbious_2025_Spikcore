@@ -1,6 +1,6 @@
 * NGSPICE file created from LIF_ring.ext - technology: gf180mcuD
 
-.subckt LIF_ring vdd vlk vout vss
+.subckt LIF_ring_pex vdd vlk vout vss
 X0 a_n50_12# a_n5979_1278.t2 vss.t2 vss.t1 nfet_03v3 ad=0.2745p pd=2.12u as=0.2745p ps=2.12u w=0.45u l=0.28u
 X1 vdd.t5 a_n50_12# vout.t1 vdd.t4 pfet_03v3 ad=0.2925p pd=2.2u as=0.2925p ps=2.2u w=0.45u l=0.28u
 X2 vdd.t1 a_n5979_1278.t3 a_n50_12# vdd.t0 pfet_03v3 ad=0.2925p pd=2.2u as=0.2925p ps=2.2u w=0.45u l=0.28u
