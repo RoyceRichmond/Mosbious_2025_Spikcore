@@ -1,0 +1,49 @@
+* NGSPICE file created from synapse.ext - technology: gf180mcuD
+
+.subckt pfet$6 a_28_n136# w_n232_n142# a_94_0# a_n92_n2#
+X0 a_94_0# a_28_n136# a_n92_n2# w_n232_n142# pfet_03v3 ad=0.2822p pd=2.18u as=0.2822p ps=2.18u w=0.42u l=0.28u
+.ends
+
+.subckt pfet$4 a_28_n136# a_n92_0# a_94_0# w_n230_n138#
+X0 a_94_0# a_28_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=1.82p pd=6.9u as=1.82p ps=6.9u w=2.8u l=0.28u
+.ends
+
+.subckt nfet$7 dw_n710_n652# a_30_260# a_n84_0# a_94_0# w_n710_n652#
+X0 a_94_0# a_30_260# a_n84_0# w_n710_n652# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt pfet$7 a_28_144# w_n232_n142# a_94_0# a_n92_n2#
+X0 a_94_0# a_28_144# a_n92_n2# w_n232_n142# pfet_03v3 ad=0.2822p pd=2.18u as=0.2822p ps=2.18u w=0.42u l=0.28u
+.ends
+
+.subckt nfet a_n84_n2# dw_n710_n726# a_30_n132# a_94_0# w_n710_n726#
+X0 a_94_0# a_30_n132# a_n84_n2# w_n710_n726# nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=0.28u
+.ends
+
+.subckt pfet$5 a_28_620# a_n92_0# a_94_0# w_n230_n138#
+X0 a_94_0# a_28_620# a_n92_0# w_n230_n138# pfet_03v3 ad=1.82p pd=6.9u as=1.82p ps=6.9u w=2.8u l=0.28u
+.ends
+
+.subckt nfet$4 dw_n710_n726# a_30_n132# a_n84_0# a_94_0# w_n710_n726#
+X0 a_94_0# a_30_n132# a_n84_0# w_n710_n726# nfet_03v3 ad=1.22p pd=5.22u as=1.22p ps=5.22u w=2u l=0.28u
+.ends
+
+.subckt nfet$2 a_n84_n2# dw_n710_n652# a_94_0# a_30_144# w_n710_n652#
+X0 a_94_0# a_30_144# a_n84_n2# w_n710_n652# nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=0.28u
+.ends
+
+.subckt synapse vi v_ctrl vss v_in ve vdd v_out
+Xpfet$6_0 vi vdd vdd m1_44_2533# pfet$6
+Xpfet$4_0 m2_640_1617# m1_1750_2493# vdd vdd pfet$4
+Xnfet$7_0 nfet_2/dw_n710_n726# m1_344_2455# m1_2266_n82# vss vss nfet$7
+Xpfet$7_0 v_in vdd vdd m1_856_n14# pfet$7
+Xpfet$7_1 m1_856_n14# vdd m1_44_2533# m1_344_2455# pfet$7
+Xpfet$7_2 m2_640_1617# vdd vdd m2_640_1617# pfet$7
+Xnfet_0 m1_1434_n778# nfet_2/dw_n710_n726# ve vss vss nfet
+Xpfet$5_0 v_ctrl v_out m1_1750_2493# vdd pfet$5
+Xnfet_2 m1_344_2455# nfet_2/dw_n710_n726# m1_344_2455# vss vss nfet
+Xnfet_1 m1_856_n14# nfet_2/dw_n710_n726# v_in vss vss nfet
+Xnfet$4_0 nfet_2/dw_n710_n726# v_ctrl v_out m1_2266_n82# vss nfet$4
+Xnfet$2_0 m2_640_1617# nfet_2/dw_n710_n726# m1_1434_n778# v_in vss nfet$2
+.ends
+

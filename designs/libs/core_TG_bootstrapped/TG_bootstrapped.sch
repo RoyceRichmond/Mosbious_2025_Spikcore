@@ -407,3 +407,83 @@ C {lab_pin.sym} 300 660 3 1 {name=p43 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 370 600 0 1 {name=p45 sig_type=std_logic lab=vout}
 C {lab_pin.sym} 240 600 0 0 {name=p46 sig_type=std_logic lab=vin}
 C {title.sym} -120 1250 0 0 {name=l4 author="Rosendo Valdes"}
+C {symbols/cap_mim_2f0fF.sym} 570 840 2 0 {name=C3
+W=1e-6
+L=1e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {lab_pin.sym} 570 810 3 1 {name=p28 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 570 870 1 1 {name=p44 sig_type=std_logic lab=vss}
+C {symbols/cap_mim_2f0fF.sym} 700 840 2 0 {name=C4
+W=1e-6
+L=1e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {lab_pin.sym} 700 810 3 1 {name=p47 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 700 870 1 1 {name=p48 sig_type=std_logic lab=vss}
+C {symbols/cap_mim_2f0fF.sym} 840 840 2 0 {name=C5
+W=1e-6
+L=1e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {lab_pin.sym} 840 810 3 1 {name=p49 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 840 870 1 1 {name=p50 sig_type=std_logic lab=vss}
+C {symbols/cap_mim_2f0fF.sym} 980 840 2 0 {name=C6
+W=1e-6
+L=1e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {lab_pin.sym} 980 810 3 1 {name=p51 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 980 870 1 1 {name=p52 sig_type=std_logic lab=vss}
+C {symbols/cap_mim_2f0fF.sym} 1120 840 2 0 {name=C7
+W=1e-6
+L=1e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {lab_pin.sym} 1120 810 3 1 {name=p53 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 1120 870 1 1 {name=p54 sig_type=std_logic lab=vss}
+C {symbols/cap_mim_2f0fF.sym} 570 990 2 0 {name=C8
+W=1e-6
+L=1e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {lab_pin.sym} 570 960 3 1 {name=p55 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 570 1020 1 1 {name=p56 sig_type=std_logic lab=vss}
+C {symbols/cap_mim_2f0fF.sym} 700 990 2 0 {name=C9
+W=1e-6
+L=1e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {lab_pin.sym} 700 960 3 1 {name=p57 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 700 1020 1 1 {name=p58 sig_type=std_logic lab=vss}
+C {symbols/cap_mim_2f0fF.sym} 840 990 2 0 {name=C10
+W=1e-6
+L=1e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {lab_pin.sym} 840 960 3 1 {name=p59 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 840 1020 1 1 {name=p60 sig_type=std_logic lab=vss}
+C {symbols/cap_mim_2f0fF.sym} 980 990 2 0 {name=C11
+W=1e-6
+L=1e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {lab_pin.sym} 980 960 3 1 {name=p61 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 980 1020 1 1 {name=p62 sig_type=std_logic lab=vss}
+C {symbols/cap_mim_2f0fF.sym} 1120 990 2 0 {name=C12
+W=1e-6
+L=1e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {lab_pin.sym} 1120 960 3 1 {name=p63 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 1120 1020 1 1 {name=p64 sig_type=std_logic lab=vss}

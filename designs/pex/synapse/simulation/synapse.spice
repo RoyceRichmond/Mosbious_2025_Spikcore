@@ -1,0 +1,58 @@
+** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/pex/synapse/synapse.sch
+**.subckt synapse vdd v_in ve v_ctrl v_out vi vss
+V1 net2 vss 3.3
+Vdd_c net2 net1 0
+.save i(vdd_c)
+V2 net4 GND PULSE(0 3.3 9u 10n 10n 11u 20u)
+V3 net5 GND PULSE(0 V_S 0 10n 10n 0.5u 5u)
+V4 net6 GND vi
+V5 net7 GND ve
+V6 net3 vss 1.65
+R1 out_spike net3 RL m=1
+R2 vdd net1 10 m=1
+R3 ve net7 10 m=1
+R4 vi net6 10 m=1
+R5 spike net5 10 m=1
+R6 net4 v_ctrl 10 m=1
+x1 vdd spike ve v_ctrl out_spike vi vss synapse
+V7 vss GND 0
+**** begin user architecture code
+
+
+.option method=gear seed=12
+.tran 1n 20u
+.include /foss/designs/Mosbious_2025_Spikcore/designs/pex/synapse/synapse.spice
+.param ve=3.3
+.param vi=0
+.param RL=25k
+.param V_S=1.1
+.save allcurrents
+.control
+    let start_v=1.3
+    let stop_v=3.3
+    let delta_v=0.5
+    let v_act=start_v
+    while v_act le stop_v
+	alterparam V_S = $&v_act
+	reset
+	save all
+        run
+        write synapse_pex.raw
+	let v_act=v_act+delta_v
+	set appendwrite
+    end
+.endc
+
+
+
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

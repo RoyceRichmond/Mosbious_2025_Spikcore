@@ -8,3 +8,6 @@
 [submodule "miscellaneous/openfasoc-tapeouts"]
 	path = miscellaneous/openfasoc-tapeouts
 	url = https://github.com/idea-fasoc/openfasoc-tapeouts.git
+[submodule "miscellaneous/sscs-chipathon"]
+	path = miscellaneous/sscs-chipathon
+	url = https://github.com/sscs-ose/sscs-chipathon-2025.git

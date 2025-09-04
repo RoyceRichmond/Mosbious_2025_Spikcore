@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>GF180 DENSITY DRC Run Report at</description>
+ <original-file>designs/klayout/layout_schmitt_trigger/trigger.gds</original-file>
+ <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
+ <top-cell>Schmitt_trigger</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>PL.8</name>
+   <description>PL.8 : Poly2 coverage over the entire die shall be 14%.
+                Dummy poly2 lines must be added to meet the minimum poly2 density requirement. : 14%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M1.4</name>
+   <description>M1.4 : Metal1 coverage over the entire die shall be &gt;30%
+                (Refer to section 13.0 for Dummy Metal fill guidelines.
+                 Customer needs to ensure enough dummy metal to satisfy Metal1 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M2.4</name>
+   <description>M2.4 : Metal2 coverage over the entire die shall be &gt;30%
+                (Refer to section 13.0 for Dummy Metal fill guidelines.
+                 Customer needs to ensure enough dummy metal to satisfy Metal2 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M3.4</name>
+   <description>M3.4 : metal3 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal3 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M4.4</name>
+   <description>M4.4 : metal4 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal4 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>M5.4</name>
+   <description>M5.4 : metal5 coverage over the entire die shall be &gt;30%
+                    (Refer to section 13.0 for Dummy Metal fill guidelines.
+                    Customer needs to ensure enough dummy metal to satisfy metal5 coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MT.3</name>
+   <description>MT.3 : MetalTop coverage over the entire die shall be &gt;30%
+                                (Refer to section 10.3 for Dummy Metal-fill guidelines.
+                                Customer needs to ensure enough dummy metal to satisfy Metaln coverage) : 30%</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>Schmitt_trigger</name>
+   <variant/>
+   <layout-name/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-48.3,-36.68;-48.3,-34.72;-47.7,-34.72;-47.7,-36.68)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-36.595,-36.6;-36.595,-35;-36.635,-35;-36.635,-34.64;-36.275,-34.64;-36.275,-35;-36.315,-35;-36.315,-36.6)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-39.855,-36.22;-39.855,-34.52;-39.895,-34.52;-39.895,-34.16;-39.535,-34.16;-39.535,-34.52;-39.575,-34.52;-39.575,-36.22)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-44.95,-36.645;-44.95,-33.945;-44.99,-33.945;-44.99,-33.585;-44.63,-33.585;-44.63,-33.945;-44.67,-33.945;-44.67,-36.645)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-42.41,-36.54;-42.41,-33.94;-42.45,-33.94;-42.45,-33.58;-42.09,-33.58;-42.09,-33.94;-42.13,-33.94;-42.13,-36.54)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-39.265,-34.005;-39.265,-32.025;-38.265,-32.025;-38.265,-34.005)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-45.355,-32.915;-45.355,-31.515;-44.855,-31.515;-44.855,-32.915)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-35.775,-31.625;-35.775,-31.245;-35.725,-31.245;-35.725,-29.645;-35.445,-29.645;-35.445,-31.245;-35.395,-31.245;-35.395,-31.625)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-39.205,-31.555;-39.205,-31.195;-39.175,-31.195;-39.175,-29.595;-38.875,-29.595;-38.875,-31.195;-38.845,-31.195;-38.845,-31.555)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-42.475,-32.945;-42.475,-32.585;-42.435,-32.585;-42.435,-29.485;-42.155,-29.485;-42.155,-32.585;-42.115,-32.585;-42.115,-32.945)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-45.3,-31.11;-45.3,-30.73;-45.25,-30.73;-45.25,-29.33;-44.97,-29.33;-44.97,-30.73;-44.92,-30.73;-44.92,-31.11)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'PL.8'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-49.23,-31.22;-49.23,-30.84;-49.18,-30.84;-49.18,-29.24;-48.9,-29.24;-48.9,-30.84;-48.85,-30.84;-48.85,-31.22)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-47.52,-36.11;-47.52,-35.675;-47.09,-35.675;-47.09,-36.11)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-36.11,-35.995;-36.11,-35.595;-34.825,-35.595;-34.825,-35.995)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-40.445,-35.815;-40.445,-35.61;-40.455,-35.61;-40.455,-35.21;-40.445,-35.21;-40.445,-34.925;-40.065,-34.925;-40.065,-35.21;-40.055,-35.21;-40.055,-35.61;-40.065,-35.61;-40.065,-35.815)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-39.365,-35.815;-39.365,-35.615;-39.375,-35.615;-39.375,-35.215;-39.365,-35.215;-39.365,-34.925;-38.985,-34.925;-38.985,-35.215;-38.975,-35.215;-38.975,-35.615;-38.985,-35.615;-38.985,-35.815)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-41.92,-35.94;-41.92,-34.93;-41.93,-34.93;-41.93,-34.53;-41.53,-34.53;-41.53,-34.93;-41.54,-34.93;-41.54,-35.94)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-44.46,-36.25;-44.46,-34.34;-44.08,-34.34;-44.08,-34.54;-42.62,-34.54;-42.62,-35.94;-44.08,-35.94;-44.08,-36.25)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-39.92,-34.54;-39.92,-34.14;-39.52,-34.14;-39.52,-34.54)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-38.965,-34.015;-38.965,-33.615;-38.565,-33.615;-38.565,-34.015)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-45.3,-33.96;-45.3,-32.53;-44.91,-32.53;-44.91,-33.07;-42.585,-33.07;-42.585,-32.57;-42.075,-32.57;-42.075,-33.955;-42.585,-33.955;-42.585,-33.58;-44.585,-33.58;-44.585,-33.96)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-36.65,-35.015;-36.65,-34.625;-35.78,-34.625;-35.78,-33.02;-36.315,-33.02;-36.315,-32.62;-35.78,-32.62;-35.78,-31.24;-35.39,-31.24;-35.39,-35.015)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-40.315,-33.02;-40.315,-31.175;-39.915,-31.175;-39.915,-32.605;-39.485,-32.605;-39.485,-33.02)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-39.22,-31.575;-39.22,-31.175;-38.81,-31.175;-38.81,-31.575)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-35.23,-30.64;-35.23,-30.24;-34.83,-30.24;-34.83,-30.64)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-38.67,-30.6;-38.67,-30.2;-38.27,-30.2;-38.27,-30.6)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-44.625,-32.22;-44.625,-31.615;-43.305,-31.615;-43.305,-30.08;-42.645,-30.08;-42.645,-30.13;-42.635,-30.13;-42.635,-30.53;-42.645,-30.53;-42.645,-30.83;-42.635,-30.83;-42.635,-31.23;-42.645,-31.23;-42.645,-31.53;-42.635,-31.53;-42.635,-31.93;-42.645,-31.93;-42.645,-31.99;-44.245,-31.99;-44.245,-32.22)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-41.95,-31.99;-41.95,-30.08;-41.54,-30.08;-41.54,-31.99)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-45.495,-37.265;-45.495,-37.26;-51.275,-37.26;-51.275,-36.86;-49.245,-36.86;-49.245,-36.1;-49.6,-36.1;-49.6,-35.64;-49.245,-35.64;-49.245,-30.835;-48.845,-30.835;-48.845,-35.645;-48.5,-35.645;-48.5,-36.1;-48.845,-36.1;-48.845,-36.86;-45.89,-36.86;-45.89,-36.25;-46.25,-36.25;-46.25,-34.34;-45.16,-34.34;-45.16,-36.25;-45.49,-36.25;-45.49,-36.865;-41.24,-36.865;-41.24,-30.07;-40.82,-30.07;-40.82,-30.195;-40.085,-30.195;-40.085,-30.595;-40.82,-30.595;-40.82,-36.865;-38.66,-36.865;-38.66,-34.915;-38.26,-34.915;-38.26,-35.6;-36.805,-35.6;-36.805,-36.01;-38.26,-36.01;-38.26,-37.265)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-49.805,-30.235;-49.805,-29.835;-49.405,-29.835;-49.405,-30.235)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-45.305,-31.115;-45.305,-30.725;-44.745,-30.725;-44.745,-29.83;-44.355,-29.83;-44.355,-30.7;-43.585,-30.7;-43.585,-31.115)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M1.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-48.195,-35.12;-48.195,-30.245;-48.68,-30.245;-48.68,-29.83;-48.425,-29.83;-48.425,-28.57;-49.015,-28.57;-49.015,-28.17;-36.91,-28.17;-36.91,-30.23;-35.945,-30.23;-35.945,-30.64;-36.91,-30.64;-36.91,-33.02;-38.035,-33.02;-38.035,-32.63;-37.31,-32.63;-37.31,-28.57;-39.37,-28.57;-39.37,-30.59;-39.77,-30.59;-39.77,-28.57;-45.58,-28.57;-45.58,-29.835;-45.475,-29.835;-45.475,-30.23;-45.58,-30.23;-45.58,-32.22;-46.705,-32.22;-46.705,-31.775;-46.03,-31.775;-46.03,-30.245;-47.8,-30.245;-47.8,-35.12/-48.03,-29.83;-46.03,-29.83;-46.03,-28.57;-48.03,-28.57)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-47.495,-36.105;-47.495,-35.705;-47.095,-35.705;-47.095,-36.105)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-39.375,-35.615;-39.375,-35.215;-38.975,-35.215;-38.975,-35.615)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-41.93,-34.93;-41.93,-34.53;-41.53,-34.53;-41.53,-34.93)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-39.92,-34.54;-39.92,-34.14;-39.52,-34.14;-39.52,-34.54)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-39.885,-33.02;-39.885,-32.62;-35.915,-32.62;-35.915,-33.02)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-43.055,-35.87;-43.055,-35.61;-43.995,-35.61;-43.995,-30.71;-43.58,-30.71;-43.58,-35.21;-40.055,-35.21;-40.055,-35.87)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-35.235,-35.995;-35.235,-34.015;-38.965,-34.015;-38.965,-33.615;-35.235,-33.615;-35.235,-30.24;-34.825,-30.24;-34.825,-35.995)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-41.95,-30.6;-41.95,-30.2;-38.27,-30.2;-38.27,-30.6)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-43.035,-31.97;-43.035,-30.07;-42.635,-30.07;-42.635,-31.175;-38.81,-31.175;-38.81,-31.575;-42.635,-31.575;-42.635,-31.97)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-49.805,-30.235;-49.805,-29.835;-49.405,-29.835;-49.405,-30.235)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-39.24,-28.57;-39.24,-28.17;-38.84,-28.17;-38.84,-28.57)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-41.95,-34.93;-41.95,-30.2;-41.55,-30.2;-41.55,-34.53;-39.92,-34.53;-39.92,-34.14;-39.52,-34.14;-39.52,-34.93)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-47.52,-36.11;-47.52,-30.27;-49.805,-30.27;-49.805,-29.835;-42.635,-29.835;-42.635,-31.93;-43.035,-31.93;-43.035,-30.27;-47.09,-30.27;-47.09,-36.11)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M3.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-39.375,-35.615;-39.375,-35.215;-39.24,-35.215;-39.24,-28.17;-38.84,-28.17;-38.84,-35.615)</value>
+   </values>
+  </item>
+ </items>
+</report-database>
