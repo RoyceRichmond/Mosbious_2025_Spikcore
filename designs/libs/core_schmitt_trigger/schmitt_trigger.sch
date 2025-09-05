@@ -26,10 +26,10 @@ N -1500 -40 -1500 -20 {lab=GND}
 N -1320 -160 -1320 -110 {lab=GND}
 N -1320 -260 -1320 -160 {lab=GND}
 N -1330 -260 -1320 -260 {lab=GND}
-N -1500 -360 -1500 -340 {lab=#net1}
-N -1500 -340 -1490 -340 {lab=#net1}
-N -1490 -340 -1490 -310 {lab=#net1}
-N -1500 -310 -1490 -310 {lab=#net1}
+N -1500 -360 -1500 -340 {lab=vdd}
+N -1500 -340 -1490 -340 {lab=vdd}
+N -1490 -340 -1490 -310 {lab=vdd}
+N -1500 -310 -1490 -310 {lab=vdd}
 N -1500 -230 -1480 -230 {lab=GND}
 N -1500 -40 -1480 -40 {lab=GND}
 N -1480 -70 -1480 -40 {lab=GND}
@@ -39,13 +39,13 @@ N -1210 -250 -1210 -240 {lab=GND}
 N -1210 -250 -1180 -250 {lab=GND}
 N -1180 -280 -1180 -250 {lab=GND}
 N -1210 -280 -1180 -280 {lab=GND}
-N -1210 -390 -1180 -390 {lab=#net2}
-N -1180 -390 -1180 -360 {lab=#net2}
-N -1210 -360 -1180 -360 {lab=#net2}
-N -1210 -410 -1210 -390 {lab=#net2}
+N -1210 -390 -1180 -390 {lab=vdd}
+N -1180 -390 -1180 -360 {lab=vdd}
+N -1210 -360 -1180 -360 {lab=vdd}
+N -1210 -410 -1210 -390 {lab=vdd}
 N -1210 -320 -1180 -320 {lab=out}
-N -1330 -300 -1330 -290 {lab=#net3}
-N -1340 -210 -1340 -190 {lab=#net4}
+N -1330 -300 -1330 -290 {lab=vdd}
+N -1340 -210 -1340 -190 {lab=vdd}
 N -1540 -230 -1540 -150 {lab=in}
 N -1610 -310 -1540 -310 {lab=in}
 N -1610 -310 -1610 -70 {lab=in}
@@ -75,7 +75,7 @@ N -820 -130 -820 -110 {lab=outz}
 N -890 -120 -890 -80 {lab=outz}
 N -890 -120 -820 -120 {lab=outz}
 N -1320 -360 -1320 -320 {lab=outx}
-N -1320 -420 -1320 -390 {lab=#net5}
+N -1320 -420 -1320 -390 {lab=vdd}
 N -1280 -450 -1280 -390 {lab=out}
 N -1280 -450 -1110 -450 {lab=out}
 N -1110 -450 -1110 -330 {lab=out}
@@ -85,7 +85,9 @@ N -620 -380 -620 -350 {lab=vdd}
 N -650 -380 -620 -380 {lab=vdd}
 N -850 -380 -850 -350 {lab=vdd}
 N -880 -380 -850 -380 {lab=vdd}
-N -1320 -430 -1320 -420 {lab=#net5}
+N -1320 -430 -1320 -420 {lab=vdd}
+N -910 -350 -850 -350 {lab=vdd}
+N -680 -350 -620 -350 {lab=vdd}
 C {symbols/pfet_03v3.sym} -1520 -310 0 0 {name=M2
 L=0.28u
 W=0.4u
@@ -100,9 +102,9 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {lab_pin.sym} -1500 -420 0 0 {name=p3 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} -1210 -470 0 0 {name=p5 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} -1280 -210 0 1 {name=p8 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} -1500 -360 0 0 {name=p3 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} -1210 -410 0 0 {name=p5 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} -1340 -210 0 1 {name=p8 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -1380 -340 0 1 {name=p10 sig_type=std_logic lab=outx}
 C {symbols/nfet_03v3.sym} -1520 -70 0 0 {name=M1
 L=0.28u
@@ -202,7 +204,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {lab_pin.sym} -1330 -360 0 0 {name=p4 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} -1330 -300 0 0 {name=p4 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -1410 -190 1 1 {name=p13 sig_type=std_logic lab=outy}
 C {lab_pin.sym} -940 -240 0 0 {name=p12 sig_type=std_logic lab=outx}
 C {lab_pin.sym} -910 -430 0 0 {name=p11 sig_type=std_logic lab=outx}
@@ -314,11 +316,4 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {lab_pin.sym} -1320 -490 0 0 {name=p27 sig_type=std_logic lab=vdd}
-C {ammeter.sym} -1500 -390 0 0 {name=Vmeas savecurrent=true spice_ignore=0}
-C {ammeter.sym} -1330 -330 0 0 {name=Vmeas1 savecurrent=true spice_ignore=0}
-C {ammeter.sym} -1310 -210 1 0 {name=Vmeas2 savecurrent=true spice_ignore=0}
-C {ammeter.sym} -1320 -460 0 0 {name=Vmeas3 savecurrent=true spice_ignore=0}
-C {ammeter.sym} -880 -350 1 0 {name=Vmeas4 savecurrent=true spice_ignore=0}
-C {ammeter.sym} -650 -350 1 0 {name=Vmeas5 savecurrent=true spice_ignore=0}
-C {ammeter.sym} -1210 -440 0 0 {name=Vmeas6 savecurrent=true spice_ignore=0}
+C {lab_pin.sym} -1320 -430 0 0 {name=p27 sig_type=std_logic lab=vdd}
