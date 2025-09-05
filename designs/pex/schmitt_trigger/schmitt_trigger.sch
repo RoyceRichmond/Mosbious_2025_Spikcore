@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-4.5678514e-08
-x2=4.3714856e-09
+x1=0
+x2=2e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -24,8 +24,8 @@ logx=0
 logy=0
 color="9 11 18"
 node="sig3
-out2
-out"
+out2_pex
+out2"
 hilight_wave=0}
 B 2 1750 -1170 2550 -770 {flags=graph
 y1=-8.2e-06
@@ -35,8 +35,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-4.5678514e-08
-x2=4.3714856e-09
+x1=0
+x2=2e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -73,8 +73,8 @@ N 1440 -770 1440 -750 {lab=vcc}
 N 1440 -680 1470 -680 {lab=out2}
 N 1470 -680 1530 -680 {lab=out2}
 N 1290 -690 1290 -670 {lab=#net2}
-N 1250 -720 1250 -640 {lab=out}
-N 1230 -680 1250 -680 {lab=out}
+N 1250 -720 1250 -640 {lab=#net3}
+N 1230 -680 1250 -680 {lab=#net3}
 N 1290 -610 1290 -600 {lab=GND}
 N 1290 -610 1320 -610 {lab=GND}
 N 1320 -640 1320 -610 {lab=GND}
@@ -88,8 +88,8 @@ N 1320 -680 1380 -680 {lab=#net2}
 N 910 -1015 910 -1000 {lab=vdd}
 N 850 -865 850 -855 {lab=GND}
 N 1540 -945 1540 -925 {lab=out2_pex}
-N 1500 -975 1500 -895 {lab=#net3}
-N 1480 -935 1500 -935 {lab=#net3}
+N 1500 -975 1500 -895 {lab=#net4}
+N 1480 -935 1500 -935 {lab=#net4}
 N 1540 -865 1540 -855 {lab=GND}
 N 1540 -865 1570 -865 {lab=GND}
 N 1570 -895 1570 -865 {lab=GND}
@@ -100,9 +100,9 @@ N 1540 -975 1570 -975 {lab=vcc}
 N 1540 -1025 1540 -1005 {lab=vcc}
 N 1540 -935 1570 -935 {lab=out2_pex}
 N 1570 -935 1630 -935 {lab=out2_pex}
-N 1390 -945 1390 -925 {lab=#net3}
-N 1350 -975 1350 -895 {lab=out}
-N 1330 -935 1350 -935 {lab=out}
+N 1390 -945 1390 -925 {lab=#net4}
+N 1350 -975 1350 -895 {lab=#net5}
+N 1330 -935 1350 -935 {lab=#net5}
 N 1390 -865 1390 -855 {lab=GND}
 N 1390 -865 1420 -865 {lab=GND}
 N 1420 -895 1420 -865 {lab=GND}
@@ -111,11 +111,11 @@ N 1390 -1005 1420 -1005 {lab=vcc}
 N 1420 -1005 1420 -975 {lab=vcc}
 N 1390 -975 1420 -975 {lab=vcc}
 N 1390 -1025 1390 -1005 {lab=vcc}
-N 1390 -935 1420 -935 {lab=#net3}
-N 1420 -935 1480 -935 {lab=#net3}
+N 1390 -935 1420 -935 {lab=#net4}
+N 1420 -935 1480 -935 {lab=#net4}
 N 860 -995 860 -940 {lab=#net1}
 N 860 -940 910 -940 {lab=#net1}
-C {devices/code_shown.sym} 650 -540 0 0 {name=MODELS2 only_toplevel=true
+C {devices/code_shown.sym} 640 -470 0 0 {name=MODELS2 only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
@@ -135,7 +135,7 @@ C {devices/code_shown.sym} 660 -795 0 0 {name=s2 only_toplevel=false value="
 .control
 	set num_threads=16
 	run
-	write triggerAddV.raw
+	write schmitt_trigger_pex.raw
 .endc
 .save all
 "}
@@ -151,9 +151,9 @@ C {devices/vsource.sym} 950 -995 0 0 {name=V3 value="SINE(0 100m \{100*frec\})"}
 C {devices/vsource.sym} 950 -1085 0 0 {name=V4 value="PULSE(0 3.3 \{half_period/1000\} \{half_period\} \{half_period\} \{half_period/1000\}  \{period\})"}
 C {lab_pin.sym} 950 -1115 0 1 {name=p12 sig_type=std_logic lab=sig3}
 C {lab_pin.sym} 1110 -680 0 0 {name=p3 sig_type=std_logic lab=sig3}
-C {launcher.sym} 1295 -535 0 0 {name=h5
+C {launcher.sym} 1505 -545 0 0 {name=h5
 descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/triggerAddV.raw tran"
+tclcommand="xschem raw_read $netlist_dir/schmitt_trigger_pex.raw tran"
 }
 C {gnd.sym} 1440 -600 0 0 {name=l3 lab=GND}
 C {lab_pin.sym} 1530 -680 0 1 {name=p6 sig_type=std_logic lab=out2}
@@ -214,7 +214,6 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {lab_pin.sym} 1230 -680 1 1 {name=p4 sig_type=std_logic lab=out}
 C {ammeter.sym} 910 -970 2 0 {name=Vmeas savecurrent=true spice_ignore=0}
 C {devices/vsource.sym} 850 -895 0 0 {name=V5 value=3.3}
 C {gnd.sym} 850 -855 0 0 {name=l7 lab=GND}
@@ -286,7 +285,6 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {lab_pin.sym} 1330 -935 1 1 {name=p14 sig_type=std_logic lab=out}
 C {lab_pin.sym} 1390 -1020 0 0 {name=p15 sig_type=std_logic lab=vcc
 }
 C {lab_pin.sym} 1540 -1020 0 0 {name=p16 sig_type=std_logic lab=vcc
