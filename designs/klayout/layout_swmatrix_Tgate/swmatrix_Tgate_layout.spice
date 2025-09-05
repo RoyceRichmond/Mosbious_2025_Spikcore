@@ -40,14 +40,18 @@ X16 a_1854_0# a_1788_n136# a_1694_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as
 X17 a_1694_0# a_1628_n136# a_1534_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
 .ends
 
-.subckt swmatrix_Tgate VSS VDD gated_controlb gated_control T2 T1
-Xgf180mcu_fd_sc_mcu9t5v0__inv_1_0 gated_control VDD VSS gated_controlb VDD VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+.subckt swmatrix_Tgate VSS VDD gated_control T2 T1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_0 gated_control VDD VSS gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ VDD VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
 Xnfet_0 VSS T2 gated_control T1 T1 gated_control gated_control T2 gated_control T1
 + T2 gated_control T1 gated_control nfet
-Xpfet$1_0 T1 T1 T2 T2 gated_controlb gated_controlb gated_controlb T2 T1 gated_controlb
-+ T1 gated_controlb gated_controlb T1 gated_controlb gated_controlb T2 gated_controlb
-+ T1 gated_controlb T1 T2 gated_controlb T1 T1 gated_controlb T2 T2 T1 gated_controlb
-+ gated_controlb gated_controlb T2 gated_controlb gated_controlb gated_controlb T2
-+ VDD pfet$1
+Xpfet$1_0 T1 T1 T2 T2 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T2 T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T1
++ gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T2 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ T1 T2 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T1 T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ T2 T2 T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T2 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T2 VDD pfet$1
 .ends
 

@@ -96,7 +96,7 @@ Number of nets: 6                          |Number of nets: 6
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
-Netlists match uniquely with port errors.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: swmatrix_Tgate                  |Circuit 2: swmatrix_Tgate                  
@@ -106,9 +106,9 @@ VDD                                        |VDD
 gated_control                              |gated_control                              
 T1                                         |T1                                         
 T2                                         |T2                                         
-gated_controlb                             |(no pin, node is gated_controlb)           
 ---------------------------------------------------------------------------------------
-Cell pin lists for swmatrix_Tgate and swmatrix_Tgate altered to match.
+Cell pin lists are equivalent.
 Device classes swmatrix_Tgate and swmatrix_Tgate are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Circuits match uniquely.
+.
