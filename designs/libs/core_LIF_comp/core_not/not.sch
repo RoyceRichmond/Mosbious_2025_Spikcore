@@ -15,9 +15,7 @@ N -10 50 10 50 {lab=vss}
 N 10 50 10 80 {lab=vss}
 N -10 80 10 80 {lab=vss}
 N -80 0 -50 0 {lab=in}
-N 110 -130 130 -130 {lab=vss}
 N -10 -0 30 0 {lab=out}
-C {lab_pin.sym} 120 -160 0 0 {name=p2 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -10 -100 0 0 {name=p3 sig_type=std_logic lab=vdd}
 C {symbols/pfet_03v3.sym} -30 -50 0 0 {name=M1
 L=0.35u
@@ -51,6 +49,5 @@ C {iopin.sym} 120 -160 0 0 {name=p1 lab=vdd}
 C {iopin.sym} 130 -130 0 0 {name=p8 lab=vss}
 C {iopin.sym} -80 0 2 0 {name=p9 lab=in}
 C {iopin.sym} 30 0 0 0 {name=p10 lab=out}
-C {lab_pin.sym} 110 -130 0 0 {name=p11 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -10 100 0 0 {name=p12 sig_type=std_logic lab=vss}
 C {title.sym} -180 190 0 0 {name=l1 author="Oscar Islas"}

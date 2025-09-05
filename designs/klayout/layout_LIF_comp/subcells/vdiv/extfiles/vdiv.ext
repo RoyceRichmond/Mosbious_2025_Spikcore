@@ -1,4 +1,4 @@
-timestamp 1585630265
+timestamp 1585650605
 version 8.3
 tech gf180mcuD
 style ngspice()
@@ -15,54 +15,54 @@ use ppolyf_u_resistor$1 ppolyf_u_resistor$1_0 1 0 75 0 1 89
 port "vres" 6 3187 522 3187 522 m1
 port "vspike_down" 5 2215 212 2215 212 m1
 port "vref" 4 1259 4 1259 4 m1
-port "vss" 2 1190 -552 1190 -552 m1
 port "vspike_up" 3 339 2 339 2 m1
+port "vss" 2 1190 -552 1190 -552 m1
 port "vdd" 1 1087 1068 1087 1068 m1
 node "vres" 1 269.485 3187 522 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50920 1492 0 0 0 0 0 0 0 0
-node "vspike_down" 1 161.485 2215 212 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39748 1198 0 0 0 0 0 0 0 0
-node "vref" 1 142.724 1259 4 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34884 1070 0 0 0 0 0 0 0 0
-node "vss" 5 1956.71 1190 -552 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 381084 9804 0 0 0 0 0 0 0 0
-node "vspike_up" 0 122.347 339 2 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30856 964 0 0 0 0 0 0 0 0
-node "vdd" 10 3536.22 1087 1068 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 837492 19152 0 0 0 0 0 0 0 0
+node "vspike_down" 1 194.389 2215 212 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49704 1460 0 0 0 0 0 0 0 0
+node "vref" 1 143.965 1259 4 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 37468 1138 0 0 0 0 0 0 0 0
+node "vspike_up" 1 134.792 339 2 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35872 1096 0 0 0 0 0 0 0 0
+node "vss" 6 1966.09 1190 -552 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 396968 10222 0 0 0 0 0 0 0 0
+node "vdd" 10 3551.59 1087 1068 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 849576 19470 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "vdd" "vref" 95.116
+cap "vdd" "vspike_up" 117.694
 cap "vdd" "vres" 64.664
-cap "vdd" "vspike_down" 117.99
-cap "vdd" "vspike_up" 107.035
-cap "vref" "vss" 22.7759
-cap "vres" "vss" 5.16596
-cap "vspike_down" "vss" 8.79689
-cap "vss" "vspike_up" 10.8032
-cap "vdd" "vss" 155.773
+cap "vref" "vss" 26.6507
+cap "vss" "vspike_down" 62.364
+cap "vdd" "vref" 113.346
+cap "vdd" "vspike_down" 106.382
+cap "vss" "vspike_up" 26.5749
+cap "vss" "vres" 5.16596
+cap "vdd" "vss" 235.342
+cap "ppolyf_u_resistor$1_0/a_200_0#" "ppolyf_u_resistor$2_1/a_n132_0#" 0.0397681
+cap "ppolyf_u_resistor_2/a_200_0#" "ppolyf_u_resistor$2_1/a_n132_0#" -4.31432
 cap "ppolyf_u_resistor_2/a_200_0#" "ppolyf_u_resistor$1_0/a_200_0#" 0.0486192
-cap "ppolyf_u_resistor$2_1/a_n132_0#" "ppolyf_u_resistor$1_0/a_200_0#" 15.8114
-cap "ppolyf_u_resistor$1_0/a_200_0#" "ppolyf_u_resistor$1_0/a_n132_0#" 107.9
-cap "ppolyf_u_resistor$2_1/a_n132_0#" "ppolyf_u_resistor_2/a_200_0#" -0.855981
-cap "ppolyf_u_resistor_2/a_200_0#" "ppolyf_u_resistor$1_0/a_n132_0#" 0.194409
-cap "ppolyf_u_resistor$2_1/a_n132_0#" "ppolyf_u_resistor$1_0/a_n132_0#" 31.6753
-cap "ppolyf_u_resistor$1_0/a_n132_0#" "ppolyf_u_resistor_2/a_200_0#" 38.5925
-cap "ppolyf_u_resistor$2_1/a_n132_0#" "ppolyf_u_resistor$1_0/a_200_0#" 0.0762623
-cap "ppolyf_u_resistor$1_0/a_n132_0#" "ppolyf_u_resistor$3_0/a_200_0#" 12.2942
-cap "ppolyf_u_resistor$2_0/a_200_0#" "ppolyf_u_resistor$3_0/a_200_0#" 0.0669507
-cap "ppolyf_u_resistor$2_1/a_n132_0#" "ppolyf_u_resistor_2/a_200_0#" 9.30308
-cap "ppolyf_u_resistor$2_1/a_n132_0#" "ppolyf_u_resistor$3_0/a_200_0#" 22.8597
-cap "ppolyf_u_resistor$2_1/a_n132_0#" "ppolyf_u_resistor$1_0/a_n132_0#" 28.7591
-cap "ppolyf_u_resistor$1_0/a_n132_0#" "ppolyf_u_resistor$1_0/a_200_0#" 0.658623
+cap "ppolyf_u_resistor$2_1/a_n132_0#" "ppolyf_u_resistor$1_0/a_n132_0#" 18.7713
+cap "ppolyf_u_resistor$1_0/a_200_0#" "ppolyf_u_resistor$1_0/a_n132_0#" 97.2409
+cap "ppolyf_u_resistor_2/a_200_0#" "ppolyf_u_resistor$1_0/a_n132_0#" 0.50604
+cap "ppolyf_u_resistor$1_0/a_200_0#" "ppolyf_u_resistor$2_1/a_n132_0#" 0.0762623
+cap "ppolyf_u_resistor_2/a_200_0#" "ppolyf_u_resistor$2_1/a_n132_0#" 8.88663
+cap "ppolyf_u_resistor$3_0/a_200_0#" "ppolyf_u_resistor$2_0/a_200_0#" 0.0669507
+cap "ppolyf_u_resistor$3_0/a_200_0#" "ppolyf_u_resistor$1_0/a_n132_0#" 23.9025
+cap "ppolyf_u_resistor$3_0/a_200_0#" "ppolyf_u_resistor$2_1/a_n132_0#" -29.6105
 cap "ppolyf_u_resistor$3_0/a_200_0#" "ppolyf_u_resistor_2/a_200_0#" 0.171596
+cap "ppolyf_u_resistor$1_0/a_200_0#" "ppolyf_u_resistor$1_0/a_n132_0#" 0.658623
+cap "ppolyf_u_resistor$2_1/a_n132_0#" "ppolyf_u_resistor$1_0/a_n132_0#" -37.7773
+cap "ppolyf_u_resistor_2/a_200_0#" "ppolyf_u_resistor$1_0/a_n132_0#" 20.0505
+cap "ppolyf_u_resistor_2/a_200_0#" "ppolyf_u_resistor_1/a_n132_0#" 0.200568
 cap "ppolyf_u_resistor_1/a_n132_0#" "ppolyf_u_resistor$3_0/a_n376_0#" 41.0271
+cap "ppolyf_u_resistor$3_0/a_200_0#" "ppolyf_u_resistor_1/a_n132_0#" 1.01213
 cap "ppolyf_u_resistor_1/a_n132_0#" "ppolyf_u_resistor$2_0/a_200_0#" 34.8859
-cap "ppolyf_u_resistor$3_0/a_n376_0#" "ppolyf_u_resistor$3_0/a_200_0#" 23.1555
-cap "ppolyf_u_resistor_1/a_n132_0#" "ppolyf_u_resistor_2/a_200_0#" 0.200568
-cap "ppolyf_u_resistor_1/a_n132_0#" "ppolyf_u_resistor$3_0/a_200_0#" 2.10903
-cap "ppolyf_u_resistor$2_0/a_200_0#" "ppolyf_u_resistor$3_0/a_n376_0#" -30.2549
+cap "ppolyf_u_resistor$3_0/a_200_0#" "ppolyf_u_resistor$3_0/a_n376_0#" 23.1555
+cap "ppolyf_u_resistor$3_0/a_n376_0#" "ppolyf_u_resistor$2_0/a_200_0#" -30.2549
+cap "ppolyf_u_resistor$1_0/a_n132_0#" "ppolyf_u_resistor$2_1/a_n132_0#" -0.991349
 cap "ppolyf_u_resistor$1_0/a_200_0#" "ppolyf_u_resistor$1_0/a_n132_0#" 5.62417
-cap "ppolyf_u_resistor$2_1/a_n132_0#" "ppolyf_u_resistor$1_0/a_n132_0#" -0.97945
+cap "ppolyf_u_resistor$1_0/a_n132_0#" "ppolyf_u_resistor$2_1/a_n132_0#" -0.554051
 cap "ppolyf_u_resistor_2/a_200_0#" "ppolyf_u_resistor$1_0/a_n132_0#" 1.0971
 cap "ppolyf_u_resistor$1_0/a_n132_0#" "ppolyf_u_resistor$3_0/a_200_0#" 1.91883
-cap "ppolyf_u_resistor$1_0/a_n132_0#" "ppolyf_u_resistor$2_1/a_n132_0#" -0.43703
+cap "ppolyf_u_resistor_1/a_n132_0#" "ppolyf_u_resistor$3_0/a_n376_0#" 0.109419
 cap "ppolyf_u_resistor$2_0/a_200_0#" "ppolyf_u_resistor$3_0/a_n376_0#" 17.0156
-cap "ppolyf_u_resistor$3_0/a_n376_0#" "ppolyf_u_resistor_1/a_n132_0#" 0.109419
-merge "ppolyf_u_resistor$2_0/a_n132_0#" "ppolyf_u_resistor$1_0/a_n132_0#" -1211.88 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -142228 -5846 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$2_0/a_n132_0#" "ppolyf_u_resistor$1_0/a_n132_0#" -1227.24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -154312 -6164 0 0 0 0 0 0 0 0
 merge "ppolyf_u_resistor$1_0/a_n132_0#" "ppolyf_u_resistor$1_0/a_n376_0#"
 merge "ppolyf_u_resistor$1_0/a_n376_0#" "ppolyf_u_resistor$2_1/a_n376_0#"
 merge "ppolyf_u_resistor$2_1/a_n376_0#" "ppolyf_u_resistor_2/a_n132_0#"
@@ -75,15 +75,15 @@ merge "ppolyf_u_resistor$4_0/a_n376_0#" "ppolyf_u_resistor_0/a_n132_0#"
 merge "ppolyf_u_resistor_0/a_n132_0#" "VSUBS"
 merge "VSUBS" "ppolyf_u_resistor_0/a_n376_0#"
 merge "ppolyf_u_resistor_0/a_n376_0#" "vdd"
-merge "ppolyf_u_resistor_2/a_200_0#" "ppolyf_u_resistor_1/a_200_0#" -125.663 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3724 -402 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor_2/a_200_0#" "ppolyf_u_resistor_1/a_200_0#" -126.904 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6308 -470 0 0 0 0 0 0 0 0
 merge "ppolyf_u_resistor_1/a_200_0#" "vref"
-merge "ppolyf_u_resistor$4_0/a_n132_0#" "ppolyf_u_resistor$2_1/a_n132_0#" -391.742 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26980 -1318 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$4_0/a_n132_0#" "ppolyf_u_resistor$2_1/a_n132_0#" -401.124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -42864 -1736 0 0 0 0 0 0 0 0
 merge "ppolyf_u_resistor$2_1/a_n132_0#" "ppolyf_u_resistor_1/a_n132_0#"
 merge "ppolyf_u_resistor_1/a_n132_0#" "ppolyf_u_resistor$3_0/a_n132_0#"
 merge "ppolyf_u_resistor$3_0/a_n132_0#" "vss"
-merge "ppolyf_u_resistor$3_0/a_200_0#" "ppolyf_u_resistor_0/a_200_0#" -183.203 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11400 -604 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$3_0/a_200_0#" "ppolyf_u_resistor_0/a_200_0#" -216.107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -21356 -866 0 0 0 0 0 0 0 0
 merge "ppolyf_u_resistor_0/a_200_0#" "vspike_down"
-merge "ppolyf_u_resistor$1_0/a_200_0#" "ppolyf_u_resistor$2_1/a_200_0#" -175.775 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3420 -394 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$1_0/a_200_0#" "ppolyf_u_resistor$2_1/a_200_0#" -188.22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8436 -526 0 0 0 0 0 0 0 0
 merge "ppolyf_u_resistor$2_1/a_200_0#" "vspike_up"
 merge "ppolyf_u_resistor$2_0/a_200_0#" "ppolyf_u_resistor$4_0/a_200_0#" -209.199 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24548 -950 0 0 0 0 0 0 0 0
 merge "ppolyf_u_resistor$4_0/a_200_0#" "vres"

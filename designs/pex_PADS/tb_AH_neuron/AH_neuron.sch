@@ -81,7 +81,7 @@ C {devices/code_shown.sym} -855 -120 0 0 {name=s1 only_toplevel=false value="
 .save allcurrents
 .options save currents
 .control
-	set num_threads=16
+	set num_threads=24
 	run
 	write AH_neuron_pad.raw
 .endc

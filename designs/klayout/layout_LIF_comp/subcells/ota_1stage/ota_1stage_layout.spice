@@ -16,13 +16,13 @@ X0 a_94_0# a_30_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.5124p pd=2.9u as=0.51
 X0 a_94_0# a_28_228# a_n92_0# w_n352_n286# pfet_03v3 ad=0.546p pd=2.98u as=0.546p ps=2.98u w=0.84u l=0.28u
 .ends
 
-.subckt ota_1stage vss vdd vp vn vout
+.subckt ota_1stage vdd vss vp vn vout
 Xnfet$3_0 m2_n1824_n806# vss vdd vdd nfet$3
 Xnfet$1_0 vss vn vout m2_n516_n58# nfet$1
-Xnfet$1_1 vss vp m2_n516_n58# m2_n346_983# nfet$1
+Xnfet$1_1 vss vp m2_n516_n58# m2_n380_145# nfet$1
 Xnfet_0 vss m2_n1824_n806# m2_n1824_n806# vss nfet
 Xnfet_1 vss m2_n1824_n806# vss m2_n516_n58# nfet
-Xpfet$1_0 pfet$1_1/w_n352_n286# vout vdd m2_n346_983# pfet$1
-Xpfet$1_1 pfet$1_1/w_n352_n286# vdd m2_n346_983# m2_n346_983# pfet$1
+Xpfet$1_0 vdd vdd m2_n380_145# m2_n380_145# pfet$1
+Xpfet$1_1 vdd vout vdd m2_n380_145# pfet$1
 .ends
 

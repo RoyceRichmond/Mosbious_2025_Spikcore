@@ -39,35 +39,21 @@ Circuit 1: ota_1stage                      |Circuit 2: ota_1stage
 nfet_03v3 (5)                              |nfet_03v3 (5)                              
 pfet_03v3 (2)                              |pfet_03v3 (2)                              
 Number of devices: 7                       |Number of devices: 7                       
-Number of nets: 9 **Mismatch**             |Number of nets: 8 **Mismatch**             
+Number of nets: 8                          |Number of nets: 8                          
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: ota_1stage                      |Circuit 2: ota_1stage                      
-
----------------------------------------------------------------------------------------
-Net: vdd                                   |Net: vdd                                   
-  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
-  nfet_03v3/2 = 1                          |  nfet_03v3/2 = 1                          
-  pfet_03v3/(1|3) = 2                      |  pfet_03v3/(1|3) = 2                      
-                                           |  pfet_03v3/4 = 2                          
-                                           |                                           
-Net: pfet$1_1/w_n352_n286#                 |(no matching net)                          
-  pfet_03v3/4 = 2                          |                                           
----------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: ota_1stage                      |Circuit 2: ota_1stage                      
 -------------------------------------------|-------------------------------------------
-vdd                                        |vdd                                        
 vout                                       |vout                                       
 vp                                         |vp                                         
 vn                                         |vn                                         
+vdd                                        |vdd                                        
 vss                                        |vss                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes ota_1stage and ota_1stage are equivalent.
 
-Final result: Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Final result: Circuits match uniquely.
+.

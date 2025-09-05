@@ -4,7 +4,6 @@ K {}
 V {}
 S {}
 E {}
-N -50 -310 -30 -310 {lab=vss}
 N 40 -230 40 -70 {lab=in}
 N 100 -230 100 -70 {lab=out}
 N 70 -230 70 -190 {lab=vss}
@@ -23,7 +22,6 @@ N -100 -50 -100 -30 {lab=vdd}
 N -20 10 -0 10 {lab=#net1}
 N -100 50 -100 70 {lab=vss}
 C {designs/libs/core_LIF_comp/core_not/not.sym} -280 0 0 0 {name=x1}
-C {lab_pin.sym} -40 -330 0 0 {name=p3 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 70 -90 0 0 {name=p4 sig_type=std_logic lab=vdd}
 C {symbols/pfet_03v3.sym} 70 -50 3 0 {name=M3
 L=0.35u
@@ -57,7 +55,6 @@ C {iopin.sym} -40 -330 0 0 {name=p5 lab=vdd}
 C {iopin.sym} -30 -310 0 0 {name=p8 lab=vss}
 C {iopin.sym} 20 -150 2 0 {name=p9 lab=in}
 C {iopin.sym} 120 -150 0 0 {name=p10 lab=out}
-C {lab_pin.sym} -50 -310 0 0 {name=p11 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 70 -190 0 0 {name=p12 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -100 -80 0 0 {name=p7 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -100 90 0 0 {name=p13 sig_type=std_logic lab=vss}
