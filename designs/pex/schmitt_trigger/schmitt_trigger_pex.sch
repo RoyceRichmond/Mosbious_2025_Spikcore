@@ -5,15 +5,15 @@ V {}
 S {}
 E {}
 B 2 1750 -770 2550 -370 {flags=graph
-y1=-0.1
-y2=3.4
+y1=-3.4
+y2=6.6
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-07
+x1=1e-08
+x2=2.1e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -22,13 +22,13 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="9 11 18 12 10"
-node="sig3
-out_pex_inv
-out_inv
-out_sch_pex
-out"
-hilight_wave=3}
+color="9 11 18 4 4"
+node="\\"sig3 3.3 -\\"
+\\"out_sch_pex 3.3 +\\"
+\\"out_pex_inv 3.3 +\\"
+out
+out_inv"
+hilight_wave=4}
 B 2 1750 -1170 2550 -770 {flags=graph
 y1=-8.2e-06
 y2=0.00075
@@ -37,8 +37,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-07
+x1=1e-08
+x2=2.1e-07
 divx=5
 subdivx=1
 xlabmag=1.0
