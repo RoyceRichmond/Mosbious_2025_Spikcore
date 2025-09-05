@@ -1,0 +1,123 @@
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell cap_mim_2f0_m4m5_noshield and Circuit 2 cell cap_mim_2f0fF are black boxes.
+Warning: Equate pins:  cell cap_mim_2f0_m4m5_noshield is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cap_mim_2f0fF is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cap_mim_2f0_m4m5_noshield       |Circuit 2: cap_mim_2f0fF                   
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cap_mim_2f0_m4m5_noshield and cap_mim_2f0fF are equivalent.
+Flattening unmatched subcell pfet in circuit not (0)(1 instance)
+Flattening unmatched subcell nfet in circuit not (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: not                             |Circuit 2: not                             
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (1)                              |pfet_03v3 (1)                              
+nfet_03v3 (1)                              |nfet_03v3 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: not                             |Circuit 2: not                             
+-------------------------------------------|-------------------------------------------
+out                                        |out                                        
+in                                         |in                                         
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes not and not are equivalent.
+Flattening unmatched subcell pfet$2 in circuit nand (0)(1 instance)
+Flattening unmatched subcell nfet$1 in circuit nand (0)(1 instance)
+Flattening unmatched subcell pfet$3 in circuit nand (0)(1 instance)
+Flattening unmatched subcell nfet$2 in circuit nand (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: nand                            |Circuit 2: nand                            
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (2)                              |pfet_03v3 (2)                              
+nfet_03v3 (2)                              |nfet_03v3 (2)                              
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: nand                            |Circuit 2: nand                            
+-------------------------------------------|-------------------------------------------
+Z                                          |Z                                          
+vss                                        |vss                                        
+vdd                                        |vdd                                        
+B                                          |B                                          
+A                                          |A                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nand and nand are equivalent.
+Flattening unmatched subcell cap_mim in circuit monostable (0)(2 instances)
+Flattening unmatched subcell nfet$5 in circuit monostable (0)(2 instances)
+
+Subcircuit summary:
+Circuit 1: monostable                      |Circuit 2: monostable                      
+-------------------------------------------|-------------------------------------------
+cap_mim_2f0_m4m5_noshield (2)              |cap_mim_2f0fF (2)                          
+nfet_03v3 (2)                              |nfet_03v3 (2)                              
+not (4)                                    |not (4)                                    
+nand (2)                                   |nand (2)                                   
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 12                         |Number of nets: 12                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: monostable                      |Circuit 2: monostable                      
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+vin                                        |vin                                        
+phi_2                                      |phi_2                                      
+vss                                        |vss                                        
+vres                                       |vres                                       
+phi_1                                      |phi_1                                      
+vneg                                       |vneg                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes monostable and monostable are equivalent.
+
+Final result: Circuits match uniquely.
+.

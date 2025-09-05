@@ -1,0 +1,25 @@
+* NGSPICE file created from nand.ext - technology: gf180mcuD
+
+.subckt pfet a_28_n136# w_n180_n88# a_n92_0# a_94_0#
+X0 a_94_0# a_28_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.28u
+.ends
+
+.subckt nfet$3 a_30_260# a_n84_0# a_94_0# VSUBS
+X0 a_94_0# a_30_260# a_n84_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt pfet$1 a_28_n136# a_n92_0# a_94_0# w_n230_n138#
+X0 a_94_0# a_28_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.28u
+.ends
+
+.subckt nfet$2 a_216_0# a_30_260# a_n84_0# a_94_0#
+X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt nand A B Z vss vdd
+Xpfet_0 A vdd vdd Z pfet
+Xnfet$3_0 A Z nfet$3_0/a_94_0# vss nfet$3
+Xpfet$1_0 B Z vdd vdd pfet$1
+Xnfet$2_0 vss B nfet$3_0/a_94_0# vss nfet$2
+.ends
+

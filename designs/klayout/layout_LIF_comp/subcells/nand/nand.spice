@@ -1,0 +1,8 @@
+** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_nand/nand.sch
+.subckt nand vdd vss Z A B
+*.PININFO vdd:B vss:B A:I Z:O B:I
+XM1 Z A vdd vdd pfet_03v3 L=0.28u W=1u nf=1 m=1
+XM3 net1 B vss vss nfet_03v3 L=0.28u W=1u nf=1 m=1
+XM2 Z A net1 vss nfet_03v3 L=0.28u W=1u nf=1 m=1
+XM4 Z B vdd vdd pfet_03v3 L=0.28u W=1u nf=1 m=1
+.ends

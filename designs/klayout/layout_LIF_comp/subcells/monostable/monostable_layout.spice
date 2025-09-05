@@ -1,0 +1,59 @@
+* NGSPICE file created from monostable.ext - technology: gf180mcuD
+
+.subckt cap_mim m4_n120_n120# m4_0_0#
+X0 m4_0_0# m4_n120_n120# cap_mim_2f0_m4m5_noshield c_width=5u c_length=5u
+.ends
+
+.subckt nfet$5 a_98_0# a_n256_n272# a_n84_0# a_32_n132#
+X0 a_98_0# a_32_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.3u
+.ends
+
+.subckt pfet a_n92_0# a_35_n136# a_108_0# w_n230_n138#
+X0 a_108_0# a_35_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.35u
+.ends
+
+.subckt nfet a_216_0# a_30_260# a_n84_0# a_94_0#
+X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt not out in vdd vss
+Xpfet_0 out in vdd vdd pfet
+Xnfet_0 vss in out vss nfet
+.ends
+
+.subckt pfet$2 a_28_n136# w_n180_n88# a_n92_0# a_94_0#
+X0 a_94_0# a_28_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.28u
+.ends
+
+.subckt nfet$1 a_216_0# a_30_260# a_n84_0# a_94_0#
+X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt pfet$3 a_28_n136# a_n92_0# a_94_0# w_n230_n138#
+X0 a_94_0# a_28_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.28u
+.ends
+
+.subckt nfet$2 a_30_260# a_n84_0# a_94_0# VSUBS
+X0 a_94_0# a_30_260# a_n84_0# VSUBS nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt nand Z B A vdd vss
+Xpfet$2_0 A vdd vdd Z pfet$2
+Xnfet$1_0 vss B nfet$2_0/a_94_0# vss nfet$1
+Xpfet$3_0 B Z vdd vdd pfet$3
+Xnfet$2_0 A Z nfet$2_0/a_94_0# vss nfet$2
+.ends
+
+.subckt monostable vss vdd vin phi_2 vres vneg phi_1
+Xcap_mim_0 not_1/in nand_0/Z cap_mim
+Xcap_mim_1 not_3/in nand_1/Z cap_mim
+Xnfet$5_0 vss vss not_1/in vres nfet$5
+Xnfet$5_1 vss vss not_3/in vres nfet$5
+Xnot_0 phi_2 not_0/in vdd vss not
+Xnot_1 not_0/in not_1/in vdd vss not
+Xnot_2 phi_1 vneg vdd vss not
+Xnot_3 vneg not_3/in vdd vss not
+Xnand_0 nand_0/Z phi_1 not_0/in vdd vss nand
+Xnand_1 nand_1/Z vin vneg vdd vss nand
+.ends
+

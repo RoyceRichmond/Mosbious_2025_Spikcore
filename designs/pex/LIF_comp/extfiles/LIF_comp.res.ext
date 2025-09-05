@@ -1,0 +1,22 @@
+scale 1000 1 0.5
+rnode "vout.t0" 0 0 5115 3548 0
+rnode "vout.t2" 0 0 5108 2978 0
+rnode "vout.n0" 0 0 5031 3548 0
+rnode "vout" 0 0 5782 3548 0
+rnode "vout.n1" 0 0 5031 3548 0
+rnode "vout.t3" 0 0 4641 3548 0
+rnode "vout.t1" 0 0 4620 2978 0
+rnode "vout.n2" 0 0 4725 3548 0
+rnode "conmutator$2_0.out" 0 0 5025 3553 0
+resist "conmutator$2_0.out" "vout.n1" 0.00675
+resist "vout.n1" "vout.n0" 4.5
+resist "conmutator$2_0.out" "vout.n2" 4.8375
+resist "vout.n1" "vout" 5.34487
+resist "vout.n0" "vout.t0" 8.14
+resist "vout.n2" "vout.t3" 8.14
+resist "vout.n2" "vout.t1" 9.57153
+resist "vout.n0" "vout.t2" 9.60901
+device msubckt nfet_03v3 4564 2878 4565 2879  "ota_1stage$2_0.vss" "conmutator$2_2.cntrl" 112 0 "ota_2stages_0.vout" 200 24400,644 "vout.t1" 200 24400,644
+device msubckt nfet_03v3 5108 2878 5109 2879  "ota_1stage$2_0.vss" "a_4236_2878#" 112 0 "vout.t2" 200 24400,644 "conmutator$2_1.in2" 200 24400,644
+device msubckt pfet_03v3 4571 3448 4572 3449  "ota_1stage$2_0.vss" "a_4236_2878#" 140 0 "ota_2stages_0.vout" 200 26000,660 "vout.t3" 200 26000,660
+device msubckt pfet_03v3 5115 3448 5116 3449  "ota_1stage$2_0.vss" "conmutator$2_2.cntrl" 140 0 "vout.t0" 200 26000,660 "conmutator$2_1.in2" 200 26000,660

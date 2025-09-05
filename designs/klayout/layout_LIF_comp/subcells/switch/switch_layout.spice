@@ -1,0 +1,17 @@
+* NGSPICE file created from switch.ext - technology: gf180mcuD
+
+.subckt pfet a_n92_0# a_35_n136# a_108_0# w_n230_n138#
+X0 a_108_0# a_35_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.35u
+.ends
+
+.subckt nfet a_216_0# a_30_260# a_n84_0# a_94_0#
+X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt switch out cntrl in vdd vss
+Xpfet_0 m2_n331_n296# cntrl vdd vdd pfet
+Xpfet_1 in m2_n331_n296# out vdd pfet
+Xnfet_0 vss cntrl m2_n331_n296# vss nfet
+Xnfet_1 vss cntrl in out nfet
+.ends
+

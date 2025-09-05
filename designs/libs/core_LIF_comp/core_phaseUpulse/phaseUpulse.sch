@@ -6,35 +6,6 @@ S {}
 E {}
 N 330 -580 430 -580 {lab=phi_int}
 N 350 -590 350 -580 {lab=phi_int}
-N 350 -290 410 -290 {lab=#net1}
-N 550 -270 610 -270 {lab=vrefrac}
-N 440 -430 440 -410 {lab=vss}
-N 410 -410 410 -370 {lab=#net1}
-N 410 -370 440 -370 {lab=#net1}
-N 380 -410 380 -290 {lab=#net1}
-N 380 -410 410 -410 {lab=#net1}
-N 470 -410 580 -410 {lab=vrefrac}
-N 580 -410 580 -270 {lab=vrefrac}
-N 280 -330 290 -330 {lab=vspike_down}
-N 240 -330 280 -330 {lab=vspike_down}
-N 270 -290 320 -290 {lab=vspike_down}
-N 270 -330 270 -290 {lab=vspike_down}
-N 350 -330 350 -290 {lab=#net1}
-N 240 -210 290 -210 {lab=vneg}
-N 270 -250 320 -250 {lab=vneg}
-N 270 -250 270 -210 {lab=vneg}
-N 350 -250 350 -210 {lab=#net2}
-N 350 -250 410 -250 {lab=#net2}
-N 320 -370 320 -330 {lab=vss}
-N 320 -210 320 -170 {lab=vss}
-N 380 -250 380 -180 {lab=#net2}
-N 380 -180 420 -180 {lab=#net2}
-N 420 -180 420 -170 {lab=#net2}
-N 380 -180 380 -140 {lab=#net2}
-N 420 -140 430 -140 {lab=vss}
-N 430 -140 430 -110 {lab=vss}
-N 420 -110 430 -110 {lab=vss}
-N 430 -140 450 -140 {lab=vss}
 N 720 -400 750 -400 {lab=vref}
 N 1000 -400 1030 -400 {lab=vrefrac}
 N 840 -400 910 -400 {lab=vspike}
@@ -42,7 +13,7 @@ N 870 -540 870 -400 {lab=vspike}
 N 720 -560 870 -560 {lab=vspike}
 N 870 -560 870 -540 {lab=vspike}
 N 870 -560 910 -560 {lab=vspike}
-N 1000 -560 1030 -560 {lab=#net3}
+N 1000 -560 1030 -560 {lab=#net1}
 C {ipin.sym} 20 -720 2 0 {name=p1 lab=vin}
 C {iopin.sym} 20 -760 0 0 {name=p4 lab=vdd}
 C {iopin.sym} 20 -780 0 0 {name=p5 lab=vss}
@@ -66,72 +37,9 @@ C {lab_pin.sym} 240 -590 2 1 {name=p108 sig_type=std_logic lab=phi_1}
 C {lab_pin.sym} 240 -570 2 1 {name=p109 sig_type=std_logic lab=phi_2}
 C {lab_pin.sym} 530 -580 2 0 {name=p110 sig_type=std_logic lab=phi_fire}
 C {lab_pin.sym} 730 -720 2 0 {name=p25 sig_type=std_logic lab=vneg}
-C {designs/libs/core_LIF_comp/core_ota_1stage/ota_1stage.sym} 450 -270 0 0 {name=x22}
-C {lab_pin.sym} 610 -270 2 0 {name=p111 sig_type=std_logic lab=vrefrac}
-C {lab_pin.sym} 240 -330 0 0 {name=p113 sig_type=std_logic lab=vspike_down}
-C {lab_pin.sym} 430 -330 2 0 {name=p116 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 430 -210 2 0 {name=p117 sig_type=std_logic lab=vss}
-C {symbols/nfet_03v3.sym} 440 -390 3 0 {name=M9
-L=0.5u
-W=0.5u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=nfet_03v3
-spiceprefix=X
-}
-C {lab_pin.sym} 440 -430 1 0 {name=p123 sig_type=std_logic lab=vss}
-C {symbols/nfet_03v3.sym} 320 -310 3 0 {name=M10
-L=0.5u
-W=0.5u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=nfet_03v3
-spiceprefix=X
-}
-C {symbols/nfet_03v3.sym} 320 -230 3 1 {name=M11
-L=3u
-W=0.28u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=nfet_03v3
-spiceprefix=X
-}
-C {symbols/nfet_03v3.sym} 400 -140 0 0 {name=M12
-L=0.28u
-W=5u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=nfet_03v3
-spiceprefix=X
-}
-C {lab_pin.sym} 450 -140 2 0 {name=p124 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 320 -170 1 1 {name=p125 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 240 -210 2 1 {name=p122 sig_type=std_logic lab=vneg}
-C {lab_pin.sym} 320 -370 3 1 {name=p26 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 490 -300 2 0 {name=p111 sig_type=std_logic lab=vrefrac}
+C {lab_pin.sym} 330 -310 0 0 {name=p113 sig_type=std_logic lab=vspike_down}
+C {lab_pin.sym} 330 -290 2 1 {name=p122 sig_type=std_logic lab=vneg}
 C {designs/libs/core_LIF_comp/core_switch/switch.sym} 960 -440 0 0 {name=x7}
 C {lab_pin.sym} 930 -600 1 0 {name=p82 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 980 -520 2 0 {name=p83 sig_type=std_logic lab=vss}
@@ -163,3 +71,6 @@ C {lab_pin.sym} 1180 -550 2 0 {name=p33 sig_type=std_logic lab=vdd}
 C {opin.sym} 20 -620 0 0 {name=p2 lab=vref}
 C {ipin.sym} 20 -700 2 0 {name=p3 lab=reward}
 C {designs/libs/core_LIF_comp/core_monostable/monostable.sym} 640 -740 0 0 {name=x6}
+C {designs/libs/core_LIF_comp/core_refractory/refractory.sym} 410 -290 0 0 {name=x1}
+C {lab_pin.sym} 410 -340 2 0 {name=p8 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 410 -240 2 0 {name=p9 sig_type=std_logic lab=vss}

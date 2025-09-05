@@ -26,7 +26,7 @@ C {designs/libs/core_LIF_comp/core_not/not.sym} -280 0 0 0 {name=x1}
 C {lab_pin.sym} -40 -330 0 0 {name=p3 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 70 -90 0 0 {name=p4 sig_type=std_logic lab=vdd}
 C {symbols/pfet_03v3.sym} 70 -50 3 0 {name=M3
-L=0.28u
+L=0.35u
 W=1u
 nf=1
 m=1

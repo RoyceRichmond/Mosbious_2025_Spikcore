@@ -1,0 +1,222 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 02/09/2025 23:55
+
+.SUBCKT LIF_comp in2|vss in1|vspike_up vp vn B|in|out|vneg in|vout vspike_down
++ in2|vdd in|in1|in2|vref Z vss vres in|out A|vin|vout Z|cntrl|in|phi_int
++ cntrl|out A|cntrl|out|phi_1 B|in|out A|cntrl|out|phi_2 cntrl|reward
++ out|vspike in in1|in2|out|vout out|vp in|vn cntrl out out|vout VSS
+M$1 \$12 \$12 in2|vdd in2|vdd pfet_03v3 L=0.28U W=0.84U AS=0.546P AD=0.546P
++ PS=2.98U PD=2.98U
+M$2 in2|vdd \$12 in|vout in2|vdd pfet_03v3 L=0.28U W=0.84U AS=0.546P AD=0.546P
++ PS=2.98U PD=2.98U
+M$3 A|vin|vout \$61 in2|vdd in2|vdd pfet_03v3 L=0.28U W=0.84U AS=0.546P
++ AD=0.546P PS=2.98U PD=2.98U
+M$4 in2|vdd \$61 \$61 in2|vdd pfet_03v3 L=0.28U W=0.84U AS=0.546P AD=0.546P
++ PS=2.98U PD=2.98U
+M$5 Z B|in|out|vneg in2|vdd in2|vdd pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.42P
++ PS=3.3U PD=1.84U
+M$6 in2|vdd A|vin|vout Z in2|vdd pfet_03v3 L=0.28U W=1U AS=0.42P AD=0.65P
++ PS=1.84U PD=3.3U
+M$7 B|in|out|vneg in|out in2|vdd in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P
++ AD=0.65P PS=3.3U PD=3.3U
+M$8 A|cntrl|out|phi_1 B|in|out|vneg in2|vdd in2|vdd pfet_03v3 L=0.35U W=1U
++ AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+M$9 Z B|in|out in2|vdd in2|vdd pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.42P PS=3.3U
++ PD=1.84U
+M$10 in2|vdd A|cntrl|out|phi_1 Z in2|vdd pfet_03v3 L=0.28U W=1U AS=0.42P
++ AD=0.65P PS=1.84U PD=3.3U
+M$11 B|in|out in|out in2|vdd in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P AD=0.65P
++ PS=3.3U PD=3.3U
+M$12 A|cntrl|out|phi_2 B|in|out in2|vdd in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P
++ AD=0.65P PS=3.3U PD=3.3U
+M$13 \$110 A|cntrl|out|phi_2 in2|vdd in2|vdd pfet_03v3 L=0.28U W=1U AS=0.65P
++ AD=0.42P PS=3.3U PD=1.84U
+M$14 Z|cntrl|in|phi_int A|cntrl|out|phi_1 \$110 in2|vdd pfet_03v3 L=0.28U W=1U
++ AS=0.42P AD=0.65P PS=1.84U PD=3.3U
+M$15 cntrl|out Z|cntrl|in|phi_int in2|vdd in2|vdd pfet_03v3 L=0.35U W=1U
++ AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+M$16 out|vspike cntrl|reward in1|vspike_up in2|vdd pfet_03v3 L=0.35U W=1U
++ AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+M$17 in2|vdd \$130 out|vspike in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P AD=0.65P
++ PS=3.3U PD=3.3U
+M$18 in2|vdd cntrl|reward \$130 in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P
++ AD=0.65P PS=3.3U PD=3.3U
+M$19 in \$131 out|vspike in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P AD=0.65P
++ PS=3.3U PD=3.3U
+M$20 in2|vdd A|cntrl|out|phi_1 \$131 in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P
++ AD=0.65P PS=3.3U PD=3.3U
+M$21 in|in1|in2|vref \$133 out|vspike in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P
++ AD=0.65P PS=3.3U PD=3.3U
+M$22 in2|vdd A|cntrl|out|phi_2 \$133 in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P
++ AD=0.65P PS=3.3U PD=3.3U
+M$23 in|vout \$134 out|vspike in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P AD=0.65P
++ PS=3.3U PD=3.3U
+M$24 in2|vdd Z|cntrl|in|phi_int \$134 in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P
++ AD=0.65P PS=3.3U PD=3.3U
+M$25 out|vp cntrl|out in1|in2|out|vout in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P
++ AD=0.65P PS=3.3U PD=3.3U
+M$26 in2|vss \$150 out|vp in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P AD=0.65P
++ PS=3.3U PD=3.3U
+M$27 in2|vdd cntrl|out \$150 in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P AD=0.65P
++ PS=3.3U PD=3.3U
+M$28 \$169 \$169 in2|vdd in2|vdd pfet_03v3 L=0.28U W=0.84U AS=0.546P AD=0.546P
++ PS=2.98U PD=2.98U
+M$29 in2|vdd \$169 \$170 in2|vdd pfet_03v3 L=0.28U W=0.84U AS=0.546P AD=0.546P
++ PS=2.98U PD=2.98U
+M$30 in1|in2|out|vout \$170 in2|vdd in2|vdd pfet_03v3 L=0.28U W=1.68U AS=1.092P
++ AD=1.092P PS=4.66U PD=4.66U
+M$31 out cntrl in1|in2|out|vout in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P
++ AD=0.65P PS=3.3U PD=3.3U
+M$32 in|in1|in2|vref \$191 out in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P AD=0.65P
++ PS=3.3U PD=3.3U
+M$33 in2|vdd cntrl \$191 in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P AD=0.65P
++ PS=3.3U PD=3.3U
+M$34 in|vn \$201 in1|in2|out|vout in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P
++ AD=0.65P PS=3.3U PD=3.3U
+M$35 in2|vdd cntrl|out \$201 in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P AD=0.65P
++ PS=3.3U PD=3.3U
+M$36 \$202 cntrl|out in2|vdd in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P AD=0.65P
++ PS=3.3U PD=3.3U
+M$37 out|vout \$202 in1|in2|out|vout in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P
++ AD=0.65P PS=3.3U PD=3.3U
+M$38 in|in1|in2|vref cntrl|out out|vout in2|vdd pfet_03v3 L=0.35U W=1U AS=0.65P
++ AD=0.65P PS=3.3U PD=3.3U
+M$39 in2|vdd in2|vdd \$3 VSS nfet_03v3 L=8.54U W=0.36U AS=0.228P AD=0.228P
++ PS=1.98U PD=1.98U
+M$40 vp in2|vss in2|vss VSS nfet_03v3 L=0.28U W=1.5U AS=0.915P AD=0.915P
++ PS=4.22U PD=4.22U
+M$41 in2|vss \$3 \$3 VSS nfet_03v3 L=0.28U W=0.84U AS=0.5124P AD=0.5124P
++ PS=2.9U PD=2.9U
+M$42 \$12 vp \$11 VSS nfet_03v3 L=0.28U W=3.08U AS=1.8788P AD=1.8788P PS=7.38U
++ PD=7.38U
+M$43 \$11 vn in|vout VSS nfet_03v3 L=0.28U W=3.08U AS=1.8788P AD=1.8788P
++ PS=7.38U PD=7.38U
+M$44 B|in|out|vneg vp vp VSS nfet_03v3 L=1U W=0.36U AS=0.228P AD=0.228P
++ PS=1.98U PD=1.98U
+M$45 \$11 \$3 in2|vss VSS nfet_03v3 L=0.28U W=0.84U AS=0.5124P AD=0.5124P
++ PS=2.9U PD=2.9U
+M$46 vn vn in|vout VSS nfet_03v3 L=0.5U W=0.5U AS=0.305P AD=0.305P PS=2.22U
++ PD=2.22U
+M$47 vspike_down vspike_down vn VSS nfet_03v3 L=0.5U W=0.5U AS=0.305P AD=0.305P
++ PS=2.22U PD=2.22U
+M$48 in2|vdd in2|vdd \$59 VSS nfet_03v3 L=8.54U W=0.36U AS=0.228P AD=0.228P
++ PS=1.98U PD=1.98U
+M$49 A|vin|vout vn \$60 VSS nfet_03v3 L=0.28U W=3.08U AS=1.8788P AD=1.8788P
++ PS=7.38U PD=7.38U
+M$50 \$60 out|vp \$61 VSS nfet_03v3 L=0.28U W=3.08U AS=1.8788P AD=1.8788P
++ PS=7.38U PD=7.38U
+M$51 \$59 \$59 in2|vss VSS nfet_03v3 L=0.28U W=0.84U AS=0.5124P AD=0.5124P
++ PS=2.9U PD=2.9U
+M$52 \$85 B|in|out|vneg vss VSS nfet_03v3 L=0.28U W=1U AS=0.61P AD=0.4P
++ PS=3.22U PD=1.8U
+M$53 Z A|vin|vout \$85 VSS nfet_03v3 L=0.28U W=1U AS=0.4P AD=0.61P PS=1.8U
++ PD=3.22U
+M$54 B|in|out|vneg in|out vss VSS nfet_03v3 L=0.28U W=1U AS=0.61P AD=0.61P
++ PS=3.22U PD=3.22U
+M$55 vss vres in|out VSS nfet_03v3 L=0.5U W=0.5U AS=0.305P AD=0.305P PS=2.22U
++ PD=2.22U
+M$56 A|cntrl|out|phi_1 B|in|out|vneg vss VSS nfet_03v3 L=0.28U W=1U AS=0.61P
++ AD=0.61P PS=3.22U PD=3.22U
+M$57 \$87 B|in|out vss VSS nfet_03v3 L=0.28U W=1U AS=0.61P AD=0.4P PS=3.22U
++ PD=1.8U
+M$58 Z A|cntrl|out|phi_1 \$87 VSS nfet_03v3 L=0.28U W=1U AS=0.4P AD=0.61P
++ PS=1.8U PD=3.22U
+M$59 B|in|out in|out vss VSS nfet_03v3 L=0.28U W=1U AS=0.61P AD=0.61P PS=3.22U
++ PD=3.22U
+M$60 vss vres in|out VSS nfet_03v3 L=0.5U W=0.5U AS=0.305P AD=0.305P PS=2.22U
++ PD=2.22U
+M$61 A|cntrl|out|phi_2 B|in|out vss VSS nfet_03v3 L=0.28U W=1U AS=0.61P
++ AD=0.61P PS=3.22U PD=3.22U
+M$62 Z|cntrl|in|phi_int A|cntrl|out|phi_2 vss VSS nfet_03v3 L=0.28U W=1U
++ AS=0.61P AD=0.4P PS=3.22U PD=1.8U
+M$63 vss A|cntrl|out|phi_1 Z|cntrl|in|phi_int VSS nfet_03v3 L=0.28U W=1U
++ AS=0.4P AD=0.61P PS=1.8U PD=3.22U
+M$64 cntrl|out Z|cntrl|in|phi_int vss VSS nfet_03v3 L=0.28U W=1U AS=0.61P
++ AD=0.61P PS=3.22U PD=3.22U
+M$65 in2|vss \$59 \$60 VSS nfet_03v3 L=0.28U W=0.84U AS=0.5124P AD=0.5124P
++ PS=2.9U PD=2.9U
+M$66 out|vspike \$130 in1|vspike_up VSS nfet_03v3 L=0.28U W=1U AS=0.61P
++ AD=0.61P PS=3.22U PD=3.22U
+M$67 in2|vdd cntrl|reward out|vspike VSS nfet_03v3 L=0.28U W=1U AS=0.61P
++ AD=0.61P PS=3.22U PD=3.22U
+M$68 in2|vss cntrl|reward \$130 VSS nfet_03v3 L=0.28U W=1U AS=0.61P AD=0.61P
++ PS=3.22U PD=3.22U
+M$69 in A|cntrl|out|phi_1 out|vspike VSS nfet_03v3 L=0.28U W=1U AS=0.61P
++ AD=0.61P PS=3.22U PD=3.22U
+M$70 in2|vss A|cntrl|out|phi_1 \$131 VSS nfet_03v3 L=0.28U W=1U AS=0.61P
++ AD=0.61P PS=3.22U PD=3.22U
+M$71 in|in1|in2|vref A|cntrl|out|phi_2 out|vspike VSS nfet_03v3 L=0.28U W=1U
++ AS=0.61P AD=0.61P PS=3.22U PD=3.22U
+M$72 in2|vss A|cntrl|out|phi_2 \$133 VSS nfet_03v3 L=0.28U W=1U AS=0.61P
++ AD=0.61P PS=3.22U PD=3.22U
+M$73 in|vout Z|cntrl|in|phi_int out|vspike VSS nfet_03v3 L=0.28U W=1U AS=0.61P
++ AD=0.61P PS=3.22U PD=3.22U
+M$74 in2|vss Z|cntrl|in|phi_int \$134 VSS nfet_03v3 L=0.28U W=1U AS=0.61P
++ AD=0.61P PS=3.22U PD=3.22U
+M$75 out|vp \$150 in1|in2|out|vout VSS nfet_03v3 L=0.28U W=1U AS=0.61P AD=0.61P
++ PS=3.22U PD=3.22U
+M$76 in2|vss cntrl|out out|vp VSS nfet_03v3 L=0.28U W=1U AS=0.61P AD=0.61P
++ PS=3.22U PD=3.22U
+M$77 in2|vss cntrl|out \$150 VSS nfet_03v3 L=0.28U W=1U AS=0.61P AD=0.61P
++ PS=3.22U PD=3.22U
+M$78 in2|vdd in2|vdd \$161 VSS nfet_03v3 L=8.54U W=0.36U AS=0.228P AD=0.228P
++ PS=1.98U PD=1.98U
+M$79 \$168 \$161 in2|vss VSS nfet_03v3 L=0.28U W=0.84U AS=0.5124P AD=0.5124P
++ PS=2.9U PD=2.9U
+M$80 in2|vss \$161 \$161 VSS nfet_03v3 L=0.28U W=0.84U AS=0.5124P AD=0.5124P
++ PS=2.9U PD=2.9U
+M$81 \$169 in|vn \$168 VSS nfet_03v3 L=0.28U W=3.08U AS=1.8788P AD=1.8788P
++ PS=7.38U PD=7.38U
+M$82 \$168 vp \$170 VSS nfet_03v3 L=0.28U W=3.08U AS=1.8788P AD=1.8788P
++ PS=7.38U PD=7.38U
+M$83 in1|in2|out|vout \$168 in2|vss VSS nfet_03v3 L=0.28U W=0.56U AS=0.3416P
++ AD=0.3416P PS=2.34U PD=2.34U
+M$84 out \$191 in1|in2|out|vout VSS nfet_03v3 L=0.28U W=1U AS=0.61P AD=0.61P
++ PS=3.22U PD=3.22U
+M$85 in|in1|in2|vref cntrl out VSS nfet_03v3 L=0.28U W=1U AS=0.61P AD=0.61P
++ PS=3.22U PD=3.22U
+M$86 vss cntrl \$191 VSS nfet_03v3 L=0.28U W=1U AS=0.61P AD=0.61P PS=3.22U
++ PD=3.22U
+M$87 in|vn cntrl|out in1|in2|out|vout VSS nfet_03v3 L=0.28U W=1U AS=0.61P
++ AD=0.61P PS=3.22U PD=3.22U
+M$88 vss cntrl|out \$201 VSS nfet_03v3 L=0.28U W=1U AS=0.61P AD=0.61P PS=3.22U
++ PD=3.22U
+M$89 \$202 cntrl|out vss VSS nfet_03v3 L=0.28U W=1U AS=0.61P AD=0.61P PS=3.22U
++ PD=3.22U
+M$90 out|vout cntrl|out in1|in2|out|vout VSS nfet_03v3 L=0.28U W=1U AS=0.61P
++ AD=0.61P PS=3.22U PD=3.22U
+M$91 in|in1|in2|vref \$202 out|vout VSS nfet_03v3 L=0.28U W=1U AS=0.61P
++ AD=0.61P PS=3.22U PD=3.22U
+M$92 in1|in2|out|vout vn in|vn VSS nfet_03v3 L=0.5U W=0.5U AS=0.305P AD=0.305P
++ PS=2.22U PD=2.22U
+R$93 in2|vdd \$5 VSS 350 ppolyf_u L=0.8U W=0.8U
+R$94 \$5 in1|vspike_up VSS 350 ppolyf_u L=0.8U W=0.8U
+R$95 \$14 \$15 VSS 350 ppolyf_u L=0.8U W=0.8U
+R$96 \$15 in1|vspike_up VSS 350 ppolyf_u L=0.8U W=0.8U
+R$97 \$39 \$26 VSS 350 ppolyf_u L=0.8U W=0.8U
+R$98 \$14 \$26 VSS 350 ppolyf_u L=0.8U W=0.8U
+R$99 \$27 \$14 VSS 350 ppolyf_u L=0.8U W=0.8U
+R$100 \$27 \$40 VSS 350 ppolyf_u L=0.8U W=0.8U
+R$101 \$39 in|in1|in2|vref VSS 350 ppolyf_u L=0.8U W=0.8U
+R$102 in|in1|in2|vref \$40 VSS 350 ppolyf_u L=0.8U W=0.8U
+R$103 \$47 in|in1|in2|vref VSS 350 ppolyf_u L=0.8U W=0.8U
+R$104 in|in1|in2|vref \$49 VSS 350 ppolyf_u L=0.8U W=0.8U
+R$105 \$47 vspike_down VSS 350 ppolyf_u L=0.8U W=0.8U
+R$106 vspike_down \$49 VSS 350 ppolyf_u L=0.8U W=0.8U
+R$107 vspike_down \$69 VSS 350 ppolyf_u L=0.8U W=0.8U
+R$108 \$69 vres VSS 350 ppolyf_u L=0.8U W=0.8U
+R$109 \$90 vres VSS 350 ppolyf_u L=0.8U W=0.8U
+R$110 vres \$91 VSS 350 ppolyf_u L=0.8U W=0.8U
+R$111 in2|vss \$111 VSS 350 ppolyf_u L=0.8U W=0.8U
+R$112 \$90 \$111 VSS 350 ppolyf_u L=0.8U W=0.8U
+R$113 \$112 in2|vss VSS 350 ppolyf_u L=0.8U W=0.8U
+R$114 \$112 \$91 VSS 350 ppolyf_u L=0.8U W=0.8U
+R$115 in2|vdd \$218 VSS 350 ppolyf_u L=0.8U W=0.8U
+R$116 in2|vdd \$219 VSS 350 ppolyf_u L=0.8U W=0.8U
+R$117 vn \$219 VSS 350 ppolyf_u L=0.8U W=0.8U
+R$118 vn vss VSS 350 ppolyf_u L=0.8U W=0.8U
+R$119 vn vss VSS 350 ppolyf_u L=0.8U W=0.8U
+C$120 Z \$72 5e-14 cap_mim_2f0_m5m6_noshield A=25P P=20U
+C$121 Z \$75 5e-14 cap_mim_2f0_m5m6_noshield A=25P P=20U
+C$122 \$170 \$181 1.62e-13 cap_mim_2f0_m5m6_noshield A=81P P=36U
+C$123 in|vn \$208 1.62e-13 cap_mim_2f0_m5m6_noshield A=81P P=36U
+.ENDS LIF_comp
