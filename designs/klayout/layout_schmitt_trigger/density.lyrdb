@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>GF180 DENSITY DRC Run Report at</description>
- <original-file>designs/klayout/layout_schmitt_trigger/trigger.gds</original-file>
+ <original-file>./designs/klayout/layout_schmitt_trigger/trigger.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
  <top-cell>Schmitt_trigger</top-cell>
  <tags>
@@ -503,6 +503,18 @@
    <image/>
    <values>
     <value>polygon: (-39.92,-34.54;-39.92,-34.14;-39.52,-34.14;-39.52,-34.54)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.4'</category>
+   <cell>Schmitt_trigger</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-52.985,-33.505;-52.985,-33.105;-44.635,-33.105;-44.635,-33.505)</value>
    </values>
   </item>
   <item>
