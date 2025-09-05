@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-4.821401e-08
-x2=1.8359898e-09
+x1=0
+x2=2e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -22,11 +22,15 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="9 11 18"
+color="9 11 18 10 9 12"
 node="sig3
 out2
-out"
-hilight_wave=0}
+out
+
+x1.outz
+x1.outy
+x1.outx"
+hilight_wave=2}
 B 2 1750 -1170 2550 -770 {flags=graph
 y1=-8.2e-06
 y2=0.00075
@@ -35,8 +39,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-4.821401e-08
-x2=1.8359898e-09
+x1=0
+x2=2e-07
 divx=5
 subdivx=1
 xlabmag=1.0

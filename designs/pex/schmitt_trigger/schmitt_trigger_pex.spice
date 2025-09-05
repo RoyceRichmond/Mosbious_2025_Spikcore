@@ -1,0 +1,138 @@
+* NGSPICE file created from schmitt_trigger.ext - technology: gf180mcuD
+
+.subckt schmitt_trigger_pex vdd vss in out
+X0 a_n8431_n6457# in.t0 a_n9060_n6222# vss.t11 nfet_03v3 ad=1.22p pd=5.22u as=1.22p ps=5.22u w=2u l=0.28u
+X1 out.t1 a_n9966_n6108# vss.t7 vss.t6 nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+X2 vdd.t4 vss.t12 a_n9966_n6108# vdd.t3 pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.28u
+X3 a_n8431_n6457# in.t1 a_n9966_n6108# vss.t10 nfet_03v3 ad=1.525p pd=6.22u as=1.525p ps=6.22u w=2.5u l=0.28u
+X4 a_n8431_n6457# vss.t13 vdd.t2 vdd.t1 pfet_03v3 ad=1.04p pd=4.5u as=1.04p ps=4.5u w=1.6u l=0.8u
+X5 vdd.t11 out.t2 a_n9966_n6108# vdd.t10 pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=1u
+X6 a_n9966_n6108# in.t2 vdd.t13 vdd.t12 pfet_03v3 ad=0.2822p pd=2.18u as=0.2822p ps=2.18u w=0.42u l=0.28u
+X7 a_n9966_n6108# vdd.t14 vss.t4 vss.t3 nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.6u
+X8 a_n9060_n6222# a_n9060_n6222# vdd.t6 vdd.t5 pfet_03v3 ad=0.52p pd=2.9u as=0.52p ps=2.9u w=0.8u l=0.28u
+X9 a_n8431_n6457# a_n9966_n6108# vdd.t9 vss.t5 nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.3u
+X10 a_n8431_n6457# vdd.t15 vss.t1 vss.t0 nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=2u
+X11 vdd.t0 a_n8431_n6457# a_n9060_n6222# vss.t2 nfet_03v3 ad=0.671p pd=3.42u as=0.671p ps=3.42u w=1.1u l=0.28u
+X12 out.t0 a_n9966_n6108# vdd.t8 vdd.t7 pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.28u
+X13 a_n9060_n6222# in.t3 vss.t9 vss.t8 nfet_03v3 ad=1.281p pd=5.42u as=1.281p ps=5.42u w=2.1u l=0.28u
+R0 in.n0 in.t1 52.115
+R1 in.n1 in.t3 46.9023
+R2 in.n0 in.t0 45.5751
+R3 in.n2 in.t2 25.0386
+R4 in in.n2 6.06088
+R5 in.n1 in.n0 0.398441
+R6 in.n2 in.n1 0.00301748
+R7 vss.n16 vss.t10 65336.5
+R8 vss.t0 vss.t5 37993
+R9 vss.t11 vss.t8 1910.88
+R10 vss.n14 vss.n2 1468.1
+R11 vss.n5 vss.t6 1447.04
+R12 vss.n17 vss.t3 1291.67
+R13 vss.n5 vss.t0 1274.63
+R14 vss.t6 vss.n3 1250
+R15 vss.t2 vss.n10 1250
+R16 vss.n11 vss.t2 1202.21
+R17 vss.n13 vss.t5 1192.28
+R18 vss.n14 vss.n13 949.884
+R19 vss.n17 vss.t8 940.394
+R20 vss.n11 vss.n2 778.646
+R21 vss.n10 vss.n3 760
+R22 vss.t3 vss.n16 759.322
+R23 vss.t10 vss.n14 168.649
+R24 vss.n2 vss.t11 161.749
+R25 vss.n15 vss.t12 36.7849
+R26 vss.n7 vss.t13 27.8132
+R27 vss.n6 vss.t1 12.3005
+R28 vss.n16 vss.n15 10.4371
+R29 vss.n6 vss.n5 10.4005
+R30 vss.n4 vss.n3 10.4005
+R31 vss.n4 vss.t7 8.97635
+R32 vss.n0 vss.t4 8.88874
+R33 vss.n10 vss.n9 5.25225
+R34 vss.n12 vss.n11 3.46717
+R35 vss.n18 vss.t9 2.7755
+R36 vss.n18 vss.n17 2.6005
+R37 vss.n19 vss.n1 1.09169
+R38 vss.n8 vss.n7 0.988371
+R39 vss.n13 vss.n12 0.940234
+R40 vss.n20 vss.n19 0.75509
+R41 vss.n8 vss.n1 0.5315
+R42 vss.n12 vss.n1 0.391571
+R43 vss.n19 vss.n18 0.247296
+R44 vss.n9 vss.n8 0.192875
+R45 vss.n20 vss.n0 0.1715
+R46 vss.n9 vss.n4 0.166232
+R47 vss vss.n20 0.04775
+R48 vss.n15 vss.n0 0.0361044
+R49 vss.n7 vss.n6 0.0331437
+R50 out.n0 out.t2 20.5217
+R51 out.n1 out.t1 13.8347
+R52 out.n0 out.t0 13.3825
+R53 out out.n1 5.6705
+R54 out.n1 out.n0 0.121232
+R55 vdd.n6 vdd.t7 827.633
+R56 vdd.n3 vdd.t10 693.278
+R57 vdd.t7 vdd.n5 542.018
+R58 vdd.n15 vdd.t3 542.018
+R59 vdd.n6 vdd.t1 520.135
+R60 vdd.n16 vdd.n15 427.243
+R61 vdd.n14 vdd.t5 293.384
+R62 vdd.n5 vdd.n3 100.841
+R63 vdd.n9 vdd.t0 34.0253
+R64 vdd.t5 vdd.t12 28.7146
+R65 vdd.n16 vdd.n14 28.7146
+R66 vdd.n12 vdd.t14 20.9845
+R67 vdd.n14 vdd.n11 12.6521
+R68 vdd.n3 vdd.n2 12.6005
+R69 vdd.n5 vdd.n4 12.6005
+R70 vdd.n17 vdd.n16 12.6005
+R71 vdd.n15 vdd.n13 12.6005
+R72 vdd.n11 vdd.t13 12.0313
+R73 vdd.n10 vdd.t9 9.23113
+R74 vdd.n19 vdd.t6 8.8755
+R75 vdd.n4 vdd.t8 8.30074
+R76 vdd.n2 vdd.t11 8.26396
+R77 vdd.n0 vdd.t4 8.19472
+R78 vdd.n7 vdd.t15 6.16383
+R79 vdd.n7 vdd.n6 4.2005
+R80 vdd.n7 vdd.t2 3.57133
+R81 vdd.n20 vdd.n10 1.35275
+R82 vdd.n8 vdd.n7 0.942948
+R83 vdd.n21 vdd.n20 0.4955
+R84 vdd.n2 vdd.n1 0.492125
+R85 vdd.n9 vdd.n8 0.43475
+R86 vdd.n18 vdd.n11 0.3925
+R87 vdd.n8 vdd.n1 0.374
+R88 vdd.n20 vdd.n19 0.3325
+R89 vdd.n17 vdd.n13 0.293271
+R90 vdd.n21 vdd.n0 0.287589
+R91 vdd.n10 vdd.n9 0.11975
+R92 vdd vdd.n21 0.096125
+R93 vdd.n18 vdd.n17 0.080741
+R94 vdd.n13 vdd.n12 0.0547169
+R95 vdd.n4 vdd.n1 0.0520854
+R96 vdd.n12 vdd.n0 0.0503795
+R97 vdd.n19 vdd.n18 0.0025
+C0 out a_n9060_n6222# 0.01013f
+C1 vdd in 0.37217f
+C2 a_n8431_n6457# a_n9060_n6222# 0.28175f
+C3 vdd a_n9966_n6108# 1.21396f
+C4 out in 0.00401f
+C5 in a_n8431_n6457# 0.05663f
+C6 in a_n9060_n6222# 0.28702f
+C7 out a_n9966_n6108# 0.49139f
+C8 a_n8431_n6457# a_n9966_n6108# 0.83302f
+C9 a_n9966_n6108# a_n9060_n6222# 0.46501f
+C10 vdd out 0.52528f
+C11 vdd a_n8431_n6457# 0.86373f
+C12 vdd a_n9060_n6222# 0.57368f
+C13 in a_n9966_n6108# 0.26021f
+C14 out a_n8431_n6457# 0.42497f
+C15 out vss 1.28218f
+C16 in vss 1.47505f
+C17 vdd vss 10.7907f
+C18 a_n8431_n6457# vss 2.23278f
+C19 a_n9060_n6222# vss 0.93565f
+C20 a_n9966_n6108# vss 1.9229f
+.ends
+
