@@ -1,0 +1,75 @@
+timestamp 0
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+parameters nfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters nfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters pfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters nfet_10v0_asym l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters nfet_06v0_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters nfet_05v0 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters nfet_06v0 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_10v0_asym l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_06v0_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters pfet_05v0 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_06v0 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "T2" 4 2848 1737 2848 1737 m4
+port "T1" 5 123 1117 123 1117 m3
+port "gated_control" 3 353 1265 353 1265 m2
+port "VDD" 2 535 487 535 487 m1
+port "VSS" 1 433 1858 433 1858 m1
+node "a_5322_453#" 6 0 5322 453 ndif 0 0 0 0 8100 360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "T2" 807 2870.19 2848 1737 m4 0 0 0 0 249600 5424 748800 16272 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 828516 23622 76800 3840 76800 3840 462932 11064 0 0
+node "T1" 899 2668.67 123 1117 m3 0 0 0 0 361600 7304 873600 18184 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 821632 23744 89600 4480 970560 21732 0 0 0 0
+node "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 2676 1834.6 486 725 mvpdif 0 0 0 0 0 0 0 0 23232 704 32208 908 1031328 38592 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 270330 7674 205850 5010 0 0 0 0 0 0
+node "gated_control" 907 1894.79 353 1265 m2 0 0 0 0 0 0 0 0 0 0 0 0 443064 14924 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 98691 2906 160388 4054 0 0 0 0 0 0
+equiv "gated_control" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.I"
+node "VDD" 6508 15184 535 487 m1 4295144 12142 0 0 116800 1892 0 0 11952 476 32208 908 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1027508 14694 0 0 0 0 0 0 0 0
+equiv "VDD" "gf180mcu_fd_sc_mcu9t5v0__endcap_0.VDD"
+equiv "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW"
+equiv "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VDD"
+substrate "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 0 0 174 1375 mvppd 0 0 0 0 0 0 121700 2244 23232 704 14904 558 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 954924 14260 0 0 0 0 0 0 0 0
+equiv "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "VSS"
+equiv "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "gf180mcu_fd_sc_mcu9t5v0__endcap_0.VSS"
+equiv "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VSS"
+equiv "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "nfet_0.vss"
+cap "VDD" "T2" 433.573
+cap "gated_control" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 836.296
+cap "gated_control" "T1" 603.889
+cap "T1" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 1541.9
+cap "VDD" "a_5322_453#" 6.17666
+cap "gated_control" "T2" 348.445
+cap "T2" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 1220.75
+cap "T2" "T1" 10999.4
+cap "VDD" "gated_control" 1518.13
+cap "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 5075.17
+cap "VDD" "T1" 972.225
+device msubckt pfet_03v3 5204 757 5205 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T2" 800 41600,904 "T1" 800 104000,1860
+device msubckt pfet_03v3 5044 757 5045 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T1" 800 41600,904 "T2" 800 41600,904
+device msubckt pfet_03v3 4884 757 4885 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T2" 800 41600,904 "T1" 800 41600,904
+device msubckt pfet_03v3 4724 757 4725 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T1" 800 41600,904 "T2" 800 41600,904
+device msubckt pfet_03v3 4564 757 4565 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T2" 800 41600,904 "T1" 800 41600,904
+device msubckt pfet_03v3 4404 757 4405 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T1" 800 41600,904 "T2" 800 41600,904
+device msubckt pfet_03v3 4244 757 4245 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T2" 800 41600,904 "T1" 800 41600,904
+device msubckt pfet_03v3 4084 757 4085 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T1" 800 41600,904 "T2" 800 41600,904
+device msubckt pfet_03v3 3924 757 3925 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T2" 800 41600,904 "T1" 800 41600,904
+device msubckt pfet_03v3 3764 757 3765 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T1" 800 41600,904 "T2" 800 41600,904
+device msubckt pfet_03v3 3604 757 3605 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T2" 800 41600,904 "T1" 800 41600,904
+device msubckt pfet_03v3 3444 757 3445 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T1" 800 41600,904 "T2" 800 41600,904
+device msubckt pfet_03v3 3284 757 3285 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T2" 800 41600,904 "T1" 800 41600,904
+device msubckt pfet_03v3 3124 757 3125 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T1" 800 41600,904 "T2" 800 41600,904
+device msubckt pfet_03v3 2964 757 2965 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T2" 800 41600,904 "T1" 800 41600,904
+device msubckt pfet_03v3 2804 757 2805 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T1" 800 41600,904 "T2" 800 41600,904
+device msubckt pfet_03v3 2644 757 2645 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T2" 800 41600,904 "T1" 800 41600,904
+device msubckt pfet_03v3 2484 757 2485 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T1" 800 104000,1860 "T2" 800 41600,904
+device msubckt nfet_03v3 1860 756 1861 757 l=56 w=800 "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "gated_control" 112 0 "T2" 800 41600,904 "T1" 800 97600,1844
+device msubckt nfet_03v3 1700 756 1701 757 l=56 w=800 "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "gated_control" 112 0 "T1" 800 41600,904 "T2" 800 41600,904
+device msubckt nfet_03v3 1540 756 1541 757 l=56 w=800 "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "gated_control" 112 0 "T2" 800 41600,904 "T1" 800 41600,904
+device msubckt nfet_03v3 1380 756 1381 757 l=56 w=800 "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "gated_control" 112 0 "T1" 800 41600,904 "T2" 800 41600,904
+device msubckt nfet_03v3 1220 756 1221 757 l=56 w=800 "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "gated_control" 112 0 "T2" 800 41600,904 "T1" 800 41600,904
+device msubckt nfet_03v3 1060 756 1061 757 l=56 w=800 "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "gated_control" 112 0 "T1" 800 97600,1844 "T2" 800 41600,904
+device msubckt pfet_05v0 574 725 575 726 l=100 w=366 "VDD" "gated_control" 200 0 "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 366 32208,908 "VDD" 366 32208,908
+device msubckt nfet_05v0 574 1331 575 1332 l=120 w=264 "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "gated_control" 240 0 "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 264 23232,704 "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 264 23232,704

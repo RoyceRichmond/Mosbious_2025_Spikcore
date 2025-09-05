@@ -1,0 +1,46 @@
+| units: 0.5 tech: gf180mcuD format: MIT
+x gated_control gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN VDD VDD s=32208,908 d=32208,908 l=100 w=366 x=574 y=725 pfet_05v0
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T2 T1 VDD s=41600,904 d=41600,904 l=56 w=800 x=4244 y=757 pfet_03v3
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T1 T2 VDD s=41600,904 d=41600,904 l=56 w=800 x=4724 y=757 pfet_03v3
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T1 T2 VDD s=41600,904 d=41600,904 l=56 w=800 x=3124 y=757 pfet_03v3
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T2 T1 VDD s=41600,904 d=41600,904 l=56 w=800 x=3604 y=757 pfet_03v3
+x gated_control T2 T1 VSS s=41600,904 d=41600,904 l=56 w=800 x=1220 y=756 nfet_03v3
+x gated_control T1 T2 VSS s=41600,904 d=41600,904 l=56 w=800 x=1700 y=756 nfet_03v3
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T2 T1 VDD s=41600,904 d=41600,904 l=56 w=800 x=4884 y=757 pfet_03v3
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T2 T1 VDD s=41600,904 d=41600,904 l=56 w=800 x=3284 y=757 pfet_03v3
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T1 T2 VDD s=41600,904 d=41600,904 l=56 w=800 x=3764 y=757 pfet_03v3
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T2 T1 VDD s=41600,904 d=41600,904 l=56 w=800 x=2644 y=757 pfet_03v3
+x gated_control T1 T2 VSS s=41600,904 d=41600,904 l=56 w=800 x=1380 y=756 nfet_03v3
+x gated_control T2 T1 VSS s=41600,904 d=97600,1844 l=56 w=800 x=1860 y=756 nfet_03v3
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T1 T2 VDD s=41600,904 d=41600,904 l=56 w=800 x=5044 y=757 pfet_03v3
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T1 T2 VDD s=41600,904 d=41600,904 l=56 w=800 x=4404 y=757 pfet_03v3
+x gated_control gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN VSS VSS s=23232,704 d=23232,704 l=120 w=264 x=574 y=1331 nfet_05v0
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T1 T2 VDD s=41600,904 d=41600,904 l=56 w=800 x=4084 y=757 pfet_03v3
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T2 T1 VDD s=41600,904 d=41600,904 l=56 w=800 x=4564 y=757 pfet_03v3
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T1 T2 VDD s=41600,904 d=41600,904 l=56 w=800 x=3444 y=757 pfet_03v3
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T2 T1 VDD s=41600,904 d=41600,904 l=56 w=800 x=3924 y=757 pfet_03v3
+x gated_control T1 T2 VSS s=97600,1844 d=41600,904 l=56 w=800 x=1060 y=756 nfet_03v3
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T1 T2 VDD s=41600,904 d=41600,904 l=56 w=800 x=2804 y=757 pfet_03v3
+x gated_control T2 T1 VSS s=41600,904 d=41600,904 l=56 w=800 x=1540 y=756 nfet_03v3
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T2 T1 VDD s=41600,904 d=104000,1860 l=56 w=800 x=5204 y=757 pfet_03v3
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T1 T2 VDD s=104000,1860 d=41600,904 l=56 w=800 x=2484 y=757 pfet_03v3
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T2 T1 VDD s=41600,904 d=41600,904 l=56 w=800 x=2964 y=757 pfet_03v3
+C T2 T1 11.0
+C gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN VDD 5.1
+C T20 2.9
+R T2 807
+C T10 2.7
+R T1 899
+R gated_control 907
+= gated_control gf180mcu_fd_sc_mcu9t5v0__inv_1_0.I
+C VDD0 15.2
+R VDD 6508
+= VDD gf180mcu_fd_sc_mcu9t5v0__endcap_0.VDD
+= VDD gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW
+= VDD gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VDD
+R gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 2676
+R VSS 101
+= VSS gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW
+= VSS gf180mcu_fd_sc_mcu9t5v0__endcap_0.VSS
+= VSS gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VSS
+= VSS nfet_0.vss
