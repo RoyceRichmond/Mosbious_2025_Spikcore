@@ -1,4 +1,34 @@
 
+Circuit 1 cell pfet_05v0 and Circuit 2 cell pfet_06v0 are black boxes.
+Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_06v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_05v0                       |Circuit 2: pfet_06v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_05v0 and pfet_06v0 are equivalent.
+
+Circuit 1 cell nfet_05v0 and Circuit 2 cell nfet_06v0 are black boxes.
+Warning: Equate pins:  cell nfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_06v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_05v0                       |Circuit 2: nfet_06v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_05v0 and nfet_06v0 are equivalent.
+
 Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
 Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
 Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
@@ -32,56 +62,25 @@ Device classes pfet_03v3 and pfet_03v3 are equivalent.
 Subcircuit summary:
 Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
 -------------------------------------------|-------------------------------------------
-pfet_05v0 (1)                              |(no matching element)                      
-nfet_05v0 (1)                              |(no matching element)                      
-(no matching element)                      |nfet_06v0 (1)                              
-(no matching element)                      |pfet_06v0 (1)                              
+pfet_05v0 (1)                              |pfet_06v0 (1)                              
+nfet_05v0 (1)                              |nfet_06v0 (1)                              
 Number of devices: 2                       |Number of devices: 2                       
 Number of nets: 6                          |Number of nets: 6                          
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
+Netlists match uniquely.
+
+Subcircuit pins:
 Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
-
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VPW                                        |VPW                                        
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+ZN                                         |ZN                                         
+I                                          |I                                          
 ---------------------------------------------------------------------------------------
-Net: VNW                                   |Net: VNW                                   
-  pfet_05v0/4 = 1                          |  pfet_06v0/4 = 1                          
-                                           |                                           
-Net: VDD                                   |Net: VDD                                   
-  pfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
-                                           |                                           
-Net: VPW                                   |Net: VPW                                   
-  nfet_05v0/4 = 1                          |  nfet_06v0/4 = 1                          
-                                           |                                           
-Net: VSS                                   |Net: VSS                                   
-  nfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: I                                     |Net: I                                     
-  pfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
-  nfet_05v0/2 = 1                          |  pfet_06v0/2 = 1                          
-                                           |                                           
-Net: ZN                                    |Net: ZN                                    
-  pfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
-  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
-
----------------------------------------------------------------------------------------
-Instance: pfet_05v0:0                      |Instance: nfet_06v0:_i_0                   
-  (1,3) = (2,1)                            |  (1,3) = (2,1)                            
-  2 = 2                                    |  2 = 2                                    
-  4 = 1                                    |  4 = 1                                    
-                                           |                                           
-Instance: nfet_05v0:1                      |Instance: pfet_06v0:_i_1                   
-  (1,3) = (2,1)                            |  (1,3) = (2,1)                            
-  2 = 2                                    |  2 = 2                                    
-  4 = 1                                    |  4 = 1                                    
----------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
-  Flattening non-matched subcircuits gf180mcu_fd_sc_mcu9t5v0__inv_1 gf180mcu_fd_sc_mcu9t5v0__inv_1
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
 Flattening unmatched subcell nfet in circuit swmatrix_Tgate (0)(1 instance)
 Flattening unmatched subcell pfet$1 in circuit swmatrix_Tgate (0)(1 instance)
 
@@ -89,65 +88,25 @@ Class swmatrix_Tgate (0):  Merged 22 parallel devices.
 Subcircuit summary:
 Circuit 1: swmatrix_Tgate                  |Circuit 2: swmatrix_Tgate                  
 -------------------------------------------|-------------------------------------------
-pfet_05v0 (1)                              |(no matching element)                      
-nfet_05v0 (1)                              |(no matching element)                      
+gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         |gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         
 nfet_03v3 (6->1)                           |nfet_03v3 (1)                              
 pfet_03v3 (18->1)                          |pfet_03v3 (1)                              
-(no matching element)                      |nfet_06v0 (1)                              
-(no matching element)                      |pfet_06v0 (1)                              
-Number of devices: 4                       |Number of devices: 4                       
+Number of devices: 3                       |Number of devices: 3                       
 Number of nets: 6                          |Number of nets: 6                          
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: swmatrix_Tgate                  |Circuit 2: swmatrix_Tgate                  
-
----------------------------------------------------------------------------------------
-Net: VSS                                   |Net: VDDd                                  
-  nfet_05v0/(1|3) = 1                      |  pfet_03v3/4 = 1                          
-  nfet_05v0/4 = 1                          |  pfet_06v0/(1|3) = 1                      
-  nfet_03v3/4 = 1                          |  pfet_06v0/4 = 1                          
-                                           |                                           
-Net: gated_controlb                        |Net: gated_controlb                        
-  pfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
-  nfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
-  pfet_03v3/2 = 1                          |  pfet_03v3/2 = 1                          
-                                           |                                           
-Net: VDD                                   |Net: VSSd                                  
-  pfet_05v0/(1|3) = 1                      |  nfet_03v3/4 = 1                          
-  pfet_05v0/4 = 1                          |  nfet_06v0/(1|3) = 1                      
-  pfet_03v3/4 = 1                          |  nfet_06v0/4 = 1                          
-                                           |                                           
-Net: gated_control                         |Net: gated_control                         
-  pfet_05v0/2 = 1                          |  pfet_06v0/2 = 1                          
-  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
-  nfet_03v3/2 = 1                          |  nfet_03v3/2 = 1                          
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: swmatrix_Tgate                  |Circuit 2: swmatrix_Tgate                  
-
----------------------------------------------------------------------------------------
-Instance: gf180mcu_fd_sc_mcu9t5v0__inv_1_0 |Instance: gf180mcu_fd_sc_mcu9t5v0__inv_1:1 
-  (1,3) = (3,3)                            |  (1,3) = (3,3)                            
-  2 = 3                                    |  2 = 3                                    
-  4 = 3                                    |  4 = 3                                    
-                                           |                                           
-Instance: gf180mcu_fd_sc_mcu9t5v0__inv_1_0 |Instance: gf180mcu_fd_sc_mcu9t5v0__inv_1:1 
-  (1,3) = (3,3)                            |  (1,3) = (3,3)                            
-  2 = 3                                    |  2 = 3                                    
-  4 = 3                                    |  4 = 3                                    
----------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely with port errors.
 
 Subcircuit pins:
 Circuit 1: swmatrix_Tgate                  |Circuit 2: swmatrix_Tgate                  
 -------------------------------------------|-------------------------------------------
-T1                                         |T2 **Mismatch**                            
-T2                                         |T1 **Mismatch**                            
-gated_controlb                             |VDDd **Mismatch**                          
-VSS                                        |(no pin, node is gated_controlb)           
-VDD                                        |VSSd **Mismatch**                          
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
 gated_control                              |gated_control                              
+T1                                         |T1                                         
+T2                                         |T2                                         
+gated_controlb                             |(no pin, node is gated_controlb)           
 ---------------------------------------------------------------------------------------
 Cell pin lists for swmatrix_Tgate and swmatrix_Tgate altered to match.
 Device classes swmatrix_Tgate and swmatrix_Tgate are equivalent.

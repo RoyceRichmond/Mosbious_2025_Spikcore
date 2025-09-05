@@ -100,7 +100,6 @@ I                                          |I
 Cell pin lists are equivalent.
 Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
 
-Cell DFF_2phase_1 (0) disconnected node: Q
 Subcircuit summary:
 Circuit 1: DFF_2phase_1                    |Circuit 2: DFF_2phase_1                    
 -------------------------------------------|-------------------------------------------
@@ -110,71 +109,22 @@ gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         |gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)
 Number of devices: 4                       |Number of devices: 4                       
 Number of nets: 10                         |Number of nets: 10                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: DFF_2phase_1                    |Circuit 2: DFF_2phase_1                    
-
----------------------------------------------------------------------------------------
-Net: VSS                                   |Net: VSSd                                  
-  gf180mcu_fd_sc_mcu9t5v0__latq_1/VSS = 2  |  gf180mcu_fd_sc_mcu9t5v0__latq_1/VSS = 2  
-  gf180mcu_fd_sc_mcu9t5v0__latq_1/VPW = 2  |  gf180mcu_fd_sc_mcu9t5v0__latq_1/VPW = 2  
-  gf180mcu_fd_sc_mcu9t5v0__nand2_1/VSS = 1 |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VSS = 1   
-  gf180mcu_fd_sc_mcu9t5v0__nand2_1/VPW = 1 |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VPW = 1   
-  gf180mcu_fd_sc_mcu9t5v0__inv_1/VSS = 1   |  gf180mcu_fd_sc_mcu9t5v0__nand2_1/VSS = 1 
-  gf180mcu_fd_sc_mcu9t5v0__inv_1/VPW = 1   |  gf180mcu_fd_sc_mcu9t5v0__nand2_1/VPW = 1 
-                                           |                                           
-Net: VDD                                   |Net: VDDd                                  
-  gf180mcu_fd_sc_mcu9t5v0__latq_1/VDD = 2  |  gf180mcu_fd_sc_mcu9t5v0__latq_1/VDD = 2  
-  gf180mcu_fd_sc_mcu9t5v0__latq_1/VNW = 2  |  gf180mcu_fd_sc_mcu9t5v0__latq_1/VNW = 2  
-  gf180mcu_fd_sc_mcu9t5v0__nand2_1/VDD = 1 |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VDD = 1   
-  gf180mcu_fd_sc_mcu9t5v0__nand2_1/VNW = 1 |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VNW = 1   
-  gf180mcu_fd_sc_mcu9t5v0__inv_1/VDD = 1   |  gf180mcu_fd_sc_mcu9t5v0__nand2_1/VDD = 1 
-  gf180mcu_fd_sc_mcu9t5v0__inv_1/VNW = 1   |  gf180mcu_fd_sc_mcu9t5v0__nand2_1/VNW = 1 
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: EN                                    |Net: EN                                    
-  gf180mcu_fd_sc_mcu9t5v0__nand2_1/A1 = 1  |  gf180mcu_fd_sc_mcu9t5v0__nand2_1/A2 = 1  
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I    |Net: net1                                  
-  gf180mcu_fd_sc_mcu9t5v0__nand2_1/ZN = 1  |  gf180mcu_fd_sc_mcu9t5v0__inv_1/I = 1     
-  gf180mcu_fd_sc_mcu9t5v0__inv_1/I = 1     |  gf180mcu_fd_sc_mcu9t5v0__nand2_1/ZN = 1  
-                                           |                                           
-Net: gf180mcu_fd_sc_mcu9t5v0__latq_1_0/Q   |Net: Q                                     
-  gf180mcu_fd_sc_mcu9t5v0__latq_1/Q = 1    |  gf180mcu_fd_sc_mcu9t5v0__latq_1/Q = 1    
-  gf180mcu_fd_sc_mcu9t5v0__nand2_1/A2 = 1  |  gf180mcu_fd_sc_mcu9t5v0__nand2_1/A1 = 1  
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: DFF_2phase_1                    |Circuit 2: DFF_2phase_1                    
-
----------------------------------------------------------------------------------------
-Instance: gf180mcu_fd_sc_mcu9t5v0__nand2_1 |Instance: gf180mcu_fd_sc_mcu9t5v0__nand2_1 
-  A1 = 1                                   |  A1 = 2                                   
-  A2 = 2                                   |  A2 = 1                                   
-  VDD = 8                                  |  VDD = 8                                  
-  VSS = 8                                  |  VSS = 8                                  
-  ZN = 2                                   |  ZN = 2                                   
-  VNW = 8                                  |  VNW = 8                                  
-  VPW = 8                                  |  VPW = 8                                  
----------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: DFF_2phase_1                    |Circuit 2: DFF_2phase_1                    
 -------------------------------------------|-------------------------------------------
-VSS                                        |VSSd **Mismatch**                          
-VDD                                        |VDDd **Mismatch**                          
-EN                                         |EN                                         
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
 D                                          |D                                          
 PHI_1                                      |PHI_1                                      
 PHI_2                                      |PHI_2                                      
 gated_control                              |gated_control                              
-(no pin, node is gf180mcu_fd_sc_mcu9t5v0__ |Q                                          
-Q                                          |(no matching pin)                          
+EN                                         |EN                                         
+Q                                          |Q                                          
 ---------------------------------------------------------------------------------------
-Cell pin lists for DFF_2phase_1 and DFF_2phase_1 altered to match.
+Cell pin lists are equivalent.
 Device classes DFF_2phase_1 and DFF_2phase_1 are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Circuits match uniquely.
+.
