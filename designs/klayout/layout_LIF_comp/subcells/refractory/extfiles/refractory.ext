@@ -1,0 +1,167 @@
+timestamp 1585675107
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use via_dev$5 via_dev$5_5 1 0 256 0 1 -416
+use via_dev$3 via_dev$3_0 1 0 -492 0 1 -416
+use via_dev$4 via_dev$4_0 1 0 -492 0 1 -722
+use via_dev$6 via_dev$6_0 1 0 364 0 1 39
+use via_dev$5 via_dev$5_4 1 0 860 0 1 -722
+use nfet$4 nfet$4_0 1 0 942 0 1 -774
+use nfet$6 nfet$6_0 1 0 1654 0 1 -718
+use nfet$3 nfet$3_1 1 0 1654 0 1 29
+use via_dev$8 via_dev$8_0 1 0 1702 0 1 -416
+use via_dev$5 via_dev$5_0 1 0 1572 0 1 39
+use via_dev$7 via_dev$7_0 1 0 1702 0 1 -107
+use via_dev$5 via_dev$5_1 1 0 2328 0 1 39
+use via_dev$5 via_dev$5_2 1 0 1832 0 1 39
+use via_dev$5 via_dev$5_3 1 0 1572 0 1 -722
+use nfet$3 nfet$3_0 1 0 2410 0 1 29
+use ota_1stage ota_1stage_0 1 0 -70 0 1 97
+port "vrefrac" 5 435 589 435 589 m3
+port "vdd" 4 -1200 1429 -1200 1429 m1
+port "vspike_down" 2 2627 85 2627 85 m1
+port "vneg" 1 2380 -681 2380 -681 m1
+port "vss" 3 2730 -699 2730 -699 m1
+node "vrefrac" 0 0 435 589 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vdd" 0 0 -1200 1429 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vspike_down" 0 0 2627 85 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m3_n492_n678#" 0 114.689 -492 -678 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23520 748 0 0 0 0
+node "m3_1702_n369#" 0 143.556 1702 -369 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24160 764 0 0 0 0
+node "m2_910_n722#" 1 297.119 910 -722 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56240 1566 0 0 0 0 0 0
+node "m2_n461_n722#" 2 505.773 -461 -722 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 107840 2856 0 0 0 0 0 0
+node "m2_290_n416#" 2 467.727 290 -416 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117680 3102 0 0 0 0 0 0
+node "m2_1872_39#" 1 300.703 1872 39 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39600 1150 0 0 0 0 0 0
+node "m2_400_39#" 1 484.759 400 39 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96160 2564 0 0 0 0 0 0
+node "vneg" 0 380.839 2380 -681 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25568 804 0 0 0 0 0 0 0 0
+node "m1_2458_n107#" 0 375.884 2458 -107 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24316 778 0 0 0 0 0 0 0 0
+node "m1_1702_n107#" 0 380.458 1702 -107 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24880 782 0 0 0 0 0 0 0 0
+node "m1_862_153#" 0 362.124 862 153 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24684 790 0 0 0 0 0 0 0 0
+substrate "vss" 0 0 2730 -699 m1 0 0 0 0 0 0 332880 17250 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1809288 23646 0 0 0 0 0 0 0 0
+cap "m2_400_39#" "m2_290_n416#" 132.18
+cap "m2_290_n416#" "m3_1702_n369#" 20.2488
+cap "m2_910_n722#" "m2_n461_n722#" 51.2175
+cap "m2_910_n722#" "m3_n492_n678#" 0.123354
+cap "m2_n461_n722#" "m2_290_n416#" 101.092
+cap "m3_n492_n678#" "m2_290_n416#" 0.743028
+cap "m2_910_n722#" "m1_862_153#" 0.21244
+cap "m2_910_n722#" "vneg" 0.562775
+cap "m2_290_n416#" "m1_862_153#" 0.672564
+cap "m2_400_39#" "m2_1872_39#" 11.684
+cap "m2_290_n416#" "m1_1702_n107#" 1.20976
+cap "m2_400_39#" "m1_862_153#" 17.3062
+cap "m2_910_n722#" "m2_290_n416#" 119.041
+cap "m2_400_39#" "m1_1702_n107#" 1.08332
+cap "m1_2458_n107#" "m3_1702_n369#" 0.566316
+cap "m2_1872_39#" "m1_2458_n107#" 1.46022
+cap "m3_n492_n678#" "m2_n461_n722#" 19.0524
+cap "m2_1872_39#" "vneg" 1.01214
+cap "m1_1702_n107#" "m3_1702_n369#" 4.12917
+cap "m2_1872_39#" "m1_1702_n107#" 10.5341
+cap "m2_n461_n722#" "m1_862_153#" 0.0477125
+cap "ota_1stage_0/nfet_0/a_n84_n2#" "ota_1stage_0/vp" 5.34848
+cap "ota_1stage_0/nfet_0/a_n84_n2#" "ota_1stage_0/vss" -0.827205
+cap "vdd" "ota_1stage_0/vp" 0.0327079
+cap "vdd" "ota_1stage_0/vss" 0.15124
+cap "ota_1stage_0/nfet_0/a_n84_n2#" "ota_1stage_0/vn" -0.207948
+cap "ota_1stage_0/pfet_0/a_28_228#" "ota_1stage_0/vss" -0.490279
+cap "ota_1stage_0/nfet$2_1/a_94_0#" "ota_1stage_0/vn" 1.29527
+cap "ota_1stage_0/vn" "vrefrac" 21.0397
+cap "ota_1stage_0/pfet_0/a_28_228#" "ota_1stage_0/vp" 5.80142
+cap "vdd" "ota_1stage_0/vn" 1.18023
+cap "ota_1stage_0/vn" "ota_1stage_0/vss" 80.5837
+cap "ota_1stage_0/vn" "ota_1stage_0/vp" 12.4447
+cap "ota_1stage_0/nfet$2_1/a_94_0#" "vrefrac" 19.0291
+cap "vdd" "vrefrac" 6.07365
+cap "ota_1stage_0/vss" "vrefrac" 49.0514
+cap "vrefrac" "ota_1stage_0/vp" 3.69507
+cap "ota_1stage_0/nfet$2_1/a_94_0#" "ota_1stage_0/vss" -10.0737
+cap "ota_1stage_0/pfet_0/a_28_228#" "ota_1stage_0/vn" 1.61211
+cap "ota_1stage_0/nfet$2_1/a_94_0#" "ota_1stage_0/vp" 55.8544
+cap "vdd" "ota_1stage_0/vp" 2.71881
+cap "ota_1stage_0/nfet_0/a_n84_n2#" "ota_1stage_0/vp" 6.78098
+cap "ota_1stage_0/vss" "ota_1stage_0/vp" 547.222
+cap "ota_1stage_0/vss" "ota_1stage_0/vn" 107.568
+cap "ota_1stage_0/vp" "ota_1stage_0/pfet_0/a_28_228#" 0.0547047
+cap "ota_1stage_0/nfet$1_1/a_n84_0#" "ota_1stage_0/vp" 0.163269
+cap "ota_1stage_0/nfet$1_1/a_n84_0#" "ota_1stage_0/vn" 1.03323
+cap "ota_1stage_0/vdd" "vrefrac" 4.48188
+cap "vspike_down" "ota_1stage_0/vn" 3.01551
+cap "nfet$6_0/a_638_0#" "ota_1stage_0/vp" 8.97242
+cap "nfet$6_0/a_638_0#" "ota_1stage_0/vss" 306.833
+cap "ota_1stage_0/vp" "vrefrac" 45.3735
+cap "ota_1stage_0/vss" "vrefrac" 110.522
+cap "ota_1stage_0/vp" "ota_1stage_0/vss" 513.341
+cap "nfet$6_0/a_638_0#" "ota_1stage_0/vn" 15.0963
+cap "ota_1stage_0/vn" "vrefrac" 15.8093
+cap "ota_1stage_0/vp" "ota_1stage_0/vn" 73.8299
+cap "ota_1stage_0/vss" "nfet$6_0/a_638_0#" 241.877
+cap "nfet$6_0/a_638_0#" "via_dev$5_3/m1_0_0#" -0.223417
+cap "ota_1stage_0/vss" "via_dev$5_3/m1_0_0#" 0.0427596
+cap "ota_1stage_0/vss" "vspike_down" 43.6535
+cap "nfet$6_0/a_638_0#" "nfet$3_0/a_n84_0#" 6.10893
+cap "ota_1stage_0/vss" "vrefrac" -0.1799
+cap "ota_1stage_0/vss" "nfet$3_0/a_n84_0#" 93.195
+cap "nfet$3_0/a_n84_0#" "vspike_down" 6.39495
+cap "ota_1stage_0/vss" "ota_1stage_0/nfet$2_1/a_94_0#" 0.0403831
+cap "vdd" "ota_1stage_0/pfet_0/a_28_228#" -2.27374e-13
+cap "ota_1stage_0/nfet$2_1/a_94_0#" "ota_1stage_0/vss" 0.207325
+cap "vrefrac" "ota_1stage_0/vss" 8.39962
+cap "ota_1stage_0/vn" "ota_1stage_0/vss" 0.344537
+cap "ota_1stage_0/vss" "ota_1stage_0/vp" 0.103511
+cap "ota_1stage_0/vn" "ota_1stage_0/pfet_0/a_28_228#" 1.08658
+cap "ota_1stage_0/vp" "ota_1stage_0/pfet_0/a_28_228#" 0.0014057
+cap "ota_1stage_0/vdd" "ota_1stage_0/vss" 13.7154
+merge "nfet$3_0/a_n84_0#" "via_dev$5_1/m1_0_0#" -849.596 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32304 -1766 -14720 -1008 -5840 -466 0 0 0 0
+merge "via_dev$5_1/m1_0_0#" "via_dev$5_2/m1_0_0#"
+merge "via_dev$5_2/m1_0_0#" "m2_1872_39#"
+merge "m2_1872_39#" "via_dev$7_0/m1_0_0#"
+merge "via_dev$7_0/m1_0_0#" "nfet$3_1/a_38_n132#"
+merge "nfet$3_1/a_38_n132#" "nfet$3_1/a_138_0#"
+merge "nfet$3_1/a_138_0#" "m1_1702_n107#"
+merge "m1_1702_n107#" "via_dev$8_0/m2_0_0#"
+merge "via_dev$8_0/m2_0_0#" "m3_1702_n369#"
+merge "m3_1702_n369#" "ota_1stage_0/vn"
+merge "ota_1stage_0/vn" "via_dev$5_5/m1_0_0#"
+merge "via_dev$5_5/m1_0_0#" "m2_290_n416#"
+merge "via_dev$5_0/m1_0_0#" "nfet$3_1/a_n84_0#" -373.575 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11856 -616 -5920 -468 0 0 0 0 0 0
+merge "nfet$3_1/a_n84_0#" "ota_1stage_0/vout"
+merge "ota_1stage_0/vout" "vrefrac"
+merge "vrefrac" "via_dev$6_0/m1_0_0#"
+merge "via_dev$6_0/m1_0_0#" "m2_400_39#"
+merge "via_dev$5_1/VSUBS" "nfet$3_0/a_n256_n272#" -2257.82 0 0 0 0 0 0 -154880 -19750 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2204 -8692 0 0 0 0 0 0 0 0
+merge "nfet$3_0/a_n256_n272#" "via_dev$5_3/VSUBS"
+merge "via_dev$5_3/VSUBS" "via_dev$5_2/VSUBS"
+merge "via_dev$5_2/VSUBS" "via_dev$7_0/VSUBS"
+merge "via_dev$7_0/VSUBS" "via_dev$5_0/VSUBS"
+merge "via_dev$5_0/VSUBS" "via_dev$8_0/VSUBS"
+merge "via_dev$8_0/VSUBS" "nfet$3_1/a_n256_n272#"
+merge "nfet$3_1/a_n256_n272#" "nfet$6_0/a_n256_n198#"
+merge "nfet$6_0/a_n256_n198#" "nfet$4_0/a_94_0#"
+merge "nfet$4_0/a_94_0#" "via_dev$5_4/VSUBS"
+merge "via_dev$5_4/VSUBS" "ota_1stage_0/vss"
+merge "ota_1stage_0/vss" "nfet$4_0/a_n256_n198#"
+merge "nfet$4_0/a_n256_n198#" "via_dev$6_0/VSUBS"
+merge "via_dev$6_0/VSUBS" "via_dev$4_0/VSUBS"
+merge "via_dev$4_0/VSUBS" "via_dev$3_0/VSUBS"
+merge "via_dev$3_0/VSUBS" "via_dev$5_5/VSUBS"
+merge "via_dev$5_5/VSUBS" "vss"
+merge "via_dev$5_3/m1_0_0#" "nfet$6_0/a_n84_n2#" -1023.49 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24700 -1410 -11760 -934 -5440 -456 0 0 0 0
+merge "nfet$6_0/a_n84_n2#" "nfet$4_0/a_n84_0#"
+merge "nfet$4_0/a_n84_0#" "nfet$4_0/a_30_1060#"
+merge "nfet$4_0/a_30_1060#" "m1_862_153#"
+merge "m1_862_153#" "via_dev$5_4/m1_0_0#"
+merge "via_dev$5_4/m1_0_0#" "m2_910_n722#"
+merge "m2_910_n722#" "ota_1stage_0/vp"
+merge "ota_1stage_0/vp" "via_dev$4_0/m2_0_0#"
+merge "via_dev$4_0/m2_0_0#" "m2_n461_n722#"
+merge "m2_n461_n722#" "via_dev$3_0/m1_0_0#"
+merge "via_dev$3_0/m1_0_0#" "m3_n492_n678#"
+merge "nfet$3_0/a_38_n132#" "nfet$3_0/a_138_0#" -113.546 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8284 -522 0 0 0 0 0 0 0 0
+merge "nfet$3_0/a_138_0#" "vspike_down"
+merge "vspike_down" "m1_2458_n107#"
+merge "nfet$6_0/a_638_0#" "nfet$6_0/a_38_n60#" -227.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6916 -486 0 0 0 0 0 0 0 0
+merge "nfet$6_0/a_38_n60#" "vneg"
+merge "ota_1stage_0/vdd" "vdd" -4.95759 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
