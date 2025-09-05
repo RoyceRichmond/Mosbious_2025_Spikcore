@@ -50,10 +50,10 @@ C {designs/libs/core_LIF_comp/core_switch/switch.sym} 790 -280 0 1 {name=x10}
 C {lab_pin.sym} 820 -440 3 1 {name=p92 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 770 -360 2 1 {name=p93 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 790 -360 0 1 {name=p94 sig_type=std_logic lab=phi_int}
-C {designs/libs/core_LIF_comp/core_switch/switch.sym} 950 -280 0 1 {name=x18}
-C {lab_pin.sym} 980 -440 3 1 {name=p95 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 930 -360 2 1 {name=p96 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 950 -360 0 1 {name=p97 sig_type=std_logic lab=phi_2}
+C {designs/libs/core_LIF_comp/core_switch/switch.sym} 960 -280 0 0 {name=x18}
+C {lab_pin.sym} 930 -440 1 0 {name=p95 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 980 -360 2 0 {name=p96 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 960 -360 0 0 {name=p97 sig_type=std_logic lab=phi_2}
 C {lab_pin.sym} 1030 -400 2 0 {name=p98 sig_type=std_logic lab=vrefrac}
 C {designs/libs/core_LIF_comp/core_conmutator/conmutator.sym} 1120 -400 0 1 {name=x20}
 C {lab_pin.sym} 1120 -600 2 0 {name=p102 sig_type=std_logic lab=vdd}

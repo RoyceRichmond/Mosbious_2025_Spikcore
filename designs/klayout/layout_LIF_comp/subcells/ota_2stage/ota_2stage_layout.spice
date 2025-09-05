@@ -1,0 +1,43 @@
+* NGSPICE file created from ota_2stage.ext - technology: gf180mcuD
+
+.subckt pfet w_n352_n286# a_n92_0# a_94_0# a_28_228#
+X0 a_94_0# a_28_228# a_n92_0# w_n352_n286# pfet_03v3 ad=0.546p pd=2.98u as=0.546p ps=2.98u w=0.84u l=0.28u
+.ends
+
+.subckt cap_mim m4_n120_n120# m4_0_0#
+X0 m4_0_0# m4_n120_n120# cap_mim_2f0_m4m5_noshield c_width=9u c_length=9u
+.ends
+
+.subckt nfet$3 a_n256_n272# a_30_n132# a_n84_0# a_94_0#
+X0 a_94_0# a_30_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.3416p pd=2.34u as=0.3416p ps=2.34u w=0.56u l=0.28u
+.ends
+
+.subckt nfet$1 a_n256_n272# a_30_n132# a_n84_0# a_94_0#
+X0 a_94_0# a_30_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=1.8788p pd=7.38u as=1.8788p ps=7.38u w=3.08u l=0.28u
+.ends
+
+.subckt nfet a_n84_n2# a_n256_n198# a_1746_0# a_38_n60#
+X0 a_1746_0# a_38_n60# a_n84_n2# a_n256_n198# nfet_03v3 ad=0.228p pd=1.98u as=0.228p ps=1.98u w=0.36u l=8.54u
+.ends
+
+.subckt pfet$1 a_28_n136# a_n92_0# a_94_0# w_n352_n362#
+X0 a_94_0# a_28_n136# a_n92_0# w_n352_n362# pfet_03v3 ad=1.092p pd=4.66u as=1.092p ps=4.66u w=1.68u l=0.28u
+.ends
+
+.subckt nfet$2 a_n256_n272# a_30_n132# a_n84_0# a_94_0#
+X0 a_94_0# a_30_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.5124p pd=2.9u as=0.5124p ps=2.9u w=0.84u l=0.28u
+.ends
+
+.subckt ota_2stage vdd vp vn vss vout
+Xpfet_0 vdd vdd m3_n314_178# m3_n314_178# pfet
+Xpfet_1 vdd m3_210_178# vdd m3_n314_178# pfet
+Xcap_mim_0 vout m3_210_178# cap_mim
+Xnfet$3_0 vss m3_n1200_n476# vss vout nfet$3
+Xnfet$1_0 vss vp m3_210_178# m3_n530_n14# nfet$1
+Xnfet$1_1 vss vn m3_n530_n14# m3_n314_178# nfet$1
+Xnfet_0 m3_n1200_n476# vss vdd vdd nfet
+Xpfet$1_0 m3_210_178# vdd vout vdd pfet$1
+Xnfet$2_0 vss m3_n1200_n476# m3_n1200_n476# vss nfet$2
+Xnfet$2_1 vss m3_n1200_n476# vss m3_n530_n14# nfet$2
+.ends
+
