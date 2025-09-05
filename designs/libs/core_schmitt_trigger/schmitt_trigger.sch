@@ -11,7 +11,7 @@ N -1500 -110 -1340 -110 {lab=outz}
 N -1340 -130 -1340 -110 {lab=outz}
 N -1500 -190 -1380 -190 {lab=outy}
 N -1380 -190 -1380 -160 {lab=outy}
-N -1340 -160 -1320 -160 {lab=GND}
+N -1340 -160 -1320 -160 {lab=vss}
 N -1380 -230 -1380 -190 {lab=outy}
 N -1380 -230 -1330 -230 {lab=outy}
 N -1500 -270 -1390 -270 {lab=outx}
@@ -22,23 +22,23 @@ N -1390 -260 -1370 -260 {lab=outx}
 N -1210 -330 -1210 -310 {lab=out}
 N -1250 -360 -1250 -280 {lab=outx}
 N -1270 -320 -1250 -320 {lab=outx}
-N -1500 -40 -1500 -20 {lab=GND}
-N -1320 -160 -1320 -110 {lab=GND}
-N -1320 -260 -1320 -160 {lab=GND}
-N -1330 -260 -1320 -260 {lab=GND}
+N -1500 -40 -1500 -20 {lab=vss}
+N -1320 -160 -1320 -110 {lab=vss}
+N -1320 -260 -1320 -160 {lab=vss}
+N -1330 -260 -1320 -260 {lab=vss}
 N -1500 -360 -1500 -340 {lab=vdd}
 N -1500 -340 -1490 -340 {lab=vdd}
 N -1490 -340 -1490 -310 {lab=vdd}
 N -1500 -310 -1490 -310 {lab=vdd}
-N -1500 -230 -1480 -230 {lab=GND}
-N -1500 -40 -1480 -40 {lab=GND}
-N -1480 -70 -1480 -40 {lab=GND}
-N -1500 -70 -1480 -70 {lab=GND}
-N -1500 -150 -1460 -150 {lab=GND}
-N -1210 -250 -1210 -240 {lab=GND}
-N -1210 -250 -1180 -250 {lab=GND}
-N -1180 -280 -1180 -250 {lab=GND}
-N -1210 -280 -1180 -280 {lab=GND}
+N -1500 -230 -1480 -230 {lab=vss}
+N -1500 -40 -1480 -40 {lab=vss}
+N -1480 -70 -1480 -40 {lab=vss}
+N -1500 -70 -1480 -70 {lab=vss}
+N -1500 -150 -1460 -150 {lab=vss}
+N -1210 -250 -1210 -240 {lab=vss}
+N -1210 -250 -1180 -250 {lab=vss}
+N -1180 -280 -1180 -250 {lab=vss}
+N -1210 -280 -1180 -280 {lab=vss}
 N -1210 -390 -1180 -390 {lab=vdd}
 N -1180 -390 -1180 -360 {lab=vdd}
 N -1210 -360 -1180 -360 {lab=vdd}
@@ -52,18 +52,18 @@ N -1610 -310 -1610 -70 {lab=in}
 N -1610 -70 -1540 -70 {lab=in}
 N -1610 -210 -1540 -210 {lab=in}
 N -1380 -340 -1380 -320 {lab=outx}
-N -940 -190 -910 -190 {lab=GND}
-N -940 -160 -930 -160 {lab=GND}
-N -930 -190 -930 -160 {lab=GND}
+N -940 -190 -910 -190 {lab=vss}
+N -940 -160 -930 -160 {lab=vss}
+N -930 -190 -930 -160 {lab=vss}
 N -1010 -190 -980 -190 {lab=vdd}
 N -910 -380 -880 -380 {lab=vdd}
-N -980 -380 -950 -380 {lab=GND}
-N -680 -200 -650 -200 {lab=GND}
-N -680 -170 -670 -170 {lab=GND}
-N -670 -200 -670 -170 {lab=GND}
+N -980 -380 -950 -380 {lab=vss}
+N -680 -200 -650 -200 {lab=vss}
+N -680 -170 -670 -170 {lab=vss}
+N -670 -200 -670 -170 {lab=vss}
 N -750 -200 -720 -200 {lab=vdd}
 N -680 -380 -650 -380 {lab=vdd}
-N -750 -380 -720 -380 {lab=GND}
+N -750 -380 -720 -380 {lab=vss}
 N -680 -440 -680 -410 {lab=outy}
 N -910 -430 -910 -410 {lab=outx}
 N -940 -240 -940 -220 {lab=outx}
@@ -90,7 +90,7 @@ N -910 -350 -850 -350 {lab=vdd}
 N -680 -350 -620 -350 {lab=vdd}
 C {symbols/pfet_03v3.sym} -1520 -310 0 0 {name=M2
 L=0.28u
-W=0.4u
+W=0.42u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -287,21 +287,20 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {lab_pin.sym} -1500 -20 3 0 {name=p1 sig_type=std_logic lab=GND}
-C {lab_pin.sym} -1460 -150 3 0 {name=p9 sig_type=std_logic lab=GND}
-C {lab_pin.sym} -1480 -230 3 0 {name=p31 sig_type=std_logic lab=GND}
-C {lab_pin.sym} -1320 -120 3 0 {name=p32 sig_type=std_logic lab=GND}
+C {lab_pin.sym} -1500 -20 3 0 {name=p1 sig_type=std_logic lab=vss}
+C {lab_pin.sym} -1460 -150 3 0 {name=p9 sig_type=std_logic lab=vss}
+C {lab_pin.sym} -1480 -230 3 0 {name=p31 sig_type=std_logic lab=vss}
+C {lab_pin.sym} -1320 -120 3 0 {name=p32 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -1120 -90 0 0 {name=p33 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} -980 -380 0 0 {name=p34 sig_type=std_logic lab=GND}
-C {lab_pin.sym} -750 -380 0 0 {name=p35 sig_type=std_logic lab=GND}
-C {lab_pin.sym} -910 -190 0 1 {name=p36 sig_type=std_logic lab=GND}
-C {lab_pin.sym} -650 -200 0 1 {name=p37 sig_type=std_logic lab=GND}
-C {lab_pin.sym} -1120 -60 0 0 {name=p7 sig_type=std_logic lab=GND}
+C {lab_pin.sym} -980 -380 0 0 {name=p34 sig_type=std_logic lab=vss}
+C {lab_pin.sym} -750 -380 0 0 {name=p35 sig_type=std_logic lab=vss}
+C {lab_pin.sym} -910 -190 0 1 {name=p36 sig_type=std_logic lab=vss}
+C {lab_pin.sym} -650 -200 0 1 {name=p37 sig_type=std_logic lab=vss}
 C {ipin.sym} -1610 -160 0 0 {name=p2 lab=in}
 C {opin.sym} -1180 -320 0 0 {name=p24 lab=out}
 C {iopin.sym} -1120 -90 0 0 {name=p6 lab=vdd}
-C {iopin.sym} -1120 -60 0 0 {name=p25 lab=GND}
-C {lab_pin.sym} -1210 -240 3 0 {name=p26 sig_type=std_logic lab=GND}
+C {iopin.sym} -1120 -60 0 0 {name=p25 lab=vss}
+C {lab_pin.sym} -1210 -240 3 0 {name=p26 sig_type=std_logic lab=vss}
 C {symbols/pfet_03v3.sym} -1300 -390 0 1 {name=M15
 L=1u
 W=1u

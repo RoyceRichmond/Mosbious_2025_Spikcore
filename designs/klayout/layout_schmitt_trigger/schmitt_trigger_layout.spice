@@ -1,0 +1,71 @@
+* NGSPICE file created from schmitt_trigger.ext - technology: gf180mcuD
+
+.subckt pfet a_238_0# a_38_n60# a_n92_0# w_n230_n138#
+X0 a_238_0# a_38_n60# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=1u
+.ends
+
+.subckt pfet$6 a_n92_0# a_94_0# a_28_220# w_n230_n138#
+X0 a_94_0# a_28_220# a_n92_0# w_n230_n138# pfet_03v3 ad=0.52p pd=2.9u as=0.52p ps=2.9u w=0.8u l=0.28u
+.ends
+
+.subckt pfet$4 a_n92_0# a_94_0# a_28_260# w_n230_n138#
+X0 a_94_0# a_28_260# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.28u
+.ends
+
+.subckt nfet$7 a_216_0# a_30_260# a_n84_0# a_94_0#
+X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt nfet$5 a_216_0# a_n84_0# a_94_0# a_30_460#
+X0 a_94_0# a_30_460# a_n84_0# a_216_0# nfet_03v3 ad=1.22p pd=5.22u as=1.22p ps=5.22u w=2u l=0.28u
+.ends
+
+.subckt pfet$9 a_38_n60# a_n92_0# a_198_0# w_n230_n138#
+X0 a_198_0# a_38_n60# a_n92_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.5u as=1.04p ps=4.5u w=1.6u l=0.8u
+.ends
+
+.subckt pfet$7 a_28_144# w_n232_n142# a_94_0# a_n92_n2#
+X0 a_94_0# a_28_144# a_n92_n2# w_n232_n142# pfet_03v3 ad=0.2822p pd=2.18u as=0.2822p ps=2.18u w=0.42u l=0.28u
+.ends
+
+.subckt nfet a_216_0# a_30_280# a_n84_0# a_94_0#
+X0 a_94_0# a_30_280# a_n84_0# a_216_0# nfet_03v3 ad=0.671p pd=3.42u as=0.671p ps=3.42u w=1.1u l=0.28u
+.ends
+
+.subckt nfet$8 a_280_0# a_158_0# a_38_n60# a_n84_0#
+X0 a_158_0# a_38_n60# a_n84_0# a_280_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.6u
+.ends
+
+.subckt nfet$6 a_216_0# a_n84_0# a_94_0# a_30_480#
+X0 a_94_0# a_30_480# a_n84_0# a_216_0# nfet_03v3 ad=1.281p pd=5.42u as=1.281p ps=5.42u w=2.1u l=0.28u
+.ends
+
+.subckt nfet$10 a_n84_n2# a_560_n2# a_38_n60# a_438_0#
+X0 a_438_0# a_38_n60# a_n84_n2# a_560_n2# nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=2u
+.ends
+
+.subckt nfet$4 a_32_260# a_98_0# a_n84_0# a_220_0#
+X0 a_98_0# a_32_260# a_n84_0# a_220_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.3u
+.ends
+
+.subckt nfet$2 a_216_0# a_30_560# a_n84_0# a_94_0#
+X0 a_94_0# a_30_560# a_n84_0# a_216_0# nfet_03v3 ad=1.525p pd=6.22u as=1.525p ps=6.22u w=2.5u l=0.28u
+.ends
+
+.subckt schmitt_trigger vdd vss in out
+Xpfet_0 vdd out m3_n9961_n6054# vdd pfet
+Xpfet$6_0 m2_n8799_n7122# vdd m2_n8799_n7122# vdd pfet$6
+Xpfet$4_0 m3_n9961_n6054# vdd vss vdd pfet$4
+Xpfet$4_1 out vdd m3_n9961_n6054# vdd pfet$4
+Xnfet$7_0 vss m3_n9961_n6054# out vss nfet$7
+Xnfet$5_0 vss m2_n8799_n7122# m3_n8390_n6986# in nfet$5
+Xpfet$9_0 vss m3_n8390_n6986# vdd vdd pfet$9
+Xpfet$7_0 in vdd vdd m3_n9961_n6054# pfet$7
+Xnfet_0 vss m3_n8390_n6986# m2_n8799_n7122# vdd nfet
+Xnfet$8_0 vss vss vdd m3_n9961_n6054# nfet$8
+Xnfet$6_0 vss m2_n8799_n7122# vss in nfet$6
+Xnfet$10_0 m3_n8390_n6986# vss vdd vss nfet$10
+Xnfet$4_0 m3_n9961_n6054# vdd m3_n8390_n6986# vss nfet$4
+Xnfet$2_0 vss in m3_n9961_n6054# m3_n8390_n6986# nfet$2
+.ends
+

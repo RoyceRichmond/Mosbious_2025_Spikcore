@@ -1,0 +1,18 @@
+** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_schmitt_trigger/schmitt_trigger.sch
+.subckt schmitt_trigger out in vdd vss
+*.PININFO in:I out:O vdd:B vss:B
+XM2 outx in vdd vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+XM1 outz in vss vss nfet_03v3 L=0.28u W=2.1u nf=1 m=1
+XM4 outy in outz vss nfet_03v3 L=0.28u W=2u nf=1 m=1
+XM3 outx in outy vss nfet_03v3 L=0.28u W=2.5u nf=1 m=1
+XM5 vdd outy outz vss nfet_03v3 L=0.28u W=1.1u nf=1 m=1
+XM6 vdd outx outy vss nfet_03v3 L=0.3u W=1u nf=1 m=1
+XM8 out outx vss vss nfet_03v3 L=0.28u W=1u nf=1 m=1
+XM7 out outx vdd vdd pfet_03v3 L=0.28u W=1u nf=1 m=1
+XM10 outy vss vdd vdd pfet_03v3 L=0.8u W=1.6u nf=1 m=1
+XM11 outx vss vdd vdd pfet_03v3 L=0.28u W=1u nf=1 m=1
+XM12 outy vdd vss vss nfet_03v3 L=2u W=0.42u nf=1 m=1
+XM13 outx vdd vss vss nfet_03v3 L=0.6u W=1u nf=1 m=1
+XM19 outz outz vdd vdd pfet_03v3 L=0.28u W=0.8u nf=1 m=1
+XM15 outx out vdd vdd pfet_03v3 L=1u W=1u nf=1 m=1
+.ends
