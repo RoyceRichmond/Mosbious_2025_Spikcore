@@ -1,6 +1,6 @@
 * NGSPICE file created from schmitt_trigger.ext - technology: gf180mcuD
 
-.subckt schmitt_trigger_pex vdd vss in out
+.subckt schmitt_trigger_pex out in vdd vss
 X0 a_n8431_n6457# in.t0 a_n9060_n6222# vss.t11 nfet_03v3 ad=1.22p pd=5.22u as=1.22p ps=5.22u w=2u l=0.28u
 X1 out.t1 a_n9966_n6108# vss.t3 vss.t2 nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
 X2 vdd.t9 vss.t12 a_n9966_n6108# vdd.t8 pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.28u

@@ -26,9 +26,9 @@ color="9 11 18 12 10"
 node="sig3
 out_pex_inv
 out_inv
-out_pex
+out_sch_pex
 out"
-hilight_wave=2}
+hilight_wave=3}
 B 2 1750 -1170 2550 -770 {flags=graph
 y1=-8.2e-06
 y2=0.00075
