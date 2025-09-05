@@ -1,0 +1,6 @@
+** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_not/not.sch
+.subckt not vdd in out vss
+*.PININFO vdd:B vss:B in:B out:B
+XM1 out in vdd vdd pfet_03v3 L=0.35u W=1u nf=1 m=1
+XM3 out in vss vss nfet_03v3 L=0.28u W=1u nf=1 m=1
+.ends

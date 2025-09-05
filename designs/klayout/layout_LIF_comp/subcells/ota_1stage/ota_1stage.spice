@@ -1,0 +1,11 @@
+** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_ota_1stage/ota_1stage.sch
+.subckt ota_1stage vdd vout vp vn vss
+*.PININFO vdd:B vss:B vp:B vn:B vout:B
+XM1 net1 net1 vdd vdd pfet_03v3 L=0.28u W=0.84u nf=1 m=1
+XM2 net1 vp net2 vss nfet_03v3 L=0.28u W=3.08u nf=1 m=1
+XM4 vout net1 vdd vdd pfet_03v3 L=0.28u W=0.84u nf=1 m=1
+XM3 vout vn net2 vss nfet_03v3 L=0.28u W=3.08u nf=1 m=1
+XM5 net2 net3 vss vss nfet_03v3 L=0.28u W=0.84u nf=1 m=1
+XM6 net3 net3 vss vss nfet_03v3 L=0.28u W=0.84u nf=1 m=1
+XM7 vdd vdd net3 vss nfet_03v3 L=8.54u W=0.28u nf=1 m=1
+.ends

@@ -1,0 +1,19 @@
+* NGSPICE file created from conmutator.ext - technology: gf180mcuD
+
+.subckt pfet a_n92_0# a_35_n136# a_108_0# w_n230_n138#
+X0 a_108_0# a_35_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.35u
+.ends
+
+.subckt nfet a_216_0# a_30_260# a_n84_0# a_94_0#
+X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt conmutator out in1 in2 cntrl vdd vss
+Xpfet_0 out cntrl in1 vdd pfet
+Xpfet_1 in2 m2_n850_n472# out vdd pfet
+Xpfet_2 m2_n850_n472# cntrl vdd vdd pfet
+Xnfet_0 vss m2_n850_n472# out in1 nfet
+Xnfet_2 vss cntrl m2_n850_n472# vss nfet
+Xnfet_1 vss cntrl in2 out nfet
+.ends
+

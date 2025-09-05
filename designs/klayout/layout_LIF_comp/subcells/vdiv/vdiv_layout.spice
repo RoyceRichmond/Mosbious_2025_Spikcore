@@ -1,0 +1,33 @@
+* NGSPICE file created from vdiv.ext - technology: gf180mcuD
+
+.subckt ppolyf_u_resistor$4 a_n376_0# a_n132_0# a_200_0#
+X0 a_n132_0# a_200_0# a_n376_0# ppolyf_u r_width=4.3u r_length=1u
+.ends
+
+.subckt ppolyf_u_resistor$2 a_n376_0# a_n132_0# a_200_0#
+X0 a_n132_0# a_200_0# a_n376_0# ppolyf_u r_width=0.8u r_length=1u
+.ends
+
+.subckt ppolyf_u_resistor a_n376_0# a_n132_0# a_200_0#
+X0 a_n132_0# a_200_0# a_n376_0# ppolyf_u r_width=1u r_length=1u
+.ends
+
+.subckt ppolyf_u_resistor$3 a_n376_0# a_n132_0# a_200_0#
+X0 a_n132_0# a_200_0# a_n376_0# ppolyf_u r_width=2u r_length=1u
+.ends
+
+.subckt ppolyf_u_resistor$1 a_n376_0# a_n132_0# a_200_0#
+X0 a_n132_0# a_200_0# a_n376_0# ppolyf_u r_width=3u r_length=1u
+.ends
+
+.subckt vdiv vdd vss vspike_up vref vspike_down vres
+Xppolyf_u_resistor$4_0 vdd vss vres ppolyf_u_resistor$4
+Xppolyf_u_resistor$2_0 vdd vdd vres ppolyf_u_resistor$2
+Xppolyf_u_resistor$2_1 vdd vss vspike_up ppolyf_u_resistor$2
+Xppolyf_u_resistor_0 vdd vdd vspike_down ppolyf_u_resistor
+Xppolyf_u_resistor_1 vdd vss vref ppolyf_u_resistor
+Xppolyf_u_resistor_2 vdd vdd vref ppolyf_u_resistor
+Xppolyf_u_resistor$3_0 vdd vss vspike_down ppolyf_u_resistor$3
+Xppolyf_u_resistor$1_0 vdd vdd vspike_up ppolyf_u_resistor$1
+.ends
+

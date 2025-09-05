@@ -1,0 +1,22 @@
+** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_vdiv/vdiv.sch
+.subckt vdiv vss vdd vref vspike_up vspike_down vres
+*.PININFO vref:O vdd:B vss:B vspike_up:O vspike_down:O vres:O
+XR3 vspike_up vdd vdd ppolyf_u r_width=3e-6 r_length=1e-6 m=1
+XR1 vss vspike_up vdd ppolyf_u r_width=0.8e-6 r_length=1e-6 m=1
+XR2 vss vref vdd ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR13 vref vdd vdd ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR14 vspike_down vdd vdd ppolyf_u r_width=1e-6 r_length=1e-6 m=1
+XR15 vss vspike_down vdd ppolyf_u r_width=2e-6 r_length=1e-6 m=1
+XR16 vss vres vdd ppolyf_u r_width=4.3e-6 r_length=1e-6 m=1
+XR17 vres vdd vdd ppolyf_u r_width=0.8e-6 r_length=1e-6 m=1
+**** begin user architecture code
+
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+
+**** end user architecture code
+.ends
