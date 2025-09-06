@@ -74,7 +74,7 @@ N -190 -170 -30 -170 {lab=GND}
 C {vsource.sym} -360 0 0 0 {name=V1 value=vd_v savecurrent=false}
 C {devices/code_shown.sym} -855 -120 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
-.tran 10u 100m
+.tran 100u 15m
 .include /foss/designs/Mosbious_2025_Spikcore/designs/pex/AH_neuron/AH_neuron_pex.spice
 .include /foss/designs/Mosbious_2025_Spikcore/miscellaneous/sscs-chipathon/resources/Integration/Chipathon2025_pads/xschem/gf180mcu_fd_io__asig_5p0_extracted.spice
 .param vd_v=3.3
