@@ -54,7 +54,6 @@ R PHI_1 67
 = PHI_1 gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E
 C VDD0 13.6
 R VDD 10396
-= VDD VDDd
 = VDD gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW
 = VDD gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VDD
 = VDD gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW
@@ -93,7 +92,6 @@ R VSS 397
 = VSS gf180mcu_fd_sc_mcu9t5v0__filltie_0.VSS
 = VSS gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW
 = VSS gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW
-= VSS VSSd
 = VSS gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VSS
 = VSS gf180mcu_fd_sc_mcu9t5v0__filltie_1.VSS
 = VSS gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VSS

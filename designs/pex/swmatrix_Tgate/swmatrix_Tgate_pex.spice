@@ -1,32 +1,31 @@
 * NGSPICE file created from swmatrix_Tgate.ext - technology: gf180mcuD
-
-.subckt swmatrix_Tgate VSS VDD gated_control T2 T1
-X0 VDD.t1 gated_control.t0 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t1 VDD.t0 pfet_05v0 ad=0.8052p pd=4.54u as=0.8052p ps=4.54u w=1.83u l=0.5u
-X1 T1.t23 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t2 T2.t13 VDD.t19 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
-X2 T2.t17 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t3 T1.t22 VDD.t18 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
-X3 T2.t19 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t4 T1.t21 VDD.t17 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
-X4 T1.t20 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t5 T2.t21 VDD.t16 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
-X5 T1.t5 gated_control.t1 T2.t2 VSS.t7 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+.subckt swmatrix_Tgate_pex gated_control T2 T1 VSS VDD
+X0 VDD.t1 gated_control.t0 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t0 VDD.t0 pfet_05v0 ad=0.8052p pd=4.54u as=0.8052p ps=4.54u w=1.83u l=0.5u
+X1 T1.t23 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t2 T2.t6 VDD.t19 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X2 T2.t9 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t3 T1.t22 VDD.t18 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X3 T2.t15 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t4 T1.t21 VDD.t17 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X4 T1.t20 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t5 T2.t18 VDD.t16 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X5 T1.t5 gated_control.t1 T2.t1 VSS.t7 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
 X6 T2.t3 gated_control.t2 T1.t4 VSS.t6 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
-X7 T1.t19 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t6 T2.t8 VDD.t15 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
-X8 T1.t18 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t7 T2.t14 VDD.t14 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
-X9 T2.t23 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t8 T1.t17 VDD.t13 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
-X10 T1.t16 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t9 T2.t22 VDD.t12 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
-X11 T2.t0 gated_control.t3 T1.t3 VSS.t5 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
-X12 T1.t2 gated_control.t4 T2.t1 VSS.t4 nfet_03v3 ad=2.44p pd=9.22u as=1.04p ps=4.52u w=4u l=0.28u
-X13 T2.t20 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t10 T1.t15 VDD.t11 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
-X14 T2.t11 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t11 T1.t14 VDD.t10 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
-X15 VSS.t3 gated_control.t5 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t0 VSS.t2 nfet_05v0 ad=0.5808p pd=3.52u as=0.5808p ps=3.52u w=1.32u l=0.6u
-X16 T2.t6 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t12 T1.t13 VDD.t9 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
-X17 T1.t12 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t13 T2.t9 VDD.t8 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
-X18 T2.t15 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t14 T1.t11 VDD.t7 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
-X19 T1.t10 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t15 T2.t12 VDD.t6 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
-X20 T2.t5 gated_control.t6 T1.t1 VSS.t1 nfet_03v3 ad=1.04p pd=4.52u as=2.44p ps=9.22u w=4u l=0.28u
-X21 T2.t7 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t16 T1.t9 VDD.t5 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
-X22 T1.t0 gated_control.t7 T2.t4 VSS.t0 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
-X23 T1.t8 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t17 T2.t10 VDD.t4 pfet_03v3 ad=2.6p pd=9.3u as=1.04p ps=4.52u w=4u l=0.28u
-X24 T2.t16 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t18 T1.t7 VDD.t3 pfet_03v3 ad=1.04p pd=4.52u as=2.6p ps=9.3u w=4u l=0.28u
-X25 T1.t6 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t19 T2.t18 VDD.t2 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X7 T1.t19 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t6 T2.t19 VDD.t15 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X8 T1.t18 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t7 T2.t21 VDD.t14 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X9 T2.t10 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t8 T1.t17 VDD.t13 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X10 T1.t16 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t9 T2.t16 VDD.t12 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X11 T2.t4 gated_control.t3 T1.t3 VSS.t5 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X12 T1.t2 gated_control.t4 T2.t5 VSS.t4 nfet_03v3 ad=2.44p pd=9.22u as=1.04p ps=4.52u w=4u l=0.28u
+X13 T2.t23 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t10 T1.t15 VDD.t11 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X14 T2.t22 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t11 T1.t14 VDD.t10 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X15 VSS.t3 gated_control.t5 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t1 VSS.t2 nfet_05v0 ad=0.5808p pd=3.52u as=0.5808p ps=3.52u w=1.32u l=0.6u
+X16 T2.t20 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t12 T1.t13 VDD.t9 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X17 T1.t12 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t13 T2.t13 VDD.t8 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X18 T2.t7 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t14 T1.t11 VDD.t7 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X19 T1.t10 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t15 T2.t11 VDD.t6 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X20 T2.t0 gated_control.t6 T1.t1 VSS.t1 nfet_03v3 ad=1.04p pd=4.52u as=2.44p ps=9.22u w=4u l=0.28u
+X21 T2.t17 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t16 T1.t9 VDD.t5 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X22 T1.t0 gated_control.t7 T2.t2 VSS.t0 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X23 T1.t8 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t17 T2.t14 VDD.t4 pfet_03v3 ad=2.6p pd=9.3u as=1.04p ps=4.52u w=4u l=0.28u
+X24 T2.t8 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t18 T1.t7 VDD.t3 pfet_03v3 ad=1.04p pd=4.52u as=2.6p ps=9.3u w=4u l=0.28u
+X25 T1.t6 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t19 T2.t12 VDD.t2 pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
 R0 gated_control.n1 gated_control.t4 71.7971
 R1 gated_control.n5 gated_control.t6 71.6148
 R2 gated_control.n4 gated_control.t1 71.6148
@@ -62,8 +61,8 @@ R31 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.n2 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t
 R32 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.n1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t6 71.6148
 R33 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.n0 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t10 71.6148
 R34 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.n17 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.n16 11.4757
-R35 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t0 4.63372
-R36 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.n17 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t1 3.85252
+R35 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t1 4.63372
+R36 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.n17 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t0 3.85252
 R37 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.n17 0.402556
 R38 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.n1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.n0 0.185115
 R39 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.n2 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.n1 0.185115
@@ -118,29 +117,29 @@ R87 T2.n11 T2.n10 14.8568
 R88 T2.n9 T2.n8 14.8568
 R89 T2.n6 T2.n5 14.8568
 R90 T2.n6 T2.n4 0.8825
-R91 T2.n20 T2.t18 0.4555
-R92 T2.n20 T2.t7 0.4555
-R93 T2.n18 T2.t14 0.4555
-R94 T2.n18 T2.t19 0.4555
-R95 T2.n16 T2.t21 0.4555
-R96 T2.n16 T2.t15 0.4555
-R97 T2.n14 T2.t12 0.4555
-R98 T2.n14 T2.t23 0.4555
-R99 T2.n12 T2.t13 0.4555
-R100 T2.n12 T2.t6 0.4555
-R101 T2.n10 T2.t9 0.4555
-R102 T2.n10 T2.t11 0.4555
-R103 T2.n8 T2.t8 0.4555
-R104 T2.n8 T2.t17 0.4555
-R105 T2.n7 T2.t10 0.4555
-R106 T2.n7 T2.t20 0.4555
-R107 T2.n5 T2.t22 0.4555
-R108 T2.n5 T2.t16 0.4555
-R109 T2.n0 T2.t2 0.41
-R110 T2.n0 T2.t5 0.41
-R111 T2.n1 T2.t4 0.41
-R112 T2.n1 T2.t0 0.41
-R113 T2.n3 T2.t1 0.41
+R91 T2.n20 T2.t12 0.4555
+R92 T2.n20 T2.t17 0.4555
+R93 T2.n18 T2.t21 0.4555
+R94 T2.n18 T2.t15 0.4555
+R95 T2.n16 T2.t18 0.4555
+R96 T2.n16 T2.t7 0.4555
+R97 T2.n14 T2.t11 0.4555
+R98 T2.n14 T2.t10 0.4555
+R99 T2.n12 T2.t6 0.4555
+R100 T2.n12 T2.t20 0.4555
+R101 T2.n10 T2.t13 0.4555
+R102 T2.n10 T2.t22 0.4555
+R103 T2.n8 T2.t19 0.4555
+R104 T2.n8 T2.t9 0.4555
+R105 T2.n7 T2.t14 0.4555
+R106 T2.n7 T2.t23 0.4555
+R107 T2.n5 T2.t16 0.4555
+R108 T2.n5 T2.t8 0.4555
+R109 T2.n0 T2.t1 0.41
+R110 T2.n0 T2.t0 0.41
+R111 T2.n1 T2.t2 0.41
+R112 T2.n1 T2.t4 0.41
+R113 T2.n3 T2.t5 0.41
 R114 T2.n3 T2.t3 0.41
 R115 T2.n4 T2.n2 0.3605
 R116 T2.n11 T2.n9 0.3605
@@ -213,17 +212,17 @@ R182 VSS VSS.n0 1.64352
 R183 VSS VSS.n1 0.0632187
 R184 VSS VSS.n0 0.04325
 R185 VSS.n1 VSS 0.001625
-C0 gated_control T2 0.34844f
-C1 a_5322_453# VDD 0.00618f
-C2 T1 gated_control 0.60389f
-C3 gated_control VDD 1.51813f
-C4 gated_control gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 0.8363f
-C5 T1 T2 10.9994f
-C6 T2 VDD 0.43357f
-C7 T1 VDD 0.97222f
-C8 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T2 1.22075f
-C9 T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 1.5419f
-C10 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN VDD 5.07517f
+C0 gated_control VDD 1.51813f
+C1 gated_control gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 0.8363f
+C2 T1 T2 10.9994f
+C3 T2 VDD 0.43357f
+C4 T1 VDD 0.97222f
+C5 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN T2 1.22075f
+C6 T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 1.5419f
+C7 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN VDD 5.07517f
+C8 gated_control T2 0.34844f
+C9 a_5322_453# VDD 0.00618f
+C10 T1 gated_control 0.60389f
 C11 T2 VSS 2.9617f
 C12 T1 VSS 2.82624f
 C13 gated_control VSS 1.89479f
@@ -276,50 +275,50 @@ C59 T1.n19 VSS 0.29393f
 C60 T1.n20 VSS 0.25504f
 C61 T1.n21 VSS 0.25451f
 C62 T1.n22 VSS 0.37351f
-C63 T2.t2 VSS 0.10179f
-C64 T2.t5 VSS 0.10179f
+C63 T2.t1 VSS 0.10179f
+C64 T2.t0 VSS 0.10179f
 C65 T2.n0 VSS 0.54819f
-C66 T2.t4 VSS 0.10179f
-C67 T2.t0 VSS 0.10179f
+C66 T2.t2 VSS 0.10179f
+C67 T2.t4 VSS 0.10179f
 C68 T2.n1 VSS 0.54496f
 C69 T2.n2 VSS 0.31915f
-C70 T2.t1 VSS 0.10179f
+C70 T2.t5 VSS 0.10179f
 C71 T2.t3 VSS 0.10179f
 C72 T2.n3 VSS 0.54496f
 C73 T2.n4 VSS 0.2755f
-C74 T2.t22 VSS 0.10179f
-C75 T2.t16 VSS 0.10179f
+C74 T2.t16 VSS 0.10179f
+C75 T2.t8 VSS 0.10179f
 C76 T2.n5 VSS 0.54824f
 C77 T2.n6 VSS 0.24739f
-C78 T2.t10 VSS 0.10179f
-C79 T2.t20 VSS 0.10179f
+C78 T2.t14 VSS 0.10179f
+C79 T2.t23 VSS 0.10179f
 C80 T2.n7 VSS 0.55141f
-C81 T2.t8 VSS 0.10179f
-C82 T2.t17 VSS 0.10179f
+C81 T2.t19 VSS 0.10179f
+C82 T2.t9 VSS 0.10179f
 C83 T2.n8 VSS 0.54824f
 C84 T2.n9 VSS 0.31191f
-C85 T2.t9 VSS 0.10179f
-C86 T2.t11 VSS 0.10179f
+C85 T2.t13 VSS 0.10179f
+C86 T2.t22 VSS 0.10179f
 C87 T2.n10 VSS 0.54824f
 C88 T2.n11 VSS 0.18103f
-C89 T2.t13 VSS 0.10179f
-C90 T2.t6 VSS 0.10179f
+C89 T2.t6 VSS 0.10179f
+C90 T2.t20 VSS 0.10179f
 C91 T2.n12 VSS 0.54824f
 C92 T2.n13 VSS 0.18103f
-C93 T2.t12 VSS 0.10179f
-C94 T2.t23 VSS 0.10179f
+C93 T2.t11 VSS 0.10179f
+C94 T2.t10 VSS 0.10179f
 C95 T2.n14 VSS 0.54824f
 C96 T2.n15 VSS 0.18103f
-C97 T2.t21 VSS 0.10179f
-C98 T2.t15 VSS 0.10179f
+C97 T2.t18 VSS 0.10179f
+C98 T2.t7 VSS 0.10179f
 C99 T2.n16 VSS 0.54824f
 C100 T2.n17 VSS 0.18103f
-C101 T2.t14 VSS 0.10179f
-C102 T2.t19 VSS 0.10179f
+C101 T2.t21 VSS 0.10179f
+C102 T2.t15 VSS 0.10179f
 C103 T2.n18 VSS 0.54824f
 C104 T2.n19 VSS 0.18103f
-C105 T2.t18 VSS 0.10179f
-C106 T2.t7 VSS 0.10179f
+C105 T2.t12 VSS 0.10179f
+C106 T2.t17 VSS 0.10179f
 C107 T2.n20 VSS 0.54824f
 C108 T2.n21 VSS 0.12329f
 C109 T2.n22 VSS -0.29221f
@@ -345,8 +344,8 @@ C128 VDD.t4 VSS 0.22975f
 C129 VDD.n0 VSS 0.98121f
 C130 VDD.t0 VSS 0.1711f
 C131 VDD.n1 VSS 0.34748f
-C132 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t0 VSS 0.06869f
-C133 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t1 VSS 0.09485f
+C132 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t1 VSS 0.06869f
+C133 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t0 VSS 0.09485f
 C134 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t17 VSS 0.12308f
 C135 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.t10 VSS 0.12285f
 C136 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN.n0 VSS 0.18852f

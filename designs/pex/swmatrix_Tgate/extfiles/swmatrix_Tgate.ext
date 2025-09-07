@@ -36,17 +36,17 @@ equiv "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "VSS"
 equiv "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "gf180mcu_fd_sc_mcu9t5v0__endcap_0.VSS"
 equiv "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VSS"
 equiv "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "nfet_0.vss"
-cap "VDD" "T2" 433.573
+cap "VDD" "a_5322_453#" 6.17666
 cap "gated_control" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 836.296
 cap "gated_control" "T1" 603.889
 cap "T1" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 1541.9
-cap "VDD" "a_5322_453#" 6.17666
 cap "gated_control" "T2" 348.445
 cap "T2" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 1220.75
 cap "T2" "T1" 10999.4
 cap "VDD" "gated_control" 1518.13
 cap "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 5075.17
 cap "VDD" "T1" 972.225
+cap "VDD" "T2" 433.573
 device msubckt pfet_03v3 5204 757 5205 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T2" 800 41600,904 "T1" 800 104000,1860
 device msubckt pfet_03v3 5044 757 5045 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T1" 800 41600,904 "T2" 800 41600,904
 device msubckt pfet_03v3 4884 757 4885 758 l=56 w=800 "VDD" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 112 0 "T2" 800 41600,904 "T1" 800 41600,904
