@@ -21,18 +21,71 @@ ylabmag=1.0
 node="data_in
 clock_in
 en
-nen
 q
-q2
-
-gc2
-gc"
-color="7 7 4 4 4 4 4 4"
+q_pex
+gc
+gc_pex"
+color="7 7 8 6 9 9 6"
 dataset=-1
 unitx=1
 logx=0
 logy=0
 digital=1}
+B 2 1200 -610 2000 -210 {flags=graph
+y1=-0.11
+y2=3.5
+ypos1=-0.42611822
+ypos2=2.5142493
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=3.5e-07
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node="data_in
+clock_in
+nen
+q2
+q2_pex
+gc2
+gc2_pex"
+color="7 7 6 6 9 9 8"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+digital=1}
+B 2 1200 -1010 2000 -610 {flags=graph
+y1=-0.094
+y2=3.4
+ypos1=-0.27909984
+ypos2=2.6612677
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=3.5e-07
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node="q2
+q2_pex
+gc2
+gc2_pex"
+color="7 5 6 6"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+digital=0}
+T {Enable high == Output Enable; gc==q
+450 pS diff between gc and gc_pex} 1220 -180 0 0 0.4 0.4 {}
+T {Enable low == Output disable; gc==0
+330pS diff between q and q_pex} 400 -190 0 0 0.4 0.4 {}
 N -197.5 -547.5 -197.5 -517.5 {lab=GND}
 N -197.5 -657.5 -197.5 -607.5 {lab=VSSd}
 N -197.5 -775 -197.5 -715 {lab=VDDd}
@@ -58,10 +111,14 @@ N -90 -900 270 -900 {lab=NEN}
 N -90 -900 -90 -600 {lab=NEN}
 N -90 -600 170 -600 {lab=NEN}
 N 170 -650 170 -600 {lab=NEN}
-N 250 -1210 320 -1210 {lab=data_in}
-N 250 -1190 320 -1190 {lab=clock_in}
-N 260 -1170 320 -1170 {lab=clockb}
-N 270 -1150 320 -1150 {lab=EN}
+N 700 -780 770 -780 {lab=data_in}
+N 700 -760 770 -760 {lab=clock_in}
+N 710 -740 770 -740 {lab=clockb}
+N 720 -720 770 -720 {lab=EN}
+N 700 -960 770 -960 {lab=data_in}
+N 700 -940 770 -940 {lab=clock_in}
+N 710 -920 770 -920 {lab=clockb}
+N 720 -900 770 -900 {lab=NEN}
 C {designs/libs/switch_matrix_gf180mcu_9t5v0/DFF_2phase_1/DFF_2phase_1.sym} 470 -740 0 0 {name=x1}
 C {devices/vsource.sym} -197.5 -577.5 0 0 {name=V1 value=0 savecurrent=false}
 C {devices/gnd.sym} -197.5 -517.5 0 0 {name=l1 lab=GND}
@@ -78,7 +135,7 @@ value="
 "}
 C {launcher.sym} 185 -536.25 0 0 {name=h5
 descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/tb_DFF.raw tran"
+tclcommand="xschem raw_read $netlist_dir/DFF_2phase_1_pex.raw tran"
 }
 C {lab_wire.sym} -10 -770 0 0 {name=p22 sig_type=std_logic lab=data
 }
@@ -90,7 +147,7 @@ C {lab_wire.sym} -10 -710 0 0 {name=p1 sig_type=std_logic lab=clock}
 C {lab_wire.sym} 157.5 -710 0 0 {name=p4 sig_type=std_logic lab=clockb
 
 }
-C {netlist.sym} -797.5 -422.5 0 0 {name=s1 value="
+C {netlist.sym} -787.5 -422.5 0 0 {name=s1 value="
 .param VDD = 3.3
 
 *.global VDDd VSSd
@@ -110,7 +167,7 @@ C {devices/code_shown.sym} -795 -98.75 0 0 {name=Simulation1 only_toplevel=false
 
     save all
     TRAN 0.2n 350n
-    write tb_DFF.raw
+    write DFF_2phase_1_pex.raw
 
 .endc
 "}
@@ -144,17 +201,31 @@ C {designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 210 -710 0 0 {name=x4
 C {designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 210 -770 0 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 130 -650 0 0 {name=x6 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} 210 -650 0 0 {name=x8 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {designs/pex/DFF_2phase_1/DFF_2phase_1_pex.sym} 470 -1180 0 0 {name=x9}
-C {devices/lab_wire.sym} 320 -1110 0 0 {name=p21 sig_type=std_logic lab=VDDd}
-C {devices/lab_wire.sym} 320 -1130 0 0 {name=p24 sig_type=std_logic lab=VSSd}
-C {lab_wire.sym} 297.5 -1190 0 0 {name=p25 sig_type=std_logic lab=clock_in
+C {designs/pex/DFF_2phase_1/DFF_2phase_1_pex.sym} 920 -750 0 0 {name=x9}
+C {devices/lab_wire.sym} 770 -680 0 0 {name=p21 sig_type=std_logic lab=VDDd}
+C {devices/lab_wire.sym} 770 -700 0 0 {name=p24 sig_type=std_logic lab=VSSd}
+C {lab_wire.sym} 747.5 -760 0 0 {name=p25 sig_type=std_logic lab=clock_in
 
 }
-C {lab_wire.sym} 307.5 -1210 0 0 {name=p26 sig_type=std_logic lab=data_in
+C {lab_wire.sym} 757.5 -780 0 0 {name=p26 sig_type=std_logic lab=data_in
 }
-C {lab_wire.sym} 297.5 -1170 0 0 {name=p27 sig_type=std_logic lab=clockb
+C {lab_wire.sym} 747.5 -740 0 0 {name=p27 sig_type=std_logic lab=clockb
 
 }
-C {devices/lab_wire.sym} 290 -1150 0 0 {name=p28 sig_type=std_logic lab=EN}
-C {devices/lab_wire.sym} 620 -1210 2 0 {name=p29 sig_type=std_logic lab=q_pex}
-C {devices/lab_wire.sym} 620 -1190 2 0 {name=p30 sig_type=std_logic lab=gc_pex}
+C {devices/lab_wire.sym} 740 -720 0 0 {name=p28 sig_type=std_logic lab=EN}
+C {devices/lab_wire.sym} 1070 -780 2 0 {name=p29 sig_type=std_logic lab=q_pex}
+C {devices/lab_wire.sym} 1070 -760 2 0 {name=p30 sig_type=std_logic lab=gc_pex}
+C {designs/pex/DFF_2phase_1/DFF_2phase_1_pex.sym} 920 -930 0 0 {name=x10}
+C {devices/lab_wire.sym} 770 -860 0 0 {name=p31 sig_type=std_logic lab=VDDd}
+C {devices/lab_wire.sym} 770 -880 0 0 {name=p32 sig_type=std_logic lab=VSSd}
+C {lab_wire.sym} 747.5 -940 0 0 {name=p33 sig_type=std_logic lab=clock_in
+
+}
+C {lab_wire.sym} 757.5 -960 0 0 {name=p34 sig_type=std_logic lab=data_in
+}
+C {lab_wire.sym} 747.5 -920 0 0 {name=p35 sig_type=std_logic lab=clockb
+
+}
+C {devices/lab_wire.sym} 740 -900 0 0 {name=p36 sig_type=std_logic lab=NEN}
+C {devices/lab_wire.sym} 1070 -960 2 0 {name=p37 sig_type=std_logic lab=q2_pex}
+C {devices/lab_wire.sym} 1070 -940 2 0 {name=p38 sig_type=std_logic lab=gc2_pex}

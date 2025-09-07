@@ -1,5 +1,5 @@
 * NGSPICE file created from DFF_2phase_1.ext - technology: gf180mcuD
-.subckt DFF_2phase_1 Q D PHI_1 gated_control PHI_2 EN VDD VSS
+.subckt DFF_2phase_1_pex Q D PHI_1 gated_control PHI_2 EN VDD VSS
 X0 a_n1836_148# a_n2352_n394# a_n1984_n397# VSS.t20 nfet_05v0 ad=0.182p pd=1.22u as=83.99999f ps=0.94u w=0.7u l=0.6u
 X1 a_972_28# a_628_148# VDD.t24 VDD.t23 pfet_05v0 ad=0.6072p pd=3.64u as=0.3588p ps=1.9u w=1.38u l=0.5u
 X2 VDD.t26 PHI_1.t0 a_n2820_n412# VDD.t25 pfet_05v0 ad=0.476p pd=2.18u as=0.6072p ps=3.64u w=1.38u l=0.5u
