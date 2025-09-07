@@ -5,8 +5,8 @@ V {}
 S {}
 E {}
 B 2 1030 -740 1600 -370 {flags=graph
-y1=0.0089765267
-y2=0.017281119
+y1=0.012
+y2=0.016
 ypos1=0
 ypos2=2
 divy=5
@@ -25,13 +25,14 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-rawfile=$netlist_dir/swmatrix_Tgate_pex.raw
 autoload=1
 linewidth_mult=5
-hilight_wave=2}
+hilight_wave=2
+sim_type=dc
+rawfile=$netlist_dir/swmatrix_Tgate_pex_sine_dc.raw}
 B 2 1030 -360 1600 10 {flags=graph
-y1=55.303488
-y2=107.79783
+y1=0
+y2=0.01
 ypos1=0
 ypos2=2
 divy=5
@@ -47,12 +48,35 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-rawfile=$netlist_dir/swmatrix_Tgate_pex.raw
-autoload=1
+rawfile=$netlist_dir/swmatrix_Tgate_pex_sine_dc.raw
+autoload=0
 linewidth_mult=5
 color="4 9"
 node="ron_s
-ron_pex"}
+ron_pex"
+sim_type=dc}
+B 2 1020 -1230 1820 -830 {flags=graph
+y1=-0.0094
+y2=0.26
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=1.6598967e-07
+x2=2.3309853e-07
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+dataset=-1
+unitx=1
+logx=0
+logy=0
+hilight_wave=-1
+sim_type=tran
+color=9
+node="\\"vdiff;vsn vpex - \\""}
 N 290 -450 290 -430 {
 lab=GND}
 N 380 -450 380 -430 {
@@ -101,9 +125,26 @@ N 680 -310 680 -230 {lab=en_n}
 N 890 -110 890 -50 {lab=GND}
 N 680 -230 680 -210 {lab=en_n}
 N 620 -280 620 -250 {lab=Vdd}
+N 520 -920 590 -920 {
+lab=Vsn}
+N 630 -1040 670 -1040 {
+lab=en_n}
+N 880 -920 880 -900 {
+lab=Vpex}
+N 860 -920 880 -920 {lab=Vpex}
+N 880 -950 880 -920 {
+lab=Vpex}
+N 750 -920 800 -920 {lab=#net3}
+N 610 -860 610 -840 {lab=GND}
+N 670 -1040 670 -960 {lab=en_n}
+N 880 -840 880 -780 {lab=GND}
+N 670 -960 670 -940 {lab=en_n}
+N 610 -1010 610 -980 {lab=Vdd}
+N 10 -920 10 -910 {lab=GND}
+N 10 -1010 10 -980 {lab=sig2}
 C {launcher.sym} 825 -646.25 0 0 {name=h5
 descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/swmatrix_Tgate_pex.raw tran"
+tclcommand="xschem raw_read $netlist_dir/swmatrix_Tgate_pex_sine.raw tran"
 }
 C {simulator_commands_shown.sym} -165 -635 0 0 {name=SWEEP_SIM
 simulator=ngspice
@@ -125,10 +166,17 @@ value="
 .param Iload=10u
 .control
 save all 
+set num_threads 16
 
-set num_threads 1
-*dc I0 -5m 5m 1.1u
+* DC Sweep: Vin from 0V to 3.3V with 0.01V step
 dc Vin 0 3.3 0.01
+write swmatrix_Tgate_pex_sine_dc.raw
+
+* Transient Simulation: tstep = 100ps, tstop = 400ns
+tran 100p 400n 0
+write swmatrix_Tgate_pex_sine_tran.raw 
+
+
 *******sch sim single ended TG
 let Ron_s=(V(V_in)-V(V_out1))/I(Vp2)
 let Gon_s=1/Ron_s
@@ -136,7 +184,7 @@ let Gon_s=1/Ron_s
 let Ron_pex=(V(V_in)-V(V_out_pex))/I(Vp1)
 let Gon_pex=1/Ron_pex
 *************
-write swmatrix_Tgate_pex.raw
+write swmatrix_Tgate_pex_sine.raw
 .endc
 "
 }
@@ -180,4 +228,23 @@ C {devices/ammeter.sym} 840 -190 3 0 {name=Vp1}
 C {lab_pin.sym} 620 -280 0 0 {name=p5 sig_type=std_logic lab=Vdd}
 C {devices/gnd.sym} 890 -50 0 0 {name=l6 lab=GND}
 C {devices/lab_pin.sym} 640 -310 0 0 {name=p4 sig_type=std_logic lab=en_n}
-C {title.sym} 140 40 0 0 {name=l3 author="Royce Richmond"}
+C {title.sym} 270 150 0 0 {name=l3 author="Royce Richmond"}
+C {designs/pex/swmatrix_Tgate/swmatrix_Tgate_pex.sym} 670 -800 0 0 {name=x2
+spice_ignore=false}
+C {devices/lab_pin.sym} 880 -950 1 0 {name=p3 sig_type=std_logic lab=Vpex}
+C {devices/gnd.sym} 610 -840 0 0 {name=l4 lab=GND}
+C {devices/ammeter.sym} 830 -920 3 0 {name=Vp3}
+C {lab_pin.sym} 610 -1010 0 0 {name=p7 sig_type=std_logic lab=Vdd}
+C {devices/gnd.sym} 880 -780 0 0 {name=l5 lab=GND}
+C {devices/lab_pin.sym} 630 -1040 0 0 {name=p8 sig_type=std_logic lab=en_n}
+C {res.sym} 880 -870 0 0 {name=R1
+value=1k
+footprint=1206
+device=resistor
+m=1}
+C {devices/lab_pin.sym} 520 -920 1 0 {name=p10 sig_type=std_logic lab=Vsn}
+C {gnd.sym} 10 -910 0 0 {name=l13 lab=GND}
+C {lab_pin.sym} 10 -995 0 1 {name=p6 sig_type=std_logic lab=sig2}
+C {devices/vsource.sym} 10 -950 0 0 {name=V3 value="SINE(0 100m \{100*frec\})"}
+C {devices/vsource.sym} 10 -1040 0 0 {name=V4 value="PULSE(0 3.3 \{half_period/1000\} \{half_period\} \{half_period\} \{half_period/1000\}  \{period\})"}
+C {devices/lab_pin.sym} 10 -1070 2 0 {name=p9 sig_type=std_logic lab=Vsn}
