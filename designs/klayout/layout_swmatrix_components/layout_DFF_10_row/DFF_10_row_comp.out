@@ -102,8 +102,6 @@ Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1 and gf180mcu_fd_sc_mcu9t5v0__inv_1
 Flattening unmatched subcell DFF_2phase_1$1 in circuit DFF_10_row (0)(10 instances)
 Flattening unmatched subcell DFF_2phase_1[[0]] in circuit DFF_10_row (1)(10 instances)
 
-Cell DFF_10_row (0) disconnected node: VDD
-Cell DFF_10_row (0) disconnected node: Q[10]
 Subcircuit summary:
 Circuit 1: DFF_10_row                      |Circuit 2: DFF_10_row                      
 -------------------------------------------|-------------------------------------------
@@ -113,12 +111,14 @@ gf180mcu_fd_sc_mcu9t5v0__inv_1 (10)        |gf180mcu_fd_sc_mcu9t5v0__inv_1 (10)
 Number of devices: 40                      |Number of devices: 40                      
 Number of nets: 46                         |Number of nets: 46                         
 ---------------------------------------------------------------------------------------
-Netlists match uniquely with port errors.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: DFF_10_row                      |Circuit 2: DFF_10_row                      
 -------------------------------------------|-------------------------------------------
-VSS                                        |VSSd **Mismatch**                          
+Q[10]                                      |Q[10]                                      
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
 Q[1]                                       |Q[1]                                       
 Q[2]                                       |Q[2]                                       
 Q[3]                                       |Q[3]                                       
@@ -132,22 +132,19 @@ PHI_1                                      |PHI_1
 PHI_2                                      |PHI_2                                      
 EN                                         |EN                                         
 D_in                                       |D_in                                       
-(no pin, node is DFF_2phase_1$1_0/Q)       |Q[10]                                      
-(no pin, node is DFF_2phase_1$1_8/gated_co |gc[1]                                      
-(no pin, node is DFF_2phase_1$1_9/gated_co |gc[2]                                      
-(no pin, node is DFF_2phase_1$1_7/gated_co |gc[3]                                      
-(no pin, node is DFF_2phase_1$1_6/gated_co |gc[4]                                      
-(no pin, node is DFF_2phase_1$1_5/gated_co |gc[5]                                      
-(no pin, node is DFF_2phase_1$1_4/gated_co |gc[6]                                      
-(no pin, node is DFF_2phase_1$1_3/gated_co |gc[7]                                      
-(no pin, node is DFF_2phase_1$1_2/gated_co |gc[8]                                      
-(no pin, node is DFF_2phase_1$1_1/gated_co |gc[9]                                      
-(no pin, node is DFF_2phase_1$1_0/gated_co |gc[10]                                     
-(no pin, node is DFF_2phase_1$1_9/VDD)     |VDDd                                       
-VDD                                        |(no matching pin)                          
-Q[10]                                      |(no matching pin)                          
+gc[1]                                      |gc[1]                                      
+gc[2]                                      |gc[2]                                      
+gc[3]                                      |gc[3]                                      
+gc[4]                                      |gc[4]                                      
+gc[5]                                      |gc[5]                                      
+gc[6]                                      |gc[6]                                      
+gc[7]                                      |gc[7]                                      
+gc[8]                                      |gc[8]                                      
+gc[9]                                      |gc[9]                                      
+gc[10]                                     |gc[10]                                     
 ---------------------------------------------------------------------------------------
-Cell pin lists for DFF_10_row and DFF_10_row altered to match.
+Cell pin lists are equivalent.
 Device classes DFF_10_row and DFF_10_row are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Circuits match uniquely.
+.

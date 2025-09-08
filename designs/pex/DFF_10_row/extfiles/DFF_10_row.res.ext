@@ -1,0 +1,3665 @@
+scale 1000 1 0.5
+rnode "gc[10].t1" 0 0 59702 262 0
+rnode "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0 0 59738 -102 0
+rnode "gc[10].t0" 0 0 59702 -293 0
+rnode "gc[10].n0" 0 0 59817 -121 0
+rnode "gc[10]" 0 0 54035 -566 0
+rnode "DFF_2phase_1$1_0.gated_control" 0 0 54026 -546 0
+resist "DFF_2phase_1$1_0.gated_control" "gc[10]" 0.01125
+resist "gc[10].n0" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0.0117931
+resist "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" "gc[10].t1" 4.33741
+resist "gc[10].n0" "gc[10].t0" 4.57635
+resist "gc[10]" "gc[10].n0" 16.6534
+rnode "gc[6].t1" 0 0 34742 262 0
+rnode "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0 0 34778 -102 0
+rnode "gc[6].t0" 0 0 34742 -293 0
+rnode "gc[6].n0" 0 0 34857 -121 0
+rnode "gc[6]" 0 0 29086 -567 0
+rnode "DFF_2phase_1$1_4.gated_control" 0 0 29066 -546 0
+resist "gc[6].n0" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0.0117931
+resist "DFF_2phase_1$1_4.gated_control" "gc[6]" 0.025
+resist "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" "gc[6].t1" 4.33741
+resist "gc[6].n0" "gc[6].t0" 4.57635
+resist "gc[6]" "gc[6].n0" 16.6396
+rnode "gc[3].t1" 0 0 16022 262 0
+rnode "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0 0 16058 -102 0
+rnode "gc[3].t0" 0 0 16022 -293 0
+rnode "gc[3].n0" 0 0 16137 -121 0
+rnode "gc[3]" 0 0 10391 -568 0
+rnode "DFF_2phase_1$1_7.gated_control" 0 0 10346 -546 0
+resist "gc[3].n0" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0.0117931
+resist "DFF_2phase_1$1_7.gated_control" "gc[3]" 0.05625
+resist "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" "gc[3].t1" 4.33741
+resist "gc[3].n0" "gc[3].t0" 4.57635
+resist "gc[3]" "gc[3].n0" 16.6084
+rnode "gc[9].t1" 0 0 53462 262 0
+rnode "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0 0 53498 -102 0
+rnode "gc[9].t0" 0 0 53462 -293 0
+rnode "gc[9].n0" 0 0 53577 -121 0
+rnode "gc[9]" 0 0 47814 -564 0
+rnode "DFF_2phase_1$1_1.gated_control" 0 0 47786 -546 0
+resist "gc[9].n0" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0.0117931
+resist "DFF_2phase_1$1_1.gated_control" "gc[9]" 0.035
+resist "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" "gc[9].t1" 4.33741
+resist "gc[9].n0" "gc[9].t0" 4.57635
+resist "gc[9]" "gc[9].n0" 16.6296
+rnode "gc[4].t1" 0 0 22262 262 0
+rnode "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0 0 22298 -102 0
+rnode "gc[4].t0" 0 0 22262 -293 0
+rnode "gc[4].n0" 0 0 22377 -121 0
+rnode "gc[4]" 0 0 16613 -568 0
+rnode "DFF_2phase_1$1_6.gated_control" 0 0 16586 -546 0
+resist "gc[4].n0" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0.0117931
+resist "DFF_2phase_1$1_6.gated_control" "gc[4]" 0.03375
+resist "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" "gc[4].t1" 4.33741
+resist "gc[4].n0" "gc[4].t0" 4.57635
+resist "gc[4]" "gc[4].n0" 16.6309
+rnode "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0 0 48794 -214 0
+rnode "Q[8].t3" 0 0 48776 258 0
+rnode "Q[8].t2" 0 0 48766 -317 0
+rnode "Q[8].n0" 0 0 48790 -145 0
+rnode "Q[8].n1" 0 0 48790 -145 0
+rnode "DFF_2phase_1$1_1.D" 0 0 47746 -144 0
+rnode "Q[8].t5" 0 0 46593 243 0
+rnode "Q[8].t4" 0 0 46603 -293 0
+rnode "Q[8].n2" 0 0 46579 23 0
+rnode "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0 0 46586 -102 0
+rnode "Q[8].n3" 0 0 46653 -89 0
+rnode "Q[8].n4" 0 0 46653 -89 0
+rnode "Q[8].t1" 0 0 46174 262 0
+rnode "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0 0 46138 10 0
+rnode "Q[8].t0" 0 0 46174 -293 0
+rnode "Q[8].n5" 0 0 46114 -116 0
+rnode "Q[8]" 0 0 46257 -66 0
+rnode "DFF_2phase_1$1_2.Q" 0 0 46531 -112 0
+resist "Q[8].n3" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0.00790541
+resist "Q[8].n1" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0.102006
+resist "DFF_2phase_1$1_2.Q" "Q[8].n4" 0.13725
+resist "Q[8].n5" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0.150231
+resist "DFF_2phase_1$1_2.Q" "Q[8]" 0.30825
+resist "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" "Q[8].t1" 3.91438
+resist "Q[8].n5" "Q[8].t0" 4.5896
+resist "Q[8].n1" "Q[8].n0" 8
+resist "Q[8].n3" "Q[8].n2" 8.11962
+resist "Q[8].n4" "Q[8].n3" 9
+resist "Q[8]" "Q[8].n5" 9.14309
+resist "DFF_2phase_1$1_1.D" "Q[8].n1" 9.9495
+resist "Q[8].n4" "DFF_2phase_1$1_1.D" 9.99116
+resist "Q[8].n0" "Q[8].t2" 11.4367
+resist "Q[8].n2" "Q[8].t5" 16.06
+resist "Q[8].n2" "Q[8].t4" 21.1943
+resist "Q[8].n0" "Q[8].t3" 29.419
+rnode "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0 0 55034 -214 0
+rnode "Q[9].t4" 0 0 55016 258 0
+rnode "Q[9].t2" 0 0 55006 -317 0
+rnode "Q[9].n0" 0 0 55030 -145 0
+rnode "Q[9].n1" 0 0 55030 -145 0
+rnode "DFF_2phase_1$1_0.D" 0 0 53986 -144 0
+rnode "Q[9].t5" 0 0 52833 243 0
+rnode "Q[9].t3" 0 0 52843 -293 0
+rnode "Q[9].n2" 0 0 52819 23 0
+rnode "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0 0 52826 -102 0
+rnode "Q[9].n3" 0 0 52893 -89 0
+rnode "Q[9].n4" 0 0 52893 -89 0
+rnode "Q[9].t1" 0 0 52414 262 0
+rnode "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0 0 52378 10 0
+rnode "Q[9].t0" 0 0 52414 -293 0
+rnode "Q[9].n5" 0 0 52354 -116 0
+rnode "Q[9]" 0 0 52497 -66 0
+rnode "DFF_2phase_1$1_1.Q" 0 0 52771 -112 0
+resist "Q[9].n3" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0.00790541
+resist "Q[9].n1" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0.102006
+resist "DFF_2phase_1$1_1.Q" "Q[9].n4" 0.13725
+resist "Q[9].n5" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0.150231
+resist "DFF_2phase_1$1_1.Q" "Q[9]" 0.30825
+resist "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" "Q[9].t1" 3.91438
+resist "Q[9].n5" "Q[9].t0" 4.5896
+resist "Q[9].n1" "Q[9].n0" 8
+resist "Q[9].n3" "Q[9].n2" 8.11962
+resist "Q[9].n4" "Q[9].n3" 9
+resist "Q[9]" "Q[9].n5" 9.14309
+resist "DFF_2phase_1$1_0.D" "Q[9].n1" 9.9495
+resist "Q[9].n4" "DFF_2phase_1$1_0.D" 9.99116
+resist "Q[9].n0" "Q[9].t2" 11.4367
+resist "Q[9].n2" "Q[9].t5" 16.06
+resist "Q[9].n2" "Q[9].t3" 21.1943
+resist "Q[9].n0" "Q[9].t4" 29.419
+rnode "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0 0 30074 -214 0
+rnode "Q[5].t2" 0 0 30056 258 0
+rnode "Q[5].t4" 0 0 30046 -317 0
+rnode "Q[5].n0" 0 0 30070 -145 0
+rnode "Q[5].n1" 0 0 30070 -145 0
+rnode "DFF_2phase_1$1_4.D" 0 0 29026 -144 0
+rnode "Q[5].t5" 0 0 27873 243 0
+rnode "Q[5].t3" 0 0 27883 -293 0
+rnode "Q[5].n2" 0 0 27859 23 0
+rnode "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0 0 27866 -102 0
+rnode "Q[5].n3" 0 0 27933 -89 0
+rnode "Q[5].n4" 0 0 27933 -89 0
+rnode "Q[5].t1" 0 0 27454 262 0
+rnode "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0 0 27418 10 0
+rnode "Q[5].t0" 0 0 27454 -293 0
+rnode "Q[5].n5" 0 0 27394 -116 0
+rnode "Q[5]" 0 0 27537 -66 0
+rnode "DFF_2phase_1$1_5.Q" 0 0 27811 -112 0
+resist "Q[5].n3" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0.00790541
+resist "Q[5].n1" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0.102006
+resist "DFF_2phase_1$1_5.Q" "Q[5].n4" 0.13725
+resist "Q[5].n5" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0.150231
+resist "DFF_2phase_1$1_5.Q" "Q[5]" 0.30825
+resist "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" "Q[5].t1" 3.91438
+resist "Q[5].n5" "Q[5].t0" 4.5896
+resist "Q[5].n1" "Q[5].n0" 8
+resist "Q[5].n3" "Q[5].n2" 8.11962
+resist "Q[5].n4" "Q[5].n3" 9
+resist "Q[5]" "Q[5].n5" 9.14309
+resist "DFF_2phase_1$1_4.D" "Q[5].n1" 9.9495
+resist "Q[5].n4" "DFF_2phase_1$1_4.D" 9.99116
+resist "Q[5].n0" "Q[5].t4" 11.4367
+resist "Q[5].n2" "Q[5].t5" 16.06
+resist "Q[5].n2" "Q[5].t3" 21.1943
+resist "Q[5].n0" "Q[5].t2" 29.419
+rnode "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0 0 17594 -214 0
+rnode "Q[3].t5" 0 0 17576 258 0
+rnode "Q[3].t2" 0 0 17566 -317 0
+rnode "Q[3].n0" 0 0 17590 -145 0
+rnode "Q[3].n1" 0 0 17590 -145 0
+rnode "DFF_2phase_1$1_6.D" 0 0 16546 -144 0
+rnode "Q[3].t3" 0 0 15393 243 0
+rnode "Q[3].t4" 0 0 15403 -293 0
+rnode "Q[3].n2" 0 0 15379 23 0
+rnode "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0 0 15386 -102 0
+rnode "Q[3].n3" 0 0 15453 -89 0
+rnode "Q[3].n4" 0 0 15453 -89 0
+rnode "Q[3].t1" 0 0 14974 262 0
+rnode "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0 0 14938 10 0
+rnode "Q[3].t0" 0 0 14974 -293 0
+rnode "Q[3].n5" 0 0 14914 -116 0
+rnode "Q[3]" 0 0 15059 -68 0
+rnode "DFF_2phase_1$1_7.Q" 0 0 15331 -112 0
+resist "Q[3].n3" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0.00790541
+resist "Q[3].n1" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0.102006
+resist "DFF_2phase_1$1_7.Q" "Q[3].n4" 0.13725
+resist "Q[3].n5" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0.150231
+resist "DFF_2phase_1$1_7.Q" "Q[3]" 0.306
+resist "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" "Q[3].t1" 3.91438
+resist "Q[3].n5" "Q[3].t0" 4.5896
+resist "Q[3].n1" "Q[3].n0" 8
+resist "Q[3].n3" "Q[3].n2" 8.11962
+resist "Q[3].n4" "Q[3].n3" 9
+resist "Q[3]" "Q[3].n5" 9.14534
+resist "DFF_2phase_1$1_6.D" "Q[3].n1" 9.9495
+resist "Q[3].n4" "DFF_2phase_1$1_6.D" 9.99116
+resist "Q[3].n0" "Q[3].t2" 11.4367
+resist "Q[3].n2" "Q[3].t3" 16.06
+resist "Q[3].n2" "Q[3].t4" 21.1943
+resist "Q[3].n0" "Q[3].t5" 29.419
+rnode "gc[1].t1" 0 0 3542 262 0
+rnode "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0 0 3578 -102 0
+rnode "gc[1].t0" 0 0 3542 -293 0
+rnode "gc[1].n0" 0 0 3657 -121 0
+rnode "gc[1]" 0 0 -2118 -563 0
+rnode "DFF_2phase_1$1_8.gated_control" 0 0 -2134 -546 0
+resist "gc[1].n0" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0.0117931
+resist "DFF_2phase_1$1_8.gated_control" "gc[1]" 0.02
+resist "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" "gc[1].t1" 4.33741
+resist "gc[1].n0" "gc[1].t0" 4.57635
+resist "gc[1]" "gc[1].n0" 16.6446
+rnode "Q[10].t3" 0 0 59073 243 0
+rnode "Q[10].t2" 0 0 59083 -293 0
+rnode "Q[10].n0" 0 0 59059 23 0
+rnode "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0 0 59066 -102 0
+rnode "Q[10].n1" 0 0 59133 -89 0
+rnode "Q[10].t1" 0 0 58654 262 0
+rnode "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0 0 58618 10 0
+rnode "Q[10].t0" 0 0 58654 -293 0
+rnode "Q[10].n2" 0 0 58594 -116 0
+rnode "Q[10]" 0 0 58757 -105 0
+rnode "DFF_2phase_1$1_0.Q" 0 0 59011 -112 0
+resist "Q[10].n1" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0.00790541
+resist "Q[10].n2" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0.150231
+resist "DFF_2phase_1$1_0.Q" "Q[10]" 0.28575
+resist "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" "Q[10].t1" 3.91438
+resist "Q[10].n2" "Q[10].t0" 4.5896
+resist "Q[10].n1" "Q[10].n0" 8.11962
+resist "DFF_2phase_1$1_0.Q" "Q[10].n1" 9.13725
+resist "Q[10]" "Q[10].n2" 9.16559
+resist "Q[10].n0" "Q[10].t3" 16.06
+resist "Q[10].n0" "Q[10].t2" 21.1943
+rnode "gc[7].t1" 0 0 40982 262 0
+rnode "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0 0 41018 -102 0
+rnode "gc[7].t0" 0 0 40982 -293 0
+rnode "gc[7].n0" 0 0 41097 -121 0
+rnode "gc[7]" 0 0 35348 -562 0
+rnode "DFF_2phase_1$1_3.gated_control" 0 0 35306 -546 0
+resist "gc[7].n0" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0.0117931
+resist "DFF_2phase_1$1_3.gated_control" "gc[7]" 0.0525
+resist "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" "gc[7].t1" 4.33741
+resist "gc[7].n0" "gc[7].t0" 4.57635
+resist "gc[7]" "gc[7].n0" 16.6121
+rnode "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0 0 5114 -214 0
+rnode "Q[1].t4" 0 0 5096 258 0
+rnode "Q[1].t2" 0 0 5086 -317 0
+rnode "Q[1].n0" 0 0 5110 -145 0
+rnode "Q[1].n1" 0 0 5110 -145 0
+rnode "DFF_2phase_1$1_9.D" 0 0 4066 -144 0
+rnode "Q[1].t3" 0 0 2913 243 0
+rnode "Q[1].t5" 0 0 2923 -293 0
+rnode "Q[1].n2" 0 0 2899 23 0
+rnode "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0 0 2906 -102 0
+rnode "Q[1].n3" 0 0 2973 -89 0
+rnode "Q[1].n4" 0 0 2973 -89 0
+rnode "Q[1].t1" 0 0 2494 262 0
+rnode "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0 0 2458 10 0
+rnode "Q[1].t0" 0 0 2494 -293 0
+rnode "Q[1].n5" 0 0 2434 -116 0
+rnode "Q[1]" 0 0 2505 -57 0
+rnode "DFF_2phase_1$1_8.Q" 0 0 2851 -112 0
+resist "Q[1].n3" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0.00790541
+resist "Q[1].n1" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0.102006
+resist "DFF_2phase_1$1_8.Q" "Q[1].n4" 0.13725
+resist "Q[1].n5" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0.150231
+resist "DFF_2phase_1$1_8.Q" "Q[1]" 0.38925
+resist "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" "Q[1].t1" 3.91438
+resist "Q[1].n5" "Q[1].t0" 4.5896
+resist "Q[1].n1" "Q[1].n0" 8
+resist "Q[1].n3" "Q[1].n2" 8.11962
+resist "Q[1].n4" "Q[1].n3" 9
+resist "Q[1]" "Q[1].n5" 9.06209
+resist "DFF_2phase_1$1_9.D" "Q[1].n1" 9.9495
+resist "Q[1].n4" "DFF_2phase_1$1_9.D" 9.99116
+resist "Q[1].n0" "Q[1].t2" 11.4367
+resist "Q[1].n2" "Q[1].t3" 16.06
+resist "Q[1].n2" "Q[1].t5" 21.1943
+resist "Q[1].n0" "Q[1].t4" 29.419
+rnode "gc[5].t1" 0 0 28502 262 0
+rnode "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0 0 28538 -102 0
+rnode "gc[5].t0" 0 0 28502 -293 0
+rnode "gc[5].n0" 0 0 28617 -121 0
+rnode "gc[5]" 0 0 22828 -569 0
+rnode "DFF_2phase_1$1_5.gated_control" 0 0 22826 -546 0
+resist "DFF_2phase_1$1_5.gated_control" "gc[5]" 0.0025
+resist "gc[5].n0" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0.0117931
+resist "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" "gc[5].t1" 4.33741
+resist "gc[5].n0" "gc[5].t0" 4.57635
+resist "gc[5]" "gc[5].n0" 16.6621
+rnode "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0 0 42554 -214 0
+rnode "Q[7].t4" 0 0 42536 258 0
+rnode "Q[7].t2" 0 0 42526 -317 0
+rnode "Q[7].n0" 0 0 42550 -145 0
+rnode "Q[7].n1" 0 0 42550 -145 0
+rnode "DFF_2phase_1$1_2.D" 0 0 41506 -144 0
+rnode "Q[7].t3" 0 0 40353 243 0
+rnode "Q[7].t5" 0 0 40363 -293 0
+rnode "Q[7].n2" 0 0 40339 23 0
+rnode "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0 0 40346 -102 0
+rnode "Q[7].n3" 0 0 40413 -89 0
+rnode "Q[7].n4" 0 0 40413 -89 0
+rnode "Q[7].t1" 0 0 39934 262 0
+rnode "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0 0 39898 10 0
+rnode "Q[7].t0" 0 0 39934 -293 0
+rnode "Q[7].n5" 0 0 39874 -116 0
+rnode "Q[7]" 0 0 40017 -66 0
+rnode "DFF_2phase_1$1_3.Q" 0 0 40291 -112 0
+resist "Q[7].n3" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0.00790541
+resist "Q[7].n1" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0.102006
+resist "DFF_2phase_1$1_3.Q" "Q[7].n4" 0.13725
+resist "Q[7].n5" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0.150231
+resist "DFF_2phase_1$1_3.Q" "Q[7]" 0.30825
+resist "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" "Q[7].t1" 3.91438
+resist "Q[7].n5" "Q[7].t0" 4.5896
+resist "Q[7].n1" "Q[7].n0" 8
+resist "Q[7].n3" "Q[7].n2" 8.11962
+resist "Q[7].n4" "Q[7].n3" 9
+resist "Q[7]" "Q[7].n5" 9.14309
+resist "DFF_2phase_1$1_2.D" "Q[7].n1" 9.9495
+resist "Q[7].n4" "DFF_2phase_1$1_2.D" 9.99116
+resist "Q[7].n0" "Q[7].t2" 11.4367
+resist "Q[7].n2" "Q[7].t3" 16.06
+resist "Q[7].n2" "Q[7].t5" 21.1943
+resist "Q[7].n0" "Q[7].t4" 29.419
+rnode "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0 0 11354 -214 0
+rnode "Q[2].t2" 0 0 11336 258 0
+rnode "Q[2].t3" 0 0 11326 -317 0
+rnode "Q[2].n0" 0 0 11350 -145 0
+rnode "Q[2].n1" 0 0 11350 -145 0
+rnode "DFF_2phase_1$1_7.D" 0 0 10306 -144 0
+rnode "Q[2].t5" 0 0 9153 243 0
+rnode "Q[2].t4" 0 0 9163 -293 0
+rnode "Q[2].n2" 0 0 9139 23 0
+rnode "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0 0 9146 -102 0
+rnode "Q[2].n3" 0 0 9213 -89 0
+rnode "Q[2].n4" 0 0 9213 -89 0
+rnode "Q[2].t1" 0 0 8734 262 0
+rnode "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0 0 8698 10 0
+rnode "Q[2].t0" 0 0 8734 -293 0
+rnode "Q[2].n5" 0 0 8674 -116 0
+rnode "Q[2]" 0 0 8839 -75 0
+rnode "DFF_2phase_1$1_9.Q" 0 0 9091 -112 0
+resist "Q[2].n3" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0.00790541
+resist "Q[2].n1" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0.102006
+resist "DFF_2phase_1$1_9.Q" "Q[2].n4" 0.13725
+resist "Q[2].n5" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0.150231
+resist "DFF_2phase_1$1_9.Q" "Q[2]" 0.2835
+resist "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" "Q[2].t1" 3.91438
+resist "Q[2].n5" "Q[2].t0" 4.5896
+resist "Q[2].n1" "Q[2].n0" 8
+resist "Q[2].n3" "Q[2].n2" 8.11962
+resist "Q[2].n4" "Q[2].n3" 9
+resist "Q[2]" "Q[2].n5" 9.16784
+resist "DFF_2phase_1$1_7.D" "Q[2].n1" 9.9495
+resist "Q[2].n4" "DFF_2phase_1$1_7.D" 9.99116
+resist "Q[2].n0" "Q[2].t3" 11.4367
+resist "Q[2].n2" "Q[2].t5" 16.06
+resist "Q[2].n2" "Q[2].t4" 21.1943
+resist "Q[2].n0" "Q[2].t2" 29.419
+rnode "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0 0 -1126 -214 0
+rnode "D_in.t1" 0 0 -1144 258 0
+rnode "D_in.t0" 0 0 -1154 -317 0
+rnode "D_in.n0" 0 0 -1130 -145 0
+rnode "D_in.n1" 0 0 -1130 -145 0
+rnode "D_in" 0 0 -2251 -123 0
+rnode "DFF_2phase_1$1_8.D" 0 0 -2174 -144 0
+resist "DFF_2phase_1$1_8.D" "D_in" 0.0693
+resist "D_in.n1" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0.102006
+resist "D_in.n1" "D_in.n0" 8
+resist "DFF_2phase_1$1_8.D" "D_in.n1" 9.9495
+resist "D_in.n0" "D_in.t0" 11.4367
+resist "D_in.n0" "D_in.t1" 29.419
+rnode "gc[8].t1" 0 0 47222 262 0
+rnode "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0 0 47258 -102 0
+rnode "gc[8].t0" 0 0 47222 -293 0
+rnode "gc[8].n0" 0 0 47337 -121 0
+rnode "gc[8]" 0 0 41560 -563 0
+rnode "DFF_2phase_1$1_2.gated_control" 0 0 41546 -546 0
+resist "gc[8].n0" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0.0117931
+resist "DFF_2phase_1$1_2.gated_control" "gc[8]" 0.0175
+resist "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" "gc[8].t1" 4.33741
+resist "gc[8].n0" "gc[8].t0" 4.57635
+resist "gc[8]" "gc[8].n0" 16.6471
+rnode "gc[2].t1" 0 0 9782 262 0
+rnode "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0 0 9818 -102 0
+rnode "gc[2].t0" 0 0 9782 -293 0
+rnode "gc[2].n0" 0 0 9897 -121 0
+rnode "gc[2]" 0 0 4140 -571 0
+rnode "DFF_2phase_1$1_9.gated_control" 0 0 4106 -546 0
+resist "gc[2].n0" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0.0117931
+resist "DFF_2phase_1$1_9.gated_control" "gc[2]" 0.0425
+resist "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" "gc[2].t1" 4.33741
+resist "gc[2].n0" "gc[2].t0" 4.57635
+resist "gc[2]" "gc[2].n0" 16.6221
+rnode "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0 0 36314 -214 0
+rnode "Q[6].t2" 0 0 36296 258 0
+rnode "Q[6].t4" 0 0 36286 -317 0
+rnode "Q[6].n0" 0 0 36310 -145 0
+rnode "Q[6].n1" 0 0 36310 -145 0
+rnode "DFF_2phase_1$1_3.D" 0 0 35266 -144 0
+rnode "Q[6].t3" 0 0 34113 243 0
+rnode "Q[6].t5" 0 0 34123 -293 0
+rnode "Q[6].n2" 0 0 34099 23 0
+rnode "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0 0 34106 -102 0
+rnode "Q[6].n3" 0 0 34173 -89 0
+rnode "Q[6].n4" 0 0 34173 -89 0
+rnode "Q[6].t1" 0 0 33694 262 0
+rnode "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0 0 33658 10 0
+rnode "Q[6].t0" 0 0 33694 -293 0
+rnode "Q[6].n5" 0 0 33634 -116 0
+rnode "Q[6]" 0 0 33777 -66 0
+rnode "DFF_2phase_1$1_4.Q" 0 0 34051 -112 0
+resist "Q[6].n3" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0.00790541
+resist "Q[6].n1" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0.102006
+resist "DFF_2phase_1$1_4.Q" "Q[6].n4" 0.13725
+resist "Q[6].n5" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0.150231
+resist "DFF_2phase_1$1_4.Q" "Q[6]" 0.30825
+resist "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" "Q[6].t1" 3.91438
+resist "Q[6].n5" "Q[6].t0" 4.5896
+resist "Q[6].n1" "Q[6].n0" 8
+resist "Q[6].n3" "Q[6].n2" 8.11962
+resist "Q[6].n4" "Q[6].n3" 9
+resist "Q[6]" "Q[6].n5" 9.14309
+resist "DFF_2phase_1$1_3.D" "Q[6].n1" 9.9495
+resist "Q[6].n4" "DFF_2phase_1$1_3.D" 9.99116
+resist "Q[6].n0" "Q[6].t4" 11.4367
+resist "Q[6].n2" "Q[6].t3" 16.06
+resist "Q[6].n2" "Q[6].t5" 21.1943
+resist "Q[6].n0" "Q[6].t2" 29.419
+rnode "PHI_2.t4" 0 109.5 56852 217 0
+rnode "PHI_2.t18" 0 60.5432 56842 -323 0
+rnode "PHI_2.n0" 0 108.992 56838 -145 0
+rnode "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 0 526.099 56826 -102 0
+rnode "DFF_2phase_1$1_0.PHI_2" 0 2748.16 53990 114 0
+rnode "PHI_2.t15" 0 109.5 50612 217 0
+rnode "PHI_2.t3" 0 60.5432 50602 -323 0
+rnode "PHI_2.n1" 0 108.992 50598 -145 0
+rnode "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 0 106.074 50586 -102 0
+rnode "PHI_2.n2" 0 1258.9 50612 126 0
+rnode "DFF_2phase_1$1_1.PHI_2" 0 1242.33 47750 114 0
+rnode "PHI_2.t13" 0 109.5 44372 217 0
+rnode "PHI_2.t9" 0 60.5432 44362 -323 0
+rnode "PHI_2.n3" 0 108.992 44358 -145 0
+rnode "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 0 106.074 44346 -102 0
+rnode "PHI_2.n4" 0 1258.9 44372 126 0
+rnode "DFF_2phase_1$1_2.PHI_2" 0 1242.33 41510 114 0
+rnode "PHI_2.t10" 0 109.5 38132 217 0
+rnode "PHI_2.t1" 0 60.5432 38122 -323 0
+rnode "PHI_2.n5" 0 108.992 38118 -145 0
+rnode "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 0 106.074 38106 -102 0
+rnode "PHI_2.n6" 0 1258.9 38132 126 0
+rnode "DFF_2phase_1$1_3.PHI_2" 0 1242.33 35270 114 0
+rnode "PHI_2.t16" 0 109.5 31892 217 0
+rnode "PHI_2.t19" 0 60.5432 31882 -323 0
+rnode "PHI_2.n7" 0 108.992 31878 -145 0
+rnode "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 0 106.074 31866 -102 0
+rnode "PHI_2.n8" 0 1258.9 31892 126 0
+rnode "DFF_2phase_1$1_4.PHI_2" 0 1242.33 29030 114 0
+rnode "PHI_2.t14" 0 109.5 25652 217 0
+rnode "PHI_2.t11" 0 60.5432 25642 -323 0
+rnode "PHI_2.n9" 0 108.992 25638 -145 0
+rnode "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 0 106.074 25626 -102 0
+rnode "PHI_2.n10" 0 1258.9 25652 126 0
+rnode "DFF_2phase_1$1_5.PHI_2" 0 1242.33 22790 114 0
+rnode "PHI_2.t12" 0 109.5 19412 217 0
+rnode "PHI_2.t17" 0 60.5432 19402 -323 0
+rnode "PHI_2.n11" 0 108.992 19398 -145 0
+rnode "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 0 106.074 19386 -102 0
+rnode "PHI_2.n12" 0 1258.9 19412 126 0
+rnode "DFF_2phase_1$1_6.PHI_2" 0 1242.33 16550 114 0
+rnode "PHI_2.t5" 0 109.5 13172 217 0
+rnode "PHI_2.t2" 0 60.5432 13162 -323 0
+rnode "PHI_2.n13" 0 108.992 13158 -145 0
+rnode "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 0 106.074 13146 -102 0
+rnode "PHI_2.n14" 0 1258.9 13172 126 0
+rnode "DFF_2phase_1$1_7.PHI_2" 0 1242.33 10310 114 0
+rnode "PHI_2.t7" 0 109.5 6932 217 0
+rnode "PHI_2.t8" 0 60.5432 6922 -323 0
+rnode "PHI_2.n15" 0 108.992 6918 -145 0
+rnode "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 0 106.074 6906 -102 0
+rnode "PHI_2.n16" 0 1258.9 6932 126 0
+rnode "DFF_2phase_1$1_9.PHI_2" 0 1242.33 4070 114 0
+rnode "PHI_2.t6" 0 109.5 692 217 0
+rnode "PHI_2.t0" 0 60.5432 682 -323 0
+rnode "PHI_2.n17" 0 108.992 678 -145 0
+rnode "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 0 106.074 666 -102 0
+rnode "PHI_2.n18" 0 1258.9 692 126 0
+rnode "PHI_2" 0 25.6828 -2253 121 0
+rnode "DFF_2phase_1$1_8.PHI_2" 0 586.324 -2170 114 0
+resist "DFF_2phase_1$1_8.PHI_2" "PHI_2" 0.0747
+resist "DFF_2phase_1$1_8.PHI_2" "PHI_2.n18" 2.5758
+resist "DFF_2phase_1$1_9.PHI_2" "PHI_2.n16" 2.5758
+resist "DFF_2phase_1$1_7.PHI_2" "PHI_2.n14" 2.5758
+resist "DFF_2phase_1$1_6.PHI_2" "PHI_2.n12" 2.5758
+resist "DFF_2phase_1$1_5.PHI_2" "PHI_2.n10" 2.5758
+resist "DFF_2phase_1$1_4.PHI_2" "PHI_2.n8" 2.5758
+resist "DFF_2phase_1$1_3.PHI_2" "PHI_2.n6" 2.5758
+resist "DFF_2phase_1$1_2.PHI_2" "PHI_2.n4" 2.5758
+resist "DFF_2phase_1$1_1.PHI_2" "PHI_2.n2" 2.5758
+resist "PHI_2.n18" "DFF_2phase_1$1_9.PHI_2" 3.0402
+resist "PHI_2.n16" "DFF_2phase_1$1_7.PHI_2" 3.0402
+resist "PHI_2.n14" "DFF_2phase_1$1_6.PHI_2" 3.0402
+resist "PHI_2.n12" "DFF_2phase_1$1_5.PHI_2" 3.0402
+resist "PHI_2.n10" "DFF_2phase_1$1_4.PHI_2" 3.0402
+resist "PHI_2.n8" "DFF_2phase_1$1_3.PHI_2" 3.0402
+resist "PHI_2.n6" "DFF_2phase_1$1_2.PHI_2" 3.0402
+resist "PHI_2.n4" "DFF_2phase_1$1_1.PHI_2" 3.0402
+resist "PHI_2.n2" "DFF_2phase_1$1_0.PHI_2" 3.0402
+resist "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" "PHI_2.n0" 8.04207
+resist "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" "PHI_2.n1" 8.04207
+resist "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" "PHI_2.n3" 8.04207
+resist "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" "PHI_2.n5" 8.04207
+resist "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" "PHI_2.n7" 8.04207
+resist "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" "PHI_2.n9" 8.04207
+resist "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" "PHI_2.n11" 8.04207
+resist "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" "PHI_2.n13" 8.04207
+resist "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" "PHI_2.n15" 8.04207
+resist "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" "PHI_2.n17" 8.04207
+resist "PHI_2.n2" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 9.23449
+resist "PHI_2.n4" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 9.23449
+resist "PHI_2.n6" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 9.23449
+resist "PHI_2.n8" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 9.23449
+resist "PHI_2.n10" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 9.23449
+resist "PHI_2.n12" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 9.23449
+resist "PHI_2.n14" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 9.23449
+resist "PHI_2.n16" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 9.23449
+resist "PHI_2.n18" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 9.23449
+resist "PHI_2.n0" "PHI_2.t18" 11.7652
+resist "PHI_2.n1" "PHI_2.t3" 11.7652
+resist "PHI_2.n3" "PHI_2.t9" 11.7652
+resist "PHI_2.n5" "PHI_2.t1" 11.7652
+resist "PHI_2.n7" "PHI_2.t19" 11.7652
+resist "PHI_2.n9" "PHI_2.t11" 11.7652
+resist "PHI_2.n11" "PHI_2.t17" 11.7652
+resist "PHI_2.n13" "PHI_2.t2" 11.7652
+resist "PHI_2.n15" "PHI_2.t8" 11.7652
+resist "PHI_2.n17" "PHI_2.t0" 11.7652
+resist "DFF_2phase_1$1_0.PHI_2" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E" 11.8103
+resist "PHI_2.n0" "PHI_2.t4" 26.426
+resist "PHI_2.n1" "PHI_2.t15" 26.426
+resist "PHI_2.n3" "PHI_2.t13" 26.426
+resist "PHI_2.n5" "PHI_2.t10" 26.426
+resist "PHI_2.n7" "PHI_2.t16" 26.426
+resist "PHI_2.n9" "PHI_2.t14" 26.426
+resist "PHI_2.n11" "PHI_2.t12" 26.426
+resist "PHI_2.n13" "PHI_2.t5" 26.426
+resist "PHI_2.n15" "PHI_2.t7" 26.426
+resist "PHI_2.n17" "PHI_2.t6" 26.426
+rnode "PHI_1.t7" 0 127.139 54388 217 0
+rnode "PHI_1.t14" 0 70.296 54378 -323 0
+rnode "PHI_1.n0" 0 126.496 54374 -145 0
+rnode "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 0 279.892 54362 -102 0
+rnode "DFF_2phase_1$1_0.PHI_1" 0 4155.9 53990 288 0
+rnode "PHI_1.t4" 0 127.139 48148 217 0
+rnode "PHI_1.t3" 0 70.296 48138 -323 0
+rnode "PHI_1.n1" 0 126.496 48134 -145 0
+rnode "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 0 178.234 48122 -102 0
+rnode "PHI_1.n2" 0 1471.13 48148 318 0
+rnode "DFF_2phase_1$1_1.PHI_1" 0 1442.45 47750 288 0
+rnode "PHI_1.t12" 0 127.139 41908 217 0
+rnode "PHI_1.t1" 0 70.296 41898 -323 0
+rnode "PHI_1.n3" 0 126.496 41894 -145 0
+rnode "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 0 178.234 41882 -102 0
+rnode "PHI_1.n4" 0 1471.13 41908 318 0
+rnode "DFF_2phase_1$1_2.PHI_1" 0 1442.45 41510 288 0
+rnode "PHI_1.t9" 0 127.139 35668 217 0
+rnode "PHI_1.t15" 0 70.296 35658 -323 0
+rnode "PHI_1.n5" 0 126.496 35654 -145 0
+rnode "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 0 178.234 35642 -102 0
+rnode "PHI_1.n6" 0 1471.13 35668 318 0
+rnode "DFF_2phase_1$1_3.PHI_1" 0 1442.45 35270 288 0
+rnode "PHI_1.t6" 0 127.139 29428 217 0
+rnode "PHI_1.t0" 0 70.296 29418 -323 0
+rnode "PHI_1.n7" 0 126.496 29414 -145 0
+rnode "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 0 178.234 29402 -102 0
+rnode "PHI_1.n8" 0 1471.13 29428 318 0
+rnode "DFF_2phase_1$1_4.PHI_1" 0 1442.45 29030 288 0
+rnode "PHI_1.t18" 0 127.139 23188 217 0
+rnode "PHI_1.t5" 0 70.296 23178 -323 0
+rnode "PHI_1.n9" 0 126.496 23174 -145 0
+rnode "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 0 178.234 23162 -102 0
+rnode "PHI_1.n10" 0 1471.13 23188 318 0
+rnode "DFF_2phase_1$1_5.PHI_1" 0 1442.45 22790 288 0
+rnode "PHI_1.t10" 0 127.139 16948 217 0
+rnode "PHI_1.t11" 0 70.296 16938 -323 0
+rnode "PHI_1.n11" 0 126.496 16934 -145 0
+rnode "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 0 178.234 16922 -102 0
+rnode "PHI_1.n12" 0 1471.13 16948 318 0
+rnode "DFF_2phase_1$1_6.PHI_1" 0 1442.45 16550 288 0
+rnode "PHI_1.t2" 0 127.139 10708 217 0
+rnode "PHI_1.t17" 0 70.296 10698 -323 0
+rnode "PHI_1.n13" 0 126.496 10694 -145 0
+rnode "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 0 178.234 10682 -102 0
+rnode "PHI_1.n14" 0 1471.13 10708 318 0
+rnode "DFF_2phase_1$1_7.PHI_1" 0 1442.45 10310 288 0
+rnode "PHI_1.t13" 0 127.139 4468 217 0
+rnode "PHI_1.t8" 0 70.296 4458 -323 0
+rnode "PHI_1.n15" 0 126.496 4454 -145 0
+rnode "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 0 178.234 4442 -102 0
+rnode "PHI_1.n16" 0 1471.13 4468 318 0
+rnode "PHI_1" 0 32.5939 -2241 301 0
+rnode "DFF_2phase_1$1_8.PHI_1" 0 108.415 -2170 288 0
+rnode "PHI_1.t19" 0 127.139 -1772 217 0
+rnode "PHI_1.t16" 0 70.296 -1782 -323 0
+rnode "PHI_1.n17" 0 126.496 -1786 -145 0
+rnode "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 0 178.234 -1798 -102 0
+rnode "PHI_1.n18" 0 1471.13 -1772 318 0
+rnode "DFF_2phase_1$1_9.PHI_1" 0 1442.45 4070 288 0
+resist "DFF_2phase_1$1_8.PHI_1" "PHI_1" 0.0639
+resist "PHI_1.n18" "DFF_2phase_1$1_8.PHI_1" 0.3582
+resist "DFF_2phase_1$1_9.PHI_1" "PHI_1.n16" 0.3582
+resist "DFF_2phase_1$1_7.PHI_1" "PHI_1.n14" 0.3582
+resist "DFF_2phase_1$1_6.PHI_1" "PHI_1.n12" 0.3582
+resist "DFF_2phase_1$1_5.PHI_1" "PHI_1.n10" 0.3582
+resist "DFF_2phase_1$1_4.PHI_1" "PHI_1.n8" 0.3582
+resist "DFF_2phase_1$1_3.PHI_1" "PHI_1.n6" 0.3582
+resist "DFF_2phase_1$1_2.PHI_1" "PHI_1.n4" 0.3582
+resist "DFF_2phase_1$1_1.PHI_1" "PHI_1.n2" 0.3582
+resist "DFF_2phase_1$1_9.PHI_1" "PHI_1.n18" 5.2578
+resist "PHI_1.n16" "DFF_2phase_1$1_7.PHI_1" 5.2578
+resist "PHI_1.n14" "DFF_2phase_1$1_6.PHI_1" 5.2578
+resist "PHI_1.n12" "DFF_2phase_1$1_5.PHI_1" 5.2578
+resist "PHI_1.n10" "DFF_2phase_1$1_4.PHI_1" 5.2578
+resist "PHI_1.n8" "DFF_2phase_1$1_3.PHI_1" 5.2578
+resist "PHI_1.n6" "DFF_2phase_1$1_2.PHI_1" 5.2578
+resist "PHI_1.n4" "DFF_2phase_1$1_1.PHI_1" 5.2578
+resist "PHI_1.n2" "DFF_2phase_1$1_0.PHI_1" 5.2578
+resist "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" "PHI_1.n0" 8.04663
+resist "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" "PHI_1.n1" 8.04663
+resist "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" "PHI_1.n3" 8.04663
+resist "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" "PHI_1.n5" 8.04663
+resist "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" "PHI_1.n7" 8.04663
+resist "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" "PHI_1.n9" 8.04663
+resist "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" "PHI_1.n11" 8.04663
+resist "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" "PHI_1.n13" 8.04663
+resist "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" "PHI_1.n15" 8.04663
+resist "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" "PHI_1.n17" 8.04663
+resist "PHI_1.n2" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 9.56101
+resist "PHI_1.n4" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 9.56101
+resist "PHI_1.n6" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 9.56101
+resist "PHI_1.n8" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 9.56101
+resist "PHI_1.n10" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 9.56101
+resist "PHI_1.n12" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 9.56101
+resist "PHI_1.n14" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 9.56101
+resist "PHI_1.n16" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 9.56101
+resist "PHI_1.n18" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 9.56101
+resist "DFF_2phase_1$1_0.PHI_1" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E" 9.91921
+resist "PHI_1.n0" "PHI_1.t14" 11.7652
+resist "PHI_1.n1" "PHI_1.t3" 11.7652
+resist "PHI_1.n3" "PHI_1.t1" 11.7652
+resist "PHI_1.n5" "PHI_1.t15" 11.7652
+resist "PHI_1.n7" "PHI_1.t0" 11.7652
+resist "PHI_1.n9" "PHI_1.t5" 11.7652
+resist "PHI_1.n11" "PHI_1.t11" 11.7652
+resist "PHI_1.n13" "PHI_1.t17" 11.7652
+resist "PHI_1.n15" "PHI_1.t8" 11.7652
+resist "PHI_1.n17" "PHI_1.t16" 11.7652
+resist "PHI_1.n0" "PHI_1.t7" 26.426
+resist "PHI_1.n1" "PHI_1.t4" 26.426
+resist "PHI_1.n3" "PHI_1.t12" 26.426
+resist "PHI_1.n5" "PHI_1.t9" 26.426
+resist "PHI_1.n7" "PHI_1.t6" 26.426
+resist "PHI_1.n9" "PHI_1.t18" 26.426
+resist "PHI_1.n11" "PHI_1.t10" 26.426
+resist "PHI_1.n13" "PHI_1.t2" 26.426
+resist "PHI_1.n15" "PHI_1.t13" 26.426
+resist "PHI_1.n17" "PHI_1.t19" 26.426
+rnode "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0 4.53178 3130 10 0
+rnode "EN.t17" 0 13.7318 3117 243 0
+rnode "EN.t8" 0 16.5017 3107 -293 0
+rnode "EN.n0" 0 15.5085 3127 6 0
+rnode "EN.n1" 0 4.98069 3127 6 0
+rnode "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0 4.53178 9370 10 0
+rnode "EN.t4" 0 13.7318 9357 243 0
+rnode "EN.t2" 0 16.5017 9347 -293 0
+rnode "EN.n2" 0 15.5085 9367 6 0
+rnode "EN.n3" 0 4.98069 9367 6 0
+rnode "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0 4.53178 15610 10 0
+rnode "EN.t14" 0 13.7318 15597 243 0
+rnode "EN.t9" 0 16.5017 15587 -293 0
+rnode "EN.n4" 0 15.5085 15607 6 0
+rnode "EN.n5" 0 4.98069 15607 6 0
+rnode "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0 4.53178 21850 10 0
+rnode "EN.t18" 0 13.7318 21837 243 0
+rnode "EN.t1" 0 16.5017 21827 -293 0
+rnode "EN.n6" 0 15.5085 21847 6 0
+rnode "EN.n7" 0 4.98069 21847 6 0
+rnode "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0 4.53178 28090 10 0
+rnode "EN.t10" 0 13.7318 28077 243 0
+rnode "EN.t0" 0 16.5017 28067 -293 0
+rnode "EN.n8" 0 15.5085 28087 6 0
+rnode "EN.n9" 0 4.98069 28087 6 0
+rnode "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0 4.53178 34330 10 0
+rnode "EN.t12" 0 13.7318 34317 243 0
+rnode "EN.t13" 0 16.5017 34307 -293 0
+rnode "EN.n10" 0 15.5085 34327 6 0
+rnode "EN.n11" 0 4.98069 34327 6 0
+rnode "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0 4.53178 40570 10 0
+rnode "EN.t15" 0 13.7318 40557 243 0
+rnode "EN.t5" 0 16.5017 40547 -293 0
+rnode "EN.n12" 0 15.5085 40567 6 0
+rnode "EN.n13" 0 4.98069 40567 6 0
+rnode "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0 4.53178 46810 10 0
+rnode "EN.t3" 0 13.7318 46797 243 0
+rnode "EN.t16" 0 16.5017 46787 -293 0
+rnode "EN.n14" 0 15.5085 46807 6 0
+rnode "EN.n15" 0 4.98069 46807 6 0
+rnode "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0 4.53178 53050 10 0
+rnode "EN.t6" 0 13.7318 53037 243 0
+rnode "EN.t11" 0 16.5017 53027 -293 0
+rnode "EN.n16" 0 15.5085 53047 6 0
+rnode "EN.n17" 0 4.98069 53047 6 0
+rnode "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0 4.53178 59290 10 0
+rnode "EN.t19" 0 13.7318 59277 243 0
+rnode "EN.t7" 0 16.5017 59267 -293 0
+rnode "EN.n18" 0 15.5085 59287 6 0
+rnode "EN.n19" 0 101.382 59287 6 0
+rnode "DFF_2phase_1$1_0.EN" 0 219.045 53995 -302 0
+rnode "EN.n20" 0 152.799 53036 -274 0
+rnode "DFF_2phase_1$1_1.EN" 0 141.529 47755 -302 0
+rnode "EN.n21" 0 152.799 46796 -274 0
+rnode "DFF_2phase_1$1_2.EN" 0 141.529 41515 -302 0
+rnode "EN.n22" 0 152.799 40556 -274 0
+rnode "DFF_2phase_1$1_3.EN" 0 141.529 35275 -302 0
+rnode "EN.n23" 0 152.799 34316 -274 0
+rnode "DFF_2phase_1$1_4.EN" 0 141.529 29035 -302 0
+rnode "EN.n24" 0 152.799 28076 -274 0
+rnode "DFF_2phase_1$1_5.EN" 0 141.529 22795 -302 0
+rnode "EN.n25" 0 152.799 21836 -274 0
+rnode "DFF_2phase_1$1_6.EN" 0 141.529 16555 -302 0
+rnode "EN.n26" 0 152.799 15596 -274 0
+rnode "DFF_2phase_1$1_7.EN" 0 141.529 10315 -302 0
+rnode "EN.n27" 0 152.799 9356 -274 0
+rnode "DFF_2phase_1$1_9.EN" 0 141.529 4075 -302 0
+rnode "EN.n28" 0 152.799 3116 -274 0
+rnode "EN" 0 2.64946 -2270 -307 0
+rnode "DFF_2phase_1$1_8.EN" 0 121.93 -2165 -302 0
+resist "EN.n1" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0.00692308
+resist "EN.n3" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0.00692308
+resist "EN.n5" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0.00692308
+resist "EN.n7" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0.00692308
+resist "EN.n9" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0.00692308
+resist "EN.n11" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0.00692308
+resist "EN.n13" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0.00692308
+resist "EN.n15" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0.00692308
+resist "EN.n17" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0.00692308
+resist "EN.n19" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A1" 0.00692308
+resist "DFF_2phase_1$1_8.EN" "EN" 0.11962
+resist "EN.n28" "DFF_2phase_1$1_9.EN" 1.07915
+resist "EN.n27" "DFF_2phase_1$1_7.EN" 1.07915
+resist "EN.n26" "DFF_2phase_1$1_6.EN" 1.07915
+resist "EN.n25" "DFF_2phase_1$1_5.EN" 1.07915
+resist "EN.n24" "DFF_2phase_1$1_4.EN" 1.07915
+resist "EN.n23" "DFF_2phase_1$1_3.EN" 1.07915
+resist "EN.n22" "DFF_2phase_1$1_2.EN" 1.07915
+resist "EN.n21" "DFF_2phase_1$1_1.EN" 1.07915
+resist "EN.n20" "DFF_2phase_1$1_0.EN" 1.07915
+resist "EN.n28" "EN.n1" 4.8356
+resist "EN.n27" "EN.n3" 4.8356
+resist "EN.n26" "EN.n5" 4.8356
+resist "EN.n25" "EN.n7" 4.8356
+resist "EN.n24" "EN.n9" 4.8356
+resist "EN.n23" "EN.n11" 4.8356
+resist "EN.n22" "EN.n13" 4.8356
+resist "EN.n21" "EN.n15" 4.8356
+resist "EN.n20" "EN.n17" 4.8356
+resist "DFF_2phase_1$1_8.EN" "EN.n28" 6.01371
+resist "DFF_2phase_1$1_9.EN" "EN.n27" 6.01371
+resist "DFF_2phase_1$1_7.EN" "EN.n26" 6.01371
+resist "DFF_2phase_1$1_6.EN" "EN.n25" 6.01371
+resist "DFF_2phase_1$1_5.EN" "EN.n24" 6.01371
+resist "DFF_2phase_1$1_4.EN" "EN.n23" 6.01371
+resist "DFF_2phase_1$1_3.EN" "EN.n22" 6.01371
+resist "DFF_2phase_1$1_2.EN" "EN.n21" 6.01371
+resist "DFF_2phase_1$1_1.EN" "EN.n20" 6.01371
+resist "EN.n1" "EN.n0" 8
+resist "EN.n3" "EN.n2" 8
+resist "EN.n5" "EN.n4" 8
+resist "EN.n7" "EN.n6" 8
+resist "EN.n9" "EN.n8" 8
+resist "EN.n11" "EN.n10" 8
+resist "EN.n13" "EN.n12" 8
+resist "EN.n15" "EN.n14" 8
+resist "EN.n17" "EN.n16" 8
+resist "EN.n19" "EN.n18" 8
+resist "DFF_2phase_1$1_0.EN" "EN.n19" 10.8493
+resist "EN.n0" "EN.t17" 17.301
+resist "EN.n2" "EN.t4" 17.301
+resist "EN.n4" "EN.t14" 17.301
+resist "EN.n6" "EN.t18" 17.301
+resist "EN.n8" "EN.t10" 17.301
+resist "EN.n10" "EN.t12" 17.301
+resist "EN.n12" "EN.t15" 17.301
+resist "EN.n14" "EN.t3" 17.301
+resist "EN.n16" "EN.t6" 17.301
+resist "EN.n18" "EN.t19" 17.301
+resist "EN.n0" "EN.t8" 19.9533
+resist "EN.n2" "EN.t2" 19.9533
+resist "EN.n4" "EN.t9" 19.9533
+resist "EN.n6" "EN.t1" 19.9533
+resist "EN.n8" "EN.t0" 19.9533
+resist "EN.n10" "EN.t13" 19.9533
+resist "EN.n12" "EN.t5" 19.9533
+resist "EN.n14" "EN.t16" 19.9533
+resist "EN.n16" "EN.t11" 19.9533
+resist "EN.n18" "EN.t7" 19.9533
+rnode "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0 0 23834 -214 0
+rnode "Q[4].t2" 0 0 23816 258 0
+rnode "Q[4].t5" 0 0 23806 -317 0
+rnode "Q[4].n0" 0 0 23830 -145 0
+rnode "Q[4].n1" 0 0 23830 -145 0
+rnode "DFF_2phase_1$1_5.D" 0 0 22786 -144 0
+rnode "Q[4].t4" 0 0 21633 243 0
+rnode "Q[4].t3" 0 0 21643 -293 0
+rnode "Q[4].n2" 0 0 21619 23 0
+rnode "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0 0 21626 -102 0
+rnode "Q[4].n3" 0 0 21693 -89 0
+rnode "Q[4].n4" 0 0 21693 -89 0
+rnode "Q[4].t1" 0 0 21214 262 0
+rnode "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0 0 21178 10 0
+rnode "Q[4].t0" 0 0 21214 -293 0
+rnode "Q[4].n5" 0 0 21154 -116 0
+rnode "Q[4]" 0 0 21297 -66 0
+rnode "DFF_2phase_1$1_6.Q" 0 0 21571 -112 0
+resist "Q[4].n3" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.A2" 0.00790541
+resist "Q[4].n1" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D" 0.102006
+resist "DFF_2phase_1$1_6.Q" "Q[4].n4" 0.13725
+resist "Q[4].n5" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" 0.150231
+resist "DFF_2phase_1$1_6.Q" "Q[4]" 0.30825
+resist "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q" "Q[4].t1" 3.91438
+resist "Q[4].n5" "Q[4].t0" 4.5896
+resist "Q[4].n1" "Q[4].n0" 8
+resist "Q[4].n3" "Q[4].n2" 8.11962
+resist "Q[4].n4" "Q[4].n3" 9
+resist "Q[4]" "Q[4].n5" 9.14309
+resist "DFF_2phase_1$1_5.D" "Q[4].n1" 9.9495
+resist "Q[4].n4" "DFF_2phase_1$1_5.D" 9.99116
+resist "Q[4].n0" "Q[4].t5" 11.4367
+resist "Q[4].n2" "Q[4].t4" 16.06
+resist "Q[4].n2" "Q[4].t3" 21.1943
+resist "Q[4].n0" "Q[4].t2" 29.419
+rnode "VDD.n0" 0 19.9342 4154 424 0
+rnode "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 0 31.8575 6807 290 0
+rnode "VDD.t215" 0 3.46298 7142 255 0
+rnode "VDD.t114" 0 1.69632 6982 217 0
+rnode "VDD.n1" 0 7.35888 7034 241 0
+rnode "VDD.t286" 0 4.31953 7510 258 0
+rnode "VDD.t178" 0 2.30096 8306 220 0
+rnode "VDD.t230" 0 2.30096 8202 220 0
+rnode "VDD.n2" 0 4.90988 8254 241 0
+rnode "VDD.t180" 0 8.72706 8834 262 0
+rnode "VDD.t265" 0 7.52351 9103 243 0
+rnode "VDD.t238" 0 7.41938 9407 243 0
+rnode "VDD.t106" 0 8.58219 9682 262 0
+rnode "VDD.t113" 0 39.5652 6932 217 0
+rnode "VDD.t214" 0 64.5377 7192 255 0
+rnode "VDD.t285" 0 53.0278 7560 258 0
+rnode "VDD.t213" 0 36.174 7708 258 0
+rnode "VDD.t126" 0 45.6286 7912 258 0
+rnode "VDD.t229" 0 45.6286 8152 220 0
+rnode "VDD.t177" 0 64.9488 8356 220 0
+rnode "VDD.t179" 0 71.0119 8784 262 0
+rnode "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 0 37.9209 9047 290 0
+rnode "VDD.t264" 0 31.8578 9153 243 0
+rnode "VDD.t237" 0 46.6562 9357 243 0
+rnode "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 0 38.5375 9607 290 0
+rnode "VDD.t105" 0 50.0474 9732 262 0
+rnode "VDD.n3" 0 65.4542 10094 121 0
+rnode "VDD.n4" 0 47.2643 10398 121 0
+rnode "VDD.t206" 0 3.46298 10918 255 0
+rnode "VDD.t251" 0 1.69632 10758 217 0
+rnode "VDD.n5" 0 7.35888 10810 241 0
+rnode "VDD.t143" 0 4.31953 11286 258 0
+rnode "VDD.t339" 0 2.30096 12082 220 0
+rnode "VDD.t8" 0 2.30096 11978 220 0
+rnode "VDD.n6" 0 4.90988 12030 241 0
+rnode "VDD.t337" 0 8.72706 12610 262 0
+rnode "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 0 31.8575 10583 290 0
+rnode "VDD.t250" 0 39.5652 10708 217 0
+rnode "VDD.t205" 0 64.5377 10968 255 0
+rnode "VDD.t142" 0 53.0278 11336 258 0
+rnode "VDD.t204" 0 36.174 11484 258 0
+rnode "VDD.t267" 0 45.6286 11688 258 0
+rnode "VDD.t7" 0 45.6286 11928 220 0
+rnode "VDD.t338" 0 64.9488 12132 220 0
+rnode "VDD.t336" 0 75.02 12560 262 0
+rnode "VDD.n7" 0 47.0587 12862 121 0
+rnode "VDD.t57" 0 3.46298 13382 255 0
+rnode "VDD.t110" 0 1.69632 13222 217 0
+rnode "VDD.n8" 0 7.35888 13274 241 0
+rnode "VDD.t78" 0 4.31953 13750 258 0
+rnode "VDD.t133" 0 2.30096 14546 220 0
+rnode "VDD.t26" 0 2.30096 14442 220 0
+rnode "VDD.n9" 0 4.90988 14494 241 0
+rnode "VDD.t131" 0 8.72706 15074 262 0
+rnode "VDD.t119" 0 7.52351 15343 243 0
+rnode "VDD.t188" 0 7.41938 15647 243 0
+rnode "VDD.t316" 0 8.58219 15922 262 0
+rnode "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 0 31.8575 13047 290 0
+rnode "VDD.t109" 0 39.5652 13172 217 0
+rnode "VDD.t56" 0 64.5377 13432 255 0
+rnode "VDD.t77" 0 53.0278 13800 258 0
+rnode "VDD.t55" 0 36.174 13948 258 0
+rnode "VDD.t318" 0 45.6286 14152 258 0
+rnode "VDD.t25" 0 45.6286 14392 220 0
+rnode "VDD.t132" 0 64.9488 14596 220 0
+rnode "VDD.t130" 0 71.0119 15024 262 0
+rnode "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 0 37.9209 15287 290 0
+rnode "VDD.t118" 0 31.8578 15393 243 0
+rnode "VDD.t187" 0 46.6562 15597 243 0
+rnode "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 0 38.5375 15847 290 0
+rnode "VDD.t315" 0 50.0474 15972 262 0
+rnode "VDD.n10" 0 65.4542 16334 121 0
+rnode "VDD.n11" 0 47.2643 16638 121 0
+rnode "VDD.t314" 0 3.46298 17158 255 0
+rnode "VDD.t184" 0 1.69632 16998 217 0
+rnode "VDD.n12" 0 7.35888 17050 241 0
+rnode "VDD.t276" 0 4.31953 17526 258 0
+rnode "VDD.t168" 0 2.30096 18322 220 0
+rnode "VDD.t279" 0 2.30096 18218 220 0
+rnode "VDD.n13" 0 4.90988 18270 241 0
+rnode "VDD.t166" 0 8.72706 18850 262 0
+rnode "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 0 31.8575 16823 290 0
+rnode "VDD.t183" 0 39.5652 16948 217 0
+rnode "VDD.t313" 0 64.5377 17208 255 0
+rnode "VDD.t275" 0 53.0278 17576 258 0
+rnode "VDD.t312" 0 36.174 17724 258 0
+rnode "VDD.t272" 0 45.6286 17928 258 0
+rnode "VDD.t278" 0 45.6286 18168 220 0
+rnode "VDD.t167" 0 64.9488 18372 220 0
+rnode "VDD.t165" 0 75.02 18800 262 0
+rnode "VDD.n14" 0 47.0587 19102 121 0
+rnode "VDD.t72" 0 3.46298 19622 255 0
+rnode "VDD.t259" 0 1.69632 19462 217 0
+rnode "VDD.n15" 0 7.35888 19514 241 0
+rnode "VDD.t48" 0 4.31953 19990 258 0
+rnode "VDD.t60" 0 2.30096 20786 220 0
+rnode "VDD.t108" 0 2.30096 20682 220 0
+rnode "VDD.n16" 0 4.90988 20734 241 0
+rnode "VDD.t62" 0 8.72706 21314 262 0
+rnode "VDD.t248" 0 7.52351 21583 243 0
+rnode "VDD.t232" 0 7.41938 21887 243 0
+rnode "VDD.t284" 0 8.58219 22162 262 0
+rnode "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 0 31.8575 19287 290 0
+rnode "VDD.t258" 0 39.5652 19412 217 0
+rnode "VDD.t71" 0 64.5377 19672 255 0
+rnode "VDD.t47" 0 53.0278 20040 258 0
+rnode "VDD.t70" 0 36.174 20188 258 0
+rnode "VDD.t317" 0 45.6286 20392 258 0
+rnode "VDD.t107" 0 45.6286 20632 220 0
+rnode "VDD.t59" 0 64.9488 20836 220 0
+rnode "VDD.t61" 0 71.0119 21264 262 0
+rnode "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 0 37.9209 21527 290 0
+rnode "VDD.t247" 0 31.8578 21633 243 0
+rnode "VDD.t231" 0 46.6562 21837 243 0
+rnode "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 0 38.5375 22087 290 0
+rnode "VDD.t283" 0 50.0474 22212 262 0
+rnode "VDD.n17" 0 65.4542 22574 121 0
+rnode "VDD.n18" 0 47.2643 22878 121 0
+rnode "VDD.t289" 0 3.46298 23398 255 0
+rnode "VDD.t253" 0 1.69632 23238 217 0
+rnode "VDD.n19" 0 7.35888 23290 241 0
+rnode "VDD.t141" 0 4.31953 23766 258 0
+rnode "VDD.t85" 0 2.30096 24562 220 0
+rnode "VDD.t89" 0 2.30096 24458 220 0
+rnode "VDD.n20" 0 4.90988 24510 241 0
+rnode "VDD.t83" 0 8.72706 25090 262 0
+rnode "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 0 31.8575 23063 290 0
+rnode "VDD.t252" 0 39.5652 23188 217 0
+rnode "VDD.t288" 0 64.5377 23448 255 0
+rnode "VDD.t140" 0 53.0278 23816 258 0
+rnode "VDD.t290" 0 36.174 23964 258 0
+rnode "VDD.t38" 0 45.6286 24168 258 0
+rnode "VDD.t88" 0 45.6286 24408 220 0
+rnode "VDD.t84" 0 64.9488 24612 220 0
+rnode "VDD.t82" 0 75.02 25040 262 0
+rnode "VDD.n21" 0 47.0587 25342 121 0
+rnode "VDD.t154" 0 3.46298 25862 255 0
+rnode "VDD.t326" 0 1.69632 25702 217 0
+rnode "VDD.n22" 0 7.35888 25754 241 0
+rnode "VDD.t164" 0 4.31953 26230 258 0
+rnode "VDD.t137" 0 2.30096 27026 220 0
+rnode "VDD.t139" 0 2.30096 26922 220 0
+rnode "VDD.n23" 0 4.90988 26974 241 0
+rnode "VDD.t135" 0 8.72706 27554 262 0
+rnode "VDD.t91" 0 7.52351 27823 243 0
+rnode "VDD.t257" 0 7.41938 28127 243 0
+rnode "VDD.t192" 0 8.58219 28402 262 0
+rnode "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 0 31.8575 25527 290 0
+rnode "VDD.t325" 0 39.5652 25652 217 0
+rnode "VDD.t153" 0 64.5377 25912 255 0
+rnode "VDD.t163" 0 53.0278 26280 258 0
+rnode "VDD.t152" 0 36.174 26428 258 0
+rnode "VDD.t49" 0 45.6286 26632 258 0
+rnode "VDD.t138" 0 45.6286 26872 220 0
+rnode "VDD.t136" 0 64.9488 27076 220 0
+rnode "VDD.t134" 0 71.0119 27504 262 0
+rnode "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 0 37.9209 27767 290 0
+rnode "VDD.t90" 0 31.8578 27873 243 0
+rnode "VDD.t256" 0 46.6562 28077 243 0
+rnode "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 0 38.5375 28327 290 0
+rnode "VDD.t191" 0 50.0474 28452 262 0
+rnode "VDD.n24" 0 65.4542 28814 121 0
+rnode "VDD.n25" 0 47.2643 29118 121 0
+rnode "VDD.t282" 0 3.46298 29638 255 0
+rnode "VDD.t145" 0 1.69632 29478 217 0
+rnode "VDD.n26" 0 7.35888 29530 241 0
+rnode "VDD.t324" 0 4.31953 30006 258 0
+rnode "VDD.t160" 0 2.30096 30802 220 0
+rnode "VDD.t40" 0 2.30096 30698 220 0
+rnode "VDD.n27" 0 4.90988 30750 241 0
+rnode "VDD.t162" 0 8.72706 31330 262 0
+rnode "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 0 31.8575 29303 290 0
+rnode "VDD.t144" 0 39.5652 29428 217 0
+rnode "VDD.t281" 0 64.5377 29688 255 0
+rnode "VDD.t323" 0 53.0278 30056 258 0
+rnode "VDD.t280" 0 36.174 30204 258 0
+rnode "VDD.t117" 0 45.6286 30408 258 0
+rnode "VDD.t39" 0 45.6286 30648 220 0
+rnode "VDD.t159" 0 64.9488 30852 220 0
+rnode "VDD.t161" 0 75.02 31280 262 0
+rnode "VDD.n28" 0 47.0587 31582 121 0
+rnode "VDD.t42" 0 3.46298 32102 255 0
+rnode "VDD.t330" 0 1.69632 31942 217 0
+rnode "VDD.n29" 0 7.35888 31994 241 0
+rnode "VDD.t170" 0 4.31953 32470 258 0
+rnode "VDD.t271" 0 2.30096 33266 220 0
+rnode "VDD.t81" 0 2.30096 33162 220 0
+rnode "VDD.n30" 0 4.90988 33214 241 0
+rnode "VDD.t269" 0 8.72706 33794 262 0
+rnode "VDD.t322" 0 7.52351 34063 243 0
+rnode "VDD.t186" 0 7.41938 34367 243 0
+rnode "VDD.t307" 0 8.58219 34642 262 0
+rnode "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 0 31.8575 31767 290 0
+rnode "VDD.t329" 0 39.5652 31892 217 0
+rnode "VDD.t41" 0 64.5377 32152 255 0
+rnode "VDD.t169" 0 53.0278 32520 258 0
+rnode "VDD.t43" 0 36.174 32668 258 0
+rnode "VDD.t266" 0 45.6286 32872 258 0
+rnode "VDD.t80" 0 45.6286 33112 220 0
+rnode "VDD.t270" 0 64.9488 33316 220 0
+rnode "VDD.t268" 0 71.0119 33744 262 0
+rnode "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 0 37.9209 34007 290 0
+rnode "VDD.t321" 0 31.8578 34113 243 0
+rnode "VDD.t185" 0 46.6562 34317 243 0
+rnode "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 0 38.5375 34567 290 0
+rnode "VDD.t306" 0 50.0474 34692 262 0
+rnode "VDD.n31" 0 65.4542 35054 121 0
+rnode "VDD.n32" 0 47.2643 35358 121 0
+rnode "VDD.t76" 0 3.46298 35878 255 0
+rnode "VDD.t182" 0 1.69632 35718 217 0
+rnode "VDD.n33" 0 7.35888 35770 241 0
+rnode "VDD.t320" 0 4.31953 36246 258 0
+rnode "VDD.t37" 0 2.30096 37042 220 0
+rnode "VDD.t102" 0 2.30096 36938 220 0
+rnode "VDD.n34" 0 4.90988 36990 241 0
+rnode "VDD.t35" 0 8.72706 37570 262 0
+rnode "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 0 31.8575 35543 290 0
+rnode "VDD.t181" 0 39.5652 35668 217 0
+rnode "VDD.t75" 0 64.5377 35928 255 0
+rnode "VDD.t319" 0 53.0278 36296 258 0
+rnode "VDD.t74" 0 36.174 36444 258 0
+rnode "VDD.t73" 0 45.6286 36648 258 0
+rnode "VDD.t101" 0 45.6286 36888 220 0
+rnode "VDD.t36" 0 64.9488 37092 220 0
+rnode "VDD.t34" 0 75.02 37520 262 0
+rnode "VDD.n35" 0 47.0587 37822 121 0
+rnode "VDD.t53" 0 3.46298 38342 255 0
+rnode "VDD.t217" 0 1.69632 38182 217 0
+rnode "VDD.n36" 0 7.35888 38234 241 0
+rnode "VDD.t295" 0 4.31953 38710 258 0
+rnode "VDD.t98" 0 2.30096 39506 220 0
+rnode "VDD.t172" 0 2.30096 39402 220 0
+rnode "VDD.n37" 0 4.90988 39454 241 0
+rnode "VDD.t96" 0 8.72706 40034 262 0
+rnode "VDD.t194" 0 7.52351 40303 243 0
+rnode "VDD.t244" 0 7.41938 40607 243 0
+rnode "VDD.t87" 0 8.58219 40882 262 0
+rnode "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 0 31.8575 38007 290 0
+rnode "VDD.t216" 0 39.5652 38132 217 0
+rnode "VDD.t52" 0 64.5377 38392 255 0
+rnode "VDD.t294" 0 53.0278 38760 258 0
+rnode "VDD.t54" 0 36.174 38908 258 0
+rnode "VDD.t333" 0 45.6286 39112 258 0
+rnode "VDD.t171" 0 45.6286 39352 220 0
+rnode "VDD.t97" 0 64.9488 39556 220 0
+rnode "VDD.t95" 0 71.0119 39984 262 0
+rnode "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 0 37.9209 40247 290 0
+rnode "VDD.t193" 0 31.8578 40353 243 0
+rnode "VDD.t243" 0 46.6562 40557 243 0
+rnode "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 0 38.5375 40807 290 0
+rnode "VDD.t86" 0 50.0474 40932 262 0
+rnode "VDD.n38" 0 65.4542 41294 121 0
+rnode "VDD.n39" 0 47.2643 41598 121 0
+rnode "VDD.t129" 0 3.46298 42118 255 0
+rnode "VDD.t240" 0 1.69632 41958 217 0
+rnode "VDD.n40" 0 7.35888 42010 241 0
+rnode "VDD.t196" 0 4.31953 42486 258 0
+rnode "VDD.t305" 0 2.30096 43282 220 0
+rnode "VDD.t21" 0 2.30096 43178 220 0
+rnode "VDD.n41" 0 4.90988 43230 241 0
+rnode "VDD.t303" 0 8.72706 43810 262 0
+rnode "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 0 31.8575 41783 290 0
+rnode "VDD.t239" 0 39.5652 41908 217 0
+rnode "VDD.t128" 0 64.5377 42168 255 0
+rnode "VDD.t195" 0 53.0278 42536 258 0
+rnode "VDD.t127" 0 36.174 42684 258 0
+rnode "VDD.t249" 0 45.6286 42888 258 0
+rnode "VDD.t20" 0 45.6286 43128 220 0
+rnode "VDD.t304" 0 64.9488 43332 220 0
+rnode "VDD.t302" 0 75.02 43760 262 0
+rnode "VDD.n42" 0 47.0587 44062 121 0
+rnode "VDD.t23" 0 3.46298 44582 255 0
+rnode "VDD.t261" 0 1.69632 44422 217 0
+rnode "VDD.n43" 0 7.35888 44474 241 0
+rnode "VDD.t274" 0 4.31953 44950 258 0
+rnode "VDD.t123" 0 2.30096 45746 220 0
+rnode "VDD.t208" 0 2.30096 45642 220 0
+rnode "VDD.n44" 0 4.90988 45694 241 0
+rnode "VDD.t125" 0 8.72706 46274 262 0
+rnode "VDD.t299" 0 7.52351 46543 243 0
+rnode "VDD.t236" 0 7.41938 46847 243 0
+rnode "VDD.t311" 0 8.58219 47122 262 0
+rnode "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 0 31.8575 44247 290 0
+rnode "VDD.t260" 0 39.5652 44372 217 0
+rnode "VDD.t22" 0 64.5377 44632 255 0
+rnode "VDD.t273" 0 53.0278 45000 258 0
+rnode "VDD.t24" 0 36.174 45148 258 0
+rnode "VDD.t287" 0 45.6286 45352 258 0
+rnode "VDD.t207" 0 45.6286 45592 220 0
+rnode "VDD.t122" 0 64.9488 45796 220 0
+rnode "VDD.t124" 0 71.0119 46224 262 0
+rnode "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 0 37.9209 46487 290 0
+rnode "VDD.t298" 0 31.8578 46593 243 0
+rnode "VDD.t235" 0 46.6562 46797 243 0
+rnode "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 0 38.5375 47047 290 0
+rnode "VDD.t310" 0 50.0474 47172 262 0
+rnode "VDD.n45" 0 65.4542 47534 121 0
+rnode "VDD.n46" 0 47.2643 47838 121 0
+rnode "VDD.t11" 0 3.46298 48358 255 0
+rnode "VDD.t228" 0 1.69632 48198 217 0
+rnode "VDD.n47" 0 7.35888 48250 241 0
+rnode "VDD.t297" 0 4.31953 48726 258 0
+rnode "VDD.t222" 0 2.30096 49522 220 0
+rnode "VDD.t100" 0 2.30096 49418 220 0
+rnode "VDD.n48" 0 4.90988 49470 241 0
+rnode "VDD.t224" 0 8.72706 50050 262 0
+rnode "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 0 31.8575 48023 290 0
+rnode "VDD.t227" 0 39.5652 48148 217 0
+rnode "VDD.t10" 0 64.5377 48408 255 0
+rnode "VDD.t296" 0 53.0278 48776 258 0
+rnode "VDD.t9" 0 36.174 48924 258 0
+rnode "VDD.t293" 0 45.6286 49128 258 0
+rnode "VDD.t99" 0 45.6286 49368 220 0
+rnode "VDD.t221" 0 64.9488 49572 220 0
+rnode "VDD.t223" 0 75.02 50000 262 0
+rnode "VDD.n49" 0 47.0587 50302 121 0
+rnode "VDD.t46" 0 3.46298 50822 255 0
+rnode "VDD.t328" 0 1.69632 50662 217 0
+rnode "VDD.n50" 0 7.35888 50714 241 0
+rnode "VDD.t64" 0 4.31953 51190 258 0
+rnode "VDD.t174" 0 2.30096 51986 220 0
+rnode "VDD.t212" 0 2.30096 51882 220 0
+rnode "VDD.n51" 0 4.90988 51934 241 0
+rnode "VDD.t176" 0 8.72706 52514 262 0
+rnode "VDD.t2" 0 7.52351 52783 243 0
+rnode "VDD.t263" 0 7.41938 53087 243 0
+rnode "VDD.t121" 0 8.58219 53362 262 0
+rnode "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 0 31.8575 50487 290 0
+rnode "VDD.t327" 0 39.5652 50612 217 0
+rnode "VDD.t45" 0 64.5377 50872 255 0
+rnode "VDD.t63" 0 53.0278 51240 258 0
+rnode "VDD.t44" 0 36.174 51388 258 0
+rnode "VDD.t277" 0 45.6286 51592 258 0
+rnode "VDD.t211" 0 45.6286 51832 220 0
+rnode "VDD.t173" 0 64.9488 52036 220 0
+rnode "VDD.t175" 0 71.0119 52464 262 0
+rnode "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 0 37.9209 52727 290 0
+rnode "VDD.t1" 0 31.8578 52833 243 0
+rnode "VDD.t262" 0 46.6562 53037 243 0
+rnode "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 0 38.5375 53287 290 0
+rnode "VDD.t120" 0 50.0474 53412 262 0
+rnode "VDD.n52" 0 65.4542 53774 121 0
+rnode "VDD.n53" 0 47.2643 54078 121 0
+rnode "VDD.t202" 0 3.46298 54598 255 0
+rnode "VDD.t147" 0 1.69632 54438 217 0
+rnode "VDD.n54" 0 7.35888 54490 241 0
+rnode "VDD.t4" 0 4.31953 54966 258 0
+rnode "VDD.t151" 0 2.30096 55762 220 0
+rnode "VDD.t332" 0 2.30096 55658 220 0
+rnode "VDD.n55" 0 4.90988 55710 241 0
+rnode "VDD.t149" 0 8.72706 56290 262 0
+rnode "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 0 31.8575 54263 290 0
+rnode "VDD.t146" 0 39.5652 54388 217 0
+rnode "VDD.t201" 0 64.5377 54648 255 0
+rnode "VDD.t3" 0 53.0278 55016 258 0
+rnode "VDD.t203" 0 36.174 55164 258 0
+rnode "VDD.t0" 0 45.6286 55368 258 0
+rnode "VDD.t331" 0 45.6286 55608 220 0
+rnode "VDD.t150" 0 64.9488 55812 220 0
+rnode "VDD.t148" 0 75.02 56240 262 0
+rnode "VDD.n56" 0 47.0587 56542 121 0
+rnode "VDD.t220" 0 3.46298 57062 255 0
+rnode "VDD.t116" 0 1.69632 56902 217 0
+rnode "VDD.n57" 0 7.35888 56954 241 0
+rnode "VDD.t69" 0 4.31953 57430 258 0
+rnode "VDD.t200" 0 2.30096 58226 220 0
+rnode "VDD.t6" 0 2.30096 58122 220 0
+rnode "VDD.n58" 0 4.90988 58174 241 0
+rnode "VDD.t198" 0 8.72706 58754 262 0
+rnode "VDD.t292" 0 7.52351 59023 243 0
+rnode "VDD.t234" 0 7.41938 59327 243 0
+rnode "VDD.t51" 0 8.58219 59602 262 0
+rnode "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 0 31.8575 56727 290 0
+rnode "VDD.t115" 0 39.5652 56852 217 0
+rnode "VDD.t219" 0 64.5377 57112 255 0
+rnode "VDD.t68" 0 53.0278 57480 258 0
+rnode "VDD.t218" 0 36.174 57628 258 0
+rnode "VDD.t158" 0 45.6286 57832 258 0
+rnode "VDD.t5" 0 45.6286 58072 220 0
+rnode "VDD.t199" 0 64.9488 58276 220 0
+rnode "VDD.t197" 0 71.0119 58704 262 0
+rnode "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 0 37.9209 58967 290 0
+rnode "VDD.t291" 0 31.8578 59073 243 0
+rnode "VDD.t233" 0 46.6562 59277 243 0
+rnode "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 0 38.5375 59527 290 0
+rnode "VDD.t50" 0 50.6973 59652 262 0
+rnode "VDD.n59" 0 130.62 59550 424 0
+rnode "VDD.n60" 0 19.8413 59379 424 0
+rnode "VDD.n61" 0 20.9505 58971 424 0
+rnode "VDD.n62" 0 28.4942 58806 424 0
+rnode "VDD.n63" 0 44.7954 58174 424 0
+rnode "VDD.n64" 0 40.4247 57378 424 0
+rnode "VDD.n65" 0 27.8268 56954 424 0
+rnode "VDD.n66" 0 25.0132 56538 424 0
+rnode "VDD.n67" 0 29.3888 56342 424 0
+rnode "VDD.n68" 0 44.7954 55710 424 0
+rnode "VDD.n69" 0 40.4247 54914 424 0
+rnode "VDD.n70" 0 19.6888 54490 424 0
+rnode "DFF_2phase_1$1_0.VDD" 0 12.005 54356 540 0
+rnode "VDD.n71" 0 19.9342 54074 424 0
+rnode "DFF_2phase_1$1_0.VDD" 0 8.77288 53920 546 0
+rnode "VDD.n72" 0 24.9555 53770 424 0
+rnode "VDD.n73" 0 23.0226 53310 424 0
+rnode "VDD.n74" 0 19.8413 53139 424 0
+rnode "VDD.n75" 0 20.9505 52731 424 0
+rnode "VDD.n76" 0 28.4942 52566 424 0
+rnode "VDD.n77" 0 44.7954 51934 424 0
+rnode "VDD.n78" 0 40.4247 51138 424 0
+rnode "VDD.n79" 0 27.8268 50714 424 0
+rnode "VDD.n80" 0 25.0132 50298 424 0
+rnode "VDD.n81" 0 29.3888 50102 424 0
+rnode "VDD.n82" 0 44.7954 49470 424 0
+rnode "VDD.n83" 0 40.4247 48674 424 0
+rnode "VDD.n84" 0 19.6888 48250 424 0
+rnode "DFF_2phase_1$1_1.VDD" 0 12.005 48116 540 0
+rnode "VDD.n85" 0 19.9342 47834 424 0
+rnode "DFF_2phase_1$1_1.VDD" 0 8.77288 47680 546 0
+rnode "VDD.n86" 0 24.9555 47530 424 0
+rnode "VDD.n87" 0 23.0226 47070 424 0
+rnode "VDD.n88" 0 19.8413 46899 424 0
+rnode "VDD.n89" 0 20.9505 46491 424 0
+rnode "VDD.n90" 0 28.4942 46326 424 0
+rnode "VDD.n91" 0 44.7954 45694 424 0
+rnode "VDD.n92" 0 40.4247 44898 424 0
+rnode "VDD.n93" 0 27.8268 44474 424 0
+rnode "VDD.n94" 0 25.0132 44058 424 0
+rnode "VDD.n95" 0 29.3888 43862 424 0
+rnode "VDD.n96" 0 44.7954 43230 424 0
+rnode "VDD.n97" 0 40.4247 42434 424 0
+rnode "VDD.n98" 0 19.6888 42010 424 0
+rnode "DFF_2phase_1$1_2.VDD" 0 12.005 41876 540 0
+rnode "VDD.n99" 0 19.9342 41594 424 0
+rnode "DFF_2phase_1$1_2.VDD" 0 8.77288 41440 546 0
+rnode "VDD.n100" 0 24.9555 41290 424 0
+rnode "VDD.n101" 0 23.0226 40830 424 0
+rnode "VDD.n102" 0 19.8413 40659 424 0
+rnode "VDD.n103" 0 20.9505 40251 424 0
+rnode "VDD.n104" 0 28.4942 40086 424 0
+rnode "VDD.n105" 0 44.7954 39454 424 0
+rnode "VDD.n106" 0 40.4247 38658 424 0
+rnode "VDD.n107" 0 27.8268 38234 424 0
+rnode "VDD.n108" 0 25.0132 37818 424 0
+rnode "VDD.n109" 0 29.3888 37622 424 0
+rnode "VDD.n110" 0 44.7954 36990 424 0
+rnode "VDD.n111" 0 40.4247 36194 424 0
+rnode "VDD.n112" 0 19.6888 35770 424 0
+rnode "DFF_2phase_1$1_3.VDD" 0 12.005 35636 540 0
+rnode "VDD.n113" 0 19.9342 35354 424 0
+rnode "DFF_2phase_1$1_3.VDD" 0 8.77288 35200 546 0
+rnode "VDD.n114" 0 24.9555 35050 424 0
+rnode "VDD.n115" 0 23.0226 34590 424 0
+rnode "VDD.n116" 0 19.8413 34419 424 0
+rnode "VDD.n117" 0 20.9505 34011 424 0
+rnode "VDD.n118" 0 28.4942 33846 424 0
+rnode "VDD.n119" 0 44.7954 33214 424 0
+rnode "VDD.n120" 0 40.4247 32418 424 0
+rnode "VDD.n121" 0 27.8268 31994 424 0
+rnode "VDD.n122" 0 25.0132 31578 424 0
+rnode "VDD.n123" 0 29.3888 31382 424 0
+rnode "VDD.n124" 0 44.7954 30750 424 0
+rnode "VDD.n125" 0 40.4247 29954 424 0
+rnode "VDD.n126" 0 19.6888 29530 424 0
+rnode "DFF_2phase_1$1_4.VDD" 0 12.005 29396 540 0
+rnode "VDD.n127" 0 19.9342 29114 424 0
+rnode "DFF_2phase_1$1_4.VDD" 0 8.77288 28960 546 0
+rnode "VDD.n128" 0 24.9555 28810 424 0
+rnode "VDD.n129" 0 23.0226 28350 424 0
+rnode "VDD.n130" 0 19.8413 28179 424 0
+rnode "VDD.n131" 0 20.9505 27771 424 0
+rnode "VDD.n132" 0 28.4942 27606 424 0
+rnode "VDD.n133" 0 44.7954 26974 424 0
+rnode "VDD.n134" 0 40.4247 26178 424 0
+rnode "VDD.n135" 0 27.8268 25754 424 0
+rnode "VDD.n136" 0 25.0132 25338 424 0
+rnode "VDD.n137" 0 29.3888 25142 424 0
+rnode "VDD.n138" 0 44.7954 24510 424 0
+rnode "VDD.n139" 0 40.4247 23714 424 0
+rnode "VDD.n140" 0 19.6888 23290 424 0
+rnode "DFF_2phase_1$1_5.VDD" 0 12.005 23156 540 0
+rnode "VDD.n141" 0 19.9342 22874 424 0
+rnode "DFF_2phase_1$1_5.VDD" 0 8.77288 22720 546 0
+rnode "VDD.n142" 0 24.9555 22570 424 0
+rnode "VDD.n143" 0 23.0226 22110 424 0
+rnode "VDD.n144" 0 19.8413 21939 424 0
+rnode "VDD.n145" 0 20.9505 21531 424 0
+rnode "VDD.n146" 0 28.4942 21366 424 0
+rnode "VDD.n147" 0 44.7954 20734 424 0
+rnode "VDD.n148" 0 40.4247 19938 424 0
+rnode "VDD.n149" 0 27.8268 19514 424 0
+rnode "VDD.n150" 0 25.0132 19098 424 0
+rnode "VDD.n151" 0 29.3888 18902 424 0
+rnode "VDD.n152" 0 44.7954 18270 424 0
+rnode "VDD.n153" 0 40.4247 17474 424 0
+rnode "VDD.n154" 0 19.6888 17050 424 0
+rnode "DFF_2phase_1$1_6.VDD" 0 12.005 16916 540 0
+rnode "VDD.n155" 0 19.9342 16634 424 0
+rnode "DFF_2phase_1$1_6.VDD" 0 8.77288 16480 546 0
+rnode "VDD.n156" 0 24.9555 16330 424 0
+rnode "VDD.n157" 0 23.0226 15870 424 0
+rnode "VDD.n158" 0 19.8413 15699 424 0
+rnode "VDD.n159" 0 20.9505 15291 424 0
+rnode "VDD.n160" 0 28.4942 15126 424 0
+rnode "VDD.n161" 0 44.7954 14494 424 0
+rnode "VDD.n162" 0 40.4247 13698 424 0
+rnode "VDD.n163" 0 27.8268 13274 424 0
+rnode "VDD.n164" 0 25.0132 12858 424 0
+rnode "VDD.n165" 0 29.3888 12662 424 0
+rnode "VDD.n166" 0 44.7954 12030 424 0
+rnode "VDD.n167" 0 40.4247 11234 424 0
+rnode "VDD.n168" 0 19.6888 10810 424 0
+rnode "DFF_2phase_1$1_7.VDD" 0 12.005 10676 540 0
+rnode "VDD.n169" 0 19.9342 10394 424 0
+rnode "DFF_2phase_1$1_7.VDD" 0 8.77288 10240 546 0
+rnode "VDD.n170" 0 24.9555 10090 424 0
+rnode "VDD.n171" 0 23.0226 9630 424 0
+rnode "VDD.n172" 0 19.8413 9459 424 0
+rnode "VDD.n173" 0 20.9505 9051 424 0
+rnode "VDD.n174" 0 28.4942 8886 424 0
+rnode "VDD.n175" 0 44.7954 8254 424 0
+rnode "VDD.n176" 0 40.4247 7458 424 0
+rnode "VDD.n177" 0 27.8268 7034 424 0
+rnode "VDD.t17" 0 8.72706 6370 262 0
+rnode "VDD.t19" 0 2.30096 5842 220 0
+rnode "VDD.t309" 0 2.30096 5738 220 0
+rnode "VDD.n178" 0 4.90988 5790 241 0
+rnode "VDD.t190" 0 4.31953 5046 258 0
+rnode "VDD.t157" 0 3.46298 4678 255 0
+rnode "VDD.t242" 0 1.69632 4518 217 0
+rnode "VDD.n179" 0 7.35888 4570 241 0
+rnode "DFF_2phase_1$1_9.VDD" 0 12.005 4436 540 0
+rnode "VDD.n180" 0 19.6888 4570 424 0
+rnode "VDD.n181" 0 40.4247 4994 424 0
+rnode "VDD.n182" 0 44.7954 5790 424 0
+rnode "VDD.n183" 0 29.3888 6422 424 0
+rnode "VDD.n184" 0 25.0132 6618 424 0
+rnode "VDD.n185" 0 47.0587 6622 121 0
+rnode "VDD.t16" 0 75.02 6320 262 0
+rnode "VDD.t18" 0 64.9488 5892 220 0
+rnode "VDD.t308" 0 45.6286 5688 220 0
+rnode "VDD.t79" 0 45.6286 5448 258 0
+rnode "VDD.t155" 0 36.174 5244 258 0
+rnode "VDD.t189" 0 53.0278 5096 258 0
+rnode "VDD.t156" 0 64.5377 4728 255 0
+rnode "VDD.t241" 0 39.5652 4468 217 0
+rnode "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 0 31.8575 4343 290 0
+rnode "VDD.n186" 0 47.2643 4158 121 0
+rnode "VDD.n187" 0 65.4542 3854 121 0
+rnode "VDD.t104" 0 8.58219 3442 262 0
+rnode "VDD.t246" 0 7.41938 3167 243 0
+rnode "VDD.t226" 0 7.52351 2863 243 0
+rnode "VDD.t13" 0 8.72706 2594 262 0
+rnode "VDD.t15" 0 2.30096 2066 220 0
+rnode "VDD.t335" 0 2.30096 1962 220 0
+rnode "VDD.n188" 0 4.90988 2014 241 0
+rnode "VDD.t301" 0 4.31953 1270 258 0
+rnode "VDD.t67" 0 3.46298 902 255 0
+rnode "VDD.t112" 0 1.69632 742 217 0
+rnode "VDD.n189" 0 7.35888 794 241 0
+rnode "VDD.t103" 0 50.0474 3492 262 0
+rnode "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 0 38.5375 3367 290 0
+rnode "VDD.t245" 0 46.6562 3117 243 0
+rnode "VDD.t225" 0 31.8578 2913 243 0
+rnode "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 0 37.9209 2807 290 0
+rnode "VDD.t12" 0 71.0119 2544 262 0
+rnode "VDD.t14" 0 64.9488 2116 220 0
+rnode "VDD.t334" 0 45.6286 1912 220 0
+rnode "VDD.t94" 0 45.6286 1672 258 0
+rnode "VDD.t65" 0 36.174 1468 258 0
+rnode "VDD.t300" 0 53.0278 1320 258 0
+rnode "VDD.t66" 0 64.5377 952 255 0
+rnode "VDD.t111" 0 39.5652 692 217 0
+rnode "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 0 31.8575 567 290 0
+rnode "VDD.n190" 0 47.0587 382 121 0
+rnode "VDD.t33" 0 8.72706 130 262 0
+rnode "VDD.t31" 0 2.30096 -398 220 0
+rnode "VDD.t93" 0 2.30096 -502 220 0
+rnode "VDD.n191" 0 4.90988 -450 241 0
+rnode "VDD.t210" 0 4.31953 -1194 258 0
+rnode "VDD.t28" 0 3.46298 -1562 255 0
+rnode "VDD.t255" 0 1.69632 -1722 217 0
+rnode "VDD.n192" 0 7.35888 -1670 241 0
+rnode "VDD.t32" 0 75.02 80 262 0
+rnode "VDD.t30" 0 64.9488 -348 220 0
+rnode "VDD.t92" 0 45.6286 -552 220 0
+rnode "VDD.t58" 0 45.6286 -792 258 0
+rnode "VDD.t29" 0 36.174 -996 258 0
+rnode "VDD.t209" 0 53.0278 -1144 258 0
+rnode "VDD.t27" 0 64.5377 -1512 255 0
+rnode "VDD.t254" 0 39.5652 -1772 217 0
+rnode "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 0 32.7267 -1897 290 0
+rnode "VDD" 0 1.29862 -2267 490 0
+rnode "DFF_2phase_1$1_8.VDD" 0 5.22332 -2240 546 0
+rnode "VDD.n193" 0 74.9617 -2086 424 0
+rnode "DFF_2phase_1$1_8.VDD" 0 12.005 -1804 540 0
+rnode "VDD.n194" 0 19.6888 -1670 424 0
+rnode "VDD.n195" 0 40.4247 -1246 424 0
+rnode "VDD.n196" 0 44.7954 -450 424 0
+rnode "VDD.n197" 0 29.3888 182 424 0
+rnode "VDD.n198" 0 25.0132 378 424 0
+rnode "VDD.n199" 0 27.8268 794 424 0
+rnode "VDD.n200" 0 40.4247 1218 424 0
+rnode "VDD.n201" 0 44.7954 2014 424 0
+rnode "VDD.n202" 0 28.4942 2646 424 0
+rnode "VDD.n203" 0 20.9505 2811 424 0
+rnode "VDD.n204" 0 19.8413 3219 424 0
+rnode "VDD.n205" 0 23.0226 3390 424 0
+rnode "VDD.n206" 0 24.9555 3850 424 0
+rnode "DFF_2phase_1$1_9.VDD" 0 8.77288 4000 546 0
+resist "DFF_2phase_1$1_8.VDD" "VDD" 0.0135
+resist "VDD.n194" "DFF_2phase_1$1_8.VDD" 0.067
+resist "VDD.n180" "DFF_2phase_1$1_9.VDD" 0.067
+resist "DFF_2phase_1$1_7.VDD" "VDD.n168" 0.067
+resist "DFF_2phase_1$1_6.VDD" "VDD.n154" 0.067
+resist "DFF_2phase_1$1_5.VDD" "VDD.n140" 0.067
+resist "DFF_2phase_1$1_4.VDD" "VDD.n126" 0.067
+resist "DFF_2phase_1$1_3.VDD" "VDD.n112" 0.067
+resist "DFF_2phase_1$1_2.VDD" "VDD.n98" 0.067
+resist "DFF_2phase_1$1_1.VDD" "VDD.n84" 0.067
+resist "DFF_2phase_1$1_0.VDD" "VDD.n70" 0.067
+resist "DFF_2phase_1$1_9.VDD" "VDD.n206" 0.075
+resist "VDD.n170" "DFF_2phase_1$1_7.VDD" 0.075
+resist "VDD.n156" "DFF_2phase_1$1_6.VDD" 0.075
+resist "VDD.n142" "DFF_2phase_1$1_5.VDD" 0.075
+resist "VDD.n128" "DFF_2phase_1$1_4.VDD" 0.075
+resist "VDD.n114" "DFF_2phase_1$1_3.VDD" 0.075
+resist "VDD.n100" "DFF_2phase_1$1_2.VDD" 0.075
+resist "VDD.n86" "DFF_2phase_1$1_1.VDD" 0.075
+resist "VDD.n72" "DFF_2phase_1$1_0.VDD" 0.075
+resist "VDD.n193" "DFF_2phase_1$1_8.VDD" 0.077
+resist "DFF_2phase_1$1_9.VDD" "VDD.n0" 0.077
+resist "DFF_2phase_1$1_7.VDD" "VDD.n169" 0.077
+resist "DFF_2phase_1$1_6.VDD" "VDD.n155" 0.077
+resist "DFF_2phase_1$1_5.VDD" "VDD.n141" 0.077
+resist "DFF_2phase_1$1_4.VDD" "VDD.n127" 0.077
+resist "DFF_2phase_1$1_3.VDD" "VDD.n113" 0.077
+resist "DFF_2phase_1$1_2.VDD" "VDD.n99" 0.077
+resist "DFF_2phase_1$1_1.VDD" "VDD.n85" 0.077
+resist "DFF_2phase_1$1_0.VDD" "VDD.n71" 0.077
+resist "VDD.n203" "VDD.n202" 0.0825
+resist "VDD.n174" "VDD.n173" 0.0825
+resist "VDD.n160" "VDD.n159" 0.0825
+resist "VDD.n146" "VDD.n145" 0.0825
+resist "VDD.n132" "VDD.n131" 0.0825
+resist "VDD.n118" "VDD.n117" 0.0825
+resist "VDD.n104" "VDD.n103" 0.0825
+resist "VDD.n90" "VDD.n89" 0.0825
+resist "VDD.n76" "VDD.n75" 0.0825
+resist "VDD.n62" "VDD.n61" 0.0825
+resist "VDD.n205" "VDD.n204" 0.0855
+resist "VDD.n172" "VDD.n171" 0.0855
+resist "VDD.n158" "VDD.n157" 0.0855
+resist "VDD.n144" "VDD.n143" 0.0855
+resist "VDD.n130" "VDD.n129" 0.0855
+resist "VDD.n116" "VDD.n115" 0.0855
+resist "VDD.n102" "VDD.n101" 0.0855
+resist "VDD.n88" "VDD.n87" 0.0855
+resist "VDD.n74" "VDD.n73" 0.0855
+resist "VDD.n60" "VDD.n59" 0.0855
+resist "VDD.n198" "VDD.n197" 0.098
+resist "VDD.n184" "VDD.n183" 0.098
+resist "VDD.n165" "VDD.n164" 0.098
+resist "VDD.n151" "VDD.n150" 0.098
+resist "VDD.n137" "VDD.n136" 0.098
+resist "VDD.n123" "VDD.n122" 0.098
+resist "VDD.n109" "VDD.n108" 0.098
+resist "VDD.n95" "VDD.n94" 0.098
+resist "VDD.n81" "VDD.n80" 0.098
+resist "VDD.n67" "VDD.n66" 0.098
+resist "DFF_2phase_1$1_8.VDD" "VDD.n193" 0.141
+resist "DFF_2phase_1$1_9.VDD" "VDD.n0" 0.141
+resist "VDD.n169" "DFF_2phase_1$1_7.VDD" 0.141
+resist "VDD.n155" "DFF_2phase_1$1_6.VDD" 0.141
+resist "VDD.n141" "DFF_2phase_1$1_5.VDD" 0.141
+resist "VDD.n127" "DFF_2phase_1$1_4.VDD" 0.141
+resist "VDD.n113" "DFF_2phase_1$1_3.VDD" 0.141
+resist "VDD.n99" "DFF_2phase_1$1_2.VDD" 0.141
+resist "VDD.n85" "DFF_2phase_1$1_1.VDD" 0.141
+resist "VDD.n71" "DFF_2phase_1$1_0.VDD" 0.141
+resist "VDD.n204" "VDD.n203" 0.204
+resist "VDD.n173" "VDD.n172" 0.204
+resist "VDD.n159" "VDD.n158" 0.204
+resist "VDD.n145" "VDD.n144" 0.204
+resist "VDD.n131" "VDD.n130" 0.204
+resist "VDD.n117" "VDD.n116" 0.204
+resist "VDD.n103" "VDD.n102" 0.204
+resist "VDD.n89" "VDD.n88" 0.204
+resist "VDD.n75" "VDD.n74" 0.204
+resist "VDD.n61" "VDD.n60" 0.204
+resist "VDD.n199" "VDD.n198" 0.208
+resist "VDD.n184" "VDD.n177" 0.208
+resist "VDD.n164" "VDD.n163" 0.208
+resist "VDD.n150" "VDD.n149" 0.208
+resist "VDD.n136" "VDD.n135" 0.208
+resist "VDD.n122" "VDD.n121" 0.208
+resist "VDD.n108" "VDD.n107" 0.208
+resist "VDD.n94" "VDD.n93" 0.208
+resist "VDD.n80" "VDD.n79" 0.208
+resist "VDD.n66" "VDD.n65" 0.208
+resist "VDD.n195" "VDD.n194" 0.212
+resist "VDD.n200" "VDD.n199" 0.212
+resist "VDD.n181" "VDD.n180" 0.212
+resist "VDD.n177" "VDD.n176" 0.212
+resist "VDD.n168" "VDD.n167" 0.212
+resist "VDD.n163" "VDD.n162" 0.212
+resist "VDD.n154" "VDD.n153" 0.212
+resist "VDD.n149" "VDD.n148" 0.212
+resist "VDD.n140" "VDD.n139" 0.212
+resist "VDD.n135" "VDD.n134" 0.212
+resist "VDD.n126" "VDD.n125" 0.212
+resist "VDD.n121" "VDD.n120" 0.212
+resist "VDD.n112" "VDD.n111" 0.212
+resist "VDD.n107" "VDD.n106" 0.212
+resist "VDD.n98" "VDD.n97" 0.212
+resist "VDD.n93" "VDD.n92" 0.212
+resist "VDD.n84" "VDD.n83" 0.212
+resist "VDD.n79" "VDD.n78" 0.212
+resist "VDD.n70" "VDD.n69" 0.212
+resist "VDD.n65" "VDD.n64" 0.212
+resist "VDD.n206" "VDD.n205" 0.23
+resist "VDD.n171" "VDD.n170" 0.23
+resist "VDD.n157" "VDD.n156" 0.23
+resist "VDD.n143" "VDD.n142" 0.23
+resist "VDD.n129" "VDD.n128" 0.23
+resist "VDD.n115" "VDD.n114" 0.23
+resist "VDD.n101" "VDD.n100" 0.23
+resist "VDD.n87" "VDD.n86" 0.23
+resist "VDD.n73" "VDD.n72" 0.23
+resist "VDD.n197" "VDD.n196" 0.316
+resist "VDD.n202" "VDD.n201" 0.316
+resist "VDD.n183" "VDD.n182" 0.316
+resist "VDD.n175" "VDD.n174" 0.316
+resist "VDD.n166" "VDD.n165" 0.316
+resist "VDD.n161" "VDD.n160" 0.316
+resist "VDD.n152" "VDD.n151" 0.316
+resist "VDD.n147" "VDD.n146" 0.316
+resist "VDD.n138" "VDD.n137" 0.316
+resist "VDD.n133" "VDD.n132" 0.316
+resist "VDD.n124" "VDD.n123" 0.316
+resist "VDD.n119" "VDD.n118" 0.316
+resist "VDD.n110" "VDD.n109" 0.316
+resist "VDD.n105" "VDD.n104" 0.316
+resist "VDD.n96" "VDD.n95" 0.316
+resist "VDD.n91" "VDD.n90" 0.316
+resist "VDD.n82" "VDD.n81" 0.316
+resist "VDD.n77" "VDD.n76" 0.316
+resist "VDD.n68" "VDD.n67" 0.316
+resist "VDD.n63" "VDD.n62" 0.316
+resist "VDD.n196" "VDD.n195" 0.398
+resist "VDD.n201" "VDD.n200" 0.398
+resist "VDD.n182" "VDD.n181" 0.398
+resist "VDD.n176" "VDD.n175" 0.398
+resist "VDD.n167" "VDD.n166" 0.398
+resist "VDD.n162" "VDD.n161" 0.398
+resist "VDD.n153" "VDD.n152" 0.398
+resist "VDD.n148" "VDD.n147" 0.398
+resist "VDD.n139" "VDD.n138" 0.398
+resist "VDD.n134" "VDD.n133" 0.398
+resist "VDD.n125" "VDD.n124" 0.398
+resist "VDD.n120" "VDD.n119" 0.398
+resist "VDD.n111" "VDD.n110" 0.398
+resist "VDD.n106" "VDD.n105" 0.398
+resist "VDD.n97" "VDD.n96" 0.398
+resist "VDD.n92" "VDD.n91" 0.398
+resist "VDD.n83" "VDD.n82" 0.398
+resist "VDD.n78" "VDD.n77" 0.398
+resist "VDD.n69" "VDD.n68" 0.398
+resist "VDD.n64" "VDD.n63" 0.398
+resist "VDD.n58" "VDD.t6" 1.31884
+resist "VDD.n58" "VDD.t200" 1.31884
+resist "VDD.n55" "VDD.t332" 1.31884
+resist "VDD.n55" "VDD.t151" 1.31884
+resist "VDD.n51" "VDD.t212" 1.31884
+resist "VDD.n51" "VDD.t174" 1.31884
+resist "VDD.n48" "VDD.t100" 1.31884
+resist "VDD.n48" "VDD.t222" 1.31884
+resist "VDD.n44" "VDD.t208" 1.31884
+resist "VDD.n44" "VDD.t123" 1.31884
+resist "VDD.n41" "VDD.t21" 1.31884
+resist "VDD.n41" "VDD.t305" 1.31884
+resist "VDD.n37" "VDD.t172" 1.31884
+resist "VDD.n37" "VDD.t98" 1.31884
+resist "VDD.n34" "VDD.t102" 1.31884
+resist "VDD.n34" "VDD.t37" 1.31884
+resist "VDD.n30" "VDD.t81" 1.31884
+resist "VDD.n30" "VDD.t271" 1.31884
+resist "VDD.n27" "VDD.t40" 1.31884
+resist "VDD.n27" "VDD.t160" 1.31884
+resist "VDD.n23" "VDD.t139" 1.31884
+resist "VDD.n23" "VDD.t137" 1.31884
+resist "VDD.n20" "VDD.t89" 1.31884
+resist "VDD.n20" "VDD.t85" 1.31884
+resist "VDD.n16" "VDD.t108" 1.31884
+resist "VDD.n16" "VDD.t60" 1.31884
+resist "VDD.n13" "VDD.t279" 1.31884
+resist "VDD.n13" "VDD.t168" 1.31884
+resist "VDD.n9" "VDD.t26" 1.31884
+resist "VDD.n9" "VDD.t133" 1.31884
+resist "VDD.n6" "VDD.t8" 1.31884
+resist "VDD.n6" "VDD.t339" 1.31884
+resist "VDD.n2" "VDD.t230" 1.31884
+resist "VDD.n2" "VDD.t178" 1.31884
+resist "VDD.n178" "VDD.t309" 1.31884
+resist "VDD.n178" "VDD.t19" 1.31884
+resist "VDD.n188" "VDD.t335" 1.31884
+resist "VDD.n188" "VDD.t15" 1.31884
+resist "VDD.n191" "VDD.t93" 1.31884
+resist "VDD.n191" "VDD.t31" 1.31884
+resist "VDD.n57" "VDD.t116" 1.53282
+resist "VDD.n54" "VDD.t147" 1.53282
+resist "VDD.n50" "VDD.t328" 1.53282
+resist "VDD.n47" "VDD.t228" 1.53282
+resist "VDD.n43" "VDD.t261" 1.53282
+resist "VDD.n40" "VDD.t240" 1.53282
+resist "VDD.n36" "VDD.t217" 1.53282
+resist "VDD.n33" "VDD.t182" 1.53282
+resist "VDD.n29" "VDD.t330" 1.53282
+resist "VDD.n26" "VDD.t145" 1.53282
+resist "VDD.n22" "VDD.t326" 1.53282
+resist "VDD.n19" "VDD.t253" 1.53282
+resist "VDD.n15" "VDD.t259" 1.53282
+resist "VDD.n12" "VDD.t184" 1.53282
+resist "VDD.n8" "VDD.t110" 1.53282
+resist "VDD.n5" "VDD.t251" 1.53282
+resist "VDD.n1" "VDD.t114" 1.53282
+resist "VDD.n179" "VDD.t242" 1.53282
+resist "VDD.n189" "VDD.t112" 1.53282
+resist "VDD.n192" "VDD.t255" 1.53282
+resist "VDD.n63" "VDD.n58" 2.95804
+resist "VDD.n65" "VDD.n57" 2.95804
+resist "VDD.n68" "VDD.n55" 2.95804
+resist "VDD.n70" "VDD.n54" 2.95804
+resist "VDD.n77" "VDD.n51" 2.95804
+resist "VDD.n79" "VDD.n50" 2.95804
+resist "VDD.n82" "VDD.n48" 2.95804
+resist "VDD.n84" "VDD.n47" 2.95804
+resist "VDD.n91" "VDD.n44" 2.95804
+resist "VDD.n93" "VDD.n43" 2.95804
+resist "VDD.n96" "VDD.n41" 2.95804
+resist "VDD.n98" "VDD.n40" 2.95804
+resist "VDD.n105" "VDD.n37" 2.95804
+resist "VDD.n107" "VDD.n36" 2.95804
+resist "VDD.n110" "VDD.n34" 2.95804
+resist "VDD.n112" "VDD.n33" 2.95804
+resist "VDD.n119" "VDD.n30" 2.95804
+resist "VDD.n121" "VDD.n29" 2.95804
+resist "VDD.n124" "VDD.n27" 2.95804
+resist "VDD.n126" "VDD.n26" 2.95804
+resist "VDD.n133" "VDD.n23" 2.95804
+resist "VDD.n135" "VDD.n22" 2.95804
+resist "VDD.n138" "VDD.n20" 2.95804
+resist "VDD.n140" "VDD.n19" 2.95804
+resist "VDD.n147" "VDD.n16" 2.95804
+resist "VDD.n149" "VDD.n15" 2.95804
+resist "VDD.n152" "VDD.n13" 2.95804
+resist "VDD.n154" "VDD.n12" 2.95804
+resist "VDD.n161" "VDD.n9" 2.95804
+resist "VDD.n163" "VDD.n8" 2.95804
+resist "VDD.n166" "VDD.n6" 2.95804
+resist "VDD.n168" "VDD.n5" 2.95804
+resist "VDD.n175" "VDD.n2" 2.95804
+resist "VDD.n177" "VDD.n1" 2.95804
+resist "VDD.n182" "VDD.n178" 2.95804
+resist "VDD.n180" "VDD.n179" 2.95804
+resist "VDD.n201" "VDD.n188" 2.95804
+resist "VDD.n199" "VDD.n189" 2.95804
+resist "VDD.n196" "VDD.n191" 2.95804
+resist "VDD.n194" "VDD.n192" 2.95804
+resist "VDD.n57" "VDD.t220" 3.78
+resist "VDD.n54" "VDD.t202" 3.78
+resist "VDD.n50" "VDD.t46" 3.78
+resist "VDD.n47" "VDD.t11" 3.78
+resist "VDD.n43" "VDD.t23" 3.78
+resist "VDD.n40" "VDD.t129" 3.78
+resist "VDD.n36" "VDD.t53" 3.78
+resist "VDD.n33" "VDD.t76" 3.78
+resist "VDD.n29" "VDD.t42" 3.78
+resist "VDD.n26" "VDD.t282" 3.78
+resist "VDD.n22" "VDD.t154" 3.78
+resist "VDD.n19" "VDD.t289" 3.78
+resist "VDD.n15" "VDD.t72" 3.78
+resist "VDD.n12" "VDD.t314" 3.78
+resist "VDD.n8" "VDD.t57" 3.78
+resist "VDD.n5" "VDD.t206" 3.78
+resist "VDD.n1" "VDD.t215" 3.78
+resist "VDD.n179" "VDD.t157" 3.78
+resist "VDD.n189" "VDD.t67" 3.78
+resist "VDD.n192" "VDD.t28" 3.78
+resist "VDD.n59" "VDD.t51" 3.84301
+resist "VDD.n73" "VDD.t121" 3.84301
+resist "VDD.n87" "VDD.t311" 3.84301
+resist "VDD.n101" "VDD.t87" 3.84301
+resist "VDD.n115" "VDD.t307" 3.84301
+resist "VDD.n129" "VDD.t192" 3.84301
+resist "VDD.n143" "VDD.t284" 3.84301
+resist "VDD.n157" "VDD.t316" 3.84301
+resist "VDD.n171" "VDD.t106" 3.84301
+resist "VDD.n205" "VDD.t104" 3.84301
+resist "VDD.n61" "VDD.t292" 3.90008
+resist "VDD.n75" "VDD.t2" 3.90008
+resist "VDD.n89" "VDD.t299" 3.90008
+resist "VDD.n103" "VDD.t194" 3.90008
+resist "VDD.n117" "VDD.t322" 3.90008
+resist "VDD.n131" "VDD.t91" 3.90008
+resist "VDD.n145" "VDD.t248" 3.90008
+resist "VDD.n159" "VDD.t119" 3.90008
+resist "VDD.n173" "VDD.t265" 3.90008
+resist "VDD.n203" "VDD.t226" 3.90008
+resist "VDD.n62" "VDD.t198" 3.95258
+resist "VDD.n67" "VDD.t149" 3.95258
+resist "VDD.n76" "VDD.t176" 3.95258
+resist "VDD.n81" "VDD.t224" 3.95258
+resist "VDD.n90" "VDD.t125" 3.95258
+resist "VDD.n95" "VDD.t303" 3.95258
+resist "VDD.n104" "VDD.t96" 3.95258
+resist "VDD.n109" "VDD.t35" 3.95258
+resist "VDD.n118" "VDD.t269" 3.95258
+resist "VDD.n123" "VDD.t162" 3.95258
+resist "VDD.n132" "VDD.t135" 3.95258
+resist "VDD.n137" "VDD.t83" 3.95258
+resist "VDD.n146" "VDD.t62" 3.95258
+resist "VDD.n151" "VDD.t166" 3.95258
+resist "VDD.n160" "VDD.t131" 3.95258
+resist "VDD.n165" "VDD.t337" 3.95258
+resist "VDD.n174" "VDD.t180" 3.95258
+resist "VDD.n183" "VDD.t17" 3.95258
+resist "VDD.n202" "VDD.t13" 3.95258
+resist "VDD.n197" "VDD.t33" 3.95258
+resist "VDD.n66" "VDD.n56" 4.55882
+resist "VDD.n71" "VDD.n53" 4.55882
+resist "VDD.n72" "VDD.n52" 4.55882
+resist "VDD.n80" "VDD.n49" 4.55882
+resist "VDD.n85" "VDD.n46" 4.55882
+resist "VDD.n86" "VDD.n45" 4.55882
+resist "VDD.n94" "VDD.n42" 4.55882
+resist "VDD.n99" "VDD.n39" 4.55882
+resist "VDD.n100" "VDD.n38" 4.55882
+resist "VDD.n108" "VDD.n35" 4.55882
+resist "VDD.n113" "VDD.n32" 4.55882
+resist "VDD.n114" "VDD.n31" 4.55882
+resist "VDD.n122" "VDD.n28" 4.55882
+resist "VDD.n127" "VDD.n25" 4.55882
+resist "VDD.n128" "VDD.n24" 4.55882
+resist "VDD.n136" "VDD.n21" 4.55882
+resist "VDD.n141" "VDD.n18" 4.55882
+resist "VDD.n142" "VDD.n17" 4.55882
+resist "VDD.n150" "VDD.n14" 4.55882
+resist "VDD.n155" "VDD.n11" 4.55882
+resist "VDD.n156" "VDD.n10" 4.55882
+resist "VDD.n164" "VDD.n7" 4.55882
+resist "VDD.n169" "VDD.n4" 4.55882
+resist "VDD.n170" "VDD.n3" 4.55882
+resist "VDD.n185" "VDD.n184" 4.55882
+resist "VDD.n186" "VDD.n0" 4.55882
+resist "VDD.n206" "VDD.n187" 4.55882
+resist "VDD.n198" "VDD.n190" 4.55882
+resist "VDD.n64" "VDD.t69" 4.77804
+resist "VDD.n69" "VDD.t4" 4.77804
+resist "VDD.n78" "VDD.t64" 4.77804
+resist "VDD.n83" "VDD.t297" 4.77804
+resist "VDD.n92" "VDD.t274" 4.77804
+resist "VDD.n97" "VDD.t196" 4.77804
+resist "VDD.n106" "VDD.t295" 4.77804
+resist "VDD.n111" "VDD.t320" 4.77804
+resist "VDD.n120" "VDD.t170" 4.77804
+resist "VDD.n125" "VDD.t324" 4.77804
+resist "VDD.n134" "VDD.t164" 4.77804
+resist "VDD.n139" "VDD.t141" 4.77804
+resist "VDD.n148" "VDD.t48" 4.77804
+resist "VDD.n153" "VDD.t276" 4.77804
+resist "VDD.n162" "VDD.t78" 4.77804
+resist "VDD.n167" "VDD.t143" 4.77804
+resist "VDD.n176" "VDD.t286" 4.77804
+resist "VDD.n181" "VDD.t190" 4.77804
+resist "VDD.n200" "VDD.t301" 4.77804
+resist "VDD.n195" "VDD.t210" 4.77804
+resist "VDD.n60" "VDD.t234" 15.5631
+resist "VDD.n74" "VDD.t263" 15.5631
+resist "VDD.n88" "VDD.t236" 15.5631
+resist "VDD.n102" "VDD.t244" 15.5631
+resist "VDD.n116" "VDD.t186" 15.5631
+resist "VDD.n130" "VDD.t257" 15.5631
+resist "VDD.n144" "VDD.t232" 15.5631
+resist "VDD.n158" "VDD.t188" 15.5631
+resist "VDD.n172" "VDD.t238" 15.5631
+resist "VDD.n204" "VDD.t246" 15.5631
+resist "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" "VDD.t225" 165.367
+resist "VDD.t264" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 165.367
+resist "VDD.t118" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 165.367
+resist "VDD.t247" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 165.367
+resist "VDD.t90" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 165.367
+resist "VDD.t321" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 165.367
+resist "VDD.t193" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 165.367
+resist "VDD.t298" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 165.367
+resist "VDD.t1" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 165.367
+resist "VDD.t291" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 165.367
+resist "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" "VDD.t254" 195.008
+resist "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" "VDD.t111" 195.008
+resist "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" "VDD.t103" 195.008
+resist "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" "VDD.t241" 195.008
+resist "VDD.t113" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 195.008
+resist "VDD.t105" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 195.008
+resist "VDD.t250" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 195.008
+resist "VDD.t109" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 195.008
+resist "VDD.t315" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 195.008
+resist "VDD.t183" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 195.008
+resist "VDD.t258" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 195.008
+resist "VDD.t283" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 195.008
+resist "VDD.t252" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 195.008
+resist "VDD.t325" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 195.008
+resist "VDD.t191" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 195.008
+resist "VDD.t144" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 195.008
+resist "VDD.t329" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 195.008
+resist "VDD.t306" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 195.008
+resist "VDD.t181" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 195.008
+resist "VDD.t216" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 195.008
+resist "VDD.t86" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 195.008
+resist "VDD.t239" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 195.008
+resist "VDD.t260" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 195.008
+resist "VDD.t310" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 195.008
+resist "VDD.t227" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 195.008
+resist "VDD.t327" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 195.008
+resist "VDD.t120" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 195.008
+resist "VDD.t146" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 195.008
+resist "VDD.t115" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 195.008
+resist "VDD.t50" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 195.008
+resist "VDD.t209" "VDD.t29" 230.889
+resist "VDD.t300" "VDD.t65" 230.889
+resist "VDD.t189" "VDD.t155" 230.889
+resist "VDD.t213" "VDD.t285" 230.889
+resist "VDD.t204" "VDD.t142" 230.889
+resist "VDD.t55" "VDD.t77" 230.889
+resist "VDD.t312" "VDD.t275" 230.889
+resist "VDD.t70" "VDD.t47" 230.889
+resist "VDD.t290" "VDD.t140" 230.889
+resist "VDD.t152" "VDD.t163" 230.889
+resist "VDD.t280" "VDD.t323" 230.889
+resist "VDD.t43" "VDD.t169" 230.889
+resist "VDD.t74" "VDD.t319" 230.889
+resist "VDD.t54" "VDD.t294" 230.889
+resist "VDD.t127" "VDD.t195" 230.889
+resist "VDD.t24" "VDD.t273" 230.889
+resist "VDD.t9" "VDD.t296" 230.889
+resist "VDD.t44" "VDD.t63" 230.889
+resist "VDD.t203" "VDD.t3" 230.889
+resist "VDD.t218" "VDD.t68" 230.889
+resist "VDD.n190" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 288.612
+resist "VDD.n186" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 288.612
+resist "VDD.n185" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" 288.612
+resist "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" "VDD.n4" 288.612
+resist "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" "VDD.n7" 288.612
+resist "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" "VDD.n11" 288.612
+resist "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" "VDD.n14" 288.612
+resist "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" "VDD.n18" 288.612
+resist "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" "VDD.n21" 288.612
+resist "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" "VDD.n25" 288.612
+resist "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" "VDD.n28" 288.612
+resist "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" "VDD.n32" 288.612
+resist "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" "VDD.n35" 288.612
+resist "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" "VDD.n39" 288.612
+resist "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" "VDD.n42" 288.612
+resist "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" "VDD.n46" 288.612
+resist "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" "VDD.n49" 288.612
+resist "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" "VDD.n53" 288.612
+resist "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW" "VDD.n56" 288.612
+resist "VDD.n193" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW" 293.17
+resist "VDD.t29" "VDD.t58" 318.253
+resist "VDD.t92" "VDD.t30" 318.253
+resist "VDD.t65" "VDD.t94" 318.253
+resist "VDD.t334" "VDD.t14" 318.253
+resist "VDD.t225" "VDD.t245" 318.253
+resist "VDD.t155" "VDD.t79" 318.253
+resist "VDD.t308" "VDD.t18" 318.253
+resist "VDD.t126" "VDD.t213" 318.253
+resist "VDD.t177" "VDD.t229" 318.253
+resist "VDD.t237" "VDD.t264" 318.253
+resist "VDD.t267" "VDD.t204" 318.253
+resist "VDD.t338" "VDD.t7" 318.253
+resist "VDD.t318" "VDD.t55" 318.253
+resist "VDD.t132" "VDD.t25" 318.253
+resist "VDD.t187" "VDD.t118" 318.253
+resist "VDD.t272" "VDD.t312" 318.253
+resist "VDD.t167" "VDD.t278" 318.253
+resist "VDD.t317" "VDD.t70" 318.253
+resist "VDD.t59" "VDD.t107" 318.253
+resist "VDD.t231" "VDD.t247" 318.253
+resist "VDD.t38" "VDD.t290" 318.253
+resist "VDD.t84" "VDD.t88" 318.253
+resist "VDD.t49" "VDD.t152" 318.253
+resist "VDD.t136" "VDD.t138" 318.253
+resist "VDD.t256" "VDD.t90" 318.253
+resist "VDD.t117" "VDD.t280" 318.253
+resist "VDD.t159" "VDD.t39" 318.253
+resist "VDD.t266" "VDD.t43" 318.253
+resist "VDD.t270" "VDD.t80" 318.253
+resist "VDD.t185" "VDD.t321" 318.253
+resist "VDD.t73" "VDD.t74" 318.253
+resist "VDD.t36" "VDD.t101" 318.253
+resist "VDD.t333" "VDD.t54" 318.253
+resist "VDD.t97" "VDD.t171" 318.253
+resist "VDD.t243" "VDD.t193" 318.253
+resist "VDD.t249" "VDD.t127" 318.253
+resist "VDD.t304" "VDD.t20" 318.253
+resist "VDD.t287" "VDD.t24" 318.253
+resist "VDD.t122" "VDD.t207" 318.253
+resist "VDD.t235" "VDD.t298" 318.253
+resist "VDD.t293" "VDD.t9" 318.253
+resist "VDD.t221" "VDD.t99" 318.253
+resist "VDD.t277" "VDD.t44" 318.253
+resist "VDD.t173" "VDD.t211" 318.253
+resist "VDD.t262" "VDD.t1" 318.253
+resist "VDD.t0" "VDD.t203" 318.253
+resist "VDD.t150" "VDD.t331" 318.253
+resist "VDD.t158" "VDD.t218" 318.253
+resist "VDD.t199" "VDD.t5" 318.253
+resist "VDD.t233" "VDD.t291" 318.253
+resist "VDD.t58" "VDD.t92" 374.415
+resist "VDD.t94" "VDD.t334" 374.415
+resist "VDD.t79" "VDD.t308" 374.415
+resist "VDD.t229" "VDD.t126" 374.415
+resist "VDD.t7" "VDD.t267" 374.415
+resist "VDD.t25" "VDD.t318" 374.415
+resist "VDD.t278" "VDD.t272" 374.415
+resist "VDD.t107" "VDD.t317" 374.415
+resist "VDD.t88" "VDD.t38" 374.415
+resist "VDD.t138" "VDD.t49" 374.415
+resist "VDD.t39" "VDD.t117" 374.415
+resist "VDD.t80" "VDD.t266" 374.415
+resist "VDD.t101" "VDD.t73" 374.415
+resist "VDD.t171" "VDD.t333" 374.415
+resist "VDD.t20" "VDD.t249" 374.415
+resist "VDD.t207" "VDD.t287" 374.415
+resist "VDD.t99" "VDD.t293" 374.415
+resist "VDD.t211" "VDD.t277" 374.415
+resist "VDD.t331" "VDD.t0" 374.415
+resist "VDD.t5" "VDD.t158" 374.415
+resist "VDD.t245" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" 390.016
+resist "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" "VDD.t237" 390.016
+resist "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" "VDD.t187" 390.016
+resist "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" "VDD.t231" 390.016
+resist "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" "VDD.t256" 390.016
+resist "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" "VDD.t185" 390.016
+resist "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" "VDD.t243" 390.016
+resist "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" "VDD.t235" 390.016
+resist "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" "VDD.t262" 390.016
+resist "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW" "VDD.t233" 390.016
+resist "VDD.t254" "VDD.t27" 405.616
+resist "VDD.t111" "VDD.t66" 405.616
+resist "VDD.t241" "VDD.t156" 405.616
+resist "VDD.t214" "VDD.t113" 405.616
+resist "VDD.t205" "VDD.t250" 405.616
+resist "VDD.t56" "VDD.t109" 405.616
+resist "VDD.t313" "VDD.t183" 405.616
+resist "VDD.t71" "VDD.t258" 405.616
+resist "VDD.t288" "VDD.t252" 405.616
+resist "VDD.t153" "VDD.t325" 405.616
+resist "VDD.t281" "VDD.t144" 405.616
+resist "VDD.t41" "VDD.t329" 405.616
+resist "VDD.t75" "VDD.t181" 405.616
+resist "VDD.t52" "VDD.t216" 405.616
+resist "VDD.t128" "VDD.t239" 405.616
+resist "VDD.t22" "VDD.t260" 405.616
+resist "VDD.t10" "VDD.t227" 405.616
+resist "VDD.t45" "VDD.t327" 405.616
+resist "VDD.t201" "VDD.t146" 405.616
+resist "VDD.t219" "VDD.t115" 405.616
+resist "VDD.t12" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" 410.296
+resist "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" "VDD.t179" 410.296
+resist "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" "VDD.t130" 410.296
+resist "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" "VDD.t61" 410.296
+resist "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" "VDD.t134" 410.296
+resist "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" "VDD.t268" 410.296
+resist "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" "VDD.t95" 410.296
+resist "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" "VDD.t124" 410.296
+resist "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" "VDD.t175" 410.296
+resist "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VNW" "VDD.t197" 410.296
+resist "VDD.t32" "VDD.n190" 471.139
+resist "VDD.t16" "VDD.n185" 471.139
+resist "VDD.n7" "VDD.t336" 471.139
+resist "VDD.n14" "VDD.t165" 471.139
+resist "VDD.n21" "VDD.t82" 471.139
+resist "VDD.n28" "VDD.t161" 471.139
+resist "VDD.n35" "VDD.t34" 471.139
+resist "VDD.n42" "VDD.t302" 471.139
+resist "VDD.n49" "VDD.t223" 471.139
+resist "VDD.n56" "VDD.t148" 471.139
+resist "VDD.n187" "VDD.n186" 474.259
+resist "VDD.n4" "VDD.n3" 474.259
+resist "VDD.n11" "VDD.n10" 474.259
+resist "VDD.n18" "VDD.n17" 474.259
+resist "VDD.n25" "VDD.n24" 474.259
+resist "VDD.n32" "VDD.n31" 474.259
+resist "VDD.n39" "VDD.n38" 474.259
+resist "VDD.n46" "VDD.n45" 474.259
+resist "VDD.n53" "VDD.n52" 474.259
+resist "VDD.t103" "VDD.n187" 564.743
+resist "VDD.n3" "VDD.t105" 564.743
+resist "VDD.n10" "VDD.t315" 564.743
+resist "VDD.n17" "VDD.t283" 564.743
+resist "VDD.n24" "VDD.t191" 564.743
+resist "VDD.n31" "VDD.t306" 564.743
+resist "VDD.n38" "VDD.t86" 564.743
+resist "VDD.n45" "VDD.t310" 564.743
+resist "VDD.n52" "VDD.t120" 564.743
+resist "VDD.n59" "VDD.t50" 569.531
+resist "VDD.t27" "VDD.t209" 574.103
+resist "VDD.t66" "VDD.t300" 574.103
+resist "VDD.t156" "VDD.t189" 574.103
+resist "VDD.t285" "VDD.t214" 574.103
+resist "VDD.t142" "VDD.t205" 574.103
+resist "VDD.t77" "VDD.t56" 574.103
+resist "VDD.t275" "VDD.t313" 574.103
+resist "VDD.t47" "VDD.t71" 574.103
+resist "VDD.t140" "VDD.t288" 574.103
+resist "VDD.t163" "VDD.t153" 574.103
+resist "VDD.t323" "VDD.t281" 574.103
+resist "VDD.t169" "VDD.t41" 574.103
+resist "VDD.t319" "VDD.t75" 574.103
+resist "VDD.t294" "VDD.t52" 574.103
+resist "VDD.t195" "VDD.t128" 574.103
+resist "VDD.t273" "VDD.t22" 574.103
+resist "VDD.t296" "VDD.t10" 574.103
+resist "VDD.t63" "VDD.t45" 574.103
+resist "VDD.t3" "VDD.t201" 574.103
+resist "VDD.t68" "VDD.t219" 574.103
+resist "VDD.t30" "VDD.t32" 667.707
+resist "VDD.t14" "VDD.t12" 667.707
+resist "VDD.t18" "VDD.t16" 667.707
+resist "VDD.t179" "VDD.t177" 667.707
+resist "VDD.t336" "VDD.t338" 667.707
+resist "VDD.t130" "VDD.t132" 667.707
+resist "VDD.t165" "VDD.t167" 667.707
+resist "VDD.t61" "VDD.t59" 667.707
+resist "VDD.t82" "VDD.t84" 667.707
+resist "VDD.t134" "VDD.t136" 667.707
+resist "VDD.t161" "VDD.t159" 667.707
+resist "VDD.t268" "VDD.t270" 667.707
+resist "VDD.t34" "VDD.t36" 667.707
+resist "VDD.t95" "VDD.t97" 667.707
+resist "VDD.t302" "VDD.t304" 667.707
+resist "VDD.t124" "VDD.t122" 667.707
+resist "VDD.t223" "VDD.t221" 667.707
+resist "VDD.t175" "VDD.t173" 667.707
+resist "VDD.t148" "VDD.t150" 667.707
+resist "VDD.t197" "VDD.t199" 667.707
+rnode "VSS.n0" 0 0 4154 -404 0
+rnode "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 0 0 6806 -511 0
+rnode "VSS.t201" 0 0 7122 -314 0
+rnode "VSS.t204" 0 0 6982 -323 0
+rnode "VSS.n1" 0 0 7034 -349 0
+rnode "VSS.t280" 0 0 7490 -317 0
+rnode "VSS.t176" 0 0 8366 -308 0
+rnode "VSS.t234" 0 0 8262 -308 0
+rnode "VSS.n2" 0 0 8314 -351 0
+rnode "VSS.t174" 0 0 8854 -293 0
+rnode "VSS.t257" 0 0 9103 -293 0
+rnode "VSS.t112" 0 0 9662 -293 0
+rnode "VSS.t203" 0 0 6922 -323 0
+rnode "VSS.t200" 0 0 7182 -314 0
+rnode "VSS.t279" 0 0 7550 -317 0
+rnode "VSS.t128" 0 0 7718 -317 0
+rnode "VSS.t202" 0 0 7942 -317 0
+rnode "VSS.t233" 0 0 8202 -308 0
+rnode "VSS.t175" 0 0 8426 -308 0
+rnode "VSS.t173" 0 0 8794 -293 0
+rnode "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 0 0 9046 -511 0
+rnode "VSS.t256" 0 0 9163 -293 0
+rnode "VSS.t226" 0 0 9347 -293 0
+rnode "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 0 0 9606 -511 0
+rnode "VSS.t111" 0 0 9722 -293 0
+rnode "VSS.n3" 0 0 10094 -267 0
+rnode "VSS.n4" 0 0 10398 -267 0
+rnode "VSS.t194" 0 0 10898 -314 0
+rnode "VSS.t104" 0 0 10758 -323 0
+rnode "VSS.n5" 0 0 10810 -349 0
+rnode "VSS.t255" 0 0 11266 -317 0
+rnode "VSS.t329" 0 0 12142 -308 0
+rnode "VSS.t6" 0 0 12038 -308 0
+rnode "VSS.n6" 0 0 12090 -351 0
+rnode "VSS.t327" 0 0 12630 -293 0
+rnode "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 0 0 10582 -511 0
+rnode "VSS.t103" 0 0 10698 -323 0
+rnode "VSS.t193" 0 0 10958 -314 0
+rnode "VSS.t254" 0 0 11326 -317 0
+rnode "VSS.t259" 0 0 11494 -317 0
+rnode "VSS.t195" 0 0 11718 -317 0
+rnode "VSS.t5" 0 0 11978 -308 0
+rnode "VSS.t328" 0 0 12202 -308 0
+rnode "VSS.t326" 0 0 12570 -293 0
+rnode "VSS.n7" 0 0 12862 -267 0
+rnode "VSS.t57" 0 0 13362 -314 0
+rnode "VSS.t116" 0 0 13222 -323 0
+rnode "VSS.n8" 0 0 13274 -349 0
+rnode "VSS.t78" 0 0 13730 -317 0
+rnode "VSS.t135" 0 0 14606 -308 0
+rnode "VSS.t26" 0 0 14502 -308 0
+rnode "VSS.n9" 0 0 14554 -351 0
+rnode "VSS.t133" 0 0 15094 -293 0
+rnode "VSS.t268" 0 0 15343 -293 0
+rnode "VSS.t312" 0 0 15902 -293 0
+rnode "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 0 0 13046 -511 0
+rnode "VSS.t115" 0 0 13162 -323 0
+rnode "VSS.t56" 0 0 13422 -314 0
+rnode "VSS.t77" 0 0 13790 -317 0
+rnode "VSS.t314" 0 0 13958 -317 0
+rnode "VSS.t55" 0 0 14182 -317 0
+rnode "VSS.t25" 0 0 14442 -308 0
+rnode "VSS.t134" 0 0 14666 -308 0
+rnode "VSS.t132" 0 0 15034 -293 0
+rnode "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 0 0 15286 -511 0
+rnode "VSS.t267" 0 0 15403 -293 0
+rnode "VSS.t246" 0 0 15587 -293 0
+rnode "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 0 0 15846 -511 0
+rnode "VSS.t311" 0 0 15962 -293 0
+rnode "VSS.n10" 0 0 16334 -267 0
+rnode "VSS.n11" 0 0 16638 -267 0
+rnode "VSS.t309" 0 0 17138 -314 0
+rnode "VSS.t178" 0 0 16998 -323 0
+rnode "VSS.n12" 0 0 17050 -349 0
+rnode "VSS.t121" 0 0 17506 -317 0
+rnode "VSS.t164" 0 0 18382 -308 0
+rnode "VSS.t271" 0 0 18278 -308 0
+rnode "VSS.n13" 0 0 18330 -351 0
+rnode "VSS.t162" 0 0 18870 -293 0
+rnode "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 0 0 16822 -511 0
+rnode "VSS.t177" 0 0 16938 -323 0
+rnode "VSS.t308" 0 0 17198 -314 0
+rnode "VSS.t120" 0 0 17566 -317 0
+rnode "VSS.t264" 0 0 17734 -317 0
+rnode "VSS.t310" 0 0 17958 -317 0
+rnode "VSS.t270" 0 0 18218 -308 0
+rnode "VSS.t163" 0 0 18442 -308 0
+rnode "VSS.t161" 0 0 18810 -293 0
+rnode "VSS.n14" 0 0 19102 -267 0
+rnode "VSS.t71" 0 0 19602 -314 0
+rnode "VSS.t208" 0 0 19462 -323 0
+rnode "VSS.n15" 0 0 19514 -349 0
+rnode "VSS.t48" 0 0 19970 -317 0
+rnode "VSS.t62" 0 0 20846 -308 0
+rnode "VSS.t114" 0 0 20742 -308 0
+rnode "VSS.n16" 0 0 20794 -351 0
+rnode "VSS.t60" 0 0 21334 -293 0
+rnode "VSS.t240" 0 0 21583 -293 0
+rnode "VSS.t278" 0 0 22142 -293 0
+rnode "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 0 0 19286 -511 0
+rnode "VSS.t207" 0 0 19402 -323 0
+rnode "VSS.t70" 0 0 19662 -314 0
+rnode "VSS.t47" 0 0 20030 -317 0
+rnode "VSS.t313" 0 0 20198 -317 0
+rnode "VSS.t72" 0 0 20422 -317 0
+rnode "VSS.t113" 0 0 20682 -308 0
+rnode "VSS.t61" 0 0 20906 -308 0
+rnode "VSS.t59" 0 0 21274 -293 0
+rnode "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 0 0 21526 -511 0
+rnode "VSS.t239" 0 0 21643 -293 0
+rnode "VSS.t225" 0 0 21827 -293 0
+rnode "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 0 0 22086 -511 0
+rnode "VSS.t277" 0 0 22202 -293 0
+rnode "VSS.n17" 0 0 22574 -267 0
+rnode "VSS.n18" 0 0 22878 -267 0
+rnode "VSS.t283" 0 0 23378 -314 0
+rnode "VSS.t232" 0 0 23238 -323 0
+rnode "VSS.n19" 0 0 23290 -349 0
+rnode "VSS.t15" 0 0 23746 -317 0
+rnode "VSS.t83" 0 0 24622 -308 0
+rnode "VSS.t89" 0 0 24518 -308 0
+rnode "VSS.n20" 0 0 24570 -351 0
+rnode "VSS.t85" 0 0 25110 -293 0
+rnode "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 0 0 23062 -511 0
+rnode "VSS.t231" 0 0 23178 -323 0
+rnode "VSS.t282" 0 0 23438 -314 0
+rnode "VSS.t14" 0 0 23806 -317 0
+rnode "VSS.t38" 0 0 23974 -317 0
+rnode "VSS.t284" 0 0 24198 -317 0
+rnode "VSS.t88" 0 0 24458 -308 0
+rnode "VSS.t82" 0 0 24682 -308 0
+rnode "VSS.t84" 0 0 25050 -293 0
+rnode "VSS.n21" 0 0 25342 -267 0
+rnode "VSS.t149" 0 0 25842 -314 0
+rnode "VSS.t251" 0 0 25702 -323 0
+rnode "VSS.n22" 0 0 25754 -349 0
+rnode "VSS.t160" 0 0 26210 -317 0
+rnode "VSS.t139" 0 0 27086 -308 0
+rnode "VSS.t141" 0 0 26982 -308 0
+rnode "VSS.n23" 0 0 27034 -351 0
+rnode "VSS.t137" 0 0 27574 -293 0
+rnode "VSS.t318" 0 0 27823 -293 0
+rnode "VSS.t183" 0 0 28382 -293 0
+rnode "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 0 0 25526 -511 0
+rnode "VSS.t250" 0 0 25642 -323 0
+rnode "VSS.t148" 0 0 25902 -314 0
+rnode "VSS.t159" 0 0 26270 -317 0
+rnode "VSS.t49" 0 0 26438 -317 0
+rnode "VSS.t150" 0 0 26662 -317 0
+rnode "VSS.t140" 0 0 26922 -308 0
+rnode "VSS.t138" 0 0 27146 -308 0
+rnode "VSS.t136" 0 0 27514 -293 0
+rnode "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 0 0 27766 -511 0
+rnode "VSS.t317" 0 0 27883 -293 0
+rnode "VSS.t224" 0 0 28067 -293 0
+rnode "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 0 0 28326 -511 0
+rnode "VSS.t182" 0 0 28442 -293 0
+rnode "VSS.n24" 0 0 28814 -267 0
+rnode "VSS.n25" 0 0 29118 -267 0
+rnode "VSS.t274" 0 0 29618 -314 0
+rnode "VSS.t243" 0 0 29478 -323 0
+rnode "VSS.n26" 0 0 29530 -349 0
+rnode "VSS.t91" 0 0 29986 -317 0
+rnode "VSS.t156" 0 0 30862 -308 0
+rnode "VSS.t40" 0 0 30758 -308 0
+rnode "VSS.n27" 0 0 30810 -351 0
+rnode "VSS.t158" 0 0 31350 -293 0
+rnode "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 0 0 29302 -511 0
+rnode "VSS.t242" 0 0 29418 -323 0
+rnode "VSS.t273" 0 0 29678 -314 0
+rnode "VSS.t90" 0 0 30046 -317 0
+rnode "VSS.t119" 0 0 30214 -317 0
+rnode "VSS.t272" 0 0 30438 -317 0
+rnode "VSS.t39" 0 0 30698 -308 0
+rnode "VSS.t155" 0 0 30922 -308 0
+rnode "VSS.t157" 0 0 31290 -293 0
+rnode "VSS.n28" 0 0 31582 -267 0
+rnode "VSS.t43" 0 0 32082 -314 0
+rnode "VSS.t212" 0 0 31942 -323 0
+rnode "VSS.n29" 0 0 31994 -349 0
+rnode "VSS.t166" 0 0 32450 -317 0
+rnode "VSS.t261" 0 0 33326 -308 0
+rnode "VSS.t81" 0 0 33222 -308 0
+rnode "VSS.n30" 0 0 33274 -351 0
+rnode "VSS.t263" 0 0 33814 -293 0
+rnode "VSS.t276" 0 0 34063 -293 0
+rnode "VSS.t303" 0 0 34622 -293 0
+rnode "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 0 0 31766 -511 0
+rnode "VSS.t211" 0 0 31882 -323 0
+rnode "VSS.t42" 0 0 32142 -314 0
+rnode "VSS.t165" 0 0 32510 -317 0
+rnode "VSS.t258" 0 0 32678 -317 0
+rnode "VSS.t41" 0 0 32902 -317 0
+rnode "VSS.t80" 0 0 33162 -308 0
+rnode "VSS.t260" 0 0 33386 -308 0
+rnode "VSS.t262" 0 0 33754 -293 0
+rnode "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 0 0 34006 -511 0
+rnode "VSS.t275" 0 0 34123 -293 0
+rnode "VSS.t179" 0 0 34307 -293 0
+rnode "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 0 0 34566 -511 0
+rnode "VSS.t302" 0 0 34682 -293 0
+rnode "VSS.n31" 0 0 35054 -267 0
+rnode "VSS.n32" 0 0 35358 -267 0
+rnode "VSS.t75" 0 0 35858 -314 0
+rnode "VSS.t100" 0 0 35718 -323 0
+rnode "VSS.n33" 0 0 35770 -349 0
+rnode "VSS.t316" 0 0 36226 -317 0
+rnode "VSS.t37" 0 0 37102 -308 0
+rnode "VSS.t108" 0 0 36998 -308 0
+rnode "VSS.n34" 0 0 37050 -351 0
+rnode "VSS.t35" 0 0 37590 -293 0
+rnode "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 0 0 35542 -511 0
+rnode "VSS.t99" 0 0 35658 -323 0
+rnode "VSS.t74" 0 0 35918 -314 0
+rnode "VSS.t315" 0 0 36286 -317 0
+rnode "VSS.t73" 0 0 36454 -317 0
+rnode "VSS.t76" 0 0 36678 -317 0
+rnode "VSS.t107" 0 0 36938 -308 0
+rnode "VSS.t36" 0 0 37162 -308 0
+rnode "VSS.t34" 0 0 37530 -293 0
+rnode "VSS.n35" 0 0 37822 -267 0
+rnode "VSS.t54" 0 0 38322 -314 0
+rnode "VSS.t219" 0 0 38182 -323 0
+rnode "VSS.n36" 0 0 38234 -349 0
+rnode "VSS.t291" 0 0 38690 -317 0
+rnode "VSS.t98" 0 0 39566 -308 0
+rnode "VSS.t168" 0 0 39462 -308 0
+rnode "VSS.n37" 0 0 39514 -351 0
+rnode "VSS.t96" 0 0 40054 -293 0
+rnode "VSS.t249" 0 0 40303 -293 0
+rnode "VSS.t87" 0 0 40862 -293 0
+rnode "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 0 0 38006 -511 0
+rnode "VSS.t218" 0 0 38122 -323 0
+rnode "VSS.t53" 0 0 38382 -314 0
+rnode "VSS.t290" 0 0 38750 -317 0
+rnode "VSS.t321" 0 0 38918 -317 0
+rnode "VSS.t52" 0 0 39142 -317 0
+rnode "VSS.t167" 0 0 39402 -308 0
+rnode "VSS.t97" 0 0 39626 -308 0
+rnode "VSS.t95" 0 0 39994 -293 0
+rnode "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 0 0 40246 -511 0
+rnode "VSS.t248" 0 0 40363 -293 0
+rnode "VSS.t235" 0 0 40547 -293 0
+rnode "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 0 0 40806 -511 0
+rnode "VSS.t86" 0 0 40922 -293 0
+rnode "VSS.n38" 0 0 41294 -267 0
+rnode "VSS.n39" 0 0 41598 -267 0
+rnode "VSS.t131" 0 0 42098 -314 0
+rnode "VSS.t245" 0 0 41958 -323 0
+rnode "VSS.n40" 0 0 42010 -349 0
+rnode "VSS.t185" 0 0 42466 -317 0
+rnode "VSS.t299" 0 0 43342 -308 0
+rnode "VSS.t21" 0 0 43238 -308 0
+rnode "VSS.n41" 0 0 43290 -351 0
+rnode "VSS.t301" 0 0 43830 -293 0
+rnode "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 0 0 41782 -511 0
+rnode "VSS.t244" 0 0 41898 -323 0
+rnode "VSS.t130" 0 0 42158 -314 0
+rnode "VSS.t184" 0 0 42526 -317 0
+rnode "VSS.t241" 0 0 42694 -317 0
+rnode "VSS.t129" 0 0 42918 -317 0
+rnode "VSS.t20" 0 0 43178 -308 0
+rnode "VSS.t298" 0 0 43402 -308 0
+rnode "VSS.t300" 0 0 43770 -293 0
+rnode "VSS.n42" 0 0 44062 -267 0
+rnode "VSS.t23" 0 0 44562 -314 0
+rnode "VSS.t206" 0 0 44422 -323 0
+rnode "VSS.n43" 0 0 44474 -349 0
+rnode "VSS.t266" 0 0 44930 -317 0
+rnode "VSS.t125" 0 0 45806 -308 0
+rnode "VSS.t197" 0 0 45702 -308 0
+rnode "VSS.n44" 0 0 45754 -351 0
+rnode "VSS.t127" 0 0 46294 -293 0
+rnode "VSS.t295" 0 0 46543 -293 0
+rnode "VSS.t307" 0 0 47102 -293 0
+rnode "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 0 0 44246 -511 0
+rnode "VSS.t205" 0 0 44362 -323 0
+rnode "VSS.t22" 0 0 44622 -314 0
+rnode "VSS.t265" 0 0 44990 -317 0
+rnode "VSS.t281" 0 0 45158 -317 0
+rnode "VSS.t24" 0 0 45382 -317 0
+rnode "VSS.t196" 0 0 45642 -308 0
+rnode "VSS.t124" 0 0 45866 -308 0
+rnode "VSS.t126" 0 0 46234 -293 0
+rnode "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 0 0 46486 -511 0
+rnode "VSS.t294" 0 0 46603 -293 0
+rnode "VSS.t238" 0 0 46787 -293 0
+rnode "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 0 0 47046 -511 0
+rnode "VSS.t306" 0 0 47162 -293 0
+rnode "VSS.n45" 0 0 47534 -267 0
+rnode "VSS.n46" 0 0 47838 -267 0
+rnode "VSS.t8" 0 0 48338 -314 0
+rnode "VSS.t230" 0 0 48198 -323 0
+rnode "VSS.n47" 0 0 48250 -349 0
+rnode "VSS.t293" 0 0 48706 -317 0
+rnode "VSS.t223" 0 0 49582 -308 0
+rnode "VSS.t106" 0 0 49478 -308 0
+rnode "VSS.n48" 0 0 49530 -351 0
+rnode "VSS.t221" 0 0 50070 -293 0
+rnode "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 0 0 48022 -511 0
+rnode "VSS.t229" 0 0 48138 -323 0
+rnode "VSS.t7" 0 0 48398 -314 0
+rnode "VSS.t292" 0 0 48766 -317 0
+rnode "VSS.t287" 0 0 48934 -317 0
+rnode "VSS.t9" 0 0 49158 -317 0
+rnode "VSS.t105" 0 0 49418 -308 0
+rnode "VSS.t222" 0 0 49642 -308 0
+rnode "VSS.t220" 0 0 50010 -293 0
+rnode "VSS.n49" 0 0 50302 -267 0
+rnode "VSS.t46" 0 0 50802 -314 0
+rnode "VSS.t118" 0 0 50662 -323 0
+rnode "VSS.n50" 0 0 50714 -349 0
+rnode "VSS.t64" 0 0 51170 -317 0
+rnode "VSS.t172" 0 0 52046 -308 0
+rnode "VSS.t199" 0 0 51942 -308 0
+rnode "VSS.n51" 0 0 51994 -351 0
+rnode "VSS.t170" 0 0 52534 -293 0
+rnode "VSS.t2" 0 0 52783 -293 0
+rnode "VSS.t123" 0 0 53342 -293 0
+rnode "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 0 0 50486 -511 0
+rnode "VSS.t117" 0 0 50602 -323 0
+rnode "VSS.t45" 0 0 50862 -314 0
+rnode "VSS.t63" 0 0 51230 -317 0
+rnode "VSS.t269" 0 0 51398 -317 0
+rnode "VSS.t44" 0 0 51622 -317 0
+rnode "VSS.t198" 0 0 51882 -308 0
+rnode "VSS.t171" 0 0 52106 -308 0
+rnode "VSS.t169" 0 0 52474 -293 0
+rnode "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 0 0 52726 -511 0
+rnode "VSS.t1" 0 0 52843 -293 0
+rnode "VSS.t247" 0 0 53027 -293 0
+rnode "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 0 0 53286 -511 0
+rnode "VSS.t122" 0 0 53402 -293 0
+rnode "VSS.n52" 0 0 53774 -267 0
+rnode "VSS.n53" 0 0 54078 -267 0
+rnode "VSS.t191" 0 0 54578 -314 0
+rnode "VSS.t237" 0 0 54438 -323 0
+rnode "VSS.n54" 0 0 54490 -349 0
+rnode "VSS.t323" 0 0 54946 -317 0
+rnode "VSS.t147" 0 0 55822 -308 0
+rnode "VSS.t320" 0 0 55718 -308 0
+rnode "VSS.n55" 0 0 55770 -351 0
+rnode "VSS.t145" 0 0 56310 -293 0
+rnode "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 0 0 54262 -511 0
+rnode "VSS.t236" 0 0 54378 -323 0
+rnode "VSS.t190" 0 0 54638 -314 0
+rnode "VSS.t322" 0 0 55006 -317 0
+rnode "VSS.t0" 0 0 55174 -317 0
+rnode "VSS.t192" 0 0 55398 -317 0
+rnode "VSS.t319" 0 0 55658 -308 0
+rnode "VSS.t146" 0 0 55882 -308 0
+rnode "VSS.t144" 0 0 56250 -293 0
+rnode "VSS.n56" 0 0 56542 -267 0
+rnode "VSS.t215" 0 0 57042 -314 0
+rnode "VSS.t210" 0 0 56902 -323 0
+rnode "VSS.n57" 0 0 56954 -349 0
+rnode "VSS.t69" 0 0 57410 -317 0
+rnode "VSS.t189" 0 0 58286 -308 0
+rnode "VSS.t4" 0 0 58182 -308 0
+rnode "VSS.n58" 0 0 58234 -351 0
+rnode "VSS.t187" 0 0 58774 -293 0
+rnode "VSS.t286" 0 0 59023 -293 0
+rnode "VSS.t51" 0 0 59582 -293 0
+rnode "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 0 0 56726 -511 0
+rnode "VSS.t209" 0 0 56842 -323 0
+rnode "VSS.t214" 0 0 57102 -314 0
+rnode "VSS.t68" 0 0 57470 -317 0
+rnode "VSS.t154" 0 0 57638 -317 0
+rnode "VSS.t213" 0 0 57862 -317 0
+rnode "VSS.t3" 0 0 58122 -308 0
+rnode "VSS.t188" 0 0 58346 -308 0
+rnode "VSS.t186" 0 0 58714 -293 0
+rnode "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 0 0 58966 -511 0
+rnode "VSS.t285" 0 0 59083 -293 0
+rnode "VSS.t252" 0 0 59267 -293 0
+rnode "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 0 0 59526 -511 0
+rnode "VSS.t50" 0 0 59642 -293 0
+rnode "VSS.n59" 0 0 59530 -404 0
+rnode "VSS.n60" 0 0 58971 -404 0
+rnode "VSS.n61" 0 0 58826 -404 0
+rnode "VSS.n62" 0 0 58234 -404 0
+rnode "VSS.n63" 0 0 57358 -404 0
+rnode "VSS.n64" 0 0 56954 -404 0
+rnode "VSS.n65" 0 0 56538 -404 0
+rnode "VSS.n66" 0 0 56362 -404 0
+rnode "VSS.n67" 0 0 55770 -404 0
+rnode "VSS.n68" 0 0 54894 -404 0
+rnode "VSS.n69" 0 0 54490 -404 0
+rnode "DFF_2phase_1$1_0.VSS" 0 0 54402 -560 0
+rnode "VSS.n70" 0 0 54074 -404 0
+rnode "DFF_2phase_1$1_0.VSS" 0 0 53922 -518 0
+rnode "VSS.n71" 0 0 53770 -404 0
+rnode "VSS.n72" 0 0 53290 -404 0
+rnode "VSS.n73" 0 0 52731 -404 0
+rnode "VSS.n74" 0 0 52586 -404 0
+rnode "VSS.n75" 0 0 51994 -404 0
+rnode "VSS.n76" 0 0 51118 -404 0
+rnode "VSS.n77" 0 0 50714 -404 0
+rnode "VSS.n78" 0 0 50298 -404 0
+rnode "VSS.n79" 0 0 50122 -404 0
+rnode "VSS.n80" 0 0 49530 -404 0
+rnode "VSS.n81" 0 0 48654 -404 0
+rnode "VSS.n82" 0 0 48250 -404 0
+rnode "DFF_2phase_1$1_1.VSS" 0 0 48162 -560 0
+rnode "VSS.n83" 0 0 47834 -404 0
+rnode "DFF_2phase_1$1_1.VSS" 0 0 47682 -518 0
+rnode "VSS.n84" 0 0 47530 -404 0
+rnode "VSS.n85" 0 0 47050 -404 0
+rnode "VSS.n86" 0 0 46491 -404 0
+rnode "VSS.n87" 0 0 46346 -404 0
+rnode "VSS.n88" 0 0 45754 -404 0
+rnode "VSS.n89" 0 0 44878 -404 0
+rnode "VSS.n90" 0 0 44474 -404 0
+rnode "VSS.n91" 0 0 44058 -404 0
+rnode "VSS.n92" 0 0 43882 -404 0
+rnode "VSS.n93" 0 0 43290 -404 0
+rnode "VSS.n94" 0 0 42414 -404 0
+rnode "VSS.n95" 0 0 42010 -404 0
+rnode "DFF_2phase_1$1_2.VSS" 0 0 41922 -560 0
+rnode "VSS.n96" 0 0 41594 -404 0
+rnode "DFF_2phase_1$1_2.VSS" 0 0 41442 -518 0
+rnode "VSS.n97" 0 0 41290 -404 0
+rnode "VSS.n98" 0 0 40810 -404 0
+rnode "VSS.n99" 0 0 40251 -404 0
+rnode "VSS.n100" 0 0 40106 -404 0
+rnode "VSS.n101" 0 0 39514 -404 0
+rnode "VSS.n102" 0 0 38638 -404 0
+rnode "VSS.n103" 0 0 38234 -404 0
+rnode "VSS.n104" 0 0 37818 -404 0
+rnode "VSS.n105" 0 0 37642 -404 0
+rnode "VSS.n106" 0 0 37050 -404 0
+rnode "VSS.n107" 0 0 36174 -404 0
+rnode "VSS.n108" 0 0 35770 -404 0
+rnode "DFF_2phase_1$1_3.VSS" 0 0 35682 -560 0
+rnode "VSS.n109" 0 0 35354 -404 0
+rnode "DFF_2phase_1$1_3.VSS" 0 0 35202 -518 0
+rnode "VSS.n110" 0 0 35050 -404 0
+rnode "VSS.n111" 0 0 34570 -404 0
+rnode "VSS.n112" 0 0 34011 -404 0
+rnode "VSS.n113" 0 0 33866 -404 0
+rnode "VSS.n114" 0 0 33274 -404 0
+rnode "VSS.n115" 0 0 32398 -404 0
+rnode "VSS.n116" 0 0 31994 -404 0
+rnode "VSS.n117" 0 0 31578 -404 0
+rnode "VSS.n118" 0 0 31402 -404 0
+rnode "VSS.n119" 0 0 30810 -404 0
+rnode "VSS.n120" 0 0 29934 -404 0
+rnode "VSS.n121" 0 0 29530 -404 0
+rnode "DFF_2phase_1$1_4.VSS" 0 0 29442 -560 0
+rnode "VSS.n122" 0 0 29114 -404 0
+rnode "DFF_2phase_1$1_4.VSS" 0 0 28962 -518 0
+rnode "VSS.n123" 0 0 28810 -404 0
+rnode "VSS.n124" 0 0 28330 -404 0
+rnode "VSS.n125" 0 0 27771 -404 0
+rnode "VSS.n126" 0 0 27626 -404 0
+rnode "VSS.n127" 0 0 27034 -404 0
+rnode "VSS.n128" 0 0 26158 -404 0
+rnode "VSS.n129" 0 0 25754 -404 0
+rnode "VSS.n130" 0 0 25338 -404 0
+rnode "VSS.n131" 0 0 25162 -404 0
+rnode "VSS.n132" 0 0 24570 -404 0
+rnode "VSS.n133" 0 0 23694 -404 0
+rnode "VSS.n134" 0 0 23290 -404 0
+rnode "DFF_2phase_1$1_5.VSS" 0 0 23202 -560 0
+rnode "VSS.n135" 0 0 22874 -404 0
+rnode "DFF_2phase_1$1_5.VSS" 0 0 22722 -518 0
+rnode "VSS.n136" 0 0 22570 -404 0
+rnode "VSS.n137" 0 0 22090 -404 0
+rnode "VSS.n138" 0 0 21531 -404 0
+rnode "VSS.n139" 0 0 21386 -404 0
+rnode "VSS.n140" 0 0 20794 -404 0
+rnode "VSS.n141" 0 0 19918 -404 0
+rnode "VSS.n142" 0 0 19514 -404 0
+rnode "VSS.n143" 0 0 19098 -404 0
+rnode "VSS.n144" 0 0 18922 -404 0
+rnode "VSS.n145" 0 0 18330 -404 0
+rnode "VSS.n146" 0 0 17454 -404 0
+rnode "VSS.n147" 0 0 17050 -404 0
+rnode "DFF_2phase_1$1_6.VSS" 0 0 16962 -560 0
+rnode "VSS.n148" 0 0 16634 -404 0
+rnode "DFF_2phase_1$1_6.VSS" 0 0 16482 -518 0
+rnode "VSS.n149" 0 0 16330 -404 0
+rnode "VSS.n150" 0 0 15850 -404 0
+rnode "VSS.n151" 0 0 15291 -404 0
+rnode "VSS.n152" 0 0 15146 -404 0
+rnode "VSS.n153" 0 0 14554 -404 0
+rnode "VSS.n154" 0 0 13678 -404 0
+rnode "VSS.n155" 0 0 13274 -404 0
+rnode "VSS.n156" 0 0 12858 -404 0
+rnode "VSS.n157" 0 0 12682 -404 0
+rnode "VSS.n158" 0 0 12090 -404 0
+rnode "VSS.n159" 0 0 11214 -404 0
+rnode "VSS.n160" 0 0 10810 -404 0
+rnode "DFF_2phase_1$1_7.VSS" 0 0 10722 -560 0
+rnode "VSS.n161" 0 0 10394 -404 0
+rnode "DFF_2phase_1$1_7.VSS" 0 0 10242 -518 0
+rnode "VSS.n162" 0 0 10090 -404 0
+rnode "VSS.n163" 0 0 9610 -404 0
+rnode "VSS.n164" 0 0 9051 -404 0
+rnode "VSS.n165" 0 0 8906 -404 0
+rnode "VSS.n166" 0 0 8314 -404 0
+rnode "VSS.n167" 0 0 7438 -404 0
+rnode "VSS.n168" 0 0 7034 -404 0
+rnode "VSS.t19" 0 0 6390 -293 0
+rnode "VSS.t17" 0 0 5902 -308 0
+rnode "VSS.t305" 0 0 5798 -308 0
+rnode "VSS.n169" 0 0 5850 -351 0
+rnode "VSS.t228" 0 0 5026 -317 0
+rnode "VSS.t152" 0 0 4658 -314 0
+rnode "VSS.t143" 0 0 4518 -323 0
+rnode "VSS.n170" 0 0 4570 -349 0
+rnode "DFF_2phase_1$1_9.VSS" 0 0 4482 -560 0
+rnode "VSS.n171" 0 0 4570 -404 0
+rnode "VSS.n172" 0 0 4974 -404 0
+rnode "VSS.n173" 0 0 5850 -404 0
+rnode "VSS.n174" 0 0 6442 -404 0
+rnode "VSS.n175" 0 0 6618 -404 0
+rnode "VSS.n176" 0 0 6622 -267 0
+rnode "VSS.t18" 0 0 6330 -293 0
+rnode "VSS.t16" 0 0 5962 -308 0
+rnode "VSS.t304" 0 0 5738 -308 0
+rnode "VSS.t153" 0 0 5478 -317 0
+rnode "VSS.t79" 0 0 5254 -317 0
+rnode "VSS.t227" 0 0 5086 -317 0
+rnode "VSS.t151" 0 0 4718 -314 0
+rnode "VSS.t142" 0 0 4458 -323 0
+rnode "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 0 0 4342 -511 0
+rnode "VSS.n177" 0 0 4158 -267 0
+rnode "VSS.n178" 0 0 3854 -267 0
+rnode "VSS.t110" 0 0 3422 -293 0
+rnode "VSS.t181" 0 0 2863 -293 0
+rnode "VSS.t11" 0 0 2614 -293 0
+rnode "VSS.t13" 0 0 2126 -308 0
+rnode "VSS.t325" 0 0 2022 -308 0
+rnode "VSS.n179" 0 0 2074 -351 0
+rnode "VSS.t297" 0 0 1250 -317 0
+rnode "VSS.t67" 0 0 882 -314 0
+rnode "VSS.t217" 0 0 742 -323 0
+rnode "VSS.n180" 0 0 794 -349 0
+rnode "VSS.t109" 0 0 3482 -293 0
+rnode "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 0 0 3366 -511 0
+rnode "VSS.t253" 0 0 3107 -293 0
+rnode "VSS.t180" 0 0 2923 -293 0
+rnode "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 0 0 2806 -511 0
+rnode "VSS.t10" 0 0 2554 -293 0
+rnode "VSS.t12" 0 0 2186 -308 0
+rnode "VSS.t324" 0 0 1962 -308 0
+rnode "VSS.t65" 0 0 1702 -317 0
+rnode "VSS.t94" 0 0 1478 -317 0
+rnode "VSS.t296" 0 0 1310 -317 0
+rnode "VSS.t66" 0 0 942 -314 0
+rnode "VSS.t216" 0 0 682 -323 0
+rnode "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 0 0 566 -511 0
+rnode "VSS.n181" 0 0 382 -267 0
+rnode "VSS.t31" 0 0 150 -293 0
+rnode "VSS.t33" 0 0 -338 -308 0
+rnode "VSS.t93" 0 0 -442 -308 0
+rnode "VSS.n182" 0 0 -390 -351 0
+rnode "VSS.t289" 0 0 -1214 -317 0
+rnode "VSS.t28" 0 0 -1582 -314 0
+rnode "VSS.t102" 0 0 -1722 -323 0
+rnode "VSS.n183" 0 0 -1670 -349 0
+rnode "VSS.t30" 0 0 90 -293 0
+rnode "VSS.t32" 0 0 -278 -308 0
+rnode "VSS.t92" 0 0 -502 -308 0
+rnode "VSS.t29" 0 0 -762 -317 0
+rnode "VSS.t58" 0 0 -986 -317 0
+rnode "VSS.t288" 0 0 -1154 -317 0
+rnode "VSS.t27" 0 0 -1522 -314 0
+rnode "VSS.t101" 0 0 -1782 -323 0
+rnode "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 0 0 -1898 -511 0
+rnode "VSS" 0 0 -2255 -515 0
+rnode "DFF_2phase_1$1_8.VSS" 0 0 -2238 -518 0
+rnode "VSS.n184" 0 0 -2086 -404 0
+rnode "DFF_2phase_1$1_8.VSS" 0 0 -1758 -560 0
+rnode "VSS.n185" 0 0 -1670 -404 0
+rnode "VSS.n186" 0 0 -1266 -404 0
+rnode "VSS.n187" 0 0 -390 -404 0
+rnode "VSS.n188" 0 0 202 -404 0
+rnode "VSS.n189" 0 0 378 -404 0
+rnode "VSS.n190" 0 0 794 -404 0
+rnode "VSS.n191" 0 0 1198 -404 0
+rnode "VSS.n192" 0 0 2074 -404 0
+rnode "VSS.n193" 0 0 2666 -404 0
+rnode "VSS.n194" 0 0 2811 -404 0
+rnode "VSS.n195" 0 0 3370 -404 0
+rnode "VSS.n196" 0 0 3850 -404 0
+rnode "DFF_2phase_1$1_9.VSS" 0 0 4002 -518 0
+resist "DFF_2phase_1$1_8.VSS" "VSS" 0.0085
+resist "VSS.n185" "DFF_2phase_1$1_8.VSS" 0.044
+resist "VSS.n171" "DFF_2phase_1$1_9.VSS" 0.044
+resist "DFF_2phase_1$1_7.VSS" "VSS.n160" 0.044
+resist "DFF_2phase_1$1_6.VSS" "VSS.n147" 0.044
+resist "DFF_2phase_1$1_5.VSS" "VSS.n134" 0.044
+resist "DFF_2phase_1$1_4.VSS" "VSS.n121" 0.044
+resist "DFF_2phase_1$1_3.VSS" "VSS.n108" 0.044
+resist "DFF_2phase_1$1_2.VSS" "VSS.n95" 0.044
+resist "DFF_2phase_1$1_1.VSS" "VSS.n82" 0.044
+resist "DFF_2phase_1$1_0.VSS" "VSS.n69" 0.044
+resist "VSS.n194" "VSS.n193" 0.0725
+resist "VSS.n165" "VSS.n164" 0.0725
+resist "VSS.n152" "VSS.n151" 0.0725
+resist "VSS.n139" "VSS.n138" 0.0725
+resist "VSS.n126" "VSS.n125" 0.0725
+resist "VSS.n113" "VSS.n112" 0.0725
+resist "VSS.n100" "VSS.n99" 0.0725
+resist "VSS.n87" "VSS.n86" 0.0725
+resist "VSS.n74" "VSS.n73" 0.0725
+resist "VSS.n61" "VSS.n60" 0.0725
+resist "VSS.n184" "DFF_2phase_1$1_8.VSS" 0.076
+resist "DFF_2phase_1$1_9.VSS" "VSS.n196" 0.076
+resist "DFF_2phase_1$1_9.VSS" "VSS.n0" 0.076
+resist "VSS.n162" "DFF_2phase_1$1_7.VSS" 0.076
+resist "DFF_2phase_1$1_7.VSS" "VSS.n161" 0.076
+resist "VSS.n149" "DFF_2phase_1$1_6.VSS" 0.076
+resist "DFF_2phase_1$1_6.VSS" "VSS.n148" 0.076
+resist "VSS.n136" "DFF_2phase_1$1_5.VSS" 0.076
+resist "DFF_2phase_1$1_5.VSS" "VSS.n135" 0.076
+resist "VSS.n123" "DFF_2phase_1$1_4.VSS" 0.076
+resist "DFF_2phase_1$1_4.VSS" "VSS.n122" 0.076
+resist "VSS.n110" "DFF_2phase_1$1_3.VSS" 0.076
+resist "DFF_2phase_1$1_3.VSS" "VSS.n109" 0.076
+resist "VSS.n97" "DFF_2phase_1$1_2.VSS" 0.076
+resist "DFF_2phase_1$1_2.VSS" "VSS.n96" 0.076
+resist "VSS.n84" "DFF_2phase_1$1_1.VSS" 0.076
+resist "DFF_2phase_1$1_1.VSS" "VSS.n83" 0.076
+resist "VSS.n71" "DFF_2phase_1$1_0.VSS" 0.076
+resist "DFF_2phase_1$1_0.VSS" "VSS.n70" 0.076
+resist "VSS.n189" "VSS.n188" 0.088
+resist "VSS.n175" "VSS.n174" 0.088
+resist "VSS.n157" "VSS.n156" 0.088
+resist "VSS.n144" "VSS.n143" 0.088
+resist "VSS.n131" "VSS.n130" 0.088
+resist "VSS.n118" "VSS.n117" 0.088
+resist "VSS.n105" "VSS.n104" 0.088
+resist "VSS.n92" "VSS.n91" 0.088
+resist "VSS.n79" "VSS.n78" 0.088
+resist "VSS.n66" "VSS.n65" 0.088
+resist "DFF_2phase_1$1_8.VSS" "VSS.n184" 0.164
+resist "DFF_2phase_1$1_9.VSS" "VSS.n0" 0.164
+resist "VSS.n161" "DFF_2phase_1$1_7.VSS" 0.164
+resist "VSS.n148" "DFF_2phase_1$1_6.VSS" 0.164
+resist "VSS.n135" "DFF_2phase_1$1_5.VSS" 0.164
+resist "VSS.n122" "DFF_2phase_1$1_4.VSS" 0.164
+resist "VSS.n109" "DFF_2phase_1$1_3.VSS" 0.164
+resist "VSS.n96" "DFF_2phase_1$1_2.VSS" 0.164
+resist "VSS.n83" "DFF_2phase_1$1_1.VSS" 0.164
+resist "VSS.n70" "DFF_2phase_1$1_0.VSS" 0.164
+resist "VSS.n186" "VSS.n185" 0.202
+resist "VSS.n191" "VSS.n190" 0.202
+resist "VSS.n172" "VSS.n171" 0.202
+resist "VSS.n168" "VSS.n167" 0.202
+resist "VSS.n160" "VSS.n159" 0.202
+resist "VSS.n155" "VSS.n154" 0.202
+resist "VSS.n147" "VSS.n146" 0.202
+resist "VSS.n142" "VSS.n141" 0.202
+resist "VSS.n134" "VSS.n133" 0.202
+resist "VSS.n129" "VSS.n128" 0.202
+resist "VSS.n121" "VSS.n120" 0.202
+resist "VSS.n116" "VSS.n115" 0.202
+resist "VSS.n108" "VSS.n107" 0.202
+resist "VSS.n103" "VSS.n102" 0.202
+resist "VSS.n95" "VSS.n94" 0.202
+resist "VSS.n90" "VSS.n89" 0.202
+resist "VSS.n82" "VSS.n81" 0.202
+resist "VSS.n77" "VSS.n76" 0.202
+resist "VSS.n69" "VSS.n68" 0.202
+resist "VSS.n64" "VSS.n63" 0.202
+resist "VSS.n190" "VSS.n189" 0.208
+resist "VSS.n175" "VSS.n168" 0.208
+resist "VSS.n156" "VSS.n155" 0.208
+resist "VSS.n143" "VSS.n142" 0.208
+resist "VSS.n130" "VSS.n129" 0.208
+resist "VSS.n117" "VSS.n116" 0.208
+resist "VSS.n104" "VSS.n103" 0.208
+resist "VSS.n91" "VSS.n90" 0.208
+resist "VSS.n78" "VSS.n77" 0.208
+resist "VSS.n65" "VSS.n64" 0.208
+resist "VSS.n196" "VSS.n195" 0.24
+resist "VSS.n163" "VSS.n162" 0.24
+resist "VSS.n150" "VSS.n149" 0.24
+resist "VSS.n137" "VSS.n136" 0.24
+resist "VSS.n124" "VSS.n123" 0.24
+resist "VSS.n111" "VSS.n110" 0.24
+resist "VSS.n98" "VSS.n97" 0.24
+resist "VSS.n85" "VSS.n84" 0.24
+resist "VSS.n72" "VSS.n71" 0.24
+resist "VSS.n195" "VSS.n194" 0.2795
+resist "VSS.n164" "VSS.n163" 0.2795
+resist "VSS.n151" "VSS.n150" 0.2795
+resist "VSS.n138" "VSS.n137" 0.2795
+resist "VSS.n125" "VSS.n124" 0.2795
+resist "VSS.n112" "VSS.n111" 0.2795
+resist "VSS.n99" "VSS.n98" 0.2795
+resist "VSS.n86" "VSS.n85" 0.2795
+resist "VSS.n73" "VSS.n72" 0.2795
+resist "VSS.n60" "VSS.n59" 0.2795
+resist "VSS.n188" "VSS.n187" 0.296
+resist "VSS.n193" "VSS.n192" 0.296
+resist "VSS.n174" "VSS.n173" 0.296
+resist "VSS.n166" "VSS.n165" 0.296
+resist "VSS.n158" "VSS.n157" 0.296
+resist "VSS.n153" "VSS.n152" 0.296
+resist "VSS.n145" "VSS.n144" 0.296
+resist "VSS.n140" "VSS.n139" 0.296
+resist "VSS.n132" "VSS.n131" 0.296
+resist "VSS.n127" "VSS.n126" 0.296
+resist "VSS.n119" "VSS.n118" 0.296
+resist "VSS.n114" "VSS.n113" 0.296
+resist "VSS.n106" "VSS.n105" 0.296
+resist "VSS.n101" "VSS.n100" 0.296
+resist "VSS.n93" "VSS.n92" 0.296
+resist "VSS.n88" "VSS.n87" 0.296
+resist "VSS.n80" "VSS.n79" 0.296
+resist "VSS.n75" "VSS.n74" 0.296
+resist "VSS.n67" "VSS.n66" 0.296
+resist "VSS.n62" "VSS.n61" 0.296
+resist "VSS.n187" "VSS.n186" 0.438
+resist "VSS.n192" "VSS.n191" 0.438
+resist "VSS.n173" "VSS.n172" 0.438
+resist "VSS.n167" "VSS.n166" 0.438
+resist "VSS.n159" "VSS.n158" 0.438
+resist "VSS.n154" "VSS.n153" 0.438
+resist "VSS.n146" "VSS.n145" 0.438
+resist "VSS.n141" "VSS.n140" 0.438
+resist "VSS.n133" "VSS.n132" 0.438
+resist "VSS.n128" "VSS.n127" 0.438
+resist "VSS.n120" "VSS.n119" 0.438
+resist "VSS.n115" "VSS.n114" 0.438
+resist "VSS.n107" "VSS.n106" 0.438
+resist "VSS.n102" "VSS.n101" 0.438
+resist "VSS.n94" "VSS.n93" 0.438
+resist "VSS.n89" "VSS.n88" 0.438
+resist "VSS.n81" "VSS.n80" 0.438
+resist "VSS.n76" "VSS.n75" 0.438
+resist "VSS.n68" "VSS.n67" 0.438
+resist "VSS.n63" "VSS.n62" 0.438
+resist "VSS.n183" "VSS.t102" 1.84937
+resist "VSS.n180" "VSS.t217" 1.84937
+resist "VSS.n170" "VSS.t143" 1.84937
+resist "VSS.n1" "VSS.t204" 1.84937
+resist "VSS.n5" "VSS.t104" 1.84937
+resist "VSS.n8" "VSS.t116" 1.84937
+resist "VSS.n12" "VSS.t178" 1.84937
+resist "VSS.n15" "VSS.t208" 1.84937
+resist "VSS.n19" "VSS.t232" 1.84937
+resist "VSS.n22" "VSS.t251" 1.84937
+resist "VSS.n26" "VSS.t243" 1.84937
+resist "VSS.n29" "VSS.t212" 1.84937
+resist "VSS.n33" "VSS.t100" 1.84937
+resist "VSS.n36" "VSS.t219" 1.84937
+resist "VSS.n40" "VSS.t245" 1.84937
+resist "VSS.n43" "VSS.t206" 1.84937
+resist "VSS.n47" "VSS.t230" 1.84937
+resist "VSS.n50" "VSS.t118" 1.84937
+resist "VSS.n54" "VSS.t237" 1.84937
+resist "VSS.n57" "VSS.t210" 1.84937
+resist "VSS.n182" "VSS.t93" 2.07342
+resist "VSS.n182" "VSS.t33" 2.07342
+resist "VSS.n179" "VSS.t325" 2.07342
+resist "VSS.n179" "VSS.t13" 2.07342
+resist "VSS.n169" "VSS.t305" 2.07342
+resist "VSS.n169" "VSS.t17" 2.07342
+resist "VSS.n2" "VSS.t234" 2.07342
+resist "VSS.n2" "VSS.t176" 2.07342
+resist "VSS.n6" "VSS.t6" 2.07342
+resist "VSS.n6" "VSS.t329" 2.07342
+resist "VSS.n9" "VSS.t26" 2.07342
+resist "VSS.n9" "VSS.t135" 2.07342
+resist "VSS.n13" "VSS.t271" 2.07342
+resist "VSS.n13" "VSS.t164" 2.07342
+resist "VSS.n16" "VSS.t114" 2.07342
+resist "VSS.n16" "VSS.t62" 2.07342
+resist "VSS.n20" "VSS.t89" 2.07342
+resist "VSS.n20" "VSS.t83" 2.07342
+resist "VSS.n23" "VSS.t141" 2.07342
+resist "VSS.n23" "VSS.t139" 2.07342
+resist "VSS.n27" "VSS.t40" 2.07342
+resist "VSS.n27" "VSS.t156" 2.07342
+resist "VSS.n30" "VSS.t81" 2.07342
+resist "VSS.n30" "VSS.t261" 2.07342
+resist "VSS.n34" "VSS.t108" 2.07342
+resist "VSS.n34" "VSS.t37" 2.07342
+resist "VSS.n37" "VSS.t168" 2.07342
+resist "VSS.n37" "VSS.t98" 2.07342
+resist "VSS.n41" "VSS.t21" 2.07342
+resist "VSS.n41" "VSS.t299" 2.07342
+resist "VSS.n44" "VSS.t197" 2.07342
+resist "VSS.n44" "VSS.t125" 2.07342
+resist "VSS.n48" "VSS.t106" 2.07342
+resist "VSS.n48" "VSS.t223" 2.07342
+resist "VSS.n51" "VSS.t199" 2.07342
+resist "VSS.n51" "VSS.t172" 2.07342
+resist "VSS.n55" "VSS.t320" 2.07342
+resist "VSS.n55" "VSS.t147" 2.07342
+resist "VSS.n58" "VSS.t4" 2.07342
+resist "VSS.n58" "VSS.t189" 2.07342
+resist "VSS.n65" "VSS.n56" 3.6289
+resist "VSS.n70" "VSS.n53" 3.6289
+resist "VSS.n71" "VSS.n52" 3.6289
+resist "VSS.n78" "VSS.n49" 3.6289
+resist "VSS.n83" "VSS.n46" 3.6289
+resist "VSS.n84" "VSS.n45" 3.6289
+resist "VSS.n91" "VSS.n42" 3.6289
+resist "VSS.n96" "VSS.n39" 3.6289
+resist "VSS.n97" "VSS.n38" 3.6289
+resist "VSS.n104" "VSS.n35" 3.6289
+resist "VSS.n109" "VSS.n32" 3.6289
+resist "VSS.n110" "VSS.n31" 3.6289
+resist "VSS.n117" "VSS.n28" 3.6289
+resist "VSS.n122" "VSS.n25" 3.6289
+resist "VSS.n123" "VSS.n24" 3.6289
+resist "VSS.n130" "VSS.n21" 3.6289
+resist "VSS.n135" "VSS.n18" 3.6289
+resist "VSS.n136" "VSS.n17" 3.6289
+resist "VSS.n143" "VSS.n14" 3.6289
+resist "VSS.n148" "VSS.n11" 3.6289
+resist "VSS.n149" "VSS.n10" 3.6289
+resist "VSS.n156" "VSS.n7" 3.6289
+resist "VSS.n161" "VSS.n4" 3.6289
+resist "VSS.n162" "VSS.n3" 3.6289
+resist "VSS.n176" "VSS.n175" 3.6289
+resist "VSS.n177" "VSS.n0" 3.6289
+resist "VSS.n196" "VSS.n178" 3.6289
+resist "VSS.n189" "VSS.n181" 3.6289
+resist "VSS.n183" "VSS.t28" 3.96
+resist "VSS.n180" "VSS.t67" 3.96
+resist "VSS.n170" "VSS.t152" 3.96
+resist "VSS.n1" "VSS.t201" 3.96
+resist "VSS.n5" "VSS.t194" 3.96
+resist "VSS.n8" "VSS.t57" 3.96
+resist "VSS.n12" "VSS.t309" 3.96
+resist "VSS.n15" "VSS.t71" 3.96
+resist "VSS.n19" "VSS.t283" 3.96
+resist "VSS.n22" "VSS.t149" 3.96
+resist "VSS.n26" "VSS.t274" 3.96
+resist "VSS.n29" "VSS.t43" 3.96
+resist "VSS.n33" "VSS.t75" 3.96
+resist "VSS.n36" "VSS.t54" 3.96
+resist "VSS.n40" "VSS.t131" 3.96
+resist "VSS.n43" "VSS.t23" 3.96
+resist "VSS.n47" "VSS.t8" 3.96
+resist "VSS.n50" "VSS.t46" 3.96
+resist "VSS.n54" "VSS.t191" 3.96
+resist "VSS.n57" "VSS.t215" 3.96
+resist "VSS.n194" "VSS.t181" 4.51221
+resist "VSS.n164" "VSS.t257" 4.51221
+resist "VSS.n151" "VSS.t268" 4.51221
+resist "VSS.n138" "VSS.t240" 4.51221
+resist "VSS.n125" "VSS.t318" 4.51221
+resist "VSS.n112" "VSS.t276" 4.51221
+resist "VSS.n99" "VSS.t249" 4.51221
+resist "VSS.n86" "VSS.t295" 4.51221
+resist "VSS.n73" "VSS.t2" 4.51221
+resist "VSS.n60" "VSS.t286" 4.51221
+resist "VSS.n188" "VSS.t31" 4.63939
+resist "VSS.n193" "VSS.t11" 4.63939
+resist "VSS.n195" "VSS.t110" 4.63939
+resist "VSS.n174" "VSS.t19" 4.63939
+resist "VSS.n165" "VSS.t174" 4.63939
+resist "VSS.n163" "VSS.t112" 4.63939
+resist "VSS.n157" "VSS.t327" 4.63939
+resist "VSS.n152" "VSS.t133" 4.63939
+resist "VSS.n150" "VSS.t312" 4.63939
+resist "VSS.n144" "VSS.t162" 4.63939
+resist "VSS.n139" "VSS.t60" 4.63939
+resist "VSS.n137" "VSS.t278" 4.63939
+resist "VSS.n131" "VSS.t85" 4.63939
+resist "VSS.n126" "VSS.t137" 4.63939
+resist "VSS.n124" "VSS.t183" 4.63939
+resist "VSS.n118" "VSS.t158" 4.63939
+resist "VSS.n113" "VSS.t263" 4.63939
+resist "VSS.n111" "VSS.t303" 4.63939
+resist "VSS.n105" "VSS.t35" 4.63939
+resist "VSS.n100" "VSS.t96" 4.63939
+resist "VSS.n98" "VSS.t87" 4.63939
+resist "VSS.n92" "VSS.t301" 4.63939
+resist "VSS.n87" "VSS.t127" 4.63939
+resist "VSS.n85" "VSS.t307" 4.63939
+resist "VSS.n79" "VSS.t221" 4.63939
+resist "VSS.n74" "VSS.t170" 4.63939
+resist "VSS.n72" "VSS.t123" 4.63939
+resist "VSS.n66" "VSS.t145" 4.63939
+resist "VSS.n61" "VSS.t187" 4.63939
+resist "VSS.n59" "VSS.t51" 4.63939
+resist "VSS.n187" "VSS.n182" 6.4037
+resist "VSS.n192" "VSS.n179" 6.4037
+resist "VSS.n173" "VSS.n169" 6.4037
+resist "VSS.n166" "VSS.n2" 6.4037
+resist "VSS.n158" "VSS.n6" 6.4037
+resist "VSS.n153" "VSS.n9" 6.4037
+resist "VSS.n145" "VSS.n13" 6.4037
+resist "VSS.n140" "VSS.n16" 6.4037
+resist "VSS.n132" "VSS.n20" 6.4037
+resist "VSS.n127" "VSS.n23" 6.4037
+resist "VSS.n119" "VSS.n27" 6.4037
+resist "VSS.n114" "VSS.n30" 6.4037
+resist "VSS.n106" "VSS.n34" 6.4037
+resist "VSS.n101" "VSS.n37" 6.4037
+resist "VSS.n93" "VSS.n41" 6.4037
+resist "VSS.n88" "VSS.n44" 6.4037
+resist "VSS.n80" "VSS.n48" 6.4037
+resist "VSS.n75" "VSS.n51" 6.4037
+resist "VSS.n67" "VSS.n55" 6.4037
+resist "VSS.n62" "VSS.n58" 6.4037
+resist "VSS.n185" "VSS.n183" 6.40761
+resist "VSS.n190" "VSS.n180" 6.40761
+resist "VSS.n171" "VSS.n170" 6.40761
+resist "VSS.n168" "VSS.n1" 6.40761
+resist "VSS.n160" "VSS.n5" 6.40761
+resist "VSS.n155" "VSS.n8" 6.40761
+resist "VSS.n147" "VSS.n12" 6.40761
+resist "VSS.n142" "VSS.n15" 6.40761
+resist "VSS.n134" "VSS.n19" 6.40761
+resist "VSS.n129" "VSS.n22" 6.40761
+resist "VSS.n121" "VSS.n26" 6.40761
+resist "VSS.n116" "VSS.n29" 6.40761
+resist "VSS.n108" "VSS.n33" 6.40761
+resist "VSS.n103" "VSS.n36" 6.40761
+resist "VSS.n95" "VSS.n40" 6.40761
+resist "VSS.n90" "VSS.n43" 6.40761
+resist "VSS.n82" "VSS.n47" 6.40761
+resist "VSS.n77" "VSS.n50" 6.40761
+resist "VSS.n69" "VSS.n54" 6.40761
+resist "VSS.n64" "VSS.n57" 6.40761
+resist "VSS.n186" "VSS.t289" 8.79652
+resist "VSS.n191" "VSS.t297" 8.79652
+resist "VSS.n172" "VSS.t228" 8.79652
+resist "VSS.n167" "VSS.t280" 8.79652
+resist "VSS.n159" "VSS.t255" 8.79652
+resist "VSS.n154" "VSS.t78" 8.79652
+resist "VSS.n146" "VSS.t121" 8.79652
+resist "VSS.n141" "VSS.t48" 8.79652
+resist "VSS.n133" "VSS.t15" 8.79652
+resist "VSS.n128" "VSS.t160" 8.79652
+resist "VSS.n120" "VSS.t91" 8.79652
+resist "VSS.n115" "VSS.t166" 8.79652
+resist "VSS.n107" "VSS.t316" 8.79652
+resist "VSS.n102" "VSS.t291" 8.79652
+resist "VSS.n94" "VSS.t185" 8.79652
+resist "VSS.n89" "VSS.t266" 8.79652
+resist "VSS.n81" "VSS.t293" 8.79652
+resist "VSS.n76" "VSS.t64" 8.79652
+resist "VSS.n68" "VSS.t323" 8.79652
+resist "VSS.n63" "VSS.t69" 8.79652
+resist "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" "VSS.t101" 694.291
+resist "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" "VSS.t216" 694.291
+resist "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "VSS.t109" 694.291
+resist "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" "VSS.t142" 694.291
+resist "VSS.t203" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 694.291
+resist "VSS.t111" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 694.291
+resist "VSS.t103" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 694.291
+resist "VSS.t115" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 694.291
+resist "VSS.t311" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 694.291
+resist "VSS.t177" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 694.291
+resist "VSS.t207" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 694.291
+resist "VSS.t277" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 694.291
+resist "VSS.t231" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 694.291
+resist "VSS.t250" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 694.291
+resist "VSS.t182" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 694.291
+resist "VSS.t242" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 694.291
+resist "VSS.t211" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 694.291
+resist "VSS.t302" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 694.291
+resist "VSS.t99" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 694.291
+resist "VSS.t218" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 694.291
+resist "VSS.t86" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 694.291
+resist "VSS.t244" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 694.291
+resist "VSS.t205" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 694.291
+resist "VSS.t306" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 694.291
+resist "VSS.t229" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 694.291
+resist "VSS.t117" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 694.291
+resist "VSS.t122" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 694.291
+resist "VSS.t236" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 694.291
+resist "VSS.t209" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 694.291
+resist "VSS.t50" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 694.291
+resist "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" "VSS.t180" 700.276
+resist "VSS.t256" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 700.276
+resist "VSS.t267" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 700.276
+resist "VSS.t239" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 700.276
+resist "VSS.t317" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 700.276
+resist "VSS.t275" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 700.276
+resist "VSS.t248" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 700.276
+resist "VSS.t294" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 700.276
+resist "VSS.t1" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 700.276
+resist "VSS.t285" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 700.276
+resist "VSS.t288" "VSS.t58" 1005.52
+resist "VSS.t296" "VSS.t94" 1005.52
+resist "VSS.t227" "VSS.t79" 1005.52
+resist "VSS.t128" "VSS.t279" 1005.52
+resist "VSS.t259" "VSS.t254" 1005.52
+resist "VSS.t314" "VSS.t77" 1005.52
+resist "VSS.t264" "VSS.t120" 1005.52
+resist "VSS.t313" "VSS.t47" 1005.52
+resist "VSS.t38" "VSS.t14" 1005.52
+resist "VSS.t49" "VSS.t159" 1005.52
+resist "VSS.t119" "VSS.t90" 1005.52
+resist "VSS.t258" "VSS.t165" 1005.52
+resist "VSS.t73" "VSS.t315" 1005.52
+resist "VSS.t321" "VSS.t290" 1005.52
+resist "VSS.t241" "VSS.t184" 1005.52
+resist "VSS.t281" "VSS.t265" 1005.52
+resist "VSS.t287" "VSS.t292" 1005.52
+resist "VSS.t269" "VSS.t63" 1005.52
+resist "VSS.t0" "VSS.t322" 1005.52
+resist "VSS.t154" "VSS.t68" 1005.52
+resist "VSS.n181" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 1101.29
+resist "VSS.t180" "VSS.t253" 1101.29
+resist "VSS.n177" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 1101.29
+resist "VSS.n176" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" 1101.29
+resist "VSS.t226" "VSS.t256" 1101.29
+resist "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" "VSS.n4" 1101.29
+resist "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" "VSS.n7" 1101.29
+resist "VSS.t246" "VSS.t267" 1101.29
+resist "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" "VSS.n11" 1101.29
+resist "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" "VSS.n14" 1101.29
+resist "VSS.t225" "VSS.t239" 1101.29
+resist "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" "VSS.n18" 1101.29
+resist "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" "VSS.n21" 1101.29
+resist "VSS.t224" "VSS.t317" 1101.29
+resist "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" "VSS.n25" 1101.29
+resist "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" "VSS.n28" 1101.29
+resist "VSS.t179" "VSS.t275" 1101.29
+resist "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" "VSS.n32" 1101.29
+resist "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" "VSS.n35" 1101.29
+resist "VSS.t235" "VSS.t248" 1101.29
+resist "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" "VSS.n39" 1101.29
+resist "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" "VSS.n42" 1101.29
+resist "VSS.t238" "VSS.t294" 1101.29
+resist "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" "VSS.n46" 1101.29
+resist "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" "VSS.n49" 1101.29
+resist "VSS.t247" "VSS.t1" 1101.29
+resist "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" "VSS.n53" 1101.29
+resist "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW" "VSS.n56" 1101.29
+resist "VSS.t252" "VSS.t285" 1101.29
+resist "VSS.n184" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW" 1104.92
+resist "VSS.t58" "VSS.t29" 1340.7
+resist "VSS.t92" "VSS.t32" 1340.7
+resist "VSS.t94" "VSS.t65" 1340.7
+resist "VSS.t324" "VSS.t12" 1340.7
+resist "VSS.t79" "VSS.t153" 1340.7
+resist "VSS.t304" "VSS.t16" 1340.7
+resist "VSS.t202" "VSS.t128" 1340.7
+resist "VSS.t175" "VSS.t233" 1340.7
+resist "VSS.t195" "VSS.t259" 1340.7
+resist "VSS.t328" "VSS.t5" 1340.7
+resist "VSS.t55" "VSS.t314" 1340.7
+resist "VSS.t134" "VSS.t25" 1340.7
+resist "VSS.t310" "VSS.t264" 1340.7
+resist "VSS.t163" "VSS.t270" 1340.7
+resist "VSS.t72" "VSS.t313" 1340.7
+resist "VSS.t61" "VSS.t113" 1340.7
+resist "VSS.t284" "VSS.t38" 1340.7
+resist "VSS.t82" "VSS.t88" 1340.7
+resist "VSS.t150" "VSS.t49" 1340.7
+resist "VSS.t138" "VSS.t140" 1340.7
+resist "VSS.t272" "VSS.t119" 1340.7
+resist "VSS.t155" "VSS.t39" 1340.7
+resist "VSS.t41" "VSS.t258" 1340.7
+resist "VSS.t260" "VSS.t80" 1340.7
+resist "VSS.t76" "VSS.t73" 1340.7
+resist "VSS.t36" "VSS.t107" 1340.7
+resist "VSS.t52" "VSS.t321" 1340.7
+resist "VSS.t97" "VSS.t167" 1340.7
+resist "VSS.t129" "VSS.t241" 1340.7
+resist "VSS.t298" "VSS.t20" 1340.7
+resist "VSS.t24" "VSS.t281" 1340.7
+resist "VSS.t124" "VSS.t196" 1340.7
+resist "VSS.t9" "VSS.t287" 1340.7
+resist "VSS.t222" "VSS.t105" 1340.7
+resist "VSS.t44" "VSS.t269" 1340.7
+resist "VSS.t171" "VSS.t198" 1340.7
+resist "VSS.t192" "VSS.t0" 1340.7
+resist "VSS.t146" "VSS.t319" 1340.7
+resist "VSS.t213" "VSS.t154" 1340.7
+resist "VSS.t188" "VSS.t3" 1340.7
+resist "VSS.t10" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" 1508.29
+resist "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" "VSS.t173" 1508.29
+resist "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" "VSS.t132" 1508.29
+resist "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" "VSS.t59" 1508.29
+resist "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" "VSS.t136" 1508.29
+resist "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" "VSS.t262" 1508.29
+resist "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" "VSS.t95" 1508.29
+resist "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" "VSS.t126" 1508.29
+resist "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" "VSS.t169" 1508.29
+resist "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.VPW" "VSS.t186" 1508.29
+resist "VSS.t253" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" 1550.18
+resist "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "VSS.t226" 1550.18
+resist "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "VSS.t246" 1550.18
+resist "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "VSS.t225" 1550.18
+resist "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "VSS.t224" 1550.18
+resist "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "VSS.t179" 1550.18
+resist "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "VSS.t235" 1550.18
+resist "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "VSS.t238" 1550.18
+resist "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "VSS.t247" 1550.18
+resist "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW" "VSS.t252" 1550.18
+resist "VSS.t101" "VSS.t27" 1556.17
+resist "VSS.t29" "VSS.t92" 1556.17
+resist "VSS.t216" "VSS.t66" 1556.17
+resist "VSS.t65" "VSS.t324" 1556.17
+resist "VSS.t142" "VSS.t151" 1556.17
+resist "VSS.t153" "VSS.t304" 1556.17
+resist "VSS.t200" "VSS.t203" 1556.17
+resist "VSS.t233" "VSS.t202" 1556.17
+resist "VSS.t193" "VSS.t103" 1556.17
+resist "VSS.t5" "VSS.t195" 1556.17
+resist "VSS.t56" "VSS.t115" 1556.17
+resist "VSS.t25" "VSS.t55" 1556.17
+resist "VSS.t308" "VSS.t177" 1556.17
+resist "VSS.t270" "VSS.t310" 1556.17
+resist "VSS.t70" "VSS.t207" 1556.17
+resist "VSS.t113" "VSS.t72" 1556.17
+resist "VSS.t282" "VSS.t231" 1556.17
+resist "VSS.t88" "VSS.t284" 1556.17
+resist "VSS.t148" "VSS.t250" 1556.17
+resist "VSS.t140" "VSS.t150" 1556.17
+resist "VSS.t273" "VSS.t242" 1556.17
+resist "VSS.t39" "VSS.t272" 1556.17
+resist "VSS.t42" "VSS.t211" 1556.17
+resist "VSS.t80" "VSS.t41" 1556.17
+resist "VSS.t74" "VSS.t99" 1556.17
+resist "VSS.t107" "VSS.t76" 1556.17
+resist "VSS.t53" "VSS.t218" 1556.17
+resist "VSS.t167" "VSS.t52" 1556.17
+resist "VSS.t130" "VSS.t244" 1556.17
+resist "VSS.t20" "VSS.t129" 1556.17
+resist "VSS.t22" "VSS.t205" 1556.17
+resist "VSS.t196" "VSS.t24" 1556.17
+resist "VSS.t7" "VSS.t229" 1556.17
+resist "VSS.t105" "VSS.t9" 1556.17
+resist "VSS.t45" "VSS.t117" 1556.17
+resist "VSS.t198" "VSS.t44" 1556.17
+resist "VSS.t190" "VSS.t236" 1556.17
+resist "VSS.t319" "VSS.t192" 1556.17
+resist "VSS.t214" "VSS.t209" 1556.17
+resist "VSS.t3" "VSS.t213" 1556.17
+resist "VSS.t30" "VSS.n181" 1747.7
+resist "VSS.t18" "VSS.n176" 1747.7
+resist "VSS.n7" "VSS.t326" 1747.7
+resist "VSS.n14" "VSS.t161" 1747.7
+resist "VSS.n21" "VSS.t84" 1747.7
+resist "VSS.n28" "VSS.t157" 1747.7
+resist "VSS.n35" "VSS.t34" 1747.7
+resist "VSS.n42" "VSS.t300" 1747.7
+resist "VSS.n49" "VSS.t220" 1747.7
+resist "VSS.n56" "VSS.t144" 1747.7
+resist "VSS.n178" "VSS.n177" 1819.52
+resist "VSS.n4" "VSS.n3" 1819.52
+resist "VSS.n11" "VSS.n10" 1819.52
+resist "VSS.n18" "VSS.n17" 1819.52
+resist "VSS.n25" "VSS.n24" 1819.52
+resist "VSS.n32" "VSS.n31" 1819.52
+resist "VSS.n39" "VSS.n38" 1819.52
+resist "VSS.n46" "VSS.n45" 1819.52
+resist "VSS.n53" "VSS.n52" 1819.52
+resist "VSS.t27" "VSS.t288" 2202.58
+resist "VSS.t32" "VSS.t30" 2202.58
+resist "VSS.t66" "VSS.t296" 2202.58
+resist "VSS.t12" "VSS.t10" 2202.58
+resist "VSS.t151" "VSS.t227" 2202.58
+resist "VSS.t16" "VSS.t18" 2202.58
+resist "VSS.t279" "VSS.t200" 2202.58
+resist "VSS.t173" "VSS.t175" 2202.58
+resist "VSS.t254" "VSS.t193" 2202.58
+resist "VSS.t326" "VSS.t328" 2202.58
+resist "VSS.t77" "VSS.t56" 2202.58
+resist "VSS.t132" "VSS.t134" 2202.58
+resist "VSS.t120" "VSS.t308" 2202.58
+resist "VSS.t161" "VSS.t163" 2202.58
+resist "VSS.t47" "VSS.t70" 2202.58
+resist "VSS.t59" "VSS.t61" 2202.58
+resist "VSS.t14" "VSS.t282" 2202.58
+resist "VSS.t84" "VSS.t82" 2202.58
+resist "VSS.t159" "VSS.t148" 2202.58
+resist "VSS.t136" "VSS.t138" 2202.58
+resist "VSS.t90" "VSS.t273" 2202.58
+resist "VSS.t157" "VSS.t155" 2202.58
+resist "VSS.t165" "VSS.t42" 2202.58
+resist "VSS.t262" "VSS.t260" 2202.58
+resist "VSS.t315" "VSS.t74" 2202.58
+resist "VSS.t34" "VSS.t36" 2202.58
+resist "VSS.t290" "VSS.t53" 2202.58
+resist "VSS.t95" "VSS.t97" 2202.58
+resist "VSS.t184" "VSS.t130" 2202.58
+resist "VSS.t300" "VSS.t298" 2202.58
+resist "VSS.t265" "VSS.t22" 2202.58
+resist "VSS.t126" "VSS.t124" 2202.58
+resist "VSS.t292" "VSS.t7" 2202.58
+resist "VSS.t220" "VSS.t222" 2202.58
+resist "VSS.t63" "VSS.t45" 2202.58
+resist "VSS.t169" "VSS.t171" 2202.58
+resist "VSS.t322" "VSS.t190" 2202.58
+resist "VSS.t144" "VSS.t146" 2202.58
+resist "VSS.t68" "VSS.t214" 2202.58
+resist "VSS.t186" "VSS.t188" 2202.58
+resist "VSS.t109" "VSS.n178" 2226.52
+resist "VSS.n3" "VSS.t111" 2226.52
+resist "VSS.n10" "VSS.t311" 2226.52
+resist "VSS.n17" "VSS.t277" 2226.52
+resist "VSS.n24" "VSS.t182" 2226.52
+resist "VSS.n31" "VSS.t302" 2226.52
+resist "VSS.n38" "VSS.t86" 2226.52
+resist "VSS.n45" "VSS.t306" 2226.52
+resist "VSS.n52" "VSS.t122" 2226.52
+resist "VSS.n59" "VSS.t50" 2230.39
+device msubckt nfet_05v0 51562 -387 51563 -386  "VSS.t44" "a_50454_n402#" 240 0 "a_51438_158#" 140 7280,244 "a_51682_n387#" 140 10520,298
+device msubckt nfet_05v0 10898 -384 10899 -383  "VSS.t193" "a_10550_n402#" 240 0 "VSS.t194" 140 10520,298 "a_11018_n384#" 140 12320,456
+device msubckt pfet_05v0 51986 82 51987 83  "VDD.t173" "a_51438_158#" 200 0 "VDD.t174" 276 14352,380 "a_51782_38#" 276 24288,728
+device msubckt pfet_05v0 52783 79 52784 80  "VDD.t1" "Q[9].t5" 200 0 "VDD.t2" 329 28952,834 "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433
+device msubckt nfet_05v0 52414 -425 52415 -424  "VSS.t169" "a_51438_158#" 240 0 "Q[9].t0" 264 23232,704 "VSS.t170" 264 23232,704
+device msubckt pfet_05v0 44582 155 44583 156  "VDD.t22" "a_44214_n402#" 200 0 "VDD.t23" 200 19040,436 "a_44682_n384#" 200 17600,576
+device msubckt nfet_05v0 40303 -425 40304 -424  "VSS.t248" "Q[7].t5" 240 0 "VSS.t249" 264 23232,704 "a_40423_n425#" 264 8448,328
+device msubckt nfet_05v0 49950 -425 49951 -424  "VSS.t220" "a_48974_158#" 240 0 "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 264 23232,704 "VSS.t221" 264 23232,704
+device msubckt nfet_05v0 56190 -425 56191 -424  "VSS.t144" "a_55214_158#" 240 0 "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 264 23232,704 "VSS.t145" 264 23232,704
+device msubckt nfet_05v0 14122 -387 14123 -386  "VSS.t55" "a_13014_n402#" 240 0 "a_13998_158#" 140 7280,244 "a_14242_n387#" 140 10520,298
+device msubckt pfet_05v0 17878 158 17879 159  "VDD.t272" "a_17258_n384#" 200 0 "a_17774_158#" 200 10400,304 "a_17978_158#" 200 17040,416
+device msubckt pfet_05v0 -1822 79 -1821 80  "VDD.t254" "PHI_1.t19" 200 0 "a_n1930_n402#" 276 24288,728 "VDD.t255" 276 19040,436
+device msubckt nfet_05v0 23746 -387 23747 -386  "VSS.t14" "Q[4].t5" 240 0 "VSS.t15" 140 12320,456 "a_23866_n387#" 140 3360,188
+device msubckt pfet_05v0 59227 79 59228 80  "VDD.t233" "EN.t19" 200 0 "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433 "VDD.t234" 329 28952,834
+device msubckt nfet_05v0 42858 -387 42859 -386  "VSS.t129" "a_41750_n402#" 240 0 "a_42734_158#" 140 7280,244 "a_42978_n387#" 140 10520,298
+device msubckt pfet_05v0 38710 158 38711 159  "VDD.t294" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 200 0 "VDD.t295" 200 17600,576 "a_38810_158#" 200 4800,248
+device msubckt pfet_05v0 33062 82 33063 83  "VDD.t80" "a_33062_38#" 200 0 "a_32922_158#" 276 17040,416 "VDD.t81" 276 14352,380
+device msubckt pfet_05v0 11878 82 11879 83  "VDD.t7" "a_11878_38#" 200 0 "a_11738_158#" 276 17040,416 "VDD.t8" 276 14352,380
+device msubckt nfet_05v0 2863 -425 2864 -424  "VSS.t180" "Q[1].t5" 240 0 "VSS.t181" 264 23232,704 "a_2983_n425#" 264 8448,328
+device msubckt nfet_05v0 31822 -402 31823 -401  "VSS.t211" "PHI_2.t19" 240 0 "a_31734_n402#" 158 13904,492 "VSS.t212" 158 10520,298
+device msubckt pfet_05v0 54966 158 54967 159  "VDD.t3" "Q[9].t4" 200 0 "VDD.t4" 200 17600,576 "a_55066_158#" 200 4800,248
+device msubckt pfet_05v0 42838 158 42839 159  "VDD.t249" "a_42218_n384#" 200 0 "a_42734_158#" 200 10400,304 "a_42938_158#" 200 17040,416
+device msubckt pfet_05v0 39934 79 39935 80  "VDD.t95" "a_38958_158#" 200 0 "Q[7].t1" 366 32208,908 "VDD.t96" 366 32208,908
+device msubckt pfet_05v0 11434 158 11435 159  "VDD.t204" "a_10550_n402#" 200 0 "a_11386_158#" 200 4800,248 "a_11534_158#" 200 10400,304
+device msubckt pfet_05v0 49522 82 49523 83  "VDD.t221" "a_48974_158#" 200 0 "VDD.t222" 276 14352,380 "a_49318_38#" 276 24288,728
+device msubckt nfet_05v0 39082 -387 39083 -386  "VSS.t52" "a_37974_n402#" 240 0 "a_38958_158#" 140 7280,244 "a_39202_n387#" 140 10520,298
+device msubckt pfet_05v0 22162 79 22163 80  "VDD.t283" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 200 0 "VDD.t284" 366 32208,908 "gc[4].t1" 366 32208,908
+device msubckt nfet_05v0 43342 -387 43343 -386  "VSS.t298" "a_42734_158#" 240 0 "VSS.t299" 158 8216,262 "a_43078_38#" 158 13904,492
+device msubckt pfet_05v0 5398 158 5399 159  "VDD.t79" "a_4778_n384#" 200 0 "a_5294_158#" 200 10400,304 "a_5498_158#" 200 17040,416
+device msubckt pfet_05v0 1862 82 1863 83  "VDD.t334" "a_1862_38#" 200 0 "a_1722_158#" 276 17040,416 "VDD.t335" 276 14352,380
+device msubckt nfet_05v0 56782 -402 56783 -401  "VSS.t209" "PHI_2.t18" 240 0 "a_56694_n402#" 158 13904,492 "VSS.t210" 158 10520,298
+device msubckt pfet_05v0 30598 82 30599 83  "VDD.t39" "a_30598_38#" 200 0 "a_30458_158#" 276 17040,416 "VDD.t40" 276 14352,380
+device msubckt nfet_05v0 30154 -387 30155 -386  "VSS.t119" "a_29738_n384#" 240 0 "a_30106_n387#" 140 3360,188 "a_30254_158#" 140 7280,244
+device msubckt pfet_05v0 27823 79 27824 80  "VDD.t90" "Q[5].t5" 200 0 "VDD.t91" 329 28952,834 "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433
+device msubckt nfet_05v0 23914 -387 23915 -386  "VSS.t38" "a_23498_n384#" 240 0 "a_23866_n387#" 140 3360,188 "a_24014_158#" 140 7280,244
+device msubckt pfet_05v0 24990 79 24991 80  "VDD.t82" "a_24014_158#" 200 0 "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 366 32208,908 "VDD.t83" 366 32208,908
+device msubckt nfet_05v0 19602 -384 19603 -383  "VSS.t70" "a_19254_n402#" 240 0 "VSS.t71" 140 10520,298 "a_19722_n384#" 140 12320,456
+device msubckt nfet_05v0 19342 -402 19343 -401  "VSS.t207" "PHI_2.t17" 240 0 "a_19254_n402#" 158 13904,492 "VSS.t208" 158 10520,298
+device msubckt pfet_05v0 10918 155 10919 156  "VDD.t205" "a_10550_n402#" 200 0 "VDD.t206" 200 19040,436 "a_11018_n384#" 200 17600,576
+device msubckt pfet_05v0 39062 158 39063 159  "VDD.t333" "a_38442_n384#" 200 0 "a_38958_158#" 200 10400,304 "a_39162_158#" 200 17040,416
+device msubckt pfet_05v0 23138 79 23139 80  "VDD.t252" "PHI_1.t18" 200 0 "a_23030_n402#" 276 24288,728 "VDD.t253" 276 19040,436
+device msubckt nfet_05v0 14974 -425 14975 -424  "VSS.t132" "a_13998_158#" 240 0 "Q[3].t0" 264 23232,704 "VSS.t133" 264 23232,704
+device msubckt pfet_05v0 9103 79 9104 80  "VDD.t264" "Q[2].t5" 200 0 "VDD.t265" 329 28952,834 "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433
+device msubckt pfet_05v0 58654 79 58655 80  "VDD.t197" "a_57678_158#" 200 0 "Q[10].t1" 366 32208,908 "VDD.t198" 366 32208,908
+device msubckt nfet_05v0 26862 -387 26863 -386  "VSS.t140" "a_26822_38#" 240 0 "a_26722_n387#" 158 10520,298 "VSS.t141" 158 8216,262
+device msubckt pfet_05v0 21787 79 21788 80  "VDD.t231" "EN.t18" 200 0 "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433 "VDD.t232" 329 28952,834
+device msubckt pfet_05v0 8306 82 8307 83  "VDD.t177" "a_7758_158#" 200 0 "VDD.t178" 276 14352,380 "a_8102_38#" 276 24288,728
+device msubckt pfet_05v0 6270 79 6271 80  "VDD.t16" "a_5294_158#" 200 0 "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 366 32208,908 "VDD.t17" 366 32208,908
+device msubckt nfet_05v0 54578 -384 54579 -383  "VSS.t190" "a_54230_n402#" 240 0 "VSS.t191" 140 10520,298 "a_54698_n384#" 140 12320,456
+device msubckt pfet_05v0 17674 158 17675 159  "VDD.t312" "a_16790_n402#" 200 0 "a_17626_158#" 200 4800,248 "a_17774_158#" 200 10400,304
+device msubckt pfet_05v0 3067 79 3068 80  "VDD.t245" "EN.t17" 200 0 "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433 "VDD.t246" 329 28952,834
+device msubckt nfet_05v0 17138 -384 17139 -383  "VSS.t308" "a_16790_n402#" 240 0 "VSS.t309" 140 10520,298 "a_17258_n384#" 140 12320,456
+device msubckt nfet_05v0 12510 -425 12511 -424  "VSS.t326" "a_11534_158#" 240 0 "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 264 23232,704 "VSS.t327" 264 23232,704
+device msubckt nfet_05v0 46727 -425 46728 -424  "VSS.t238" "EN.t16" 240 0 "a_46663_n425#" 264 8448,328 "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 264 23232,704
+device msubckt nfet_05v0 51338 -387 51339 -386  "VSS.t269" "a_50922_n384#" 240 0 "a_51290_n387#" 140 3360,188 "a_51438_158#" 140 7280,244
+device msubckt nfet_05v0 24398 -387 24399 -386  "VSS.t88" "a_24358_38#" 240 0 "a_24258_n387#" 158 10520,298 "VSS.t89" 158 8216,262
+device msubckt nfet_05v0 48874 -387 48875 -386  "VSS.t287" "a_48458_n384#" 240 0 "a_48826_n387#" 140 3360,188 "a_48974_158#" 140 7280,244
+device msubckt pfet_05v0 31842 79 31843 80  "VDD.t329" "PHI_2.t16" 200 0 "a_31734_n402#" 276 24288,728 "VDD.t330" 276 19040,436
+device msubckt pfet_05v0 45746 82 45747 83  "VDD.t122" "a_45198_158#" 200 0 "VDD.t123" 276 14352,380 "a_45542_38#" 276 24288,728
+device msubckt pfet_05v0 46543 79 46544 80  "VDD.t298" "Q[8].t5" 200 0 "VDD.t299" 329 28952,834 "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433
+device msubckt pfet_05v0 42634 158 42635 159  "VDD.t127" "a_41750_n402#" 200 0 "a_42586_158#" 200 4800,248 "a_42734_158#" 200 10400,304
+device msubckt pfet_05v0 23398 155 23399 156  "VDD.t288" "a_23030_n402#" 200 0 "VDD.t289" 200 19040,436 "a_23498_n384#" 200 17600,576
+device msubckt nfet_05v0 13730 -387 13731 -386  "VSS.t77" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 240 0 "VSS.t78" 140 12320,456 "a_13850_n387#" 140 3360,188
+device msubckt nfet_05v0 9103 -425 9104 -424  "VSS.t256" "Q[2].t4" 240 0 "VSS.t257" 264 23232,704 "a_9223_n425#" 264 8448,328
+device msubckt nfet_05v0 32842 -387 32843 -386  "VSS.t41" "a_31734_n402#" 240 0 "a_32718_158#" 140 7280,244 "a_32962_n387#" 140 10520,298
+device msubckt nfet_05v0 -1582 -384 -1581 -383  "VSS.t27" "a_n1930_n402#" 240 0 "VSS.t28" 140 10520,298 "a_n1462_n384#" 140 12320,456
+device msubckt pfet_05v0 32102 155 32103 156  "VDD.t41" "a_31734_n402#" 200 0 "VDD.t42" 200 19040,436 "a_32202_n384#" 200 17600,576
+device msubckt nfet_05v0 -562 -387 -561 -386  "VSS.t92" "a_n602_38#" 240 0 "a_n702_n387#" 158 10520,298 "VSS.t93" 158 8216,262
+device msubckt nfet_05v0 37470 -425 37471 -424  "VSS.t34" "a_36494_158#" 240 0 "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 264 23232,704 "VSS.t35" 264 23232,704
+device msubckt pfet_05v0 17526 158 17527 159  "VDD.t275" "Q[3].t5" 200 0 "VDD.t276" 200 17600,576 "a_17626_158#" 200 4800,248
+device msubckt pfet_05v0 43710 79 43711 80  "VDD.t302" "a_42734_158#" 200 0 "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 366 32208,908 "VDD.t303" 366 32208,908
+device msubckt nfet_05v0 11266 -387 11267 -386  "VSS.t254" "Q[2].t3" 240 0 "VSS.t255" 140 12320,456 "a_11386_n387#" 140 3360,188
+device msubckt nfet_05v0 7122 -384 7123 -383  "VSS.t200" "a_6774_n402#" 240 0 "VSS.t201" 140 10520,298 "a_7242_n384#" 140 12320,456
+device msubckt pfet_05v0 5194 158 5195 159  "VDD.t155" "a_4310_n402#" 200 0 "a_5146_158#" 200 4800,248 "a_5294_158#" 200 10400,304
+device msubckt nfet_05v0 30378 -387 30379 -386  "VSS.t272" "a_29270_n402#" 240 0 "a_30254_158#" 140 7280,244 "a_30498_n387#" 140 10520,298
+device msubckt pfet_05v0 32470 158 32471 159  "VDD.t169" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 200 0 "VDD.t170" 200 17600,576 "a_32570_158#" 200 4800,248
+device msubckt pfet_05v0 20342 158 20343 159  "VDD.t317" "a_19722_n384#" 200 0 "a_20238_158#" 200 10400,304 "a_20442_158#" 200 17040,416
+device msubckt nfet_05v0 30 -425 31 -424  "VSS.t30" "a_n946_158#" 240 0 "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 264 23232,704 "VSS.t31" 264 23232,704
+device msubckt pfet_05v0 50562 79 50563 80  "VDD.t327" "PHI_2.t15" 200 0 "a_50454_n402#" 276 24288,728 "VDD.t328" 276 19040,436
+device msubckt nfet_05v0 38690 -387 38691 -386  "VSS.t290" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 240 0 "VSS.t291" 140 12320,456 "a_38810_n387#" 140 3360,188
+device msubckt pfet_05v0 40507 79 40508 80  "VDD.t243" "EN.t15" 200 0 "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433 "VDD.t244" 329 28952,834
+device msubckt nfet_05v0 2494 -425 2495 -424  "VSS.t10" "a_1518_158#" 240 0 "Q[1].t0" 264 23232,704 "VSS.t11" 264 23232,704
+device msubckt pfet_05v0 2494 79 2495 80  "VDD.t12" "a_1518_158#" 200 0 "Q[1].t1" 366 32208,908 "VDD.t13" 366 32208,908
+device msubckt nfet_05v0 43118 -387 43119 -386  "VSS.t20" "a_43078_38#" 240 0 "a_42978_n387#" 158 10520,298 "VSS.t21" 158 8216,262
+device msubckt nfet_05v0 46543 -425 46544 -424  "VSS.t294" "Q[8].t4" 240 0 "VSS.t295" 264 23232,704 "a_46663_n425#" 264 8448,328
+device msubckt pfet_05v0 59602 79 59603 80  "VDD.t50" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 200 0 "VDD.t51" 366 32208,908 "gc[10].t1" 366 32208,908
+device msubckt nfet_05v0 58654 -425 58655 -424  "VSS.t186" "a_57678_158#" 240 0 "Q[10].t0" 264 23232,704 "VSS.t187" 264 23232,704
+device msubckt nfet_05v0 53342 -425 53343 -424  "VSS.t122" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 240 0 "VSS.t123" 264 23232,704 "gc[9].t0" 264 23232,704
+device msubckt pfet_05v0 48874 158 48875 159  "VDD.t9" "a_47990_n402#" 200 0 "a_48826_158#" 200 4800,248 "a_48974_158#" 200 10400,304
+device msubckt nfet_05v0 29986 -387 29987 -386  "VSS.t90" "Q[5].t4" 240 0 "VSS.t91" 140 12320,456 "a_30106_n387#" 140 3360,188
+device msubckt pfet_05v0 30802 82 30803 83  "VDD.t159" "a_30254_158#" 200 0 "VDD.t160" 276 14352,380 "a_30598_38#" 276 24288,728
+device msubckt nfet_05v0 24622 -387 24623 -386  "VSS.t82" "a_24014_158#" 240 0 "VSS.t83" 158 8216,262 "a_24358_38#" 158 13904,492
+device msubckt pfet_05v0 24358 82 24359 83  "VDD.t88" "a_24358_38#" 200 0 "a_24218_158#" 276 17040,416 "VDD.t89" 276 14352,380
+device msubckt nfet_05v0 13898 -387 13899 -386  "VSS.t314" "a_13482_n384#" 240 0 "a_13850_n387#" 140 3360,188 "a_13998_158#" 140 7280,244
+device msubckt nfet_05v0 10638 -402 10639 -401  "VSS.t103" "PHI_1.t17" 240 0 "a_10550_n402#" 158 13904,492 "VSS.t104" 158 10520,298
+device msubckt nfet_05v0 5678 -387 5679 -386  "VSS.t304" "a_5638_38#" 240 0 "a_5538_n387#" 158 10520,298 "VSS.t305" 158 8216,262
+device msubckt pfet_05v0 4678 155 4679 156  "VDD.t156" "a_4310_n402#" 200 0 "VDD.t157" 200 19040,436 "a_4778_n384#" 200 17600,576
+device msubckt nfet_05v0 -1842 -402 -1841 -401  "VSS.t101" "PHI_1.t16" 240 0 "a_n1930_n402#" 158 13904,492 "VSS.t102" 158 10520,298
+device msubckt pfet_05v0 18750 79 18751 80  "VDD.t165" "a_17774_158#" 200 0 "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 366 32208,908 "VDD.t166" 366 32208,908
+device msubckt pfet_05v0 -398 82 -397 83  "VDD.t30" "a_n946_158#" 200 0 "VDD.t31" 276 14352,380 "a_n602_38#" 276 24288,728
+device msubckt nfet_05v0 44562 -384 44563 -383  "VSS.t22" "a_44214_n402#" 240 0 "VSS.t23" 140 10520,298 "a_44682_n384#" 140 12320,456
+device msubckt pfet_05v0 38342 155 38343 156  "VDD.t52" "a_37974_n402#" 200 0 "VDD.t53" 200 19040,436 "a_38442_n384#" 200 17600,576
+device msubckt pfet_05v0 15547 79 15548 80  "VDD.t187" "EN.t14" 200 0 "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433 "VDD.t188" 329 28952,834
+device msubckt nfet_05v0 1250 -387 1251 -386  "VSS.t296" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 240 0 "VSS.t297" 140 12320,456 "a_1370_n387#" 140 3360,188
+device msubckt pfet_05v0 5046 158 5047 159  "VDD.t189" "Q[1].t4" 200 0 "VDD.t190" 200 17600,576 "a_5146_158#" 200 4800,248
+device msubckt pfet_05v0 54598 155 54599 156  "VDD.t201" "a_54230_n402#" 200 0 "VDD.t202" 200 19040,436 "a_54698_n384#" 200 17600,576
+device msubckt nfet_05v0 11434 -387 11435 -386  "VSS.t259" "a_11018_n384#" 240 0 "a_11386_n387#" 140 3360,188 "a_11534_158#" 140 7280,244
+device msubckt pfet_05v0 20138 158 20139 159  "VDD.t70" "a_19254_n402#" 200 0 "a_20090_158#" 200 4800,248 "a_20238_158#" 200 10400,304
+device msubckt nfet_05v0 45806 -387 45807 -386  "VSS.t124" "a_45198_158#" 240 0 "VSS.t125" 158 8216,262 "a_45542_38#" 158 13904,492
+device msubckt nfet_05v0 52046 -387 52047 -386  "VSS.t171" "a_51438_158#" 240 0 "VSS.t172" 158 8216,262 "a_51782_38#" 158 13904,492
+device msubckt nfet_05v0 57410 -387 57411 -386  "VSS.t68" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 240 0 "VSS.t69" 140 12320,456 "a_57530_n387#" 140 3360,188
+device msubckt pfet_05v0 26582 158 26583 159  "VDD.t49" "a_25962_n384#" 200 0 "a_26478_158#" 200 10400,304 "a_26682_158#" 200 17040,416
+device msubckt nfet_05v0 14382 -387 14383 -386  "VSS.t25" "a_14342_38#" 240 0 "a_14242_n387#" 158 10520,298 "VSS.t26" 158 8216,262
+device msubckt pfet_05v0 1622 158 1623 159  "VDD.t94" "a_1002_n384#" 200 0 "a_1518_158#" 200 10400,304 "a_1722_158#" 200 17040,416
+device msubckt nfet_05v0 49582 -387 49583 -386  "VSS.t222" "a_48974_158#" 240 0 "VSS.t223" 158 8216,262 "a_49318_38#" 158 13904,492
+device msubckt nfet_05v0 42098 -384 42099 -383  "VSS.t130" "a_41750_n402#" 240 0 "VSS.t131" 140 10520,298 "a_42218_n384#" 140 12320,456
+device msubckt nfet_05v0 35858 -384 35859 -383  "VSS.t74" "a_35510_n402#" 240 0 "VSS.t75" 140 10520,298 "a_35978_n384#" 140 12320,456
+device msubckt nfet_05v0 35598 -402 35599 -401  "VSS.t99" "PHI_1.t15" 240 0 "a_35510_n402#" 158 13904,492 "VSS.t100" 158 10520,298
+device msubckt pfet_05v0 48726 158 48727 159  "VDD.t296" "Q[8].t3" 200 0 "VDD.t297" 200 17600,576 "a_48826_158#" 200 4800,248
+device msubckt pfet_05v0 43078 82 43079 83  "VDD.t20" "a_43078_38#" 200 0 "a_42938_158#" 276 17040,416 "VDD.t21" 276 14352,380
+device msubckt pfet_05v0 25602 79 25603 80  "VDD.t325" "PHI_2.t14" 200 0 "a_25494_n402#" 276 24288,728 "VDD.t326" 276 19040,436
+device msubckt pfet_05v0 -1562 155 -1561 156  "VDD.t27" "a_n1930_n402#" 200 0 "VDD.t28" 200 19040,436 "a_n1462_n384#" 200 17600,576
+device msubckt pfet_05v0 39506 82 39507 83  "VDD.t97" "a_38958_158#" 200 0 "VDD.t98" 276 14352,380 "a_39302_38#" 276 24288,728
+device msubckt pfet_05v0 37470 79 37471 80  "VDD.t34" "a_36494_158#" 200 0 "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 366 32208,908 "VDD.t35" 366 32208,908
+device msubckt pfet_05v0 51542 158 51543 159  "VDD.t277" "a_50922_n384#" 200 0 "a_51438_158#" 200 10400,304 "a_51642_158#" 200 17040,416
+device msubckt nfet_05v0 48706 -387 48707 -386  "VSS.t292" "Q[8].t2" 240 0 "VSS.t293" 140 12320,456 "a_48826_n387#" 140 3360,188
+device msubckt nfet_05v0 34247 -425 34248 -424  "VSS.t179" "EN.t13" 240 0 "a_34183_n425#" 264 8448,328 "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 264 23232,704
+device msubckt nfet_05v0 32618 -387 32619 -386  "VSS.t258" "a_32202_n384#" 240 0 "a_32570_n387#" 140 3360,188 "a_32718_158#" 140 7280,244
+device msubckt nfet_05v0 36394 -387 36395 -386  "VSS.t73" "a_35978_n384#" 240 0 "a_36346_n387#" 140 3360,188 "a_36494_158#" 140 7280,244
+device msubckt pfet_05v0 34267 79 34268 80  "VDD.t185" "EN.t12" 200 0 "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433 "VDD.t186" 329 28952,834
+device msubckt pfet_05v0 3442 79 3443 80  "VDD.t103" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 200 0 "VDD.t104" 366 32208,908 "gc[1].t1" 366 32208,908
+device msubckt nfet_05v0 -338 -387 -337 -386  "VSS.t32" "a_n946_158#" 240 0 "VSS.t33" 158 8216,262 "a_n602_38#" 158 13904,492
+device msubckt pfet_05v0 51782 82 51783 83  "VDD.t211" "a_51782_38#" 200 0 "a_51642_158#" 276 17040,416 "VDD.t212" 276 14352,380
+device msubckt nfet_05v0 20362 -387 20363 -386  "VSS.t72" "a_19254_n402#" 240 0 "a_20238_158#" 140 7280,244 "a_20482_n387#" 140 10520,298
+device msubckt nfet_05v0 5902 -387 5903 -386  "VSS.t16" "a_5294_158#" 240 0 "VSS.t17" 158 8216,262 "a_5638_38#" 158 13904,492
+device msubckt pfet_05v0 14974 79 14975 80  "VDD.t130" "a_13998_158#" 200 0 "Q[3].t1" 366 32208,908 "VDD.t131" 366 32208,908
+device msubckt nfet_05v0 33102 -387 33103 -386  "VSS.t80" "a_33062_38#" 240 0 "a_32962_n387#" 158 10520,298 "VSS.t81" 158 8216,262
+device msubckt pfet_05v0 26378 158 26379 159  "VDD.t152" "a_25494_n402#" 200 0 "a_26330_158#" 200 4800,248 "a_26478_158#" 200 10400,304
+device msubckt pfet_05v0 24562 82 24563 83  "VDD.t84" "a_24014_158#" 200 0 "VDD.t85" 276 14352,380 "a_24358_38#" 276 24288,728
+device msubckt nfet_05v0 21214 -425 21215 -424  "VSS.t59" "a_20238_158#" 240 0 "Q[4].t0" 264 23232,704 "VSS.t60" 264 23232,704
+device msubckt nfet_05v0 18750 -425 18751 -424  "VSS.t161" "a_17774_158#" 240 0 "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 264 23232,704 "VSS.t162" 264 23232,704
+device msubckt pfet_05v0 1418 158 1419 159  "VDD.t65" "a_534_n402#" 200 0 "a_1370_158#" 200 4800,248 "a_1518_158#" 200 10400,304
+device msubckt nfet_05v0 54318 -402 54319 -401  "VSS.t236" "PHI_1.t14" 240 0 "a_54230_n402#" 158 13904,492 "VSS.t237" 158 10520,298
+device msubckt pfet_05v0 59023 79 59024 80  "VDD.t291" "Q[10].t3" 200 0 "VDD.t292" 329 28952,834 "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433
+device msubckt pfet_05v0 44322 79 44323 80  "VDD.t260" "PHI_2.t13" 200 0 "a_44214_n402#" 276 24288,728 "VDD.t261" 276 19040,436
+device msubckt pfet_05v0 11286 158 11287 159  "VDD.t142" "Q[2].t2" 200 0 "VDD.t143" 200 17600,576 "a_11386_158#" 200 4800,248
+device msubckt pfet_05v0 7862 158 7863 159  "VDD.t126" "a_7242_n384#" 200 0 "a_7758_158#" 200 10400,304 "a_7962_158#" 200 17040,416
+device msubckt pfet_05v0 49078 158 49079 159  "VDD.t293" "a_48458_n384#" 200 0 "a_48974_158#" 200 10400,304 "a_49178_158#" 200 17040,416
+device msubckt pfet_05v0 56190 79 56191 80  "VDD.t148" "a_55214_158#" 200 0 "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 366 32208,908 "VDD.t149" 366 32208,908
+device msubckt pfet_05v0 58226 82 58227 83  "VDD.t199" "a_57678_158#" 200 0 "VDD.t200" 276 14352,380 "a_58022_38#" 276 24288,728
+device msubckt nfet_05v0 57578 -387 57579 -386  "VSS.t154" "a_57162_n384#" 240 0 "a_57530_n387#" 140 3360,188 "a_57678_158#" 140 7280,244
+device msubckt pfet_05v0 40882 79 40883 80  "VDD.t86" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 200 0 "VDD.t87" 366 32208,908 "gc[7].t1" 366 32208,908
+device msubckt pfet_05v0 4418 79 4419 80  "VDD.t241" "PHI_1.t13" 200 0 "a_4310_n402#" 276 24288,728 "VDD.t242" 276 19040,436
+device msubckt nfet_05v0 11658 -387 11659 -386  "VSS.t195" "a_10550_n402#" 240 0 "a_11534_158#" 140 7280,244 "a_11778_n387#" 140 10520,298
+device msubckt nfet_05v0 19970 -387 19971 -386  "VSS.t47" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 240 0 "VSS.t48" 140 12320,456 "a_20090_n387#" 140 3360,188
+device msubckt pfet_05v0 51338 158 51339 159  "VDD.t44" "a_50454_n402#" 200 0 "a_51290_158#" 200 4800,248 "a_51438_158#" 200 10400,304
+device msubckt pfet_05v0 57782 158 57783 159  "VDD.t158" "a_57162_n384#" 200 0 "a_57678_158#" 200 10400,304 "a_57882_158#" 200 17040,416
+device msubckt nfet_05v0 55114 -387 55115 -386  "VSS.t0" "a_54698_n384#" 240 0 "a_55066_n387#" 140 3360,188 "a_55214_158#" 140 7280,244
+device msubckt pfet_05v0 18118 82 18119 83  "VDD.t278" "a_18118_38#" 200 0 "a_17978_158#" 276 17040,416 "VDD.t279" 276 14352,380
+device msubckt nfet_05v0 46174 -425 46175 -424  "VSS.t126" "a_45198_158#" 240 0 "Q[8].t0" 264 23232,704 "VSS.t127" 264 23232,704
+device msubckt nfet_05v0 39934 -425 39935 -424  "VSS.t95" "a_38958_158#" 240 0 "Q[7].t0" 264 23232,704 "VSS.t96" 264 23232,704
+device msubckt nfet_05v0 34063 -425 34064 -424  "VSS.t275" "Q[6].t5" 240 0 "VSS.t276" 264 23232,704 "a_34183_n425#" 264 8448,328
+device msubckt nfet_05v0 27823 -425 27824 -424  "VSS.t317" "Q[5].t3" 240 0 "VSS.t318" 264 23232,704 "a_27943_n425#" 264 8448,328
+device msubckt pfet_05v0 -602 82 -601 83  "VDD.t92" "a_n602_38#" 200 0 "a_n742_158#" 276 17040,416 "VDD.t93" 276 14352,380
+device msubckt nfet_05v0 58062 -387 58063 -386  "VSS.t3" "a_58022_38#" 240 0 "a_57922_n387#" 158 10520,298 "VSS.t4" 158 8216,262
+device msubckt nfet_05v0 34622 -425 34623 -424  "VSS.t302" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 240 0 "VSS.t303" 264 23232,704 "gc[6].t0" 264 23232,704
+device msubckt pfet_05v0 33694 79 33695 80  "VDD.t268" "a_32718_158#" 200 0 "Q[6].t1" 366 32208,908 "VDD.t269" 366 32208,908
+device msubckt pfet_05v0 19362 79 19363 80  "VDD.t258" "PHI_2.t12" 200 0 "a_19254_n402#" 276 24288,728 "VDD.t259" 276 19040,436
+device msubckt pfet_05v0 43282 82 43283 83  "VDD.t304" "a_42734_158#" 200 0 "VDD.t305" 276 14352,380 "a_43078_38#" 276 24288,728
+device msubckt pfet_05v0 41858 79 41859 80  "VDD.t239" "PHI_1.t12" 200 0 "a_41750_n402#" 276 24288,728 "VDD.t240" 276 19040,436
+device msubckt pfet_05v0 17158 155 17159 156  "VDD.t313" "a_16790_n402#" 200 0 "VDD.t314" 200 19040,436 "a_17258_n384#" 200 17600,576
+device msubckt nfet_05v0 12142 -387 12143 -386  "VSS.t328" "a_11534_158#" 240 0 "VSS.t329" 158 8216,262 "a_11878_38#" 158 13904,492
+device msubckt nfet_05v0 32082 -384 32083 -383  "VSS.t42" "a_31734_n402#" 240 0 "VSS.t43" 140 10520,298 "a_32202_n384#" 140 12320,456
+device msubckt nfet_05v0 25842 -384 25843 -383  "VSS.t148" "a_25494_n402#" 240 0 "VSS.t149" 140 10520,298 "a_25962_n384#" 140 12320,456
+device msubckt nfet_05v0 25582 -402 25583 -401  "VSS.t250" "PHI_2.t11" 240 0 "a_25494_n402#" 158 13904,492 "VSS.t251" 158 10520,298
+device msubckt pfet_05v0 26822 82 26823 83  "VDD.t138" "a_26822_38#" 200 0 "a_26682_158#" 276 17040,416 "VDD.t139" 276 14352,380
+device msubckt nfet_05v0 49358 -387 49359 -386  "VSS.t105" "a_49318_38#" 240 0 "a_49218_n387#" 158 10520,298 "VSS.t106" 158 8216,262
+device msubckt pfet_05v0 25862 155 25863 156  "VDD.t153" "a_25494_n402#" 200 0 "VDD.t154" 200 19040,436 "a_25962_n384#" 200 17600,576
+device msubckt pfet_05v0 7658 158 7659 159  "VDD.t213" "a_6774_n402#" 200 0 "a_7610_158#" 200 4800,248 "a_7758_158#" 200 10400,304
+device msubckt nfet_05v0 1642 -387 1643 -386  "VSS.t65" "a_534_n402#" 240 0 "a_1518_158#" 140 7280,244 "a_1762_n387#" 140 10520,298
+device msubckt pfet_05v0 42118 155 42119 156  "VDD.t128" "a_41750_n402#" 200 0 "VDD.t129" 200 19040,436 "a_42218_n384#" 200 17600,576
+device msubckt pfet_05v0 21583 79 21584 80  "VDD.t247" "Q[4].t4" 200 0 "VDD.t248" 329 28952,834 "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433
+device msubckt pfet_05v0 8102 82 8103 83  "VDD.t229" "a_8102_38#" 200 0 "a_7962_158#" 276 17040,416 "VDD.t230" 276 14352,380
+device msubckt nfet_05v0 59582 -425 59583 -424  "VSS.t50" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 240 0 "VSS.t51" 264 23232,704 "gc[10].t0" 264 23232,704
+device msubckt pfet_05v0 20786 82 20787 83  "VDD.t59" "a_20238_158#" 200 0 "VDD.t60" 276 14352,380 "a_20582_38#" 276 24288,728
+device msubckt nfet_05v0 6270 -425 6271 -424  "VSS.t18" "a_5294_158#" 240 0 "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 264 23232,704 "VSS.t19" 264 23232,704
+device msubckt nfet_05v0 57802 -387 57803 -386  "VSS.t213" "a_56694_n402#" 240 0 "a_57678_158#" 140 7280,244 "a_57922_n387#" 140 10520,298
+device msubckt nfet_05v0 33326 -387 33327 -386  "VSS.t260" "a_32718_158#" 240 0 "VSS.t261" 158 8216,262 "a_33062_38#" 158 13904,492
+device msubckt pfet_05v0 26230 158 26231 159  "VDD.t163" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 200 0 "VDD.t164" 200 17600,576 "a_26330_158#" 200 4800,248
+device msubckt nfet_05v0 16878 -402 16879 -401  "VSS.t177" "PHI_1.t11" 240 0 "a_16790_n402#" 158 13904,492 "VSS.t178" 158 10520,298
+device msubckt pfet_05v0 15922 79 15923 80  "VDD.t315" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 200 0 "VDD.t316" 366 32208,908 "gc[3].t1" 366 32208,908
+device msubckt pfet_05v0 14102 158 14103 159  "VDD.t318" "a_13482_n384#" 200 0 "a_13998_158#" 200 10400,304 "a_14202_158#" 200 17040,416
+device msubckt nfet_05v0 52967 -425 52968 -424  "VSS.t247" "EN.t11" 240 0 "a_52903_n425#" 264 8448,328 "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 264 23232,704
+device msubckt pfet_05v0 57578 158 57579 159  "VDD.t218" "a_56694_n402#" 200 0 "a_57530_158#" 200 4800,248 "a_57678_158#" 200 10400,304
+device msubckt pfet_05v0 38082 79 38083 80  "VDD.t216" "PHI_2.t10" 200 0 "a_37974_n402#" 276 24288,728 "VDD.t217" 276 19040,436
+device msubckt nfet_05v0 23378 -384 23379 -383  "VSS.t282" "a_23030_n402#" 240 0 "VSS.t283" 140 10520,298 "a_23498_n384#" 140 12320,456
+device msubckt pfet_05v0 16898 79 16899 80  "VDD.t183" "PHI_1.t10" 200 0 "a_16790_n402#" 276 24288,728 "VDD.t184" 276 19040,436
+device msubckt pfet_05v0 2066 82 2067 83  "VDD.t14" "a_1518_158#" 200 0 "VDD.t15" 276 14352,380 "a_1862_38#" 276 24288,728
+device msubckt pfet_05v0 50822 155 50823 156  "VDD.t45" "a_50454_n402#" 200 0 "VDD.t46" 200 19040,436 "a_50922_n384#" 200 17600,576
+device msubckt pfet_05v0 42486 158 42487 159  "VDD.t195" "Q[7].t4" 200 0 "VDD.t196" 200 17600,576 "a_42586_158#" 200 4800,248
+device msubckt pfet_05v0 30358 158 30359 159  "VDD.t117" "a_29738_n384#" 200 0 "a_30254_158#" 200 10400,304 "a_30458_158#" 200 17040,416
+device msubckt pfet_05v0 28027 79 28028 80  "VDD.t256" "EN.t10" 200 0 "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433 "VDD.t257" 329 28952,834
+device msubckt nfet_05v0 15527 -425 15528 -424  "VSS.t246" "EN.t9" 240 0 "a_15463_n425#" 264 8448,328 "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 264 23232,704
+device msubckt nfet_05v0 7490 -387 7491 -386  "VSS.t279" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 240 0 "VSS.t280" 140 12320,456 "a_7610_n387#" 140 3360,188
+device msubckt pfet_05v0 45542 82 45543 83  "VDD.t207" "a_45542_38#" 200 0 "a_45402_158#" 276 17040,416 "VDD.t208" 276 14352,380
+device msubckt nfet_05v0 36226 -387 36227 -386  "VSS.t315" "Q[6].t4" 240 0 "VSS.t316" 140 12320,456 "a_36346_n387#" 140 3360,188
+device msubckt nfet_05v0 20138 -387 20139 -386  "VSS.t313" "a_19722_n384#" 240 0 "a_20090_n387#" 140 3360,188 "a_20238_158#" 140 7280,244
+device msubckt nfet_05v0 17674 -387 17675 -386  "VSS.t264" "a_17258_n384#" 240 0 "a_17626_n387#" 140 3360,188 "a_17774_158#" 140 7280,244
+device msubckt pfet_05v0 -1194 158 -1193 159  "VDD.t209" "D_in.t1" 200 0 "VDD.t210" 200 17600,576 "a_n1094_158#" 200 4800,248
+device msubckt nfet_05v0 55338 -387 55339 -386  "VSS.t192" "a_54230_n402#" 240 0 "a_55214_158#" 140 7280,244 "a_55458_n387#" 140 10520,298
+device msubckt nfet_05v0 44302 -402 44303 -401  "VSS.t205" "PHI_2.t9" 240 0 "a_44214_n402#" 158 13904,492 "VSS.t206" 158 10520,298
+device msubckt pfet_05v0 52414 79 52415 80  "VDD.t175" "a_51438_158#" 200 0 "Q[9].t1" 366 32208,908 "VDD.t176" 366 32208,908
+device msubckt pfet_05v0 18322 82 18323 83  "VDD.t167" "a_17774_158#" 200 0 "VDD.t168" 276 14352,380 "a_18118_38#" 276 24288,728
+device msubckt pfet_05v0 5638 82 5639 83  "VDD.t308" "a_5638_38#" 200 0 "a_5498_158#" 276 17040,416 "VDD.t309" 276 14352,380
+device msubckt nfet_05v0 51822 -387 51823 -386  "VSS.t198" "a_51782_38#" 240 0 "a_51682_n387#" 158 10520,298 "VSS.t199" 158 8216,262
+device msubckt nfet_05v0 58286 -387 58287 -386  "VSS.t188" "a_57678_158#" 240 0 "VSS.t189" 158 8216,262 "a_58022_38#" 158 13904,492
+device msubckt pfet_05v0 34642 79 34643 80  "VDD.t306" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 200 0 "VDD.t307" 366 32208,908 "gc[6].t1" 366 32208,908
+device msubckt pfet_05v0 48358 155 48359 156  "VDD.t10" "a_47990_n402#" 200 0 "VDD.t11" 200 19040,436 "a_48458_n384#" 200 17600,576
+device msubckt nfet_05v0 6862 -402 6863 -401  "VSS.t203" "PHI_2.t8" 240 0 "a_6774_n402#" 158 13904,492 "VSS.t204" 158 10520,298
+device msubckt pfet_05v0 6882 79 6883 80  "VDD.t113" "PHI_2.t7" 200 0 "a_6774_n402#" 276 24288,728 "VDD.t114" 276 19040,436
+device msubckt nfet_05v0 45098 -387 45099 -386  "VSS.t281" "a_44682_n384#" 240 0 "a_45050_n387#" 140 3360,188 "a_45198_158#" 140 7280,244
+device msubckt nfet_05v0 38858 -387 38859 -386  "VSS.t321" "a_38442_n384#" 240 0 "a_38810_n387#" 140 3360,188 "a_38958_158#" 140 7280,244
+device msubckt pfet_05v0 13898 158 13899 159  "VDD.t55" "a_13014_n402#" 200 0 "a_13850_158#" 200 4800,248 "a_13998_158#" 200 10400,304
+device msubckt pfet_05v0 7510 158 7511 159  "VDD.t285" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 200 0 "VDD.t286" 200 17600,576 "a_7610_158#" 200 4800,248
+device msubckt pfet_05v0 40303 79 40304 80  "VDD.t193" "Q[7].t3" 200 0 "VDD.t194" 329 28952,834 "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433
+device msubckt pfet_05v0 36598 158 36599 159  "VDD.t73" "a_35978_n384#" 200 0 "a_36494_158#" 200 10400,304 "a_36698_158#" 200 17040,416
+device msubckt pfet_05v0 -1046 158 -1045 159  "VDD.t29" "a_n1930_n402#" 200 0 "a_n1094_158#" 200 4800,248 "a_n946_158#" 200 10400,304
+device msubckt nfet_05v0 52783 -425 52784 -424  "VSS.t1" "Q[9].t3" 240 0 "VSS.t2" 264 23232,704 "a_52903_n425#" 264 8448,328
+device msubckt pfet_05v0 27454 79 27455 80  "VDD.t134" "a_26478_158#" 200 0 "Q[5].t1" 366 32208,908 "VDD.t135" 366 32208,908
+device msubckt nfet_05v0 4658 -384 4659 -383  "VSS.t151" "a_4310_n402#" 240 0 "VSS.t152" 140 10520,298 "a_4778_n384#" 140 12320,456
+device msubckt pfet_05v0 57430 158 57431 159  "VDD.t68" "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 200 0 "VDD.t69" 200 17600,576 "a_57530_158#" 200 4800,248
+device msubckt pfet_05v0 45302 158 45303 159  "VDD.t287" "a_44682_n384#" 200 0 "a_45198_158#" 200 10400,304 "a_45402_158#" 200 17040,416
+device msubckt pfet_05v0 37042 82 37043 83  "VDD.t36" "a_36494_158#" 200 0 "VDD.t37" 276 14352,380 "a_36838_38#" 276 24288,728
+device msubckt pfet_05v0 35618 79 35619 80  "VDD.t181" "PHI_1.t9" 200 0 "a_35510_n402#" 276 24288,728 "VDD.t182" 276 19040,436
+device msubckt nfet_05v0 4398 -402 4399 -401  "VSS.t142" "PHI_1.t8" 240 0 "a_4310_n402#" 158 13904,492 "VSS.t143" 158 10520,298
+device msubckt pfet_05v0 642 79 643 80  "VDD.t111" "PHI_2.t6" 200 0 "a_534_n402#" 276 24288,728 "VDD.t112" 276 19040,436
+device msubckt nfet_05v0 30862 -387 30863 -386  "VSS.t155" "a_30254_158#" 240 0 "VSS.t156" 158 8216,262 "a_30598_38#" 158 13904,492
+device msubckt nfet_05v0 27454 -425 27455 -424  "VSS.t136" "a_26478_158#" 240 0 "Q[5].t0" 264 23232,704 "VSS.t137" 264 23232,704
+device msubckt nfet_05v0 15902 -425 15903 -424  "VSS.t311" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 240 0 "VSS.t312" 264 23232,704 "gc[3].t0" 264 23232,704
+device msubckt nfet_05v0 15343 -425 15344 -424  "VSS.t267" "Q[3].t4" 240 0 "VSS.t268" 264 23232,704 "a_15463_n425#" 264 8448,328
+device msubckt pfet_05v0 53362 79 53363 80  "VDD.t120" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 200 0 "VDD.t121" 366 32208,908 "gc[9].t1" 366 32208,908
+device msubckt nfet_05v0 39342 -387 39343 -386  "VSS.t167" "a_39302_38#" 240 0 "a_39202_n387#" 158 10520,298 "VSS.t168" 158 8216,262
+device msubckt nfet_05v0 22142 -425 22143 -424  "VSS.t277" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 240 0 "VSS.t278" 264 23232,704 "gc[4].t0" 264 23232,704
+device msubckt pfet_05v0 30154 158 30155 159  "VDD.t280" "a_29270_n402#" 200 0 "a_30106_158#" 200 4800,248 "a_30254_158#" 200 10400,304
+device msubckt nfet_05v0 5194 -387 5195 -386  "VSS.t79" "a_4778_n384#" 240 0 "a_5146_n387#" 140 3360,188 "a_5294_158#" 140 7280,244
+device msubckt nfet_05v0 3047 -425 3048 -424  "VSS.t253" "EN.t8" 240 0 "a_2983_n425#" 264 8448,328 "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 264 23232,704
+device msubckt nfet_05v0 1418 -387 1419 -386  "VSS.t94" "a_1002_n384#" 240 0 "a_1370_n387#" 140 3360,188 "a_1518_158#" 140 7280,244
+device msubckt pfet_05v0 -842 158 -841 159  "VDD.t58" "a_n1462_n384#" 200 0 "a_n946_158#" 200 10400,304 "a_n742_158#" 200 17040,416
+device msubckt pfet_05v0 23914 158 23915 159  "VDD.t290" "a_23030_n402#" 200 0 "a_23866_158#" 200 4800,248 "a_24014_158#" 200 10400,304
+device msubckt nfet_05v0 17898 -387 17899 -386  "VSS.t310" "a_16790_n402#" 240 0 "a_17774_158#" 140 7280,244 "a_18018_n387#" 140 10520,298
+device msubckt pfet_05v0 15343 79 15344 80  "VDD.t118" "Q[3].t3" 200 0 "VDD.t119" 329 28952,834 "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433
+device msubckt nfet_05v0 59207 -425 59208 -424  "VSS.t252" "EN.t7" 240 0 "a_59143_n425#" 264 8448,328 "DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 264 23232,704
+device msubckt nfet_05v0 13362 -384 13363 -383  "VSS.t56" "a_13014_n402#" 240 0 "VSS.t57" 140 10520,298 "a_13482_n384#" 140 12320,456
+device msubckt pfet_05v0 14546 82 14547 83  "VDD.t132" "a_13998_158#" 200 0 "VDD.t133" 276 14352,380 "a_14342_38#" 276 24288,728
+device msubckt pfet_05v0 46174 79 46175 80  "VDD.t124" "a_45198_158#" 200 0 "Q[8].t1" 366 32208,908 "VDD.t125" 366 32208,908
+device msubckt pfet_05v0 5842 82 5843 83  "VDD.t18" "a_5294_158#" 200 0 "VDD.t19" 276 14352,380 "a_5638_38#" 276 24288,728
+device msubckt pfet_05v0 54338 79 54339 80  "VDD.t146" "PHI_1.t7" 200 0 "a_54230_n402#" 276 24288,728 "VDD.t147" 276 19040,436
+device msubckt nfet_05v0 26210 -387 26211 -386  "VSS.t159" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 240 0 "VSS.t160" 140 12320,456 "a_26330_n387#" 140 3360,188
+device msubckt nfet_05v0 45322 -387 45323 -386  "VSS.t24" "a_44214_n402#" 240 0 "a_45198_158#" 140 7280,244 "a_45442_n387#" 140 10520,298
+device msubckt pfet_05v0 52987 79 52988 80  "VDD.t262" "EN.t6" 200 0 "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433 "VDD.t263" 329 28952,834
+device msubckt nfet_05v0 18382 -387 18383 -386  "VSS.t163" "a_17774_158#" 240 0 "VSS.t164" 158 8216,262 "a_18118_38#" 158 13904,492
+device msubckt nfet_05v0 14606 -387 14607 -386  "VSS.t134" "a_13998_158#" 240 0 "VSS.t135" 158 8216,262 "a_14342_38#" 158 13904,492
+device msubckt nfet_05v0 40487 -425 40488 -424  "VSS.t235" "EN.t5" 240 0 "a_40423_n425#" 264 8448,328 "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 264 23232,704
+device msubckt pfet_05v0 39302 82 39303 83  "VDD.t171" "a_39302_38#" 200 0 "a_39162_158#" 276 17040,416 "VDD.t172" 276 14352,380
+device msubckt pfet_05v0 13750 158 13751 159  "VDD.t77" "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 200 0 "VDD.t78" 200 17600,576 "a_13850_158#" 200 4800,248
+device msubckt pfet_05v0 12510 79 12511 80  "VDD.t336" "a_11534_158#" 200 0 "DFF_2phase_1$1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 366 32208,908 "VDD.t337" 366 32208,908
+device msubckt nfet_05v0 54946 -387 54947 -386  "VSS.t322" "Q[9].t2" 240 0 "VSS.t323" 140 12320,456 "a_55066_n387#" 140 3360,188
+device msubckt pfet_05v0 30006 158 30007 159  "VDD.t323" "Q[5].t2" 200 0 "VDD.t324" 200 17600,576 "a_30106_158#" 200 4800,248
+device msubckt pfet_05v0 34063 79 34064 80  "VDD.t321" "Q[6].t3" 200 0 "VDD.t322" 329 28952,834 "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433
+device msubckt pfet_05v0 36394 158 36395 159  "VDD.t74" "a_35510_n402#" 200 0 "a_36346_158#" 200 4800,248 "a_36494_158#" 200 10400,304
+device msubckt pfet_05v0 33266 82 33267 83  "VDD.t270" "a_32718_158#" 200 0 "VDD.t271" 276 14352,380 "a_33062_38#" 276 24288,728
+device msubckt nfet_05v0 17506 -387 17507 -386  "VSS.t120" "Q[3].t2" 240 0 "VSS.t121" 140 12320,456 "a_17626_n387#" 140 3360,188
+device msubckt nfet_05v0 7882 -387 7883 -386  "VSS.t202" "a_6774_n402#" 240 0 "a_7758_158#" 140 7280,244 "a_8002_n387#" 140 10520,298
+device msubckt nfet_05v0 36618 -387 36619 -386  "VSS.t76" "a_35510_n402#" 240 0 "a_36494_158#" 140 7280,244 "a_36738_n387#" 140 10520,298
+device msubckt pfet_05v0 28402 79 28403 80  "VDD.t191" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 200 0 "VDD.t192" 366 32208,908 "gc[5].t1" 366 32208,908
+device msubckt nfet_05v0 8734 -425 8735 -424  "VSS.t173" "a_7758_158#" 240 0 "Q[2].t0" 264 23232,704 "VSS.t174" 264 23232,704
+device msubckt nfet_05v0 39566 -387 39567 -386  "VSS.t97" "a_38958_158#" 240 0 "VSS.t98" 158 8216,262 "a_39302_38#" 158 13904,492
+device msubckt pfet_05v0 29378 79 29379 80  "VDD.t144" "PHI_1.t6" 200 0 "a_29270_n402#" 276 24288,728 "VDD.t145" 276 19040,436
+device msubckt nfet_05v0 3422 -425 3423 -424  "VSS.t109" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 240 0 "VSS.t110" 264 23232,704 "gc[1].t0" 264 23232,704
+device msubckt nfet_05v0 882 -384 883 -383  "VSS.t66" "a_534_n402#" 240 0 "VSS.t67" 140 10520,298 "a_1002_n384#" 140 12320,456
+device msubckt nfet_05v0 24990 -425 24991 -424  "VSS.t84" "a_24014_158#" 240 0 "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 264 23232,704 "VSS.t85" 264 23232,704
+device msubckt pfet_05v0 19622 155 19623 156  "VDD.t71" "a_19254_n402#" 200 0 "VDD.t72" 200 19040,436 "a_19722_n384#" 200 17600,576
+device msubckt nfet_05v0 59023 -425 59024 -424  "VSS.t285" "Q[10].t2" 240 0 "VSS.t286" 264 23232,704 "a_59143_n425#" 264 8448,328
+device msubckt pfet_05v0 58022 82 58023 83  "VDD.t5" "a_58022_38#" 200 0 "a_57882_158#" 276 17040,416 "VDD.t6" 276 14352,380
+device msubckt pfet_05v0 36838 82 36839 83  "VDD.t101" "a_36838_38#" 200 0 "a_36698_158#" 276 17040,416 "VDD.t102" 276 14352,380
+device msubckt pfet_05v0 31230 79 31231 80  "VDD.t161" "a_30254_158#" 200 0 "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 366 32208,908 "VDD.t162" 366 32208,908
+device msubckt nfet_05v0 -822 -387 -821 -386  "VSS.t29" "a_n1930_n402#" 240 0 "a_n946_158#" 140 7280,244 "a_n702_n387#" 140 10520,298
+device msubckt nfet_05v0 37102 -387 37103 -386  "VSS.t36" "a_36494_158#" 240 0 "VSS.t37" 158 8216,262 "a_36838_38#" 158 13904,492
+device msubckt pfet_05v0 35878 155 35879 156  "VDD.t75" "a_35510_n402#" 200 0 "VDD.t76" 200 19040,436 "a_35978_n384#" 200 17600,576
+device msubckt nfet_05v0 26378 -387 26379 -386  "VSS.t49" "a_25962_n384#" 240 0 "a_26330_n387#" 140 3360,188 "a_26478_158#" 140 7280,244
+device msubckt nfet_05v0 23118 -402 23119 -401  "VSS.t231" "PHI_1.t5" 240 0 "a_23030_n402#" 158 13904,492 "VSS.t232" 158 10520,298
+device msubckt pfet_05v0 1270 158 1271 159  "VDD.t300" "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 200 0 "VDD.t301" 200 17600,576 "a_1370_158#" 200 4800,248
+device msubckt nfet_05v0 30638 -387 30639 -386  "VSS.t39" "a_30598_38#" 240 0 "a_30498_n387#" 158 10520,298 "VSS.t40" 158 8216,262
+device msubckt pfet_05v0 19990 158 19991 159  "VDD.t47" "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 200 0 "VDD.t48" 200 17600,576 "a_20090_158#" 200 4800,248
+device msubckt pfet_05v0 2863 79 2864 80  "VDD.t225" "Q[1].t3" 200 0 "VDD.t226" 329 28952,834 "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433
+device msubckt nfet_05v0 57042 -384 57043 -383  "VSS.t214" "a_56694_n402#" 240 0 "VSS.t215" 140 10520,298 "a_57162_n384#" 140 12320,456
+device msubckt pfet_05v0 36246 158 36247 159  "VDD.t319" "Q[6].t2" 200 0 "VDD.t320" 200 17600,576 "a_36346_158#" 200 4800,248
+device msubckt pfet_05v0 24118 158 24119 159  "VDD.t38" "a_23498_n384#" 200 0 "a_24014_158#" 200 10400,304 "a_24218_158#" 200 17040,416
+device msubckt pfet_05v0 47122 79 47123 80  "VDD.t310" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 200 0 "VDD.t311" 366 32208,908 "gc[8].t1" 366 32208,908
+device msubckt nfet_05v0 40862 -425 40863 -424  "VSS.t86" "DFF_2phase_1$1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 240 0 "VSS.t87" 264 23232,704 "gc[7].t0" 264 23232,704
+device msubckt nfet_05v0 2126 -387 2127 -386  "VSS.t12" "a_1518_158#" 240 0 "VSS.t13" 158 8216,262 "a_1862_38#" 158 13904,492
+device msubckt pfet_05v0 48098 79 48099 80  "VDD.t227" "PHI_1.t4" 200 0 "a_47990_n402#" 276 24288,728 "VDD.t228" 276 19040,436
+device msubckt pfet_05v0 51190 158 51191 159  "VDD.t63" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 200 0 "VDD.t64" 200 17600,576 "a_51290_158#" 200 4800,248
+device msubckt pfet_05v0 9307 79 9308 80  "VDD.t237" "EN.t4" 200 0 "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433 "VDD.t238" 329 28952,834
+device msubckt pfet_05v0 44950 158 44951 159  "VDD.t273" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 200 0 "VDD.t274" 200 17600,576 "a_45050_158#" 200 4800,248
+device msubckt pfet_05v0 32822 158 32823 159  "VDD.t266" "a_32202_n384#" 200 0 "a_32718_158#" 200 10400,304 "a_32922_158#" 200 17040,416
+device msubckt nfet_05v0 -1046 -387 -1045 -386  "VSS.t58" "a_n1462_n384#" 240 0 "a_n1094_n387#" 140 3360,188 "a_n946_158#" 140 7280,244
+device msubckt nfet_05v0 43710 -425 43711 -424  "VSS.t300" "a_42734_158#" 240 0 "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 264 23232,704 "VSS.t301" 264 23232,704
+device msubckt nfet_05v0 48078 -402 48079 -401  "VSS.t229" "PHI_1.t3" 240 0 "a_47990_n402#" 158 13904,492 "VSS.t230" 158 10520,298
+device msubckt nfet_05v0 48338 -384 48339 -383  "VSS.t7" "a_47990_n402#" 240 0 "VSS.t8" 140 10520,298 "a_48458_n384#" 140 12320,456
+device msubckt pfet_05v0 55558 82 55559 83  "VDD.t331" "a_55558_38#" 200 0 "a_55418_158#" 276 17040,416 "VDD.t332" 276 14352,380
+device msubckt nfet_05v0 5026 -387 5027 -386  "VSS.t227" "Q[1].t2" 240 0 "VSS.t228" 140 12320,456 "a_5146_n387#" 140 3360,188
+device msubckt pfet_05v0 7142 155 7143 156  "VDD.t214" "a_6774_n402#" 200 0 "VDD.t215" 200 19040,436 "a_7242_n384#" 200 17600,576
+device msubckt pfet_05v0 902 155 903 156  "VDD.t66" "a_534_n402#" 200 0 "VDD.t67" 200 19040,436 "a_1002_n384#" 200 17600,576
+device msubckt pfet_05v0 49950 79 49951 80  "VDD.t223" "a_48974_158#" 200 0 "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 366 32208,908 "VDD.t224" 366 32208,908
+device msubckt nfet_05v0 55598 -387 55599 -386  "VSS.t319" "a_55558_38#" 240 0 "a_55458_n387#" 158 10520,298 "VSS.t320" 158 8216,262
+device msubckt pfet_05v0 46747 79 46748 80  "VDD.t235" "EN.t3" 200 0 "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 329 17108,433 "VDD.t236" 329 28952,834
+device msubckt nfet_05v0 44930 -387 44931 -386  "VSS.t265" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 240 0 "VSS.t266" 140 12320,456 "a_45050_n387#" 140 3360,188
+device msubckt nfet_05v0 51170 -387 51171 -386  "VSS.t63" "DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 240 0 "VSS.t64" 140 12320,456 "a_51290_n387#" 140 3360,188
+device msubckt pfet_05v0 20582 82 20583 83  "VDD.t107" "a_20582_38#" 200 0 "a_20442_158#" 276 17040,416 "VDD.t108" 276 14352,380
+device msubckt nfet_05v0 18158 -387 18159 -386  "VSS.t270" "a_18118_38#" 240 0 "a_18018_n387#" 158 10520,298 "VSS.t271" 158 8216,262
+device msubckt pfet_05v0 57062 155 57063 156  "VDD.t219" "a_56694_n402#" 200 0 "VDD.t220" 200 19040,436 "a_57162_n384#" 200 17600,576
+device msubckt nfet_05v0 28382 -425 28383 -424  "VSS.t182" "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 240 0 "VSS.t183" 264 23232,704 "gc[5].t0" 264 23232,704
+device msubckt pfet_05v0 13122 79 13123 80  "VDD.t109" "PHI_2.t5" 200 0 "a_13014_n402#" 276 24288,728 "VDD.t110" 276 19040,436
+device msubckt nfet_05v0 26602 -387 26603 -386  "VSS.t150" "a_25494_n402#" 240 0 "a_26478_158#" 140 7280,244 "a_26722_n387#" 140 10520,298
+device msubckt nfet_05v0 9287 -425 9288 -424  "VSS.t226" "EN.t2" 240 0 "a_9223_n425#" 264 8448,328 "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 264 23232,704
+device msubckt nfet_05v0 7658 -387 7659 -386  "VSS.t128" "a_7242_n384#" 240 0 "a_7610_n387#" 140 3360,188 "a_7758_158#" 140 7280,244
+device msubckt pfet_05v0 27026 82 27027 83  "VDD.t136" "a_26478_158#" 200 0 "VDD.t137" 276 14352,380 "a_26822_38#" 276 24288,728
+device msubckt nfet_05v0 21767 -425 21768 -424  "VSS.t225" "EN.t1" 240 0 "a_21703_n425#" 264 8448,328 "DFF_2phase_1$1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 264 23232,704
+device msubckt pfet_05v0 56802 79 56803 80  "VDD.t115" "PHI_2.t4" 200 0 "a_56694_n402#" 276 24288,728 "VDD.t116" 276 19040,436
+device msubckt nfet_05v0 42466 -387 42467 -386  "VSS.t184" "Q[7].t2" 240 0 "VSS.t185" 140 12320,456 "a_42586_n387#" 140 3360,188
+device msubckt pfet_05v0 32618 158 32619 159  "VDD.t43" "a_31734_n402#" 200 0 "a_32570_158#" 200 4800,248 "a_32718_158#" 200 10400,304
+device msubckt pfet_05v0 8734 79 8735 80  "VDD.t179" "a_7758_158#" 200 0 "Q[2].t1" 366 32208,908 "VDD.t180" 366 32208,908
+device msubckt nfet_05v0 -1214 -387 -1213 -386  "VSS.t288" "D_in.t0" 240 0 "VSS.t289" 140 12320,456 "a_n1094_n387#" 140 3360,188
+device msubckt nfet_05v0 50542 -402 50543 -401  "VSS.t117" "PHI_2.t3" 240 0 "a_50454_n402#" 158 13904,492 "VSS.t118" 158 10520,298
+device msubckt nfet_05v0 50802 -384 50803 -383  "VSS.t45" "a_50454_n402#" 240 0 "VSS.t46" 140 10520,298 "a_50922_n384#" 140 12320,456
+device msubckt pfet_05v0 55318 158 55319 159  "VDD.t0" "a_54698_n384#" 200 0 "a_55214_158#" 200 10400,304 "a_55418_158#" 200 17040,416
+device msubckt nfet_05v0 24138 -387 24139 -386  "VSS.t284" "a_23030_n402#" 240 0 "a_24014_158#" 140 7280,244 "a_24258_n387#" 140 10520,298
+device msubckt nfet_05v0 13102 -402 13103 -401  "VSS.t115" "PHI_2.t2" 240 0 "a_13014_n402#" 158 13904,492 "VSS.t116" 158 10520,298
+device msubckt nfet_05v0 8142 -387 8143 -386  "VSS.t233" "a_8102_38#" 240 0 "a_8002_n387#" 158 10520,298 "VSS.t234" 158 8216,262
+device msubckt nfet_05v0 27086 -387 27087 -386  "VSS.t138" "a_26478_158#" 240 0 "VSS.t139" 158 8216,262 "a_26822_38#" 158 13904,492
+device msubckt pfet_05v0 30 79 31 80  "VDD.t32" "a_n946_158#" 200 0 "DFF_2phase_1$1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 366 32208,908 "VDD.t33" 366 32208,908
+device msubckt nfet_05v0 20622 -387 20623 -386  "VSS.t113" "a_20582_38#" 240 0 "a_20482_n387#" 158 10520,298 "VSS.t114" 158 8216,262
+device msubckt pfet_05v0 13382 155 13383 156  "VDD.t56" "a_13014_n402#" 200 0 "VDD.t57" 200 19040,436 "a_13482_n384#" 200 17600,576
+device msubckt pfet_05v0 12082 82 12083 83  "VDD.t338" "a_11534_158#" 200 0 "VDD.t339" 276 14352,380 "a_11878_38#" 276 24288,728
+device msubckt pfet_05v0 10658 79 10659 80  "VDD.t250" "PHI_1.t2" 200 0 "a_10550_n402#" 276 24288,728 "VDD.t251" 276 19040,436
+device msubckt nfet_05v0 47102 -425 47103 -424  "VSS.t306" "DFF_2phase_1$1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 240 0 "VSS.t307" 264 23232,704 "gc[8].t0" 264 23232,704
+device msubckt nfet_05v0 55822 -387 55823 -386  "VSS.t146" "a_55214_158#" 240 0 "VSS.t147" 158 8216,262 "a_55558_38#" 158 13904,492
+device msubckt nfet_05v0 41838 -402 41839 -401  "VSS.t244" "PHI_1.t1" 240 0 "a_41750_n402#" 158 13904,492 "VSS.t245" 158 10520,298
+device msubckt pfet_05v0 55762 82 55763 83  "VDD.t150" "a_55214_158#" 200 0 "VDD.t151" 276 14352,380 "a_55558_38#" 276 24288,728
+device msubckt nfet_05v0 49098 -387 49099 -386  "VSS.t9" "a_47990_n402#" 240 0 "a_48974_158#" 140 7280,244 "a_49218_n387#" 140 10520,298
+device msubckt nfet_05v0 42634 -387 42635 -386  "VSS.t241" "a_42218_n384#" 240 0 "a_42586_n387#" 140 3360,188 "a_42734_158#" 140 7280,244
+device msubckt pfet_05v0 45098 158 45099 159  "VDD.t24" "a_44214_n402#" 200 0 "a_45050_158#" 200 4800,248 "a_45198_158#" 200 10400,304
+device msubckt nfet_05v0 11918 -387 11919 -386  "VSS.t5" "a_11878_38#" 240 0 "a_11778_n387#" 158 10520,298 "VSS.t6" 158 8216,262
+device msubckt nfet_05v0 38322 -384 38323 -383  "VSS.t53" "a_37974_n402#" 240 0 "VSS.t54" 140 10520,298 "a_38442_n384#" 140 12320,456
+device msubckt nfet_05v0 38062 -402 38063 -401  "VSS.t218" "PHI_2.t1" 240 0 "a_37974_n402#" 158 13904,492 "VSS.t219" 158 10520,298
+device msubckt pfet_05v0 38858 158 38859 159  "VDD.t54" "a_37974_n402#" 200 0 "a_38810_158#" 200 4800,248 "a_38958_158#" 200 10400,304
+device msubckt nfet_05v0 21583 -425 21584 -424  "VSS.t239" "Q[4].t3" 240 0 "VSS.t240" 264 23232,704 "a_21703_n425#" 264 8448,328
+device msubckt nfet_05v0 9662 -425 9663 -424  "VSS.t111" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 240 0 "VSS.t112" 264 23232,704 "gc[2].t0" 264 23232,704
+device msubckt pfet_05v0 9682 79 9683 80  "VDD.t105" "DFF_2phase_1$1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 200 0 "VDD.t106" 366 32208,908 "gc[2].t1" 366 32208,908
+device msubckt nfet_05v0 45582 -387 45583 -386  "VSS.t196" "a_45542_38#" 240 0 "a_45442_n387#" 158 10520,298 "VSS.t197" 158 8216,262
+device msubckt nfet_05v0 33694 -425 33695 -424  "VSS.t262" "a_32718_158#" 240 0 "Q[6].t0" 264 23232,704 "VSS.t263" 264 23232,704
+device msubckt pfet_05v0 23766 158 23767 159  "VDD.t140" "Q[4].t2" 200 0 "VDD.t141" 200 17600,576 "a_23866_158#" 200 4800,248
+device msubckt pfet_05v0 11638 158 11639 159  "VDD.t267" "a_11018_n384#" 200 0 "a_11534_158#" 200 10400,304 "a_11738_158#" 200 17040,416
+device msubckt pfet_05v0 49318 82 49319 83  "VDD.t99" "a_49318_38#" 200 0 "a_49178_158#" 276 17040,416 "VDD.t100" 276 14352,380
+device msubckt nfet_05v0 622 -402 623 -401  "VSS.t216" "PHI_2.t0" 240 0 "a_534_n402#" 158 13904,492 "VSS.t217" 158 10520,298
+device msubckt nfet_05v0 31230 -425 31231 -424  "VSS.t157" "a_30254_158#" 240 0 "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 264 23232,704 "VSS.t158" 264 23232,704
+device msubckt nfet_05v0 29618 -384 29619 -383  "VSS.t273" "a_29270_n402#" 240 0 "VSS.t274" 140 10520,298 "a_29738_n384#" 140 12320,456
+device msubckt nfet_05v0 29358 -402 29359 -401  "VSS.t242" "PHI_1.t0" 240 0 "a_29270_n402#" 158 13904,492 "VSS.t243" 158 10520,298
+device msubckt nfet_05v0 36878 -387 36879 -386  "VSS.t107" "a_36838_38#" 240 0 "a_36738_n387#" 158 10520,298 "VSS.t108" 158 8216,262
+device msubckt pfet_05v0 14342 82 14343 83  "VDD.t25" "a_14342_38#" 200 0 "a_14202_158#" 276 17040,416 "VDD.t26" 276 14352,380
+device msubckt nfet_05v0 5418 -387 5419 -386  "VSS.t153" "a_4310_n402#" 240 0 "a_5294_158#" 140 7280,244 "a_5538_n387#" 140 10520,298
+device msubckt pfet_05v0 55114 158 55115 159  "VDD.t203" "a_54230_n402#" 200 0 "a_55066_158#" 200 4800,248 "a_55214_158#" 200 10400,304
+device msubckt nfet_05v0 28007 -425 28008 -424  "VSS.t224" "EN.t0" 240 0 "a_27943_n425#" 264 8448,328 "DFF_2phase_1$1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN" 264 23232,704
+device msubckt pfet_05v0 21214 79 21215 80  "VDD.t61" "a_20238_158#" 200 0 "Q[4].t1" 366 32208,908 "VDD.t62" 366 32208,908
+device msubckt nfet_05v0 8366 -387 8367 -386  "VSS.t175" "a_7758_158#" 240 0 "VSS.t176" 158 8216,262 "a_8102_38#" 158 13904,492
+device msubckt nfet_05v0 1902 -387 1903 -386  "VSS.t324" "a_1862_38#" 240 0 "a_1762_n387#" 158 10520,298 "VSS.t325" 158 8216,262
+device msubckt nfet_05v0 32450 -387 32451 -386  "VSS.t165" "DFF_2phase_1$1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q" 240 0 "VSS.t166" 140 12320,456 "a_32570_n387#" 140 3360,188
+device msubckt pfet_05v0 29638 155 29639 156  "VDD.t281" "a_29270_n402#" 200 0 "VDD.t282" 200 19040,436 "a_29738_n384#" 200 17600,576
+device msubckt nfet_05v0 20846 -387 20847 -386  "VSS.t61" "a_20238_158#" 240 0 "VSS.t62" 158 8216,262 "a_20582_38#" 158 13904,492

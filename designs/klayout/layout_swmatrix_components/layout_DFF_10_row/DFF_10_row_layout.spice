@@ -42,27 +42,17 @@ Xgf180mcu_fd_sc_mcu9t5v0__inv_1_0 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I VDD VSS gat
 + VDD VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
 .ends
 
-.subckt DFF_10_row VDD VSS PHI_1 PHI_2 D_in Q[10] Q[4] Q[9] Q[3] Q[8] Q[5] Q[7] Q[6]
-+ Q[1] Q[2] EN
-XDFF_2phase_1$1_0 DFF_2phase_1$1_0/gated_control PHI_1 Q[9] EN PHI_2 DFF_2phase_1$1_9/VDD
-+ DFF_2phase_1$1_0/Q VSS DFF_2phase_1$1
-XDFF_2phase_1$1_1 DFF_2phase_1$1_1/gated_control PHI_1 Q[8] EN PHI_2 DFF_2phase_1$1_9/VDD
-+ Q[9] VSS DFF_2phase_1$1
-XDFF_2phase_1$1_2 DFF_2phase_1$1_2/gated_control PHI_1 Q[7] EN PHI_2 DFF_2phase_1$1_9/VDD
-+ Q[8] VSS DFF_2phase_1$1
-XDFF_2phase_1$1_3 DFF_2phase_1$1_3/gated_control PHI_1 Q[6] EN PHI_2 DFF_2phase_1$1_9/VDD
-+ Q[7] VSS DFF_2phase_1$1
-XDFF_2phase_1$1_4 DFF_2phase_1$1_4/gated_control PHI_1 Q[5] EN PHI_2 DFF_2phase_1$1_9/VDD
-+ Q[6] VSS DFF_2phase_1$1
-XDFF_2phase_1$1_5 DFF_2phase_1$1_5/gated_control PHI_1 Q[4] EN PHI_2 DFF_2phase_1$1_9/VDD
-+ Q[5] VSS DFF_2phase_1$1
-XDFF_2phase_1$1_6 DFF_2phase_1$1_6/gated_control PHI_1 Q[3] EN PHI_2 DFF_2phase_1$1_9/VDD
-+ Q[4] VSS DFF_2phase_1$1
-XDFF_2phase_1$1_7 DFF_2phase_1$1_7/gated_control PHI_1 Q[2] EN PHI_2 DFF_2phase_1$1_9/VDD
-+ Q[3] VSS DFF_2phase_1$1
-XDFF_2phase_1$1_8 DFF_2phase_1$1_8/gated_control PHI_1 D_in EN PHI_2 DFF_2phase_1$1_9/VDD
-+ Q[1] VSS DFF_2phase_1$1
-XDFF_2phase_1$1_9 DFF_2phase_1$1_9/gated_control PHI_1 Q[1] EN PHI_2 DFF_2phase_1$1_9/VDD
-+ Q[2] VSS DFF_2phase_1$1
+.subckt DFF_10_row VDD VSS gc[1] gc[2] gc[3] gc[4] gc[5] gc[6] gc[7] gc[8] gc[9] gc[10]
++ Q[10] PHI_1 PHI_2 D_in Q[4] Q[9] Q[3] Q[8] Q[5] Q[7] Q[6] Q[1] Q[2] EN
+XDFF_2phase_1$1_0 gc[10] PHI_1 Q[9] EN PHI_2 VDD Q[10] VSS DFF_2phase_1$1
+XDFF_2phase_1$1_1 gc[9] PHI_1 Q[8] EN PHI_2 VDD Q[9] VSS DFF_2phase_1$1
+XDFF_2phase_1$1_2 gc[8] PHI_1 Q[7] EN PHI_2 VDD Q[8] VSS DFF_2phase_1$1
+XDFF_2phase_1$1_3 gc[7] PHI_1 Q[6] EN PHI_2 VDD Q[7] VSS DFF_2phase_1$1
+XDFF_2phase_1$1_4 gc[6] PHI_1 Q[5] EN PHI_2 VDD Q[6] VSS DFF_2phase_1$1
+XDFF_2phase_1$1_5 gc[5] PHI_1 Q[4] EN PHI_2 VDD Q[5] VSS DFF_2phase_1$1
+XDFF_2phase_1$1_6 gc[4] PHI_1 Q[3] EN PHI_2 VDD Q[4] VSS DFF_2phase_1$1
+XDFF_2phase_1$1_7 gc[3] PHI_1 Q[2] EN PHI_2 VDD Q[3] VSS DFF_2phase_1$1
+XDFF_2phase_1$1_8 gc[1] PHI_1 D_in EN PHI_2 VDD Q[1] VSS DFF_2phase_1$1
+XDFF_2phase_1$1_9 gc[2] PHI_1 Q[1] EN PHI_2 VDD Q[2] VSS DFF_2phase_1$1
 .ends
 

@@ -17,7 +17,7 @@ set circuit2 [readnet spice $sclib]
 # First, load the subcell's schematic into the circuit2 database
 readnet spice ../layout_DFF_2phase_1/DFF_2phase_1.spice $circuit2
 
-
 readnet spice DFF_10_row.spice $circuit2
+
 
 lvs "$circuit1 DFF_10_row" "$circuit2 DFF_10_row"         $setupfile DFF_10_row_comp.out
