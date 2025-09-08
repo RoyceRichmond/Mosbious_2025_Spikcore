@@ -1,5 +1,5 @@
 ** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/switch_matrix_gf180mcu_9t5v0/ShiftReg_row_10_2/ShiftReg_row_10_2.sch
-.subckt ShiftReg_row_10_2 D_in Q[1] Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[9] Q[10] gc[1] gc[2] gc[3] gc[4] gc[5] gc[6] gc[7] gc[8]
+.subckt DFF_10_row D_in Q[1] Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[9] Q[10] gc[1] gc[2] gc[3] gc[4] gc[5] gc[6] gc[7] gc[8]
 + gc[9] gc[10] PHI_1 PHI_2 EN VDDd VSSd
 *.PININFO PHI_1:I PHI_2:I D_in:I Q[1:10]:O VDDd:B VSSd:B EN:B gc[1:10]:B
 xFF[1] Q[1] D_in PHI_1 gc[1] PHI_2 EN VDDd VSSd DFF_2phase_1
