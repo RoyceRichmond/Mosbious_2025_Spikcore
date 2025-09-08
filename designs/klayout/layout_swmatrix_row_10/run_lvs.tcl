@@ -1,4 +1,4 @@
-# Tcl script to run LVS on DFF_10_row
+# Tcl script to run LVS on swmatrix_row_10
 
 if {[catch {set PDK_ROOT $::env(PDK_ROOT)}]} {set PDK_ROOT /usr/share/pdk}
 if {[catch {set PDK $::env(PDK)}]} {set PDK gf180mcuD}
@@ -11,9 +11,9 @@ set reflibs ${pdklib}/libs.ref
 set setupfile /foss/designs/Mosbious_2025_Spikcore/designs/klayout/gf180mcuD_setup.tcl
 set sclib ${reflibs}/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
 
-set circuit1 [readnet spice DFF_10_row_layout.spice]
+set circuit1 [readnet spice swmatrix_row_10_layout.spice]
 set circuit2 [readnet spice $sclib]
 
-readnet spice DFF_10_row.spice $circuit2
+readnet spice swmatrix_row_10.spice $circuit2
 
-lvs "$circuit1 DFF_10_row" "$circuit2 DFF_10_row"         $setupfile DFF_10_row_comp.out
+lvs "$circuit1 swmatrix_row_10" "$circuit2 swmatrix_row_10"         $setupfile swmatrix_row_10_comp.out

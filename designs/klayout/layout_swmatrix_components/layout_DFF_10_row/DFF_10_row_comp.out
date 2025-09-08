@@ -100,7 +100,7 @@ I                                          |I
 Cell pin lists are equivalent.
 Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
 Flattening unmatched subcell DFF_2phase_1$1 in circuit DFF_10_row (0)(10 instances)
-Flattening unmatched subcell DFF_2phase_1[[0]] in circuit DFF_10_row (1)(10 instances)
+Flattening unmatched subcell DFF_2phase_1 in circuit DFF_10_row (1)(10 instances)
 
 Subcircuit summary:
 Circuit 1: DFF_10_row                      |Circuit 2: DFF_10_row                      
