@@ -379,10 +379,10 @@ x Q[9] VDD DFF_2phase_1$1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1_0.ZN VDD s=28952,83
 x a_51438_158# VDD a_51782_38# VDD s=14352,380 d=24288,728 l=100 w=276 x=51986 y=82 pfet_05v0
 x a_10550_n402# VSS a_11018_n384# VSS s=10520,298 d=12320,456 l=120 w=140 x=10898 y=-383 nfet_05v0
 x a_50454_n402# a_51438_158# a_51682_n387# VSS s=7280,244 d=10520,298 l=120 w=140 x=51562 y=-386 nfet_05v0
-C PHI_2 VDD 4.6
 C PHI_1 PHI_2 24.3
-C VDD EN 3.5
 C PHI_1 VDD 9.9
+C VDD EN 3.5
+C VDD PHI_2 4.6
 R gc[10] 57
 = gc[10] DFF_2phase_1$1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN
 = gc[10] DFF_2phase_1$1_0.gated_control

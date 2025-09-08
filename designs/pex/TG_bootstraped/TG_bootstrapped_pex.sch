@@ -4,7 +4,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 -1150 -60 -580 280 {flags=graph
+B 2 -1150 20 -580 360 {flags=graph
 y1=-0.21
 y2=3.5
 ypos1=0
@@ -25,7 +25,7 @@ unitx=1
 logx=0
 logy=0
 }
-B 2 -1150 280 -580 620 {flags=graph
+B 2 -1150 360 -580 700 {flags=graph
 y1=-0.21
 y2=3.5
 ypos1=0
@@ -46,7 +46,7 @@ unitx=1
 logx=0
 logy=0
 }
-B 2 -580 -60 -10 280 {flags=graph
+B 2 -580 20 -10 360 {flags=graph
 y1=-1.7
 y2=3.4
 ypos1=0
@@ -166,7 +166,7 @@ tclcommand="xschem raw_read $netlist_dir/TG_bootstrapped.raw tran"
 }
 C {designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} -470 -370 3 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_pin.sym} -470 -490 0 0 {name=p10 sig_type=std_logic lab=clk}
-C {title.sym} -980 670 0 0 {name=l4 author="Rosendo Valdes"}
+C {title.sym} -980 750 0 0 {name=l4 author="Rosendo Valdes"}
 C {devices/vsource.sym} -620 -290 0 0 {name=V5 value=0 savecurrent=false}
 C {devices/gnd.sym} -620 -230 0 0 {name=l5 lab=GND}
 C {devices/vsource.sym} -620 -400 0 0 {name=V6 value=3.3 savecurrent=false}
@@ -180,7 +180,6 @@ m=1
 value=1p
 footprint=1206
 device="ceramic capacitor"}
-C {designs/libs/core_TG_bootstrapped/TG_bootstrapped.sym} 220 -220 0 0 {name=x6}
 C {lab_pin.sym} 90 -280 0 0 {name=p12 sig_type=std_logic lab=vdd}
 C {gnd.sym} 90 -160 0 0 {name=l6 lab=GND}
 C {lab_pin.sym} 130 -280 0 0 {name=p13 sig_type=std_logic lab=clk}
@@ -198,3 +197,4 @@ m=1
 value=1p
 footprint=1206
 device="ceramic capacitor"}
+C {designs/pex/TG_bootstraped/TG_bootstrapped_pex.sym} 220 -220 0 0 {name=x6}
