@@ -15,37 +15,6 @@ Xpfet$13_0 m2_n331_n296# cntrl vdd vdd pfet$13
 Xpfet$13_1 in m2_n331_n296# out vdd pfet$13
 .ends
 
-.subckt ppolyf_u_resistor$4 a_n376_0# a_n132_0# a_200_0#
-X0 a_n132_0# a_200_0# a_n376_0# ppolyf_u r_width=4.3u r_length=1u
-.ends
-
-.subckt ppolyf_u_resistor$2 a_n376_0# a_n132_0# a_200_0#
-X0 a_n132_0# a_200_0# a_n376_0# ppolyf_u r_width=1u r_length=1u
-.ends
-
-.subckt ppolyf_u_resistor a_n376_0# a_n132_0# a_200_0#
-X0 a_n132_0# a_200_0# a_n376_0# ppolyf_u r_width=3u r_length=1u
-.ends
-
-.subckt ppolyf_u_resistor$3 a_n376_0# a_n132_0# a_200_0#
-X0 a_n132_0# a_200_0# a_n376_0# ppolyf_u r_width=2u r_length=1u
-.ends
-
-.subckt ppolyf_u_resistor$1 a_n376_0# a_n132_0# a_200_0#
-X0 a_n132_0# a_200_0# a_n376_0# ppolyf_u r_width=0.8u r_length=1u
-.ends
-
-.subckt vdiv vss vspike_up vref vspike_down vres vdd
-Xppolyf_u_resistor$4_0 vdd vss vres ppolyf_u_resistor$4
-Xppolyf_u_resistor$2_0 vdd vdd vspike_down ppolyf_u_resistor$2
-Xppolyf_u_resistor$2_1 vdd vss vref ppolyf_u_resistor$2
-Xppolyf_u_resistor$2_2 vdd vdd vref ppolyf_u_resistor$2
-Xppolyf_u_resistor_0 vdd vdd vspike_up ppolyf_u_resistor
-Xppolyf_u_resistor$3_0 vdd vss vspike_down ppolyf_u_resistor$3
-Xppolyf_u_resistor$1_0 vdd vdd vres ppolyf_u_resistor$1
-Xppolyf_u_resistor$1_1 vdd vss vspike_up ppolyf_u_resistor$1
-.ends
-
 .subckt nfet$3 a_216_0# a_30_260# a_n84_0# a_94_0#
 X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
 .ends
@@ -96,14 +65,14 @@ X0 a_94_0# a_28_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=0.65p pd=3.3u as=0.65p p
 X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
 .ends
 
-.subckt nand A Z vdd B vss
+.subckt nand A B Z vdd vss
 Xpfet$8_0 B Z vdd vdd pfet$8
 Xnfet$13_0 A Z nfet$13_0/a_94_0# vss nfet$13
 Xpfet$7_0 A vdd vdd Z pfet$7
 Xnfet$12_0 vss B nfet$13_0/a_94_0# vss nfet$12
 .ends
 
-.subckt monostable phi_2 vres vdd vss phi_1 vin vneg
+.subckt monostable vin vres phi_1 vneg vdd vss phi_2
 Xnfet$15_0 vss vss not_1/in vres nfet$15
 Xnfet$15_1 vss vss not_3/in vres nfet$15
 Xcap_mim_0 not_1/in nand_0/Z cap_mim
@@ -112,8 +81,8 @@ Xnot_0 phi_2 not_0/in vdd vss not
 Xnot_1 not_0/in not_1/in vdd vss not
 Xnot_2 phi_1 vneg vdd vss not
 Xnot_3 vneg not_3/in vdd vss not
-Xnand_0 not_0/in nand_0/Z vdd phi_1 vss nand
-Xnand_1 vneg nand_1/Z vdd vin vss nand
+Xnand_0 not_0/in phi_1 nand_0/Z vdd vss nand
+Xnand_1 vneg vin nand_1/Z vdd vss nand
 .ends
 
 .subckt nfet$17 a_30_260# a_n84_0# a_94_0# VSUBS
@@ -147,7 +116,7 @@ X0 a_108_0# a_35_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p
 X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
 .ends
 
-.subckt conmutator out in1 in2 vdd cntrl vss
+.subckt conmutator out in1 in2 cntrl vdd vss
 Xpfet$14_0 out cntrl in1 vdd pfet$14
 Xpfet$14_1 in2 m2_n850_n472# out vdd pfet$14
 Xpfet$14_2 m2_n850_n472# cntrl vdd vdd pfet$14
@@ -202,16 +171,15 @@ Xnfet$11_0 vss ota_1stage_0/vp vss ota_1stage_0/vp nfet$11
 Xnfet$10_0 ota_1stage_0/vp vss vneg vneg nfet$10
 .ends
 
-.subckt phaseUpulse phi_fire vin phi_int phi_2 phi_1 vrefrac vref vneg vss vspike
+.subckt phaseUpulse vss phi_fire vin vrefrac phi_int phi_2 phi_1 vref vneg vdd vspike
 + reward vspike_up vspike_down vres
-Xswitch_0 switch_0/out phi_1 vss vss vspike switch
-Xvdiv_0 vss vspike_up vref vspike_down vres vss vdiv
-Xswitch_1 vrefrac phi_2 vss vss vspike switch
-Xswitch_2 vref phi_int vss vss vspike switch
-Xnot$1_0 phi_fire phi_int vss vss not$1
-Xmonostable_0 phi_2 vres vss vss phi_1 vin vneg monostable
-Xnor_0 phi_1 phi_2 phi_int vss vss nor
-Xconmutator_0 switch_0/out vspike_up vss vss reward vss conmutator
-Xrefractory_0 vneg vspike_down vss vss vrefrac refractory
+Xswitch_0 switch_0/out phi_1 vdd vss vspike switch
+Xswitch_1 vrefrac phi_2 vdd vss vspike switch
+Xswitch_2 vref phi_int vdd vss vspike switch
+Xnot$1_0 phi_fire phi_int vdd vss not$1
+Xmonostable_0 vin vres phi_1 vneg vdd vss phi_2 monostable
+Xnor_0 phi_1 phi_2 phi_int vdd vss nor
+Xconmutator_0 switch_0/out vspike_up vdd reward vdd vss conmutator
+Xrefractory_0 vneg vspike_down vss vdd vrefrac refractory
 .ends
 

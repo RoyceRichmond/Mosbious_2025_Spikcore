@@ -60,7 +60,6 @@ C {lab_pin.sym} 1120 -600 2 0 {name=p102 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 1120 -490 2 0 {name=p103 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 1180 -570 2 0 {name=p105 sig_type=std_logic lab=vspike_up}
 C {lab_pin.sym} 1180 -530 2 0 {name=p106 sig_type=std_logic lab=reward}
-C {designs/libs/core_LIF_comp/core_vdiv/vdiv.sym} 870 -210 0 0 {name=x5}
 C {lab_pin.sym} 870 -270 2 0 {name=p27 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 870 -150 2 0 {name=p28 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 930 -240 2 0 {name=p29 sig_type=std_logic lab=vref}
@@ -74,3 +73,4 @@ C {designs/libs/core_LIF_comp/core_monostable/monostable.sym} 640 -740 0 0 {name
 C {designs/libs/core_LIF_comp/core_refractory/refractory.sym} 410 -290 0 0 {name=x1}
 C {lab_pin.sym} 410 -340 2 0 {name=p8 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 410 -240 2 0 {name=p9 sig_type=std_logic lab=vss}
+C {designs/libs/core_LIF_comp/core_vdiv/nvdiv.sym} 870 -210 0 0 {name=x2}

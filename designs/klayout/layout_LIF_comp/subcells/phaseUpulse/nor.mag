@@ -1,0 +1,54 @@
+magic
+tech gf180mcu
+timestamp 1757365861
+<< checkpaint >>
+<< l34d0 >>
+<< l21d0 >>
+<< l36d0 >>
+<< labels >>
+rlabel l34d10 0.1295 -0.172 0.1295 -0.172 0 A
+rlabel l34d10 0.0165 -0.1725 0.0165 -0.1725 0 B
+rlabel l34d10 -0.106 -0.18 -0.106 -0.18 0 Z
+rlabel l34d10 0.102 -0.4185 0.102 -0.4185 0 vss
+rlabel l34d10 0.094 0.107 0.094 0.107 0 vdd
+use pfetx2410 pfetx2410_1
+timestamp 1757365861
+transform 1 0 1 0 1 0
+box 0 0 0 0
+use pfetx2411 pfetx2411_1
+timestamp 1757365861
+transform 1 0 0 0 1 0
+box 0 0 0 0
+use via_devx2426 via_devx2426_1
+timestamp 1757365861
+transform 1 0 0 0 1 0
+box 0 0 0 0
+use pfetx2412 pfetx2412_1
+timestamp 1757365861
+transform 1 0 0 0 1 0
+box 0 0 0 0
+use via_devx2427 via_devx2427_1
+timestamp 1757365861
+transform 1 0 0 0 1 0
+box 0 0 0 0
+use nfetx2416 nfetx2416_1
+timestamp 1757365861
+transform 1 0 0 0 1 0
+box 0 0 0 0
+use nfetx2417 nfetx2417_1
+timestamp 1757365861
+transform 1 0 0 0 1 0
+box 0 0 0 0
+use via_devx2427 via_devx2427_2
+timestamp 1757365861
+transform 1 0 0 0 1 0
+box 0 0 0 0
+use via_devx2427 via_devx2427_3
+timestamp 1757365861
+transform 1 0 0 0 1 0
+box 0 0 0 0
+use via_devx2427 via_devx2427_4
+timestamp 1757365861
+transform 1 0 0 0 1 0
+box 0 0 0 0
+<< end >>

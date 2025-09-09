@@ -1,0 +1,81 @@
+magic
+tech gf180mcu
+timestamp 1757365861
+<< checkpaint >>
+rect -1 -1 1 1
+<< l34d0 >>
+<< l22d0 >>
+<< l31d0 >>
+<< l36d0 >>
+<< l42d0 >>
+<< labels >>
+rlabel l34d10 1.19 -0.3405 1.19 -0.3405 0 vneg
+rlabel l34d10 1.3135 0.0425 1.3135 0.0425 0 vspike_down
+rlabel l34d10 1.365 -0.3495 1.365 -0.3495 0 vss
+rlabel l34d10 -0.6 0.7145 -0.6 0.7145 0 vdd
+rlabel l42d10 0.2175 0.2945 0.2175 0.2945 0 vrefrac
+use ota_1stage ota_1stage_1
+timestamp 1757365861
+transform 1 0 0 0 1 0
+box -1 -1 0 1
+use nfetx249 nfetx249_1
+timestamp 1757365861
+transform 1 0 1 0 1 0
+box 0 0 0 0
+use nfetx249 nfetx249_2
+timestamp 1757365861
+transform 1 0 1 0 1 0
+box 0 0 0 0
+use nfetx2410 nfetx2410_1
+timestamp 1757365861
+transform 1 0 1 0 1 0
+box 0 0 0 0
+use nfetx2411 nfetx2411_1
+timestamp 1757365861
+transform 1 0 0 0 1 0
+box 0 0 0 1
+use via_devx249 via_devx249_1
+timestamp 1757365861
+transform 1 0 0 0 1 0
+box 0 0 0 0
+use via_devx249 via_devx249_2
+timestamp 1757365861
+transform 1 0 0 0 1 0
+box 0 0 0 0
+use via_devx249 via_devx249_3
+timestamp 1757365861
+transform 1 0 1 0 1 0
+box 0 0 0 0
+use via_devx249 via_devx249_4
+timestamp 1757365861
+transform 1 0 1 0 1 0
+box 0 0 0 0
+use via_devx249 via_devx249_5
+timestamp 1757365861
+transform 1 0 1 0 1 0
+box 0 0 0 0
+use via_devx2410 via_devx2410_1
+timestamp 1757365861
+transform 1 0 1 0 1 0
+box 0 0 0 0
+use via_devx2411 via_devx2411_1
+timestamp 1757365861
+transform 1 0 0 0 1 0
+box 0 0 0 0
+use via_devx2412 via_devx2412_1
+timestamp 1757365861
+transform 1 0 0 0 1 0
+box 0 0 0 0
+use via_devx249 via_devx249_6
+timestamp 1757365861
+transform 1 0 1 0 1 0
+box 0 0 0 0
+use via_devx2413 via_devx2413_1
+timestamp 1757365861
+transform 1 0 0 0 1 0
+box 0 0 0 0
+use via_devx2414 via_devx2414_1
+timestamp 1757365861
+transform 1 0 1 0 1 0
+box 0 0 0 0
+<< end >>

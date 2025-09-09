@@ -29,20 +29,6 @@ Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3
 Cell pin lists are equivalent.
 Device classes nfet_03v3 and nfet_03v3 are equivalent.
 
-Circuit 1 cell ppolyf_u and Circuit 2 cell ppolyf_u are black boxes.
-Warning: Equate pins:  cell ppolyf_u is a placeholder, treated as a black box.
-Warning: Equate pins:  cell ppolyf_u is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: ppolyf_u                        |Circuit 2: ppolyf_u                        
--------------------------------------------|-------------------------------------------
-1                                          |1                                          
-2                                          |2                                          
-3                                          |3                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes ppolyf_u and ppolyf_u are equivalent.
-
 Circuit 1 cell cap_mim_2f0_m4m5_noshield and Circuit 2 cell cap_mim_2f0fF are black boxes.
 Warning: Equate pins:  cell cap_mim_2f0_m4m5_noshield is a placeholder, treated as a black box.
 Warning: Equate pins:  cell cap_mim_2f0fF is a placeholder, treated as a black box.
@@ -159,34 +145,6 @@ vss                                        |vss
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes switch and switch are equivalent.
-Flattening unmatched subcell ppolyf_u_resistor$4 in circuit vdiv (0)(1 instance)
-Flattening unmatched subcell ppolyf_u_resistor$2 in circuit vdiv (0)(3 instances)
-Flattening unmatched subcell ppolyf_u_resistor in circuit vdiv (0)(1 instance)
-Flattening unmatched subcell ppolyf_u_resistor$3 in circuit vdiv (0)(1 instance)
-Flattening unmatched subcell ppolyf_u_resistor$1 in circuit vdiv (0)(2 instances)
-
-Subcircuit summary:
-Circuit 1: vdiv                            |Circuit 2: vdiv                            
--------------------------------------------|-------------------------------------------
-ppolyf_u (8)                               |ppolyf_u (8)                               
-Number of devices: 8                       |Number of devices: 8                       
-Number of nets: 6                          |Number of nets: 6                          
----------------------------------------------------------------------------------------
-Resolving symmetries by property value.
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: vdiv                            |Circuit 2: vdiv                            
--------------------------------------------|-------------------------------------------
-vspike_up                                  |vspike_up                                  
-vref                                       |vref                                       
-vspike_down                                |vspike_down                                
-vres                                       |vres                                       
-vss                                        |vss                                        
-vdd                                        |vdd                                        
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes vdiv and vdiv are equivalent.
 Flattening unmatched subcell nfet$15 in circuit monostable (0)(2 instances)
 Flattening unmatched subcell cap_mim in circuit monostable (0)(2 instances)
 
@@ -297,6 +255,7 @@ Device classes refractory and refractory are equivalent.
 Flattening unmatched subcell not$1 in circuit phaseUpulse (0)(1 instance)
 Flattening unmatched subcell nfet$3 in circuit phaseUpulse (0)(1 instance)
 Flattening unmatched subcell pfet$1 in circuit phaseUpulse (0)(1 instance)
+Flattening unmatched subcell vdiv in circuit phaseUpulse (1)(1 instance)
 
 Flattening instances of not in cell phaseUpulse (1) makes a better match
 Making another compare attempt.
@@ -305,49 +264,101 @@ Subcircuit summary:
 Circuit 1: phaseUpulse                     |Circuit 2: phaseUpulse                     
 -------------------------------------------|-------------------------------------------
 switch (3)                                 |switch (3)                                 
-vdiv (1)                                   |vdiv (1)                                   
 nfet_03v3 (1)                              |nfet_03v3 (1)                              
 pfet_03v3 (1)                              |pfet_03v3 (1)                              
 monostable (1)                             |monostable (1)                             
 nor (1)                                    |nor (1)                                    
 conmutator (1)                             |conmutator (1)                             
 refractory (1)                             |refractory (1)                             
-Number of devices: 10                      |Number of devices: 10                      
-Number of nets: 15 **Mismatch**            |Number of nets: 16 **Mismatch**            
+(no matching element)                      |ppolyf_u (8)                               
+Number of devices: 9 **Mismatch**          |Number of devices: 17 **Mismatch**         
+Number of nets: 16                         |Number of nets: 16                         
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: phaseUpulse                     |Circuit 2: phaseUpulse                     
 
 ---------------------------------------------------------------------------------------
+Net: vref                                  |Net: vref                                  
+  switch/out = 1                           |  switch/out = 1                           
+                                           |  ppolyf_u/(1|2) = 2                       
+                                           |                                           
+Net: vspike_up                             |Net: vspike_up                             
+  conmutator/in1 = 1                       |  conmutator/in1 = 1                       
+                                           |  ppolyf_u/(1|2) = 2                       
+                                           |                                           
+Net: vspike_down                           |Net: vspike_down                           
+  refractory/vspike_down = 1               |  refractory/vspike_down = 1               
+                                           |  ppolyf_u/(1|2) = 2                       
+                                           |                                           
+Net: vres                                  |Net: vres                                  
+  monostable/vres = 1                      |  monostable/vres = 1                      
+                                           |  ppolyf_u/(1|2) = 2                       
+                                           |                                           
+Net: vdd                                   |Net: vdd                                   
+  switch/vdd = 3                           |  switch/vdd = 3                           
+  pfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 1                      
+  pfet_03v3/4 = 1                          |  pfet_03v3/4 = 1                          
+  monostable/vdd = 1                       |  monostable/vdd = 1                       
+  nor/vdd = 1                              |  nor/vdd = 1                              
+  conmutator/in2 = 1                       |  conmutator/in2 = 1                       
+  conmutator/vdd = 1                       |  conmutator/vdd = 1                       
+  refractory/vdd = 1                       |  refractory/vdd = 1                       
+                                           |  ppolyf_u/(1|2) = 4                       
+                                           |  ppolyf_u/3 = 8                           
+                                           |                                           
 Net: vss                                   |Net: vss                                   
+  switch/vss = 3                           |  switch/vss = 3                           
   nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
   nfet_03v3/4 = 1                          |  nfet_03v3/4 = 1                          
-  nor/vss = 1                              |  nor/vss = 1                              
-  switch/vss = 3                           |  switch/vss = 3                           
-  conmutator/vss = 1                       |  conmutator/vss = 1                       
-  vdiv/vss = 1                             |  vdiv/vss = 1                             
   monostable/vss = 1                       |  monostable/vss = 1                       
+  nor/vss = 1                              |  nor/vss = 1                              
+  conmutator/vss = 1                       |  conmutator/vss = 1                       
   refractory/vss = 1                       |  refractory/vss = 1                       
-  monostable/vdd = 1                       |                                           
-  pfet_03v3/(1|3) = 1                      |                                           
-  nor/vdd = 1                              |                                           
-  vdiv/vdd = 1                             |                                           
-  conmutator/in2 = 1                       |                                           
-  conmutator/vdd = 1                       |                                           
-  switch/vdd = 3                           |                                           
-  pfet_03v3/4 = 1                          |                                           
-  refractory/vdd = 1                       |                                           
+                                           |  ppolyf_u/(1|2) = 4                       
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: phaseUpulse                     |Circuit 2: phaseUpulse                     
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: vdiv:5/ppolyf_u:R3               
+                                           |  (1,2) = (22,3)                           
+                                           |  3 = 22                                   
                                            |                                           
-(no matching net)                          |Net: vdd                                   
-                                           |  pfet_03v3/(1|3) = 1                      
-                                           |  pfet_03v3/4 = 1                          
-                                           |  nor/vdd = 1                              
-                                           |  switch/vdd = 3                           
-                                           |  conmutator/in2 = 1                       
-                                           |  conmutator/vdd = 1                       
-                                           |  vdiv/vdd = 1                             
-                                           |  monostable/vdd = 1                       
-                                           |  refractory/vdd = 1                       
+                                           |                                           
+(no matching instance)                     |Instance: vdiv:5/ppolyf_u:R1               
+                                           |  (1,2) = (13,3)                           
+                                           |  3 = 22                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: vdiv:5/ppolyf_u:R2               
+                                           |  (1,2) = (13,3)                           
+                                           |  3 = 22                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: vdiv:5/ppolyf_u:R13              
+                                           |  (1,2) = (22,3)                           
+                                           |  3 = 22                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: vdiv:5/ppolyf_u:R14              
+                                           |  (1,2) = (22,3)                           
+                                           |  3 = 22                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: vdiv:5/ppolyf_u:R15              
+                                           |  (1,2) = (13,3)                           
+                                           |  3 = 22                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: vdiv:5/ppolyf_u:R16              
+                                           |  (1,2) = (13,3)                           
+                                           |  3 = 22                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: vdiv:5/ppolyf_u:R17              
+                                           |  (1,2) = (22,3)                           
+                                           |  3 = 22                                   
+                                           |                                           
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 Port matching may fail to disambiguate symmetries.
@@ -355,21 +366,21 @@ Port matching may fail to disambiguate symmetries.
 Subcircuit pins:
 Circuit 1: phaseUpulse                     |Circuit 2: phaseUpulse                     
 -------------------------------------------|-------------------------------------------
-vss                                        |vdd **Mismatch**                           
+vdd                                        |vref **Mismatch**                          
+vss                                        |(no pin, node is vspike_up)                
+vref                                       |(no pin, node is vspike_down)              
+vres                                       |(no pin, node is vres)                     
+vspike_up                                  |vdd **Mismatch**                           
+vspike_down                                |vss **Mismatch**                           
 reward                                     |reward                                     
 vin                                        |vin                                        
-phi_int                                    |(no pin, node is phi_int)                  
-phi_1                                      |(no pin, node is phi_1)                    
 phi_2                                      |(no pin, node is phi_2)                    
 vspike                                     |vspike                                     
+phi_1                                      |(no pin, node is phi_1)                    
+phi_int                                    |(no pin, node is phi_int)                  
 phi_fire                                   |phi_fire                                   
-vref                                       |vref                                       
 vrefrac                                    |(no pin, node is vrefrac)                  
-vspike_up                                  |(no pin, node is vspike_up)                
-vspike_down                                |(no pin, node is vspike_down)              
-vres                                       |(no pin, node is vres)                     
 vneg                                       |(no pin, node is vneg)                     
-(no pin, node is vss)                      |vss                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists for phaseUpulse and phaseUpulse altered to match.
 Device classes phaseUpulse and phaseUpulse are equivalent.
