@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=5.5e-07
+x1=1.2016786e-06
+x2=1.7516786e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -33,8 +33,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=5.5e-07
+x1=1.2016786e-06
+x2=1.7516786e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -54,8 +54,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=5.5e-07
+x1=1.2016786e-06
+x2=1.7516786e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -64,10 +64,12 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="4 6 5"
+color="4 6 5 4"
 node="\\"vin; vin \\"
 vout
-\\"vdiff; vout vin -\\""}
+vout_pex
+\\"vdiff; vout vin -\\""
+hilight_wave=2}
 N -530 -170 -530 -140 {lab=GND}
 N -530 -360 -530 -350 {lab=vdd}
 N -470 -170 -470 -140 {lab=GND}
@@ -99,7 +101,7 @@ C {vsource.sym} -530 -200 0 0 {name=V1 value=3.3 savecurrent=false}
 C {devices/code_shown.sym} -1140 -440 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
 .tran 0.1n 550n
-.include /foss/designs/Mosbious_2025_Spikcore/designs/pex/TG_bootstraped/TG_bootstraped_pex.spice
+.include /foss/designs/Mosbious_2025_Spikcore/designs/pex/TG_bootstrapped/TG_bootstrapped_pex.spice
 .save allcurrents
 .options save currents
 .control
@@ -197,4 +199,4 @@ m=1
 value=1p
 footprint=1206
 device="ceramic capacitor"}
-C {designs/pex/TG_bootstraped/TG_bootstrapped_pex.sym} 220 -220 0 0 {name=x6}
+C {designs/pex/TG_bootstrapped/TG_bootstrapped_pex.sym} 220 -220 0 0 {name=x6}
