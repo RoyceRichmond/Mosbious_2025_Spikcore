@@ -4,17 +4,11 @@ K {}
 V {}
 S {}
 E {}
-N -280 560 -260 560 {lab=vdd}
-N -280 580 -260 580 {lab=vss}
 N -80 40 -80 70 {lab=vdd}
 N -80 100 -60 100 {lab=vdd}
 N -60 70 -60 100 {lab=vdd}
 N -80 70 -60 70 {lab=vdd}
 N -80 130 -80 160 {lab=#net1}
-N -280 600 -260 600 {lab=clk}
-N -280 640 -260 640 {lab=vin}
-N -280 660 -260 660 {lab=vout}
-N -280 620 -260 620 {lab=nclk}
 N -140 100 -120 100 {lab=clk}
 N -140 480 -120 480 {lab=nclk}
 N -80 510 -80 540 {lab=vss}
@@ -98,9 +92,7 @@ N 190 870 300 870 {lab=#net6}
 N 190 870 190 1060 {lab=#net6}
 N -140 480 -140 620 {lab=nclk}
 N -140 620 -140 710 {lab=nclk}
-C {lab_pin.sym} -280 560 0 0 {name=p1 sig_type=std_logic lab=vdd}
 C {iopin.sym} -260 560 0 0 {name=p2 lab=vdd}
-C {lab_pin.sym} -280 580 0 0 {name=p3 sig_type=std_logic lab=vss}
 C {iopin.sym} -260 580 0 0 {name=p4 lab=vss}
 C {symbols/nfet_03v3.sym} -100 480 0 0 {name=M1
 L=0.28u
@@ -131,11 +123,11 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/cap_mim_2f0fF.sym} -80 280 0 0 {name=C2
-W=1e-6
-L=1e-6
+W=8e-6
+L=7e-6
 model=cap_mim_2f0fF
 spiceprefix=X
-m=56}
+m=1}
 C {symbols/nfet_03v3.sym} 130 40 1 0 {name=M3
 L=0.84u
 W=0.84u
@@ -151,13 +143,9 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {lab_pin.sym} -80 40 0 0 {name=p5 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} -280 600 0 0 {name=p6 sig_type=std_logic lab=clk}
 C {iopin.sym} -260 600 0 0 {name=p7 lab=clk}
-C {lab_pin.sym} -280 640 0 0 {name=p8 sig_type=std_logic lab=vin}
 C {iopin.sym} -260 640 0 0 {name=p9 lab=vin}
-C {lab_pin.sym} -280 660 0 0 {name=p10 sig_type=std_logic lab=vout}
 C {iopin.sym} -260 660 0 0 {name=p11 lab=vout}
-C {lab_pin.sym} -280 620 0 0 {name=p12 sig_type=std_logic lab=nclk}
 C {iopin.sym} -260 620 0 0 {name=p13 lab=nclk}
 C {lab_pin.sym} -140 100 0 0 {name=p14 sig_type=std_logic lab=clk}
 C {lab_pin.sym} -140 620 0 0 {name=p15 sig_type=std_logic lab=nclk}
@@ -271,11 +259,11 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/cap_mim_2f0fF.sym} -80 890 2 0 {name=C1
-W=1e-6
-L=1e-6
+W=8e-6
+L=7e-6
 model=cap_mim_2f0fF
 spiceprefix=X
-m=56}
+m=1}
 C {symbols/nfet_03v3.sym} 130 1160 1 1 {name=M11
 L=0.84u
 W=0.84u

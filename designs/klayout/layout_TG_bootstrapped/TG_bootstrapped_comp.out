@@ -56,7 +56,7 @@ Subcircuit summary:
 Circuit 1: TG_bootstrapped                 |Circuit 2: TG_bootstrapped                 
 -------------------------------------------|-------------------------------------------
 pfet_03v3 (28->9)                          |pfet_03v3 (10->9)                          
-cap_mim_2f0_m4m5_noshield (2)              |cap_mim_2f0fF (112->2)                     
+cap_mim_2f0_m4m5_noshield (2)              |cap_mim_2f0fF (2)                          
 nfet_03v3 (24->9)                          |nfet_03v3 (12->9)                          
 Number of devices: 20                      |Number of devices: 20                      
 Number of nets: 14 **Mismatch**            |Number of nets: 12 **Mismatch**            
@@ -70,17 +70,17 @@ Net: m2_5393_1451#                         |Net: net3
                                            |  cap_mim_2f0fF/2 = 1                      
                                            |  pfet_03v3/(1|3) = 1                      
                                            |                                           
-Net: (no pins)                             |Net: net1                                  
+Net: m2_5769_32#                           |Net: net1                                  
   nfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 2                      
                                            |  cap_mim_2f0fF/1 = 1                      
                                            |  nfet_03v3/(1|3) = 1                      
                                            |                                           
-Net: m4_6353_n1426#                        |Net: net5                                  
+Net: m4_6353_n3083#                        |Net: net5                                  
   cap_mim_2f0_m4m5_noshield/2 = 1          |  nfet_03v3/(1|3) = 2                      
   pfet_03v3/(1|3) = 1                      |  cap_mim_2f0fF/1 = 1                      
   nfet_03v3/(1|3) = 2                      |  pfet_03v3/(1|3) = 1                      
                                            |                                           
-Net: m5_7950_n1570#                        |Net: net4                                  
+Net: m5_7905_n2963#                        |Net: net4                                  
   cap_mim_2f0_m4m5_noshield/1 = 1          |  pfet_03v3/(1|3) = 2                      
   nfet_03v3/(1|3) = 2                      |  cap_mim_2f0fF/2 = 1                      
   pfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
@@ -105,14 +105,8 @@ Port matching may fail to disambiguate symmetries.
 Subcircuit pins:
 Circuit 1: TG_bootstrapped                 |Circuit 2: TG_bootstrapped                 
 -------------------------------------------|-------------------------------------------
-(no pin, node is vdd)                      |vdd                                        
-(no pin, node is vss)                      |vss                                        
-(no pin, node is clk)                      |clk                                        
-(no pin, node is nclk)                     |nclk                                       
-(no pin, node is vin)                      |vin                                        
-(no pin, node is vout)                     |vout                                       
----------------------------------------------------------------------------------------
-Cell pin lists for TG_bootstrapped and TG_bootstrapped altered to match.
+Cell pin lists are equivalent.
 Device classes TG_bootstrapped and TG_bootstrapped are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Netlists do not match.
+Port matching may fail to disambiguate symmetries.

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>GF180 DENSITY DRC Run Report at</description>
- <original-file>/foss/designs/Mosbious_2025_Spikcore/designs/klayout/layout_TG_bootstraped/TG_bootstrapped.gds</original-file>
+ <original-file>/foss/designs/Mosbious_2025_Spikcore/designs/klayout/layout_TG_bootstrapped/TG_bootstrapped.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
  <top-cell>TG_bootstrapped</top-cell>
  <tags>
