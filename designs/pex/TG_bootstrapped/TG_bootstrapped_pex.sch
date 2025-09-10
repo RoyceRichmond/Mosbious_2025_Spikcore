@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.2016786e-06
-x2=1.7516786e-06
+x1=0
+x2=5.5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -33,8 +33,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.2016786e-06
-x2=1.7516786e-06
+x1=0
+x2=5.5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -47,15 +47,15 @@ logx=0
 logy=0
 }
 B 2 -580 20 -10 360 {flags=graph
-y1=-1.7
-y2=3.4
+y1=-0.029612298
+y2=0.0019223957
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.2016786e-06
-x2=1.7516786e-06
+x1=0
+x2=5.5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -64,12 +64,12 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="4 6 5 4"
-node="\\"vin; vin \\"
-vout
-vout_pex
-\\"vdiff; vout vin -\\""
-hilight_wave=2}
+hilight_wave=2
+color="4 9"
+node="vout
+
+vout_pex"
+rawfile=$netlist_dir/TG_bootstrapped_pex.raw}
 N -530 -170 -530 -140 {lab=GND}
 N -530 -360 -530 -350 {lab=vdd}
 N -470 -170 -470 -140 {lab=GND}
@@ -107,7 +107,7 @@ C {devices/code_shown.sym} -1140 -440 0 0 {name=s1 only_toplevel=false value="
 .control
 save all
 run
-write TG_bootstrapped.raw
+write TG_bootstrapped_pex.raw
 .endc
 "
 spice_ignore=False}
@@ -162,10 +162,6 @@ footprint=1206
 device=resistor
 m=1}
 C {gnd.sym} -70 -150 0 0 {name=l1 lab=GND}
-C {launcher.sym} -240 -340 0 0 {name=h5
-descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/TG_bootstrapped.raw tran"
-}
 C {designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} -470 -370 3 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {lab_pin.sym} -470 -490 0 0 {name=p10 sig_type=std_logic lab=clk}
 C {title.sym} -980 750 0 0 {name=l4 author="Rosendo Valdes"}
@@ -200,3 +196,7 @@ value=1p
 footprint=1206
 device="ceramic capacitor"}
 C {designs/pex/TG_bootstrapped/TG_bootstrapped_pex.sym} 220 -220 0 0 {name=x6}
+C {launcher.sym} -210 -430 0 0 {name=h5
+descr="load waves" 
+tclcommand="xschem raw_read $netlist_dir/TG_bootstrapped_pex.raw tran"
+}
