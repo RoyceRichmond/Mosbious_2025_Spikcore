@@ -1,0 +1,111 @@
+* NGSPICE file created from TG_bootstrapped.ext - technology: gf180mcuD
+
+.subckt pfet$4 a_2190_0# a_1250_0# a_1062_0# a_3130_0# a_3694_0# a_2942_0# a_2002_0#
++ a_2754_0# a_2566_0# a_2378_0# a_1814_0# a_1626_0# a_1438_0# a_602_n60# a_414_n60#
++ a_226_n60# a_2670_n60# a_3506_0# a_3318_0# a_2482_n60# a_2294_n60# a_3610_n60# a_3422_n60#
++ a_3234_n60# a_2858_n60# a_38_n60# a_3046_n60# a_n92_0# a_310_0# a_122_0# a_874_0#
++ a_686_0# a_498_0# a_1730_n60# a_1542_n60# a_790_n60# a_1918_n60# a_1354_n60# a_1166_n60#
++ a_2106_n60# a_978_n60# w_n230_n138#
+X0 a_2378_0# a_2294_n60# a_2190_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=0.8112p ps=3.64u w=3.12u l=0.42u
+X1 a_2942_0# a_2858_n60# a_2754_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=0.8112p ps=3.64u w=3.12u l=0.42u
+X2 a_3694_0# a_3610_n60# a_3506_0# w_n230_n138# pfet_03v3 ad=2.028p pd=7.54u as=0.8112p ps=3.64u w=3.12u l=0.42u
+X3 a_2566_0# a_2482_n60# a_2378_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=0.8112p ps=3.64u w=3.12u l=0.42u
+X4 a_2754_0# a_2670_n60# a_2566_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=0.8112p ps=3.64u w=3.12u l=0.42u
+X5 a_310_0# a_226_n60# a_122_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=0.8112p ps=3.64u w=3.12u l=0.42u
+X6 a_498_0# a_414_n60# a_310_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=0.8112p ps=3.64u w=3.12u l=0.42u
+X7 a_686_0# a_602_n60# a_498_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=0.8112p ps=3.64u w=3.12u l=0.42u
+X8 a_2190_0# a_2106_n60# a_2002_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=0.8112p ps=3.64u w=3.12u l=0.42u
+X9 a_2002_0# a_1918_n60# a_1814_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=0.8112p ps=3.64u w=3.12u l=0.42u
+X10 a_1250_0# a_1166_n60# a_1062_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=0.8112p ps=3.64u w=3.12u l=0.42u
+X11 a_1438_0# a_1354_n60# a_1250_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=0.8112p ps=3.64u w=3.12u l=0.42u
+X12 a_1626_0# a_1542_n60# a_1438_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=0.8112p ps=3.64u w=3.12u l=0.42u
+X13 a_1814_0# a_1730_n60# a_1626_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=0.8112p ps=3.64u w=3.12u l=0.42u
+X14 a_122_0# a_38_n60# a_n92_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=2.028p ps=7.54u w=3.12u l=0.42u
+X15 a_1062_0# a_978_n60# a_874_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=0.8112p ps=3.64u w=3.12u l=0.42u
+X16 a_874_0# a_790_n60# a_686_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=0.8112p ps=3.64u w=3.12u l=0.42u
+X17 a_3130_0# a_3046_n60# a_2942_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=0.8112p ps=3.64u w=3.12u l=0.42u
+X18 a_3318_0# a_3234_n60# a_3130_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=0.8112p ps=3.64u w=3.12u l=0.42u
+X19 a_3506_0# a_3422_n60# a_3318_0# w_n230_n138# pfet_03v3 ad=0.8112p pd=3.64u as=0.8112p ps=3.64u w=3.12u l=0.42u
+.ends
+
+.subckt cap_mim m4_n120_n120# m4_0_0#
+X0 m4_0_0# m4_n120_n120# cap_mim_2f0_m4m5_noshield c_width=7u c_length=8u
+.ends
+
+.subckt pfet$2 a_n92_0# a_38_n136# a_206_0# w_n230_n138#
+X0 a_206_0# a_38_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=1.092p pd=4.66u as=1.092p ps=4.66u w=1.68u l=0.84u
+.ends
+
+.subckt nfet$3 a_328_0# a_38_n60# a_n84_0# a_206_0#
+X0 a_206_0# a_38_n60# a_n84_0# a_328_0# nfet_03v3 ad=0.5124p pd=2.9u as=0.5124p ps=2.9u w=0.84u l=0.84u
+.ends
+
+.subckt pfet$9 a_28_284# a_n92_0# a_94_0# w_n230_n138#
+X0 a_94_0# a_28_284# a_n92_0# w_n230_n138# pfet_03v3 ad=0.728p pd=3.54u as=0.728p ps=3.54u w=1.12u l=0.28u
+.ends
+
+.subckt nfet a_328_0# a_n84_0# a_38_n132# a_206_0#
+X0 a_206_0# a_38_n132# a_n84_0# a_328_0# nfet_03v3 ad=0.5124p pd=2.9u as=0.5124p ps=2.9u w=0.84u l=0.84u
+.ends
+
+.subckt pfet$3 a_38_n60# a_n92_0# a_206_0# w_n230_n138#
+X0 a_206_0# a_38_n60# a_n92_0# w_n230_n138# pfet_03v3 ad=1.092p pd=4.66u as=1.092p ps=4.66u w=1.68u l=0.84u
+.ends
+
+.subckt nfet$4 a_2190_0# a_414_n132# a_1250_0# a_1062_0# a_2670_n132# a_790_n132#
++ a_1542_n132# a_2942_0# a_2002_0# a_2754_0# a_2566_0# a_2378_0# a_1814_0# a_1626_0#
++ a_2858_n132# a_1438_0# a_2106_n132# a_978_n132# a_226_n132# a_3064_0# a_2482_n132#
++ a_310_0# a_122_0# a_n84_0# a_1354_n132# a_602_n132# a_874_0# a_686_0# a_498_0# a_38_n132#
++ a_1730_n132# a_2294_n132# a_1918_n132# a_1166_n132#
+X0 a_2378_0# a_2294_n132# a_2190_0# a_3064_0# nfet_03v3 ad=1.0179p pd=4.435u as=1.0179p ps=4.435u w=3.915u l=0.42u
+X1 a_2566_0# a_2482_n132# a_2378_0# a_3064_0# nfet_03v3 ad=1.0179p pd=4.435u as=1.0179p ps=4.435u w=3.915u l=0.42u
+X2 a_2754_0# a_2670_n132# a_2566_0# a_3064_0# nfet_03v3 ad=1.0179p pd=4.435u as=1.0179p ps=4.435u w=3.915u l=0.42u
+X3 a_310_0# a_226_n132# a_122_0# a_3064_0# nfet_03v3 ad=1.0179p pd=4.435u as=1.0179p ps=4.435u w=3.915u l=0.42u
+X4 a_498_0# a_414_n132# a_310_0# a_3064_0# nfet_03v3 ad=1.0179p pd=4.435u as=1.0179p ps=4.435u w=3.915u l=0.42u
+X5 a_686_0# a_602_n132# a_498_0# a_3064_0# nfet_03v3 ad=1.0179p pd=4.435u as=1.0179p ps=4.435u w=3.915u l=0.42u
+X6 a_2190_0# a_2106_n132# a_2002_0# a_3064_0# nfet_03v3 ad=1.0179p pd=4.435u as=1.0179p ps=4.435u w=3.915u l=0.42u
+X7 a_2002_0# a_1918_n132# a_1814_0# a_3064_0# nfet_03v3 ad=1.0179p pd=4.435u as=1.0179p ps=4.435u w=3.915u l=0.42u
+X8 a_1250_0# a_1166_n132# a_1062_0# a_3064_0# nfet_03v3 ad=1.0179p pd=4.435u as=1.0179p ps=4.435u w=3.915u l=0.42u
+X9 a_1438_0# a_1354_n132# a_1250_0# a_3064_0# nfet_03v3 ad=1.0179p pd=4.435u as=1.0179p ps=4.435u w=3.915u l=0.42u
+X10 a_1626_0# a_1542_n132# a_1438_0# a_3064_0# nfet_03v3 ad=1.0179p pd=4.435u as=1.0179p ps=4.435u w=3.915u l=0.42u
+X11 a_1814_0# a_1730_n132# a_1626_0# a_3064_0# nfet_03v3 ad=1.0179p pd=4.435u as=1.0179p ps=4.435u w=3.915u l=0.42u
+X12 a_122_0# a_38_n132# a_n84_0# a_3064_0# nfet_03v3 ad=1.0179p pd=4.435u as=2.38815p ps=9.05u w=3.915u l=0.42u
+X13 a_1062_0# a_978_n132# a_874_0# a_3064_0# nfet_03v3 ad=1.0179p pd=4.435u as=1.0179p ps=4.435u w=3.915u l=0.42u
+X14 a_874_0# a_790_n132# a_686_0# a_3064_0# nfet_03v3 ad=1.0179p pd=4.435u as=1.0179p ps=4.435u w=3.915u l=0.42u
+X15 a_2942_0# a_2858_n132# a_2754_0# a_3064_0# nfet_03v3 ad=2.38815p pd=9.05u as=1.0179p ps=4.435u w=3.915u l=0.42u
+.ends
+
+.subckt nfet$2 a_216_0# a_30_172# a_n84_0# a_94_0#
+X0 a_94_0# a_30_172# a_n84_0# a_216_0# nfet_03v3 ad=0.3416p pd=2.34u as=0.3416p ps=2.34u w=0.56u l=0.28u
+.ends
+
+.subckt TG_bootstrapped clk vdd nclk vout vss vin
+Xpfet$4_0 vout vin vout vin vout vout vin vin vout vin vout vin vout m3_6686_2072#
++ m3_6686_2072# m3_6686_2072# m3_6686_2072# vin vout m3_6686_2072# m3_6686_2072# m3_6686_2072#
++ m3_6686_2072# m3_6686_2072# m3_6686_2072# m3_6686_2072# m3_6686_2072# vout vout
++ vin vin vout vin m3_6686_2072# m3_6686_2072# m3_6686_2072# m3_6686_2072# m3_6686_2072#
++ m3_6686_2072# m3_6686_2072# m3_6686_2072# vdd pfet$4
+Xcap_mim_0 m4_6353_n3083# m5_6577_n2963# cap_mim
+Xcap_mim_1 m4_6354_2903# m5_6578_3023# cap_mim
+Xpfet$2_0 m4_6353_n3083# nclk m1_5676_n176# vdd pfet$2
+Xpfet$2_1 m4_6354_2903# nclk m3_6686_2072# vdd pfet$2
+Xnfet$3_0 vss clk m5_6577_n2963# vin nfet$3
+Xnfet$3_1 vss clk m4_6353_n3083# m1_5676_n176# nfet$3
+Xnfet$3_2 vss clk m5_6578_3023# vin nfet$3
+Xnfet$3_3 vss clk m4_6354_2903# m3_6686_2072# nfet$3
+Xpfet$9_0 clk m4_6353_n3083# vdd vdd pfet$9
+Xpfet$9_1 nclk m5_6578_3023# vdd vdd pfet$9
+Xnfet_0 vss vss nclk m1_5676_n176# nfet
+Xnfet_1 vss vdd nclk m3_6686_2072# nfet
+Xpfet$3_0 nclk m5_6577_n2963# vin vdd pfet$3
+Xpfet$3_1 clk vss m1_5676_n176# vdd pfet$3
+Xpfet$3_2 nclk m5_6578_3023# vin vdd pfet$3
+Xpfet$3_3 clk vdd m3_6686_2072# vdd pfet$3
+Xnfet$4_0 vout m1_5676_n176# vin vout m1_5676_n176# m1_5676_n176# m1_5676_n176# vout
++ vin vin vout vin vout vin m1_5676_n176# vout m1_5676_n176# m1_5676_n176# m1_5676_n176#
++ vss m1_5676_n176# vout vin vout m1_5676_n176# m1_5676_n176# vin vout vin m1_5676_n176#
++ m1_5676_n176# m1_5676_n176# m1_5676_n176# m1_5676_n176# nfet$4
+Xnfet$2_0 vss nclk m5_6577_n2963# vss nfet$2
+Xnfet$2_1 vss clk m4_6354_2903# vss nfet$2
+.ends
+

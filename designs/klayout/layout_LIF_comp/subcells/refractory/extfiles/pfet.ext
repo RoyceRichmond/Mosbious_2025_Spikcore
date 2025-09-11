@@ -17,4 +17,9 @@ cap "a_28_228#" "a_n92_0#" 3.42312
 cap "w_n352_n286#" "a_28_228#" 174.321
 cap "w_n352_n286#" "a_n92_0#" 19.2703
 cap "a_94_0#" "a_28_228#" 3.42312
+<<<<<<< HEAD:designs/klayout/layout_LIF_comp/subcells/refractory/extfiles/pfet.ext
+=======
+cap "a_28_228#" "a_n92_0#" 3.42312
+cap "w_n352_n286#" "a_28_228#" 174.321
+>>>>>>> 32141c32e70fca95ef182d405dd80b0d5ace3811:designs/klayout/layout_LIF_comp/extfiles/pfet$17.ext
 device msubckt pfet_03v3 38 0 39 1 l=56 w=168 "w_n352_n286#" "a_28_228#" 112 0 "a_n92_0#" 168 21840,596 "a_94_0#" 168 21840,596

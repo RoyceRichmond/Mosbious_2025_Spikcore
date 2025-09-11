@@ -11,10 +11,20 @@ node "a_n92_0#" 11 30.9818 -92 0 pdif 0 0 0 0 0 0 26000 660 0 0 0 0 0 0 0 0 0 0 
 node "a_28_n136#" 53 110.378 28 -136 p 0 0 0 0 0 0 0 0 0 0 0 0 23696 944 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5776 304 0 0 0 0 0 0 0 0
 node "w_n230_n138#" 1559 1079.26 -230 -138 nw 351288 2428 0 0 29200 692 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5776 304 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+<<<<<<< HEAD:designs/klayout/layout_LIF_comp/extfiles/pfet$24.ext
 cap "a_94_0#" "a_28_n136#" 3.50993
 cap "a_94_0#" "w_n230_n138#" 60.1987
+=======
+cap "a_n92_0#" "w_n230_n138#" 10.3173
+cap "a_94_0#" "a_28_n136#" 3.50993
+>>>>>>> 32141c32e70fca95ef182d405dd80b0d5ace3811:designs/klayout/layout_LIF_comp/extfiles/pfet$1$7.ext
 cap "a_94_0#" "a_n92_0#" 24.8817
+cap "a_94_0#" "w_n230_n138#" 60.1987
+cap "a_28_n136#" "a_n92_0#" 3.50993
 cap "a_28_n136#" "w_n230_n138#" 144
+<<<<<<< HEAD:designs/klayout/layout_LIF_comp/extfiles/pfet$24.ext
 cap "a_28_n136#" "a_n92_0#" 3.50993
 cap "a_n92_0#" "w_n230_n138#" 10.3173
+=======
+>>>>>>> 32141c32e70fca95ef182d405dd80b0d5ace3811:designs/klayout/layout_LIF_comp/extfiles/pfet$1$7.ext
 device msubckt pfet_03v3 38 0 39 1 l=56 w=200 "w_n230_n138#" "a_28_n136#" 112 0 "a_n92_0#" 200 26000,660 "a_94_0#" 200 26000,660

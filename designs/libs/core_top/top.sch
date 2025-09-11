@@ -4,105 +4,169 @@ K {}
 V {}
 S {}
 E {}
-L 4 -240 -280 -120 -280 {}
-L 4 -120 -280 -120 -100 {}
-L 4 -240 -100 -120 -100 {}
-L 4 -240 -280 -240 -100 {}
-L 4 -100 -280 20 -280 {}
-L 4 20 -280 20 -200 {}
-L 4 -100 -180 20 -180 {}
-L 4 -100 -280 -100 -200 {}
-L 4 50 -280 170 -280 {}
-L 4 50 -280 50 -220 {}
-L 4 50 -220 170 -220 {}
-L 4 170 -280 170 -220 {}
-L 4 200 -280 320 -280 {}
-L 4 200 -280 200 -100 {}
-L 4 200 -100 320 -100 {}
-L 4 320 -280 320 -100 {}
-L 4 360 -280 360 -240 {}
-L 4 360 -280 480 -280 {}
-L 4 480 -280 480 -240 {}
-L 4 360 -240 480 -240 {}
-L 4 -100 -200 -100 -180 {}
-L 4 20 -200 20 -180 {}
-T {Neurons pins} -240 -300 0 0 0.3 0.3 {}
-T {Power pins} -100 -300 0 0 0.3 0.3 {}
-T {LIF neurons pins} 50 -300 0 0 0.3 0.3 {}
-T {synapses pins} 200 -300 0 0 0.3 0.3 {}
-T {TG control pin} 360 -300 0 0 0.3 0.3 {}
-N 900 120 920 120 {lab=vout_lif_comp}
-N 900 280 920 280 {lab=vout_lif_ring}
-N 900 280 900 300 {lab=vout_lif_ring}
-C {designs/libs/core_AH_neuron_arr/AH_neuron_arr.sym} 240 140 0 0 {name=x1}
-C {designs/libs/core_LIF_ring/LIF.sym} 870 190 0 0 {name=x4}
-C {designs/libs/core_LIF_comp/LIF_comp.sym} 830 120 0 0 {name=x5}
-C {designs/libs/core_synapse/synapse.sym} 80 540 0 0 {name=x6}
-C {lab_pin.sym} 830 190 0 0 {name=p3 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 830 50 0 0 {name=p4 sig_type=std_logic lab=VDD3V3}
-C {lab_pin.sym} 920 120 2 0 {name=p7 sig_type=std_logic lab=vout_lif_comp}
-C {lab_pin.sym} 920 280 2 0 {name=p8 sig_type=std_logic lab=vout_lif_ring}
-C {lab_pin.sym} 0 30 0 0 {name=p12 sig_type=std_logic lab=VDD_AH}
-C {iopin.sym} 370 -260 0 0 {name=p13 lab=CLK_TG}
-C {iopin.sym} -90 -260 0 0 {name=p14 lab=VDD_AH}
-C {iopin.sym} -220 -260 0 0 {name=p15 lab=I_IN0}
-C {iopin.sym} -220 -240 0 0 {name=p16 lab=VOUT_0}
-C {iopin.sym} -220 -220 0 0 {name=p17 lab=I_IN1}
-C {iopin.sym} -220 -200 0 0 {name=p18 lab=VOUT_1}
-C {iopin.sym} -220 -180 0 0 {name=p19 lab=I_IN2}
-C {iopin.sym} -220 -160 0 0 {name=p20 lab=VOUT_2}
-C {iopin.sym} -220 -140 0 0 {name=p21 lab=I_IN3}
-C {iopin.sym} -220 -120 0 0 {name=p22 lab=VOUT_3}
-C {iopin.sym} -90 -240 0 0 {name=p23 lab=VDD3V3}
-C {iopin.sym} -90 -220 0 0 {name=p24 lab=VSS}
-C {iopin.sym} 60 -260 0 0 {name=p25 lab=VIN_LIF}
-C {iopin.sym} 60 -240 0 0 {name=p26 lab=VOUT_LIF}
-C {iopin.sym} 210 -260 0 0 {name=p27 lab=V_EX}
-C {iopin.sym} 210 -240 0 0 {name=p28 lab=V_INH}
-C {iopin.sym} 210 -220 0 0 {name=p29 lab=VIN_S0}
-C {iopin.sym} 210 -200 0 0 {name=p30 lab=VOUT_S0}
-C {iopin.sym} 210 -180 0 0 {name=p31 lab=VIN_S1}
-C {iopin.sym} 210 -160 0 0 {name=p32 lab=VOUT_S1}
-C {iopin.sym} 210 -140 0 0 {name=p33 lab=VIN_S2}
-C {iopin.sym} 210 -120 0 0 {name=p34 lab=VOUT_S2}
-C {lab_pin.sym} 780 270 0 0 {name=p5 sig_type=std_logic lab=VDD3V3}
-C {lab_pin.sym} 780 310 0 0 {name=p6 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 210 190 2 0 {name=p9 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 0 50 0 0 {name=p1 sig_type=std_logic lab=I_IN0}
-C {lab_pin.sym} 0 70 0 0 {name=p2 sig_type=std_logic lab=I_IN1}
-C {lab_pin.sym} 0 90 0 0 {name=p10 sig_type=std_logic lab=I_IN2}
-C {lab_pin.sym} 0 110 0 0 {name=p11 sig_type=std_logic lab=I_IN3}
-C {lab_pin.sym} 210 50 0 1 {name=p35 sig_type=std_logic lab=VOUT_0}
-C {lab_pin.sym} 210 70 0 1 {name=p36 sig_type=std_logic lab=VOUT_1}
-C {lab_pin.sym} 210 90 0 1 {name=p37 sig_type=std_logic lab=VOUT_2}
-C {lab_pin.sym} 210 110 0 1 {name=p38 sig_type=std_logic lab=VOUT_3}
-C {designs/libs/core_synapse/synapse.sym} 80 740 0 0 {name=x2}
-C {designs/libs/core_synapse/synapse.sym} 80 930 0 0 {name=x3}
-C {lab_pin.sym} 110 270 0 0 {name=p39 sig_type=std_logic lab=VDD3V3}
-C {lab_pin.sym} 110 470 0 0 {name=p40 sig_type=std_logic lab=VDD3V3}
-C {lab_pin.sym} 110 660 0 0 {name=p41 sig_type=std_logic lab=VDD3V3}
-C {lab_pin.sym} 110 420 0 0 {name=p42 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 110 620 0 0 {name=p43 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 110 810 0 0 {name=p44 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 0 370 2 1 {name=p45 sig_type=std_logic lab=V_INH}
-C {lab_pin.sym} 0 350 2 1 {name=p46 sig_type=std_logic lab=VIN_S0}
-C {lab_pin.sym} 0 390 2 1 {name=p47 sig_type=std_logic lab=V_EX}
-C {lab_pin.sym} 210 350 0 1 {name=p48 sig_type=std_logic lab=VOUT_S0}
-C {lab_pin.sym} 0 570 2 1 {name=p49 sig_type=std_logic lab=V_INH}
-C {lab_pin.sym} 0 550 2 1 {name=p50 sig_type=std_logic lab=VIN_S1}
-C {lab_pin.sym} 0 590 2 1 {name=p51 sig_type=std_logic lab=V_EX}
-C {lab_pin.sym} 210 550 0 1 {name=p52 sig_type=std_logic lab=VOUT_S1}
-C {lab_pin.sym} 0 760 2 1 {name=p53 sig_type=std_logic lab=V_INH}
-C {lab_pin.sym} 0 740 2 1 {name=p54 sig_type=std_logic lab=VIN_S2}
-C {lab_pin.sym} 0 780 2 1 {name=p55 sig_type=std_logic lab=V_EX}
-C {lab_pin.sym} 210 740 0 1 {name=p56 sig_type=std_logic lab=VOUT_S2}
-C {noconn.sym} 210 130 2 0 {name=l1}
-C {noconn.sym} 210 150 2 0 {name=l2}
-C {noconn.sym} 210 170 2 0 {name=l3}
-C {noconn.sym} 0 170 0 0 {name=l4}
-C {noconn.sym} 0 150 0 0 {name=l5}
-C {noconn.sym} 0 130 0 0 {name=l6}
-C {iopin.sym} -90 -200 0 0 {name=p57 lab=VBIAS}
-C {lab_pin.sym} 0 190 0 0 {name=p58 sig_type=std_logic lab=VBIAS}
-C {lab_pin.sym} 1210 200 2 0 {name=p59 sig_type=std_logic lab=VOUT_LIF}
-C {lab_pin.sym} 610 200 0 0 {name=p60 sig_type=std_logic lab=VIN_LIF}
+L 4 -500 170 -380 170 {}
+L 4 -380 170 -380 410 {}
+L 4 -500 410 -380 410 {}
+L 4 -500 170 -500 410 {}
+L 4 -500 -540 -380 -540 {}
+L 4 -380 -540 -380 -480 {}
+L 4 -500 -480 -380 -480 {}
+L 4 -500 -540 -500 -480 {}
+L 4 -500 -270 -380 -270 {}
+L 4 -500 -270 -500 -210 {}
+L 4 -500 -210 -380 -210 {}
+L 4 -380 -270 -380 -210 {}
+L 4 -500 -170 -380 -170 {}
+L 4 -500 -170 -500 130 {}
+L 4 -500 130 -380 130 {}
+L 4 -380 -170 -380 130 {}
+L 4 -500 -450 -500 -410 {}
+L 4 -500 -450 -380 -450 {}
+L 4 -380 -450 -380 -410 {}
+L 4 -500 -410 -380 -410 {}
+L 4 -500 -380 -380 -380 {}
+L 4 -380 -380 -380 -300 {}
+L 4 -500 -300 -380 -300 {}
+L 4 -500 -380 -500 -300 {}
+L 4 -100 -460 520 -460 {}
+L 4 520 -460 520 40 {}
+L 4 -100 40 520 40 {}
+L 4 -100 -460 -100 40 {}
+L 4 -180 180 660 180 {}
+L 4 660 180 660 810 {}
+L 4 -180 810 660 810 {}
+L 4 -180 180 -180 810 {}
+T {AH Neurons pins} -500 150 0 0 0.3 0.3 {}
+T {Power pins} -500 -560 0 0 0.3 0.3 {}
+T {LIF neurons pins} -500 -290 0 0 0.3 0.3 {}
+T {synapses pins} -500 -190 0 0 0.3 0.3 {}
+T {TG control pin} -500 -470 0 0 0.3 0.3 {}
+T {Mosbius pins} -500 -400 0 0 0.3 0.3 {}
+T {AH Neurons} 160 -490 0 0 0.3 0.3 {}
+T {synapses} 160 150 0 0 0.3 0.3 {}
+N 1300 120 1320 120 {lab=VOUT_LIF}
+N 1300 280 1320 280 {lab=VOUT_LIF}
+N 1490 120 1490 190 {lab=VOUT_LIF}
+N 1320 120 1490 120 {lab=VOUT_LIF}
+N 1320 280 1490 280 {lab=VOUT_LIF}
+N 1490 190 1490 280 {lab=VOUT_LIF}
+C {designs/libs/core_LIF_ring/LIF_ring.sym} 1270 190 0 0 {name=x4}
+C {designs/libs/core_LIF_comp/LIF_comp.sym} 1230 120 0 0 {name=x5}
+C {designs/libs/core_synapse/synapse.sym} 10 480 0 0 {name=x6}
+C {lab_pin.sym} 1230 190 0 0 {name=p3 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 1230 50 0 0 {name=p4 sig_type=std_logic lab=VDD3V3}
+C {iopin.sym} -490 -430 0 0 {name=p13 lab=CLK_TG}
+C {iopin.sym} -480 190 0 0 {name=p15 lab=I_IN0}
+C {iopin.sym} -480 210 0 0 {name=p16 lab=VOUT_0}
+C {iopin.sym} -480 230 0 0 {name=p17 lab=I_IN1}
+C {iopin.sym} -480 250 0 0 {name=p18 lab=VOUT_1}
+C {iopin.sym} -480 270 0 0 {name=p19 lab=I_IN2}
+C {iopin.sym} -480 290 0 0 {name=p20 lab=VOUT_2}
+C {iopin.sym} -480 310 0 0 {name=p21 lab=I_IN3}
+C {iopin.sym} -480 330 0 0 {name=p22 lab=VOUT_3}
+C {iopin.sym} -490 -520 0 0 {name=p23 lab=VDD3V3}
+C {iopin.sym} -490 -500 0 0 {name=p24 lab=VSS}
+C {iopin.sym} -490 -250 0 0 {name=p25 lab=VIN_LIF}
+C {iopin.sym} -490 -230 0 0 {name=p26 lab=VOUT_LIF}
+C {iopin.sym} -490 -150 0 0 {name=p27 lab=V_EX}
+C {iopin.sym} -490 -130 0 0 {name=p28 lab=V_INH}
+C {iopin.sym} -490 -110 0 0 {name=p29 lab=VIN_S0}
+C {iopin.sym} -490 -90 0 0 {name=p30 lab=VOUT_S0}
+C {iopin.sym} -490 -70 0 0 {name=p31 lab=VIN_S1}
+C {iopin.sym} -490 -50 0 0 {name=p32 lab=VOUT_S1}
+C {iopin.sym} -490 -30 0 0 {name=p33 lab=VIN_S2}
+C {iopin.sym} -490 -10 0 0 {name=p34 lab=VOUT_S2}
+C {lab_pin.sym} 1180 270 0 0 {name=p5 sig_type=std_logic lab=VDD3V3}
+C {lab_pin.sym} 1180 310 0 0 {name=p6 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 0 -190 0 0 {name=p2 sig_type=std_logic lab=I_IN1}
+C {lab_pin.sym} 0 -40 0 0 {name=p10 sig_type=std_logic lab=I_IN2}
+C {lab_pin.sym} 330 -250 0 0 {name=p11 sig_type=std_logic lab=I_IN3}
+C {lab_pin.sym} 100 -190 0 1 {name=p36 sig_type=std_logic lab=VOUT_1}
+C {lab_pin.sym} 100 -40 0 1 {name=p37 sig_type=std_logic lab=VOUT_2}
+C {lab_pin.sym} 430 -250 0 1 {name=p38 sig_type=std_logic lab=VOUT_3}
+C {designs/libs/core_synapse/synapse.sym} 10 680 0 0 {name=x2}
+C {designs/libs/core_synapse/synapse.sym} 10 870 0 0 {name=x3}
+C {lab_pin.sym} 40 210 0 0 {name=p39 sig_type=std_logic lab=VDD3V3}
+C {lab_pin.sym} 40 410 0 0 {name=p40 sig_type=std_logic lab=VDD3V3}
+C {lab_pin.sym} 40 600 0 0 {name=p41 sig_type=std_logic lab=VDD3V3}
+C {lab_pin.sym} 40 360 0 0 {name=p42 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 40 560 0 0 {name=p43 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 40 750 0 0 {name=p44 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} -70 310 2 1 {name=p45 sig_type=std_logic lab=V_INH}
+C {lab_pin.sym} -70 290 2 1 {name=p46 sig_type=std_logic lab=VIN_S0}
+C {lab_pin.sym} -70 330 2 1 {name=p47 sig_type=std_logic lab=V_EX}
+C {lab_pin.sym} 140 290 0 1 {name=p48 sig_type=std_logic lab=VOUT_S0}
+C {lab_pin.sym} -70 510 2 1 {name=p49 sig_type=std_logic lab=V_INH}
+C {lab_pin.sym} -70 490 2 1 {name=p50 sig_type=std_logic lab=VIN_S1}
+C {lab_pin.sym} -70 530 2 1 {name=p51 sig_type=std_logic lab=V_EX}
+C {lab_pin.sym} 140 490 0 1 {name=p52 sig_type=std_logic lab=VOUT_S1}
+C {lab_pin.sym} -70 700 2 1 {name=p53 sig_type=std_logic lab=V_INH}
+C {lab_pin.sym} -70 680 2 1 {name=p54 sig_type=std_logic lab=VIN_S2}
+C {lab_pin.sym} -70 720 2 1 {name=p55 sig_type=std_logic lab=V_EX}
+C {lab_pin.sym} 140 680 0 1 {name=p56 sig_type=std_logic lab=VOUT_S2}
+C {lab_pin.sym} 1490 190 2 0 {name=p59 sig_type=std_logic lab=VOUT_LIF}
+C {iopin.sym} -490 -360 0 0 {name=p14 lab=EN}
+C {iopin.sym} -490 -340 0 0 {name=p57 lab=DATA}
+C {iopin.sym} -490 -320 0 0 {name=p61 lab=CLK}
+C {iopin.sym} -480 350 0 0 {name=p62 lab=I_IN4}
+C {iopin.sym} -480 370 0 0 {name=p63 lab=VOUT_4}
+C {iopin.sym} -490 10 0 0 {name=p64 lab=VIN_S3}
+C {iopin.sym} -490 30 0 0 {name=p65 lab=VOUT_S3}
+C {iopin.sym} -490 50 0 0 {name=p66 lab=VIN_S4}
+C {iopin.sym} -490 70 0 0 {name=p67 lab=VOUT_S4}
+C {iopin.sym} -490 90 0 0 {name=p68 lab=VIN_S5}
+C {iopin.sym} -490 110 0 0 {name=p69 lab=VOUT_S5}
+C {designs/libs/core_synapse/synapse.sym} 400 480 0 0 {name=x7}
+C {designs/libs/core_synapse/synapse.sym} 400 680 0 0 {name=x8}
+C {designs/libs/core_synapse/synapse.sym} 400 870 0 0 {name=x9}
+C {lab_pin.sym} 430 210 0 0 {name=p70 sig_type=std_logic lab=VDD3V3}
+C {lab_pin.sym} 430 410 0 0 {name=p71 sig_type=std_logic lab=VDD3V3}
+C {lab_pin.sym} 430 600 0 0 {name=p72 sig_type=std_logic lab=VDD3V3}
+C {lab_pin.sym} 430 360 0 0 {name=p73 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 430 560 0 0 {name=p74 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 430 750 0 0 {name=p75 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 320 310 2 1 {name=p76 sig_type=std_logic lab=V_INH}
+C {lab_pin.sym} 320 290 2 1 {name=p77 sig_type=std_logic lab=VIN_S3}
+C {lab_pin.sym} 320 330 2 1 {name=p78 sig_type=std_logic lab=V_EX}
+C {lab_pin.sym} 530 290 0 1 {name=p79 sig_type=std_logic lab=VOUT_S3}
+C {lab_pin.sym} 320 510 2 1 {name=p80 sig_type=std_logic lab=V_INH}
+C {lab_pin.sym} 320 490 2 1 {name=p81 sig_type=std_logic lab=VIN_S4}
+C {lab_pin.sym} 320 530 2 1 {name=p82 sig_type=std_logic lab=V_EX}
+C {lab_pin.sym} 530 490 0 1 {name=p83 sig_type=std_logic lab=VOUT_S4}
+C {lab_pin.sym} 320 700 2 1 {name=p84 sig_type=std_logic lab=V_INH}
+C {lab_pin.sym} 320 680 2 1 {name=p85 sig_type=std_logic lab=VIN_S5}
+C {lab_pin.sym} 320 720 2 1 {name=p86 sig_type=std_logic lab=V_EX}
+C {lab_pin.sym} 530 680 0 1 {name=p87 sig_type=std_logic lab=VOUT_S5}
+C {designs/libs/core_AH_neuron/AH_neuron.sym} -190 -360 0 0 {name=x10}
+C {iopin.sym} -480 390 0 0 {name=p88 lab=VAH_bias}
+C {lab_pin.sym} 50 -400 0 0 {name=p89 sig_type=std_logic lab=VDD3V3}
+C {lab_pin.sym} 0 -350 0 0 {name=p90 sig_type=std_logic lab=I_IN0}
+C {lab_pin.sym} 50 -300 2 0 {name=p92 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 100 -350 0 1 {name=p93 sig_type=std_logic lab=VOUT_0}
+C {designs/libs/core_AH_neuron/AH_neuron.sym} -190 -200 0 0 {name=x11}
+C {lab_pin.sym} 50 -140 2 0 {name=p97 sig_type=std_logic lab=VSS}
+C {designs/libs/core_AH_neuron/AH_neuron.sym} -190 -50 0 0 {name=x12}
+C {lab_pin.sym} 10 -20 0 0 {name=p101 sig_type=std_logic lab=VAH_bias}
+C {lab_pin.sym} 50 10 2 0 {name=p102 sig_type=std_logic lab=VSS}
+C {designs/libs/core_AH_neuron/AH_neuron.sym} 140 -260 0 0 {name=x13}
+C {lab_pin.sym} 380 -200 2 0 {name=p107 sig_type=std_logic lab=VSS}
+C {designs/libs/core_AH_neuron/AH_neuron.sym} 140 -90 0 0 {name=x14}
+C {lab_pin.sym} 330 -80 0 0 {name=p110 sig_type=std_logic lab=I_IN4}
+C {lab_pin.sym} 380 -30 2 0 {name=p112 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 430 -80 0 1 {name=p113 sig_type=std_logic lab=VOUT_4}
+C {lab_pin.sym} 10 -170 0 0 {name=p9 sig_type=std_logic lab=VAH_bias}
+C {lab_pin.sym} 10 -330 0 0 {name=p58 sig_type=std_logic lab=VAH_bias}
+C {lab_pin.sym} 340 -230 0 0 {name=p91 sig_type=std_logic lab=VAH_bias}
+C {lab_pin.sym} 340 -60 0 0 {name=p96 sig_type=std_logic lab=VAH_bias}
+C {lab_pin.sym} 50 -240 0 0 {name=p1 sig_type=std_logic lab=VDD3V3}
+C {lab_pin.sym} 380 -300 0 0 {name=p12 sig_type=std_logic lab=VDD3V3}
+C {lab_pin.sym} 50 -90 0 0 {name=p35 sig_type=std_logic lab=VDD3V3}
+C {lab_pin.sym} 380 -130 0 0 {name=p94 sig_type=std_logic lab=VDD3V3}
+C {lab_pin.sym} 1160 110 0 0 {name=p95 sig_type=std_logic lab=VIN_LIF}
+C {lab_pin.sym} 1180 290 0 0 {name=p98 sig_type=std_logic lab=VIN_LIF}
+C {lab_pin.sym} 1160 130 3 0 {name=p7 sig_type=std_logic lab=VSS}
+C {designs/libs/core_schmitt_trigger/schmitt_trigger.sym} 1130 -270 0 0 {name=x1}
+C {lab_pin.sym} 1020 -220 0 0 {name=p8 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 1020 -320 0 0 {name=p60 sig_type=std_logic lab=VDD3V3}
+C {lab_pin.sym} 980 -270 0 0 {name=p99 sig_type=std_logic lab=CLK}
+C {lab_pin.sym} 1100 -270 1 0 {name=p100 sig_type=std_logic lab=clk_schmitt}

@@ -143,6 +143,10 @@ foreach dev $devices {
     }
 }
 
+# Equate the 5V layout devices with the 6V schematic devices due to PDK inconsistency
+equate classes "-circuit1 nfet_05v0" "-circuit2 nfet_06v0"
+equate classes "-circuit1 pfet_05v0" "-circuit2 pfet_06v0"
+
 #------------------------------------------------------------------
 # (MOS) salicide block extended source/drain transistors
 # (NOTE:  _dss devices are treated as symmetric because the

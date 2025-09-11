@@ -1,0 +1,24 @@
+** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_TG_bootstrapped/TG_bootstrapped.sch
+.subckt TG_bootstrapped vdd vss clk nclk vin vout
+*.PININFO vdd:B vss:B clk:B vin:B vout:B nclk:B
+XM1 net3 nclk vss vss nfet_03v3 L=0.28u W=0.56u nf=1 m=1
+XM2 net1 clk vdd vdd pfet_03v3 L=0.28u W=1.12u nf=1 m=1
+XM3 net2 clk net1 vss nfet_03v3 L=0.84u W=0.84u nf=1 m=1
+XM4 net2 nclk net1 vdd pfet_03v3 L=0.84u W=1.68u nf=1 m=1
+XM5 net2 nclk vss vss nfet_03v3 L=0.84u W=0.84u nf=1 m=1
+XM6 net2 clk vss vdd pfet_03v3 L=0.84u W=1.68u nf=1 m=1
+XM7 net3 clk vin vss nfet_03v3 L=0.84u W=0.84u nf=1 m=1
+XM8 net3 nclk vin vdd pfet_03v3 L=0.84u W=1.68u nf=1 m=1
+XM9 net5 clk vss vss nfet_03v3 L=0.28u W=0.56u nf=1 m=1
+XM10 net4 nclk vdd vdd pfet_03v3 L=0.28u W=1.12u nf=1 m=1
+XC1 net4 net5 cap_mim_2f0fF c_width=7e-6 c_length=8e-6 m=1
+XM11 net6 clk net5 vss nfet_03v3 L=0.84u W=0.84u nf=1 m=1
+XM12 net6 nclk net5 vdd pfet_03v3 L=0.84u W=1.68u nf=1 m=1
+XM13 net6 nclk vdd vss nfet_03v3 L=0.84u W=0.84u nf=1 m=1
+XM14 net6 clk vdd vdd pfet_03v3 L=0.84u W=1.68u nf=1 m=1
+XM15 vin clk net4 vss nfet_03v3 L=0.84u W=0.84u nf=1 m=1
+XM16 vin nclk net4 vdd pfet_03v3 L=0.84u W=1.68u nf=1 m=1
+XM17 vout net2 vin vss nfet_03v3 L=0.42u W=3.915u nf=1 m=16
+XM18 vout net6 vin vdd pfet_03v3 L=0.42u W=3.132u nf=1 m=20
+XC2 net3 net1 cap_mim_2f0fF c_width=7e-6 c_length=8e-6 m=1
+.ends

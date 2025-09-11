@@ -1,0 +1,57 @@
+* NGSPICE file created from swmatrix_Tgate.ext - technology: gf180mcuD
+
+.subckt gf180mcu_fd_sc_mcu9t5v0__inv_1 I VDD VSS ZN VNW VPW
+X0 ZN I VDD VNW pfet_05v0 ad=0.8052p pd=4.54u as=0.8052p ps=4.54u w=1.83u l=0.5u
+X1 ZN I VSS VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.5808p ps=3.52u w=1.32u l=0.6u
+.ends
+
+.subckt nfet vss a_734_0# a_510_n132# a_254_0# a_894_0# a_670_n132# a_830_n132# a_414_0#
++ a_30_n132# a_n84_0# a_94_0# a_190_n132# a_574_0# a_350_n132#
+X0 a_734_0# a_670_n132# a_574_0# vss nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X1 a_254_0# a_190_n132# a_94_0# vss nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X2 a_574_0# a_510_n132# a_414_0# vss nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X3 a_894_0# a_830_n132# a_734_0# vss nfet_03v3 ad=2.44p pd=9.22u as=1.04p ps=4.52u w=4u l=0.28u
+X4 a_94_0# a_30_n132# a_n84_0# vss nfet_03v3 ad=1.04p pd=4.52u as=2.44p ps=9.22u w=4u l=0.28u
+X5 a_414_0# a_350_n132# a_254_0# vss nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+.ends
+
+.subckt pfet$1 a_1534_0# a_2174_0# a_1054_0# a_734_0# a_828_n136# a_28_n136# a_2588_n136#
++ a_1694_0# a_254_0# a_1628_n136# a_894_0# a_188_n136# a_988_n136# a_2814_0# a_2748_n136#
++ a_1788_n136# a_2334_0# a_348_n136# a_1214_0# a_1148_n136# a_1854_0# a_414_0# a_2108_n136#
++ a_2494_0# a_n92_0# a_1948_n136# a_1374_0# a_94_0# a_574_0# a_508_n136# a_2268_n136#
++ a_1308_n136# a_2014_0# a_668_n136# a_2428_n136# a_1468_n136# a_2654_0# w_n230_n138#
+X0 a_1214_0# a_1148_n136# a_1054_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X1 a_2654_0# a_2588_n136# a_2494_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X2 a_734_0# a_668_n136# a_574_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X3 a_2494_0# a_2428_n136# a_2334_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X4 a_254_0# a_188_n136# a_94_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X5 a_574_0# a_508_n136# a_414_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X6 a_2014_0# a_1948_n136# a_1854_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X7 a_1534_0# a_1468_n136# a_1374_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X8 a_1374_0# a_1308_n136# a_1214_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X9 a_1054_0# a_988_n136# a_894_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X10 a_2814_0# a_2748_n136# a_2654_0# w_n230_n138# pfet_03v3 ad=2.6p pd=9.3u as=1.04p ps=4.52u w=4u l=0.28u
+X11 a_894_0# a_828_n136# a_734_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X12 a_2334_0# a_2268_n136# a_2174_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X13 a_94_0# a_28_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as=2.6p ps=9.3u w=4u l=0.28u
+X14 a_2174_0# a_2108_n136# a_2014_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X15 a_414_0# a_348_n136# a_254_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X16 a_1854_0# a_1788_n136# a_1694_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+X17 a_1694_0# a_1628_n136# a_1534_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=0.28u
+.ends
+
+.subckt swmatrix_Tgate VSS VDD gated_control T2 T1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_0 gated_control VDD VSS gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ VDD VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xnfet_0 VSS T2 gated_control T1 T1 gated_control gated_control T2 gated_control T1
++ T2 gated_control T1 gated_control nfet
+Xpfet$1_0 T1 T1 T2 T2 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T2 T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T1
++ gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T2 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ T1 T2 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T1 T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ T2 T2 T1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T2 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN
++ gf180mcu_fd_sc_mcu9t5v0__inv_1_0/ZN T2 VDD pfet$1
+.ends
+

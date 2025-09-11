@@ -1,0 +1,57 @@
+* NGSPICE file created from NO_ClkGen.ext - technology: gf180mcuD
+
+.subckt gf180mcu_fd_sc_mcu9t5v0__nand2_1 A1 A2 VDD VSS ZN VNW VPW
+X0 ZN A2 VDD VNW pfet_05v0 ad=0.4277p pd=2.165u as=0.7238p ps=4.17u w=1.645u l=0.5u
+X1 VDD A1 ZN VNW pfet_05v0 ad=0.7238p pd=4.17u as=0.4277p ps=2.165u w=1.645u l=0.5u
+X2 ZN A1 a_245_69# VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.2112p ps=1.64u w=1.32u l=0.6u
+X3 a_245_69# A2 VSS VPW nfet_05v0 ad=0.2112p pd=1.64u as=0.5808p ps=3.52u w=1.32u l=0.6u
+.ends
+
+.subckt gf180mcu_fd_sc_mcu9t5v0__inv_1 I VDD VSS ZN VNW VPW
+X0 ZN I VDD VNW pfet_05v0 ad=0.8052p pd=4.54u as=0.8052p ps=4.54u w=1.83u l=0.5u
+X1 ZN I VSS VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.5808p ps=3.52u w=1.32u l=0.6u
+.ends
+
+.subckt NO_ClkGen vdd vss clk phi_2 phi_1
+Xgf180mcu_fd_sc_mcu9t5v0__nand2_1_0 gf180mcu_fd_sc_mcu9t5v0__inv_1_13/ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_16/I
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1_3/I vdd vss gf180mcu_fd_sc_mcu9t5v0__nand2_1
+Xgf180mcu_fd_sc_mcu9t5v0__nand2_1_1 gf180mcu_fd_sc_mcu9t5v0__inv_1_5/ZN gf180mcu_fd_sc_mcu9t5v0__inv_1_16/ZN
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1_11/I vdd vss gf180mcu_fd_sc_mcu9t5v0__nand2_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_0 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1_1/I
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_2 phi_2 vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_1 gf180mcu_fd_sc_mcu9t5v0__inv_1_1/I vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1_7/I
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_3 gf180mcu_fd_sc_mcu9t5v0__inv_1_3/I vdd vss phi_2
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_4 gf180mcu_fd_sc_mcu9t5v0__inv_1_4/I vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1_5/I
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_5 gf180mcu_fd_sc_mcu9t5v0__inv_1_5/I vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1_5/ZN
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_6 gf180mcu_fd_sc_mcu9t5v0__inv_1_6/I vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1_4/I
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_7 gf180mcu_fd_sc_mcu9t5v0__inv_1_7/I vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1_6/I
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_10 phi_1 vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1_8/I
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_8 gf180mcu_fd_sc_mcu9t5v0__inv_1_8/I vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1_9/I
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_11 gf180mcu_fd_sc_mcu9t5v0__inv_1_11/I vdd vss phi_1
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_9 gf180mcu_fd_sc_mcu9t5v0__inv_1_9/I vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1_9/ZN
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_12 gf180mcu_fd_sc_mcu9t5v0__inv_1_12/I vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1_13/I
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_13 gf180mcu_fd_sc_mcu9t5v0__inv_1_13/I vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1_13/ZN
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_14 gf180mcu_fd_sc_mcu9t5v0__inv_1_14/I vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1_12/I
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_15 gf180mcu_fd_sc_mcu9t5v0__inv_1_9/ZN vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1_14/I
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_16 gf180mcu_fd_sc_mcu9t5v0__inv_1_16/I vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1_16/ZN
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1
+Xgf180mcu_fd_sc_mcu9t5v0__inv_1_17 clk vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1_16/I
++ vdd vss gf180mcu_fd_sc_mcu9t5v0__inv_1
+.ends
+

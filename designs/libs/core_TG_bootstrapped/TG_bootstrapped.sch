@@ -4,17 +4,11 @@ K {}
 V {}
 S {}
 E {}
-N -280 560 -260 560 {lab=vdd}
-N -280 580 -260 580 {lab=vss}
 N -80 40 -80 70 {lab=vdd}
 N -80 100 -60 100 {lab=vdd}
 N -60 70 -60 100 {lab=vdd}
 N -80 70 -60 70 {lab=vdd}
 N -80 130 -80 160 {lab=#net1}
-N -280 600 -260 600 {lab=clk}
-N -280 640 -260 640 {lab=vin}
-N -280 660 -260 660 {lab=vout}
-N -280 620 -260 620 {lab=nclk}
 N -140 100 -120 100 {lab=clk}
 N -140 480 -120 480 {lab=nclk}
 N -80 510 -80 540 {lab=vss}
@@ -98,9 +92,7 @@ N 190 870 300 870 {lab=#net6}
 N 190 870 190 1060 {lab=#net6}
 N -140 480 -140 620 {lab=nclk}
 N -140 620 -140 710 {lab=nclk}
-C {lab_pin.sym} -280 560 0 0 {name=p1 sig_type=std_logic lab=vdd}
 C {iopin.sym} -260 560 0 0 {name=p2 lab=vdd}
-C {lab_pin.sym} -280 580 0 0 {name=p3 sig_type=std_logic lab=vss}
 C {iopin.sym} -260 580 0 0 {name=p4 lab=vss}
 C {symbols/nfet_03v3.sym} -100 480 0 0 {name=M1
 L=0.28u
@@ -130,12 +122,6 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/cap_mim_2f0fF.sym} -80 280 0 0 {name=C2
-W=1e-6
-L=1e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=56}
 C {symbols/nfet_03v3.sym} 130 40 1 0 {name=M3
 L=0.84u
 W=0.84u
@@ -151,13 +137,9 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {lab_pin.sym} -80 40 0 0 {name=p5 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} -280 600 0 0 {name=p6 sig_type=std_logic lab=clk}
 C {iopin.sym} -260 600 0 0 {name=p7 lab=clk}
-C {lab_pin.sym} -280 640 0 0 {name=p8 sig_type=std_logic lab=vin}
 C {iopin.sym} -260 640 0 0 {name=p9 lab=vin}
-C {lab_pin.sym} -280 660 0 0 {name=p10 sig_type=std_logic lab=vout}
 C {iopin.sym} -260 660 0 0 {name=p11 lab=vout}
-C {lab_pin.sym} -280 620 0 0 {name=p12 sig_type=std_logic lab=nclk}
 C {iopin.sym} -260 620 0 0 {name=p13 lab=nclk}
 C {lab_pin.sym} -140 100 0 0 {name=p14 sig_type=std_logic lab=clk}
 C {lab_pin.sym} -140 620 0 0 {name=p15 sig_type=std_logic lab=nclk}
@@ -270,12 +252,12 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/cap_mim_2f0fF.sym} -80 890 2 0 {name=C1
-W=1e-6
-L=1e-6
+C {symbols/cap_mim_2f0fF.sym} -80 890 0 0 {name=C1
+W=7e-6
+L=8e-6
 model=cap_mim_2f0fF
 spiceprefix=X
-m=56}
+m=1}
 C {symbols/nfet_03v3.sym} 130 1160 1 1 {name=M11
 L=0.84u
 W=0.84u
@@ -376,9 +358,9 @@ C {lab_pin.sym} 130 820 3 1 {name=p40 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 130 600 2 0 {name=p41 sig_type=std_logic lab=clk}
 C {symbols/nfet_03v3.sym} 300 490 1 0 {name=M17
 L=0.42u
-W=15.66u
+W=3.915u
 nf=1
-m=4
+m=16
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -390,9 +372,9 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 300 700 3 0 {name=M18
 L=0.42u
-W=31.32u
+W=3.132u
 nf=1
-m=2
+m=20
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -407,83 +389,9 @@ C {lab_pin.sym} 300 660 3 1 {name=p43 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 370 600 0 1 {name=p45 sig_type=std_logic lab=vout}
 C {lab_pin.sym} 240 600 0 0 {name=p46 sig_type=std_logic lab=vin}
 C {title.sym} -120 1250 0 0 {name=l4 author="Rosendo Valdes"}
-C {symbols/cap_mim_2f0fF.sym} 570 840 2 0 {name=C3
-W=1e-6
-L=1e-6
+C {symbols/cap_mim_2f0fF.sym} -80 280 2 0 {name=C2
+W=7e-6
+L=8e-6
 model=cap_mim_2f0fF
 spiceprefix=X
 m=1}
-C {lab_pin.sym} 570 810 3 1 {name=p28 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 570 870 1 1 {name=p44 sig_type=std_logic lab=vss}
-C {symbols/cap_mim_2f0fF.sym} 700 840 2 0 {name=C4
-W=1e-6
-L=1e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {lab_pin.sym} 700 810 3 1 {name=p47 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 700 870 1 1 {name=p48 sig_type=std_logic lab=vss}
-C {symbols/cap_mim_2f0fF.sym} 840 840 2 0 {name=C5
-W=1e-6
-L=1e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {lab_pin.sym} 840 810 3 1 {name=p49 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 840 870 1 1 {name=p50 sig_type=std_logic lab=vss}
-C {symbols/cap_mim_2f0fF.sym} 980 840 2 0 {name=C6
-W=1e-6
-L=1e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {lab_pin.sym} 980 810 3 1 {name=p51 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 980 870 1 1 {name=p52 sig_type=std_logic lab=vss}
-C {symbols/cap_mim_2f0fF.sym} 1120 840 2 0 {name=C7
-W=1e-6
-L=1e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {lab_pin.sym} 1120 810 3 1 {name=p53 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 1120 870 1 1 {name=p54 sig_type=std_logic lab=vss}
-C {symbols/cap_mim_2f0fF.sym} 570 990 2 0 {name=C8
-W=1e-6
-L=1e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {lab_pin.sym} 570 960 3 1 {name=p55 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 570 1020 1 1 {name=p56 sig_type=std_logic lab=vss}
-C {symbols/cap_mim_2f0fF.sym} 700 990 2 0 {name=C9
-W=1e-6
-L=1e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {lab_pin.sym} 700 960 3 1 {name=p57 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 700 1020 1 1 {name=p58 sig_type=std_logic lab=vss}
-C {symbols/cap_mim_2f0fF.sym} 840 990 2 0 {name=C10
-W=1e-6
-L=1e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {lab_pin.sym} 840 960 3 1 {name=p59 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 840 1020 1 1 {name=p60 sig_type=std_logic lab=vss}
-C {symbols/cap_mim_2f0fF.sym} 980 990 2 0 {name=C11
-W=1e-6
-L=1e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {lab_pin.sym} 980 960 3 1 {name=p61 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 980 1020 1 1 {name=p62 sig_type=std_logic lab=vss}
-C {symbols/cap_mim_2f0fF.sym} 1120 990 2 0 {name=C12
-W=1e-6
-L=1e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {lab_pin.sym} 1120 960 3 1 {name=p63 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 1120 1020 1 1 {name=p64 sig_type=std_logic lab=vss}

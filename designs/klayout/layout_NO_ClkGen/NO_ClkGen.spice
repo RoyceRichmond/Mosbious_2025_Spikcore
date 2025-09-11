@@ -1,0 +1,26 @@
+** sch_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sch
+.subckt NO_ClkGen PHI_2 CLK PHI_1 VDD VSS
+*.PININFO CLK:I PHI_2:O PHI_1:O VDD:B VSS:B
+x1 OUT_bot_d CLKB OUT_top VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x2 OUT_top_d CLKbuf OUT_bot VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x3 OUT_top PHI_2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x4 PHI_2 net5 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x5 net3 net2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x6 OUT_bot PHI_1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x7 PHI_1 net6 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x8 net4 net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x9 CLKB CLKbuf VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x10 CLK CLKB VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x11 net5 net3 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x12 net6 net4 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x13 net2 net7 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x15 net1 net8 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x17 net7 net9 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x18 net8 net12 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x14 net9 net10 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x16 net12 net11 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x19 net10 OUT_top_d VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x20 net11 OUT_bot_d VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+* noconn VDD
+* noconn VSS
+.ends
