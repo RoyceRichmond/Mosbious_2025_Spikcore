@@ -79,7 +79,7 @@ X15 a_2942_0# a_2858_n132# a_2754_0# a_3064_0# nfet_03v3 ad=2.38815p pd=9.05u as
 X0 a_94_0# a_30_172# a_n84_0# a_216_0# nfet_03v3 ad=0.3416p pd=2.34u as=0.3416p ps=2.34u w=0.56u l=0.28u
 .ends
 
-.subckt TG_bootstrapped clk vin vdd nclk vout vss
+.subckt TG_bootstrapped clk vdd nclk vout vss vin
 Xpfet$4_0 vout vin vout vin vout vout vin vin vout vin vout vin vout m3_6686_2072#
 + m3_6686_2072# m3_6686_2072# m3_6686_2072# vin vout m3_6686_2072# m3_6686_2072# m3_6686_2072#
 + m3_6686_2072# m3_6686_2072# m3_6686_2072# m3_6686_2072# m3_6686_2072# vout vout
@@ -93,8 +93,8 @@ Xnfet$3_0 vss clk m5_6577_n2963# vin nfet$3
 Xnfet$3_1 vss clk m4_6353_n3083# m1_5676_n176# nfet$3
 Xnfet$3_2 vss clk m5_6578_3023# vin nfet$3
 Xnfet$3_3 vss clk m4_6354_2903# m3_6686_2072# nfet$3
-Xpfet$9_0 nclk m5_6578_3023# vdd vdd pfet$9
-Xpfet$9_1 clk m4_6354_2903# vdd vdd pfet$9
+Xpfet$9_0 clk m4_6353_n3083# vdd vdd pfet$9
+Xpfet$9_1 nclk m5_6578_3023# vdd vdd pfet$9
 Xnfet_0 vss vss nclk m1_5676_n176# nfet
 Xnfet_1 vss vdd nclk m3_6686_2072# nfet
 Xpfet$3_0 nclk m5_6577_n2963# vin vdd pfet$3
@@ -106,6 +106,6 @@ Xnfet$4_0 vout m1_5676_n176# vin vout m1_5676_n176# m1_5676_n176# m1_5676_n176# 
 + vss m1_5676_n176# vout vin vout m1_5676_n176# m1_5676_n176# vin vout vin m1_5676_n176#
 + m1_5676_n176# m1_5676_n176# m1_5676_n176# m1_5676_n176# nfet$4
 Xnfet$2_0 vss nclk m5_6577_n2963# vss nfet$2
-Xnfet$2_1 vss clk m4_6353_n3083# vss nfet$2
+Xnfet$2_1 vss clk m4_6354_2903# vss nfet$2
 .ends
 
