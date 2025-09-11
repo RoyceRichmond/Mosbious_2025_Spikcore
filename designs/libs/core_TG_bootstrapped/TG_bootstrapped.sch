@@ -122,12 +122,6 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/cap_mim_2f0fF.sym} -80 280 0 0 {name=C2
-W=8e-6
-L=7e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
 C {symbols/nfet_03v3.sym} 130 40 1 0 {name=M3
 L=0.84u
 W=0.84u
@@ -258,9 +252,9 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/cap_mim_2f0fF.sym} -80 890 2 0 {name=C1
-W=8e-6
-L=7e-6
+C {symbols/cap_mim_2f0fF.sym} -80 890 0 0 {name=C1
+W=7e-6
+L=8e-6
 model=cap_mim_2f0fF
 spiceprefix=X
 m=1}
@@ -364,9 +358,9 @@ C {lab_pin.sym} 130 820 3 1 {name=p40 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 130 600 2 0 {name=p41 sig_type=std_logic lab=clk}
 C {symbols/nfet_03v3.sym} 300 490 1 0 {name=M17
 L=0.42u
-W=15.66u
+W=3.915u
 nf=1
-m=4
+m=16
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -378,9 +372,9 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 300 700 3 0 {name=M18
 L=0.42u
-W=31.32u
+W=3.132u
 nf=1
-m=2
+m=20
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -395,3 +389,9 @@ C {lab_pin.sym} 300 660 3 1 {name=p43 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 370 600 0 1 {name=p45 sig_type=std_logic lab=vout}
 C {lab_pin.sym} 240 600 0 0 {name=p46 sig_type=std_logic lab=vin}
 C {title.sym} -120 1250 0 0 {name=l4 author="Rosendo Valdes"}
+C {symbols/cap_mim_2f0fF.sym} -80 280 2 0 {name=C2
+W=7e-6
+L=8e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}

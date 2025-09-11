@@ -55,38 +55,13 @@ Class TG_bootstrapped (0):  Merged 34 parallel devices.
 Subcircuit summary:
 Circuit 1: TG_bootstrapped                 |Circuit 2: TG_bootstrapped                 
 -------------------------------------------|-------------------------------------------
-pfet_03v3 (28->9)                          |pfet_03v3 (10->9)                          
+pfet_03v3 (28->9)                          |pfet_03v3 (28->9)                          
 cap_mim_2f0_m4m5_noshield (2)              |cap_mim_2f0fF (2)                          
-nfet_03v3 (24->9)                          |nfet_03v3 (12->9)                          
+nfet_03v3 (24->9)                          |nfet_03v3 (24->9)                          
 Number of devices: 20                      |Number of devices: 20                      
 Number of nets: 12                         |Number of nets: 12                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: TG_bootstrapped                 |Circuit 2: TG_bootstrapped                 
-
----------------------------------------------------------------------------------------
-Net: m5_6578_3023#                         |Net: net4                                  
-  cap_mim_2f0_m4m5_noshield/1 = 1          |  pfet_03v3/(1|3) = 2                      
-  nfet_03v3/(1|3) = 1                      |  cap_mim_2f0fF/2 = 1                      
-  pfet_03v3/(1|3) = 2                      |  nfet_03v3/(1|3) = 1                      
-                                           |                                           
-Net: m4_6354_2903#                         |Net: net5                                  
-  cap_mim_2f0_m4m5_noshield/2 = 1          |  nfet_03v3/(1|3) = 2                      
-  pfet_03v3/(1|3) = 2                      |  cap_mim_2f0fF/1 = 1                      
-  nfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 1                      
-                                           |                                           
-Net: m5_6577_n2963#                        |Net: net1                                  
-  cap_mim_2f0_m4m5_noshield/1 = 1          |  pfet_03v3/(1|3) = 2                      
-  nfet_03v3/(1|3) = 2                      |  cap_mim_2f0fF/1 = 1                      
-  pfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
-                                           |                                           
-Net: m4_6353_n3083#                        |Net: net3                                  
-  cap_mim_2f0_m4m5_noshield/2 = 1          |  nfet_03v3/(1|3) = 2                      
-  pfet_03v3/(1|3) = 1                      |  cap_mim_2f0fF/2 = 1                      
-  nfet_03v3/(1|3) = 2                      |  pfet_03v3/(1|3) = 1                      
----------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: TG_bootstrapped                 |Circuit 2: TG_bootstrapped                 
@@ -101,5 +76,5 @@ vout                                       |vout
 Cell pin lists are equivalent.
 Device classes TG_bootstrapped and TG_bootstrapped are equivalent.
 
-Final result: Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Final result: Circuits match uniquely.
+.
