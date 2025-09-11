@@ -50,17 +50,16 @@ C {designs/libs/core_LIF_comp/core_switch/switch.sym} 790 -280 0 1 {name=x10}
 C {lab_pin.sym} 820 -440 3 1 {name=p92 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 770 -360 2 1 {name=p93 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 790 -360 0 1 {name=p94 sig_type=std_logic lab=phi_int}
-C {designs/libs/core_LIF_comp/core_switch/switch.sym} 950 -280 0 1 {name=x18}
-C {lab_pin.sym} 980 -440 3 1 {name=p95 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 930 -360 2 1 {name=p96 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 950 -360 0 1 {name=p97 sig_type=std_logic lab=phi_2}
+C {designs/libs/core_LIF_comp/core_switch/switch.sym} 960 -280 0 0 {name=x18}
+C {lab_pin.sym} 930 -440 1 0 {name=p95 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 980 -360 2 0 {name=p96 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 960 -360 0 0 {name=p97 sig_type=std_logic lab=phi_2}
 C {lab_pin.sym} 1030 -400 2 0 {name=p98 sig_type=std_logic lab=vrefrac}
 C {designs/libs/core_LIF_comp/core_conmutator/conmutator.sym} 1120 -400 0 1 {name=x20}
 C {lab_pin.sym} 1120 -600 2 0 {name=p102 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 1120 -490 2 0 {name=p103 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 1180 -570 2 0 {name=p105 sig_type=std_logic lab=vspike_up}
 C {lab_pin.sym} 1180 -530 2 0 {name=p106 sig_type=std_logic lab=reward}
-C {designs/libs/core_LIF_comp/core_vdiv/vdiv.sym} 870 -210 0 0 {name=x5}
 C {lab_pin.sym} 870 -270 2 0 {name=p27 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 870 -150 2 0 {name=p28 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 930 -240 2 0 {name=p29 sig_type=std_logic lab=vref}
@@ -74,3 +73,5 @@ C {designs/libs/core_LIF_comp/core_monostable/monostable.sym} 640 -740 0 0 {name
 C {designs/libs/core_LIF_comp/core_refractory/refractory.sym} 410 -290 0 0 {name=x1}
 C {lab_pin.sym} 410 -340 2 0 {name=p8 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 410 -240 2 0 {name=p9 sig_type=std_logic lab=vss}
+C {designs/libs/core_LIF_comp/core_vdiv/nvdiv.sym} 870 -210 0 0 {name=x2}
+C {opin.sym} 20 -600 0 0 {name=p11 lab=vres}

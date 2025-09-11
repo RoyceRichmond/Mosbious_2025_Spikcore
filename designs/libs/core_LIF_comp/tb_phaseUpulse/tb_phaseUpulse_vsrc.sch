@@ -13,7 +13,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-05
+x2=3e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -36,7 +36,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-05
+x2=3e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -59,7 +59,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-05
+x2=3e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -81,7 +81,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-05
+x2=3e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -102,7 +102,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-05
+x2=3e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -112,10 +112,10 @@ unitx=1
 logx=0
 logy=0
 color="4 5 6 7 8"
-node="vspike_up
-vref
-vspike_down
-vres
+node="vspike_up0
+vref0
+vspike_down0
+vres0
 vss"}
 B 2 1110 530 1910 930 {flags=graph
 y1=0
@@ -126,7 +126,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-05
+x2=3e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -217,25 +217,25 @@ N 400 690 400 730 {lab=vdd}
 N 380 760 380 850 {lab=vdd}
 N 380 710 380 760 {lab=vdd}
 N 380 710 400 710 {lab=vdd}
-N 400 790 400 820 {lab=vspike_up}
+N 400 790 400 820 {lab=vspike_up1}
 N 400 880 400 910 {lab=vss}
 N 520 690 520 730 {lab=vdd}
 N 500 760 500 850 {lab=vdd}
 N 500 710 500 760 {lab=vdd}
 N 500 710 520 710 {lab=vdd}
-N 520 790 520 820 {lab=vref}
+N 520 790 520 820 {lab=vref1}
 N 520 880 520 910 {lab=vss}
 N 640 690 640 730 {lab=vdd}
 N 620 760 620 850 {lab=vdd}
 N 620 710 620 760 {lab=vdd}
 N 620 710 640 710 {lab=vdd}
-N 640 790 640 820 {lab=vspike_down}
+N 640 790 640 820 {lab=vspike_down1}
 N 640 880 640 910 {lab=vss}
 N 780 690 780 730 {lab=vdd}
 N 760 760 760 850 {lab=vdd}
 N 760 710 760 760 {lab=vdd}
 N 760 710 780 710 {lab=vdd}
-N 780 790 780 820 {lab=vres}
+N 780 790 780 820 {lab=vres1}
 N 780 880 780 910 {lab=vss}
 N 350 310 390 310 {lab=vdd}
 N 450 310 490 310 {lab=vspike_up0}
@@ -263,6 +263,44 @@ N 670 180 670 310 {lab=vref0}
 N 770 180 770 310 {lab=vspike_down0}
 N 870 180 870 310 {lab=vres0}
 N 990 180 990 310 {lab=vss}
+N 2170 140 2170 180 {lab=vdd}
+N 2130 170 2130 210 {lab=vdd}
+N 2130 170 2170 170 {lab=vdd}
+N 2170 210 2180 210 {lab=vss}
+N 2180 210 2180 500 {lab=vss}
+N 2170 290 2180 290 {lab=vss}
+N 2170 370 2180 370 {lab=vss}
+N 2170 450 2180 450 {lab=vss}
+N 2170 400 2170 420 {lab=vspike_down}
+N 2170 320 2170 340 {lab=vp}
+N 2170 240 2170 260 {lab=vspike_up}
+N 2130 250 2130 290 {lab=vspike_up}
+N 2130 250 2170 250 {lab=vspike_up}
+N 2130 330 2130 370 {lab=vp}
+N 2130 330 2170 330 {lab=vp}
+N 2130 410 2130 450 {lab=vspike_down}
+N 2130 410 2170 410 {lab=vspike_down}
+N 2170 480 2170 490 {lab=vres}
+N 2170 540 2180 540 {lab=vss}
+N 2170 490 2170 510 {lab=vres}
+N 2130 500 2130 540 {lab=vres}
+N 2130 500 2170 500 {lab=vres}
+N 2170 570 2170 580 {lab=vss}
+N 2180 500 2180 580 {lab=vss}
+N 2180 580 2180 590 {lab=vss}
+N 2170 580 2180 580 {lab=vss}
+N 2410 280 2410 320 {lab=vdd}
+N 2410 380 2410 410 {lab=vref}
+N 2410 470 2410 500 {lab=vss}
+N 2370 310 2370 350 {lab=vdd}
+N 2370 310 2410 310 {lab=vdd}
+N 2370 410 2370 440 {lab=vref}
+N 2370 410 2410 410 {lab=vref}
+N 2410 350 2420 350 {lab=vss}
+N 2420 350 2420 440 {lab=vss}
+N 2410 440 2420 440 {lab=vss}
+N 2420 440 2420 480 {lab=vss}
+N 2410 480 2420 480 {lab=vss}
 C {designs/libs/core_LIF_comp/core_not/not.sym} 500 -870 0 0 {name=x2}
 C {title.sym} 160 0 0 0 {name=l1 author="Oscar Islas"}
 C {lab_pin.sym} 460 -850 0 0 {name=p10 sig_type=std_logic lab=vin}
@@ -309,7 +347,7 @@ C {lab_pin.sym} 920 -860 2 0 {name=p53 sig_type=std_logic lab=phi_1}
 C {devices/code_shown.sym} 65 -460 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
 .control
-    tran 10n 50u
+    tran 10n 30u
     write tb_phaseUpulse_vsrc.raw
 .endc
 .save all
@@ -531,13 +569,13 @@ spiceprefix=X
 m=1}
 C {lab_pin.sym} 520 690 0 1 {name=p31 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 520 910 0 1 {name=p32 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 520 800 0 1 {name=p33 sig_type=std_logic lab=vref}
+C {lab_pin.sym} 520 800 0 1 {name=p33 sig_type=std_logic lab=vref1}
 C {lab_pin.sym} 640 690 0 1 {name=p34 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 640 910 0 1 {name=p35 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 640 800 0 1 {name=p36 sig_type=std_logic lab=vspike_down}
+C {lab_pin.sym} 640 800 0 1 {name=p36 sig_type=std_logic lab=vspike_down1}
 C {lab_pin.sym} 780 690 0 1 {name=p37 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 780 910 0 1 {name=p38 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 780 800 0 1 {name=p39 sig_type=std_logic lab=vres}
+C {lab_pin.sym} 780 800 0 1 {name=p39 sig_type=std_logic lab=vres1}
 C {lab_pin.sym} 470 180 0 1 {name=p25 sig_type=std_logic lab=vspike_up0}
 C {lab_pin.sym} 670 180 0 1 {name=p27 sig_type=std_logic lab=vref0}
 C {lab_pin.sym} 770 180 0 1 {name=p28 sig_type=std_logic lab=vspike_down0}
@@ -601,4 +639,111 @@ C {launcher.sym} 950 580 0 0 {name=h1
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_phaseUpulse_vsrc.raw tran"
 }
-C {lab_pin.sym} 400 810 0 1 {name=p40 sig_type=std_logic lab=vspike_up}
+C {lab_pin.sym} 400 810 0 1 {name=p40 sig_type=std_logic lab=vspike_up1}
+C {lab_pin.sym} 2170 140 0 1 {name=p23 sig_type=std_logic lab=vdd}
+C {symbols/nfet_03v3.sym} 2150 210 0 0 {name=M15
+L=0.28u
+W=0.36u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 2150 450 0 0 {name=M18
+L=1.1u
+W=0.5u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {lab_pin.sym} 2130 250 0 0 {name=p41 sig_type=std_logic lab=vspike_up}
+C {lab_pin.sym} 2130 330 0 0 {name=p42 sig_type=std_logic lab=vp}
+C {lab_pin.sym} 2130 410 0 0 {name=p43 sig_type=std_logic lab=vspike_down}
+C {lab_pin.sym} 2180 590 0 1 {name=p44 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 2130 500 0 0 {name=p45 sig_type=std_logic lab=vres}
+C {lab_pin.sym} 2410 390 0 0 {name=p46 sig_type=std_logic lab=vref}
+C {symbols/nfet_03v3.sym} 2150 370 0 0 {name=M16
+L=0.5u
+W=0.5u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 2150 540 0 0 {name=M19
+L=1u
+W=0.5u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 2150 290 0 0 {name=M17
+L=0.28u
+W=0.36u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {lab_pin.sym} 2410 280 0 1 {name=p47 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 2410 500 0 1 {name=p48 sig_type=std_logic lab=vss}
+C {symbols/nfet_03v3.sym} 2390 440 0 0 {name=M20
+L=0.28u
+W=0.36u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 2390 350 0 0 {name=M21
+L=0.28u
+W=0.36u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
