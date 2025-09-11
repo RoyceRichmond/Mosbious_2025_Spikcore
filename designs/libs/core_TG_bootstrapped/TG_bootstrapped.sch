@@ -122,15 +122,6 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-<<<<<<< HEAD
-C {symbols/cap_mim_2f0fF.sym} -80 280 2 0 {name=C2
-W=8e-6
-L=7e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-=======
->>>>>>> ral298-main
 C {symbols/nfet_03v3.sym} 130 40 1 0 {name=M3
 L=0.84u
 W=0.84u
@@ -262,13 +253,8 @@ model=pfet_03v3
 spiceprefix=X
 }
 C {symbols/cap_mim_2f0fF.sym} -80 890 0 0 {name=C1
-<<<<<<< HEAD
-W=8e-6
-L=7e-6
-=======
 W=7e-6
 L=8e-6
->>>>>>> ral298-main
 model=cap_mim_2f0fF
 spiceprefix=X
 m=1}
@@ -373,13 +359,8 @@ C {lab_pin.sym} 130 600 2 0 {name=p41 sig_type=std_logic lab=clk}
 C {symbols/nfet_03v3.sym} 300 490 1 0 {name=M17
 L=0.42u
 W=3.915u
-<<<<<<< HEAD
-nf=16
-m=1
-=======
 nf=1
 m=16
->>>>>>> ral298-main
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
@@ -391,15 +372,9 @@ spiceprefix=X
 }
 C {symbols/pfet_03v3.sym} 300 700 3 0 {name=M18
 L=0.42u
-<<<<<<< HEAD
-W=31.2u
-nf=20
-m=1
-=======
 W=3.132u
 nf=1
 m=20
->>>>>>> ral298-main
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
