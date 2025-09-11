@@ -1,0 +1,44 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+Flattening unmatched subcell nfet$7 in circuit nvdiv (0)(1 instance)
+Flattening unmatched subcell nfet$5 in circuit nvdiv (0)(1 instance)
+Flattening unmatched subcell nfet$3 in circuit nvdiv (0)(3 instances)
+Flattening unmatched subcell nfet$4 in circuit nvdiv (0)(2 instances)
+
+Subcircuit summary:
+Circuit 1: nvdiv                           |Circuit 2: nvdiv                           
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (7)                              |nfet_03v3 (7)                              
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: nvdiv                           |Circuit 2: nvdiv                           
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+vspike_up                                  |vspike_up                                  
+vres                                       |vres                                       
+vspike_down                                |vspike_down                                
+vref                                       |vref                                       
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nvdiv and nvdiv are equivalent.
+
+Final result: Circuits match uniquely.
+.

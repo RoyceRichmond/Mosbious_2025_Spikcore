@@ -167,7 +167,7 @@ C {iopin.sym} 710 -380 0 0 {name=p19 lab=vp}
 C {lab_pin.sym} 630 -160 3 0 {name=p21 sig_type=std_logic lab=vss}
 C {symbols/nfet_03v3.sym} 260 -350 0 1 {name=M9
 L=8.54u
-W=0.28u
+W=0.36u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -209,8 +209,8 @@ spiceprefix=X
 }
 C {iopin.sym} 980 -380 0 0 {name=p15 lab=vout}
 C {symbols/cap_mim_2f0fF.sym} 820 -450 0 0 {name=C1
-W=1e-6
-L=1e-6
+W=9e-6
+L=9e-6
 model=cap_mim_2f0fF
 spiceprefix=X
-m=9}
+m=1}

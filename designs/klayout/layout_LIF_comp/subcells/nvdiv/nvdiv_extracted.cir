@@ -1,0 +1,18 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 09/09/2025 23:31
+
+.SUBCKT nvdiv vss vdd vspike_down vres vref vspike_up gf180mcu_gnd
+M$1 vspike_down \$3 \$3 gf180mcu_gnd nfet_03v3 L=0.5U W=0.5U AS=0.305P
++ AD=0.305P PS=2.22U PD=2.22U
+M$2 vres vspike_down vspike_down gf180mcu_gnd nfet_03v3 L=0.5U W=0.5U AS=0.305P
++ AD=0.305P PS=2.22U PD=2.22U
+M$3 vss vres vres gf180mcu_gnd nfet_03v3 L=0.8U W=0.5U AS=0.305P AD=0.305P
++ PS=2.22U PD=2.22U
+M$4 vref vdd vdd gf180mcu_gnd nfet_03v3 L=0.28U W=0.55U AS=0.3355P AD=0.3355P
++ PS=2.32U PD=2.32U
+M$5 vspike_up vdd vdd gf180mcu_gnd nfet_03v3 L=0.28U W=0.36U AS=0.228P
++ AD=0.228P PS=1.98U PD=1.98U
+M$6 \$3 vspike_up vspike_up gf180mcu_gnd nfet_03v3 L=0.28U W=0.36U AS=0.228P
++ AD=0.228P PS=1.98U PD=1.98U
+M$7 vss vref vref gf180mcu_gnd nfet_03v3 L=0.28U W=0.36U AS=0.228P AD=0.228P
++ PS=1.98U PD=1.98U
+.ENDS nvdiv

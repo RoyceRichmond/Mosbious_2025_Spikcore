@@ -1,0 +1,77 @@
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell cap_mim_2f0_m4m5_noshield and Circuit 2 cell cap_mim_2f0fF are black boxes.
+Warning: Equate pins:  cell cap_mim_2f0_m4m5_noshield is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cap_mim_2f0fF is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cap_mim_2f0_m4m5_noshield       |Circuit 2: cap_mim_2f0fF                   
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cap_mim_2f0_m4m5_noshield and cap_mim_2f0fF are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+Flattening unmatched subcell pfet in circuit ota_2stage (0)(2 instances)
+Flattening unmatched subcell cap_mim in circuit ota_2stage (0)(1 instance)
+Flattening unmatched subcell nfet$1 in circuit ota_2stage (0)(2 instances)
+Flattening unmatched subcell nfet in circuit ota_2stage (0)(1 instance)
+Flattening unmatched subcell nfet$6 in circuit ota_2stage (0)(1 instance)
+Flattening unmatched subcell pfet$1 in circuit ota_2stage (0)(1 instance)
+Flattening unmatched subcell nfet$4 in circuit ota_2stage (0)(1 instance)
+Flattening unmatched subcell nfet$2 in circuit ota_2stage (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: ota_2stage                      |Circuit 2: ota_2stage                      
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (3)                              |pfet_03v3 (8->3)                           
+cap_mim_2f0_m4m5_noshield (1)              |cap_mim_2f0fF (1)                          
+nfet_03v3 (6)                              |nfet_03v3 (6)                              
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: ota_2stage                      |Circuit 2: ota_2stage                      
+-------------------------------------------|-------------------------------------------
+vn                                         |vn                                         
+vp                                         |vp                                         
+vss                                        |vss                                        
+vout                                       |vout                                       
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ota_2stage and ota_2stage are equivalent.
+
+Final result: Circuits match uniquely.
+.
