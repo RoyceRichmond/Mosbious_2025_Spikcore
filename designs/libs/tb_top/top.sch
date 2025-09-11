@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.005
+x1=0.0019286208
+x2=0.0019341869
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -38,8 +38,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.005
+x1=0.0019286208
+x2=0.0019341869
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -56,6 +56,28 @@ vmem[2]
 vmem[3]
 vmem[4]"
 hilight_wave=-1}
+B 2 610 250 1410 650 {flags=graph
+y1=-1.343639
+y2=-1.051581
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0.0019286208
+x2=0.0019341869
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node="x1.clk_schmitt
+clk"
+color="4 4"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+hilight_wave=1}
 N 160 -610 160 -580 {lab=GND}
 N 160 -800 160 -790 {lab=vdd}
 N 230 -470 230 -450 {lab=vmem[0]}
@@ -89,10 +111,6 @@ C {title.sym} -450 480 0 0 {name=l1 author="Royce Richmond"}
 C {devices/code_shown.sym} -615 -115 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
 .tran 100n 5m
-.param ve=3.3
-.param vi=0
-.param RL=25k
-.param V_S=1.3
 .save allcurrents
 .control
 	reset
@@ -186,3 +204,12 @@ m=1}
 C {isource.sym} 410 -750 0 0 {name=I4 value="PULSE(0 800p 1u 10n 10n 1u 5u)"}
 C {lab_pin.sym} 410 -800 0 0 {name=p28 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 410 -700 2 0 {name=p29 sig_type=std_logic lab=vmem[4]}
+C {vsource.sym} 90 -390 0 0 {name=V3 value="PULSE(0 3.3 0 0.1n 0.1n 100u 200u)"	 savecurrent=false}
+C {lab_pin.sym} 90 -480 0 0 {name=p30 sig_type=std_logic lab=clk}
+C {res.sym} 90 -450 0 0 {name=R8
+value=10
+footprint=1206
+device=resistor
+m=1}
+C {gnd.sym} 90 -360 0 0 {name=l10 lab=GND}
+C {lab_pin.sym} 200 -120 1 0 {name=p31 sig_type=std_logic lab=clk}
