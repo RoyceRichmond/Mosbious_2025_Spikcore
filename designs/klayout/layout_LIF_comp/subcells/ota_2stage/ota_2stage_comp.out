@@ -43,11 +43,12 @@ Cell pin lists are equivalent.
 Device classes nfet_03v3 and nfet_03v3 are equivalent.
 Flattening unmatched subcell pfet in circuit ota_2stage (0)(2 instances)
 Flattening unmatched subcell cap_mim in circuit ota_2stage (0)(1 instance)
-Flattening unmatched subcell nfet$3 in circuit ota_2stage (0)(1 instance)
 Flattening unmatched subcell nfet$1 in circuit ota_2stage (0)(2 instances)
 Flattening unmatched subcell nfet in circuit ota_2stage (0)(1 instance)
+Flattening unmatched subcell nfet$6 in circuit ota_2stage (0)(1 instance)
 Flattening unmatched subcell pfet$1 in circuit ota_2stage (0)(1 instance)
-Flattening unmatched subcell nfet$2 in circuit ota_2stage (0)(2 instances)
+Flattening unmatched subcell nfet$4 in circuit ota_2stage (0)(1 instance)
+Flattening unmatched subcell nfet$2 in circuit ota_2stage (0)(1 instance)
 
 Subcircuit summary:
 Circuit 1: ota_2stage                      |Circuit 2: ota_2stage                      

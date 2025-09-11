@@ -1,0 +1,11 @@
+** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_vdiv/nvdiv.sch
+.subckt nvdiv vss vdd vref vspike_up vspike_down vres
+*.PININFO vref:O vdd:B vss:B vspike_up:O vspike_down:O vres:O
+XM15 vdd vdd vspike_up vss nfet_03v3 L=0.28u W=0.36u nf=1 m=1
+XM18 vspike_down vspike_down vres vss nfet_03v3 L=0.5u W=0.5u nf=1 m=1
+XM16 vp vp vspike_down vss nfet_03v3 L=0.5u W=0.5u nf=1 m=1
+XM19 vres vres vss vss nfet_03v3 L=0.8u W=0.5u nf=1 m=1
+XM17 vspike_up vspike_up vp vss nfet_03v3 L=0.28u W=0.36u nf=1 m=1
+XM20 vref vref vss vss nfet_03v3 L=0.28u W=0.36u nf=1 m=1
+XM21 vdd vdd vref vss nfet_03v3 L=0.28u W=0.55u nf=1 m=1
+.ends

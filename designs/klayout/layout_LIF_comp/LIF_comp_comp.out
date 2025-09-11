@@ -91,12 +91,14 @@ Flattening unmatched subcell conmutator$1 in circuit phaseUpulse (0)(1 instance)
 Flattening unmatched subcell pfet$14 in circuit phaseUpulse (0)(3 instances)
 Flattening unmatched subcell nfet$12 in circuit phaseUpulse (0)(3 instances)
 Flattening unmatched subcell nfet$8$1 in circuit phaseUpulse (0)(4 instances)
-Flattening unmatched subcell nand in circuit phaseUpulse (1)(2 instances)
 Flattening unmatched subcell nor in circuit phaseUpulse (1)(1 instance)
-Flattening unmatched subcell ota_1stage in circuit phaseUpulse (1)(1 instance)
 Flattening unmatched subcell switch in circuit phaseUpulse (1)(3 instances)
 Flattening unmatched subcell conmutator in circuit phaseUpulse (1)(1 instance)
-Flattening unmatched subcell vdiv in circuit phaseUpulse (1)(1 instance)
+Flattening unmatched subcell monostable in circuit phaseUpulse (1)(1 instance)
+Flattening unmatched subcell nand in circuit phaseUpulse (1)(2 instances)
+Flattening unmatched subcell refractory in circuit phaseUpulse (1)(1 instance)
+Flattening unmatched subcell ota_1stage in circuit phaseUpulse (1)(1 instance)
+Flattening unmatched subcell nvdiv in circuit phaseUpulse (1)(1 instance)
 
 Cell phaseUpulse (0) disconnected node: a_1700_n1729#
 Class phaseUpulse (0):  Merged 4 parallel devices.
@@ -104,33 +106,31 @@ Cell phaseUpulse (0) disconnected node: a_1700_n1729#
 Subcircuit summary:
 Circuit 1: phaseUpulse                     |Circuit 2: phaseUpulse                     
 -------------------------------------------|-------------------------------------------
-nfet_03v3 (26->24)                         |nfet_03v3 (31) **Mismatch**                
+nfet_03v3 (26->24)                         |nfet_03v3 (38) **Mismatch**                
 pfet_03v3 (20->18)                         |pfet_03v3 (22) **Mismatch**                
-(no matching element)                      |cap_mim_2f0fF (4->2)                       
-(no matching element)                      |ppolyf_u_2k (5)                            
-(no matching element)                      |ppolyf_u_3k (4)                            
-Number of devices: 42 **Mismatch**         |Number of devices: 64 **Mismatch**         
+(no matching element)                      |cap_mim_2f0fF (2)                          
+Number of devices: 42 **Mismatch**         |Number of devices: 62 **Mismatch**         
 Number of nets: 29 **Mismatch**            |Number of nets: 34 **Mismatch**            
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: phaseUpulse                     |Circuit 2: phaseUpulse                     
 
 ---------------------------------------------------------------------------------------
-Net: m2_554_n1578#                         |Net: ota_1stage:22/net2                    
+Net: m2_554_n1578#                         |Net: nvdiv:2/vp                            
+  nfet_03v3/2 = 1                          |  nfet_03v3/(1|3) = 2                      
+  nfet_03v3/(1|3) = 2                      |  nfet_03v3/2 = 1                          
+                                           |                                           
+Net: m1_2078_n924#                         |Net: refractory:1/ota_1stage:22/net2       
   nfet_03v3/2 = 1                          |  nfet_03v3/(1|3) = 3                      
   nfet_03v3/(1|3) = 2                      |                                           
                                            |                                           
-Net: m1_2078_n924#                         |Net: vdiv:5/net1                           
-  nfet_03v3/2 = 1                          |  ppolyf_u_2k/1 = 1                        
-  nfet_03v3/(1|3) = 2                      |  ppolyf_u_3k/2 = 2                        
-                                           |                                           
-Net: nand$4_0/Z                            |Net: net5                                  
+Net: nand$4_0/Z                            |Net: monostable:6/net5                     
   pfet_03v3/(1|3) = 2                      |  pfet_03v3/2 = 1                          
   nfet_03v3/(1|3) = 1                      |  nfet_03v3/2 = 1                          
                                            |  nfet_03v3/(1|3) = 1                      
                                            |  cap_mim_2f0fF/2 = 1                      
                                            |                                           
-Net: nand$4_1/Z                            |Net: net2                                  
+Net: nand$4_1/Z                            |Net: monostable:6/net2                     
   pfet_03v3/(1|3) = 2                      |  pfet_03v3/2 = 1                          
   nfet_03v3/(1|3) = 1                      |  nfet_03v3/2 = 1                          
                                            |  nfet_03v3/(1|3) = 1                      
@@ -142,297 +142,286 @@ Net: vneg                                  |Net: vneg
   pfet_03v3/2 = 5                          |  pfet_03v3/2 = 2                          
   nfet_03v3/2 = 6                          |  nfet_03v3/2 = 3                          
                                            |                                           
-Net: not_3/vss                             |Net: net1                                  
+Net: not_3/vss                             |Net: monostable:6/net1                     
   nfet_03v3/4 = 24                         |  pfet_03v3/(1|3) = 2                      
   nfet_03v3/(1|3) = 14                     |  nfet_03v3/(1|3) = 1                      
   nfet_03v3/2 = 1                          |  cap_mim_2f0fF/1 = 1                      
                                            |                                           
-Net: switch$1_0/in                         |Net: net4                                  
+Net: switch$1_0/in                         |Net: monostable:6/net4                     
   nfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 2                      
   pfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
                                            |  cap_mim_2f0fF/1 = 1                      
                                            |                                           
-Net: switch$1_1/in                         |Net: net7                                  
+Net: switch$1_1/in                         |Net: refractory:1/net2                     
   nfet_03v3/(1|3) = 1                      |  nfet_03v3/2 = 2                          
   pfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 2                      
                                            |                                           
-Net: switch$1_2/in                         |Net: net6                                  
+Net: switch$1_2/in                         |Net: refractory:1/net1                     
   nfet_03v3/(1|3) = 1                      |  nfet_03v3/2 = 2                          
   pfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 2                      
                                            |                                           
 Net: vspike_up                             |Net: vspike_up                             
   pfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 1                      
-  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
-                                           |  ppolyf_u_2k/1 = 1                        
-                                           |  ppolyf_u_2k/2 = 1                        
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 3                      
+                                           |  nfet_03v3/2 = 1                          
                                            |                                           
-Net: m2_n103_1601#                         |Net: ota_1stage:22/net3                    
-  nfet_03v3/2 = 2                          |  nfet_03v3/2 = 2                          
-                                           |  nfet_03v3/(1|3) = 2                      
-                                           |                                           
-Net: m2_2886_n700#                         |Net: ota_1stage:22/net1                    
-  nfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 1                      
-  nfet_03v3/2 = 1                          |  pfet_03v3/2 = 2                          
+Net: m2_n103_1601#                         |Net: refractory:1/ota_1stage:22/net1       
+  nfet_03v3/2 = 2                          |  pfet_03v3/(1|3) = 1                      
+                                           |  pfet_03v3/2 = 2                          
                                            |  nfet_03v3/(1|3) = 1                      
                                            |                                           
-Net: not_3/vdd                             |Net: vdd                                   
-  pfet_03v3/(1|3) = 13                     |  pfet_03v3/(1|3) = 17                     
-  pfet_03v3/4 = 18                         |  pfet_03v3/4 = 22                         
-  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 2                      
-                                           |  nfet_03v3/2 = 1                          
-                                           |  ppolyf_u_2k/2 = 1                        
-                                           |  ppolyf_u_2k/3 = 5                        
-                                           |  ppolyf_u_3k/3 = 4                        
+Net: m2_2886_n700#                         |Net: vdd                                   
+  nfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 17                     
+  nfet_03v3/2 = 1                          |  pfet_03v3/4 = 22                         
+                                           |  nfet_03v3/(1|3) = 4                      
+                                           |  nfet_03v3/2 = 3                          
+                                           |                                           
+Net: not_3/vdd                             |Net: vss                                   
+  pfet_03v3/(1|3) = 13                     |  nfet_03v3/(1|3) = 20                     
+  pfet_03v3/4 = 18                         |  nfet_03v3/4 = 38                         
+  nfet_03v3/(1|3) = 1                      |                                           
                                            |                                           
 Net: phi_2                                 |Net: phi_2                                 
-  pfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 1                      
-  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
   nfet_03v3/2 = 5                          |  nfet_03v3/2 = 3                          
   pfet_03v3/2 = 4                          |  pfet_03v3/2 = 2                          
+  pfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 1                      
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
                                            |                                           
 Net: vspike                                |Net: vspike                                
   pfet_03v3/(1|3) = 5                      |  pfet_03v3/(1|3) = 3                      
   nfet_03v3/(1|3) = 5                      |  nfet_03v3/(1|3) = 3                      
                                            |                                           
-Net: m2_1332_n780#                         |Net: vrefrac                               
-  nfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 2                      
+Net: m2_1332_n780#                         |Net: phi_1                                 
+  nfet_03v3/(1|3) = 1                      |  pfet_03v3/2 = 3                          
+                                           |  nfet_03v3/2 = 4                          
+                                           |  pfet_03v3/(1|3) = 1                      
+                                           |  nfet_03v3/(1|3) = 1                      
+                                           |                                           
+Net: m4_n522_1747#                         |Net: net1                                  
+  nfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 3                      
                                            |  nfet_03v3/(1|3) = 3                      
                                            |                                           
-Net: m4_n522_1747#                         |Net: vspike_down                           
-  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
-                                           |  nfet_03v3/2 = 1                          
-                                           |  ppolyf_u_2k/1 = 2                        
-                                           |  ppolyf_u_2k/2 = 1                        
-                                           |                                           
-Net: m4_1944_1747#                         |Net: phi_1                                 
+Net: m4_1944_1747#                         |Net: monostable:6/net3                     
   nfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 1                      
-                                           |  nfet_03v3/(1|3) = 1                      
-                                           |  nfet_03v3/2 = 4                          
-                                           |  pfet_03v3/2 = 3                          
-                                           |                                           
-(no matching net)                          |Net: net3                                  
-                                           |  pfet_03v3/(1|3) = 1                      
                                            |  nfet_03v3/(1|3) = 1                      
                                            |  pfet_03v3/2 = 2                          
                                            |  nfet_03v3/2 = 2                          
                                            |                                           
-(no matching net)                          |Net: vres                                  
-                                           |  nfet_03v3/2 = 2                          
-                                           |  ppolyf_u_2k/1 = 1                        
-                                           |  ppolyf_u_3k/2 = 2                        
-                                           |                                           
-(no matching net)                          |Net: net8                                  
-                                           |  pfet_03v3/(1|3) = 3                      
-                                           |  nfet_03v3/(1|3) = 3                      
-                                           |                                           
 (no matching net)                          |Net: vref                                  
                                            |  pfet_03v3/(1|3) = 1                      
-                                           |  nfet_03v3/(1|3) = 1                      
-                                           |  ppolyf_u_2k/2 = 2                        
-                                           |  ppolyf_u_3k/1 = 2                        
+                                           |  nfet_03v3/(1|3) = 3                      
+                                           |  nfet_03v3/2 = 1                          
                                            |                                           
-(no matching net)                          |Net: vss                                   
-                                           |  nfet_03v3/(1|3) = 18                     
-                                           |  nfet_03v3/4 = 31                         
-                                           |  ppolyf_u_3k/1 = 2                        
+(no matching net)                          |Net: refractory:1/ota_1stage:22/net3       
+                                           |  nfet_03v3/2 = 2                          
+                                           |  nfet_03v3/(1|3) = 2                      
+                                           |                                           
+(no matching net)                          |Net: vrefrac                               
+                                           |  pfet_03v3/(1|3) = 2                      
+                                           |  nfet_03v3/(1|3) = 3                      
+                                           |                                           
+(no matching net)                          |Net: vres                                  
+                                           |  nfet_03v3/2 = 3                          
+                                           |  nfet_03v3/(1|3) = 2                      
+                                           |                                           
+(no matching net)                          |Net: vspike_down                           
+                                           |  nfet_03v3/(1|3) = 3                      
+                                           |  nfet_03v3/2 = 2                          
 ---------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
 Circuit 1: phaseUpulse                     |Circuit 2: phaseUpulse                     
 
 ---------------------------------------------------------------------------------------
-Instance: nfet$15_0/nfet_03v3:0            |Instance: not:2/nfet_03v3:M3               
-  (1,3) = (14,3)                           |  (1,3) = (51,8)                           
-  2 = 3                                    |  2 = 4                                    
-  4 = 39                                   |  4 = 51                                   
+Instance: nfet$15_0/nfet_03v3:0            |Instance: switch:7/nfet_03v3:M4            
+  (1,3) = (14,3)                           |  (1,3) = (6,6)                            
+  2 = 3                                    |  2 = 9                                    
+  4 = 39                                   |  4 = 58                                   
                                            |                                           
-Instance: not_0//nfet$8_0/nfet_03v3:0      |Instance: nfet_03v3:M2                     
-  (1,3) = (39,14)                          |  (1,3) = (51,4)                           
-  2 = 14                                   |  2 = 5                                    
-  4 = 39                                   |  4 = 51                                   
+Instance: not_0//nfet$8_0/nfet_03v3:0      |Instance: switch:18/nfet_03v3:M4           
+  (1,3) = (39,14)                          |  (1,3) = (6,5)                            
+  2 = 14                                   |  2 = 7                                    
+  4 = 39                                   |  4 = 58                                   
                                            |                                           
-Instance: switch$1_0//nfet$13_1/nfet_03v3: |Instance: not:14/nfet_03v3:M3              
-  (1,3) = (10,2)                           |  (1,3) = (51,9)                           
-  2 = 14                                   |  2 = 8                                    
-  4 = 39                                   |  4 = 51                                   
+Instance: switch$1_0//nfet$13_1/nfet_03v3: |Instance: monostable:6/not:2/nfet_03v3:M3  
+  (1,3) = (10,2)                           |  (1,3) = (58,8)                           
+  2 = 14                                   |  2 = 4                                    
+  4 = 39                                   |  4 = 58                                   
                                            |                                           
-Instance: not_2//nfet$8_0/nfet_03v3:0      |Instance: not:1/nfet_03v3:M3               
-  (1,3) = (39,11)                          |  (1,3) = (51,6)                           
-  2 = 11                                   |  2 = 4                                    
-  4 = 39                                   |  4 = 51                                   
-                                           |                                           
-Instance: switch$1_1//nfet$13_1/nfet_03v3: |Instance: nfet_03v3:M1                     
-  (1,3) = (10,2)                           |  (1,3) = (51,4)                           
+Instance: not_2//nfet$8_0/nfet_03v3:0      |Instance: monostable:6/nfet_03v3:M2        
+  (1,3) = (39,11)                          |  (1,3) = (58,4)                           
   2 = 11                                   |  2 = 5                                    
-  4 = 39                                   |  4 = 51                                   
+  4 = 39                                   |  4 = 58                                   
                                            |                                           
-Instance: nfet$16_0/nfet_03v3:0            |Instance: not:4/nfet_03v3:M3               
-  (1,3) = (39,3)                           |  (1,3) = (51,7)                           
-  2 = 39                                   |  2 = 6                                    
-  4 = 39                                   |  4 = 51                                   
+Instance: switch$1_1//nfet$13_1/nfet_03v3: |Instance: monostable:6/not:14/nfet_03v3:M3 
+  (1,3) = (10,2)                           |  (1,3) = (58,9)                           
+  2 = 11                                   |  2 = 8                                    
+  4 = 39                                   |  4 = 58                                   
                                            |                                           
-Instance: nfet$8$1_0/nfet_03v3:0           |Instance: ota_1stage:22/nfet_03v3:M2       
-  (1,3) = (3,1)                            |  (1,3) = (4,3)                            
-  2 = 3                                    |  2 = 4                                    
-  4 = 39                                   |  4 = 51                                   
+Instance: nfet$16_0/nfet_03v3:0            |Instance: monostable:6/not:1/nfet_03v3:M3  
+  (1,3) = (39,3)                           |  (1,3) = (58,6)                           
+  2 = 39                                   |  2 = 4                                    
+  4 = 39                                   |  4 = 58                                   
                                            |                                           
-Instance: nfet$8$1_2/nfet_03v3:0           |Instance: ota_1stage:22/nfet_03v3:M3       
+Instance: nfet$8$1_0/nfet_03v3:0           |Instance: monostable:6/nfet_03v3:M1        
+  (1,3) = (3,1)                            |  (1,3) = (58,4)                           
+  2 = 3                                    |  2 = 5                                    
+  4 = 39                                   |  4 = 58                                   
+                                           |                                           
+Instance: nfet$8$1_2/nfet_03v3:0           |Instance: monostable:6/not:4/nfet_03v3:M3  
+  (1,3) = (39,1)                           |  (1,3) = (58,7)                           
+  2 = 2                                    |  2 = 6                                    
+  4 = 39                                   |  4 = 58                                   
+                                           |                                           
+Instance: nfet$8$1_1/nfet_03v3:0           |Instance: refractory:1/ota_1stage:22/nfet_ 
+  (1,3) = (3,2)                            |  (1,3) = (4,3)                            
+  2 = 2                                    |  2 = 4                                    
+  4 = 39                                   |  4 = 58                                   
+                                           |                                           
+Instance: nfet$8$1_3/nfet_03v3:0           |Instance: refractory:1/ota_1stage:22/nfet_ 
   (1,3) = (39,1)                           |  (1,3) = (5,3)                            
   2 = 2                                    |  2 = 4                                    
-  4 = 39                                   |  4 = 51                                   
+  4 = 39                                   |  4 = 58                                   
                                            |                                           
-Instance: nfet$8$1_1/nfet_03v3:0           |Instance: ota_1stage:22/nfet_03v3:M5       
-  (1,3) = (3,2)                            |  (1,3) = (51,3)                           
-  2 = 2                                    |  2 = 4                                    
-  4 = 39                                   |  4 = 51                                   
+Instance: nand$4_0//pfet$1$7_0/pfet_03v3:0 |Instance: refractory:1/ota_1stage:22/nfet_ 
+  (1,3) = (32,3)                           |  (1,3) = (58,3)                           
+  2 = 14                                   |  2 = 4                                    
+  4 = 32                                   |  4 = 58                                   
                                            |                                           
-Instance: nfet$8$1_3/nfet_03v3:0           |Instance: ota_1stage:22/nfet_03v3:M6       
-  (1,3) = (39,1)                           |  (1,3) = (51,4)                           
-  2 = 2                                    |  2 = 4                                    
-  4 = 39                                   |  4 = 51                                   
-                                           |                                           
-Instance: nand$4_0//pfet$1$7_0/pfet_03v3:0 |Instance: ota_1stage:22/nfet_03v3:M7       
-  (1,3) = (32,3)                           |  (1,3) = (52,4)                           
-  2 = 14                                   |  2 = 52                                   
-  4 = 32                                   |  4 = 51                                   
-                                           |                                           
-Instance: nand$4_1//pfet$1$7_0/pfet_03v3:0 |Instance: nfet_03v3:M9                     
-  (1,3) = (32,3)                           |  (1,3) = (5,4)                            
+Instance: nand$4_1//pfet$1$7_0/pfet_03v3:0 |Instance: refractory:1/ota_1stage:22/nfet_ 
+  (1,3) = (32,3)                           |  (1,3) = (58,4)                           
   2 = 11                                   |  2 = 4                                    
-  4 = 32                                   |  4 = 51                                   
+  4 = 32                                   |  4 = 58                                   
                                            |                                           
-Instance: nand$4_1//pfet$11_0/pfet_03v3:0  |Instance: nfet_03v3:M10                    
-  (1,3) = (32,3)                           |  (1,3) = (5,4)                            
-  2 = 14                                   |  2 = 5                                    
-  4 = 32                                   |  4 = 51                                   
+Instance: nand$4_1//pfet$11_0/pfet_03v3:0  |Instance: refractory:1/ota_1stage:22/nfet_ 
+  (1,3) = (32,3)                           |  (1,3) = (46,4)                           
+  2 = 14                                   |  2 = 46                                   
+  4 = 32                                   |  4 = 58                                   
                                            |                                           
-Instance: not_0//pfet$7_0/pfet_03v3:0      |Instance: nfet_03v3:M11                    
-  (1,3) = (32,14)                          |  (1,3) = (8,4)                            
-  2 = 14                                   |  2 = 8                                    
-  4 = 32                                   |  4 = 51                                   
+Instance: not_0//pfet$7_0/pfet_03v3:0      |Instance: refractory:1/nfet_03v3:M9        
+  (1,3) = (32,14)                          |  (1,3) = (5,4)                            
+  2 = 14                                   |  2 = 4                                    
+  4 = 32                                   |  4 = 58                                   
                                            |                                           
-Instance: not_2//pfet$7_0/pfet_03v3:0      |Instance: nfet_03v3:M12                    
-  (1,3) = (32,11)                          |  (1,3) = (51,4)                           
-  2 = 11                                   |  2 = 4                                    
-  4 = 32                                   |  4 = 51                                   
+Instance: not_2//pfet$7_0/pfet_03v3:0      |Instance: refractory:1/nfet_03v3:M10       
+  (1,3) = (32,11)                          |  (1,3) = (5,4)                            
+  2 = 11                                   |  2 = 5                                    
+  4 = 32                                   |  4 = 58                                   
                                            |                                           
-(no matching instance)                     |Instance: switch:7/nfet_03v3:M4            
-                                           |  (1,3) = (6,6)                            
-                                           |  2 = 9                                    
-                                           |  4 = 51                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: switch:18/nfet_03v3:M4           
-                                           |  (1,3) = (6,5)                            
-                                           |  2 = 7                                    
-                                           |  4 = 51                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: not:2/pfet_03v3:M1               
-                                           |  (1,3) = (52,8)                           
-                                           |  2 = 4                                    
-                                           |  4 = 52                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: nand:13/pfet_03v3:M1             
-                                           |  (1,3) = (52,4)                           
+(no matching instance)                     |Instance: refractory:1/nfet_03v3:M11       
+                                           |  (1,3) = (8,4)                            
                                            |  2 = 8                                    
-                                           |  4 = 52                                   
+                                           |  4 = 58                                   
                                            |                                           
                                            |                                           
-(no matching instance)                     |Instance: not:14/pfet_03v3:M1              
-                                           |  (1,3) = (52,9)                           
+(no matching instance)                     |Instance: refractory:1/nfet_03v3:M12       
+                                           |  (1,3) = (58,4)                           
+                                           |  2 = 4                                    
+                                           |  4 = 58                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: nvdiv:2/nfet_03v3:M15            
+                                           |  (1,3) = (46,5)                           
+                                           |  2 = 46                                   
+                                           |  4 = 58                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: nvdiv:2/nfet_03v3:M18            
+                                           |  (1,3) = (5,5)                            
+                                           |  2 = 5                                    
+                                           |  4 = 58                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: nvdiv:2/nfet_03v3:M16            
+                                           |  (1,3) = (5,3)                            
+                                           |  2 = 3                                    
+                                           |  4 = 58                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: nvdiv:2/nfet_03v3:M19            
+                                           |  (1,3) = (58,5)                           
+                                           |  2 = 5                                    
+                                           |  4 = 58                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: nvdiv:2/nfet_03v3:M17            
+                                           |  (1,3) = (5,3)                            
+                                           |  2 = 5                                    
+                                           |  4 = 58                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: nvdiv:2/nfet_03v3:M20            
+                                           |  (1,3) = (58,5)                           
+                                           |  2 = 5                                    
+                                           |  4 = 58                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: nvdiv:2/nfet_03v3:M21            
+                                           |  (1,3) = (46,5)                           
+                                           |  2 = 46                                   
+                                           |  4 = 58                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: monostable:6/not:2/pfet_03v3:M1  
+                                           |  (1,3) = (46,8)                           
+                                           |  2 = 4                                    
+                                           |  4 = 46                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: monostable:6/nand:13/pfet_03v3:M 
+                                           |  (1,3) = (46,4)                           
                                            |  2 = 8                                    
-                                           |  4 = 52                                   
+                                           |  4 = 46                                   
                                            |                                           
                                            |                                           
-(no matching instance)                     |Instance: not:1/pfet_03v3:M1               
-                                           |  (1,3) = (52,6)                           
+(no matching instance)                     |Instance: monostable:6/not:14/pfet_03v3:M1 
+                                           |  (1,3) = (46,9)                           
+                                           |  2 = 8                                    
+                                           |  4 = 46                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: monostable:6/not:1/pfet_03v3:M1  
+                                           |  (1,3) = (46,6)                           
                                            |  2 = 4                                    
-                                           |  4 = 52                                   
+                                           |  4 = 46                                   
                                            |                                           
                                            |                                           
-(no matching instance)                     |Instance: nand:3/pfet_03v3:M1              
-                                           |  (1,3) = (52,4)                           
+(no matching instance)                     |Instance: monostable:6/nand:3/pfet_03v3:M1 
+                                           |  (1,3) = (46,4)                           
                                            |  2 = 6                                    
-                                           |  4 = 52                                   
+                                           |  4 = 46                                   
                                            |                                           
                                            |                                           
-(no matching instance)                     |Instance: nand:3/pfet_03v3:M4              
-                                           |  (1,3) = (52,4)                           
+(no matching instance)                     |Instance: monostable:6/nand:3/pfet_03v3:M4 
+                                           |  (1,3) = (46,4)                           
                                            |  2 = 9                                    
-                                           |  4 = 52                                   
+                                           |  4 = 46                                   
                                            |                                           
                                            |                                           
-(no matching instance)                     |Instance: not:4/pfet_03v3:M1               
-                                           |  (1,3) = (52,7)                           
+(no matching instance)                     |Instance: monostable:6/not:4/pfet_03v3:M1  
+                                           |  (1,3) = (46,7)                           
                                            |  2 = 6                                    
-                                           |  4 = 52                                   
+                                           |  4 = 46                                   
                                            |                                           
                                            |                                           
-(no matching instance)                     |Instance: ota_1stage:22/pfet_03v3:M1       
-                                           |  (1,3) = (52,4)                           
+(no matching instance)                     |Instance: refractory:1/ota_1stage:22/pfet_ 
+                                           |  (1,3) = (46,4)                           
                                            |  2 = 4                                    
-                                           |  4 = 52                                   
+                                           |  4 = 46                                   
                                            |                                           
                                            |                                           
-(no matching instance)                     |Instance: ota_1stage:22/pfet_03v3:M4       
-                                           |  (1,3) = (52,5)                           
+(no matching instance)                     |Instance: refractory:1/ota_1stage:22/pfet_ 
+                                           |  (1,3) = (46,5)                           
                                            |  2 = 4                                    
-                                           |  4 = 52                                   
+                                           |  4 = 46                                   
                                            |                                           
                                            |                                           
-(no matching instance)                     |Instance: cap_mim_2f0fF:C2                 
+(no matching instance)                     |Instance: monostable:6/cap_mim_2f0fF:C2    
                                            |  1 = 4                                    
                                            |  2 = 4                                    
                                            |                                           
-(no matching instance)                     |Instance: cap_mim_2f0fF:C1                 
+(no matching instance)                     |Instance: monostable:6/cap_mim_2f0fF:C1    
                                            |  1 = 4                                    
                                            |  2 = 4                                    
-                                           |                                           
-(no matching instance)                     |Instance: vdiv:5/ppolyf_u_2k:R4            
-                                           |  1 = 4                                    
-                                           |  2 = 52                                   
-                                           |  3 = 52                                   
-                                           |                                           
-(no matching instance)                     |Instance: vdiv:5/ppolyf_u_2k:R5            
-                                           |  1 = 3                                    
-                                           |  2 = 4                                    
-                                           |  3 = 52                                   
-                                           |                                           
-(no matching instance)                     |Instance: vdiv:5/ppolyf_u_2k:R6            
-                                           |  1 = 5                                    
-                                           |  2 = 6                                    
-                                           |  3 = 52                                   
-                                           |                                           
-(no matching instance)                     |Instance: vdiv:5/ppolyf_u_2k:R8            
-                                           |  1 = 5                                    
-                                           |  2 = 5                                    
-                                           |  3 = 52                                   
-                                           |                                           
-(no matching instance)                     |Instance: vdiv:5/ppolyf_u_2k:R10           
-                                           |  1 = 5                                    
-                                           |  2 = 6                                    
-                                           |  3 = 52                                   
-                                           |                                           
-(no matching instance)                     |Instance: vdiv:5/ppolyf_u_3k:R9            
-                                           |  1 = 51                                   
-                                           |  2 = 5                                    
-                                           |  3 = 52                                   
-                                           |                                           
-(no matching instance)                     |Instance: vdiv:5/ppolyf_u_3k:R7            
-                                           |  1 = 51                                   
-                                           |  2 = 5                                    
-                                           |  3 = 52                                   
-                                           |                                           
-(no matching instance)                     |Instance: vdiv:5/ppolyf_u_3k:R12           
-                                           |  1 = 6                                    
-                                           |  2 = 3                                    
-                                           |  3 = 52                                   
-                                           |                                           
-(no matching instance)                     |Instance: vdiv:5/ppolyf_u_3k:R11           
-                                           |  1 = 6                                    
-                                           |  2 = 3                                    
-                                           |  3 = 52                                   
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 Port matching may fail to disambiguate symmetries.
@@ -473,240 +462,191 @@ Class LIF_comp (0):  Merged 1 parallel devices.
 Class LIF_comp (0):  Merged 14 series devices.
 Class LIF_comp (0):  Merged 4 parallel devices.
 Class LIF_comp (0):  Merged 2 series devices.
-Class LIF_comp (1):  Merged 1 parallel devices.
 Subcircuit summary:
 Circuit 1: LIF_comp                        |Circuit 2: LIF_comp                        
 -------------------------------------------|-------------------------------------------
-cap_mim_2f0_m4m5_noshield (4)              |cap_mim_2f0fF (22->4)                      
+cap_mim_2f0_m4m5_noshield (4)              |cap_mim_2f0fF (4)                          
 ppolyf_u (27->6)                           |(no matching element)                      
-nfet_03v3 (52->50)                         |nfet_03v3 (54) **Mismatch**                
+nfet_03v3 (52->50)                         |nfet_03v3 (61) **Mismatch**                
 pfet_03v3 (36->34)                         |pfet_03v3 (43->38) **Mismatch**            
-(no matching element)                      |ppolyf_u_2k (5)                            
-(no matching element)                      |ppolyf_u_3k (5)                            
-(no matching element)                      |ppolyf_u_1k (2->1)                         
-Number of devices: 94 **Mismatch**         |Number of devices: 107 **Mismatch**        
-Number of nets: 57 **Mismatch**            |Number of nets: 51 **Mismatch**            
+Number of devices: 94 **Mismatch**         |Number of devices: 103 **Mismatch**        
+Number of nets: 57 **Mismatch**            |Number of nets: 50 **Mismatch**            
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: LIF_comp                        |Circuit 2: LIF_comp                        
 
 ---------------------------------------------------------------------------------------
-Net: phaseUpulse_0/phi_2                   |Net: phaseUpulse:14/net1                   
+Net: phaseUpulse_0/phi_2                   |Net: phaseUpulse:14/monostable:6/net1      
   cap_mim_2f0_m4m5_noshield/2 = 1          |  pfet_03v3/(1|3) = 2                      
   nfet_03v3/2 = 5                          |  nfet_03v3/(1|3) = 1                      
   pfet_03v3/2 = 4                          |  cap_mim_2f0fF/1 = 1                      
   pfet_03v3/(1|3) = 1                      |                                           
   nfet_03v3/(1|3) = 2                      |                                           
                                            |                                           
-Net: phaseUpulse_0/nand$4_1/Z              |Net: v_th                                  
-  cap_mim_2f0_m4m5_noshield/1 = 1          |  nfet_03v3/2 = 2                          
-  pfet_03v3/(1|3) = 2                      |  ppolyf_u_3k/1 = 1                        
-  nfet_03v3/(1|3) = 1                      |  ppolyf_u_1k/(1|2) = 1                    
-                                           |                                           
-Net: phaseUpulse_0/nand$4_0/Z              |Net: vout                                  
+Net: phaseUpulse_0/nand$4_1/Z              |Net: vout                                  
   cap_mim_2f0_m4m5_noshield/1 = 1          |  pfet_03v3/(1|3) = 2                      
   pfet_03v3/(1|3) = 2                      |  nfet_03v3/(1|3) = 2                      
   nfet_03v3/(1|3) = 1                      |                                           
                                            |                                           
-Net: vdiv$1_0/vspike_up                    |Net: v_rew                                 
-  ppolyf_u/(1|2) = 2                       |  pfet_03v3/2 = 2                          
-  pfet_03v3/(1|3) = 1                      |  nfet_03v3/2 = 2                          
+Net: phaseUpulse_0/nand$4_0/Z              |Net: v_rew                                 
+  cap_mim_2f0_m4m5_noshield/1 = 1          |  pfet_03v3/2 = 2                          
+  pfet_03v3/(1|3) = 2                      |  nfet_03v3/2 = 2                          
   nfet_03v3/(1|3) = 1                      |                                           
                                            |                                           
-Net: vdiv$1_0/vspike_down                  |Net: phaseUpulse:14/net2                   
+Net: vdiv$1_0/vspike_up                    |Net: phaseUpulse:14/conmutator:20/net1     
+  ppolyf_u/(1|2) = 2                       |  pfet_03v3/(1|3) = 1                      
+  pfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
+  nfet_03v3/(1|3) = 1                      |  pfet_03v3/2 = 1                          
+                                           |  nfet_03v3/2 = 1                          
+                                           |                                           
+Net: vdiv$1_0/vspike_down                  |Net: phaseUpulse:14/monostable:6/net2      
   ppolyf_u/(1|2) = 2                       |  pfet_03v3/2 = 1                          
   nfet_03v3/(1|3) = 1                      |  nfet_03v3/2 = 1                          
   nfet_03v3/2 = 1                          |  nfet_03v3/(1|3) = 1                      
                                            |  cap_mim_2f0fF/2 = 1                      
                                            |                                           
-Net: ota_1stage$2_0/vdd                    |Net: phaseUpulse:14/net5                   
+Net: ota_1stage$2_0/vdd                    |Net: phaseUpulse:14/monostable:6/net5      
   nfet_03v3/(1|3) = 1                      |  pfet_03v3/2 = 1                          
   nfet_03v3/2 = 1                          |  nfet_03v3/2 = 1                          
   pfet_03v3/(1|3) = 2                      |  nfet_03v3/(1|3) = 1                      
                                            |  cap_mim_2f0fF/2 = 1                      
                                            |                                           
-Net: conmutator$3_0/m2_n850_n472#          |Net: phaseUpulse:14/net4                   
+Net: conmutator$3_0/m2_n850_n472#          |Net: phaseUpulse:14/monostable:6/net4      
   pfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 2                      
   nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
   pfet_03v3/2 = 1                          |  cap_mim_2f0fF/1 = 1                      
   nfet_03v3/2 = 1                          |                                           
                                            |                                           
-Net: conmutator$3_2/vdd                    |Net: phaseUpulse:14/vspike_up              
+Net: conmutator$3_2/vdd                    |Net: ota_2stage:10/net2                    
   pfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 1                      
   pfet_03v3/4 = 3                          |  nfet_03v3/(1|3) = 1                      
-                                           |  ppolyf_u_2k/1 = 1                        
-                                           |  ppolyf_u_2k/2 = 1                        
-                                           |                                           
-Net: conmutator$3_2/out                    |Net: phaseUpulse:14/conmutator:20/net1     
-  nfet_03v3/(1|3) = 2                      |  pfet_03v3/(1|3) = 1                      
-  pfet_03v3/(1|3) = 2                      |  nfet_03v3/(1|3) = 1                      
-                                           |  pfet_03v3/2 = 1                          
-                                           |  nfet_03v3/2 = 1                          
-                                           |                                           
-Net: conmutator$3_2/m2_n850_n472#          |Net: conmutator:8/net1                     
-  pfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 1                      
-  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
-  pfet_03v3/2 = 1                          |  pfet_03v3/2 = 1                          
-  nfet_03v3/2 = 1                          |  nfet_03v3/2 = 1                          
-                                           |                                           
-Net: conmutator$3_1/cntrl                  |Net: conmutator:12/net1                    
-  pfet_03v3/2 = 2                          |  pfet_03v3/(1|3) = 1                      
-  nfet_03v3/2 = 2                          |  nfet_03v3/(1|3) = 1                      
-                                           |  pfet_03v3/2 = 1                          
-                                           |  nfet_03v3/2 = 1                          
-                                           |                                           
-Net: conmutator$3_1/out                    |Net: ota_2stage:10/net2                    
-  nfet_03v3/(1|3) = 2                      |  pfet_03v3/(1|3) = 1                      
-  pfet_03v3/(1|3) = 2                      |  nfet_03v3/(1|3) = 1                      
                                            |  pfet_03v3/2 = 1                          
                                            |  cap_mim_2f0fF/1 = 1                      
                                            |                                           
-Net: phaseUpulse_0/reward                  |Net: phaseUpulse:14/switch:10/net1         
-  pfet_03v3/2 = 2                          |  pfet_03v3/(1|3) = 1                      
-  nfet_03v3/2 = 2                          |  nfet_03v3/(1|3) = 1                      
+Net: conmutator$3_2/out                    |Net: v_ref                                 
+  nfet_03v3/(1|3) = 2                      |  pfet_03v3/(1|3) = 3                      
+  pfet_03v3/(1|3) = 2                      |  nfet_03v3/(1|3) = 5                      
+                                           |  nfet_03v3/2 = 1                          
+                                           |                                           
+Net: conmutator$3_1/out                    |Net: phaseUpulse:14/phi_1                  
+  nfet_03v3/(1|3) = 2                      |  pfet_03v3/2 = 3                          
+  pfet_03v3/(1|3) = 2                      |  nfet_03v3/2 = 4                          
+                                           |  pfet_03v3/(1|3) = 1                      
+                                           |  nfet_03v3/(1|3) = 1                      
+                                           |                                           
+Net: conmutator$3_1/cntrl                  |Net: phaseUpulse:14/refractory:1/ota_1stag 
+  pfet_03v3/2 = 2                          |  nfet_03v3/(1|3) = 3                      
+  nfet_03v3/2 = 2                          |                                           
+                                           |                                           
+Net: phaseUpulse_0/reward                  |Net: ota_2stage:10/net3                    
+  pfet_03v3/2 = 2                          |  nfet_03v3/(1|3) = 3                      
+  nfet_03v3/2 = 2                          |                                           
+                                           |                                           
+Net: /ota_2stages$1_0/m2_n516_n58#         |Net: phaseUpulse:14/switch:7/net1          
+  nfet_03v3/2 = 1                          |  pfet_03v3/(1|3) = 1                      
+  nfet_03v3/(1|3) = 3                      |  nfet_03v3/(1|3) = 1                      
                                            |  pfet_03v3/2 = 1                          
                                            |                                           
-Net: /phaseUpulse_0//conmutator$1_0/m2_n85 |Net: phaseUpulse:14/ota_1stage:22/net2     
-  pfet_03v3/2 = 1                          |  nfet_03v3/(1|3) = 3                      
-  pfet_03v3/(1|3) = 1                      |                                           
-  nfet_03v3/2 = 1                          |                                           
-  nfet_03v3/(1|3) = 1                      |                                           
-                                           |                                           
-Net: /ota_2stages$1_0/m2_n516_n58#         |Net: ota_2stage:10/net3                    
-  nfet_03v3/2 = 1                          |  nfet_03v3/(1|3) = 3                      
-  nfet_03v3/(1|3) = 3                      |                                           
-                                           |                                           
-Net: /ota_2stages$1_0/m2_196_146#          |Net: phaseUpulse:14/switch:7/net1          
-  nfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 1                      
-  pfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
-  cap_mim_2f0_m4m5_noshield/1 = 1          |  pfet_03v3/2 = 1                          
+Net: /ota_2stages$1_0/m2_196_146#          |Net: net1                                  
+  nfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 2                      
+  pfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 2                      
+  cap_mim_2f0_m4m5_noshield/1 = 1          |  cap_mim_2f0fF/2 = 1                      
   pfet_03v3/2 = 1                          |                                           
                                            |                                           
-Net: vdiv$1_0/vss                          |Net: phaseUpulse:14/switch:18/net1         
-  ppolyf_u/(1|2) = 4                       |  pfet_03v3/(1|3) = 1                      
-  ppolyf_u/3 = 6                           |  nfet_03v3/(1|3) = 1                      
-  nfet_03v3/4 = 50                         |  pfet_03v3/2 = 1                          
+Net: vdiv$1_0/vss                          |Net: v_icomp                               
+  ppolyf_u/(1|2) = 4                       |  nfet_03v3/2 = 1                          
+  ppolyf_u/3 = 6                           |  pfet_03v3/(1|3) = 2                      
+  nfet_03v3/4 = 50                         |  nfet_03v3/(1|3) = 2                      
   nfet_03v3/(1|3) = 28                     |                                           
   pfet_03v3/(1|3) = 21                     |                                           
   pfet_03v3/4 = 24                         |                                           
   nfet_03v3/2 = 3                          |                                           
                                            |                                           
-Net: phaseUpulse_0/vneg                    |Net: switch:11/net1                        
+Net: vdiv$1_0/vref                         |Net: vin                                   
+  ppolyf_u/(1|2) = 2                       |  nfet_03v3/2 = 1                          
+  pfet_03v3/2 = 2                          |  pfet_03v3/(1|3) = 1                      
+  nfet_03v3/2 = 2                          |  nfet_03v3/(1|3) = 2                      
+  cap_mim_2f0_m4m5_noshield/2 = 1          |  cap_mim_2f0fF/1 = 1                      
+  nfet_03v3/(1|3) = 1                      |                                           
+  pfet_03v3/(1|3) = 1                      |                                           
+                                           |                                           
+Net: phaseUpulse_0/vneg                    |Net: phaseUpulse:14/vspike_up              
   cap_mim_2f0_m4m5_noshield/2 = 1          |  pfet_03v3/(1|3) = 1                      
-  nfet_03v3/(1|3) = 3                      |  nfet_03v3/(1|3) = 1                      
-  nfet_03v3/2 = 6                          |  pfet_03v3/2 = 1                          
+  nfet_03v3/(1|3) = 3                      |  nfet_03v3/(1|3) = 3                      
+  nfet_03v3/2 = 6                          |  nfet_03v3/2 = 1                          
   pfet_03v3/2 = 5                          |                                           
   pfet_03v3/(1|3) = 1                      |                                           
                                            |                                           
-Net: ota_1stage$2_0/vn                     |Net: phaseUpulse:14/vdiv:5/net1            
-  nfet_03v3/2 = 2                          |  ppolyf_u_2k/1 = 1                        
-  ppolyf_u/(1|2) = 1                       |  ppolyf_u_3k/2 = 2                        
+Net: ota_1stage$2_0/vn                     |Net: phaseUpulse:14/vspike_down            
+  nfet_03v3/2 = 2                          |  nfet_03v3/(1|3) = 3                      
+  ppolyf_u/(1|2) = 1                       |  nfet_03v3/2 = 2                          
                                            |                                           
-Net: ota_2stages$1_0/vn                    |Net: net1                                  
-  nfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 2                      
+Net: ota_2stages$1_0/vn                    |Net: ota_2stage:10/net4                    
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/2 = 3                          
   cap_mim_2f0_m4m5_noshield/1 = 1          |  nfet_03v3/(1|3) = 2                      
-  nfet_03v3/2 = 1                          |  cap_mim_2f0fF/2 = 1                      
+  nfet_03v3/2 = 1                          |                                           
                                            |                                           
-Net: w_954_1524#                           |Net: v_icomp                               
-  pfet_03v3/4 = 3                          |  nfet_03v3/2 = 1                          
-                                           |  pfet_03v3/(1|3) = 2                      
-                                           |  nfet_03v3/(1|3) = 2                      
+Net: w_954_1524#                           |Net: phaseUpulse:14/monostable:6/nand:3/ne 
+  pfet_03v3/4 = 3                          |  nfet_03v3/(1|3) = 2                      
                                            |                                           
-Net: /phaseUpulse_0/m2_554_n1578#          |Net: vin                                   
-  nfet_03v3/2 = 1                          |  nfet_03v3/2 = 1                          
-  nfet_03v3/(1|3) = 2                      |  pfet_03v3/(1|3) = 1                      
-                                           |  nfet_03v3/(1|3) = 2                      
-                                           |  cap_mim_2f0fF/1 = 1                      
-                                           |                                           
-Net: /phaseUpulse_0//switch$1_0/m2_n331_n2 |Net: phaseUpulse:14/vres                   
-  nfet_03v3/(1|3) = 1                      |  nfet_03v3/2 = 2                          
-  pfet_03v3/(1|3) = 1                      |  ppolyf_u_2k/1 = 1                        
-  pfet_03v3/2 = 1                          |  ppolyf_u_3k/2 = 2                        
-                                           |                                           
-Net: /phaseUpulse_0//switch$1_2/m2_n331_n2 |Net: phaseUpulse:14/vrefrac                
-  nfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 2                      
-  pfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 3                      
-  pfet_03v3/2 = 1                          |                                           
-                                           |                                           
-Net: /phaseUpulse_0//switch$1_1/m2_n331_n2 |Net: phaseUpulse:14/vspike_down            
-  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
-  pfet_03v3/(1|3) = 1                      |  nfet_03v3/2 = 1                          
-  pfet_03v3/2 = 1                          |  ppolyf_u_2k/1 = 2                        
-                                           |  ppolyf_u_2k/2 = 1                        
-                                           |                                           
-Net: /ota_1stage$3_0/m2_n516_n58#          |Net: ota_2stage:10/net4                    
-  nfet_03v3/(1|3) = 3                      |  nfet_03v3/2 = 3                          
-                                           |  nfet_03v3/(1|3) = 2                      
-                                           |                                           
-Net: ota_1stage$2_0/vp                     |Net: phaseUpulse:14/nand:3/net1            
-  nfet_03v3/2 = 1                          |  nfet_03v3/(1|3) = 2                      
-  nfet_03v3/(1|3) = 2                      |                                           
-  pfet_03v3/(1|3) = 2                      |                                           
-                                           |                                           
-Net: ota_1stage$3_0/vout                   |Net: phaseUpulse:14/nor:21/net1            
-  nfet_03v3/(1|3) = 3                      |  pfet_03v3/(1|3) = 2                      
-  pfet_03v3/(1|3) = 2                      |                                           
-                                           |                                           
-Net: ppolyf_u_resistor$2_3/a_n132_0#       |Net: phaseUpulse:14/vneg                   
-  ppolyf_u/(1|2) = 1                       |  pfet_03v3/(1|3) = 1                      
-                                           |  nfet_03v3/(1|3) = 2                      
-                                           |  pfet_03v3/2 = 2                          
-                                           |  nfet_03v3/2 = 3                          
-                                           |                                           
-Net: ota_1stage$3_0/vp                     |Net: phaseUpulse:14/phi_int                
-  nfet_03v3/2 = 1                          |  pfet_03v3/2 = 2                          
+Net: /ota_1stage$3_0/m2_n516_n58#          |Net: phaseUpulse:14/phi_int                
+  nfet_03v3/(1|3) = 3                      |  pfet_03v3/2 = 2                          
                                            |  nfet_03v3/2 = 3                          
                                            |  nfet_03v3/(1|3) = 2                      
                                            |  pfet_03v3/(1|3) = 1                      
                                            |                                           
-Net: ota_2stages$1_0/vp                    |Net: phi_fire                              
-  nfet_03v3/2 = 1                          |  pfet_03v3/2 = 7                          
+Net: ota_1stage$2_0/vp                     |Net: phaseUpulse:14/vneg                   
+  nfet_03v3/2 = 1                          |  pfet_03v3/(1|3) = 1                      
+  nfet_03v3/(1|3) = 2                      |  nfet_03v3/(1|3) = 2                      
+  pfet_03v3/(1|3) = 2                      |  pfet_03v3/2 = 2                          
+                                           |  nfet_03v3/2 = 3                          
+                                           |                                           
+Net: ppolyf_u_resistor$2_3/a_n132_0#       |Net: phi_fire                              
+  ppolyf_u/(1|2) = 1                       |  pfet_03v3/2 = 7                          
                                            |  nfet_03v3/2 = 8                          
                                            |  pfet_03v3/(1|3) = 1                      
                                            |  nfet_03v3/(1|3) = 1                      
                                            |                                           
-Net: conmutator$3_2/in2                    |Net: vdd                                   
-  nfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 26                     
-  pfet_03v3/(1|3) = 1                      |  pfet_03v3/4 = 38                         
-                                           |  nfet_03v3/(1|3) = 4                      
-                                           |  nfet_03v3/2 = 3                          
-                                           |  ppolyf_u_2k/2 = 1                        
-                                           |  ppolyf_u_2k/3 = 5                        
-                                           |  ppolyf_u_3k/3 = 5                        
-                                           |  ppolyf_u_3k/2 = 1                        
-                                           |  ppolyf_u_1k/3 = 1                        
+Net: ota_1stage$3_0/vp                     |Net: vdd                                   
+  nfet_03v3/2 = 1                          |  pfet_03v3/(1|3) = 26                     
+                                           |  pfet_03v3/4 = 38                         
+                                           |  nfet_03v3/(1|3) = 6                      
+                                           |  nfet_03v3/2 = 5                          
                                            |                                           
-Net: conmutator$3_2/in1                    |Net: vmem                                  
-  pfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 5                      
-  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 6                      
+Net: ota_2stages$1_0/vp                    |Net: vmem                                  
+  nfet_03v3/2 = 1                          |  pfet_03v3/(1|3) = 5                      
+                                           |  nfet_03v3/(1|3) = 6                      
                                            |  cap_mim_2f0fF/2 = 1                      
                                            |                                           
-Net: conmutator$3_1/in2                    |Net: vss                                   
-  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 28                     
-  pfet_03v3/(1|3) = 1                      |  nfet_03v3/4 = 54                         
+Net: conmutator$3_2/in2                    |Net: vss                                   
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 30                     
+  pfet_03v3/(1|3) = 1                      |  nfet_03v3/4 = 61                         
                                            |  pfet_03v3/(1|3) = 1                      
-                                           |  ppolyf_u_3k/1 = 2                        
-                                           |  ppolyf_u_1k/(1|2) = 1                    
                                            |                                           
-Net: conmutator$3_1/in1                    |Net: vspike                                
+Net: conmutator$3_1/in2                    |Net: v_th                                  
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/2 = 5                          
+  pfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 2                      
+                                           |                                           
+Net: conmutator$3_2/in1                    |Net: vspike                                
   pfet_03v3/(1|3) = 1                      |  nfet_03v3/2 = 1                          
   nfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 3                      
                                            |  nfet_03v3/(1|3) = 3                      
                                            |                                           
-Net: /phaseUpulse_0/switch$1_0/in          |Net: phaseUpulse:14/phi_2                  
-  nfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 1                      
-  pfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
-                                           |  nfet_03v3/2 = 3                          
-                                           |  pfet_03v3/2 = 2                          
+Net: conmutator$3_1/in1                    |Net: phaseUpulse:14/phi_2                  
+  pfet_03v3/(1|3) = 1                      |  nfet_03v3/2 = 3                          
+  nfet_03v3/(1|3) = 1                      |  pfet_03v3/2 = 2                          
+                                           |  pfet_03v3/(1|3) = 1                      
+                                           |  nfet_03v3/(1|3) = 1                      
+                                           |                                           
+Net: /phaseUpulse_0/switch$1_0/in          |(no matching net)                          
+  nfet_03v3/(1|3) = 1                      |                                           
+  pfet_03v3/(1|3) = 1                      |                                           
                                            |                                           
 Net: /phaseUpulse_0/m2_n103_1601#          |(no matching net)                          
   nfet_03v3/2 = 2                          |                                           
                                            |                                           
 Net: /phaseUpulse_0//nand$4_1/nfet$3$5_0/a |(no matching net)                          
   nfet_03v3/(1|3) = 2                      |                                           
-                                           |                                           
-Net: /phaseUpulse_0//nor$2_0/pfet$1$8_0/a_ |(no matching net)                          
-  pfet_03v3/(1|3) = 2                      |                                           
                                            |                                           
 Net: /ota_1stage$2_0/pfet$1$10_1/w_n352_n2 |(no matching net)                          
   pfet_03v3/4 = 2                          |                                           
@@ -719,473 +659,296 @@ Net: phaseUpulse_0/phi_int                 |(no matching net)
   pfet_03v3/2 = 2                          |                                           
   pfet_03v3/(1|3) = 1                      |                                           
   nfet_03v3/(1|3) = 2                      |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: /ota_2stages$1_0/m2_n346_983#         |Net: ota_2stage:10/net1                    
-  nfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 1                      
-  pfet_03v3/2 = 2                          |  pfet_03v3/2 = 2                          
-  pfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
                                            |                                           
-Net: /ota_1stage$3_0/m2_n346_983#          |Net: phaseUpulse:14/ota_1stage:22/net1     
-  nfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 1                      
-  pfet_03v3/2 = 2                          |  pfet_03v3/2 = 2                          
-  pfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
+Net: phaseUpulse_0/vspike                  |(no matching net)                          
+  nfet_03v3/(1|3) = 5                      |                                           
+  pfet_03v3/(1|3) = 5                      |                                           
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Net: /ota_2stages$1_0/m2_n1824_n806#       |Net: phaseUpulse:14/ota_1stage:22/net3     
-  nfet_03v3/2 = 2                          |  nfet_03v3/2 = 2                          
-  nfet_03v3/(1|3) = 2                      |  nfet_03v3/(1|3) = 2                      
-                                           |                                           
-Net: /ota_1stage$3_0/m2_n1824_n806#        |Net: phaseUpulse:14/net6                   
-  nfet_03v3/2 = 2                          |  nfet_03v3/2 = 2                          
-  nfet_03v3/(1|3) = 2                      |  nfet_03v3/(1|3) = 2                      
-                                           |                                           
-Net: ota_1stage$3_0/vn                     |Net: phaseUpulse:14/net7                   
-  nfet_03v3/2 = 2                          |  nfet_03v3/2 = 2                          
-  nfet_03v3/(1|3) = 2                      |  nfet_03v3/(1|3) = 2                      
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: phaseUpulse_0/vspike                  |Net: v_ref                                 
-  nfet_03v3/(1|3) = 5                      |  nfet_03v3/(1|3) = 3                      
-  pfet_03v3/(1|3) = 5                      |  pfet_03v3/(1|3) = 3                      
-                                           |  ppolyf_u_2k/2 = 2                        
-                                           |  ppolyf_u_3k/1 = 2                        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: conmutator$3_0/cntrl                  |Net: phaseUpulse:14/net8                   
-  pfet_03v3/2 = 2                          |  pfet_03v3/(1|3) = 3                      
-  nfet_03v3/2 = 2                          |  nfet_03v3/(1|3) = 3                      
-  nfet_03v3/(1|3) = 1                      |                                           
-  pfet_03v3/(1|3) = 1                      |                                           
-                                           |                                           
-Net: conmutator$3_0/in1                    |Net: phaseUpulse:14/net3                   
-  nfet_03v3/(1|3) = 3                      |  pfet_03v3/(1|3) = 1                      
-  pfet_03v3/(1|3) = 2                      |  nfet_03v3/(1|3) = 1                      
-  cap_mim_2f0_m4m5_noshield/2 = 1          |  pfet_03v3/2 = 2                          
-                                           |  nfet_03v3/2 = 2                          
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: vdiv$1_0/vref                         |Net: phaseUpulse:14/phi_1                  
-  pfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 1                      
+Net: /ota_1stage$3_0/m2_n346_983#          |Net: phaseUpulse:14/refractory:1/ota_1stag 
   nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
-  nfet_03v3/2 = 2                          |  nfet_03v3/2 = 4                          
-  pfet_03v3/2 = 2                          |  pfet_03v3/2 = 3                          
+  pfet_03v3/2 = 2                          |  pfet_03v3/2 = 2                          
+  pfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 1                      
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /ota_2stages$1_0/m2_n1824_n806#       |Net: phaseUpulse:14/refractory:1/ota_1stag 
+  nfet_03v3/2 = 2                          |  nfet_03v3/2 = 2                          
+  nfet_03v3/(1|3) = 2                      |  nfet_03v3/(1|3) = 2                      
+                                           |                                           
+Net: /ota_1stage$3_0/m2_n1824_n806#        |Net: phaseUpulse:14/refractory:1/net2      
+  nfet_03v3/2 = 2                          |  nfet_03v3/2 = 2                          
+  nfet_03v3/(1|3) = 2                      |  nfet_03v3/(1|3) = 2                      
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: conmutator$3_0/cntrl                  |Net: phaseUpulse:14/monostable:6/net3      
+  pfet_03v3/2 = 2                          |  pfet_03v3/(1|3) = 1                      
+  nfet_03v3/2 = 2                          |  nfet_03v3/(1|3) = 1                      
+  nfet_03v3/(1|3) = 1                      |  pfet_03v3/2 = 2                          
+  pfet_03v3/(1|3) = 1                      |  nfet_03v3/2 = 2                          
+                                           |                                           
+Net: conmutator$3_0/in1                    |Net: phaseUpulse:14/net1                   
+  nfet_03v3/(1|3) = 3                      |  pfet_03v3/(1|3) = 3                      
+  pfet_03v3/(1|3) = 2                      |  nfet_03v3/(1|3) = 3                      
   cap_mim_2f0_m4m5_noshield/2 = 1          |                                           
-  ppolyf_u/(1|2) = 2                       |                                           
 ---------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
 Circuit 1: LIF_comp                        |Circuit 2: LIF_comp                        
 
 ---------------------------------------------------------------------------------------
-Instance: vdiv$1_0//ppolyf_u_resistor$3_20 |Instance: phaseUpulse:14/not:1/nfet_03v3:M 
-  (1,2) = (136,4)                          |  (1,3) = (86,6)                           
+Instance: vdiv$1_0//ppolyf_u_resistor$3_20 |Instance: phaseUpulse:14/refractory:1/ota_ 
+  (1,2) = (136,4)                          |  (1,3) = (92,3)                           
   3 = 136                                  |  2 = 4                                    
-                                           |  4 = 86                                   
+                                           |  4 = 92                                   
                                            |                                           
-Instance: vdiv$1_0//ppolyf_u_resistor$3_0/ |Instance: phaseUpulse:14/conmutator:20/nfe 
-  (1,2) = (136,4)                          |  (1,3) = (84,6)                           
-  3 = 136                                  |  2 = 4                                    
-                                           |  4 = 86                                   
+Instance: vdiv$1_0//ppolyf_u_resistor$3_10 |Instance: conmutator:8/nfet_03v3:M4        
+  (1,2) = (9,4)                            |  (1,3) = (9,5)                            
+  3 = 136                                  |  2 = 17                                   
+                                           |  4 = 92                                   
                                            |                                           
-Instance: ppolyf_u_resistor$2_0/ppolyf_u:0 |Instance: phaseUpulse:14/conmutator:20/nfe 
-  (1,2) = (136,3)                          |  (1,3) = (6,4)                            
-  3 = 136                                  |  2 = 4                                    
-                                           |  4 = 86                                   
-                                           |                                           
-Instance: ppolyf_u_resistor$2_3/ppolyf_u:0 |Instance: phaseUpulse:14/ota_1stage:22/nfe 
-  (1,2) = (136,1)                          |  (1,3) = (5,3)                            
-  3 = 136                                  |  2 = 4                                    
-                                           |  4 = 86                                   
-                                           |                                           
-Instance: vdiv$1_0//ppolyf_u_resistor$3_10 |Instance: phaseUpulse:14/ota_1stage:22/nfe 
-  (1,2) = (9,4)                            |  (1,3) = (86,3)                           
-  3 = 136                                  |  2 = 4                                    
-                                           |  4 = 86                                   
-                                           |                                           
-Instance: vdiv$1_0//ppolyf_u_resistor$3_12 |Instance: ota_2stage:10/nfet_03v3:M1       
+Instance: vdiv$1_0//ppolyf_u_resistor$3_12 |Instance: ota_2stage:10/nfet_03v3:M2       
   (1,2) = (9,4)                            |  (1,3) = (4,3)                            
+  3 = 136                                  |  2 = 7                                    
+                                           |  4 = 92                                   
+                                           |                                           
+Instance: vdiv$1_0//ppolyf_u_resistor$3_0/ |Instance: ota_2stage:10/nfet_03v3:M5       
+  (1,2) = (136,4)                          |  (1,3) = (92,3)                           
   3 = 136                                  |  2 = 5                                    
-                                           |  4 = 86                                   
+                                           |  4 = 92                                   
                                            |                                           
-Instance: nfet$20_0/nfet_03v3:0            |Instance: conmutator:8/not:1/nfet_03v3:M3  
-  (1,3) = (6,3)                            |  (1,3) = (86,4)                           
-  2 = 3                                    |  2 = 17                                   
-  4 = 136                                  |  4 = 86                                   
+Instance: ppolyf_u_resistor$2_0/ppolyf_u:0 |Instance: ota_2stage:10/nfet_03v3:M8       
+  (1,2) = (136,3)                          |  (1,3) = (92,5)                           
+  3 = 136                                  |  2 = 5                                    
+                                           |  4 = 92                                   
                                            |                                           
-Instance: conmutator$3_0//nfet$24_0/nfet_0 |Instance: conmutator:8/nfet_03v3:M2        
-  (1,3) = (6,5)                            |  (1,3) = (12,5)                           
-  2 = 4                                    |  2 = 4                                    
-  4 = 136                                  |  4 = 86                                   
+Instance: ppolyf_u_resistor$2_3/ppolyf_u:0 |Instance: ota_2stage:10/nfet_03v3:M9       
+  (1,2) = (136,1)                          |  (1,3) = (75,5)                           
+  3 = 136                                  |  2 = 75                                   
+                                           |  4 = 92                                   
                                            |                                           
-Instance: phaseUpulse_0//not$1_0//nfet$11_ |Instance: ota_2stage:10/nfet_03v3:M2       
-  (1,3) = (136,6)                          |  (1,3) = (4,3)                            
-  2 = 8                                    |  2 = 7                                    
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: ota_2stages$1_0//nfet$29_0/nfet_ |Instance: ota_2stage:10/nfet_03v3:M5       
-  (1,3) = (136,6)                          |  (1,3) = (86,3)                           
+Instance: ota_1stage$3_0//nfet$23_1/nfet_0 |Instance: ota_2stage:10/nfet_03v3:M7       
+  (1,3) = (136,3)                          |  (1,3) = (92,12)                          
   2 = 4                                    |  2 = 5                                    
-  4 = 136                                  |  4 = 86                                   
+  4 = 136                                  |  4 = 92                                   
                                            |                                           
-Instance: ota_1stage$3_0//nfet$22_0/nfet_0 |Instance: ota_2stage:10/nfet_03v3:M8       
-  (1,3) = (5,3)                            |  (1,3) = (86,5)                           
-  2 = 4                                    |  2 = 5                                    
-  4 = 136                                  |  4 = 86                                   
+Instance: ota_2stages$1_0//nfet$28_1/nfet_ |Instance: switch:11/nfet_03v3:M4           
+  (1,3) = (136,4)                          |  (1,3) = (12,5)                           
+  2 = 4                                    |  2 = 17                                   
+  4 = 136                                  |  4 = 92                                   
                                            |                                           
-Instance: ota_1stage$3_0//nfet$23_1/nfet_0 |Instance: ota_2stage:10/nfet_03v3:M9       
-  (1,3) = (136,3)                          |  (1,3) = (84,5)                           
-  2 = 4                                    |  2 = 84                                   
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: ota_2stages$1_0//nfet$28_1/nfet_ |Instance: ota_2stage:10/nfet_03v3:M7       
-  (1,3) = (136,4)                          |  (1,3) = (86,12)                          
-  2 = 4                                    |  2 = 5                                    
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: ota_1stage$3_0//nfet$22_1/nfet_0 |Instance: switch:11/not:1/nfet_03v3:M3     
-  (1,3) = (4,3)                            |  (1,3) = (86,3)                           
+Instance: ota_1stage$3_0//nfet$22_1/nfet_0 |Instance: conmutator:12/nfet_03v3:M4       
+  (1,3) = (4,3)                            |  (1,3) = (12,4)                           
   2 = 1                                    |  2 = 17                                   
-  4 = 136                                  |  4 = 86                                   
+  4 = 136                                  |  4 = 92                                   
                                            |                                           
-Instance: ota_2stages$1_0//nfet$27_1/nfet_ |Instance: switch:11/nfet_03v3:M4           
-  (1,3) = (4,4)                            |  (1,3) = (12,5)                           
-  2 = 3                                    |  2 = 17                                   
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: conmutator$3_2//nfet$24_0/nfet_0 |Instance: conmutator:12/not:1/nfet_03v3:M3 
-  (1,3) = (4,2)                            |  (1,3) = (86,4)                           
-  2 = 4                                    |  2 = 17                                   
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: conmutator$3_1//nfet$24_1/nfet_0 |Instance: conmutator:12/nfet_03v3:M4       
-  (1,3) = (4,2)                            |  (1,3) = (12,4)                           
-  2 = 4                                    |  2 = 17                                   
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: phaseUpulse_0//nfet$15_0/nfet_03 |Instance: conmutator:13/nfet_03v3:M4       
-  (1,3) = (16,3)                           |  (1,3) = (86,5)                           
-  2 = 3                                    |  2 = 17                                   
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: phaseUpulse_0//nand$4_1//nfet$2$ |Instance: phaseUpulse:14/not:2/nfet_03v3:M 
-  (1,3) = (136,2)                          |  (1,3) = (86,8)                           
-  2 = 13                                   |  2 = 4                                    
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: phaseUpulse_0//nand$4_1//nfet$3$ |Instance: phaseUpulse:14/nfet_03v3:M2      
-  (1,3) = (4,2)                            |  (1,3) = (86,4)                           
-  2 = 16                                   |  2 = 5                                    
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: phaseUpulse_0//not_0//nfet$8_0/n |Instance: phaseUpulse:14/nfet_03v3:M1      
-  (1,3) = (136,16)                         |  (1,3) = (86,4)                           
-  2 = 16                                   |  2 = 5                                    
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: phaseUpulse_0//switch$1_0//nfet$ |Instance: phaseUpulse:14/not:19/nfet_03v3: 
-  (1,3) = (136,3)                          |  (1,3) = (86,17)                          
-  2 = 16                                   |  2 = 8                                    
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: phaseUpulse_0//nor$2_0//nfet$10_ |Instance: phaseUpulse:14/nor:21/nfet_03v3: 
-  (1,3) = (136,8)                          |  (1,3) = (86,8)                           
-  2 = 13                                   |  2 = 7                                    
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: phaseUpulse_0//nor$2_0//nfet$1$3 |Instance: phaseUpulse:14/switch:10/not:1/n 
-  (1,3) = (136,8)                          |  (1,3) = (86,3)                           
-  2 = 16                                   |  2 = 8                                    
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: phaseUpulse_0//not_2//nfet$8_0/n |Instance: phaseUpulse:14/switch:18/not:1/n 
-  (1,3) = (136,13)                         |  (1,3) = (86,3)                           
-  2 = 13                                   |  2 = 7                                    
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: phaseUpulse_0//switch$1_1//nfet$ |Instance: phaseUpulse:14/switch:18/nfet_03 
-  (1,3) = (136,3)                          |  (1,3) = (7,5)                            
-  2 = 13                                   |  2 = 7                                    
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: phaseUpulse_0//nfet$16_0/nfet_03 |Instance: phaseUpulse:14/conmutator:20/not 
-  (1,3) = (136,3)                          |  (1,3) = (86,4)                           
-  2 = 136                                  |  2 = 4                                    
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: phaseUpulse_0//switch$1_2//nfet$ |Instance: nfet_03v3:M2                     
-  (1,3) = (136,3)                          |  (1,3) = (12,5)                           
-  2 = 8                                    |  2 = 4                                    
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: phaseUpulse_0//conmutator$1_0//n |Instance: phaseUpulse:14/ota_1stage:22/nfe 
-  (1,3) = (136,4)                          |  (1,3) = (4,3)                            
-  2 = 4                                    |  2 = 4                                    
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: phaseUpulse_0//nfet$8$1_2/nfet_0 |Instance: phaseUpulse:14/nand:3/nfet_03v3: 
-  (1,3) = (136,16)                         |  (1,3) = (86,2)                           
-  2 = 2                                    |  2 = 9                                    
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: phaseUpulse_0//nfet$8$1_3/nfet_0 |Instance: phaseUpulse:14/nor:21/nfet_03v3: 
-  (1,3) = (136,13)                         |  (1,3) = (86,8)                           
-  2 = 2                                    |  2 = 9                                    
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: ota_2stages$1_0//nfet$27_0/nfet_ |Instance: phaseUpulse:14/switch:7/not:1/nf 
-  (1,3) = (4,4)                            |  (1,3) = (86,3)                           
-  2 = 1                                    |  2 = 9                                    
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: conmutator$3_2//nfet$24_1/nfet_0 |Instance: conmutator:8/nfet_03v3:M4        
-  (1,3) = (4,2)                            |  (1,3) = (10,5)                           
+Instance: conmutator$3_2//nfet$24_1/nfet_0 |Instance: conmutator:13/nfet_03v3:M4       
+  (1,3) = (4,2)                            |  (1,3) = (92,5)                           
   2 = 9                                    |  2 = 17                                   
-  4 = 136                                  |  4 = 86                                   
+  4 = 136                                  |  4 = 92                                   
                                            |                                           
-Instance: conmutator$3_2//nfet$24_2/nfet_0 |Instance: conmutator:12/nfet_03v3:M2       
-  (1,3) = (136,4)                          |  (1,3) = (10,4)                           
-  2 = 9                                    |  2 = 4                                    
-  4 = 136                                  |  4 = 86                                   
+Instance: conmutator$3_1//nfet$24_1/nfet_0 |Instance: phaseUpulse:14/not:19/nfet_03v3: 
+  (1,3) = (4,2)                            |  (1,3) = (92,17)                          
+  2 = 4                                    |  2 = 8                                    
+  4 = 136                                  |  4 = 92                                   
+                                           |                                           
+Instance: phaseUpulse_0//nand$4_1//nfet$2$ |Instance: phaseUpulse:14/nor:21/nfet_03v3: 
+  (1,3) = (136,2)                          |  (1,3) = (92,8)                           
+  2 = 13                                   |  2 = 7                                    
+  4 = 136                                  |  4 = 92                                   
+                                           |                                           
+Instance: phaseUpulse_0//nand$4_1//nfet$3$ |Instance: phaseUpulse:14/nor:21/nfet_03v3: 
+  (1,3) = (4,2)                            |  (1,3) = (92,8)                           
+  2 = 16                                   |  2 = 9                                    
+  4 = 136                                  |  4 = 92                                   
+                                           |                                           
+Instance: phaseUpulse_0//not_0//nfet$8_0/n |Instance: phaseUpulse:14/switch:7/not:1/nf 
+  (1,3) = (136,16)                         |  (1,3) = (92,3)                           
+  2 = 16                                   |  2 = 9                                    
+  4 = 136                                  |  4 = 92                                   
                                            |                                           
 Instance: phaseUpulse_0//switch$1_0//nfet$ |Instance: phaseUpulse:14/switch:10/nfet_03 
-  (1,3) = (10,2)                           |  (1,3) = (10,7)                           
+  (1,3) = (10,2)                           |  (1,3) = (9,7)                            
   2 = 16                                   |  2 = 8                                    
-  4 = 136                                  |  4 = 86                                   
+  4 = 136                                  |  4 = 92                                   
                                            |                                           
-Instance: phaseUpulse_0//switch$1_2//nfet$ |Instance: phaseUpulse:14/not:14/nfet_03v3: 
-  (1,3) = (10,5)                           |  (1,3) = (86,9)                           
-  2 = 8                                    |  2 = 8                                    
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: phaseUpulse_0//conmutator$1_0//n |Instance: phaseUpulse:14/switch:7/nfet_03v 
-  (1,3) = (10,4)                           |  (1,3) = (7,6)                            
-  2 = 4                                    |  2 = 9                                    
-  4 = 136                                  |  4 = 86                                   
-                                           |                                           
-Instance: phaseUpulse_0//conmutator$1_0//n |Instance: conmutator:8/not:1/pfet_03v3:M1  
-  (1,3) = (136,10)                         |  (1,3) = (84,4)                           
-  2 = 4                                    |  2 = 17                                   
-  4 = 136                                  |  4 = 84                                   
-                                           |                                           
-Instance: phaseUpulse_0//switch$1_1//nfet$ |Instance: conmutator:8/pfet_03v3:M1        
-  (1,3) = (10,9)                           |  (1,3) = (12,5)                           
-  2 = 13                                   |  2 = 17                                   
-  4 = 136                                  |  4 = 84                                   
-                                           |                                           
-Instance: conmutator$3_0//pfet$18_1/pfet_0 |Instance: ota_2stage:10/pfet_03v3:M6       
-  (1,3) = (136,5)                          |  (1,3) = (84,12)                          
-  2 = 4                                    |  2 = 4                                    
-  4 = 136                                  |  4 = 84                                   
-                                           |                                           
-Instance: conmutator$3_2//pfet$18_1/pfet_0 |Instance: switch:11/not:1/pfet_03v3:M1     
-  (1,3) = (4,2)                            |  (1,3) = (84,3)                           
-  2 = 4                                    |  2 = 17                                   
-  4 = 4                                    |  4 = 84                                   
-                                           |                                           
-Instance: conmutator$3_1//pfet$18_0/pfet_0 |Instance: switch:11/pfet_03v3:M3           
-  (1,3) = (4,2)                            |  (1,3) = (12,5)                           
-  2 = 4                                    |  2 = 3                                    
-  4 = 136                                  |  4 = 84                                   
-                                           |                                           
-Instance: phaseUpulse_0//nand$4_0//pfet$1$ |Instance: conmutator:12/not:1/pfet_03v3:M1 
-  (1,3) = (136,4)                          |  (1,3) = (84,4)                           
-  2 = 16                                   |  2 = 17                                   
-  4 = 136                                  |  4 = 84                                   
-                                           |                                           
-Instance: phaseUpulse_0//nand$4_1//pfet$1$ |Instance: conmutator:12/pfet_03v3:M3       
-  (1,3) = (136,4)                          |  (1,3) = (12,4)                           
+Instance: phaseUpulse_0//nor$2_0//nfet$10_ |Instance: phaseUpulse:14/conmutator:20/not 
+  (1,3) = (136,8)                          |  (1,3) = (92,4)                           
   2 = 13                                   |  2 = 4                                    
-  4 = 136                                  |  4 = 84                                   
+  4 = 136                                  |  4 = 92                                   
                                            |                                           
-Instance: phaseUpulse_0//nand$4_1//pfet$11 |Instance: conmutator:13/pfet_03v3:M1       
+Instance: phaseUpulse_0//nor$2_0//nfet$1$3 |Instance: phaseUpulse:14/monostable:6/not: 
+  (1,3) = (136,8)                          |  (1,3) = (92,8)                           
+  2 = 16                                   |  2 = 4                                    
+  4 = 136                                  |  4 = 92                                   
+                                           |                                           
+Instance: phaseUpulse_0//not_2//nfet$8_0/n |Instance: phaseUpulse:14/monostable:6/nfet 
+  (1,3) = (136,13)                         |  (1,3) = (92,4)                           
+  2 = 13                                   |  2 = 7                                    
+  4 = 136                                  |  4 = 92                                   
+                                           |                                           
+Instance: phaseUpulse_0//switch$1_1//nfet$ |Instance: phaseUpulse:14/monostable:6/not: 
+  (1,3) = (10,9)                           |  (1,3) = (92,9)                           
+  2 = 13                                   |  2 = 8                                    
+  4 = 136                                  |  4 = 92                                   
+                                           |                                           
+Instance: phaseUpulse_0//conmutator$1_0//n |Instance: phaseUpulse:14/monostable:6/nfet 
+  (1,3) = (136,10)                         |  (1,3) = (92,4)                           
+  2 = 4                                    |  2 = 7                                    
+  4 = 136                                  |  4 = 92                                   
+                                           |                                           
+Instance: phaseUpulse_0//nfet$8$1_2/nfet_0 |Instance: phaseUpulse:14/monostable:6/nand 
+  (1,3) = (136,16)                         |  (1,3) = (92,2)                           
+  2 = 2                                    |  2 = 9                                    
+  4 = 136                                  |  4 = 92                                   
+                                           |                                           
+Instance: phaseUpulse_0//nfet$8$1_3/nfet_0 |Instance: phaseUpulse:14/nvdiv:2/nfet_03v3 
+  (1,3) = (136,13)                         |  (1,3) = (75,5)                           
+  2 = 2                                    |  2 = 75                                   
+  4 = 136                                  |  4 = 92                                   
+                                           |                                           
+Instance: ota_2stages$1_0//nfet$27_0/nfet_ |Instance: phaseUpulse:14/nvdiv:2/nfet_03v3 
+  (1,3) = (4,4)                            |  (1,3) = (7,5)                            
+  2 = 1                                    |  2 = 5                                    
+  4 = 136                                  |  4 = 92                                   
+                                           |                                           
+Instance: conmutator$3_0//pfet$18_1/pfet_0 |Instance: phaseUpulse:14/nvdiv:2/nfet_03v3 
+  (1,3) = (136,5)                          |  (1,3) = (92,7)                           
+  2 = 4                                    |  2 = 7                                    
+  4 = 136                                  |  4 = 92                                   
+                                           |                                           
+Instance: conmutator$3_2//pfet$18_0/pfet_0 |Instance: phaseUpulse:14/nvdiv:2/nfet_03v3 
+  (1,3) = (4,2)                            |  (1,3) = (92,9)                           
+  2 = 9                                    |  2 = 9                                    
+  4 = 4                                    |  4 = 92                                   
+                                           |                                           
+Instance: conmutator$3_1//pfet$18_0/pfet_0 |Instance: phaseUpulse:14/nvdiv:2/nfet_03v3 
+  (1,3) = (4,2)                            |  (1,3) = (75,9)                           
+  2 = 4                                    |  2 = 75                                   
+  4 = 136                                  |  4 = 92                                   
+                                           |                                           
+Instance: phaseUpulse_0//nand$4_0//pfet$1$ |Instance: nfet_03v3:M2                     
+  (1,3) = (136,4)                          |  (1,3) = (12,5)                           
+  2 = 16                                   |  2 = 7                                    
+  4 = 136                                  |  4 = 92                                   
+                                           |                                           
+Instance: phaseUpulse_0//nand$4_1//pfet$1$ |Instance: phaseUpulse:14/refractory:1/ota_ 
+  (1,3) = (136,4)                          |  (1,3) = (4,3)                            
+  2 = 13                                   |  2 = 4                                    
+  4 = 136                                  |  4 = 92                                   
+                                           |                                           
+Instance: phaseUpulse_0//nand$4_1//pfet$11 |Instance: conmutator:8/pfet_03v3:M1        
   (1,3) = (136,4)                          |  (1,3) = (12,5)                           
   2 = 16                                   |  2 = 17                                   
-  4 = 136                                  |  4 = 84                                   
+  4 = 136                                  |  4 = 75                                   
                                            |                                           
-Instance: phaseUpulse_0//not_0//pfet$7_0/p |Instance: phaseUpulse:14/not:2/pfet_03v3:M 
-  (1,3) = (136,16)                         |  (1,3) = (84,8)                           
+Instance: phaseUpulse_0//not_0//pfet$7_0/p |Instance: ota_2stage:10/pfet_03v3:M6       
+  (1,3) = (136,16)                         |  (1,3) = (75,12)                          
   2 = 16                                   |  2 = 4                                    
-  4 = 136                                  |  4 = 84                                   
+  4 = 136                                  |  4 = 75                                   
                                            |                                           
-Instance: phaseUpulse_0//switch$1_0//pfet$ |Instance: phaseUpulse:14/nand:13/pfet_03v3 
-  (1,3) = (136,3)                          |  (1,3) = (84,4)                           
-  2 = 16                                   |  2 = 8                                    
-  4 = 136                                  |  4 = 84                                   
+Instance: phaseUpulse_0//not_2//pfet$7_0/p |Instance: conmutator:12/pfet_03v3:M1       
+  (1,3) = (136,13)                         |  (1,3) = (9,4)                            
+  2 = 13                                   |  2 = 17                                   
+  4 = 136                                  |  4 = 75                                   
                                            |                                           
-Instance: phaseUpulse_0//nor$2_0//pfet$1$8 |Instance: phaseUpulse:14/not:19/pfet_03v3: 
-  (1,3) = (8,2)                            |  (1,3) = (84,17)                          
-  2 = 16                                   |  2 = 8                                    
-  4 = 136                                  |  4 = 84                                   
+Instance: phaseUpulse_0//conmutator$1_0//p |Instance: conmutator:13/pfet_03v3:M1       
+  (1,3) = (10,4)                           |  (1,3) = (12,5)                           
+  2 = 4                                    |  2 = 17                                   
+  4 = 136                                  |  4 = 75                                   
                                            |                                           
-Instance: phaseUpulse_0//nor$2_0//pfet$2$7 |Instance: phaseUpulse:14/nor:21/pfet_03v3: 
-  (1,3) = (136,2)                          |  (1,3) = (8,2)                            
-  2 = 13                                   |  2 = 7                                    
-  4 = 136                                  |  4 = 84                                   
+Instance: conmutator$3_0//pfet$18_2/pfet_0 |Instance: phaseUpulse:14/not:19/pfet_03v3: 
+  (1,3) = (136,4)                          |  (1,3) = (75,17)                          
+  2 = 6                                    |  2 = 8                                    
+  4 = 136                                  |  4 = 75                                   
                                            |                                           
-Instance: phaseUpulse_0//not_2//pfet$7_0/p |Instance: phaseUpulse:14/switch:10/not:1/p 
-  (1,3) = (136,13)                         |  (1,3) = (84,3)                           
-  2 = 13                                   |  2 = 8                                    
-  4 = 136                                  |  4 = 84                                   
+Instance: conmutator$3_0//pfet$18_0/pfet_0 |Instance: phaseUpulse:14/switch:7/not:1/pf 
+  (1,3) = (6,5)                            |  (1,3) = (75,3)                           
+  2 = 6                                    |  2 = 9                                    
+  4 = 136                                  |  4 = 75                                   
                                            |                                           
-Instance: phaseUpulse_0//switch$1_1//pfet$ |Instance: phaseUpulse:14/switch:18/not:1/p 
-  (1,3) = (136,3)                          |  (1,3) = (84,3)                           
-  2 = 13                                   |  2 = 7                                    
-  4 = 136                                  |  4 = 84                                   
+Instance: phaseUpulse_0//not$1_0//pfet$13_ |Instance: phaseUpulse:14/conmutator:20/not 
+  (1,3) = (136,6)                          |  (1,3) = (75,4)                           
+  2 = 8                                    |  2 = 4                                    
+  4 = 136                                  |  4 = 75                                   
                                            |                                           
-Instance: phaseUpulse_0//switch$1_2//pfet$ |Instance: phaseUpulse:14/switch:18/pfet_03 
-  (1,3) = (136,3)                          |  (1,3) = (7,5)                            
-  2 = 8                                    |  2 = 3                                    
-  4 = 136                                  |  4 = 84                                   
-                                           |                                           
-Instance: phaseUpulse_0//conmutator$1_0//p |Instance: phaseUpulse:14/conmutator:20/not 
-  (1,3) = (136,4)                          |  (1,3) = (84,4)                           
+Instance: ota_2stages$1_0//pfet$20_0/pfet_ |Instance: phaseUpulse:14/monostable:6/not: 
+  (1,3) = (136,6)                          |  (1,3) = (75,8)                           
   2 = 4                                    |  2 = 4                                    
-  4 = 136                                  |  4 = 84                                   
+  4 = 3                                    |  4 = 75                                   
                                            |                                           
-Instance: conmutator$3_0//pfet$18_2/pfet_0 |Instance: phaseUpulse:14/nand:3/pfet_03v3: 
-  (1,3) = (136,4)                          |  (1,3) = (84,4)                           
-  2 = 6                                    |  2 = 6                                    
-  4 = 136                                  |  4 = 84                                   
-                                           |                                           
-Instance: conmutator$3_0//pfet$18_0/pfet_0 |Instance: phaseUpulse:14/not:4/pfet_03v3:M 
-  (1,3) = (6,5)                            |  (1,3) = (84,7)                           
-  2 = 6                                    |  2 = 6                                    
-  4 = 136                                  |  4 = 84                                   
-                                           |                                           
-Instance: conmutator$3_2//pfet$18_2/pfet_0 |Instance: phaseUpulse:14/nand:3/pfet_03v3: 
-  (1,3) = (4,4)                            |  (1,3) = (84,4)                           
-  2 = 9                                    |  2 = 9                                    
-  4 = 4                                    |  4 = 84                                   
-                                           |                                           
-Instance: conmutator$3_2//pfet$18_0/pfet_0 |Instance: phaseUpulse:14/nor:21/pfet_03v3: 
-  (1,3) = (4,2)                            |  (1,3) = (84,2)                           
-  2 = 9                                    |  2 = 9                                    
-  4 = 4                                    |  4 = 84                                   
-                                           |                                           
-Instance: phaseUpulse_0//not$1_0//pfet$13_ |Instance: phaseUpulse:14/switch:7/not:1/pf 
-  (1,3) = (136,6)                          |  (1,3) = (84,3)                           
-  2 = 8                                    |  2 = 9                                    
-  4 = 136                                  |  4 = 84                                   
-                                           |                                           
-Instance: ota_2stages$1_0//pfet$20_0/pfet_ |Instance: phaseUpulse:14/not:1/pfet_03v3:M 
-  (1,3) = (136,6)                          |  (1,3) = (84,6)                           
-  2 = 4                                    |  2 = 4                                    
-  4 = 3                                    |  4 = 84                                   
-                                           |                                           
-Instance: phaseUpulse_0//switch$1_0//pfet$ |Instance: phaseUpulse:14/switch:7/pfet_03v 
-  (1,3) = (10,2)                           |  (1,3) = (7,6)                            
-  2 = 3                                    |  2 = 3                                    
-  4 = 136                                  |  4 = 84                                   
-                                           |                                           
-Instance: phaseUpulse_0//switch$1_2//pfet$ |Instance: phaseUpulse:14/conmutator:20/pfe 
-  (1,3) = (10,5)                           |  (1,3) = (84,6)                           
-  2 = 3                                    |  2 = 4                                    
-  4 = 136                                  |  4 = 84                                   
-                                           |                                           
-Instance: phaseUpulse_0//conmutator$1_0//p |Instance: phaseUpulse:14/conmutator:20/pfe 
-  (1,3) = (10,4)                           |  (1,3) = (6,4)                            
-  2 = 4                                    |  2 = 4                                    
-  4 = 136                                  |  4 = 84                                   
-                                           |                                           
-Instance: phaseUpulse_0//conmutator$1_0//p |Instance: conmutator:8/pfet_03v3:M3        
-  (1,3) = (136,10)                         |  (1,3) = (10,5)                           
-  2 = 4                                    |  2 = 4                                    
-  4 = 136                                  |  4 = 84                                   
-                                           |                                           
-Instance: phaseUpulse_0//switch$1_1//pfet$ |Instance: conmutator:12/pfet_03v3:M1       
-  (1,3) = (10,9)                           |  (1,3) = (10,4)                           
-  2 = 3                                    |  2 = 17                                   
-  4 = 136                                  |  4 = 84                                   
-                                           |                                           
-(no matching instance)                     |Instance: phaseUpulse:14/switch:10/pfet_03 
-                                           |  (1,3) = (10,7)                           
-                                           |  2 = 3                                    
-                                           |  4 = 84                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: phaseUpulse:14/not:14/pfet_03v3: 
-                                           |  (1,3) = (84,9)                           
+(no matching instance)                     |Instance: phaseUpulse:14/monostable:6/nand 
+                                           |  (1,3) = (75,4)                           
                                            |  2 = 8                                    
-                                           |  4 = 84                                   
+                                           |  4 = 75                                   
                                            |                                           
                                            |                                           
-(no matching instance)                     |Instance: phaseUpulse:14/vdiv:5/ppolyf_u_2 
-                                           |  1 = 4                                    
-                                           |  2 = 84                                   
-                                           |  3 = 84                                   
+(no matching instance)                     |Instance: phaseUpulse:14/monostable:6/not: 
+                                           |  (1,3) = (75,9)                           
+                                           |  2 = 8                                    
+                                           |  4 = 75                                   
                                            |                                           
-(no matching instance)                     |Instance: phaseUpulse:14/vdiv:5/ppolyf_u_2 
-                                           |  1 = 3                                    
+                                           |                                           
+(no matching instance)                     |Instance: phaseUpulse:14/monostable:6/nand 
+                                           |  (1,3) = (75,4)                           
+                                           |  2 = 9                                    
+                                           |  4 = 75                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: phaseUpulse:14/monostable:6/nand 
+                                           |  (1,3) = (75,4)                           
+                                           |  2 = 6                                    
+                                           |  4 = 75                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: phaseUpulse:14/monostable:6/not: 
+                                           |  (1,3) = (75,7)                           
+                                           |  2 = 6                                    
+                                           |  4 = 75                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: phaseUpulse:14/switch:7/pfet_03v 
+                                           |  (1,3) = (7,6)                            
+                                           |  2 = 3                                    
+                                           |  4 = 75                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: phaseUpulse:14/conmutator:20/pfe 
+                                           |  (1,3) = (75,6)                           
                                            |  2 = 4                                    
-                                           |  3 = 84                                   
+                                           |  4 = 75                                   
                                            |                                           
-(no matching instance)                     |Instance: phaseUpulse:14/vdiv:5/ppolyf_u_2 
-                                           |  1 = 5                                    
-                                           |  2 = 5                                    
-                                           |  3 = 84                                   
                                            |                                           
-(no matching instance)                     |Instance: phaseUpulse:14/vdiv:5/ppolyf_u_2 
-                                           |  1 = 5                                    
-                                           |  2 = 10                                   
-                                           |  3 = 84                                   
+(no matching instance)                     |Instance: phaseUpulse:14/conmutator:20/pfe 
+                                           |  (1,3) = (6,5)                            
+                                           |  2 = 4                                    
+                                           |  4 = 75                                   
                                            |                                           
-(no matching instance)                     |Instance: phaseUpulse:14/vdiv:5/ppolyf_u_2 
-                                           |  1 = 5                                    
-                                           |  2 = 10                                   
-                                           |  3 = 84                                   
                                            |                                           
-(no matching instance)                     |Instance: phaseUpulse:14/vdiv:5/ppolyf_u_3 
-                                           |  1 = 86                                   
-                                           |  2 = 5                                    
-                                           |  3 = 84                                   
-                                           |                                           
-(no matching instance)                     |Instance: phaseUpulse:14/vdiv:5/ppolyf_u_3 
-                                           |  1 = 86                                   
-                                           |  2 = 5                                    
-                                           |  3 = 84                                   
-                                           |                                           
-(no matching instance)                     |Instance: ppolyf_u_3k:R1                   
-                                           |  1 = 4                                    
-                                           |  2 = 84                                   
-                                           |  3 = 84                                   
-                                           |                                           
-(no matching instance)                     |Instance: phaseUpulse:14/vdiv:5/ppolyf_u_3 
-                                           |  1 = 10                                   
-                                           |  2 = 3                                    
-                                           |  3 = 84                                   
-                                           |                                           
-(no matching instance)                     |Instance: phaseUpulse:14/vdiv:5/ppolyf_u_3 
-                                           |  1 = 10                                   
-                                           |  2 = 3                                    
-                                           |  3 = 84                                   
-                                           |                                           
-(no matching instance)                     |Instance: ppolyf_u_1k:R2                   
-                                           |  (1,2) = (86,4)                           
-                                           |  3 = 84                                   
+(no matching instance)                     |Instance: phaseUpulse:14/monostable:6/not: 
+                                           |  (1,3) = (75,6)                           
+                                           |  2 = 4                                    
+                                           |  4 = 75                                   
                                            |                                           
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Instance: cap_mim$4_1/cap_mim_2f0_m4m5_nos |Instance: cap_mim_2f0fF:C1                 
-  1 = 4                                    |  1 = 5                                    
-  2 = 16                                   |  2 = 5                                    
+Instance: cap_mim$3_0/cap_mim_2f0_m4m5_nos |Instance: cap_mim_2f0fF:C1                 
+  1 = 3                                    |  1 = 5                                    
+  2 = 9                                    |  2 = 5                                    
                                            |                                           
-Instance: cap_mim$4_0/cap_mim_2f0_m4m5_nos |Instance: phaseUpulse:14/cap_mim_2f0fF:C1  
+Instance: cap_mim$4_1/cap_mim_2f0_m4m5_nos |Instance: phaseUpulse:14/monostable:6/cap_ 
+  1 = 4                                    |  1 = 4                                    
+  2 = 16                                   |  2 = 4                                    
+                                           |                                           
+Instance: cap_mim$4_0/cap_mim_2f0_m4m5_nos |Instance: phaseUpulse:14/monostable:6/cap_ 
   1 = 4                                    |  1 = 4                                    
   2 = 13                                   |  2 = 4                                    
                                            |                                           
-Instance: ota_2stages$1_0//cap_mim$5_0/cap |Instance: phaseUpulse:14/cap_mim_2f0fF:C2  
+Instance: ota_2stages$1_0//cap_mim$5_0/cap |Instance: ota_2stage:10/cap_mim_2f0fF:C1   
   1 = 4                                    |  1 = 4                                    
-  2 = 6                                    |  2 = 4                                    
-                                           |                                           
-Instance: cap_mim$3_0/cap_mim_2f0_m4m5_nos |Instance: ota_2stage:10/cap_mim_2f0fF:C1   
-  1 = 3                                    |  1 = 4                                    
-  2 = 9                                    |  2 = 12                                   
+  2 = 6                                    |  2 = 12                                   
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 Port matching may fail to disambiguate symmetries.
@@ -1193,12 +956,12 @@ Port matching may fail to disambiguate symmetries.
 Subcircuit pins:
 Circuit 1: LIF_comp                        |Circuit 2: LIF_comp                        
 -------------------------------------------|-------------------------------------------
-vout                                       |(no pin, node is conmutator:13/net1)       
-(no pin, node is phaseUpulse_0/phi_int)    |vdd                                        
-(no pin, node is phaseUpulse_0/phi_int)    |vss                                        
-(no pin, node is phaseUpulse_0/phi_int)    |vin                                        
-(no pin, node is phaseUpulse_0/phi_int)    |v_rew                                      
-(no pin, node is phaseUpulse_0/phi_int)    |vout                                       
+vout                                       |(no pin, node is conmutator:12/net1)       
+(no pin, node is phaseUpulse_0/vspike)     |vdd                                        
+(no pin, node is phaseUpulse_0/vspike)     |vss                                        
+(no pin, node is phaseUpulse_0/vspike)     |vin                                        
+(no pin, node is phaseUpulse_0/vspike)     |v_rew                                      
+(no pin, node is phaseUpulse_0/vspike)     |vout                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists for LIF_comp and LIF_comp altered to match.
 Device classes LIF_comp and LIF_comp are equivalent.

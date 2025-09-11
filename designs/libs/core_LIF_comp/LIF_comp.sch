@@ -28,16 +28,6 @@ N 610 -630 790 -630 {lab=vmem}
 N 940 -380 940 -160 {lab=v_icomp}
 N 730 -160 940 -160 {lab=v_icomp}
 N 580 -190 580 -180 {lab=v_ocomp}
-N 870 -990 870 -950 {lab=vdd}
-N 850 -920 850 -830 {lab=vdd}
-N 850 -970 850 -920 {lab=vdd}
-N 850 -970 870 -970 {lab=vdd}
-N 870 -890 870 -860 {lab=v_th}
-N 870 -800 870 -770 {lab=vss}
-N 820 -860 870 -860 {lab=v_th}
-N 820 -800 820 -780 {lab=vss}
-N 840 -830 850 -830 {lab=vdd}
-N 820 -780 870 -780 {lab=vss}
 C {title.sym} 160 0 0 0 {name=l1 author="Oscar Islas"}
 C {iopin.sym} 100 -490 2 0 {name=p1 lab=vin}
 C {iopin.sym} 100 -470 2 0 {name=p3 lab=v_rew}
@@ -74,17 +64,17 @@ C {lab_pin.sym} 790 -370 0 0 {name=p64 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 730 -200 2 0 {name=p65 sig_type=std_logic lab=v_th}
 C {designs/libs/core_LIF_comp/core_phaseUpulse/phaseUpulse.sym} 410 -170 0 1 {name=x14}
 C {lab_pin.sym} 410 -230 2 0 {name=p66 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 410 -110 0 1 {name=p67 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 410 -100 0 1 {name=p67 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 710 -240 2 1 {name=p68 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 710 -120 0 0 {name=p69 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 330 -170 2 1 {name=p70 sig_type=std_logic lab=phi_fire}
 C {lab_pin.sym} 330 -150 2 1 {name=p71 sig_type=std_logic lab=v_ref}
 C {symbols/cap_mim_2f0fF.sym} 300 -600 3 0 {name=C1
-W=1e-6
-L=1e-6
+W=9e-6
+L=9e-6
 model=cap_mim_2f0fF
 spiceprefix=X
-m=9}
+m=1}
 C {symbols/nfet_03v3.sym} 420 -1000 1 0 {name=M2
 L=0.5u
 W=0.5u
@@ -104,24 +94,4 @@ C {lab_pin.sym} 420 -1020 0 1 {name=p73 sig_type=std_logic lab=v_th}
 C {lab_pin.sym} 490 -160 2 0 {name=p74 sig_type=std_logic lab=v_rew}
 C {lab_pin.sym} 940 -200 2 1 {name=p80 sig_type=std_logic lab=v_icomp}
 C {lab_pin.sym} 580 -190 2 1 {name=p81 sig_type=std_logic lab=v_ocomp}
-C {symbols/ppolyf_u_3k.sym} 870 -920 0 0 {name=R1
-W=1e-6
-L=1e-6
-model=ppolyf_u_3k
-spiceprefix=X
-m=1}
-C {symbols/ppolyf_u_1k.sym} 870 -830 0 0 {name=R2
-W=1e-6
-L=1e-6
-model=ppolyf_u_1k
-spiceprefix=X
-m=1}
-C {lab_pin.sym} 870 -990 0 1 {name=p40 sig_type=std_logic lab=vdd}
-C {lab_pin.sym} 870 -770 0 1 {name=p41 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 870 -880 0 1 {name=p42 sig_type=std_logic lab=v_th}
-C {symbols/ppolyf_u_1k.sym} 820 -830 0 1 {name=R3
-W=1e-6
-L=1e-6
-model=ppolyf_u_1k
-spiceprefix=X
-m=1}
+C {lab_pin.sym} 330 -130 2 1 {name=p8 sig_type=std_logic lab=v_th}

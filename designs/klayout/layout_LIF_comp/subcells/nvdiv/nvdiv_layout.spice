@@ -1,0 +1,28 @@
+* NGSPICE file created from nvdiv.ext - technology: gf180mcuD
+
+.subckt nfet$7 a_n256_n272# a_n84_0# a_198_0# a_38_n132#
+X0 a_198_0# a_38_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.305p pd=2.22u as=0.305p ps=2.22u w=0.5u l=0.8u
+.ends
+
+.subckt nfet$5 a_n256_n272# a_30_n132# a_n84_0# a_94_0#
+X0 a_94_0# a_30_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.3355p pd=2.32u as=0.3355p ps=2.32u w=0.55u l=0.28u
+.ends
+
+.subckt nfet$3 a_n84_n2# a_n256_n272# a_30_n132# a_94_0#
+X0 a_94_0# a_30_n132# a_n84_n2# a_n256_n272# nfet_03v3 ad=0.228p pd=1.98u as=0.228p ps=1.98u w=0.36u l=0.28u
+.ends
+
+.subckt nfet$4 a_n256_n272# a_n84_0# a_38_n132# a_138_0#
+X0 a_138_0# a_38_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.305p pd=2.22u as=0.305p ps=2.22u w=0.5u l=0.5u
+.ends
+
+.subckt nvdiv vss vdd vspike_up vspike_down vres vref
+Xnfet$7_0 vss vres vss vres nfet$7
+Xnfet$5_0 vss vdd vdd vref nfet$5
+Xnfet$3_0 vref vss vref vss nfet$3
+Xnfet$3_1 vspike_up vss vspike_up m2_367_1540# nfet$3
+Xnfet$3_2 vdd vss vdd vspike_up nfet$3
+Xnfet$4_0 vss vspike_down vspike_down vres nfet$4
+Xnfet$4_1 vss m2_367_1540# m2_367_1540# vspike_down nfet$4
+.ends
+

@@ -4,7 +4,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 1120 -980 1920 -580 {flags=graph
+B 2 1110 -970 1580 -570 {flags=graph
 y1=0
 y2=3.3
 ypos1=0
@@ -22,14 +22,12 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="4 10 6 7 8 4"
-node="vdd
-vspike_up
+color="4 10 6 7"
+node="vspike_up
 vref
 vspike_down
-vres
-vss"}
-B 2 1110 -570 1910 -170 {flags=graph
+vres"}
+B 2 1110 -570 1580 -170 {flags=graph
 y1=0
 y2=3.4
 ypos1=0
@@ -47,13 +45,51 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="4 10 6 7 8 4"
-node="vdd
-vspike_up1
+color="4 10 6 7"
+node="vspike_up1
 vref1
 vspike_down1
-vres1
-vss"}
+vres1"}
+B 2 1910 -970 2380 -570 {flags=graph
+y2=3.3
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=1e-06
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color=4
+node=v_th
+y1=0}
+B 2 1910 -570 2380 -170 {flags=graph
+y1=0
+y2=3.4
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=1e-06
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color=4
+node=v_th1}
 N 630 -1000 630 -960 {lab=vdd}
 N 590 -970 590 -930 {lab=vdd}
 N 590 -970 630 -970 {lab=vdd}
@@ -116,6 +152,28 @@ N 910 -450 910 -400 {lab=vdd}
 N 910 -450 930 -450 {lab=vdd}
 N 930 -370 930 -340 {lab=vres1}
 N 930 -280 930 -250 {lab=vss}
+N 1770 -460 1770 -420 {lab=vdd}
+N 1750 -390 1750 -300 {lab=vdd}
+N 1750 -440 1750 -390 {lab=vdd}
+N 1750 -440 1770 -440 {lab=vdd}
+N 1770 -360 1770 -330 {lab=v_th1}
+N 1770 -270 1770 -240 {lab=vss}
+N 1720 -330 1770 -330 {lab=v_th1}
+N 1720 -270 1720 -250 {lab=vss}
+N 1740 -300 1750 -300 {lab=vdd}
+N 1720 -250 1770 -250 {lab=vss}
+N 1730 -890 1730 -850 {lab=vdd}
+N 1730 -790 1730 -760 {lab=v_th}
+N 1730 -700 1730 -670 {lab=vss}
+N 1690 -860 1690 -820 {lab=vdd}
+N 1690 -860 1730 -860 {lab=vdd}
+N 1690 -760 1690 -730 {lab=v_th}
+N 1690 -760 1730 -760 {lab=v_th}
+N 1730 -820 1740 -820 {lab=vss}
+N 1740 -820 1740 -730 {lab=vss}
+N 1730 -730 1740 -730 {lab=vss}
+N 1740 -730 1740 -690 {lab=vss}
+N 1730 -690 1740 -690 {lab=vss}
 C {title.sym} 160 0 0 0 {name=l1 author="Oscar Islas"}
 C {vsource.sym} 160 -760 0 1 {name=V2 value=3.3 savecurrent=false}
 C {gnd.sym} 160 -730 0 0 {name=l6 lab=GND}
@@ -146,7 +204,7 @@ C {launcher.sym} 860 -930 0 0 {name=h1
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_nvdiv.raw tran"
 }
-C {lab_pin.sym} 630 -1000 0 1 {name=p9 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 630 -1060 0 1 {name=p9 sig_type=std_logic lab=vdd}
 C {symbols/nfet_03v3.sym} 610 -930 0 0 {name=M15
 L=0.28u
 W=0.36u
@@ -313,3 +371,60 @@ model=ppolyf_u
 spiceprefix=X
 m=1}
 C {lab_pin.sym} 550 -350 0 1 {name=p40 sig_type=std_logic lab=vspike_up1}
+C {symbols/ppolyf_u_3k.sym} 1770 -390 0 0 {name=R4
+W=1e-6
+L=1e-6
+model=ppolyf_u_3k
+spiceprefix=X
+m=1}
+C {symbols/ppolyf_u_1k.sym} 1770 -300 0 0 {name=R5
+W=1e-6
+L=1e-6
+model=ppolyf_u_1k
+spiceprefix=X
+m=1}
+C {lab_pin.sym} 1770 -460 0 1 {name=p2 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 1770 -240 0 1 {name=p41 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 1770 -350 0 1 {name=p42 sig_type=std_logic lab=v_th1}
+C {symbols/ppolyf_u_1k.sym} 1720 -300 0 1 {name=R6
+W=1e-6
+L=1e-6
+model=ppolyf_u_1k
+spiceprefix=X
+m=1}
+C {lab_pin.sym} 1730 -890 0 1 {name=p4 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 1730 -670 0 1 {name=p5 sig_type=std_logic lab=vss}
+C {symbols/nfet_03v3.sym} 1710 -820 0 0 {name=M1
+L=0.28u
+W=0.36u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 1710 -730 0 0 {name=M2
+L=0.28u
+W=0.36u
+nf=1
+m=5
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {lab_pin.sym} 1730 -780 0 1 {name=p3 sig_type=std_logic lab=v_th}
+C {launcher.sym} 1719.375 -580 0 0 {name=h2
+descr="load waves" 
+tclcommand="xschem raw_read $netlist_dir/tb_nvdiv.raw tran"
+}
+C {ammeter.sym} 630 -1030 0 0 {name=Vmeas savecurrent=true spice_ignore=0}
