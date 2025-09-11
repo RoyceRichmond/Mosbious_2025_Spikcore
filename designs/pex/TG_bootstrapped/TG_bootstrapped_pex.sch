@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=5.5e-07
+x1=-2.0917494e-07
+x2=5.5726292e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -33,8 +33,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=5.5e-07
+x1=-2.0917494e-07
+x2=5.5726292e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -47,15 +47,15 @@ logx=0
 logy=0
 }
 B 2 -580 20 -10 360 {flags=graph
-y1=-0.029612298
-y2=0.0019223957
+y1=-0.017
+y2=3.4
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=5.5e-07
+x1=-2.0917494e-07
+x2=5.5726292e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -64,7 +64,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-hilight_wave=2
+hilight_wave=-1
 color="4 9"
 node="vout
 
@@ -98,7 +98,7 @@ N 200 -220 260 -220 {lab=vout_pex}
 N 200 -150 260 -150 {lab=GND}
 C {designs/libs/core_TG_bootstrapped/TG_bootstrapped.sym} -50 -220 0 0 {name=x1}
 C {vsource.sym} -530 -200 0 0 {name=V1 value=3.3 savecurrent=false}
-C {devices/code_shown.sym} -1140 -440 0 0 {name=s1 only_toplevel=false value="
+C {devices/code_shown.sym} -1120 -630 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
 .tran 0.1n 550n
 .include /foss/designs/Mosbious_2025_Spikcore/designs/pex/TG_bootstrapped/TG_bootstrapped_pex.spice
@@ -196,7 +196,7 @@ value=1p
 footprint=1206
 device="ceramic capacitor"}
 C {designs/pex/TG_bootstrapped/TG_bootstrapped_pex.sym} 220 -220 0 0 {name=x6}
-C {launcher.sym} -210 -430 0 0 {name=h5
+C {launcher.sym} 70 100 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/TG_bootstrapped_pex.raw tran"
 }
