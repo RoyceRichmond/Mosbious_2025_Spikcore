@@ -1,315 +1,277 @@
 | units: 0.5 tech: gf180mcuD format: MIT
-x a_4733_n2337# ota_1stage$2_0.vss a_4893_n2839# ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=4733 y=-2336 ppolyf_u
-x a_197_n5525# ota_1stage$2_0.vss a_197_n5525# w_n183_n6039# s=21840,596 d=21840,596 l=56 w=168 x=207 y=-5752 pfet_03v3
-x a_4733_n6855# a_4601_n6855# a_4893_n6855# ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=4733 y=-6854 ppolyf_u
-x a_5277_n3843# a_4893_n3843# phaseUpulse_0.vdiv_0.vres ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=5277 y=-3842 ppolyf_u
-x phaseUpulse_0.vdiv_0.vres phaseUpulse_0.phi_2 ota_1stage$2_0.vss ota_1stage$2_0.vss s=12200,444 d=12200,444 l=100 w=100 x=1852 y=-3843 nfet_03v3
-x ota_1stage$2_0.vn a_6212_n4241# ota_1stage$2_0.vout ota_1stage$2_0.vss s=75152,1476 d=75152,1476 l=56 w=616 x=6334 y=-4240 nfet_03v3
-x phaseUpulse_0.vneg a_2745_n2782# phaseUpulse_0.phi_int ota_1stage$2_0.vss s=16800,368 d=26000,660 l=56 w=200 x=2913 y=-2781 pfet_03v3
-x phaseUpulse_0.vneg ota_1stage$2_0.vss phaseUpulse_0.vneg ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=-1280 y=-2781 pfet_03v3
-x ota_2stages_0.vn a_n1132_571# a_n424_1228# ota_1stage$2_0.vss s=75152,1476 d=75152,1476 l=56 w=616 x=-475 y=-133 nfet_03v3
-x a_4733_n4847# a_4601_n4847# conmutator$2_1.in2 ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=4733 y=-4846 ppolyf_u
-x a_105_n1886# phaseUpulse_0.vspike phaseUpulse_0.switch$1_0.in ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=108 y=-2145 pfet_03v3
-x a_n1201_n7398# ota_1stage$2_0.vss a_n511_n6182# ota_1stage$2_0.vss s=20496,580 d=20496,580 l=56 w=168 x=-566 y=-6181 nfet_03v3
-x a_7750_n4373# a_6212_n4241# ota_1stage$2_0.vss ota_1stage$2_0.vss s=20496,580 d=20496,580 l=56 w=168 x=7758 y=-3535 nfet_03v3
-x a_2049_4245# a_2049_4405# ota_1stage$2_0.vss ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=2049 y=4245 ppolyf_u
-x phaseUpulse_0.phi_2 ota_1stage$2_0.vss phaseUpulse_0.phi_2 ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=1944 y=-3351 nfet_03v3
-x a_4733_n2839# a_4601_n3341# a_4893_n2839# ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=4733 y=-2838 ppolyf_u
-x phaseUpulse_0.reward phaseUpulse_0.vspike ota_1stage$2_0.vss ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=-1166 y=-1575 nfet_03v3
-x a_1390_3312# ota_2stages_0.vout ota_2stages_0.vn ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=1393 y=3448 pfet_03v3
-x conmutator$2_2.cntrl vout conmutator$2_1.in2 ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=5115 y=3448 pfet_03v3
-x phaseUpulse_0.phi_2 a_1401_n1886# ota_1stage$2_0.vss ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=1802 y=-2145 pfet_03v3
-x a_5277_n6353# a_5145_n6353# a_4601_n6855# ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=5277 y=-6352 ppolyf_u
-x phaseUpulse_0.vneg phaseUpulse_0.vspike phaseUpulse_0.switch$1_0.in ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=129 y=-1575 nfet_03v3
-x a_6226_n2879# ota_1stage$2_0.vss ota_1stage$2_0.vout w_5846_n3393# s=21840,596 d=21840,596 l=56 w=168 x=6236 y=-3106 pfet_03v3
-x a_114_n134# ota_1stage$2_0.vss ota_2stages_0.vout ota_1stage$2_0.vss s=43680,932 d=43680,932 l=56 w=336 x=1170 y=832 pfet_03v3
-x conmutator$2_2.cntrl ota_1stage$2_0.vp ota_1stage$2_0.vss ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=5304 y=-1789 nfet_03v3
-x conmutator$2_1.cntrl a_1381_2266# ota_1stage$2_0.vss ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=2317 y=2398 nfet_03v3
-x a_4733_n7357# ota_1stage$2_0.vss a_4893_n7357# ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=4733 y=-7356 ppolyf_u
-x a_5277_n4345# phaseUpulse_0.vdiv_0.vspike_down a_5437_n4847# ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=5277 y=-4344 ppolyf_u
-x conmutator$2_1.cntrl ota_2stages_0.vout conmutator$2_1.out ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=1368 y=1828 pfet_03v3
-x ota_1stage$2_0.vss a_n1822_n645# ota_1stage$2_0.vss ota_1stage$2_0.vss s=9120,396 d=9120,396 l=1708 w=72 x=-1819 y=-522 nfet_03v3
-x phaseUpulse_0.reward a_n1719_n1708# ota_1stage$2_0.vss ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=-782 y=-1575 nfet_03v3
-x phaseUpulse_0.nand$4_1.Z phaseUpulse_0.phi_2 s=205360,3640 l=1000 w=1000 x=403 y=-4651 cap_mim_2f0_m4m5_noshield
-x phaseUpulse_0.phi_2 ota_1stage$2_0.vss phaseUpulse_0.phi_2 ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=1192 y=-3351 nfet_03v3
-x conmutator$2_1.cntrl conmutator$2_1.out conmutator$2_1.in2 ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=1933 y=2398 nfet_03v3
-x a_4733_n5349# a_4601_n5851# conmutator$2_1.in2 ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=4733 y=-5348 ppolyf_u
-x a_5277_n2337# a_5145_n2839# ota_1stage$2_0.vss ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=5277 y=-2336 ppolyf_u
-x conmutator$2_2.cntrl ota_1stage$2_0.vss a_4236_2878# ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=4180 y=2878 nfet_03v3
-x a_3053_4245# ota_1stage$2_0.vss ota_1stage$2_0.vn ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=3053 y=4245 ppolyf_u
-x a_5277_n6855# a_4893_n6855# phaseUpulse_0.vspike_up ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=5277 y=-6854 ppolyf_u
-x phaseUpulse_0.reward a_n1719_n1708# ota_1stage$2_0.vss ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=-789 y=-2145 pfet_03v3
-x ota_1stage$2_0.vss ota_1stage$2_0.vss phaseUpulse_0.ota_1stage$1_0.vp ota_1stage$2_0.vss s=36600,844 d=36600,844 l=56 w=300 x=1557 y=-7196 nfet_03v3
-x phaseUpulse_0.ota_1stage$1_0.vn phaseUpulse_0.ota_1stage$1_0.vout a_n511_n6182# ota_1stage$2_0.vss s=75152,1476 d=75152,1476 l=56 w=616 x=857 y=-6886 nfet_03v3
-x phaseUpulse_0.vneg a_105_n1886# ota_1stage$2_0.vss ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=506 y=-2145 pfet_03v3
-x a_5277_n4847# conmutator$2_1.in2 a_5437_n4847# ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=5277 y=-4846 ppolyf_u
-x conmutator$2_2.cntrl ota_2stages_0.vout ota_1stage$2_0.vp ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=4739 y=-1219 pfet_03v3
-x a_n1132_571# ota_1stage$2_0.vss ota_2stages_0.vout ota_1stage$2_0.vss s=13664,468 d=13664,468 l=56 w=112 x=1174 y=117 nfet_03v3
-x a_4752_n1530# ota_1stage$2_0.vp ota_1stage$2_0.vss ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=5283 y=-1219 pfet_03v3
-x phaseUpulse_0.phi_2 ota_1stage$2_0.vss phaseUpulse_0.phi_2 ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=1937 y=-2781 pfet_03v3
-x a_5277_n2839# a_5145_n2839# a_5437_n3341# ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=5277 y=-2838 ppolyf_u
-x phaseUpulse_0.vneg ota_1stage$2_0.vss phaseUpulse_0.nand$4_0.Z ota_1stage$2_0.vss s=26000,660 d=16800,368 l=56 w=200 x=-2242 y=-2781 pfet_03v3
-x a_n1822_n645# ota_1stage$2_0.vss a_n1132_571# ota_1stage$2_0.vss s=20496,580 d=20496,580 l=56 w=168 x=-1187 y=571 nfet_03v3
-x phaseUpulse_0.vneg a_279_n3352# phaseUpulse_0.nand$4_1.Z ota_1stage$2_0.vss s=16000,360 d=24400,644 l=56 w=200 x=439 y=-3351 nfet_03v3
-x phaseUpulse_0.ota_1stage$1_0.vn phaseUpulse_0.ota_1stage$1_0.vout phaseUpulse_0.ota_1stage$1_0.vn ota_1stage$2_0.vss s=12200,444 d=12200,444 l=100 w=100 x=1569 y=-6370 nfet_03v3
-x ota_1stage$2_0.vp a_6226_n2879# a_6212_n4241# ota_1stage$2_0.vss s=75152,1476 d=75152,1476 l=56 w=616 x=7046 y=-4240 nfet_03v3
-x a_n424_1228# ota_1stage$2_0.vss a_n424_1228# ota_1stage$2_0.vss s=21840,596 d=21840,596 l=56 w=168 x=-413 y=1000 pfet_03v3
-x a_5277_n7357# a_4893_n7357# phaseUpulse_0.vspike_up ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=5277 y=-7356 ppolyf_u
-x ota_1stage$2_0.vss a_7750_n4373# ota_1stage$2_0.vss ota_1stage$2_0.vss s=9120,396 d=9120,396 l=1708 w=72 x=8374 y=-4629 nfet_03v3
-x a_4236_2878# ota_2stages_0.vout vout ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=4571 y=3448 pfet_03v3
-x phaseUpulse_0.vneg ota_1stage$2_0.vss phaseUpulse_0.vneg ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=-1273 y=-3351 nfet_03v3
-x phaseUpulse_0.phi_2 ota_1stage$2_0.vss phaseUpulse_0.phi_2 ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=1185 y=-2781 pfet_03v3
-x a_n1719_n1708# phaseUpulse_0.vspike ota_1stage$2_0.vss ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=-1187 y=-2145 pfet_03v3
-x phaseUpulse_0.vneg ota_1stage$2_0.vss a_n2187_n3352# ota_1stage$2_0.vss s=24400,644 d=16000,360 l=56 w=200 x=-2242 y=-3351 nfet_03v3
-x ota_1stage$2_0.vss a_n1201_n7398# ota_1stage$2_0.vss ota_1stage$2_0.vss s=9120,396 d=9120,396 l=1708 w=72 x=-1198 y=-7275 nfet_03v3
-x a_1547_4245# a_1547_4405# ota_1stage$2_0.vss ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=1547 y=4245 ppolyf_u
-x a_5277_n5349# conmutator$2_1.in2 a_5437_n5851# ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=5277 y=-5348 ppolyf_u
-x ota_1stage$2_0.vout phaseUpulse_0.nand$4_0.Z ota_1stage$2_0.vss ota_1stage$2_0.vss s=16800,368 d=26000,660 l=56 w=200 x=-2018 y=-2781 pfet_03v3
-x a_4236_2878# vout conmutator$2_1.in2 ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=5108 y=2878 nfet_03v3
-x a_3555_4245# ota_1stage$2_0.vss ota_1stage$2_0.vn ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=3555 y=4245 ppolyf_u
-x phaseUpulse_0.phi_2 ota_1stage$2_0.vss phaseUpulse_0.nand$4_1.Z ota_1stage$2_0.vss s=26000,660 d=16800,368 l=56 w=200 x=223 y=-2781 pfet_03v3
-x phaseUpulse_0.nand$4_0.Z phaseUpulse_0.vneg s=205360,3640 l=1000 w=1000 x=-2062 y=-4651 cap_mim_2f0_m4m5_noshield
-x a_4752_n1530# ota_2stages_0.vout ota_1stage$2_0.vp ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=4760 y=-1789 nfet_03v3
-x ota_2stages_0.vp a_114_n134# a_n1132_571# ota_1stage$2_0.vss s=75152,1476 d=75152,1476 l=56 w=616 x=236 y=-133 nfet_03v3
-x a_n1719_n1708# phaseUpulse_0.vspike_up phaseUpulse_0.vspike ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=-1710 y=-1575 nfet_03v3
-x conmutator$2_2.cntrl a_4752_n1530# ota_1stage$2_0.vss ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=5681 y=-1219 pfet_03v3
-x a_n1822_n645# a_n1822_n645# ota_1stage$2_0.vss ota_1stage$2_0.vss s=20496,580 d=20496,580 l=56 w=168 x=-1187 y=-133 nfet_03v3
-x a_4733_n3341# a_4601_n3341# phaseUpulse_0.vdiv_0.vres ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=4733 y=-3340 ppolyf_u
-x a_n1201_n7398# a_n1201_n7398# ota_1stage$2_0.vss ota_1stage$2_0.vss s=20496,580 d=20496,580 l=56 w=168 x=-566 y=-6886 nfet_03v3
-x phaseUpulse_0.phi_2 ota_1stage$2_0.vss a_279_n3352# ota_1stage$2_0.vss s=24400,644 d=16000,360 l=56 w=200 x=223 y=-3351 nfet_03v3
-x a_2551_4245# a_2049_4405# ota_1stage$2_0.vn ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=2551 y=4245 ppolyf_u
-x conmutator$2_1.cntrl a_1381_2266# ota_1stage$2_0.vss ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=2310 y=1828 pfet_03v3
-x conmutator$2_2.cntrl a_1390_3312# ota_1stage$2_0.vss ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=1791 y=3448 pfet_03v3
-x a_1381_2266# ota_2stages_0.vout conmutator$2_1.out ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=1389 y=2398 nfet_03v3
-x phaseUpulse_0.phi_int a_2697_n1886# ota_1stage$2_0.vss ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=3105 y=-1575 nfet_03v3
-x a_4733_n5851# a_4601_n5851# a_4893_n6353# ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=4733 y=-5850 ppolyf_u
-x phaseUpulse_0.vneg phaseUpulse_0.nand$4_1.Z ota_1stage$2_0.vss ota_1stage$2_0.vss s=16800,368 d=26000,660 l=56 w=200 x=447 y=-2781 pfet_03v3
-x conmutator$2_2.cntrl a_1390_3312# ota_1stage$2_0.vss ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=1798 y=2878 nfet_03v3
-x ota_2stages_0.vn conmutator$2_1.out s=344566,5733 l=1800 w=1800 x=-1124 y=1759 cap_mim_2f0_m4m5_noshield
-x a_197_n5525# phaseUpulse_0.ota_1stage$1_0.vout ota_1stage$2_0.vss w_n183_n6039# s=21840,596 d=21840,596 l=56 w=168 x=955 y=-5752 pfet_03v3
-x a_4733_n3843# phaseUpulse_0.vdiv_0.vspike_down a_4893_n3843# ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=4733 y=-3842 ppolyf_u
-x a_1381_2266# conmutator$2_1.out conmutator$2_1.in2 ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=1912 y=1828 pfet_03v3
-x phaseUpulse_0.vdiv_0.vspike_down phaseUpulse_0.ota_1stage$1_0.vn phaseUpulse_0.vdiv_0.vspike_down ota_1stage$2_0.vss s=12200,444 d=12200,444 l=100 w=100 x=2325 y=-6370 nfet_03v3
-x phaseUpulse_0.ota_1stage$1_0.vp a_n511_n6182# a_197_n5525# ota_1stage$2_0.vss s=75152,1476 d=75152,1476 l=56 w=616 x=145 y=-6886 nfet_03v3
-x phaseUpulse_0.vneg phaseUpulse_0.phi_int ota_1stage$2_0.vss ota_1stage$2_0.vss s=16000,360 d=24400,644 l=56 w=200 x=2905 y=-3351 nfet_03v3
-x phaseUpulse_0.vneg ota_1stage$2_0.vss phaseUpulse_0.vneg ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=-528 y=-2781 pfet_03v3
-x conmutator$2_2.cntrl a_4752_n1530# ota_1stage$2_0.vss ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=5688 y=-1789 nfet_03v3
-x a_2697_n1886# phaseUpulse_0.vspike phaseUpulse_0.ota_1stage$1_0.vout ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=2700 y=-2145 pfet_03v3
-x phaseUpulse_0.phi_2 ota_1stage$2_0.vss a_2745_n2782# ota_1stage$2_0.vss s=26000,660 d=16800,368 l=56 w=200 x=2689 y=-2781 pfet_03v3
-x phaseUpulse_0.vneg a_105_n1886# ota_1stage$2_0.vss ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=513 y=-1575 nfet_03v3
-x phaseUpulse_0.phi_int a_2697_n1886# ota_1stage$2_0.vss ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=3098 y=-2145 pfet_03v3
-x conmutator$2_2.cntrl ota_2stages_0.vout vout ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=4564 y=2878 nfet_03v3
-x phaseUpulse_0.ota_1stage$1_0.vp phaseUpulse_0.ota_1stage$1_0.vp phaseUpulse_0.vneg ota_1stage$2_0.vss s=9120,396 d=9120,396 l=200 w=72 x=2269 y=-6968 nfet_03v3
-x phaseUpulse_0.phi_int phaseUpulse_0.vspike phaseUpulse_0.ota_1stage$1_0.vout ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=2721 y=-1575 nfet_03v3
-x a_4733_n6353# a_4601_n6855# a_4893_n6353# ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=4733 y=-6352 ppolyf_u
-x a_5277_n3341# phaseUpulse_0.vdiv_0.vres a_5437_n3341# ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=5277 y=-3340 ppolyf_u
-x conmutator$2_2.cntrl ota_2stages_0.vout ota_2stages_0.vn ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=1414 y=2878 nfet_03v3
-x phaseUpulse_0.phi_2 a_1401_n1886# ota_1stage$2_0.vss ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=1809 y=-1575 nfet_03v3
-x a_1401_n1886# phaseUpulse_0.vspike conmutator$2_1.in2 ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=1404 y=-2145 pfet_03v3
-x phaseUpulse_0.phi_2 ota_1stage$2_0.vss phaseUpulse_0.phi_int ota_1stage$2_0.vss s=24400,644 d=16000,360 l=56 w=200 x=2689 y=-3351 nfet_03v3
-x a_6226_n2879# a_6226_n2879# ota_1stage$2_0.vss w_5846_n3393# s=21840,596 d=21840,596 l=56 w=168 x=6984 y=-3106 pfet_03v3
-x phaseUpulse_0.phi_int ota_1stage$2_0.vss conmutator$2_2.cntrl ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=3658 y=-3351 nfet_03v3
-x phaseUpulse_0.phi_int ota_1stage$2_0.vss conmutator$2_2.cntrl ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=3651 y=-2781 pfet_03v3
-x a_4733_n4345# a_4601_n4847# phaseUpulse_0.vdiv_0.vspike_down ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=4733 y=-4344 ppolyf_u
-x ota_1stage$2_0.vn ota_2stages_0.vn ota_2stages_0.vout ota_1stage$2_0.vss s=12200,444 d=12200,444 l=100 w=100 x=273 y=3983 nfet_03v3
-x a_114_n134# ota_2stages_0.vout s=398706,6654 l=1800 w=1800 x=1736 y=-706 cap_mim_2f0_m4m5_noshield
-x conmutator$2_2.cntrl ota_1stage$2_0.vss a_4236_2878# ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=4173 y=3448 pfet_03v3
-x a_n424_1228# a_114_n134# ota_1stage$2_0.vss ota_1stage$2_0.vss s=21840,596 d=21840,596 l=56 w=168 x=334 y=1000 pfet_03v3
-x phaseUpulse_0.reward phaseUpulse_0.vspike_up phaseUpulse_0.vspike ota_1stage$2_0.vss s=26000,660 d=26000,660 l=70 w=200 x=-1731 y=-2145 pfet_03v3
-x a_5277_n5851# a_5145_n6353# a_5437_n5851# ota_1stage$2_0.vss s=21120,584 d=21120,584 l=160 w=160 x=5277 y=-5850 ppolyf_u
-x phaseUpulse_0.vdiv_0.vres phaseUpulse_0.vneg ota_1stage$2_0.vss ota_1stage$2_0.vss s=12200,444 d=12200,444 l=100 w=100 x=-613 y=-3843 nfet_03v3
-x phaseUpulse_0.vneg ota_1stage$2_0.vss phaseUpulse_0.vneg ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=-521 y=-3351 nfet_03v3
-x ota_1stage$2_0.vout a_n2187_n3352# phaseUpulse_0.nand$4_0.Z ota_1stage$2_0.vss s=16000,360 d=24400,644 l=56 w=200 x=-2026 y=-3351 nfet_03v3
-x phaseUpulse_0.phi_2 phaseUpulse_0.vspike conmutator$2_1.in2 ota_1stage$2_0.vss s=24400,644 d=24400,644 l=56 w=200 x=1425 y=-1575 nfet_03v3
-x a_7750_n4373# ota_1stage$2_0.vss a_7750_n4373# ota_1stage$2_0.vss s=20496,580 d=20496,580 l=56 w=168 x=7758 y=-4240 nfet_03v3
+x ota_1stage$2_0.vout vss a_n1388_602# vss s=24400,644 d=16000,360 l=56 w=200 x=-1443 y=602 nfet_03v3
+x a_3544_2068# v_ref vspike vdd s=26000,660 d=26000,660 l=70 w=200 x=3547 y=1808 pfet_03v3
+x v_rew a_n872_2246# vss vss s=24400,644 d=24400,644 l=56 w=200 x=64 y=2378 nfet_03v3
+x phi_fire a_8075_6021# vss vss s=24400,644 d=24400,644 l=56 w=200 x=9011 y=5761 nfet_03v3
+x phaseUpulse_0.vspike_down phaseUpulse_0.vspike_down v_th vss s=12200,444 d=12200,444 l=100 w=100 x=2375 y=5641 nfet_03v3
+x a_2248_2068# phaseUpulse_0.vrefrac vspike vdd s=26000,660 d=26000,660 l=70 w=200 x=2251 y=1808 pfet_03v3
+x vdd vdd phaseUpulse_0.vspike_up vss s=9120,396 d=9120,396 l=56 w=72 x=627 y=5604 nfet_03v3
+x phaseUpulse_0.monostable_0.not$1_3.in vdd phaseUpulse_0.vneg vdd s=26000,660 d=26000,660 l=70 w=200 x=-481 y=1172 pfet_03v3
+x vdd a_6164_1900# vdd vss s=9120,396 d=9120,396 l=1708 w=72 x=6166 y=2022 nfet_03v3
+x v_th ota_1stage$2_0.vout a_2583_6804# vss s=75152,1476 d=75152,1476 l=56 w=616 x=2527 y=6804 nfet_03v3
+x phaseUpulse_0.monostable_0.not$1_0.in vdd phaseUpulse_0.phi_2 vdd s=26000,660 d=26000,660 l=70 w=200 x=2736 y=1172 pfet_03v3
+x phaseUpulse_0.monostable_0.not$1_0.in phaseUpulse_0.monostable_0.nand$1_0.Z vdd vdd s=16800,368 d=26000,660 l=56 w=200 x=1246 y=1172 pfet_03v3
+x phaseUpulse_0.phi_2 a_2248_2068# vss vss s=24400,644 d=24400,644 l=56 w=200 x=2656 y=2378 nfet_03v3
+x a_2521_8244# ota_1stage$2_0.vout vdd vdd s=21840,596 d=21840,596 l=56 w=168 x=2531 y=8016 pfet_03v3
+x phaseUpulse_0.refractory_0.ota_1stage$1_0.vp a_2266_4884# a_2328_3444# vss s=75152,1476 d=75152,1476 l=56 w=616 x=3020 y=3444 nfet_03v3
+x a_8811_n132# vmem vin vdd s=26000,660 d=26000,660 l=70 w=200 x=8814 y=4 pfet_03v3
+x phi_fire a_8827_1078# vss vss s=24400,644 d=24400,644 l=56 w=200 x=9763 y=1210 nfet_03v3
+x phaseUpulse_0.phi_1 a_952_2068# vss vss s=24400,644 d=24400,644 l=56 w=200 x=1360 y=2378 nfet_03v3
+x a_8827_1078# conmutator$1_2.out v_ref vdd s=26000,660 d=26000,660 l=70 w=200 x=9358 y=640 pfet_03v3
+x v_rew a_n872_2246# vdd vdd s=26000,660 d=26000,660 l=70 w=200 x=57 y=1808 pfet_03v3
+x phaseUpulse_0.vneg vdd phaseUpulse_0.phi_1 vdd s=26000,660 d=26000,660 l=70 w=200 x=270 y=1172 pfet_03v3
+x a_9352_5200# vout v_ref vss s=24400,644 d=24400,644 l=56 w=200 x=10224 y=5200 nfet_03v3
+x phaseUpulse_0.vspike_down phaseUpulse_0.vspike_down phaseUpulse_0.refractory_0.ota_1stage$1_0.vn vss s=12200,444 d=12200,444 l=100 w=100 x=48 y=3753 nfet_03v3
+x phaseUpulse_0.phi_1 vdd phaseUpulse_0.monostable_0.nand$1_0.Z vdd s=26000,660 d=16800,368 l=56 w=200 x=1022 y=1172 pfet_03v3
+x a_7562_3851# vdd a_7562_3851# vdd s=21840,596 d=21840,596 l=56 w=168 x=7572 y=3623 pfet_03v3
+x vdd a_4045_6672# vdd vss s=9120,396 d=9120,396 l=1708 w=72 x=4669 y=6415 nfet_03v3
+x phaseUpulse_0.monostable_0.nand$1_0.Z phaseUpulse_0.monostable_0.not$1_1.in s=189013,3232 l=1000 w=1000 x=1077 y=-697 cap_mim_2f0_m4m5_noshield
+x phaseUpulse_0.vspike_up phaseUpulse_0.vspike_up a_1251_5604# vss s=9120,396 d=9120,396 l=56 w=72 x=1195 y=5604 nfet_03v3
+x phi_fire vmem conmutator$1_2.out vdd s=26000,660 d=26000,660 l=70 w=200 x=8814 y=640 pfet_03v3
+x phaseUpulse_0.vneg phaseUpulse_0.monostable_0.nand$1_1.Z vdd vdd s=16800,368 d=26000,660 l=56 w=200 x=-1219 y=1172 pfet_03v3
+x v_th vin vmem vss s=12200,444 d=12200,444 l=100 w=100 x=7254 y=5250 nfet_03v3
+x a_4045_6672# vss a_4045_6672# vss s=20496,580 d=20496,580 l=56 w=168 x=4053 y=6804 nfet_03v3
+x a_3790_3312# vss a_3790_3312# vss s=20496,580 d=20496,580 l=56 w=168 x=3798 y=3444 nfet_03v3
+x v_ref v_ref vss vss s=9120,396 d=9120,396 l=56 w=72 x=4227 y=5604 nfet_03v3
+x a_8190_3623# vmem s=316426,5350 l=1800 w=1800 x=9722 y=1838 cap_mim_2f0_m4m5_noshield
+x phi_fire conmutator$1_2.out v_ref vss s=24400,644 d=24400,644 l=56 w=200 x=9379 y=1210 nfet_03v3
+x phaseUpulse_0.phi_2 a_2248_2068# vdd vdd s=26000,660 d=26000,660 l=70 w=200 x=2649 y=1808 pfet_03v3
+x phaseUpulse_0.phi_int a_3544_2068# vss vss s=24400,644 d=24400,644 l=56 w=200 x=3952 y=2378 nfet_03v3
+x phi_fire vdd a_9352_5200# vdd s=26000,660 d=26000,660 l=70 w=200 x=9289 y=4630 pfet_03v3
+x vin conmutator$1_2.out s=317146,5368 l=1800 w=1800 x=6226 y=-325 cap_mim_2f0_m4m5_noshield
+x phaseUpulse_0.phi_1 phaseUpulse_0.conmutator_0.out vspike vss s=24400,644 d=24400,644 l=56 w=200 x=976 y=2378 nfet_03v3
+x a_8190_3623# vdd vmem vdd s=43680,932 d=43680,932 l=56 w=336 x=9156 y=3377 pfet_03v3
+x phaseUpulse_0.phi_1 a_952_2068# vdd vdd s=26000,660 d=26000,660 l=70 w=200 x=1353 y=1808 pfet_03v3
+x v_rew phaseUpulse_0.vspike_up phaseUpulse_0.conmutator_0.out vdd s=26000,660 d=26000,660 l=70 w=200 x=-884 y=1808 pfet_03v3
+x v_th phaseUpulse_0.monostable_0.not$1_3.in vss vss s=24400,644 d=24400,644 l=60 w=200 x=59 y=-9 nfet_03v3
+x ota_1stage$2_0.vout vdd phaseUpulse_0.monostable_0.nand$1_1.Z vdd s=26000,660 d=16800,368 l=56 w=200 x=-1443 y=1172 pfet_03v3
+x a_8827_1078# vmem conmutator$1_2.out vss s=24400,644 d=24400,644 l=56 w=200 x=8835 y=1210 nfet_03v3
+x phi_fire a_8811_n132# vdd vdd s=26000,660 d=26000,660 l=70 w=200 x=9212 y=4 pfet_03v3
+x phaseUpulse_0.phi_1 vss phaseUpulse_0.phi_int vss s=24400,644 d=16000,360 l=56 w=200 x=3488 y=602 nfet_03v3
+x phaseUpulse_0.monostable_0.not$1_3.in vss phaseUpulse_0.vneg vss s=24400,644 d=24400,644 l=56 w=200 x=-474 y=602 nfet_03v3
+x phaseUpulse_0.phi_int v_ref vspike vss s=24400,644 d=24400,644 l=56 w=200 x=3568 y=2378 nfet_03v3
+x a_2266_4884# phaseUpulse_0.vrefrac vdd vdd s=21840,596 d=21840,596 l=56 w=168 x=2276 y=4656 pfet_03v3
+x v_th phaseUpulse_0.monostable_0.not$1_1.in vss vss s=24400,644 d=24400,644 l=60 w=200 x=2525 y=-9 nfet_03v3
+x vin a_6854_3116# a_7562_3851# vss s=75152,1476 d=75152,1476 l=56 w=616 x=7576 y=2411 nfet_03v3
+x a_8075_6021# vmem ota_1stage$2_0.vp vss s=24400,644 d=24400,644 l=56 w=200 x=8083 y=5761 nfet_03v3
+x phi_fire vmem ota_1stage$2_0.vp vdd s=26000,660 d=26000,660 l=70 w=200 x=8062 y=6331 pfet_03v3
+x phaseUpulse_0.phi_2 phaseUpulse_0.vrefrac vspike vss s=24400,644 d=24400,644 l=56 w=200 x=2272 y=2378 nfet_03v3
+x phaseUpulse_0.phi_int a_3544_2068# vdd vdd s=26000,660 d=26000,660 l=70 w=200 x=3945 y=1808 pfet_03v3
+x phaseUpulse_0.vneg vss phaseUpulse_0.phi_1 vss s=24400,644 d=24400,644 l=56 w=200 x=277 y=602 nfet_03v3
+x a_2521_8244# a_2521_8244# vdd vdd s=21840,596 d=21840,596 l=56 w=168 x=3279 y=8016 pfet_03v3
+x a_6164_1900# vss a_6854_3116# vss s=20496,580 d=20496,580 l=56 w=168 x=6798 y=3116 nfet_03v3
+x a_n872_2246# phaseUpulse_0.vspike_up phaseUpulse_0.conmutator_0.out vss s=24400,644 d=24400,644 l=56 w=200 x=-863 y=2378 nfet_03v3
+x phaseUpulse_0.monostable_0.nand$1_1.Z phaseUpulse_0.monostable_0.not$1_3.in s=189013,3232 l=1000 w=1000 x=-1388 y=-697 cap_mim_2f0_m4m5_noshield
+x phi_fire vout v_ref vdd s=26000,660 d=26000,660 l=70 w=200 x=10231 y=4630 pfet_03v3
+x phaseUpulse_0.phi_int vdd phi_fire vdd s=26000,660 d=26000,660 l=70 w=200 x=4450 y=1172 pfet_03v3
+x phaseUpulse_0.phi_1 vss a_1078_602# vss s=24400,644 d=16000,360 l=56 w=200 x=1022 y=602 nfet_03v3
+x vdd a_3790_3312# vdd vss s=9120,396 d=9120,396 l=1708 w=72 x=4414 y=3055 nfet_03v3
+x a_6164_1900# vss vmem vss s=13664,468 d=13664,468 l=56 w=112 x=9160 y=2393 nfet_03v3
+x phi_fire a_8827_1078# vdd vdd s=26000,660 d=26000,660 l=70 w=200 x=9756 y=640 pfet_03v3
+x a_7562_3851# a_8190_3623# vdd vdd s=21840,596 d=21840,596 l=56 w=168 x=8320 y=3623 pfet_03v3
+x phaseUpulse_0.phi_2 a_3544_1172# phaseUpulse_0.phi_int vdd s=16800,368 d=26000,660 l=56 w=200 x=3712 y=1172 pfet_03v3
+x vspike a_8190_3623# a_6854_3116# vss s=75152,1476 d=75152,1476 l=56 w=616 x=8316 y=2411 nfet_03v3
+x phi_fire a_8075_6021# vdd vdd s=26000,660 d=26000,660 l=70 w=200 x=9004 y=6331 pfet_03v3
+x a_6164_1900# a_6164_1900# vss vss s=20496,580 d=20496,580 l=56 w=168 x=6798 y=2337 nfet_03v3
+x phi_fire a_8811_n132# vss vss s=24400,644 d=24400,644 l=56 w=200 x=9219 y=-565 nfet_03v3
+x v_rew phaseUpulse_0.conmutator_0.out vdd vss s=24400,644 d=24400,644 l=56 w=200 x=-319 y=2378 nfet_03v3
+x phaseUpulse_0.refractory_0.ota_1stage$1_0.vn phaseUpulse_0.vrefrac a_2328_3444# vss s=75152,1476 d=75152,1476 l=56 w=616 x=2272 y=3444 nfet_03v3
+x phaseUpulse_0.refractory_0.ota_1stage$1_0.vp vss phaseUpulse_0.refractory_0.ota_1stage$1_0.vp vss s=122000,2244 d=122000,2244 l=56 w=1000 x=1560 y=2950 nfet_03v3
+x phaseUpulse_0.monostable_0.not$1_1.in vdd phaseUpulse_0.monostable_0.not$1_0.in vdd s=26000,660 d=26000,660 l=70 w=200 x=1984 y=1172 pfet_03v3
+x phaseUpulse_0.phi_1 vdd a_3544_1172# vdd s=26000,660 d=16800,368 l=56 w=200 x=3488 y=1172 pfet_03v3
+x v_th v_th vss vss s=12200,444 d=12200,444 l=160 w=100 x=2987 y=5641 nfet_03v3
+x phi_fire vmem vout vss s=24400,644 d=24400,644 l=56 w=200 x=9680 y=5200 nfet_03v3
+x ota_1stage$2_0.vp a_2521_8244# a_2583_6804# vss s=75152,1476 d=75152,1476 l=56 w=616 x=3275 y=6804 nfet_03v3
+x phaseUpulse_0.vneg phaseUpulse_0.vneg phaseUpulse_0.refractory_0.ota_1stage$1_0.vp vss s=9120,396 d=9120,396 l=600 w=72 x=304 y=3006 nfet_03v3
+x vdd vdd v_ref vss s=13420,464 d=13420,464 l=56 w=110 x=3659 y=5636 nfet_03v3
+x phi_fire vmem vin vss s=24400,644 d=24400,644 l=56 w=200 x=8835 y=-565 nfet_03v3
+x phaseUpulse_0.phi_int vss phi_fire vss s=24400,644 d=24400,644 l=56 w=200 x=4457 y=602 nfet_03v3
+x a_n872_2246# phaseUpulse_0.conmutator_0.out vdd vdd s=26000,660 d=26000,660 l=70 w=200 x=-340 y=1808 pfet_03v3
+x phi_fire ota_1stage$2_0.vp vss vss s=24400,644 d=24400,644 l=56 w=200 x=8627 y=5761 nfet_03v3
+x a_8075_6021# ota_1stage$2_0.vp vss vdd s=26000,660 d=26000,660 l=70 w=200 x=8606 y=6331 pfet_03v3
+x phaseUpulse_0.vneg a_n1388_602# phaseUpulse_0.monostable_0.nand$1_1.Z vss s=16000,360 d=24400,644 l=56 w=200 x=-1227 y=602 nfet_03v3
+x phaseUpulse_0.monostable_0.not$1_0.in a_1078_602# phaseUpulse_0.monostable_0.nand$1_0.Z vss s=16000,360 d=24400,644 l=56 w=200 x=1238 y=602 nfet_03v3
+x phaseUpulse_0.refractory_0.ota_1stage$1_0.vn phaseUpulse_0.refractory_0.ota_1stage$1_0.vn phaseUpulse_0.vrefrac vss s=12200,444 d=12200,444 l=100 w=100 x=804 y=3753 nfet_03v3
+x a_4045_6672# a_2583_6804# vss vss s=20496,580 d=20496,580 l=56 w=168 x=4053 y=7509 nfet_03v3
+x a_2266_4884# a_2266_4884# vdd vdd s=21840,596 d=21840,596 l=56 w=168 x=3024 y=4656 pfet_03v3
+x a_952_2068# phaseUpulse_0.conmutator_0.out vspike vdd s=26000,660 d=26000,660 l=70 w=200 x=955 y=1808 pfet_03v3
+x a_9352_5200# vmem vout vdd s=26000,660 d=26000,660 l=70 w=200 x=9687 y=4630 pfet_03v3
+x a_3790_3312# a_2328_3444# vss vss s=20496,580 d=20496,580 l=56 w=168 x=3798 y=4149 nfet_03v3
+x phi_fire vss a_9352_5200# vss s=24400,644 d=24400,644 l=56 w=200 x=9296 y=5200 nfet_03v3
+x phaseUpulse_0.phi_2 phaseUpulse_0.phi_int vss vss s=16000,360 d=24400,644 l=56 w=200 x=3704 y=602 nfet_03v3
+x phaseUpulse_0.monostable_0.not$1_0.in vss phaseUpulse_0.phi_2 vss s=24400,644 d=24400,644 l=56 w=200 x=2743 y=602 nfet_03v3
+x phaseUpulse_0.monostable_0.not$1_1.in vss phaseUpulse_0.monostable_0.not$1_0.in vss s=24400,644 d=24400,644 l=56 w=200 x=1991 y=602 nfet_03v3
+x a_1251_5604# a_1251_5604# phaseUpulse_0.vspike_down vss s=12200,444 d=12200,444 l=100 w=100 x=1763 y=5641 nfet_03v3
+C phi_fire vmem 2.7
+C vdd phi_fire 3.9
+R v_rew 240
+= v_rew phaseUpulse_0.conmutator_0.cntrl
+= v_rew phaseUpulse_0.reward
 R vout 87
-= vout conmutator$2_0.out
-R a_5277_n7357# 350
-R a_4893_n7357# 44
-R a_4733_n7357# 350
-R a_5277_n6855# 350
-R a_4893_n6855# 43
-R a_4733_n6855# 350
-R a_5277_n6353# 350
-R a_4733_n6353# 350
-R a_4601_n6855# 75
-R phaseUpulse_0.ota_1stage$1_0.vn 182
-C phaseUpulse_0.ota_1stage$1_0.vp0 2.5
-R phaseUpulse_0.ota_1stage$1_0.vp 161
-R a_n511_n6182# 106
-R a_5277_n5851# 350
-R a_5145_n6353# 44
-R a_4893_n6353# 44
-R a_4733_n5851# 350
-R a_5437_n5851# 44
-R a_5277_n5349# 350
-R a_4733_n5349# 350
-R a_4601_n5851# 44
-R a_n1201_n7398# 153
-R a_197_n5525# 158
-R a_5277_n4847# 350
-R a_4733_n4847# 350
-R a_6212_n4241# 106
-R a_5437_n4847# 44
-R a_5277_n4345# 350
-R a_4733_n4345# 350
-R a_4601_n4847# 44
-R a_5277_n3843# 350
-R a_4893_n3843# 43
-R a_4733_n3843# 350
-C phaseUpulse_0.vdiv_0.vspike_down0 3.1
-R phaseUpulse_0.vdiv_0.vspike_down 127
-R a_7750_n4373# 153
-R a_5277_n3341# 350
-C phaseUpulse_0.vdiv_0.vres0 3.5
-R phaseUpulse_0.vdiv_0.vres 159
-R a_4733_n3341# 350
-R a_6226_n2879# 158
-R a_5437_n3341# 44
-R a_5277_n2839# 350
-R a_4733_n2839# 350
-R a_4601_n3341# 44
-R phaseUpulse_0.nand$4_1.Z 21
-R phaseUpulse_0.nand$4_0.Z 21
-C phaseUpulse_0.phi_20 5.5
-R phaseUpulse_0.phi_2 821
-= phaseUpulse_0.phi_2 phaseUpulse_0.nand$4_1.B
-= phaseUpulse_0.phi_2 phaseUpulse_0.not_3.in
-= phaseUpulse_0.phi_2 phaseUpulse_0.not_2.in
-= phaseUpulse_0.phi_2 phaseUpulse_0.not_2.out
-= phaseUpulse_0.phi_2 phaseUpulse_0.not_3.out
-= phaseUpulse_0.phi_2 phaseUpulse_0.nor$2_0.A
-= phaseUpulse_0.phi_2 phaseUpulse_0.switch$1_1.cntrl
-C ota_1stage$2_0.vout0 4.2
-R ota_1stage$2_0.vout 177
-= ota_1stage$2_0.vout phaseUpulse_0.nand$4_0.A
-= ota_1stage$2_0.vout phaseUpulse_0.vin
-C phaseUpulse_0.vneg0 9.1
-R phaseUpulse_0.vneg 995
-= phaseUpulse_0.vneg phaseUpulse_0.nand$4_0.B
-= phaseUpulse_0.vneg phaseUpulse_0.not_1.in
-= phaseUpulse_0.vneg phaseUpulse_0.not_1.out
-= phaseUpulse_0.vneg phaseUpulse_0.not_0.in
-= phaseUpulse_0.vneg phaseUpulse_0.not_0.out
-= phaseUpulse_0.vneg phaseUpulse_0.nand$4_1.A
-= phaseUpulse_0.vneg phaseUpulse_0.switch$1_0.cntrl
-= phaseUpulse_0.vneg phaseUpulse_0.phi_1
-R a_5277_n2337# 350
-R a_5145_n2839# 44
-R a_4893_n2839# 44
-R a_4733_n2337# 350
-R a_2697_n1886# 65
-C phaseUpulse_0.ota_1stage$1_0.vout0 2.4
-R phaseUpulse_0.ota_1stage$1_0.vout 133
-= phaseUpulse_0.ota_1stage$1_0.vout phaseUpulse_0.switch$1_2.in
-R a_1401_n1886# 65
-R a_105_n1886# 65
-R phaseUpulse_0.switch$1_0.in 22
-C phaseUpulse_0.vspike0 2.4
-R phaseUpulse_0.vspike 264
-= phaseUpulse_0.vspike phaseUpulse_0.conmutator$1_0.out
-= phaseUpulse_0.vspike phaseUpulse_0.switch$1_2.out
-= phaseUpulse_0.vspike phaseUpulse_0.switch$1_1.out
-= phaseUpulse_0.vspike phaseUpulse_0.switch$1_0.out
-C phaseUpulse_0.vspike_up0 4.0
-R phaseUpulse_0.vspike_up 81
-= phaseUpulse_0.vspike_up phaseUpulse_0.conmutator$1_0.in1
-= phaseUpulse_0.vspike_up phaseUpulse_0.vdiv_0.vspike_up
-C phaseUpulse_0.phi_int0 2.1
-R phaseUpulse_0.phi_int 326
-= phaseUpulse_0.phi_int phaseUpulse_0.nor$2_0.Z
-= phaseUpulse_0.phi_int phaseUpulse_0.not$1_0.in
-= phaseUpulse_0.phi_int phaseUpulse_0.switch$1_2.cntrl
-R phaseUpulse_0.reward 238
-= phaseUpulse_0.reward phaseUpulse_0.conmutator$1_0.cntrl
-R a_n1719_n1708# 134
+= vout conmutator$1_1.out
+C vin0 3.4
+R vin 162
+= vin ota_2stage_0.vn
+= vin switch$1_0.in
+C vdd0 92.4
+R vdd 34920
+= vdd phaseUpulse_0.monostable_0.nand$1_1.vdd
+= vdd phaseUpulse_0.monostable_0.not$1_3.vdd
+= vdd phaseUpulse_0.monostable_0.not$1_2.vdd
+= vdd phaseUpulse_0.monostable_0.nand$1_0.vdd
+= vdd phaseUpulse_0.monostable_0.not$1_1.vdd
+= vdd phaseUpulse_0.monostable_0.not$1_0.vdd
+= vdd phaseUpulse_0.monostable_0.vdd
+= vdd phaseUpulse_0.refractory_0.ota_1stage$1_0.vdd
+= vdd phaseUpulse_0.refractory_0.vdd
+= vdd phaseUpulse_0.nvdiv_0.vdd
+= vdd phaseUpulse_0.switch_2.vdd
+= vdd phaseUpulse_0.switch_1.vdd
+= vdd phaseUpulse_0.switch_0.vdd
+= vdd phaseUpulse_0.conmutator_0.vdd
+= vdd phaseUpulse_0.conmutator_0.in2
+= vdd phaseUpulse_0.nor_0.vdd
+= vdd phaseUpulse_0.not$2_0.vdd
+= vdd phaseUpulse_0.vdd
+= vdd conmutator$1_1.vdd
+= vdd conmutator$1_0.vdd
+= vdd ota_1stage$2_0.vdd
+= vdd ota_2stage_0.vdd
+= vdd conmutator$1_2.vdd
+= vdd switch$1_0.vdd
+R vss 6815
+= vss phaseUpulse_0.monostable_0.nand$1_1.vss
+= vss phaseUpulse_0.monostable_0.not$1_3.vss
+= vss phaseUpulse_0.monostable_0.not$1_2.vss
+= vss phaseUpulse_0.monostable_0.nand$1_0.vss
+= vss phaseUpulse_0.monostable_0.not$1_1.vss
+= vss phaseUpulse_0.monostable_0.not$1_0.vss
+= vss phaseUpulse_0.monostable_0.vss
+= vss phaseUpulse_0.refractory_0.ota_1stage$1_0.vss
+= vss phaseUpulse_0.refractory_0.vss
+= vss phaseUpulse_0.nvdiv_0.vss
+= vss phaseUpulse_0.switch_2.vss
+= vss phaseUpulse_0.switch_1.vss
+= vss phaseUpulse_0.switch_0.vss
+= vss phaseUpulse_0.conmutator_0.vss
+= vss phaseUpulse_0.nor_0.vss
+= vss phaseUpulse_0.not$2_0.vss
+= vss phaseUpulse_0.vss
+= vss conmutator$1_1.vss
+= vss conmutator$1_0.vss
+= vss conmutator$1_0.in2
+= vss ota_1stage$2_0.vss
+= vss ota_2stage_0.vss
+= vss conmutator$1_2.vss
+= vss switch$1_0.vss
+R a_8811_n132# 65
+R conmutator$1_2.out 89
+R phaseUpulse_0.monostable_0.nand$1_0.Z 21
+R phaseUpulse_0.monostable_0.nand$1_1.Z 21
+R a_8827_1078# 134
+R phaseUpulse_0.monostable_0.not$1_1.in 123
+R phaseUpulse_0.monostable_0.not$1_0.in 271
+= phaseUpulse_0.monostable_0.not$1_0.in phaseUpulse_0.monostable_0.nand$1_0.A
+= phaseUpulse_0.monostable_0.not$1_0.in phaseUpulse_0.monostable_0.not$1_1.out
+R phaseUpulse_0.monostable_0.not$1_3.in 123
+R a_6854_3116# 107
+C a_6164_1900#0 2.7
+R a_6164_1900# 213
+C a_8190_3623#0 2.4
+R a_8190_3623# 128
+R a_7562_3851# 159
+R a_3544_2068# 65
+R a_2248_2068# 65
+R a_952_2068# 65
+C vspike0 2.6
+R vspike 260
+= vspike phaseUpulse_0.switch_2.in
+= vspike phaseUpulse_0.switch_1.in
+= vspike phaseUpulse_0.switch_0.in
+= vspike phaseUpulse_0.vspike
+= vspike ota_2stage_0.vp
+R phaseUpulse_0.conmutator_0.out 146
+= phaseUpulse_0.conmutator_0.out phaseUpulse_0.switch_0.out
+R phaseUpulse_0.phi_int 327
+= phaseUpulse_0.phi_int phaseUpulse_0.switch_2.cntrl
+= phaseUpulse_0.phi_int phaseUpulse_0.nor_0.Z
+= phaseUpulse_0.phi_int phaseUpulse_0.not$2_0.in
+R phaseUpulse_0.phi_2 341
+= phaseUpulse_0.phi_2 phaseUpulse_0.monostable_0.not$1_0.out
+= phaseUpulse_0.phi_2 phaseUpulse_0.monostable_0.phi_2
+= phaseUpulse_0.phi_2 phaseUpulse_0.switch_1.cntrl
+= phaseUpulse_0.phi_2 phaseUpulse_0.nor_0.B
+R phaseUpulse_0.phi_1 482
+= phaseUpulse_0.phi_1 phaseUpulse_0.monostable_0.not$1_2.out
+= phaseUpulse_0.phi_1 phaseUpulse_0.monostable_0.nand$1_0.B
+= phaseUpulse_0.phi_1 phaseUpulse_0.monostable_0.phi_1
+= phaseUpulse_0.phi_1 phaseUpulse_0.switch_0.cntrl
+= phaseUpulse_0.phi_1 phaseUpulse_0.nor_0.A
+R a_n872_2246# 134
+R a_2328_3444# 106
+C phaseUpulse_0.vneg0 3.1
+R phaseUpulse_0.vneg 253
+= phaseUpulse_0.vneg phaseUpulse_0.monostable_0.nand$1_1.A
+= phaseUpulse_0.vneg phaseUpulse_0.monostable_0.not$1_3.out
+= phaseUpulse_0.vneg phaseUpulse_0.monostable_0.not$1_2.in
+= phaseUpulse_0.vneg phaseUpulse_0.monostable_0.vneg
+= phaseUpulse_0.vneg phaseUpulse_0.refractory_0.vneg
+C phaseUpulse_0.refractory_0.ota_1stage$1_0.vp0 2.8
+R phaseUpulse_0.refractory_0.ota_1stage$1_0.vp 354
+R phaseUpulse_0.refractory_0.ota_1stage$1_0.vn 183
+R a_3790_3312# 154
+R phaseUpulse_0.vrefrac 130
+= phaseUpulse_0.vrefrac phaseUpulse_0.refractory_0.ota_1stage$1_0.vout
+= phaseUpulse_0.vrefrac phaseUpulse_0.refractory_0.vrefrac
+= phaseUpulse_0.vrefrac phaseUpulse_0.switch_1.out
+R a_2266_4884# 159
+R a_9352_5200# 134
+C v_ref0 4.7
+R v_ref 246
+= v_ref phaseUpulse_0.nvdiv_0.vref
+= v_ref phaseUpulse_0.switch_2.out
+= v_ref phaseUpulse_0.vref
+= v_ref conmutator$1_1.in1
+= v_ref conmutator$1_2.in2
+C phaseUpulse_0.vspike_down0 2.3
+R phaseUpulse_0.vspike_down 132
+= phaseUpulse_0.vspike_down phaseUpulse_0.refractory_0.vspike_down
+= phaseUpulse_0.vspike_down phaseUpulse_0.nvdiv_0.vspike_down
+R a_1251_5604# 61
+C phaseUpulse_0.vspike_up0 2.1
+R phaseUpulse_0.vspike_up 118
+= phaseUpulse_0.vspike_up phaseUpulse_0.nvdiv_0.vspike_up
+= phaseUpulse_0.vspike_up phaseUpulse_0.conmutator_0.in1
+C vmem0 3.8
+R vmem 299
+= vmem conmutator$1_1.in2
+= vmem conmutator$1_0.in1
+= vmem ota_2stage_0.vout
+= vmem conmutator$1_2.in1
+= vmem switch$1_0.out
+R a_8075_6021# 134
+C phi_fire0 5.7
+R phi_fire 980
+= phi_fire phaseUpulse_0.not$2_0.out
+= phi_fire phaseUpulse_0.phi_fire
+= phi_fire conmutator$1_1.cntrl
+= phi_fire conmutator$1_0.cntrl
+= phi_fire conmutator$1_2.cntrl
+= phi_fire switch$1_0.cntrl
 C ota_1stage$2_0.vp0 2.5
 R ota_1stage$2_0.vp 199
-= ota_1stage$2_0.vp conmutator$2_2.out
-R a_4752_n1530# 134
-R ota_2stages_0.vp 107
-C a_n1132_571#0 2.3
-R a_n1132_571# 150
-C a_114_n134#0 3.7
-R a_114_n134# 127
-R a_n1822_n645# 153
-R a_n424_1228# 158
-C conmutator$2_1.out0 2.1
-R conmutator$2_1.out 88
-R conmutator$2_1.cntrl 238
-R a_1381_2266# 134
-C conmutator$2_1.in20 5.8
-R conmutator$2_1.in2 266
-= conmutator$2_1.in2 phaseUpulse_0.switch$1_1.in
-= conmutator$2_1.in2 phaseUpulse_0.vdiv_0.vref
-= conmutator$2_1.in2 conmutator$2_0.in1
-R a_4236_2878# 134
-C conmutator$2_2.cntrl0 7.4
-R conmutator$2_2.cntrl 718
-= conmutator$2_2.cntrl phaseUpulse_0.not$1_0.out
-= conmutator$2_2.cntrl conmutator$2_0.cntrl
-= conmutator$2_2.cntrl switch$2_0.cntrl
-R a_1390_3312# 65
-C ota_2stages_0.vout0 6.2
-R ota_2stages_0.vout 300
-= ota_2stages_0.vout conmutator$2_0.in2
-= ota_2stages_0.vout switch$2_0.out
-= ota_2stages_0.vout conmutator$2_1.in1
-= ota_2stages_0.vout conmutator$2_2.in1
-C ota_2stages_0.vn0 3.6
-R ota_2stages_0.vn 159
-= ota_2stages_0.vn switch$2_0.in
-R a_3555_4245# 350
-R a_3053_4245# 350
-R a_2551_4245# 350
-R a_2049_4245# 350
-R a_2049_4405# 44
-R a_1547_4245# 350
-C ota_1stage$2_0.vn0 6.7
-R ota_1stage$2_0.vn 246
-C w_n183_n6039#0 4.6
-R w_n183_n6039# 1941
-C w_5846_n3393#0 4.6
-R w_5846_n3393# 1941
-R ota_1stage$2_0.vss 40469
-= ota_1stage$2_0.vss phaseUpulse_0.not_3.vdd
-= ota_1stage$2_0.vss phaseUpulse_0.not_3.vss
-= ota_1stage$2_0.vss phaseUpulse_0.not_2.vdd
-= ota_1stage$2_0.vss phaseUpulse_0.not_2.vss
-= ota_1stage$2_0.vss phaseUpulse_0.nor$2_0.vdd
-= ota_1stage$2_0.vss phaseUpulse_0.nor$2_0.vss
-= ota_1stage$2_0.vss phaseUpulse_0.nand$4_1.vdd
-= ota_1stage$2_0.vss phaseUpulse_0.nand$4_1.vss
-= ota_1stage$2_0.vss phaseUpulse_0.not$1_0.vdd
-= ota_1stage$2_0.vss phaseUpulse_0.not$1_0.vss
-= ota_1stage$2_0.vss phaseUpulse_0.conmutator$1_0.in2
-= ota_1stage$2_0.vss phaseUpulse_0.conmutator$1_0.vss
-= ota_1stage$2_0.vss phaseUpulse_0.conmutator$1_0.vdd
-= ota_1stage$2_0.vss phaseUpulse_0.switch$1_2.vss
-= ota_1stage$2_0.vss phaseUpulse_0.switch$1_2.vdd
-= ota_1stage$2_0.vss phaseUpulse_0.switch$1_1.vss
-= ota_1stage$2_0.vss phaseUpulse_0.switch$1_1.vdd
-= ota_1stage$2_0.vss phaseUpulse_0.switch$1_0.vss
-= ota_1stage$2_0.vss phaseUpulse_0.switch$1_0.vdd
-= ota_1stage$2_0.vss phaseUpulse_0.nand$4_0.vdd
-= ota_1stage$2_0.vss phaseUpulse_0.nand$4_0.vss
-= ota_1stage$2_0.vss phaseUpulse_0.not_1.vdd
-= ota_1stage$2_0.vss phaseUpulse_0.not_1.vss
-= ota_1stage$2_0.vss phaseUpulse_0.not_0.vdd
-= ota_1stage$2_0.vss phaseUpulse_0.not_0.vss
-= ota_1stage$2_0.vss phaseUpulse_0.ota_1stage$1_0.vdd
-= ota_1stage$2_0.vss phaseUpulse_0.ota_1stage$1_0.vss
-= ota_1stage$2_0.vss phaseUpulse_0.vdiv_0.vdd
-= ota_1stage$2_0.vss phaseUpulse_0.vdiv_0.vss
-= ota_1stage$2_0.vss conmutator$2_0.vdd
-= ota_1stage$2_0.vss conmutator$2_0.vss
-= ota_1stage$2_0.vss switch$2_0.vss
-= ota_1stage$2_0.vss switch$2_0.vdd
-= ota_1stage$2_0.vss conmutator$2_1.vdd
-= ota_1stage$2_0.vss conmutator$2_1.vss
-= ota_1stage$2_0.vss conmutator$2_2.in2
-= ota_1stage$2_0.vss conmutator$2_2.vdd
-= ota_1stage$2_0.vss conmutator$2_2.vss
-= ota_1stage$2_0.vss ota_2stages_0.vdd
-= ota_1stage$2_0.vss ota_2stages_0.vss
-= ota_1stage$2_0.vss ota_1stage$2_0.vdd
+= ota_1stage$2_0.vp conmutator$1_0.out
+R a_2583_6804# 106
+C v_th0 6.7
+R v_th 347
+= v_th phaseUpulse_0.monostable_0.vres
+= v_th phaseUpulse_0.nvdiv_0.vres
+= v_th phaseUpulse_0.vres
+= v_th ota_1stage$2_0.vn
+R a_4045_6672# 154
+C ota_1stage$2_0.vout0 3.8
+R ota_1stage$2_0.vout 177
+= ota_1stage$2_0.vout phaseUpulse_0.monostable_0.nand$1_1.B
+= ota_1stage$2_0.vout phaseUpulse_0.monostable_0.vin
+= ota_1stage$2_0.vout phaseUpulse_0.vin
+R a_2521_8244# 159
