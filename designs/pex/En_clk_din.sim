@@ -1,0 +1,59 @@
+| units: 0.5 tech: gf180mcuD format: MIT
+x Enable vdd gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd s=32208,908 d=32208,908 l=100 w=366 x=550 y=303 pfet_05v0
+x d_in a_1098_n69# vss vss s=4224,196 d=15576,412 l=120 w=132 x=1162 y=-68 nfet_05v0
+x a_n454_n69# vdd clock vdd s=20216,514 d=32208,908 l=100 w=366 x=86 y=303 pfet_05v0
+x clk a_n454_n69# vdd vdd s=8528,268 d=20216,514 l=100 w=164 x=-161 y=505 pfet_05v0
+x gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1 vdd a_n454_n69# vdd s=14432,504 d=8528,268 l=100 w=164 x=-365 y=505 pfet_05v0
+x clk a_n246_n69# vss vss s=4224,196 d=15576,412 l=120 w=132 x=-181 y=-68 nfet_05v0
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN a_890_n69# a_1098_n69# vss s=11616,440 d=4224,196 l=120 w=132 x=978 y=-68 nfet_05v0
+x a_890_n69# vss data_in vss s=15576,412 d=23232,704 l=120 w=264 x=1430 y=-200 nfet_05v0
+x a_n454_n69# vss clock vss s=15576,412 d=23232,704 l=120 w=264 x=86 y=-200 nfet_05v0
+x Enable vss gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vss s=23232,704 d=23232,704 l=120 w=264 x=530 y=-200 nfet_05v0
+x gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd a_890_n69# vdd s=14432,504 d=8528,268 l=100 w=164 x=978 y=505 pfet_05v0
+x Enable vss gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1 vss s=23232,704 d=23232,704 l=120 w=264 x=-813 y=-200 nfet_05v0
+x a_890_n69# vdd data_in vdd s=20216,514 d=32208,908 l=100 w=366 x=1430 y=303 pfet_05v0
+x d_in a_890_n69# vdd vdd s=8528,268 d=20216,514 l=100 w=164 x=1182 y=505 pfet_05v0
+x Enable vdd gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1 vdd s=32208,908 d=32208,908 l=100 w=366 x=-793 y=303 pfet_05v0
+x gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1 a_n454_n69# a_n246_n69# vss s=11616,440 d=4224,196 l=120 w=132 x=-365 y=-68 nfet_05v0
+R data_in 49
+= data_in gf180mcu_fd_sc_mcu9t5v0__and2_1_0.Z
+R clock 51
+= clock gf180mcu_fd_sc_mcu9t5v0__and2_1_1.Z
+R d_in 63
+= d_in gf180mcu_fd_sc_mcu9t5v0__and2_1_0.A2
+R clk 61
+= clk gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A2
+R Enable 153
+= Enable gf180mcu_fd_sc_mcu9t5v0__inv_1_0.I
+= Enable gf180mcu_fd_sc_mcu9t5v0__inv_1_1.I
+C vdd0 7.3
+R vdd 5454
+= vdd gf180mcu_fd_sc_mcu9t5v0__filltie_0.VDD
+= vdd gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VNW
+= vdd gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VDD
+= vdd gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW
+= vdd gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VDD
+= vdd gf180mcu_fd_sc_mcu9t5v0__inv_1_1.VNW
+= vdd gf180mcu_fd_sc_mcu9t5v0__inv_1_1.VDD
+= vdd gf180mcu_fd_sc_mcu9t5v0__filltie_1.VDD
+= vdd gf180mcu_fd_sc_mcu9t5v0__and2_1_1.VNW
+= vdd gf180mcu_fd_sc_mcu9t5v0__and2_1_1.VDD
+R a_1098_n69# 13
+R a_n246_n69# 13
+R a_890_n69# 90
+R gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 109
+= gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN gf180mcu_fd_sc_mcu9t5v0__and2_1_0.A1
+R a_n454_n69# 90
+R gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1 109
+= gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1 gf180mcu_fd_sc_mcu9t5v0__inv_1_1.ZN
+R vss 196
+= vss gf180mcu_fd_sc_mcu9t5v0__filltie_0.VSS
+= vss gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW
+= vss gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VSS
+= vss gf180mcu_fd_sc_mcu9t5v0__inv_1_1.VPW
+= vss gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VSS
+= vss gf180mcu_fd_sc_mcu9t5v0__and2_1_1.VPW
+= vss gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW
+= vss gf180mcu_fd_sc_mcu9t5v0__inv_1_1.VSS
+= vss gf180mcu_fd_sc_mcu9t5v0__filltie_1.VSS
+= vss gf180mcu_fd_sc_mcu9t5v0__and2_1_1.VSS

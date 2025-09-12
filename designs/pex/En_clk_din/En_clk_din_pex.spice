@@ -1,0 +1,170 @@
+* NGSPICE file created from En_clk_din.ext - technology: gf180mcuD
+.subckt En_clk_din_pex VDD VSS clk clock enable D_in Data_in
+X0 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN Enable.t0 vdd.t13 vdd.t12 pfet_05v0 ad=0.8052p pd=4.54u as=0.8052p ps=4.54u w=1.83u l=0.5u
+X1 vss.t4 d_in.t0 a_1098_n69# vss.t3 nfet_05v0 ad=0.3894p pd=2.06u as=0.1056p ps=0.98u w=0.66u l=0.6u
+X2 clock.t1 a_n454_n69# vdd.t5 vdd.t4 pfet_05v0 ad=0.8052p pd=4.54u as=0.5054p ps=2.57u w=1.83u l=0.5u
+X3 vdd.t15 clk.t0 a_n454_n69# vdd.t14 pfet_05v0 ad=0.5054p pd=2.57u as=0.2132p ps=1.34u w=0.82u l=0.5u
+X4 a_n454_n69# gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1 vdd.t7 vdd.t6 pfet_05v0 ad=0.2132p pd=1.34u as=0.3608p ps=2.52u w=0.82u l=0.5u
+X5 vss.t9 clk.t1 a_n246_n69# vss.t8 nfet_05v0 ad=0.3894p pd=2.06u as=0.1056p ps=0.98u w=0.66u l=0.6u
+X6 a_1098_n69# gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN a_890_n69# vss.t0 nfet_05v0 ad=0.1056p pd=0.98u as=0.2904p ps=2.2u w=0.66u l=0.6u
+X7 data_in.t0 a_890_n69# vss.t2 vss.t1 nfet_05v0 ad=0.5808p pd=3.52u as=0.3894p ps=2.06u w=1.32u l=0.6u
+X8 clock.t0 a_n454_n69# vss.t6 vss.t5 nfet_05v0 ad=0.5808p pd=3.52u as=0.3894p ps=2.06u w=1.32u l=0.6u
+X9 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN Enable.t1 vss.t13 vss.t12 nfet_05v0 ad=0.5808p pd=3.52u as=0.5808p ps=3.52u w=1.32u l=0.6u
+X10 a_890_n69# gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd.t1 vdd.t0 pfet_05v0 ad=0.2132p pd=1.34u as=0.3608p ps=2.52u w=0.82u l=0.5u
+X11 gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1 Enable.t2 vss.t11 vss.t10 nfet_05v0 ad=0.5808p pd=3.52u as=0.5808p ps=3.52u w=1.32u l=0.6u
+X12 data_in.t1 a_890_n69# vdd.t3 vdd.t2 pfet_05v0 ad=0.8052p pd=4.54u as=0.5054p ps=2.57u w=1.83u l=0.5u
+X13 vdd.t9 d_in.t1 a_890_n69# vdd.t8 pfet_05v0 ad=0.5054p pd=2.57u as=0.2132p ps=1.34u w=0.82u l=0.5u
+X14 gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1 Enable.t3 vdd.t11 vdd.t10 pfet_05v0 ad=0.8052p pd=4.54u as=0.8052p ps=4.54u w=1.83u l=0.5u
+X15 a_n246_n69# gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1 a_n454_n69# vss.t7 nfet_05v0 ad=0.1056p pd=0.98u as=0.2904p ps=2.2u w=0.66u l=0.6u
+R0 Enable.n1 Enable.t3 23.3605
+R1 Enable.n0 Enable.t0 23.3605
+R2 Enable.n1 Enable.t2 15.2818
+R3 Enable.n0 Enable.t1 15.2818
+R4 Enable.n4 Enable.n3 5.7821
+R5 Enable.n3 Enable.n2 4.5725
+R6 Enable.n2 Enable.n1 4.0077
+R7 Enable.n4 Enable.n0 4.0077
+R8 Enable.n3 Enable 0.4784
+R9 Enable.n2 Enable 0.0211557
+R10 Enable Enable.n4 0.0211557
+R11 vdd.n2 vdd.t2 594.523
+R12 vdd vdd.t4 528.861
+R13 vdd vdd.t12 503.901
+R14 vdd vdd.t10 503.901
+R15 vdd.t2 vdd.t8 386.896
+R16 vdd.t4 vdd.t14 386.896
+R17 vdd.t8 vdd.t0 318.253
+R18 vdd.t14 vdd.t6 318.253
+R19 vdd vdd.n8 293.171
+R20 vdd.t12 vdd 195.008
+R21 vdd.t10 vdd 195.008
+R22 vdd.t0 vdd 163.808
+R23 vdd vdd.t6 163.808
+R24 vdd.n6 vdd.t7 7.44936
+R25 vdd.n3 vdd.t1 7.44936
+R26 vdd.n5 vdd.n0 5.22985
+R27 vdd.n2 vdd.n1 5.22985
+R28 vdd.n7 vdd.t11 3.84351
+R29 vdd.n4 vdd.t13 3.84351
+R30 vdd.n0 vdd.t5 3.15577
+R31 vdd.n1 vdd.t3 3.15577
+R32 vdd.n0 vdd.t15 2.22001
+R33 vdd.n1 vdd.t9 2.22001
+R34 vdd.n5 vdd.n4 0.2545
+R35 vdd.n4 vdd.n3 0.2145
+R36 vdd.n7 vdd.n6 0.2145
+R37 vdd.n3 vdd.n2 0.2045
+R38 vdd.n6 vdd.n5 0.2045
+R39 vdd.n8 vdd.n7 0.1065
+R40 vdd.n8 vdd 0.037
+R41 d_in.n0 d_in.t1 25.2585
+R42 d_in.n0 d_in.t0 16.7418
+R43 d_in.n1 d_in 7.10646
+R44 d_in.n1 d_in.n0 4.0005
+R45 d_in d_in.n1 0.00405932
+R46 vss.n8 vss.n0 2.72398e+06
+R47 vss.n0 vss.t1 2202.58
+R48 vss vss.t12 1987.11
+R49 vss vss.t10 1987.11
+R50 vss vss.t5 1963.17
+R51 vss.t1 vss.t3 1604.05
+R52 vss.t5 vss.t8 1604.05
+R53 vss.t3 vss.t0 1101.29
+R54 vss.t8 vss.t7 1101.29
+R55 vss vss.n8 1101.29
+R56 vss.t0 vss 694.292
+R57 vss.t12 vss 694.292
+R58 vss vss.t7 694.292
+R59 vss.t10 vss 694.292
+R60 vss.n2 vss.t4 4.96414
+R61 vss.n1 vss.t9 4.96414
+R62 vss.n4 vss.t13 4.63989
+R63 vss.n6 vss.t11 4.63989
+R64 vss.n3 vss.n0 3.8674
+R65 vss.n3 vss.n2 3.65362
+R66 vss.n5 vss.n1 3.65362
+R67 vss.n8 vss.n7 3.6294
+R68 vss.n2 vss.t2 1.0505
+R69 vss.n1 vss.t6 1.0505
+R70 vss.n4 vss.n3 0.4505
+R71 vss.n6 vss.n5 0.4505
+R72 vss.n5 vss.n4 0.2225
+R73 vss.n7 vss.n6 0.0965
+R74 vss.n7 vss 0.0385
+R75 clock clock.t1 10.7533
+R76 clock.n0 clock 6.1484
+R77 clock.n0 clock.t0 4.39141
+R78 clock clock.n0 0.324122
+R79 clk.n0 clk.t0 25.2585
+R80 clk.n0 clk.t1 16.7418
+R81 clk.n1 clk 5.77446
+R82 clk.n1 clk.n0 4.0005
+R83 clk clk.n1 0.00405932
+R84 data_in data_in.t1 10.7533
+R85 data_in.n0 data_in 4.92822
+R86 data_in.n0 data_in.t0 4.63467
+R87 data_in data_in.n0 0.0481087
+C0 a_890_n69# d_in 0.46703f
+C1 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN d_in 0.18303f
+C2 Enable gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1 0.39086f
+C3 clk clock 0.00671f
+C4 a_n454_n69# d_in 0.07009f
+C5 clk vdd 0.41739f
+C6 a_n246_n69# clock 0
+C7 clock gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1 0.0043f
+C8 Enable d_in 0.11048f
+C9 vdd gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1 0.53987f
+C10 data_in d_in 0.01214f
+C11 d_in clock 0.1064f
+C12 vdd d_in 0.85884f
+C13 a_890_n69# gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 0.13311f
+C14 clk gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1 0.20632f
+C15 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN a_n454_n69# 0
+C16 a_1098_n69# d_in 0
+C17 a_n246_n69# gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1 0
+C18 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN Enable 0.30115f
+C19 a_890_n69# Enable 0.00105f
+C20 clk d_in 0.47886f
+C21 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN data_in 0.00468f
+C22 a_890_n69# data_in 0.36752f
+C23 a_n454_n69# Enable 0.07566f
+C24 a_890_n69# clock 0.07566f
+C25 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN clock 0.08457f
+C26 a_n454_n69# data_in 0
+C27 d_in gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1 0.02891f
+C28 a_890_n69# vdd 0.47331f
+C29 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd 0.51686f
+C30 a_n454_n69# clock 0.36385f
+C31 data_in Enable 0.00466f
+C32 a_n454_n69# vdd 0.46895f
+C33 Enable clock 0.20556f
+C34 a_890_n69# a_1098_n69# 0.00608f
+C35 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN a_1098_n69# 0
+C36 data_in clock 0.18651f
+C37 Enable vdd 0.50566f
+C38 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN clk 0.00388f
+C39 a_890_n69# clk 0
+C40 data_in vdd 0.19428f
+C41 a_n454_n69# clk 0.41838f
+C42 vdd clock 0.09027f
+C43 a_1098_n69# data_in 0
+C44 clk Enable 0.54336f
+C45 a_n246_n69# a_n454_n69# 0.00608f
+C46 a_n454_n69# gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1 0.13333f
+C47 clk data_in 0
+C48 a_1098_n69# clock 0.0021f
+C49 a_n246_n69# Enable 0
+C50 data_in vss 0.27422f
+C51 clock vss 0.79106f
+C52 d_in vss 0.71357f
+C53 clk vss 0.31395f
+C54 Enable vss 1.2532f
+C55 vdd vss 7.25606f
+C56 a_1098_n69# vss 0.00222f
+C57 a_n246_n69# vss 0.00222f
+C58 a_890_n69# vss 0.56665f
+C59 gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vss 0.50206f
+C60 a_n454_n69# vss 0.5543f
+C61 gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1 vss 0.50606f
+.ends
+

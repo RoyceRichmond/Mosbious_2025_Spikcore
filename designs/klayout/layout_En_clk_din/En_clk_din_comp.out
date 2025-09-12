@@ -1,0 +1,123 @@
+
+Circuit 1 cell pfet_05v0 and Circuit 2 cell pfet_06v0 are black boxes.
+Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_06v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_05v0                       |Circuit 2: pfet_06v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_05v0 and pfet_06v0 are equivalent.
+
+Circuit 1 cell nfet_05v0 and Circuit 2 cell nfet_06v0 are black boxes.
+Warning: Equate pins:  cell nfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_06v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_05v0                       |Circuit 2: nfet_06v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_05v0 and nfet_06v0 are equivalent.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__and2_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__and2_1 
+-------------------------------------------|-------------------------------------------
+pfet_05v0 (3)                              |pfet_06v0 (3)                              
+nfet_05v0 (3)                              |nfet_06v0 (3)                              
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__and2_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__and2_1 
+-------------------------------------------|-------------------------------------------
+A1                                         |A1                                         
+VSS                                        |VSS                                        
+A2                                         |A2                                         
+Z                                          |Z                                          
+VPW                                        |VPW                                        
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__and2_1 and gf180mcu_fd_sc_mcu9t5v0__and2_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
+-------------------------------------------|-------------------------------------------
+pfet_05v0 (1)                              |pfet_06v0 (1)                              
+nfet_05v0 (1)                              |nfet_06v0 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VPW                                        |VPW                                        
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+ZN                                         |ZN                                         
+I                                          |I                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
+Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__inv_2 in circuit En_clk_din (1)(2 instances)
+
+Flattening instances of gf180mcu_fd_sc_mcu9t5v0__inv_1 in cell En_clk_din (0) makes a better match
+Making another compare attempt.
+
+Class En_clk_din (1):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: En_clk_din                      |Circuit 2: En_clk_din                      
+-------------------------------------------|-------------------------------------------
+gf180mcu_fd_sc_mcu9t5v0__and2_1 (2)        |gf180mcu_fd_sc_mcu9t5v0__and2_1 (2)        
+pfet_05v0 (2)                              |pfet_06v0 (4->2)                           
+nfet_05v0 (2)                              |nfet_06v0 (4->2)                           
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely with property errors.
+gf180mcu_fd_sc_mcu9t5v0__inv_1_1/nfet_05v0:1 vs. gf180mcu_fd_sc_mcu9t5v0__inv_2:3/nfet_06v0:_i_0_0:
+ w circuit1: 1.32e-06   circuit2: 2.64e-06   (delta=66.7%, cutoff=1%)
+gf180mcu_fd_sc_mcu9t5v0__inv_1_0/nfet_05v0:1 vs. gf180mcu_fd_sc_mcu9t5v0__inv_2:15/nfet_06v0:_i_0_0:
+ w circuit1: 1.32e-06   circuit2: 2.64e-06   (delta=66.7%, cutoff=1%)
+gf180mcu_fd_sc_mcu9t5v0__inv_1_1/pfet_05v0:0 vs. gf180mcu_fd_sc_mcu9t5v0__inv_2:3/pfet_06v0:_i_1_0:
+ w circuit1: 1.83e-06   circuit2: 3.66e-06   (delta=66.7%, cutoff=1%)
+gf180mcu_fd_sc_mcu9t5v0__inv_1_0/pfet_05v0:0 vs. gf180mcu_fd_sc_mcu9t5v0__inv_2:15/pfet_06v0:_i_1_0:
+ w circuit1: 1.83e-06   circuit2: 3.66e-06   (delta=66.7%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: En_clk_din                      |Circuit 2: En_clk_din                      
+-------------------------------------------|-------------------------------------------
+Enable                                     |enable                                     
+vdd                                        |VDD                                        
+vss                                        |VSS                                        
+d_in                                       |D_in                                       
+clk                                        |clk                                        
+data_in                                    |Data_in                                    
+clock                                      |clock                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes En_clk_din and En_clk_din are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ En_clk_din

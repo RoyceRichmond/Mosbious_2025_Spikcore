@@ -1,0 +1,128 @@
+timestamp 0
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+parameters nfet_10v0_asym l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters nfet_06v0_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters nfet_05v0 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters nfet_06v0 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_10v0_asym l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_06v0_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters pfet_05v0 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_06v0 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "data_in" 6 2086 185 2086 185 m2
+port "clock" 7 2062 -65 2062 -65 m2
+port "d_in" 5 -1372 554 -1372 554 m2
+port "clk" 4 -1375 353 -1375 353 m2
+port "Enable" 3 -1377 182 -1377 182 m2
+port "vdd" 1 -1131 794 -1131 794 m1
+port "vss" 2 -1134 -326 -1134 -326 m1
+node "a_1098_n69#" 13 2.21878 1098 -69 mvndif 0 0 0 0 0 0 0 0 8448 392 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n246_n69#" 13 2.21878 -246 -69 mvndif 0 0 0 0 0 0 0 0 8448 392 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "data_in" 49 274.215 2086 185 m2 0 0 0 0 0 0 0 0 23232 704 32208 908 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42292 1336 61004 1410 0 0 0 0 0 0
+equiv "data_in" "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.Z"
+node "clock" 51 791.056 2062 -65 m2 0 0 0 0 0 0 0 0 23232 704 32208 908 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42292 1336 194800 4096 0 0 0 0 0 0
+equiv "clock" "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.Z"
+node "a_890_n69#" 90 566.646 890 -69 mvndif 0 0 0 0 0 0 0 0 11616 440 17056 536 102840 2156 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 67420 3008 0 0 0 0 0 0 0 0
+node "d_in" 63 713.573 -1372 554 m2 0 0 0 0 0 0 0 0 0 0 0 0 87000 1892 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34824 878 292600 6052 0 0 0 0 0 0
+equiv "d_in" "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.A2"
+node "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 109 502.063 650 -201 mvndif 0 0 0 0 0 0 0 0 23232 704 32208 908 87000 1892 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78218 2348 0 0 0 0 0 0 0 0
+equiv "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.A1"
+node "a_n454_n69#" 90 554.304 -454 -69 mvndif 0 0 0 0 0 0 0 0 11616 440 17056 536 102840 2156 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 67420 3008 0 0 0 0 0 0 0 0
+node "clk" 61 313.953 -1375 353 m2 0 0 0 0 0 0 0 0 0 0 0 0 87000 1892 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34524 872 139400 2988 0 0 0 0 0 0
+equiv "clk" "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A2"
+node "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1" 109 506.061 -694 -201 mvndif 0 0 0 0 0 0 0 0 23232 704 32208 908 87000 1892 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78218 2348 0 0 0 0 0 0 0 0
+equiv "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1" "gf180mcu_fd_sc_mcu9t5v0__inv_1_1.ZN"
+node "Enable" 153 1253.2 -1377 182 m2 0 0 0 0 0 0 0 0 0 0 0 0 205680 4312 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 53220 1744 195300 4106 0 0 0 0 0 0
+equiv "Enable" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.I"
+equiv "Enable" "gf180mcu_fd_sc_mcu9t5v0__inv_1_1.I"
+node "vdd" 5454 7256.06 -1131 794 m1 2120428 7898 0 0 0 0 0 0 41184 1432 174144 4880 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 661032 9656 0 0 0 0 0 0 0 0
+equiv "vdd" "gf180mcu_fd_sc_mcu9t5v0__filltie_0.VDD"
+equiv "vdd" "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VNW"
+equiv "vdd" "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VDD"
+equiv "vdd" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW"
+equiv "vdd" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VDD"
+equiv "vdd" "gf180mcu_fd_sc_mcu9t5v0__inv_1_1.VNW"
+equiv "vdd" "gf180mcu_fd_sc_mcu9t5v0__inv_1_1.VDD"
+equiv "vdd" "gf180mcu_fd_sc_mcu9t5v0__filltie_1.VDD"
+equiv "vdd" "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.VNW"
+equiv "vdd" "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.VDD"
+substrate "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" 0 0 -1090 -188 mvppd 0 0 0 0 0 0 0 0 108768 3056 39600 1388 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 641156 9204 0 0 0 0 0 0 0 0
+equiv "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" "gf180mcu_fd_sc_mcu9t5v0__filltie_0.VSS"
+equiv "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW"
+equiv "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VSS"
+equiv "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" "gf180mcu_fd_sc_mcu9t5v0__inv_1_1.VPW"
+equiv "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VSS"
+equiv "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.VPW"
+equiv "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" "vss"
+equiv "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" "gf180mcu_fd_sc_mcu9t5v0__inv_1_1.VSS"
+equiv "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" "gf180mcu_fd_sc_mcu9t5v0__filltie_1.VSS"
+equiv "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.VSS"
+cap "a_890_n69#" "clock" 75.6623
+cap "Enable" "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1" 390.865
+cap "Enable" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 301.154
+cap "vdd" "Enable" 505.657
+cap "a_n246_n69#" "a_n454_n69#" 6.07605
+cap "a_1098_n69#" "a_890_n69#" 6.07605
+cap "a_890_n69#" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 133.114
+cap "vdd" "a_890_n69#" 473.306
+cap "clk" "a_n454_n69#" 418.382
+cap "clk" "d_in" 478.861
+cap "d_in" "a_n454_n69#" 70.0859
+cap "data_in" "clock" 186.514
+cap "a_1098_n69#" "data_in" 0.421097
+cap "data_in" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 4.67626
+cap "vdd" "data_in" 194.275
+cap "clock" "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1" 4.29775
+cap "clock" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 84.5702
+cap "a_1098_n69#" "clock" 2.09736
+cap "vdd" "clock" 90.2698
+cap "a_n246_n69#" "Enable" 0.986455
+cap "vdd" "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1" 539.869
+cap "a_1098_n69#" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 0.0788182
+cap "vdd" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 516.863
+cap "clk" "Enable" 543.357
+cap "Enable" "a_n454_n69#" 75.6583
+cap "Enable" "d_in" 110.482
+cap "clk" "a_890_n69#" 0.00534952
+cap "a_890_n69#" "d_in" 467.03
+cap "clk" "data_in" 0.00241493
+cap "data_in" "a_n454_n69#" 0.00800283
+cap "a_n246_n69#" "clock" 0.966634
+cap "data_in" "d_in" 12.1354
+cap "clk" "clock" 6.71283
+cap "clock" "a_n454_n69#" 363.851
+cap "clock" "d_in" 106.399
+cap "a_n246_n69#" "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1" 0.0788182
+cap "clk" "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1" 206.318
+cap "a_n454_n69#" "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1" 133.332
+cap "d_in" "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1" 28.9107
+cap "clk" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 3.88382
+cap "a_890_n69#" "Enable" 1.0483
+cap "vdd" "clk" 417.385
+cap "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" "a_n454_n69#" 0.134014
+cap "vdd" "a_n454_n69#" 468.953
+cap "d_in" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 183.032
+cap "a_1098_n69#" "d_in" 0.132113
+cap "vdd" "d_in" 858.837
+cap "data_in" "Enable" 4.65863
+cap "data_in" "a_890_n69#" 367.517
+cap "clock" "Enable" 205.565
+device msubckt nfet_05v0 1430 -201 1431 -200 l=120 w=264 "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" "a_890_n69#" 240 0 "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" 264 15576,412 "data_in" 264 23232,704
+device msubckt nfet_05v0 1162 -69 1163 -68 l=120 w=132 "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" "d_in" 240 0 "a_1098_n69#" 132 4224,196 "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" 132 15576,412
+device msubckt nfet_05v0 978 -69 979 -68 l=120 w=132 "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 240 0 "a_890_n69#" 132 11616,440 "a_1098_n69#" 132 4224,196
+device msubckt nfet_05v0 530 -201 531 -200 l=120 w=264 "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" "Enable" 240 0 "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" 264 23232,704 "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 264 23232,704
+device msubckt nfet_05v0 86 -201 87 -200 l=120 w=264 "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" "a_n454_n69#" 240 0 "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" 264 15576,412 "clock" 264 23232,704
+device msubckt nfet_05v0 -182 -69 -181 -68 l=120 w=132 "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" "clk" 240 0 "a_n246_n69#" 132 4224,196 "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" 132 15576,412
+device msubckt nfet_05v0 -366 -69 -365 -68 l=120 w=132 "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1" 240 0 "a_n454_n69#" 132 11616,440 "a_n246_n69#" 132 4224,196
+device msubckt nfet_05v0 -814 -201 -813 -200 l=120 w=264 "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" "Enable" 240 0 "gf180mcu_fd_sc_mcu9t5v0__and2_1_0.VPW" 264 23232,704 "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1" 264 23232,704
+device msubckt pfet_05v0 1430 303 1431 304 l=100 w=366 "vdd" "a_890_n69#" 200 0 "vdd" 366 20216,514 "data_in" 366 32208,908
+device msubckt pfet_05v0 1182 505 1183 506 l=100 w=164 "vdd" "d_in" 200 0 "a_890_n69#" 164 8528,268 "vdd" 164 20216,514
+device msubckt pfet_05v0 978 505 979 506 l=100 w=164 "vdd" "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 200 0 "vdd" 164 14432,504 "a_890_n69#" 164 8528,268
+device msubckt pfet_05v0 550 303 551 304 l=100 w=366 "vdd" "Enable" 200 0 "vdd" 366 32208,908 "gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN" 366 32208,908
+device msubckt pfet_05v0 86 303 87 304 l=100 w=366 "vdd" "a_n454_n69#" 200 0 "vdd" 366 20216,514 "clock" 366 32208,908
+device msubckt pfet_05v0 -162 505 -161 506 l=100 w=164 "vdd" "clk" 200 0 "a_n454_n69#" 164 8528,268 "vdd" 164 20216,514
+device msubckt pfet_05v0 -366 505 -365 506 l=100 w=164 "vdd" "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1" 200 0 "vdd" 164 14432,504 "a_n454_n69#" 164 8528,268
+device msubckt pfet_05v0 -794 303 -793 304 l=100 w=366 "vdd" "Enable" 200 0 "vdd" 366 32208,908 "gf180mcu_fd_sc_mcu9t5v0__and2_1_1.A1" 366 32208,908
