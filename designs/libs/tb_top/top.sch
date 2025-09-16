@@ -96,6 +96,8 @@ N 370 -730 370 -710 {lab=vdd}
 N 510 -850 510 -840 {lab=GND}
 N 410 -720 410 -700 {lab=vmem[4]}
 N 410 -800 410 -780 {lab=vdd}
+N -50 -360 10 -360 {lab=GND}
+N -50 -360 -50 -340 {lab=GND}
 C {designs/libs/core_top/top.sym} -150 130 0 0 {name=x1}
 C {devices/code_shown.sym} -600 205 0 0 {name=MODELS1 only_toplevel=true
 format="tcleval( @value )"
@@ -106,6 +108,7 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice res_typical
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
 "}
 C {title.sym} -450 480 0 0 {name=l1 author="Royce Richmond"}
 C {devices/code_shown.sym} -615 -115 0 0 {name=s1 only_toplevel=false value="
@@ -113,6 +116,7 @@ C {devices/code_shown.sym} -615 -115 0 0 {name=s1 only_toplevel=false value="
 .tran 100n 5m
 .save allcurrents
 .control
+	set num_threads=20
 	reset
 	save all
         run
@@ -213,3 +217,20 @@ device=resistor
 m=1}
 C {gnd.sym} 90 -360 0 0 {name=l10 lab=GND}
 C {lab_pin.sym} 200 -120 1 0 {name=p31 sig_type=std_logic lab=clk}
+C {vsource.sym} -50 -390 0 0 {name=V13 value=0.3  savecurrent=false}
+C {vsource.sym} 10 -390 0 0 {name=V14 value=0.37  savecurrent=false}
+C {lab_pin.sym} 10 -480 0 0 {name=p32 sig_type=std_logic lab=ve}
+C {lab_pin.sym} -50 -480 0 0 {name=p33 sig_type=std_logic lab=vi}
+C {gnd.sym} -50 -340 0 0 {name=l12 lab=GND}
+C {res.sym} 10 -450 0 0 {name=R9
+value=10
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} -50 -450 0 0 {name=R10
+value=10
+footprint=1206
+device=resistor
+m=1}
+C {lab_pin.sym} 40 80 0 0 {name=p34 sig_type=std_logic lab=vi}
+C {lab_pin.sym} 340 80 2 0 {name=p35 sig_type=std_logic lab=ve}
