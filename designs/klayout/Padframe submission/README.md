@@ -9,7 +9,7 @@ The 5.0V analogue signal pad is meant for analogue circuits that use the thick-g
 This pads have 8 finger of METAL2 named assign5v where the connections should be made. (they have protection diodes and capacitors )
 ![analog I/O](an_io.png)
 ## Digital I/O Tristate
-The digital I/O can be configured as input, output or tristate, it depends on the bits (note that the port is actually two drivers one output and one input, on Input only I/O cells you will only find the lover part of the driver)
+The digital I/O can be configured as input, output or tristate, it depends on the bits (note that the port is actually two drivers one output and one input, on Input only I/O cells you will only find the lower part of the driver)
 ![digital I/O](tri_io.png)
 ### Ports
 | Port  | Description                         |
@@ -29,7 +29,49 @@ The digital I/O can be configured as input, output or tristate, it depends on th
 | ----- | external PAD                        |
 | PAD   | Data input from/output to bond pad  |
 
+### Options
 
+| CS | Input Type      |
+|----|-----------------|
+| 0  | CMOS Buffer     |
+| 1  | Schmitt Trigger |
+
+| SL | Output Slew Rate |
+|----|------------------|
+| 0  | Fast             |
+| 1  | Slow             |
+
+| IE | OE | Input Output Control     |
+| -- | -- | ------------------------ |
+| 0  | 0  | IO Disable               |
+| 0  | 1  | Output Enabled           |
+| 1  | 0  | Input Enabled            |
+| 1  | 1  | Disallowed               |
+
+| PU | PD | Resistive Pulling |
+|----|----|-------------------|
+| 0  | 0  | Normal CMOS       |
+| 0  | 1  | Pull Down         |
+| 1  | 0  | Pull Up           |
+| 1  | 1  | Normal CMOS       |
+
+| PDRV1 | PDRV0 | Output drive strength |
+|-------|-------|-----------------------|
+| 0     | 0     | 4mA                   |
+| 0     | 1     | 8mA                   |
+| 1     | 0     | 12mA                  |
+| 1     | 1     | 16mA                  |
+
+
+In our case for an input we can configure it like this 
+
+IE=1, CS=1, PU=0, PD=0
+
+Input Enabled, Schmitt Trigger, Normal CMOS (note that pull up or down can be used on inputs and it will make a change in the input easier, not a great idea with noisy signals)
+
+The output driver is disabled and all the control bits set to zero
+
+OE=0, SL=0, PDRV1=0, PDRV0=0
 ## Documentation
 
 Documentation on the pads and config can be found [here](https://gf180mcu-pdk.readthedocs.io/en/latest/IPs/IO/gf180mcu_fd_io/digital.html)
