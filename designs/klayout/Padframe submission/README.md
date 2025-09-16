@@ -76,3 +76,5 @@ OE=0, SL=0, PDRV1=0, PDRV0=0
 
 Documentation on the pads and config can be found [here](https://gf180mcu-pdk.readthedocs.io/en/latest/IPs/IO/gf180mcu_fd_io/digital.html)
 
+Report on the padring on the [chipathon 2023](https://docs.google.com/presentation/d/1bg6gA1EwBESlcAxqpyheD7kwKJdteA6P6Jksey-j1Jw/edit?slide=id.p#slide=id.p)
+
