@@ -111,10 +111,10 @@ x20 net11 OUT_bot_d VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
 ** sch_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/En_clk_din/En_clk_din.sch
 .subckt En_clk_din VDD VSS clk clock enable D_in Data_in
 *.PININFO D_in:I enable:I clk:B VDD:B VSS:B clock:O Data_in:O
-x6 net1 D_in Data_in VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
-x15 enable net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_2
-x2 net2 clk clock VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
-x3 enable net2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_2
+x6 D_in net1 Data_in VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
+x15 enable net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x2 clk net2 clock VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
+x3 enable net2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
 * noconn VSS
 * noconn VDD
 .ends
@@ -144,9 +144,14 @@ xFF[10] Q[10] Q[9] PHI_1 gc[10] PHI_2 EN VDD VSS DFF_2phase_1
 ** sch_path: /foss/designs/switch_matrix_gf180mcu_9t5v0/swmatrix_Tgate/swmatrix_Tgate.sch
 .subckt swmatrix_Tgate gated_control T2 T1 VSS VDD
 *.PININFO T1:B T2:B VDD:B VSS:B gated_control:I
-XM1 T1 gated_control T2 VSS nfet_03v3 L=0.28u W=24u nf=6 m=1
-XM2 T1 gated_controlb T2 VDD pfet_03v3 L=0.28u W=72u nf=6 m=1
+M1 T1 gated_control T2 VSS nfet_03v3 L=0.28u W=mn_w nf=6 m=1
+M2 T1 gated_controlb T2 VDD pfet_03v3 L=0.28u W=mp_w nf=6 m=1
 **** begin user architecture code
+
+
+.param mn_w=24u
+.param mp_w=72u
+
 **** end user architecture code
 x1 gated_control gated_controlb VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
 .ends
