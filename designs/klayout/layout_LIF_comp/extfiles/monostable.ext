@@ -1,4 +1,4 @@
-timestamp 1586226493
+timestamp 1586663996
 version 8.3
 tech gf180mcuD
 style ngspice()
@@ -6,30 +6,30 @@ scale 1000 1 0.5
 resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
 use nand$1 nand$1_1 -1 0 1495 0 1 3052
 use not$1 not$1_3 -1 0 2247 0 1 3052
-use via_dev$43 via_dev$43_1 1 0 1424 0 1 2756
+use via_dev$42 via_dev$42_1 1 0 1424 0 1 2756
 use cap_mim$2 cap_mim$2_1 1 0 1267 0 1 1024
-use via_dev$45 via_dev$45_1 1 0 1662 0 1 2384
+use via_dev$44 via_dev$44_1 1 0 1662 0 1 2384
 use nfet$32 nfet$32_1 1 0 2677 0 1 1712
-use via_dev$44 via_dev$44_1 1 0 2595 0 1 1772
-use via_dev$49 via_dev$49_2 1 0 2295 0 1 2756
-use via_dev$49 via_dev$49_4 1 0 3047 0 1 2580
+use via_dev$43 via_dev$43_1 1 0 2595 0 1 1772
+use via_dev$48 via_dev$48_2 1 0 2295 0 1 2756
+use via_dev$48 via_dev$48_4 1 0 3047 0 1 2580
 use nand$1 nand$1_0 -1 0 3961 0 1 3052
-use via_dev$46 via_dev$46_1 1 0 2169 0 1 2144
-use via_dev$44 via_dev$44_3 1 0 2169 0 1 2580
-use via_dev$43 via_dev$43_0 1 0 2921 0 1 2756
+use via_dev$45 via_dev$45_1 1 0 2169 0 1 2144
+use via_dev$43 via_dev$43_3 1 0 2169 0 1 2580
+use via_dev$42 via_dev$42_0 1 0 2921 0 1 2756
 use not$1 not$1_2 -1 0 2999 0 1 3052
 use not$1 not$1_1 -1 0 4713 0 1 3052
-use via_dev$49 via_dev$49_5 1 0 3890 0 1 2756
+use via_dev$48 via_dev$48_5 1 0 3890 0 1 2756
 use cap_mim$2 cap_mim$2_0 1 0 3733 0 1 1024
-use via_dev$45 via_dev$45_0 1 0 4128 0 1 2384
-use via_dev$49 via_dev$49_3 1 0 3666 0 1 2580
+use via_dev$44 via_dev$44_0 1 0 4128 0 1 2384
+use via_dev$48 via_dev$48_3 1 0 3666 0 1 2580
 use not$1 not$1_0 -1 0 5465 0 1 3052
-use via_dev$44 via_dev$44_2 1 0 4635 0 1 2580
-use via_dev$46 via_dev$46_0 1 0 4635 0 1 2144
-use via_dev$44 via_dev$44_0 1 0 5061 0 1 1772
+use via_dev$43 via_dev$43_2 1 0 4635 0 1 2580
+use via_dev$45 via_dev$45_0 1 0 4635 0 1 2144
+use via_dev$43 via_dev$43_0 1 0 5061 0 1 1772
 use nfet$32 nfet$32_0 1 0 5143 0 1 1712
-use via_dev$49 via_dev$49_1 1 0 5387 0 1 2756
-use via_dev$49 via_dev$49_0 1 0 4761 0 1 2756
+use via_dev$48 via_dev$48_1 1 0 5387 0 1 2756
+use via_dev$48 via_dev$48_0 1 0 4761 0 1 2756
 port "vres" 5 5209 1586 5209 1586 m1
 port "vres" 5 2744 1584 2744 1584 m1
 port "phi_2" 4 5563 2630 5563 2630 m1
@@ -55,169 +55,169 @@ node "m2_3921_2756#" 2 565.246 3921 2756 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "vneg" 2 565.246 1953 2792 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 120320 3168 0 0 0 0 0 0
 substrate "a_2437_1600#" 0 0 2437 1600 psc 0 0 0 0 0 0 61952 5632 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 487472 10480 0 0 0 0 0 0 0 0
 cap "m2_3921_2756#" "vneg" 3.69455
-cap "m2_3921_2756#" "m5_4120_2024#" 2.64605
-cap "m2_3921_2756#" "m3_4635_2184#" 9.0338
-cap "m3_2169_2184#" "m5_1654_2024#" 5.19733
-cap "phi_1" "m3_2169_2184#" 0.774832
-cap "vneg" "m5_1654_2024#" 2.64605
-cap "m2_3921_2756#" "m4_4852_1772#" 1.36726
-cap "vneg" "m3_2169_2184#" 9.0338
-cap "vneg" "m4_2386_1772#" 1.36726
 cap "phi_1" "m3_4635_2184#" 0.640054
-cap "m5_4120_2024#" "m3_4635_2184#" 5.19733
-cap "not$1_3/in" "nand$1_1/vss" 12.98
+cap "vneg" "m5_1654_2024#" 2.64605
+cap "m4_4852_1772#" "m2_3921_2756#" 1.36726
+cap "m4_2386_1772#" "vneg" 1.36726
+cap "m3_2169_2184#" "m5_1654_2024#" 5.19733
+cap "m3_2169_2184#" "vneg" 9.0338
+cap "m2_3921_2756#" "m3_4635_2184#" 9.0338
+cap "m3_4635_2184#" "m5_4120_2024#" 5.19733
+cap "m2_3921_2756#" "m5_4120_2024#" 2.64605
+cap "phi_1" "m3_2169_2184#" 0.774832
+cap "nand$1_1/A" "not$1_3/in" 5.12434
 cap "not$1_3/in" "nand$1_1/Z" 4.63868
-cap "not$1_3/in" "vin" 5.13769
-cap "nand$1_1/Z" "nand$1_1/vss" 12.6134
-cap "nand$1_1/Z" "vin" 0.267666
-cap "not$1_3/in" "nand$1_1/A" 5.12434
-cap "not$1_3/in" "nand$1_1/nfet$29_0/a_n84_0#" 2.52031
-cap "not$1_3/in" "nand$1_1/vdd" 7.05739
-cap "nand$1_1/A" "nand$1_1/vss" 0.301888
-cap "nand$1_1/Z" "nand$1_1/A" 4.68564
-cap "nand$1_1/vss" "nand$1_1/vdd" -0.111376
-cap "nand$1_1/Z" "nand$1_1/nfet$29_0/a_n84_0#" 1.94904
-cap "nand$1_1/Z" "nand$1_1/vdd" 4.53117
-cap "not$1_3/in" "vdd" 19.1679
-cap "nand$1_1/A" "vres" 0.0816365
-cap "nand$1_1/A" "nand$1_1/Z" 4.09952
-cap "not$1_3/in" "vres" 4.51928
-cap "nand$1_0/Z" "not$1_3/in" 1.32614
-cap "not$1_3/in" "nand$1_1/Z" 105.243
-cap "nand$1_1/A" "nand$1_0/B" 0.326892
-cap "vss" "nand$1_1/A" 3.04025
-cap "not$1_3/in" "nand$1_0/B" 0.0677725
-cap "vss" "not$1_3/in" 205.69
-cap "not$1_3/in" "vin" 0.121978
-cap "vdd" "vres" 0.631569
-cap "nand$1_1/Z" "vdd" 10.6284
-cap "nand$1_0/Z" "vres" 1.33059
-cap "nand$1_1/Z" "vres" 4.29579
-cap "nand$1_0/Z" "nand$1_1/Z" 39.1746
-cap "vss" "vdd" -0.305491
-cap "not$1_3/in" "cap_mim$2_0/m4_n120_n120#" 36.7487
-cap "vss" "vres" 109.148
-cap "vss" "nand$1_1/Z" 73.3282
-cap "nand$1_1/Z" "vin" 0.132972
+cap "nand$1_1/A" "nand$1_1/Z" 4.68564
+cap "nand$1_1/vdd" "not$1_3/in" 7.05739
+cap "nand$1_1/vdd" "nand$1_1/Z" 4.53117
+cap "nand$1_1/vss" "not$1_3/in" 12.98
+cap "nand$1_1/nfet$29_0/a_n84_0#" "not$1_3/in" 2.52031
+cap "nand$1_1/vss" "nand$1_1/A" 0.301888
+cap "nand$1_1/vss" "nand$1_1/Z" 12.6134
+cap "nand$1_1/nfet$29_0/a_n84_0#" "nand$1_1/Z" 1.94904
+cap "nand$1_1/vdd" "nand$1_1/vss" -0.111376
+cap "vin" "not$1_3/in" 5.13769
+cap "vin" "nand$1_1/Z" 0.267666
 cap "vss" "vin" 0.129252
-cap "cap_mim$2_0/m4_n120_n120#" "vres" 0.338346
+cap "vres" "nand$1_1/Z" 4.29579
+cap "not$1_3/in" "nand$1_1/Z" 105.243
+cap "nand$1_1/Z" "nand$1_0/Z" 39.1746
+cap "not$1_3/in" "vres" 4.51928
+cap "vdd" "vss" -0.305491
+cap "vres" "nand$1_0/Z" 1.33059
+cap "nand$1_1/A" "nand$1_0/B" 0.326892
+cap "not$1_3/in" "nand$1_0/Z" 1.32614
+cap "nand$1_1/Z" "nand$1_1/A" 4.09952
+cap "nand$1_1/Z" "vss" 73.3282
+cap "vres" "nand$1_1/A" 0.0816365
+cap "vres" "vss" 109.148
+cap "not$1_3/in" "nand$1_1/A" 13.7528
+cap "nand$1_1/Z" "vin" 0.132972
+cap "not$1_3/in" "vss" 205.69
 cap "nand$1_1/Z" "cap_mim$2_0/m4_n120_n120#" 2.50963
-cap "nand$1_1/A" "not$1_3/in" 13.7528
-cap "nand$1_0/Z" "not$1_1/in" 74.0686
-cap "nand$1_0/B" "nand$1_1/A" 0.326892
-cap "not$1_1/in" "not$1_3/in" 37.1129
-cap "not$1_1/in" "vdd" 12.4614
-cap "nand$1_1/A" "vss" 0.347179
-cap "nand$1_0/Z" "nand$1_1/A" 0.0923319
-cap "not$1_1/in" "nand$1_0/A" 6.87247
-cap "nand$1_0/B" "vss" 3.58062
-cap "nand$1_0/Z" "nand$1_0/B" 0.423133
-cap "nand$1_0/Z" "vss" 60.8524
-cap "nand$1_0/nfet$29_0/a_n84_0#" "not$1_1/in" 2.52031
-cap "not$1_3/in" "vss" 1.44881
-cap "vdd" "vss" -0.194114
-cap "nand$1_0/Z" "vdd" 9.1552
-cap "nand$1_0/Z" "not$1_3/in" 3.92562
-cap "not$1_1/in" "vres" 1.32449
-cap "nand$1_0/A" "vss" 1.61324
-cap "nand$1_0/Z" "nand$1_0/A" 6.33403
-cap "nand$1_0/nfet$29_0/a_n84_0#" "nand$1_0/Z" 1.94904
-cap "nand$1_0/Z" "nand$1_1/Z" 39.1746
-cap "vres" "vss" 9.80202
-cap "not$1_1/in" "nand$1_0/B" 5.84957
-cap "nand$1_0/Z" "vres" 1.17257
-cap "not$1_1/in" "vss" 37.9976
-cap "nand$1_0/Z" "vss" 45.7084
-cap "vres" "nand$1_0/Z" 4.29579
-cap "vss" "nand$1_0/A" 1.59755
-cap "not$1_1/in" "vdd" 13.7639
-cap "vres" "nand$1_0/A" 0.0816365
-cap "nand$1_0/Z" "vdd" 6.00434
-cap "vres" "vss" 118.95
-cap "phi_2" "vss" -0.0286387
-cap "nand$1_0/Z" "not$1_1/in" 35.8135
-cap "not$1_1/in" "nand$1_0/B" 0.121978
-cap "not$1_1/in" "nand$1_0/A" 12.0046
-cap "vss" "vdd" -0.388228
-cap "not$1_1/in" "vss" 199.323
-cap "nand$1_0/Z" "nand$1_0/A" 2.45113
+cap "not$1_3/in" "vin" 0.121978
+cap "nand$1_1/Z" "vdd" 10.6284
+cap "vres" "cap_mim$2_0/m4_n120_n120#" 0.338346
+cap "not$1_3/in" "vdd" 19.1679
+cap "not$1_3/in" "cap_mim$2_0/m4_n120_n120#" 36.7487
 cap "vres" "vdd" 0.631569
+cap "not$1_3/in" "nand$1_0/B" 0.0677725
+cap "vss" "nand$1_1/A" 3.04025
+cap "not$1_1/in" "vres" 1.32449
+cap "vss" "nand$1_0/Z" 60.8524
+cap "vss" "not$1_3/in" 1.44881
+cap "vss" "nand$1_0/A" 1.61324
+cap "not$1_1/in" "nand$1_0/nfet$29_0/a_n84_0#" 2.52031
+cap "vss" "nand$1_0/B" 3.58062
+cap "nand$1_0/Z" "not$1_3/in" 3.92562
+cap "nand$1_0/Z" "nand$1_0/A" 6.33403
+cap "vss" "vres" 9.80202
+cap "not$1_1/in" "vdd" 12.4614
+cap "nand$1_0/Z" "nand$1_0/B" 0.423133
+cap "nand$1_0/Z" "vres" 1.17257
+cap "vss" "not$1_1/in" 37.9976
+cap "vss" "nand$1_1/A" 0.347179
+cap "nand$1_0/Z" "nand$1_0/nfet$29_0/a_n84_0#" 1.94904
+cap "nand$1_0/Z" "not$1_1/in" 74.0686
+cap "vss" "vdd" -0.194114
+cap "nand$1_0/Z" "nand$1_1/A" 0.0923319
+cap "nand$1_0/A" "not$1_1/in" 6.87247
+cap "nand$1_0/Z" "vdd" 9.1552
+cap "not$1_1/in" "not$1_3/in" 37.1129
+cap "nand$1_0/Z" "nand$1_1/Z" 39.1746
+cap "not$1_1/in" "nand$1_0/B" 5.84957
+cap "nand$1_1/A" "nand$1_0/B" 0.326892
+cap "vss" "nand$1_0/A" 1.59755
+cap "nand$1_0/A" "nand$1_0/Z" 2.45113
+cap "not$1_1/in" "vdd" 13.7639
+cap "nand$1_0/A" "not$1_1/in" 12.0046
+cap "vss" "vres" 118.95
+cap "vres" "nand$1_0/Z" 4.29579
 cap "vres" "not$1_1/in" 4.51928
-cap "nand$1_1/vss" "nand$1_1/A" 0.809658
-cap "vin" "not$1_3/in" 0.176943
-cap "nand$1_1/vss" "nand$1_1/Z" -0.20172
-cap "not$1_3/in" "nand$1_1/Z" 1.44782
-cap "not$1_3/in" "nand$1_1/A" 3.56555
+cap "vss" "nand$1_0/Z" 45.7084
+cap "vss" "not$1_1/in" 199.323
+cap "nand$1_0/Z" "not$1_1/in" 35.8135
+cap "nand$1_0/B" "not$1_1/in" 0.121978
+cap "vss" "phi_2" -0.0286387
+cap "vres" "vdd" 0.631569
+cap "vres" "nand$1_0/A" 0.0816365
+cap "vss" "vdd" -0.388228
+cap "nand$1_0/Z" "vdd" 6.00434
 cap "nand$1_1/vss" "nand$1_1/vdd" -0.0422881
-cap "vin" "nand$1_1/A" 3.21341
-cap "nand$1_1/nfet$29_0/a_n84_0#" "nand$1_1/A" 0.116563
-cap "nand$1_1/nfet$29_0/a_n84_0#" "nand$1_1/Z" -0.0845909
-cap "vin" "nand$1_1/Z" 0.0165565
-cap "nand$1_1/Z" "nand$1_1/A" 53.0212
 cap "nand$1_1/vdd" "vin" -0.079135
-cap "nand$1_1/vdd" "nand$1_1/Z" -2.71679
-cap "nand$1_1/vdd" "nand$1_1/A" 18.9063
-cap "nand$1_1/Z" "vdd" 58.052
-cap "nand$1_1/Z" "nand$1_0/B" 1.5296
-cap "not$1_3/in" "nand$1_0/nfet$29_0/a_n84_0#" 0.615318
+cap "nand$1_1/nfet$29_0/a_n84_0#" "nand$1_1/Z" -0.0845909
+cap "nand$1_1/Z" "nand$1_1/vdd" -2.71679
+cap "nand$1_1/A" "not$1_3/in" 3.56555
+cap "nand$1_1/A" "nand$1_1/vss" 0.809658
+cap "nand$1_1/A" "vin" 3.21341
+cap "not$1_3/in" "vin" 0.176943
+cap "nand$1_1/A" "nand$1_1/Z" 53.0212
+cap "nand$1_1/Z" "not$1_3/in" 1.44782
+cap "nand$1_1/Z" "nand$1_1/vss" -0.20172
+cap "nand$1_1/Z" "vin" 0.0165565
+cap "nand$1_1/A" "nand$1_1/nfet$29_0/a_n84_0#" 0.116563
+cap "nand$1_1/A" "nand$1_1/vdd" 18.9063
 cap "nand$1_1/A" "vdd" 176.259
-cap "not$1_3/in" "vdd" 13.2328
-cap "not$1_3/in" "nand$1_0/B" 7.32904
-cap "nand$1_1/A" "nand$1_0/B" 8.57407
-cap "vss" "vin" 0.258504
-cap "vss" "nand$1_1/nfet$29_0/a_n84_0#" 1.00765
-cap "nand$1_1/Z" "vss" 48.7679
-cap "nand$1_1/A" "vss" 45.9858
-cap "vss" "not$1_3/in" 21.3828
-cap "nand$1_1/Z" "vin" 1.17194
-cap "nand$1_1/Z" "nand$1_1/nfet$29_0/a_n84_0#" 4.22931
+cap "not$1_3/in" "nand$1_0/nfet$29_0/a_n84_0#" 0.615318
+cap "nand$1_0/B" "nand$1_1/Z" 1.5296
+cap "vss" "nand$1_1/Z" 48.7679
+cap "vin" "nand$1_1/Z" 1.17194
+cap "not$1_3/in" "nand$1_1/A" 99.7886
 cap "nand$1_1/A" "vres" 1.11068
-cap "vin" "not$1_3/in" 1.46045
-cap "not$1_3/in" "nand$1_1/nfet$29_0/a_n84_0#" 1.1648
+cap "vin" "vss" 0.258504
+cap "nand$1_1/nfet$29_0/a_n84_0#" "nand$1_1/Z" 4.22931
+cap "vdd" "nand$1_1/Z" 58.052
+cap "nand$1_1/nfet$29_0/a_n84_0#" "vss" 1.00765
+cap "vdd" "vss" -0.175035
+cap "not$1_3/in" "nand$1_1/Z" 60.0415
+cap "not$1_3/in" "nand$1_0/B" 7.32904
+cap "nand$1_0/A" "nand$1_1/A" -1.84727
 cap "nand$1_1/A" "nand$1_1/Z" 142.835
-cap "nand$1_1/A" "nand$1_0/A" -1.84727
-cap "nand$1_1/Z" "not$1_3/in" 60.0415
-cap "vss" "vdd" -0.175035
-cap "nand$1_1/A" "not$1_3/in" 99.7886
-cap "nand$1_1/A" "nand$1_0/B" 30.5406
-cap "vss" "nand$1_0/Z" 51.8673
-cap "not$1_1/in" "nand$1_0/A" 4.68086
-cap "vss" "nand$1_0/nfet$29_0/a_n84_0#" 1.00765
-cap "vss" "vdd" -0.0845762
-cap "not$1_1/in" "nand$1_0/B" 6.89834
-cap "nand$1_0/Z" "nand$1_0/nfet$29_0/a_n84_0#" 4.14472
-cap "vss" "nand$1_1/A" 1.00273
-cap "not$1_3/in" "nand$1_0/Z" 0.115843
-cap "nand$1_0/Z" "vdd" 58.3502
-cap "nand$1_0/A" "nand$1_0/B" 7.56082
-cap "nand$1_1/A" "nand$1_0/Z" 1.46943
-cap "nand$1_1/A" "vdd" 14.5396
-cap "nand$1_0/Z" "phi_2" 1.5296
-cap "vss" "nand$1_0/A" 2.83094
-cap "not$1_1/in" "nand$1_0/Z" 36.4686
-cap "nand$1_0/A" "nand$1_0/nfet$29_0/a_n84_0#" 0.116563
-cap "vss" "nand$1_0/B" 45.7867
-cap "nand$1_0/A" "nand$1_0/Z" 181.555
+cap "not$1_3/in" "vss" 21.3828
+cap "vin" "not$1_3/in" 1.46045
+cap "nand$1_1/A" "nand$1_0/B" 8.57407
+cap "nand$1_1/A" "vss" 45.9858
+cap "not$1_3/in" "nand$1_1/nfet$29_0/a_n84_0#" 1.1648
+cap "not$1_3/in" "vdd" 13.2328
+cap "nand$1_0/B" "nand$1_1/A" 30.5406
 cap "nand$1_0/A" "vdd" 44.4968
-cap "nand$1_0/B" "nand$1_0/nfet$29_0/a_n84_0#" 1.21615
-cap "nand$1_0/Z" "nand$1_0/B" 16.5065
+cap "nand$1_0/nfet$29_0/a_n84_0#" "nand$1_0/Z" 4.14472
+cap "nand$1_1/A" "nand$1_0/Z" 1.46943
+cap "nand$1_0/A" "nand$1_0/nfet$29_0/a_n84_0#" 0.116563
+cap "nand$1_1/A" "vdd" 14.5396
+cap "nand$1_0/B" "not$1_3/in" 2.10287
 cap "nand$1_0/A" "nand$1_1/A" 2.15421
-cap "not$1_3/in" "nand$1_0/B" 2.10287
+cap "nand$1_0/B" "not$1_1/in" 6.89834
+cap "not$1_3/in" "nand$1_0/Z" 0.115843
+cap "nand$1_0/B" "vss" 45.7867
+cap "not$1_1/in" "nand$1_0/Z" 36.4686
+cap "phi_2" "nand$1_0/Z" 1.5296
+cap "nand$1_0/A" "not$1_1/in" 4.68086
+cap "vss" "nand$1_0/Z" 51.8673
+cap "vdd" "vss" -0.0845762
+cap "nand$1_0/B" "nand$1_0/Z" 16.5065
+cap "nand$1_0/A" "vss" 2.83094
 cap "nand$1_0/B" "vdd" 81.2214
-cap "nand$1_0/nfet$29_0/a_n84_0#" "not$1_1/in" 1.1648
-cap "not$1_1/in" "vss" 19.4842
-cap "nand$1_0/A" "nand$1_0/Z" 14.3014
-cap "not$1_1/in" "phi_2" 2.93726
-cap "nand$1_0/A" "not$1_1/in" 98.6733
-cap "vdd" "not$1_1/in" 13.2328
-cap "nand$1_0/A" "vss" 44.3201
-cap "vdd" "vss" -0.217323
-cap "nand$1_0/A" "phi_2" 27.0748
-cap "not$1_1/in" "nand$1_0/B" 5.31632
+cap "vss" "nand$1_0/nfet$29_0/a_n84_0#" 1.00765
+cap "nand$1_0/A" "nand$1_0/B" 7.56082
+cap "nand$1_0/B" "nand$1_0/nfet$29_0/a_n84_0#" 1.21615
+cap "vdd" "nand$1_0/Z" 58.3502
+cap "nand$1_1/A" "vss" 1.00273
+cap "nand$1_0/A" "nand$1_0/Z" 181.555
 cap "vdd" "phi_2" 1.1998
-cap "nand$1_0/A" "vdd" 154.595
+cap "not$1_1/in" "nand$1_0/A" 98.6733
+cap "vres" "nand$1_0/A" 1.11068
+cap "phi_2" "nand$1_0/A" 27.0748
+cap "vdd" "nand$1_0/A" 154.595
 cap "not$1_1/in" "nand$1_0/Z" 25.0207
-cap "nand$1_0/A" "vres" 1.11068
+cap "nand$1_0/nfet$29_0/a_n84_0#" "not$1_1/in" 1.1648
+cap "not$1_1/in" "nand$1_0/B" 5.31632
+cap "nand$1_0/A" "nand$1_0/Z" 14.3014
+cap "vss" "not$1_1/in" 19.4842
+cap "vss" "vdd" -0.217323
+cap "not$1_1/in" "phi_2" 2.93726
+cap "vss" "nand$1_0/A" 44.3201
+cap "vdd" "not$1_1/in" 13.2328
 merge "not$1_2/w_n265_180#" "not$1_0/vdd" -474.15 0 -5560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -800 0 0 0 0 0 0 0 0
 merge "not$1_0/vdd" "not$1_1/vdd"
 merge "not$1_1/vdd" "not$1_1/w_n265_180#"
@@ -228,78 +228,78 @@ merge "not$1_2/vdd" "nand$1_0/vdd"
 merge "nand$1_0/vdd" "not$1_3/vdd"
 merge "not$1_3/vdd" "not$1_3/w_n265_180#"
 merge "not$1_3/w_n265_180#" "nand$1_1/vdd"
-merge "via_dev$49_0/VSUBS" "via_dev$49_1/VSUBS" -1048.38 0 0 0 0 0 0 -61952 -5632 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9136 -3816 0 0 0 0 0 0 0 0
-merge "via_dev$49_1/VSUBS" "nfet$32_0/a_98_0#"
+merge "via_dev$48_0/VSUBS" "via_dev$48_1/VSUBS" -1048.38 0 0 0 0 0 0 -61952 -5632 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9136 -3816 0 0 0 0 0 0 0 0
+merge "via_dev$48_1/VSUBS" "nfet$32_0/a_98_0#"
 merge "nfet$32_0/a_98_0#" "nfet$32_0/a_n256_n272#"
-merge "nfet$32_0/a_n256_n272#" "via_dev$44_0/VSUBS"
-merge "via_dev$44_0/VSUBS" "via_dev$46_0/VSUBS"
-merge "via_dev$46_0/VSUBS" "via_dev$44_2/VSUBS"
-merge "via_dev$44_2/VSUBS" "not$1_0/VSUBS"
+merge "nfet$32_0/a_n256_n272#" "via_dev$43_0/VSUBS"
+merge "via_dev$43_0/VSUBS" "via_dev$45_0/VSUBS"
+merge "via_dev$45_0/VSUBS" "via_dev$43_2/VSUBS"
+merge "via_dev$43_2/VSUBS" "not$1_0/VSUBS"
 merge "not$1_0/VSUBS" "not$1_0/vss"
-merge "not$1_0/vss" "via_dev$49_3/VSUBS"
-merge "via_dev$49_3/VSUBS" "via_dev$45_0/VSUBS"
-merge "via_dev$45_0/VSUBS" "cap_mim$2_0/VSUBS"
-merge "cap_mim$2_0/VSUBS" "via_dev$49_5/VSUBS"
-merge "via_dev$49_5/VSUBS" "not$1_1/VSUBS"
+merge "not$1_0/vss" "via_dev$48_3/VSUBS"
+merge "via_dev$48_3/VSUBS" "via_dev$44_0/VSUBS"
+merge "via_dev$44_0/VSUBS" "cap_mim$2_0/VSUBS"
+merge "cap_mim$2_0/VSUBS" "via_dev$48_5/VSUBS"
+merge "via_dev$48_5/VSUBS" "not$1_1/VSUBS"
 merge "not$1_1/VSUBS" "not$1_1/vss"
 merge "not$1_1/vss" "vss"
 merge "vss" "not$1_2/VSUBS"
 merge "not$1_2/VSUBS" "nand$1_0/vss"
 merge "nand$1_0/vss" "not$1_2/vss"
-merge "not$1_2/vss" "via_dev$43_0/VSUBS"
-merge "via_dev$43_0/VSUBS" "via_dev$44_3/VSUBS"
-merge "via_dev$44_3/VSUBS" "via_dev$46_1/VSUBS"
-merge "via_dev$46_1/VSUBS" "nand$1_0/VSUBS"
-merge "nand$1_0/VSUBS" "via_dev$49_4/VSUBS"
-merge "via_dev$49_4/VSUBS" "via_dev$49_2/VSUBS"
-merge "via_dev$49_2/VSUBS" "via_dev$44_1/VSUBS"
-merge "via_dev$44_1/VSUBS" "nfet$32_1/a_98_0#"
+merge "not$1_2/vss" "via_dev$42_0/VSUBS"
+merge "via_dev$42_0/VSUBS" "via_dev$43_3/VSUBS"
+merge "via_dev$43_3/VSUBS" "via_dev$45_1/VSUBS"
+merge "via_dev$45_1/VSUBS" "nand$1_0/VSUBS"
+merge "nand$1_0/VSUBS" "via_dev$48_4/VSUBS"
+merge "via_dev$48_4/VSUBS" "via_dev$48_2/VSUBS"
+merge "via_dev$48_2/VSUBS" "via_dev$43_1/VSUBS"
+merge "via_dev$43_1/VSUBS" "nfet$32_1/a_98_0#"
 merge "nfet$32_1/a_98_0#" "nfet$32_1/a_n256_n272#"
 merge "nfet$32_1/a_n256_n272#" "not$1_3/vss"
 merge "not$1_3/vss" "nand$1_1/vss"
-merge "nand$1_1/vss" "via_dev$45_1/VSUBS"
-merge "via_dev$45_1/VSUBS" "cap_mim$2_1/VSUBS"
-merge "cap_mim$2_1/VSUBS" "via_dev$43_1/VSUBS"
-merge "via_dev$43_1/VSUBS" "not$1_3/VSUBS"
+merge "nand$1_1/vss" "via_dev$44_1/VSUBS"
+merge "via_dev$44_1/VSUBS" "cap_mim$2_1/VSUBS"
+merge "cap_mim$2_1/VSUBS" "via_dev$42_1/VSUBS"
+merge "via_dev$42_1/VSUBS" "not$1_3/VSUBS"
 merge "not$1_3/VSUBS" "nand$1_1/VSUBS"
 merge "nand$1_1/VSUBS" "a_2437_1600#"
-merge "via_dev$45_0/m1_0_0#" "nand$1_0/Z" -571.162 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 -6400 -320 0 0 0 0 -6400 -512
+merge "via_dev$48_0/m1_0_0#" "not$1_1/out" -761.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18412 -940 -13360 -814 0 0 0 0 0 0
+merge "not$1_1/out" "via_dev$48_1/m1_0_0#"
+merge "via_dev$48_1/m1_0_0#" "not$1_0/in"
+merge "not$1_0/in" "via_dev$48_5/m1_0_0#"
+merge "via_dev$48_5/m1_0_0#" "m2_3921_2756#"
+merge "m2_3921_2756#" "nand$1_0/A"
+merge "via_dev$44_0/m1_0_0#" "nand$1_0/Z" -571.162 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 -6400 -320 0 0 0 0 -6400 -512
 merge "nand$1_0/Z" "cap_mim$2_0/m4_0_0#"
 merge "cap_mim$2_0/m4_0_0#" "m5_4120_2024#"
-merge "via_dev$49_0/m1_0_0#" "not$1_1/out" -761.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18412 -940 -13360 -814 0 0 0 0 0 0
-merge "not$1_1/out" "via_dev$49_1/m1_0_0#"
-merge "via_dev$49_1/m1_0_0#" "not$1_0/in"
-merge "not$1_0/in" "via_dev$49_5/m1_0_0#"
-merge "via_dev$49_5/m1_0_0#" "m2_3921_2756#"
-merge "m2_3921_2756#" "nand$1_0/A"
-merge "nfet$32_0/a_n84_0#" "via_dev$44_0/m1_0_0#" -692.428 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11704 -612 0 0 -7200 -500 -80 -482 0 0
-merge "via_dev$44_0/m1_0_0#" "via_dev$46_0/m3_0_0#"
-merge "via_dev$46_0/m3_0_0#" "cap_mim$2_0/m4_n120_n120#"
+merge "nfet$32_0/a_n84_0#" "via_dev$43_0/m1_0_0#" -692.428 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11704 -612 0 0 -7200 -500 -80 -482 0 0
+merge "via_dev$43_0/m1_0_0#" "via_dev$45_0/m3_0_0#"
+merge "via_dev$45_0/m3_0_0#" "cap_mim$2_0/m4_n120_n120#"
 merge "cap_mim$2_0/m4_n120_n120#" "m4_4852_1772#"
-merge "m4_4852_1772#" "via_dev$44_2/m1_0_0#"
-merge "via_dev$44_2/m1_0_0#" "m3_4635_2184#"
+merge "m4_4852_1772#" "via_dev$43_2/m1_0_0#"
+merge "via_dev$43_2/m1_0_0#" "m3_4635_2184#"
 merge "m3_4635_2184#" "not$1_1/in"
-merge "not$1_2/in" "via_dev$43_0/m1_0_0#" -779.154 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18412 -940 -13360 -814 0 0 0 0 0 0
-merge "via_dev$43_0/m1_0_0#" "via_dev$49_2/m1_0_0#"
-merge "via_dev$49_2/m1_0_0#" "not$1_3/out"
-merge "not$1_3/out" "via_dev$43_1/m1_0_0#"
-merge "via_dev$43_1/m1_0_0#" "vneg"
-merge "vneg" "nand$1_1/A"
-merge "nfet$32_0/a_32_n132#" "nfet$32_1/a_32_n132#" -69.2306 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "nfet$32_1/a_32_n132#" "vres"
-merge "via_dev$49_3/m1_0_0#" "nand$1_0/B" -428.664 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12640 -636 -7120 -498 0 0 0 0 0 0
-merge "nand$1_0/B" "not$1_2/out"
-merge "not$1_2/out" "via_dev$49_4/m1_0_0#"
-merge "via_dev$49_4/m1_0_0#" "phi_1"
-merge "via_dev$44_3/m1_0_0#" "not$1_3/in" -684.365 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11704 -612 0 0 -7200 -500 -80 -482 0 0
-merge "not$1_3/in" "via_dev$46_1/m3_0_0#"
-merge "via_dev$46_1/m3_0_0#" "m3_2169_2184#"
-merge "m3_2169_2184#" "via_dev$44_1/m1_0_0#"
-merge "via_dev$44_1/m1_0_0#" "nfet$32_1/a_n84_0#"
+merge "via_dev$43_3/m1_0_0#" "not$1_3/in" -684.365 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11704 -612 0 0 -7200 -500 -80 -482 0 0
+merge "not$1_3/in" "via_dev$45_1/m3_0_0#"
+merge "via_dev$45_1/m3_0_0#" "m3_2169_2184#"
+merge "m3_2169_2184#" "via_dev$43_1/m1_0_0#"
+merge "via_dev$43_1/m1_0_0#" "nfet$32_1/a_n84_0#"
 merge "nfet$32_1/a_n84_0#" "cap_mim$2_1/m4_n120_n120#"
 merge "cap_mim$2_1/m4_n120_n120#" "m4_2386_1772#"
+merge "nfet$32_0/a_32_n132#" "nfet$32_1/a_32_n132#" -69.2306 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nfet$32_1/a_32_n132#" "vres"
+merge "via_dev$48_3/m1_0_0#" "nand$1_0/B" -428.664 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12640 -636 -7120 -498 0 0 0 0 0 0
+merge "nand$1_0/B" "not$1_2/out"
+merge "not$1_2/out" "via_dev$48_4/m1_0_0#"
+merge "via_dev$48_4/m1_0_0#" "phi_1"
+merge "not$1_2/in" "via_dev$42_0/m1_0_0#" -779.154 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18412 -940 -13360 -814 0 0 0 0 0 0
+merge "via_dev$42_0/m1_0_0#" "via_dev$48_2/m1_0_0#"
+merge "via_dev$48_2/m1_0_0#" "not$1_3/out"
+merge "not$1_3/out" "via_dev$42_1/m1_0_0#"
+merge "via_dev$42_1/m1_0_0#" "vneg"
+merge "vneg" "nand$1_1/A"
 merge "nand$1_1/B" "vin" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "not$1_0/out" "phi_2" -15.5119 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "via_dev$45_1/m1_0_0#" "nand$1_1/Z" -538.18 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 -6400 -320 0 0 0 0 -6400 -512
+merge "via_dev$44_1/m1_0_0#" "nand$1_1/Z" -538.18 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 -6400 -320 0 0 0 0 -6400 -512
 merge "nand$1_1/Z" "cap_mim$2_1/m4_0_0#"
 merge "cap_mim$2_1/m4_0_0#" "m5_1654_2024#"

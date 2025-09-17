@@ -73,7 +73,7 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 570 -280 3 1 {name=M11
-L=3u
+L=13u
 W=0.36u
 nf=1
 m=1
@@ -88,7 +88,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 650 -190 0 0 {name=M12
 L=0.28u
-W=5u
+W=15u
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"

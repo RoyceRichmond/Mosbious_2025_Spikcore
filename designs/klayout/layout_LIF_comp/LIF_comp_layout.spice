@@ -79,22 +79,22 @@ Xnfet$24_0 m3_n1200_n227# vss vdd vdd nfet$24
 X0 a_108_0# a_35_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.35u
 .ends
 
-.subckt nfet$11 a_216_0# a_30_260# a_n84_0# a_94_0#
+.subckt nfet$7 a_216_0# a_30_260# a_n84_0# a_94_0#
 X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
 .ends
 
 .subckt switch$1 out cntrl in vdd vss
 Xpfet$6_0 m2_n331_n296# cntrl vdd vdd pfet$6
 Xpfet$6_1 in m2_n331_n296# out vdd pfet$6
-Xnfet$11_0 vss cntrl m2_n331_n296# vss nfet$11
-Xnfet$11_1 vss cntrl in out nfet$11
+Xnfet$7_0 vss cntrl m2_n331_n296# vss nfet$7
+Xnfet$7_1 vss cntrl in out nfet$7
 .ends
 
 .subckt pfet$5 a_n92_0# a_35_n136# a_108_0# w_n230_n138#
 X0 a_108_0# a_35_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.35u
 .ends
 
-.subckt nfet$10 a_216_0# a_30_260# a_n84_0# a_94_0#
+.subckt nfet$6 a_216_0# a_30_260# a_n84_0# a_94_0#
 X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
 .ends
 
@@ -102,9 +102,9 @@ X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3
 Xpfet$5_0 out cntrl in1 vdd pfet$5
 Xpfet$5_1 in2 m2_n850_n472# out vdd pfet$5
 Xpfet$5_2 m2_n850_n472# cntrl vdd vdd pfet$5
-Xnfet$10_0 vss m2_n850_n472# out in1 nfet$10
-Xnfet$10_1 vss cntrl in2 out nfet$10
-Xnfet$10_2 vss cntrl m2_n850_n472# vss nfet$10
+Xnfet$6_0 vss m2_n850_n472# out in1 nfet$6
+Xnfet$6_1 vss cntrl in2 out nfet$6
+Xnfet$6_2 vss cntrl m2_n850_n472# vss nfet$6
 .ends
 
 .subckt cap_mim$3 m4_n120_n120# m4_0_0#
@@ -119,37 +119,37 @@ X0 a_108_0# a_35_n136# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p
 X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
 .ends
 
-.subckt switch out cntrl in vdd vss
+.subckt switch cntrl in vdd vss out
 Xpfet$26_0 m2_n331_n296# cntrl vdd vdd pfet$26
 Xpfet$26_1 in m2_n331_n296# out vdd pfet$26
 Xnfet$42_0 vss cntrl m2_n331_n296# vss nfet$42
 Xnfet$42_1 vss cntrl in out nfet$42
 .ends
 
-.subckt nfet$47 a_n256_n272# a_30_n132# a_n84_0# a_94_0#
-X0 a_94_0# a_30_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.3355p pd=2.32u as=0.3355p ps=2.32u w=0.55u l=0.28u
-.ends
-
-.subckt nfet$45 a_n256_n272# a_n84_0# a_38_n132# a_138_0#
-X0 a_138_0# a_38_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.305p pd=2.22u as=0.305p ps=2.22u w=0.5u l=0.5u
-.ends
-
-.subckt nfet$46 a_n256_n272# a_n84_0# a_198_0# a_38_n132#
+.subckt nfet$22 a_n256_n272# a_n84_0# a_198_0# a_38_n132#
 X0 a_198_0# a_38_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.305p pd=2.22u as=0.305p ps=2.22u w=0.5u l=0.8u
 .ends
 
-.subckt nfet$44 a_n84_n2# a_n256_n272# a_30_n132# a_94_0#
+.subckt nfet$20 a_n84_n2# a_n256_n272# a_30_n132# a_94_0#
 X0 a_94_0# a_30_n132# a_n84_n2# a_n256_n272# nfet_03v3 ad=0.228p pd=1.98u as=0.228p ps=1.98u w=0.36u l=0.28u
 .ends
 
-.subckt nvdiv vss vdd vspike_up vspike_down vres vref
-Xnfet$47_0 vss vdd vdd vref nfet$47
-Xnfet$45_0 vss vspike_down vspike_down vres nfet$45
-Xnfet$45_1 vss m2_367_1540# m2_367_1540# vspike_down nfet$45
-Xnfet$46_0 vss vres vss vres nfet$46
-Xnfet$44_0 vref vss vref vss nfet$44
-Xnfet$44_1 vspike_up vss vspike_up m2_367_1540# nfet$44
-Xnfet$44_2 vdd vss vdd vspike_up nfet$44
+.subckt nfet$23 a_n256_n272# a_30_n132# a_n84_0# a_94_0#
+X0 a_94_0# a_30_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.3355p pd=2.32u as=0.3355p ps=2.32u w=0.55u l=0.28u
+.ends
+
+.subckt nfet$21 a_n256_n272# a_n84_0# a_38_n132# a_138_0#
+X0 a_138_0# a_38_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.305p pd=2.22u as=0.305p ps=2.22u w=0.5u l=0.5u
+.ends
+
+.subckt nvdiv vss vdd vspike_up vres vref vspike_down
+Xnfet$22_0 vss vres vss vres nfet$22
+Xnfet$20_0 vref vss vref vss nfet$20
+Xnfet$20_1 vspike_up vss vspike_up m2_367_1540# nfet$20
+Xnfet$20_2 vdd vss vdd vspike_up nfet$20
+Xnfet$23_0 vss vdd vdd vref nfet$23
+Xnfet$21_0 vss vspike_down vspike_down vres nfet$21
+Xnfet$21_1 vss m2_367_1540# m2_367_1540# vspike_down nfet$21
 .ends
 
 .subckt cap_mim$2 m4_n120_n120# m4_0_0#
@@ -249,50 +249,50 @@ Xpfet$27_1 in2 m2_n850_n472# out vdd pfet$27
 Xpfet$27_2 m2_n850_n472# cntrl vdd vdd pfet$27
 .ends
 
-.subckt nfet$38 a_n256_n198# a_n84_0# a_94_0# a_30_1060#
-X0 a_94_0# a_30_1060# a_n84_0# a_n256_n198# nfet_03v3 ad=3.05p pd=11.22u as=3.05p ps=11.22u w=5u l=0.28u
+.subckt nfet$38 a_2638_0# a_n84_n2# a_n256_n198# a_38_n60#
+X0 a_2638_0# a_38_n60# a_n84_n2# a_n256_n198# nfet_03v3 ad=0.228p pd=1.98u as=0.228p ps=1.98u w=0.36u l=13u
 .ends
 
-.subckt nfet$36 a_n256_n272# a_n84_0# a_38_n132# a_138_0#
-X0 a_138_0# a_38_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.305p pd=2.22u as=0.305p ps=2.22u w=0.5u l=0.5u
-.ends
-
-.subckt nfet$37 a_n84_n2# a_n256_n198# a_638_0# a_38_n60#
-X0 a_638_0# a_38_n60# a_n84_n2# a_n256_n198# nfet_03v3 ad=0.228p pd=1.98u as=0.228p ps=1.98u w=0.36u l=3u
+.subckt nfet$34 a_n256_n198# a_30_3060# a_n84_0# a_94_0#
+X0 a_94_0# a_30_3060# a_n84_0# a_n256_n198# nfet_03v3 ad=9.15p pd=31.22u as=9.15p ps=31.22u w=15u l=0.28u
 .ends
 
 .subckt pfet$21 w_n352_n286# a_n92_0# a_94_0# a_28_228#
 X0 a_94_0# a_28_228# a_n92_0# w_n352_n286# pfet_03v3 ad=0.546p pd=2.98u as=0.546p ps=2.98u w=0.84u l=0.28u
 .ends
 
-.subckt nfet$34 a_n256_n272# a_30_n132# a_n84_0# a_94_0#
+.subckt nfet$36 a_n256_n272# a_30_n132# a_n84_0# a_94_0#
 X0 a_94_0# a_30_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=1.8788p pd=7.38u as=1.8788p ps=7.38u w=3.08u l=0.28u
 .ends
 
-.subckt nfet$35 a_n256_n272# a_30_n132# a_n84_0# a_94_0#
+.subckt nfet$37 a_n256_n272# a_30_n132# a_n84_0# a_94_0#
 X0 a_94_0# a_30_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.5124p pd=2.9u as=0.5124p ps=2.9u w=0.84u l=0.28u
 .ends
 
-.subckt nfet$33 a_n84_n2# a_n256_n198# a_1746_0# a_38_n60#
+.subckt nfet$35 a_n84_n2# a_n256_n198# a_1746_0# a_38_n60#
 X0 a_1746_0# a_38_n60# a_n84_n2# a_n256_n198# nfet_03v3 ad=0.228p pd=1.98u as=0.228p ps=1.98u w=0.36u l=8.54u
 .ends
 
 .subckt ota_1stage$1 vdd vp vn vss vout
 Xpfet$21_0 vdd vdd m3_n314_178# m3_n314_178# pfet$21
 Xpfet$21_1 vdd vdd vout m3_n314_178# pfet$21
-Xnfet$34_0 vss vn m3_n530_n14# vout nfet$34
-Xnfet$34_1 vss vp m3_n530_n14# m3_n314_178# nfet$34
-Xnfet$35_0 vss m3_n1200_n476# m3_n1200_n476# vss nfet$35
-Xnfet$35_1 vss m3_n1200_n476# vss m3_n530_n14# nfet$35
-Xnfet$33_0 m3_n1200_n476# vss vdd vdd nfet$33
+Xnfet$36_0 vss vn m3_n530_n14# vout nfet$36
+Xnfet$36_1 vss vp m3_n530_n14# m3_n314_178# nfet$36
+Xnfet$37_0 vss m3_n1200_n476# m3_n1200_n476# vss nfet$37
+Xnfet$37_1 vss m3_n1200_n476# vss m3_n530_n14# nfet$37
+Xnfet$35_0 m3_n1200_n476# vss vdd vdd nfet$35
 .ends
 
-.subckt refractory vneg vspike_down vss vdd vrefrac
-Xnfet$38_0 vss ota_1stage$1_0/vp vss ota_1stage$1_0/vp nfet$38
-Xnfet$36_0 vss ota_1stage$1_0/vn vspike_down vspike_down nfet$36
-Xnfet$36_1 vss vrefrac ota_1stage$1_0/vn ota_1stage$1_0/vn nfet$36
-Xnfet$37_0 ota_1stage$1_0/vp vss vneg vneg nfet$37
+.subckt nfet$33 a_n256_n272# a_n84_0# a_38_n132# a_138_0#
+X0 a_138_0# a_38_n132# a_n84_0# a_n256_n272# nfet_03v3 ad=0.305p pd=2.22u as=0.305p ps=2.22u w=0.5u l=0.5u
+.ends
+
+.subckt refractory vneg vss vspike_down vdd vrefrac
+Xnfet$38_0 vneg ota_1stage$1_0/vp vss vneg nfet$38
+Xnfet$34_0 vss ota_1stage$1_0/vp vss ota_1stage$1_0/vp nfet$34
 Xota_1stage$1_0 vdd ota_1stage$1_0/vp ota_1stage$1_0/vn vss vrefrac ota_1stage$1
+Xnfet$33_0 vss ota_1stage$1_0/vn vspike_down vspike_down nfet$33
+Xnfet$33_1 vss ota_1stage$1_0/vn ota_1stage$1_0/vn vrefrac nfet$33
 .ends
 
 .subckt nfet$41 a_216_0# a_30_260# a_n84_0# a_94_0#
@@ -308,19 +308,19 @@ Xnfet$41_0 vss in out vss nfet$41
 Xpfet$25_0 out in vdd vdd pfet$25
 .ends
 
-.subckt phaseUpulse phi_fire vin vres vspike reward vdd vref vss
-Xswitch_0 switch_0/out phi_1 vspike vdd vss switch
-Xswitch_1 vrefrac phi_2 vspike vdd vss switch
-Xswitch_2 vref phi_int vspike vdd vss switch
-Xnvdiv_0 vss vdd vspike_up vspike_down vres vref nvdiv
+.subckt phaseUpulse phi_fire vin vspike reward vres vdd vref vss
+Xswitch_0 phi_1 vspike vdd vss switch_0/out switch
+Xswitch_1 phi_2 vspike vdd vss vrefrac switch
+Xswitch_2 phi_int vspike vdd vss vref switch
+Xnvdiv_0 vss vdd vspike_up vres vref vspike_down nvdiv
 Xmonostable_0 vin vres vneg phi_1 phi_2 vss vdd monostable
 Xnor_0 phi_1 phi_2 phi_int vdd vss nor
 Xconmutator_0 switch_0/out vspike_up vdd vdd reward vss conmutator
-Xrefractory_0 vneg vspike_down vss vdd vrefrac refractory
+Xrefractory_0 vneg vss vspike_down vdd vrefrac refractory
 Xnot$2_0 phi_fire phi_int vdd vss not$2
 .ends
 
-.subckt LIF_comp vin vdd vss vout v_rew
+.subckt LIF_comp vdd vss vin v_rew vout
 Xota_1stage$2_0 vdd ota_1stage$2_0/vp v_th vss phaseUpulse_0/vin ota_1stage$2
 Xnfet$50_0 vss v_th vin vmem nfet$50
 Xota_2stage_0 vdd vspike vin vss vmem ota_2stage
@@ -329,6 +329,6 @@ Xconmutator$1_0 vmem vss vdd ota_1stage$2_0/vp phi_fire vss conmutator$1
 Xcap_mim$3_0 conmutator$1_2/out vin cap_mim$3
 Xconmutator$1_1 v_ref vmem vdd vout phi_fire vss conmutator$1
 Xconmutator$1_2 vmem v_ref vdd conmutator$1_2/out phi_fire vss conmutator$1
-XphaseUpulse_0 phi_fire phaseUpulse_0/vin v_th vspike v_rew vdd v_ref vss phaseUpulse
+XphaseUpulse_0 phi_fire phaseUpulse_0/vin vspike v_rew v_th vdd v_ref vss phaseUpulse
 .ends
 

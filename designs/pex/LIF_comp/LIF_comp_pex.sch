@@ -5,15 +5,15 @@ V {}
 S {}
 E {}
 B 2 750 -1270 1550 -870 {flags=graph
-y1=1
-y2=3.3
+y1=0.17
+y2=2.7
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.0001
+x1=0.00015189973
+x2=0.00019216505
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -26,15 +26,15 @@ hilight_wave=0
 color=4
 node=vout}
 B 2 750 -1670 1550 -1270 {flags=graph
-y1=0.52
+y1=0.51
 y2=3.3
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.0001
+x1=0.00015189973
+x2=0.00019216505
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -60,7 +60,7 @@ C {devices/code_shown.sym} 465 -790 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
 .include /foss/designs/Mosbious_2025_Spikcore/designs/pex/LIF_comp/LIF_comp_pex.spice
 .control
-    tran 10n 100u
+    tran 10n 300u
     write tb_LIF_comp.raw
 .endc
 .save all
@@ -76,7 +76,7 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
 .lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
 "}
-C {launcher.sym} 600 -1090 0 0 {name=h5
+C {launcher.sym} 590 -1090 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_LIF_comp.raw tran"
 }

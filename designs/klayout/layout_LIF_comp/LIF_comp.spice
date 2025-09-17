@@ -1,4 +1,4 @@
-** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/LIF_comp.sch
+** sch_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/LIF_comp.sch
 .subckt LIF_comp vdd vss vin v_rew vout
 *.PININFO vin:B v_rew:B vdd:B vss:B vout:B
 x8 phi_fire vdd v_ref net1 vmem vss conmutator
@@ -13,8 +13,8 @@ XM2 vmem v_th vin vss nfet_03v3 L=0.5u W=0.5u nf=1 m=1
 .ends
 
 * expanding   symbol:  designs/libs/core_LIF_comp/core_conmutator/conmutator.sym # of pins=6
-** sym_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_conmutator/conmutator.sym
-** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_conmutator/conmutator.sch
+** sym_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_conmutator/conmutator.sym
+** sch_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_conmutator/conmutator.sch
 .subckt conmutator cntrl vdd in2 out in1 vss
 *.PININFO vdd:B vss:B in2:B out:B in1:B cntrl:B
 x1 vdd cntrl net1 vss not
@@ -26,8 +26,8 @@ XM2 out net1 in1 vss nfet_03v3 L=0.28u W=1u nf=1 m=1
 
 
 * expanding   symbol:  designs/libs/core_LIF_comp/core_ota_1stage/ota_1stage.sym # of pins=5
-** sym_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_ota_1stage/ota_1stage.sym
-** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_ota_1stage/ota_1stage.sch
+** sym_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_ota_1stage/ota_1stage.sym
+** sch_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_ota_1stage/ota_1stage.sch
 .subckt ota_1stage vdd vout vp vn vss
 *.PININFO vdd:B vss:B vp:B vn:B vout:B
 XM1 net1 net1 vdd vdd pfet_03v3 L=0.28u W=0.84u nf=1 m=1
@@ -41,8 +41,8 @@ XM7 vdd vdd net3 vss nfet_03v3 L=8.54u W=0.36u nf=1 m=1
 
 
 * expanding   symbol:  designs/libs/core_LIF_comp/core_ota_2stage/ota_2stage.sym # of pins=5
-** sym_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_ota_2stage/ota_2stage.sym
-** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_ota_2stage/ota_2stage.sch
+** sym_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_ota_2stage/ota_2stage.sym
+** sch_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_ota_2stage/ota_2stage.sch
 .subckt ota_2stage vdd vn vout vp vss
 *.PININFO vdd:B vss:B vn:B vp:B vout:B
 XM3 net1 net1 vdd vdd pfet_03v3 L=0.28u W=0.84u nf=1 m=1
@@ -59,8 +59,8 @@ XC1 net2 vout cap_mim_2f0fF c_width=9e-6 c_length=9e-6 m=1
 
 
 * expanding   symbol:  designs/libs/core_LIF_comp/core_switch/switch.sym # of pins=5
-** sym_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_switch/switch.sym
-** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_switch/switch.sch
+** sym_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_switch/switch.sym
+** sch_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_switch/switch.sch
 .subckt switch vdd in out cntrl vss
 *.PININFO vdd:B vss:B in:B out:B cntrl:B
 x1 vdd cntrl net1 vss not
@@ -70,8 +70,8 @@ XM4 out cntrl in vss nfet_03v3 L=0.28u W=1u nf=1 m=1
 
 
 * expanding   symbol:  designs/libs/core_LIF_comp/core_phaseUpulse/phaseUpulse.sym # of pins=8
-** sym_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_phaseUpulse/phaseUpulse.sym
-** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_phaseUpulse/phaseUpulse.sch
+** sym_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_phaseUpulse/phaseUpulse.sym
+** sch_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_phaseUpulse/phaseUpulse.sch
 .subckt phaseUpulse vss vdd vin vspike phi_fire vref reward vres
 *.PININFO vin:I vdd:B vss:B vspike:O phi_fire:O vref:O reward:I vres:O
 x19 vdd phi_int phi_fire vss not
@@ -87,8 +87,8 @@ x2 vss vdd vref vspike_up vspike_down vres nvdiv
 
 
 * expanding   symbol:  designs/libs/core_LIF_comp/core_not/not.sym # of pins=4
-** sym_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_not/not.sym
-** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_not/not.sch
+** sym_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_not/not.sym
+** sch_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_not/not.sch
 .subckt not vdd in out vss
 *.PININFO vdd:B vss:B in:B out:B
 XM1 out in vdd vdd pfet_03v3 L=0.35u W=1u nf=1 m=1
@@ -97,8 +97,8 @@ XM3 out in vss vss nfet_03v3 L=0.28u W=1u nf=1 m=1
 
 
 * expanding   symbol:  designs/libs/core_LIF_comp/core_nor/nor.sym # of pins=5
-** sym_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_nor/nor.sym
-** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_nor/nor.sch
+** sym_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_nor/nor.sym
+** sch_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_nor/nor.sch
 .subckt nor vdd vss A B Z
 *.PININFO vdd:B vss:B A:I Z:O B:I
 XM1 net1 A vdd vdd pfet_03v3 L=0.28u W=1u nf=1 m=1
@@ -109,8 +109,8 @@ XM4 Z B net1 vdd pfet_03v3 L=0.28u W=1u nf=1 m=1
 
 
 * expanding   symbol:  designs/libs/core_LIF_comp/core_monostable/monostable.sym # of pins=7
-** sym_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_monostable/monostable.sym
-** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_monostable/monostable.sch
+** sym_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_monostable/monostable.sym
+** sch_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_monostable/monostable.sch
 .subckt monostable vss vdd vin vres phi_1 phi_2 vneg
 *.PININFO vin:I vdd:B vss:B phi_1:O vres:I phi_2:O vneg:O
 x2 vdd net2 vneg vss not
@@ -127,21 +127,21 @@ XC1 net4 net5 cap_mim_2f0fF c_width=5e-6 c_length=5e-6 m=1
 
 
 * expanding   symbol:  designs/libs/core_LIF_comp/core_refractory/refractory.sym # of pins=5
-** sym_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_refractory/refractory.sym
-** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_refractory/refractory.sch
+** sym_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_refractory/refractory.sym
+** sch_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_refractory/refractory.sch
 .subckt refractory vss vdd vspike_down vneg vrefrac
 *.PININFO vspike_down:I vdd:B vss:B vrefrac:O vneg:I
 x22 vdd vrefrac net2 net1 vss ota_1stage
 XM9 net1 net1 vrefrac vss nfet_03v3 L=0.5u W=0.5u nf=1 m=1
 XM10 vspike_down vspike_down net1 vss nfet_03v3 L=0.5u W=0.5u nf=1 m=1
-XM11 vneg vneg net2 vss nfet_03v3 L=3u W=0.36u nf=1 m=1
-XM12 net2 net2 vss vss nfet_03v3 L=0.28u W=5u nf=1 m=1
+XM11 vneg vneg net2 vss nfet_03v3 L=13u W=0.36u nf=1 m=1
+XM12 net2 net2 vss vss nfet_03v3 L=0.28u W=15u nf=1 m=1
 .ends
 
 
 * expanding   symbol:  designs/libs/core_LIF_comp/core_vdiv/nvdiv.sym # of pins=6
-** sym_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_vdiv/nvdiv.sym
-** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_vdiv/nvdiv.sch
+** sym_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_vdiv/nvdiv.sym
+** sch_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_vdiv/nvdiv.sch
 .subckt nvdiv vss vdd vref vspike_up vspike_down vres
 *.PININFO vref:O vdd:B vss:B vspike_up:O vspike_down:O vres:O
 XM15 vdd vdd vspike_up vss nfet_03v3 L=0.28u W=0.36u nf=1 m=1
@@ -155,8 +155,8 @@ XM21 vdd vdd vref vss nfet_03v3 L=0.28u W=0.55u nf=1 m=1
 
 
 * expanding   symbol:  designs/libs/core_LIF_comp/core_nand/nand.sym # of pins=5
-** sym_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_nand/nand.sym
-** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_nand/nand.sch
+** sym_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_nand/nand.sym
+** sch_path: /foss/designs/pruebas/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_nand/nand.sch
 .subckt nand vdd vss Z A B
 *.PININFO vdd:B vss:B A:I Z:O B:I
 XM1 Z A vdd vdd pfet_03v3 L=0.28u W=1u nf=1 m=1

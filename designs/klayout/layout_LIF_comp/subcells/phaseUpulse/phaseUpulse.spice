@@ -84,8 +84,8 @@ XC1 net4 net5 cap_mim_2f0fF c_width=5e-6 c_length=5e-6 m=1
 x22 vdd vrefrac net2 net1 vss ota_1stage
 XM9 net1 net1 vrefrac vss nfet_03v3 L=0.5u W=0.5u nf=1 m=1
 XM10 vspike_down vspike_down net1 vss nfet_03v3 L=0.5u W=0.5u nf=1 m=1
-XM11 vneg vneg net2 vss nfet_03v3 L=3u W=0.36u nf=1 m=1
-XM12 net2 net2 vss vss nfet_03v3 L=0.28u W=5u nf=1 m=1
+XM11 vneg vneg net2 vss nfet_03v3 L=13u W=0.36u nf=1 m=1
+XM12 net2 net2 vss vss nfet_03v3 L=0.28u W=15u nf=1 m=1
 .ends
 
 
