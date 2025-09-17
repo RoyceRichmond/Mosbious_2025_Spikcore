@@ -472,3 +472,24 @@ foreach cell $cells2 {
     }
 }
 #---------------------------------------------------------------
+
+
+# Equate prefixed and suffixed layout cells with corresponding source
+foreach cell $cells1 {
+    set layout $cell
+    #while {[regexp {([A-Z][A-Z0-9]_)+([^#\$]*)([#\$][0-9]+)*} $layout match prefix cellname suffix]} {}
+    while {[regexp {([^#\$]*)([#\$][0-9]+)} $layout match cellname suffix]} {
+        if {([lsearch $cells2 $cell] < 0) && \
+                ([lsearch $cells2 $cellname] >= 0)} {
+            # netlist with the N names should always be the second netlist
+            equate classes "-circuit2 $cellname" "-circuit1 $cell"
+            puts stdout "Equating $cell in circuit 1 and $cellname in circuit 2"
+            #if  { [lsearch $cells1 $cellname] > 0 } {
+                #equate classes "-circuit2 $cellname" "-circuit1 $cellname"
+                #puts stdout "Equating $cellname in circuit 1 and $cellname in circuit 2"
+            #}
+            #equate pins "-circuit1 $cell" "-circuit2 $cellname"
+        }
+        set layout $cellname
+    }
+}
