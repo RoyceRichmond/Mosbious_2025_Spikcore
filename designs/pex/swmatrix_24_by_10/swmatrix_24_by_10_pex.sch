@@ -44,7 +44,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=7.5e-06
+x2=2.2872062e-07
 divx=5
 subdivx=1
 ylabmag=0.5
@@ -86,7 +86,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=7.5e-06
+x2=2.2872062e-07
 divx=5
 subdivx=1
 ylabmag=0.5
@@ -157,28 +157,23 @@ T {Testing a Shift Register with 10 registers
 N -217.5 42.5 -217.5 72.5 {lab=GND}
 N -217.5 -67.5 -217.5 -17.5 {lab=VSSd}
 N -217.5 -185 -217.5 -125 {lab=VDDd}
-N 1505 -120 1505 -90 {lab=GND}
+N 1345 -120 1345 -90 {lab=GND}
 N -138.75 51.25 -138.75 81.25 {lab=GND}
-N 673.75 -178.75 673.75 -148.75 {lab=GND}
-N 673.75 -238.75 861.25 -232.5 {lab=#net1}
+N 670 -170 670 -140 {lab=GND}
+N 670 -230 860 -230 {lab=#net1}
+N 770 -440 860 -440 {lab=#net1}
+N 770 -440 770 -230 {lab=#net1}
 C {devices/vsource.sym} -217.5 12.5 0 0 {name=V1 value=0 savecurrent=false}
 C {devices/gnd.sym} -217.5 72.5 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} -217.5 -96.25 0 0 {name=V2 value=\{VDD\} savecurrent=false}
 C {devices/lab_wire.sym} -217.5 -37.5 0 0 {name=p2 sig_type=std_logic lab=VSSd}
 C {devices/lab_wire.sym} -217.5 -157.5 0 0 {name=p3 sig_type=std_logic lab=VDDd}
-C {devices/code_shown.sym} -1270 -60 0 0 {name=Models only_toplevel=false
-format="tcleval( @value )"
-value="
-.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
-.include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
-"}
 C {launcher.sym} 168.75 51.25 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tb_swmatrix_row_10_enable.raw tran"
 }
 C {title.sym} -630 1150 0 0 {name=l2 author="Peter Kinget"}
-C {lab_wire.sym} 861.25 -272.5 0 0 {name=p22 sig_type=std_logic lab=data
+C {lab_wire.sym} 860 -270 0 0 {name=p22 sig_type=std_logic lab=data
 }
 C {netlist.sym} -818.75 163.75 0 0 {name=s1 value="
 .param VDD = 3.3
@@ -197,31 +192,52 @@ aconvert [ bit_node clock_node ] [ data clock ] dac_in
 "}
 C {devices/code_shown.sym} -815 491.25 0 0 {name=Simulation1 only_toplevel=false value="
 .control
-
+    set num_threads=20
     save all
-    TRAN 0.2n 7.5u
-    write tb_swmatrix_row_10_enable.raw
+    TRAN 1n 7.5u
+    write swmatrix_24_by_10.raw
 
 .endc
 "}
-C {lab_wire.sym} 1161.25 -272.5 0 1 {name=p16 sig_type=std_logic lab=D_out
+C {lab_wire.sym} 1160 -270 0 1 {name=p16 sig_type=std_logic lab=D_out
 spice_ignore=false}
-C {lab_wire.sym} 1161.25 -252.5 0 1 {name=p18 sig_type=std_logic lab=BUS1[1:10]
+C {lab_wire.sym} 1160 -250 0 1 {name=p18 sig_type=std_logic lab=BUS1[1:10]
 spice_ignore=false}
-C {devices/vsource.sym} 1505 -150 0 0 {name=V3 value="SINE(1.65 1.65 2.857MEG 350n)" savecurrent=false}
-C {devices/gnd.sym} 1505 -90 0 0 {name=l3 lab=GND}
-C {lab_wire.sym} 1161.25 -232.5 0 1 {name=p8 sig_type=std_logic lab=pin[1:24]
+C {devices/vsource.sym} 1345 -150 0 0 {name=V3 value="SINE(1.65 1.65 2.857MEG 350n)" savecurrent=false}
+C {devices/gnd.sym} 1345 -90 0 0 {name=l3 lab=GND}
+C {lab_wire.sym} 1160 -230 0 1 {name=p8 sig_type=std_logic lab=pin[1:24]
 spice_ignore=false}
 C {devices/vsource.sym} -138.75 21.25 0 0 {name=V4 value="PULSE(0 3.3 7.2u 1n 1n 5u 14u)" savecurrent=false}
 C {devices/gnd.sym} -138.75 81.25 0 0 {name=l4 lab=GND
 value=""PULSE(0 3.3 350n 1n 1n 700n)"savecurrent=false"}
 C {devices/lab_wire.sym} -138.75 -8.75 0 0 {name=p14 sig_type=std_logic lab=Enable}
-C {devices/lab_wire.sym} 861.25 -252.5 0 0 {name=p21 sig_type=std_logic lab=Enable}
-C {swmatrix_24_10/swmatrix_24_by_10.sym} 1011.25 -222.5 0 0 {name=x1}
-C {devices/lab_wire.sym} 861.25 -212.5 0 0 {name=p4 sig_type=std_logic lab=VDDd}
-C {devices/lab_wire.sym} 861.25 -192.5 0 0 {name=p5 sig_type=std_logic lab=VSSd}
-C {lab_wire.sym} 1505 -180 0 1 {name=p6 sig_type=std_logic lab=pin[1]
+C {devices/lab_wire.sym} 860 -250 0 0 {name=p21 sig_type=std_logic lab=Enable}
+C {designs/libs/switch_matrix_gf180mcu_9t5v0/swmatrix_24_10/swmatrix_24_by_10.sym} 1010 -220 0 0 {name=x1}
+C {devices/lab_wire.sym} 860 -210 0 0 {name=p4 sig_type=std_logic lab=VDDd}
+C {devices/lab_wire.sym} 860 -190 0 0 {name=p5 sig_type=std_logic lab=VSSd}
+C {lab_wire.sym} 1345 -180 0 1 {name=p6 sig_type=std_logic lab=pin[1]
 spice_ignore=false}
-C {devices/vsource.sym} 673.75 -208.75 0 0 {name=V5 value="PULSE(0 3.3 0 0.2n 0.2n 10n 20n)" savecurrent=false}
-C {devices/gnd.sym} 673.75 -148.75 0 0 {name=l5 lab=GND
+C {devices/vsource.sym} 670 -200 0 0 {name=V5 value="PULSE(0 3.3 0 0.2n 0.2n 10n 20n)" savecurrent=false}
+C {devices/gnd.sym} 670 -140 0 0 {name=l5 lab=GND
 value=""PULSE(0 3.3 350n 1n 1n 700n)"savecurrent=false"}
+C {designs/pex/swmatrix_24_by_10/swmatrix_24_by_10_pex.sym} 1010 -430 0 0 {name=x2}
+C {devices/code_shown.sym} -810 690 0 0 {name=Models1 only_toplevel=false
+format="tcleval( @value )"
+value="
+.include /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
+.include /foss/designs/Mosbious_2025_Spikcore/designs/pex/swmatrix_24_by_10/swmatrix_24_by_10_pex.spice
+.include $::180MCU_MODELS/design.ngspice
+.lib $::180MCU_MODELS/sm141064.ngspice typical
+"
+spice_ignore=false}
+C {lab_wire.sym} 860 -480 0 0 {name=p1 sig_type=std_logic lab=data
+}
+C {devices/lab_wire.sym} 860 -460 0 0 {name=p7 sig_type=std_logic lab=Enable}
+C {devices/lab_wire.sym} 860 -420 0 0 {name=p9 sig_type=std_logic lab=VDDd}
+C {devices/lab_wire.sym} 860 -400 0 0 {name=p10 sig_type=std_logic lab=VSSd}
+C {lab_wire.sym} 1160 -480 0 1 {name=p11 sig_type=std_logic lab=D_out_pex
+spice_ignore=false}
+C {lab_wire.sym} 1160 -460 0 1 {name=p12 sig_type=std_logic lab=BUS1_pex[1:10]
+spice_ignore=false}
+C {lab_wire.sym} 1160 -440 0 1 {name=p13 sig_type=std_logic lab=pin_pex[1:24]
+spice_ignore=false}
