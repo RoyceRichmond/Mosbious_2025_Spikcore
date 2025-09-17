@@ -173,8 +173,6 @@ descr="load waves"
 tclcommand="xschem raw_read $netlist_dir/tb_swmatrix_row_10_enable.raw tran"
 }
 C {title.sym} -630 1150 0 0 {name=l2 author="Peter Kinget"}
-C {lab_wire.sym} 860 -270 0 0 {name=p22 sig_type=std_logic lab=data
-}
 C {netlist.sym} -818.75 163.75 0 0 {name=s1 value="
 .param VDD = 3.3
 
@@ -182,7 +180,7 @@ C {netlist.sym} -818.75 163.75 0 0 {name=s1 value="
 
 * clock
 abit [ bit_node ]  input_vector
-.model input_vector d_source(input_file=\\"/foss/designs/switch_matrix_gf180mcu_9t5v0/testbenches/data_source/data_swmatrix5_10.txt\\")
+.model input_vector d_source(input_file=\\"/foss/designs/switch_matrix_gf180mcu_9t5v0/testbenches/data_source/data_swmatrix5_10_slow.txt\\")
 * data
 aclock [ clock_node ] clock_vector
 .model clock_vector d_source(input_file=\\"/foss/designs/switch_matrix_gf180mcu_9t5v0/testbenches/data_source/data_swmatrix5_10_clk.txt\\")
@@ -194,30 +192,20 @@ C {devices/code_shown.sym} -815 491.25 0 0 {name=Simulation1 only_toplevel=false
 .control
     set num_threads=20
     save all
-    TRAN 1n 7.5u
+    TRAN 2n 75u
     write swmatrix_24_by_10.raw
 
 .endc
 "}
-C {lab_wire.sym} 1160 -270 0 1 {name=p16 sig_type=std_logic lab=D_out
-spice_ignore=false}
-C {lab_wire.sym} 1160 -250 0 1 {name=p18 sig_type=std_logic lab=BUS1[1:10]
-spice_ignore=false}
 C {devices/vsource.sym} 1345 -150 0 0 {name=V3 value="SINE(1.65 1.65 2.857MEG 350n)" savecurrent=false}
 C {devices/gnd.sym} 1345 -90 0 0 {name=l3 lab=GND}
-C {lab_wire.sym} 1160 -230 0 1 {name=p8 sig_type=std_logic lab=pin[1:24]
-spice_ignore=false}
-C {devices/vsource.sym} -138.75 21.25 0 0 {name=V4 value="PULSE(0 3.3 7.2u 1n 1n 5u 14u)" savecurrent=false}
+C {devices/vsource.sym} -138.75 21.25 0 0 {name=V4 value="PULSE(0 3.3 72u 10n 10n 50u 140u)" savecurrent=false}
 C {devices/gnd.sym} -138.75 81.25 0 0 {name=l4 lab=GND
 value=""PULSE(0 3.3 350n 1n 1n 700n)"savecurrent=false"}
 C {devices/lab_wire.sym} -138.75 -8.75 0 0 {name=p14 sig_type=std_logic lab=Enable}
-C {devices/lab_wire.sym} 860 -250 0 0 {name=p21 sig_type=std_logic lab=Enable}
-C {designs/libs/switch_matrix_gf180mcu_9t5v0/swmatrix_24_10/swmatrix_24_by_10.sym} 1010 -220 0 0 {name=x1}
-C {devices/lab_wire.sym} 860 -210 0 0 {name=p4 sig_type=std_logic lab=VDDd}
-C {devices/lab_wire.sym} 860 -190 0 0 {name=p5 sig_type=std_logic lab=VSSd}
 C {lab_wire.sym} 1345 -180 0 1 {name=p6 sig_type=std_logic lab=pin[1]
 spice_ignore=false}
-C {devices/vsource.sym} 670 -200 0 0 {name=V5 value="PULSE(0 3.3 0 0.2n 0.2n 10n 20n)" savecurrent=false}
+C {devices/vsource.sym} 670 -200 0 0 {name=V5 value="PULSE(0 3.3 0 2n 2n 100n 200n)" savecurrent=false}
 C {devices/gnd.sym} 670 -140 0 0 {name=l5 lab=GND
 value=""PULSE(0 3.3 350n 1n 1n 700n)"savecurrent=false"}
 C {designs/pex/swmatrix_24_by_10/swmatrix_24_by_10_pex.sym} 1010 -430 0 0 {name=x2}
