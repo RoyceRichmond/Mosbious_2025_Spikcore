@@ -68,10 +68,10 @@ vss                                        |vss
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes switch and switch are equivalent.
-Flattening unmatched subcell nfet$47 in circuit nvdiv (0)(1 instance)
-Flattening unmatched subcell nfet$45 in circuit nvdiv (0)(2 instances)
-Flattening unmatched subcell nfet$46 in circuit nvdiv (0)(1 instance)
-Flattening unmatched subcell nfet$44 in circuit nvdiv (0)(3 instances)
+Flattening unmatched subcell nfet$22 in circuit nvdiv (0)(1 instance)
+Flattening unmatched subcell nfet$20 in circuit nvdiv (0)(3 instances)
+Flattening unmatched subcell nfet$23 in circuit nvdiv (0)(1 instance)
+Flattening unmatched subcell nfet$21 in circuit nvdiv (0)(2 instances)
 
 Subcircuit summary:
 Circuit 1: nvdiv                           |Circuit 2: nvdiv                           
@@ -85,11 +85,11 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: nvdiv                           |Circuit 2: nvdiv                           
 -------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
 vspike_up                                  |vspike_up                                  
 vres                                       |vres                                       
 vspike_down                                |vspike_down                                
 vref                                       |vref                                       
-vdd                                        |vdd                                        
 vss                                        |vss                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
@@ -184,13 +184,13 @@ out                                        |out
 Cell pin lists are equivalent.
 Device classes conmutator and conmutator are equivalent.
 Flattening unmatched subcell nfet$38 in circuit refractory (0)(1 instance)
-Flattening unmatched subcell nfet$36 in circuit refractory (0)(2 instances)
-Flattening unmatched subcell nfet$37 in circuit refractory (0)(1 instance)
+Flattening unmatched subcell nfet$34 in circuit refractory (0)(1 instance)
 Flattening unmatched subcell ota_1stage$1 in circuit refractory (0)(1 instance)
 Flattening unmatched subcell pfet$21 in circuit refractory (0)(2 instances)
-Flattening unmatched subcell nfet$34 in circuit refractory (0)(2 instances)
-Flattening unmatched subcell nfet$35 in circuit refractory (0)(2 instances)
-Flattening unmatched subcell nfet$33 in circuit refractory (0)(1 instance)
+Flattening unmatched subcell nfet$36 in circuit refractory (0)(2 instances)
+Flattening unmatched subcell nfet$37 in circuit refractory (0)(2 instances)
+Flattening unmatched subcell nfet$35 in circuit refractory (0)(1 instance)
+Flattening unmatched subcell nfet$33 in circuit refractory (0)(2 instances)
 Flattening unmatched subcell ota_1stage in circuit refractory (1)(1 instance)
 
 Subcircuit summary:
@@ -206,11 +206,11 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: refractory                      |Circuit 2: refractory                      
 -------------------------------------------|-------------------------------------------
-vdd                                        |vdd                                        
 vrefrac                                    |vrefrac                                    
-vneg                                       |vneg                                       
-vspike_down                                |vspike_down                                
+vdd                                        |vdd                                        
 vss                                        |vss                                        
+vspike_down                                |vspike_down                                
+vneg                                       |vneg                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes refractory and refractory are equivalent.
@@ -271,12 +271,12 @@ Circuit 1: phaseUpulse                     |Circuit 2: phaseUpulse
 -------------------------------------------|-------------------------------------------
 reward                                     |reward                                     
 vin                                        |vin                                        
-vss                                        |vss                                        
-vdd                                        |vdd                                        
-vspike                                     |vspike                                     
 phi_fire                                   |phi_fire                                   
 vref                                       |vref                                       
 vres                                       |vres                                       
+vss                                        |vss                                        
+vdd                                        |vdd                                        
+vspike                                     |vspike                                     
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes phaseUpulse and phaseUpulse are equivalent.
@@ -288,10 +288,10 @@ Flattening unmatched subcell nfet$2 in circuit LIF_comp (0)(2 instances)
 Flattening unmatched subcell nfet$50 in circuit LIF_comp (0)(1 instance)
 Flattening unmatched subcell switch$1 in circuit LIF_comp (0)(1 instance)
 Flattening unmatched subcell pfet$6 in circuit LIF_comp (0)(2 instances)
-Flattening unmatched subcell nfet$11 in circuit LIF_comp (0)(2 instances)
+Flattening unmatched subcell nfet$7 in circuit LIF_comp (0)(2 instances)
 Flattening unmatched subcell conmutator$1 in circuit LIF_comp (0)(3 instances)
 Flattening unmatched subcell pfet$5 in circuit LIF_comp (0)(9 instances)
-Flattening unmatched subcell nfet$10 in circuit LIF_comp (0)(9 instances)
+Flattening unmatched subcell nfet$6 in circuit LIF_comp (0)(9 instances)
 Flattening unmatched subcell cap_mim$3 in circuit LIF_comp (0)(1 instance)
 Flattening unmatched subcell ota_1stage in circuit LIF_comp (1)(1 instance)
 
