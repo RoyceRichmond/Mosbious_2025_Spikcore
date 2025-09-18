@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>GF180 ANTENNA DRC Run Report at</description>
+ <original-file>/foss/designs/Mosbious_2025_Spikcore/designs/klayout/layout_ah_syn/ah_sym.gds</original-file>
+ <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
+ <top-cell>ah_sym</top-cell>
+ <tags>
+  <tag>
+   <name>adiodes</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>ametal_eff</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>pmetal</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>max_ratio</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>pmetal_factor</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>diode_factors</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>ratio</name>
+   <description/>
+  </tag>
+  <tag>
+   <name>agate</name>
+   <description/>
+  </tag>
+ </tags>
+ <categories>
+  <category>
+   <name>ANT.1</name>
+   <description>ANT.1: Maximum ratio of Poly2 perimeter area to related gate oxide area: 200</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.8</name>
+   <description>ANT.8: Maximum ratio of contact area to related gate oxide area: 10</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.2</name>
+   <description>ANT.16_i_ANT.2: Maximum ratio of Metal1 perimeter
+                 area to related thin gate oxide area: 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.2</name>
+   <description>ANT.16_ii_ANT.2: Maximum ratio of Metal1 perimeter
+                 area to related thick gate oxide area: 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.9</name>
+   <description>ANT.16_i_ANT.9: Maximum ratio of Via1 area to related thin gate oxide area: 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.9</name>
+   <description>ANT.16_ii_ANT.9: Maximum ratio of Via1 area to related thick gate oxide area: 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.3</name>
+   <description>ANT.16_i_ANT.3: Maximum ratio of Metal2 perimeter area to related gate oxide area: 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.3</name>
+   <description>ANT.16_ii_ANT.3: Maximum ratio of Metal2 perimeter area to related gate oxide area: 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.10</name>
+   <description>ANT.16_i_ANT.10: Maximum ratio of Via2 area to related thin gate oxide area: 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.10</name>
+   <description>ANT.16_ii_ANT.10: Maximum ratio of Via2 area to related thick gate oxide area: 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.4</name>
+   <description>ANT.16_i_ANT.4: Maximum ratio of Metal3 perimeter area to related thin gate oxide area: 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.4</name>
+   <description>ANT.16_ii_ANT.4: Maximum ratio of Metal3 perimeter area to related thick gate oxide area: 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.11</name>
+   <description>ANT.16_i_ANT.11: Maximum ratio of Via3 area to related thin gate oxide area: 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.11</name>
+   <description>ANT.16_ii_ANT.11: Maximum ratio of Via3 area to related thick gate oxide area: 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.5</name>
+   <description>ANT.16_i_ANT.5: Maximum ratio of Metal4 perimeter area to related gate oxide area: 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.5</name>
+   <description>ANT.16_ii_ANT.5: Maximum ratio of Metal4 perimeter area to related gate oxide area: 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.12</name>
+   <description>ANT.16_i_ANT.12: Maximum ratio of Via4 area to related thin gate oxide area: 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.12</name>
+   <description>ANT.16_ii_ANT.12: Maximum ratio of Via4 area to related thick gate oxide area: 20</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_i_ANT.6</name>
+   <description>ANT.16_i_ANT.6: Maximum ratio of Metal5 perimeter area to related thin gate oxide area: 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_ii_ANT.6</name>
+   <description>ANT.16_ii_ANT.6: Maximum ratio of Metal5 perimeter area to related thick gate oxide area 400</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ANT.16_iii_ANT.14_MT_MIMB</name>
+   <description>ANT.16_iii_ANT.14_MT_MIMB: Maximum ratio of each of the Top metal layer perimeter
+                    area to related MIM area is 400</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>ah_sym</name>
+   <variant/>
+   <layout-name/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.2'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1575.695,386.965;1575.695,451.005;1576.075,451.005;1576.075,448.315;1576.095,448.315;1576.095,386.965)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 69.5952</value>
+    <value>[#pmetal] float: 128.88</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 591.795918367</value>
+    <value>[#agate] float: 0.1176</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.2'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1774.4,386.965;1774.4,451.005;1774.78,451.005;1774.78,448.315;1774.8,448.315;1774.8,386.965)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 69.5952</value>
+    <value>[#pmetal] float: 128.88</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 591.795918367</value>
+    <value>[#agate] float: 0.1176</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.2'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1980.565,386.965;1980.565,451.005;1980.945,451.005;1980.945,448.315;1980.965,448.315;1980.965,386.965)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 69.5952</value>
+    <value>[#pmetal] float: 128.88</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 591.795918367</value>
+    <value>[#agate] float: 0.1176</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.2'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (2185.67,386.965;2185.67,451.005;2186.05,451.005;2186.05,448.315;2186.07,448.315;2186.07,386.965)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 69.5952</value>
+    <value>[#pmetal] float: 128.88</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 591.795918367</value>
+    <value>[#agate] float: 0.1176</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.2'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (2387.21,386.965;2387.21,451.005;2387.59,451.005;2387.59,448.315;2387.61,448.315;2387.61,386.965)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 69.5952</value>
+    <value>[#pmetal] float: 128.88</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 591.795918367</value>
+    <value>[#agate] float: 0.1176</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.2'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (2487.77,386.965;2487.77,451.005;2488.15,451.005;2488.15,448.315;2488.17,448.315;2488.17,386.965)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 69.5952</value>
+    <value>[#pmetal] float: 128.88</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 591.795918367</value>
+    <value>[#agate] float: 0.1176</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.3'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1595.48,390.505;1595.48,455.43;1595.88,455.43;1595.88,448.51;1595.885,448.51;1595.885,390.505)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 70.5564</value>
+    <value>[#pmetal] float: 130.66</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 599.969387755</value>
+    <value>[#agate] float: 0.1176</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.3'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1794.185,390.505;1794.185,455.43;1794.585,455.43;1794.585,448.51;1794.59,448.51;1794.59,390.505)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 70.5564</value>
+    <value>[#pmetal] float: 130.66</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 599.969387755</value>
+    <value>[#agate] float: 0.1176</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.3'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (2000.35,390.505;2000.35,455.43;2000.75,455.43;2000.75,448.51;2000.755,448.51;2000.755,390.505)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 70.5564</value>
+    <value>[#pmetal] float: 130.66</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 599.969387755</value>
+    <value>[#agate] float: 0.1176</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.3'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (2205.455,390.505;2205.455,455.43;2205.855,455.43;2205.855,448.51;2205.86,448.51;2205.86,390.505)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 70.5564</value>
+    <value>[#pmetal] float: 130.66</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 599.969387755</value>
+    <value>[#agate] float: 0.1176</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.3'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (2406.995,390.505;2406.995,455.43;2407.395,455.43;2407.395,448.51;2407.4,448.51;2407.4,390.505)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 70.5564</value>
+    <value>[#pmetal] float: 130.66</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 599.969387755</value>
+    <value>[#agate] float: 0.1176</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.3'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (2507.555,390.505;2507.555,455.43;2507.955,455.43;2507.955,448.51;2507.96,448.51;2507.96,390.505)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 70.5564</value>
+    <value>[#pmetal] float: 130.66</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 599.969387755</value>
+    <value>[#agate] float: 0.1176</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.4'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1575.695,386.965;1575.695,389.505;2588.775,389.505;2588.775,436.475;2591.315,436.475;2591.315,386.965)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 1150.3404</value>
+    <value>[#pmetal] float: 2130.26</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 1630.30102041</value>
+    <value>[#agate] float: 0.7056</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.4'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1595.48,390.505;1595.48,393.045;2585.235,393.045;2585.235,536.475;2587.775,536.475;2587.775,390.505)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 1229.3262</value>
+    <value>[#pmetal] float: 2276.53</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 1742.24234694</value>
+    <value>[#agate] float: 0.7056</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.4'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1514.89,397.585;1514.89,400.125;2578.155,400.125;2578.155,568.29;2454.66,568.29;2454.66,666.055;2419.65,666.055;2419.65,668.595;2457.2,668.595;2457.2,570.83;2580.695,570.83;2580.695,397.585)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 1614.9456</value>
+    <value>[#pmetal] float: 2990.64</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 4577.51020408</value>
+    <value>[#agate] float: 0.3528</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.4'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1714.595,404.665;1714.595,407.205;2571.075,407.205;2571.075,561.21;2447.58,561.21;2447.58,639.54;2419.65,639.54;2419.65,642.08;2450.12,642.08;2450.12,563.75;2573.615,563.75;2573.615,404.665)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 1347.6888</value>
+    <value>[#pmetal] float: 2495.72</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 3819.97959184</value>
+    <value>[#agate] float: 0.3528</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.4'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (1914.77,411.745;1914.77,414.285;2563.995,414.285;2563.995,554.13;2440.5,554.13;2440.5,612.855;2419.65,612.855;2419.65,615.395;2443.04,615.395;2443.04,556.67;2566.535,556.67;2566.535,411.745)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 1079.7408</value>
+    <value>[#pmetal] float: 1999.52</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 3060.48979592</value>
+    <value>[#agate] float: 0.3528</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.4'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (2114.47,418.825;2114.47,421.365;2556.915,421.365;2556.915,547.05;2433.42,547.05;2433.42,586.195;2419.65,586.195;2419.65,588.735;2435.96,588.735;2435.96,549.59;2559.455,549.59;2559.455,418.825)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 812.3328</value>
+    <value>[#pmetal] float: 1504.32</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 2302.53061224</value>
+    <value>[#agate] float: 0.3528</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.4'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (2315.07,425.905;2315.07,428.445;2549.835,428.445;2549.835,539.97;2426.34,539.97;2426.34,559.395;2419.65,559.395;2419.65,561.935;2428.88,561.935;2428.88,542.51;2552.375,542.51;2552.375,425.905)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 543.8016</value>
+    <value>[#pmetal] float: 1007.04</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 1541.3877551</value>
+    <value>[#agate] float: 0.3528</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ANT.16_i_ANT.4'</category>
+   <cell>ah_sym</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (2486.535,432.985;2486.535,435.525;2542.755,435.525;2542.755,532.89;2419.65,532.89;2419.65,535.43;2545.295,535.43;2545.295,432.985)</value>
+    <value>[#adiodes] text: '(0)'</value>
+    <value>[#ametal_eff] float: 307.0548</value>
+    <value>[#pmetal] float: 568.62</value>
+    <value>[#max_ratio] float: 400</value>
+    <value>[#pmetal_factor] float: 0.54</value>
+    <value>[#diode_factors] text: '(800)'</value>
+    <value>[#ratio] float: 870.336734694</value>
+    <value>[#agate] float: 0.3528</value>
+   </values>
+  </item>
+ </items>
+</report-database>
