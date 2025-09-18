@@ -260,7 +260,7 @@ xTgates[10] gc[10] BUS[10] pin VSS VDD swmatrix_Tgate
 .subckt NO_ClkGen PHI_2 CLK PHI_1 VDD VSS
 *.PININFO CLK:I PHI_2:O PHI_1:O VDD:B VSS:B
 x1 OUT_bot_d CLKB OUT_top VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__nand2_1
-x2 CLKbuf OUT_top_d OUT_bot VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x2 OUT_top_d CLKbuf OUT_bot VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__nand2_1
 x3 OUT_top PHI_2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
 x4 PHI_2 net5 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
 x5 net3 net2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1

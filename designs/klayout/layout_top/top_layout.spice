@@ -1,43 +1,5 @@
 * NGSPICE file created from top.ext - technology: gf180mcuD
 
-.subckt nfet$34 a_1158_0# a_n84_n2# dw_n710_n726# a_38_n132# w_n710_n726#
-X0 a_1158_0# a_38_n132# a_n84_n2# w_n710_n726# nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=5.6u
-.ends
-
-.subckt nfet$32 a_n84_n2# a_374_0# dw_n710_n726# a_38_n132# w_n710_n726#
-X0 a_374_0# a_38_n132# a_n84_n2# w_n710_n726# nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=1.68u
-.ends
-
-.subckt pfet$17 a_150_0# a_38_n60# a_n92_0# w_n230_n138#
-X0 a_150_0# a_38_n60# a_n92_0# w_n230_n138# pfet_03v3 ad=0.286p pd=2.18u as=0.286p ps=2.18u w=0.44u l=0.56u
-.ends
-
-.subckt cap_mim$3 m4_n120_n120# m4_0_0#
-X0 m4_0_0# m4_n120_n120# cap_mim_2f0_m4m5_noshield c_width=6u c_length=5u
-.ends
-
-.subckt nfet$33 a_n84_n2# a_194_0# dw_n710_n726# a_38_n132# w_n710_n726#
-X0 a_194_0# a_38_n132# a_n84_n2# w_n710_n726# nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=0.78u
-.ends
-
-.subckt pfet$18 a_38_n60# a_n92_0# a_318_0# w_n230_n138#
-X0 a_318_0# a_38_n60# a_n92_0# w_n230_n138# pfet_03v3 ad=0.546p pd=2.98u as=0.546p ps=2.98u w=0.84u l=1.4u
-.ends
-
-.subckt nfet$31 a_150_0# dw_n710_n726# a_n84_0# a_38_n132# w_n710_n726#
-X0 a_150_0# a_38_n132# a_n84_0# w_n710_n726# nfet_03v3 ad=0.2684p pd=2.1u as=0.2684p ps=2.1u w=0.44u l=0.56u
-.ends
-
-.subckt AH_neuron$1 vdd Current_in v_bias vout vss
-Xnfet$34_0 m1_335_n170# Current_in nfet$34_0/dw_n710_n726# v_bias vss nfet$34
-Xnfet$32_0 m1_335_n170# vss nfet$34_0/dw_n710_n726# vout vss nfet$32
-Xpfet$17_0 vdd Current_in m2_381_1901# vdd pfet$17
-Xcap_mim$3_0 Current_in vout cap_mim$3
-Xnfet$33_0 vout vss nfet$34_0/dw_n710_n726# m2_381_1901# vss nfet$33
-Xpfet$18_0 m2_381_1901# vout vdd vdd pfet$18
-Xnfet$31_0 vss nfet$34_0/dw_n710_n726# m2_381_1901# Current_in vss nfet$31
-.ends
-
 .subckt pfet$16 a_1534_0# a_2174_0# a_1054_0# a_734_0# a_828_n136# a_28_n136# a_2588_n136#
 + a_1694_0# a_254_0# a_1628_n136# a_894_0# a_188_n136# a_988_n136# a_2814_0# a_2748_n136#
 + a_1788_n136# a_2334_0# a_348_n136# a_1214_0# a_1148_n136# a_1854_0# a_414_0# a_2108_n136#
@@ -389,14 +351,42 @@ Xnfet$37_0 nfet$38_0/dw_n710_n652# m1_344_2455# m1_2266_n82# vss vss nfet$37
 Xnfet$35_0 nfet$38_0/dw_n710_n652# v_ctrl v_out m1_2266_n82# vss nfet$35
 .ends
 
+.subckt pfet$23 a_150_0# a_38_n60# a_n92_0# w_n230_n138#
+X0 a_150_0# a_38_n60# a_n92_0# w_n230_n138# pfet_03v3 ad=0.286p pd=2.18u as=0.286p ps=2.18u w=0.44u l=0.56u
+.ends
+
+.subckt nfet$32 a_n84_n2# a_374_0# dw_n710_n726# a_38_n132# w_n710_n726#
+X0 a_374_0# a_38_n132# a_n84_n2# w_n710_n726# nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=1.68u
+.ends
+
+.subckt pfet$24 a_38_n60# a_n92_0# a_318_0# w_n230_n138#
+X0 a_318_0# a_38_n60# a_n92_0# w_n230_n138# pfet_03v3 ad=0.546p pd=2.98u as=0.546p ps=2.98u w=0.84u l=1.4u
+.ends
+
+.subckt nfet$39 a_n84_n2# a_194_0# dw_n710_n726# a_38_n132# w_n710_n726#
+X0 a_194_0# a_38_n132# a_n84_n2# w_n710_n726# nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=0.78u
+.ends
+
+.subckt cap_mim$3 m4_n120_n120# m4_0_0#
+X0 m4_0_0# m4_n120_n120# cap_mim_2f0_m4m5_noshield c_width=6u c_length=5u
+.ends
+
+.subckt nfet$40 a_1158_0# a_n84_n2# dw_n710_n726# a_38_n132# w_n710_n726#
+X0 a_1158_0# a_38_n132# a_n84_n2# w_n710_n726# nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=5.6u
+.ends
+
+.subckt nfet$31 a_150_0# dw_n710_n726# a_n84_0# a_38_n132# w_n710_n726#
+X0 a_150_0# a_38_n132# a_n84_0# w_n710_n726# nfet_03v3 ad=0.2684p pd=2.1u as=0.2684p ps=2.1u w=0.44u l=0.56u
+.ends
+
 .subckt AH_neuron vdd Current_in v_bias vout vss
-Xnfet$34_0 m1_335_n170# Current_in nfet$34_0/dw_n710_n726# v_bias vss nfet$34
-Xnfet$32_0 m1_335_n170# vss nfet$34_0/dw_n710_n726# vout vss nfet$32
-Xpfet$17_0 vdd Current_in m2_381_1901# vdd pfet$17
+Xpfet$23_0 vdd Current_in m2_381_1901# vdd pfet$23
+Xnfet$32_0 m1_335_n170# vss nfet$40_0/dw_n710_n726# vout vss nfet$32
+Xpfet$24_0 m2_381_1901# vout vdd vdd pfet$24
+Xnfet$39_0 vout vss nfet$40_0/dw_n710_n726# m2_381_1901# vss nfet$39
 Xcap_mim$3_0 Current_in vout cap_mim$3
-Xnfet$33_0 vout vss nfet$34_0/dw_n710_n726# m2_381_1901# vss nfet$33
-Xpfet$18_0 m2_381_1901# vout vdd vdd pfet$18
-Xnfet$31_0 vss nfet$34_0/dw_n710_n726# m2_381_1901# Current_in vss nfet$31
+Xnfet$40_0 m1_335_n170# Current_in nfet$40_0/dw_n710_n726# v_bias vss nfet$40
+Xnfet$31_0 vss nfet$40_0/dw_n710_n726# m2_381_1901# Current_in vss nfet$31
 .ends
 
 .subckt nfet$22 a_n256_n272# a_30_n132# a_n84_0# a_94_0#
@@ -734,10 +724,6 @@ XphaseUpulse_0 phi_fire phaseUpulse_0/vin vspike v_rew v_th vdd v_ref vss phaseU
 .subckt top vss vdd vout_s4 vin_s5 vout_s5 vout_lif vin_lif i_in0 vout_0 i_in1 vout_1
 + i_in2 vout_2 i_in3 vout_3 i_in4 vout_4 VAH_bias v_ex v_inh vin_s0 vout_s0 vin_s1
 + vout_s1 vin_s2 vout_s2 vin_s3 vout_s3 vin_s4 enable clk d_in
-XAH_neuron$1_0 vdd i_in3 VAH_bias vout_3 vss AH_neuron$1
-XAH_neuron$1_1 vdd i_in2 VAH_bias vout_2 vss AH_neuron$1
-XAH_neuron$1_2 vdd i_in1 VAH_bias vout_1 vss AH_neuron$1
-XAH_neuron$1_3 vdd i_in0 VAH_bias vout_0 vss AH_neuron$1
 Xswmatrix_24_by_10_0 swmatrix_24_by_10_0/D_out vout_lif vin_lif vout_0 i_in0 vout_1
 + i_in1 vout_2 i_in2 vout_3 i_in3 vout_4 i_in4 vout_s5 vin_s5 vout_s4 vin_s4 vout_s3
 + vout_s1 vin_s3 vout_s2 vin_s2 vin_s1 vout_s0 vin_s0 swmatrix_24_by_10_0/BUS[1] swmatrix_24_by_10_0/BUS[2]
@@ -751,6 +737,10 @@ Xsynapse_3 v_inh synapse_3/v_ctrl vin_s5 v_ex vdd vout_s5 vss synapse
 XAH_neuron_0 vdd i_in4 VAH_bias vout_4 vss AH_neuron
 XLIF_comp_0 vdd vin_lif vss vout_lif vss LIF_comp
 Xsynapse_4 v_inh synapse_4/v_ctrl vin_s2 v_ex vdd vout_s2 vss synapse
+XAH_neuron_1 vdd i_in3 VAH_bias vout_3 vss AH_neuron
 Xsynapse_5 v_inh synapse_5/v_ctrl vin_s3 v_ex vdd vout_s3 vss synapse
+XAH_neuron_2 vdd i_in2 VAH_bias vout_2 vss AH_neuron
+XAH_neuron_3 vdd i_in1 VAH_bias vout_1 vss AH_neuron
+XAH_neuron_4 vdd i_in0 VAH_bias vout_0 vss AH_neuron
 .ends
 
