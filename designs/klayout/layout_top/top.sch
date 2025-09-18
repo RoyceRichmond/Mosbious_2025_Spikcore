@@ -40,6 +40,12 @@ T {Mosbius pins} -500 -400 0 0 0.3 0.3 {}
 T {AH Neurons} 160 -490 0 0 0.3 0.3 {}
 T {synapses} 160 150 0 0 0.3 0.3 {}
 N 180 -640 200 -640 {lab=PIN[2]}
+N 1130 -290 1250 -290 {lab=#net1}
+N 1250 -290 1250 -190 {lab=#net1}
+N 1250 -190 1250 -160 {lab=#net1}
+N 800 -160 1250 -160 {lab=#net1}
+N 800 -160 800 -130 {lab=#net1}
+N 800 -130 830 -130 {lab=#net1}
 C {designs/libs/core_LIF_comp/LIF_comp.sym} 110 -640 0 0 {name=x5}
 C {designs/libs/core_synapse/synapse.sym} 10 480 0 0 {name=x6}
 C {lab_pin.sym} 110 -570 0 0 {name=p3 sig_type=std_logic lab=VSS}
@@ -142,7 +148,6 @@ C {lab_pin.sym} 830 -210 0 0 {name=p105 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 830 -290 0 0 {name=p106 sig_type=std_logic lab=data_schmitt}
 C {lab_pin.sym} 830 -250 0 0 {name=p108 sig_type=std_logic lab=clk_schmitt}
 C {lab_pin.sym} 830 -270 0 0 {name=p109 sig_type=std_logic lab=EN}
-C {noconn.sym} 1130 -290 2 0 {name=l1}
 C {noconn.sym} 1130 -270 2 0 {name=l2}
 C {lab_pin.sym} 1130 -250 2 0 {name=p13 sig_type=std_logic lab=PIN[1:24]}
 C {lab_pin.sym} 40 -650 0 0 {name=p137 sig_type=std_logic lab=PIN[1]}
@@ -169,3 +174,9 @@ C {lab_pin.sym} 320 490 0 0 {name=p145 sig_type=std_logic lab=PIN[11]}
 C {lab_pin.sym} 530 490 2 0 {name=p146 sig_type=std_logic lab=PIN[12]}
 C {lab_pin.sym} 320 680 0 0 {name=p147 sig_type=std_logic lab=PIN[13]}
 C {lab_pin.sym} 530 680 2 0 {name=p148 sig_type=std_logic lab=PIN[14]}
+C {designs/libs/switch_matrix_gf180mcu_9t5v0/ShiftReg_row_10_2/ShiftReg_row_10_2.sym} 980 -90 0 0 {name=x16}
+C {lab_pin.sym} 780 -100 0 0 {name=p48 sig_type=std_logic lab=clk_schmitt}
+C {noconn.sym} 1130 -110 2 0 {name=l1}
+C {lab_pin.sym} 830 -30 0 0 {name=p50 sig_type=std_logic lab=VDD3V3}
+C {lab_pin.sym} 830 -50 0 0 {name=p52 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 830 -70 0 0 {name=p54 sig_type=std_logic lab=EN}
