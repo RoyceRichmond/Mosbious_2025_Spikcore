@@ -41,13 +41,13 @@ Circuit 1: cap_mim_2f0_m4m5_noshield       |Circuit 2: cap_mim_2f0fF
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes cap_mim_2f0_m4m5_noshield and cap_mim_2f0fF are equivalent.
-Flattening unmatched subcell pfet$16 in circuit AH_neuron$1 (0)(1 instance)
-Flattening unmatched subcell nfet$32 in circuit AH_neuron$1 (0)(1 instance)
-Flattening unmatched subcell pfet$17 in circuit AH_neuron$1 (0)(1 instance)
-Flattening unmatched subcell nfet$30 in circuit AH_neuron$1 (0)(1 instance)
-Flattening unmatched subcell cap_mim$3 in circuit AH_neuron$1 (0)(1 instance)
-Flattening unmatched subcell nfet$33 in circuit AH_neuron$1 (0)(1 instance)
-Flattening unmatched subcell nfet$31 in circuit AH_neuron$1 (0)(1 instance)
+Flattening unmatched subcell pfet$4 in circuit AH_neuron$1 (0)(1 instance)
+Flattening unmatched subcell nfet$7 in circuit AH_neuron$1 (0)(1 instance)
+Flattening unmatched subcell cap_mim in circuit AH_neuron$1 (0)(1 instance)
+Flattening unmatched subcell nfet$5 in circuit AH_neuron$1 (0)(1 instance)
+Flattening unmatched subcell pfet$5 in circuit AH_neuron$1 (0)(1 instance)
+Flattening unmatched subcell nfet$6 in circuit AH_neuron$1 (0)(1 instance)
+Flattening unmatched subcell nfet$4 in circuit AH_neuron$1 (0)(1 instance)
 
 Subcircuit summary:
 Circuit 1: AH_neuron$1                     |Circuit 2: AH_neuron                       
@@ -63,22 +63,22 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: AH_neuron$1                     |Circuit 2: AH_neuron                       
 -------------------------------------------|-------------------------------------------
-v_bias                                     |v_bias                                     
 vss                                        |vss                                        
+v_bias                                     |v_bias                                     
 vout                                       |vout                                       
 vdd                                        |vdd                                        
 Current_in                                 |Current_in                                 
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes AH_neuron$1 and AH_neuron are equivalent.
-Flattening unmatched subcell pfet$21 in circuit synapse (0)(1 instance)
-Flattening unmatched subcell nfet$36 in circuit synapse (0)(1 instance)
-Flattening unmatched subcell nfet$34 in circuit synapse (0)(1 instance)
-Flattening unmatched subcell pfet$19 in circuit synapse (0)(1 instance)
-Flattening unmatched subcell pfet$20 in circuit synapse (0)(3 instances)
-Flattening unmatched subcell nfet$37 in circuit synapse (0)(1 instance)
-Flattening unmatched subcell nfet$35 in circuit synapse (0)(3 instances)
-Flattening unmatched subcell pfet$18 in circuit synapse (0)(1 instance)
+Flattening unmatched subcell pfet in circuit synapse (0)(1 instance)
+Flattening unmatched subcell pfet$2 in circuit synapse (0)(3 instances)
+Flattening unmatched subcell nfet$3 in circuit synapse (0)(1 instance)
+Flattening unmatched subcell nfet$1 in circuit synapse (0)(3 instances)
+Flattening unmatched subcell nfet in circuit synapse (0)(1 instance)
+Flattening unmatched subcell pfet$3 in circuit synapse (0)(1 instance)
+Flattening unmatched subcell pfet$1 in circuit synapse (0)(1 instance)
+Flattening unmatched subcell nfet$2 in circuit synapse (0)(1 instance)
 
 Subcircuit summary:
 Circuit 1: synapse                         |Circuit 2: synapse                         
@@ -93,23 +93,23 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: synapse                         |Circuit 2: synapse                         
 -------------------------------------------|-------------------------------------------
-v_in                                       |v_in                                       
-v_out                                      |v_out                                      
-v_ctrl                                     |v_ctrl                                     
-vdd                                        |vdd                                        
-vss                                        |vss                                        
 ve                                         |ve                                         
 vi                                         |vi                                         
+v_in                                       |v_in                                       
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+v_out                                      |v_out                                      
+v_ctrl                                     |v_ctrl                                     
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes synapse and synapse are equivalent.
-Flattening unmatched subcell pfet$16 in circuit AH_neuron (0)(1 instance)
-Flattening unmatched subcell nfet$32 in circuit AH_neuron (0)(1 instance)
-Flattening unmatched subcell pfet$17 in circuit AH_neuron (0)(1 instance)
-Flattening unmatched subcell nfet$30 in circuit AH_neuron (0)(1 instance)
-Flattening unmatched subcell cap_mim$3 in circuit AH_neuron (0)(1 instance)
-Flattening unmatched subcell nfet$33 in circuit AH_neuron (0)(1 instance)
-Flattening unmatched subcell nfet$31 in circuit AH_neuron (0)(1 instance)
+Flattening unmatched subcell pfet$4 in circuit AH_neuron (0)(1 instance)
+Flattening unmatched subcell nfet$7 in circuit AH_neuron (0)(1 instance)
+Flattening unmatched subcell cap_mim in circuit AH_neuron (0)(1 instance)
+Flattening unmatched subcell nfet$5 in circuit AH_neuron (0)(1 instance)
+Flattening unmatched subcell pfet$5 in circuit AH_neuron (0)(1 instance)
+Flattening unmatched subcell nfet$6 in circuit AH_neuron (0)(1 instance)
+Flattening unmatched subcell nfet$4 in circuit AH_neuron (0)(1 instance)
 
 Subcircuit summary:
 Circuit 1: AH_neuron                       |Circuit 2: AH_neuron                       
@@ -125,8 +125,8 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: AH_neuron                       |Circuit 2: AH_neuron                       
 -------------------------------------------|-------------------------------------------
-v_bias                                     |v_bias                                     
 vss                                        |vss                                        
+v_bias                                     |v_bias                                     
 vout                                       |vout                                       
 vdd                                        |vdd                                        
 Current_in                                 |Current_in                                 
@@ -134,13 +134,11 @@ Current_in                                 |Current_in
 Cell pin lists are equivalent.
 Device classes AH_neuron and AH_neuron are equivalent.
 
-Cell ah_sym (0) disconnected node: vout_lif
 Flattening instances of AH_neuron$1 in cell ah_sym (0) makes a better match
 Flattening instances of AH_neuron in cell ah_sym (1) makes a better match
 Flattening instances of AH_neuron in cell ah_sym (0) makes a better match
 Making another compare attempt.
 
-Cell ah_sym (0) disconnected node: vout_lif
 Subcircuit summary:
 Circuit 1: ah_sym                          |Circuit 2: ah_sym                          
 -------------------------------------------|-------------------------------------------
@@ -153,7 +151,7 @@ Number of nets: 43                         |Number of nets: 43
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
-Netlists match uniquely with port errors.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: ah_sym                          |Circuit 2: ah_sym                          
@@ -185,7 +183,6 @@ vout_2                                     |VOUT_2
 vout_3                                     |VOUT_3                                     
 vout_4                                     |VOUT_4                                     
 vdd                                        |VDD                                        
-vout_lif                                   |(no matching pin)                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes ah_sym and ah_sym are equivalent.
