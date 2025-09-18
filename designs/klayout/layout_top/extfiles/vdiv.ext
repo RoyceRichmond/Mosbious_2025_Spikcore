@@ -1,0 +1,312 @@
+timestamp 1586783977
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_3 1 0 -132 0 1 -4609
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_1 1 0 -132 0 1 -5111
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_2 -1 0 572 0 -1 -4449
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_0 -1 0 572 0 -1 -4951
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_4 1 0 -132 0 1 -4107
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_5 -1 0 572 0 -1 -3947
+use via_dev$38 via_dev$38_0 1 0 246 0 1 -4127
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_7 1 0 -132 0 1 -3605
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_6 -1 0 572 0 -1 -3445
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_9 1 0 -132 0 1 -3103
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_8 -1 0 572 0 -1 -2943
+use via_dev$38 via_dev$38_1 1 0 246 0 1 -3123
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_11 1 0 -132 0 1 -2601
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_10 -1 0 572 0 -1 -2441
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_14 1 0 -132 0 1 -1597
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_12 1 0 -132 0 1 -2099
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_15 -1 0 572 0 -1 -1437
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_13 -1 0 572 0 -1 -1939
+use via_dev$38 via_dev$38_2 1 0 246 0 1 -2119
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_17 1 0 -132 0 1 -1095
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_16 -1 0 572 0 -1 -935
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_19 1 0 -132 0 1 -593
+use via_dev$38 via_dev$38_3 1 0 -298 0 1 -613
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_18 -1 0 572 0 -1 -433
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_21 1 0 -132 0 1 -91
+use ppolyf_u_resistor$1 ppolyf_u_resistor$1_20 -1 0 572 0 -1 69
+use via_dev$38 via_dev$38_4 1 0 538 0 1 -111
+port "vres" 6 344 -4033 344 -4033 m2
+port "vspike_down" 5 341 -3031 341 -3031 m2
+port "vref" 4 343 -2025 343 -2025 m2
+port "vspike_up" 3 638 -16 638 -16 m2
+port "vss" 1 232 -5339 232 -5339 m1
+port "vdd" 2 234 273 234 273 m1
+node "vres" 0 0 344 -4033 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vspike_down" 0 0 341 -3031 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vref" 0 0 343 -2025 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vspike_up" 0 0 638 -16 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vss" 2 570.505 232 -5339 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 101688 2828 0 0 0 0 0 0 0 0
+node "m1_308_n4993#" 1 117.237 308 -4993 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32376 1004 0 0 0 0 0 0 0 0
+node "m1_56_n4993#" 1 119.792 56 -4993 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32376 1004 0 0 0 0 0 0 0 0
+node "m1_600_n4492#" 1 129.466 600 -4492 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32452 1006 0 0 0 0 0 0 0 0
+node "m1_n236_n4491#" 1 133.041 -236 -4491 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32376 1004 0 0 0 0 0 0 0 0
+node "m1_132_n4065#" 0 77.8538 132 -4065 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13376 504 0 0 0 0 0 0 0 0
+node "m1_308_n3989#" 1 258.353 308 -3989 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54568 1588 0 0 0 0 0 0 0 0
+node "m1_132_n3563#" 0 68.9737 132 -3563 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13376 504 0 0 0 0 0 0 0 0
+node "m1_n236_n3487#" 1 267.607 -236 -3487 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54568 1588 0 0 0 0 0 0 0 0
+node "m1_132_n3061#" 0 68.9737 132 -3061 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13376 504 0 0 0 0 0 0 0 0
+node "m1_600_n2985#" 1 133.041 600 -2985 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32376 1004 0 0 0 0 0 0 0 0
+node "m1_n236_n2985#" 1 129.195 -236 -2985 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32376 1004 0 0 0 0 0 0 0 0
+node "m1_132_n2559#" 0 68.9737 132 -2559 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13376 504 0 0 0 0 0 0 0 0
+node "m1_308_n2483#" 1 158.464 308 -2483 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32376 1004 0 0 0 0 0 0 0 0
+node "m1_132_n2057#" 0 77.2818 132 -2057 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13376 504 0 0 0 0 0 0 0 0
+node "m1_600_n1981#" 1 133.034 600 -1981 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32376 1004 0 0 0 0 0 0 0 0
+node "m1_n236_n1981#" 1 133.041 -236 -1981 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32376 1004 0 0 0 0 0 0 0 0
+node "m1_308_n1479#" 1 115.12 308 -1479 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32376 1004 0 0 0 0 0 0 0 0
+node "m1_56_n1479#" 1 118.181 56 -1479 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32376 1004 0 0 0 0 0 0 0 0
+node "m1_132_n551#" 0 63.0364 132 -551 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13376 504 0 0 0 0 0 0 0 0
+node "m1_n236_n977#" 2 450.983 -236 -977 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103816 2884 0 0 0 0 0 0 0 0
+node "m1_600_n475#" 1 132.717 600 -475 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32376 1004 0 0 0 0 0 0 0 0
+node "m1_132_n49#" 0 59.2491 132 -49 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13200 502 0 0 0 0 0 0 0 0
+node "vdd" 15 4521.41 234 273 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 932976 24704 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_n236_n4491#" "m1_n236_n3487#" 5.42062
+cap "m1_n236_n1981#" "m1_n236_n2985#" 5.42062
+cap "m1_n236_n3487#" "m1_n236_n2985#" 12.7756
+cap "vdd" "m1_132_n2559#" 11.0752
+cap "vdd" "m1_132_n551#" 11.0024
+cap "m1_308_n3989#" "vss" 6.00178
+cap "m1_308_n4993#" "m1_308_n3989#" 5.42062
+cap "m1_132_n49#" "vdd" 48.9034
+cap "vdd" "m1_n236_n1981#" 91.7985
+cap "vdd" "m1_n236_n3487#" 89.6727
+cap "m1_308_n4993#" "vdd" 35.9544
+cap "m1_600_n2985#" "m1_n236_n2985#" 23.0108
+cap "m1_132_n2057#" "vdd" 11.0752
+cap "m1_600_n2985#" "m1_308_n3989#" 5.42062
+cap "m1_56_n4993#" "vss" 11.0355
+cap "m1_n236_n3487#" "m1_56_n4993#" 2.47302
+cap "m1_n236_n977#" "m1_56_n1479#" 18.3269
+cap "vdd" "m1_308_n1479#" 35.9544
+cap "m1_n236_n4491#" "vdd" 91.7985
+cap "m1_308_n4993#" "m1_56_n4993#" 103.965
+cap "vdd" "m1_600_n2985#" 91.7985
+cap "vdd" "m1_n236_n2985#" 91.7985
+cap "m1_n236_n1981#" "m1_600_n1981#" 23.0108
+cap "vdd" "m1_308_n3989#" 89.6727
+cap "m1_n236_n977#" "m1_600_n475#" 9.80545
+cap "m1_132_n4065#" "vss" 5.9073
+cap "vdd" "m1_132_n3563#" 11.0752
+cap "m1_600_n2985#" "m1_600_n1981#" 5.42062
+cap "vdd" "m1_56_n4993#" 35.9544
+cap "vdd" "m1_600_n1981#" 91.7985
+cap "m1_132_n3061#" "m1_132_n2559#" 17.1397
+cap "m1_n236_n3487#" "m1_56_n1479#" 1.9586
+cap "m1_n236_n977#" "m1_132_n551#" 30.1021
+cap "vdd" "m1_132_n4065#" 11.0752
+cap "m1_56_n1479#" "m1_308_n1479#" 103.965
+cap "m1_132_n3563#" "m1_132_n4065#" 17.1397
+cap "m1_n236_n977#" "m1_n236_n1981#" 5.42062
+cap "m1_132_n2057#" "m1_n236_n977#" 6.50558
+cap "m1_600_n4492#" "vss" 5.43018
+cap "vdd" "m1_56_n1479#" 35.9544
+cap "m1_n236_n977#" "m1_308_n1479#" 18.3269
+cap "m1_132_n3061#" "vdd" 11.0752
+cap "m1_308_n2483#" "m1_308_n1479#" 5.42062
+cap "m1_132_n3061#" "m1_132_n3563#" 17.1397
+cap "m1_n236_n4491#" "m1_600_n4492#" 23.0108
+cap "m1_308_n2483#" "m1_308_n3989#" 2.47302
+cap "m1_132_n49#" "m1_132_n551#" 17.1397
+cap "vdd" "m1_600_n475#" 119.688
+cap "m1_600_n4492#" "m1_308_n3989#" 12.7756
+cap "vdd" "m1_n236_n977#" 167.377
+cap "m1_308_n2483#" "vdd" 59.5311
+cap "m1_132_n2057#" "m1_132_n2559#" 17.1397
+cap "vdd" "m1_600_n4492#" 92.0535
+cap "m1_308_n4993#" "vss" 11.0355
+cap "m1_n236_n977#" "m1_600_n1981#" 5.43018
+cap "m1_n236_n4491#" "vss" 5.42062
+cap "ppolyf_u_resistor$1_4/a_n132_0#" "ppolyf_u_resistor$1_0/a_160_0#" 0.552043
+cap "vres" "ppolyf_u_resistor$1_0/a_160_0#" 15.4742
+cap "ppolyf_u_resistor$1_5/a_n132_0#" "ppolyf_u_resistor$1_10/a_n376_0#" 5.38177
+cap "ppolyf_u_resistor$1_1/a_160_0#" "ppolyf_u_resistor$1_0/a_160_0#" 75.3481
+cap "ppolyf_u_resistor$1_0/a_n132_0#" "ppolyf_u_resistor$1_0/a_160_0#" 13.5794
+cap "ppolyf_u_resistor$1_5/a_n132_0#" "ppolyf_u_resistor$1_4/a_n132_0#" -3.23458
+cap "vspike_down" "ppolyf_u_resistor$1_4/a_n132_0#" 1.44813
+cap "ppolyf_u_resistor$1_5/a_n132_0#" "vres" 34.7505
+cap "ppolyf_u_resistor$1_1/a_160_0#" "vspike_down" -1.23651
+cap "ppolyf_u_resistor$1_5/a_n132_0#" "ppolyf_u_resistor$1_1/a_160_0#" 0.552043
+cap "ppolyf_u_resistor$1_5/a_n132_0#" "ppolyf_u_resistor$1_0/a_n132_0#" 7.59592
+cap "ppolyf_u_resistor$1_10/a_n376_0#" "vres" -8.19697
+cap "ppolyf_u_resistor$1_10/a_n376_0#" "ppolyf_u_resistor$1_4/a_n132_0#" 5.63682
+cap "ppolyf_u_resistor$1_10/a_n376_0#" "ppolyf_u_resistor$1_1/a_160_0#" 0.257263
+cap "ppolyf_u_resistor$1_10/a_n376_0#" "ppolyf_u_resistor$1_0/a_n132_0#" 6.03826
+cap "vres" "ppolyf_u_resistor$1_4/a_n132_0#" 11.2034
+cap "ppolyf_u_resistor$1_0/a_n132_0#" "vres" 1.8175
+cap "ppolyf_u_resistor$1_1/a_160_0#" "ppolyf_u_resistor$1_4/a_n132_0#" 3.19928
+cap "ppolyf_u_resistor$1_0/a_n132_0#" "ppolyf_u_resistor$1_4/a_n132_0#" 7.60548
+cap "ppolyf_u_resistor$1_1/a_160_0#" "vres" 13.3856
+cap "ppolyf_u_resistor$1_5/a_n132_0#" "ppolyf_u_resistor$1_0/a_160_0#" 3.19928
+cap "ppolyf_u_resistor$1_1/a_160_0#" "ppolyf_u_resistor$1_0/a_n132_0#" 13.5794
+cap "ppolyf_u_resistor$1_10/a_n376_0#" "ppolyf_u_resistor$1_0/a_160_0#" 0.257263
+cap "vres" "ppolyf_u_resistor$1_6/a_160_0#" 1.30819
+cap "vspike_down" "ppolyf_u_resistor$1_17/a_160_0#" -0.979298
+cap "ppolyf_u_resistor$1_6/a_160_0#" "ppolyf_u_resistor$1_16/a_n376_0#" -9.55221
+cap "ppolyf_u_resistor$1_6/a_160_0#" "vres" 47.033
+cap "ppolyf_u_resistor$1_11/a_n132_0#" "ppolyf_u_resistor$1_10/a_n132_0#" -3.23458
+cap "ppolyf_u_resistor$1_11/a_n132_0#" "ppolyf_u_resistor$1_16/a_n376_0#" 4.02015
+cap "vspike_down" "ppolyf_u_resistor$1_1/a_160_0#" -1.15092
+cap "ppolyf_u_resistor$1_13/a_n132_0#" "ppolyf_u_resistor$1_10/a_n132_0#" -2.71031
+cap "vspike_down" "ppolyf_u_resistor$1_10/a_n132_0#" 32.6631
+cap "vspike_down" "ppolyf_u_resistor$1_16/a_n376_0#" -2.92038
+cap "ppolyf_u_resistor$1_11/a_n132_0#" "ppolyf_u_resistor$1_12/a_n132_0#" -2.71031
+cap "vspike_down" "vres" 16.7828
+cap "vref" "ppolyf_u_resistor$1_11/a_n132_0#" 2.15168
+cap "vspike_down" "ppolyf_u_resistor$1_12/a_n132_0#" 0.0855909
+cap "vref" "vspike_down" 40.9937
+cap "vspike_down" "ppolyf_u_resistor$1_4/a_n132_0#" 6.18453
+cap "ppolyf_u_resistor$1_16/a_n376_0#" "ppolyf_u_resistor$1_10/a_n132_0#" 4.02015
+cap "vres" "ppolyf_u_resistor$1_10/a_n132_0#" 7.63266
+cap "vres" "ppolyf_u_resistor$1_16/a_n376_0#" 4.17604
+cap "vspike_down" "ppolyf_u_resistor$1_6/a_160_0#" 50.0956
+cap "ppolyf_u_resistor$1_5/a_n132_0#" "ppolyf_u_resistor$1_16/a_n376_0#" 0.573656
+cap "ppolyf_u_resistor$1_0/a_n132_0#" "vres" -0.775775
+cap "vref" "ppolyf_u_resistor$1_10/a_n132_0#" 2.15168
+cap "ppolyf_u_resistor$1_5/a_n132_0#" "vres" 13.8767
+cap "vref" "ppolyf_u_resistor$1_16/a_n376_0#" -0.145727
+cap "ppolyf_u_resistor$1_4/a_n132_0#" "ppolyf_u_resistor$1_16/a_n376_0#" 0.573656
+cap "vspike_down" "ppolyf_u_resistor$1_11/a_n132_0#" 28.4427
+cap "vref" "vres" -1.23651
+cap "ppolyf_u_resistor$1_4/a_n132_0#" "vres" 0.367608
+cap "ppolyf_u_resistor$1_13/a_n132_0#" "ppolyf_u_resistor$1_20/a_n376_0#" 6.21047
+cap "ppolyf_u_resistor$1_13/a_n132_0#" "via_dev$38_3/m1_0_0#" 3.64958
+cap "ppolyf_u_resistor$1_12/a_n132_0#" "ppolyf_u_resistor$1_16/a_160_0#" 0.552043
+cap "ppolyf_u_resistor$1_12/a_n132_0#" "ppolyf_u_resistor$1_17/a_160_0#" 3.19928
+cap "ppolyf_u_resistor$1_12/a_n132_0#" "ppolyf_u_resistor$1_11/a_n132_0#" 10.019
+cap "ppolyf_u_resistor$1_16/a_160_0#" "vref" 15.4742
+cap "ppolyf_u_resistor$1_17/a_160_0#" "vref" 13.3856
+cap "ppolyf_u_resistor$1_11/a_n132_0#" "vref" 0.552043
+cap "ppolyf_u_resistor$1_18/a_160_0#" "vref" 0.487086
+cap "ppolyf_u_resistor$1_13/a_n132_0#" "vref" 32.6631
+cap "ppolyf_u_resistor$1_12/a_n132_0#" "ppolyf_u_resistor$1_13/a_n132_0#" -3.23458
+cap "vspike_down" "ppolyf_u_resistor$1_17/a_160_0#" -0.979298
+cap "vres" "vref" -1.23651
+cap "ppolyf_u_resistor$1_20/a_n376_0#" "vref" -17.3867
+cap "ppolyf_u_resistor$1_12/a_n132_0#" "ppolyf_u_resistor$1_20/a_n376_0#" 6.21047
+cap "ppolyf_u_resistor$1_10/a_n132_0#" "ppolyf_u_resistor$1_13/a_n132_0#" 10.019
+cap "ppolyf_u_resistor$1_12/a_n132_0#" "via_dev$38_3/m1_0_0#" 3.65436
+cap "via_dev$38_3/m1_0_0#" "vref" 1.60872
+cap "ppolyf_u_resistor$1_10/a_n132_0#" "ppolyf_u_resistor$1_20/a_n376_0#" 2.19032
+cap "ppolyf_u_resistor$1_12/a_n132_0#" "vref" 11.571
+cap "ppolyf_u_resistor$1_16/a_160_0#" "ppolyf_u_resistor$1_17/a_160_0#" 37.674
+cap "vspike_down" "vref" 7.0543
+cap "ppolyf_u_resistor$1_13/a_n132_0#" "ppolyf_u_resistor$1_17/a_160_0#" 0.552043
+cap "ppolyf_u_resistor$1_13/a_n132_0#" "ppolyf_u_resistor$1_16/a_160_0#" 3.19928
+cap "ppolyf_u_resistor$1_10/a_n132_0#" "vref" 1.59964
+cap "ppolyf_u_resistor$1_16/a_160_0#" "ppolyf_u_resistor$1_20/a_n376_0#" 0.128632
+cap "ppolyf_u_resistor$1_20/a_n376_0#" "ppolyf_u_resistor$1_17/a_160_0#" 0.128632
+cap "ppolyf_u_resistor$1_11/a_n132_0#" "ppolyf_u_resistor$1_20/a_n376_0#" 2.19032
+cap "via_dev$38_3/m1_0_0#" "ppolyf_u_resistor$1_20/a_160_0#" 0.396648
+cap "ppolyf_u_resistor$1_13/a_n132_0#" "via_dev$38_3/m1_0_0#" 4.03759
+cap "ppolyf_u_resistor$1_10/a_n132_0#" "via_dev$38_3/m1_0_0#" 0.0108174
+cap "vspike_up" "ppolyf_u_resistor$1_13/a_n132_0#" 0.598913
+cap "via_dev$38_3/m1_0_0#" "vref" 1.41868
+cap "vspike_up" "ppolyf_u_resistor$1_20/a_160_0#" 21.6313
+cap "ppolyf_u_resistor$1_18/a_160_0#" "ppolyf_u_resistor$1_20/a_160_0#" 26.1334
+cap "ppolyf_u_resistor$1_17/a_160_0#" "via_dev$38_3/m1_0_0#" 28.455
+cap "ppolyf_u_resistor$1_20/a_n376_0#" "ppolyf_u_resistor$1_20/a_160_0#" 26.7153
+cap "ppolyf_u_resistor$1_17/a_160_0#" "ppolyf_u_resistor$1_18/a_160_0#" 4.41246
+cap "ppolyf_u_resistor$1_17/a_160_0#" "ppolyf_u_resistor$1_20/a_n376_0#" 0.128632
+cap "ppolyf_u_resistor$1_17/a_160_0#" "ppolyf_u_resistor$1_16/a_160_0#" 37.674
+cap "vspike_up" "via_dev$38_3/m1_0_0#" 21.8077
+cap "ppolyf_u_resistor$1_18/a_160_0#" "via_dev$38_3/m1_0_0#" 54.7585
+cap "ppolyf_u_resistor$1_18/a_160_0#" "vspike_up" 2.15168
+cap "via_dev$38_3/m1_0_0#" "ppolyf_u_resistor$1_16/a_160_0#" 28.455
+cap "ppolyf_u_resistor$1_20/a_n376_0#" "via_dev$38_3/m1_0_0#" 62.5338
+cap "ppolyf_u_resistor$1_18/a_160_0#" "ppolyf_u_resistor$1_20/a_n376_0#" -9.80852
+cap "via_dev$38_3/m1_0_0#" "ppolyf_u_resistor$1_12/a_n132_0#" 6.14512
+cap "ppolyf_u_resistor$1_18/a_160_0#" "ppolyf_u_resistor$1_16/a_160_0#" 4.41246
+cap "ppolyf_u_resistor$1_20/a_n376_0#" "vspike_up" 101.263
+cap "ppolyf_u_resistor$1_20/a_n376_0#" "ppolyf_u_resistor$1_16/a_160_0#" 0.128632
+cap "via_dev$38_3/m1_0_0#" "ppolyf_u_resistor$1_11/a_n132_0#" 0.0108174
+merge "via_dev$38_4/m1_0_0#" "vspike_up" -259.849 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10488 -732 0 0 0 0 0 0 0 0
+merge "vspike_up" "ppolyf_u_resistor$1_20/a_n132_0#"
+merge "ppolyf_u_resistor$1_20/a_n132_0#" "ppolyf_u_resistor$1_18/a_n132_0#"
+merge "ppolyf_u_resistor$1_18/a_n132_0#" "m1_600_n475#"
+merge "via_dev$38_4/VSUBS" "ppolyf_u_resistor$1_20/a_n376_0#" -1421.52 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -127072 -6840 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$1_20/a_n376_0#" "ppolyf_u_resistor$1_21/a_n132_0#"
+merge "ppolyf_u_resistor$1_21/a_n132_0#" "ppolyf_u_resistor$1_21/a_n376_0#"
+merge "ppolyf_u_resistor$1_21/a_n376_0#" "ppolyf_u_resistor$1_18/a_n376_0#"
+merge "ppolyf_u_resistor$1_18/a_n376_0#" "via_dev$38_3/VSUBS"
+merge "via_dev$38_3/VSUBS" "ppolyf_u_resistor$1_19/a_n376_0#"
+merge "ppolyf_u_resistor$1_19/a_n376_0#" "ppolyf_u_resistor$1_16/a_n376_0#"
+merge "ppolyf_u_resistor$1_16/a_n376_0#" "ppolyf_u_resistor$1_17/a_n376_0#"
+merge "ppolyf_u_resistor$1_17/a_n376_0#" "via_dev$38_2/VSUBS"
+merge "via_dev$38_2/VSUBS" "ppolyf_u_resistor$1_13/a_n376_0#"
+merge "ppolyf_u_resistor$1_13/a_n376_0#" "ppolyf_u_resistor$1_15/a_n376_0#"
+merge "ppolyf_u_resistor$1_15/a_n376_0#" "ppolyf_u_resistor$1_12/a_n376_0#"
+merge "ppolyf_u_resistor$1_12/a_n376_0#" "ppolyf_u_resistor$1_14/a_n376_0#"
+merge "ppolyf_u_resistor$1_14/a_n376_0#" "ppolyf_u_resistor$1_10/a_n376_0#"
+merge "ppolyf_u_resistor$1_10/a_n376_0#" "ppolyf_u_resistor$1_11/a_n376_0#"
+merge "ppolyf_u_resistor$1_11/a_n376_0#" "via_dev$38_1/VSUBS"
+merge "via_dev$38_1/VSUBS" "ppolyf_u_resistor$1_8/a_n376_0#"
+merge "ppolyf_u_resistor$1_8/a_n376_0#" "ppolyf_u_resistor$1_9/a_n376_0#"
+merge "ppolyf_u_resistor$1_9/a_n376_0#" "ppolyf_u_resistor$1_6/a_n376_0#"
+merge "ppolyf_u_resistor$1_6/a_n376_0#" "ppolyf_u_resistor$1_7/a_n376_0#"
+merge "ppolyf_u_resistor$1_7/a_n376_0#" "via_dev$38_0/VSUBS"
+merge "via_dev$38_0/VSUBS" "ppolyf_u_resistor$1_5/a_n376_0#"
+merge "ppolyf_u_resistor$1_5/a_n376_0#" "ppolyf_u_resistor$1_4/a_n376_0#"
+merge "ppolyf_u_resistor$1_4/a_n376_0#" "ppolyf_u_resistor$1_0/a_n376_0#"
+merge "ppolyf_u_resistor$1_0/a_n376_0#" "ppolyf_u_resistor$1_2/a_n376_0#"
+merge "ppolyf_u_resistor$1_2/a_n376_0#" "ppolyf_u_resistor$1_1/a_n376_0#"
+merge "ppolyf_u_resistor$1_1/a_n376_0#" "ppolyf_u_resistor$1_3/a_n376_0#"
+merge "ppolyf_u_resistor$1_3/a_n376_0#" "VSUBS"
+merge "VSUBS" "vdd"
+merge "ppolyf_u_resistor$1_6/a_160_0#" "ppolyf_u_resistor$1_7/a_160_0#" -144.841 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -304 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$1_7/a_160_0#" "m1_132_n3563#"
+merge "ppolyf_u_resistor$1_11/a_n132_0#" "ppolyf_u_resistor$1_9/a_n132_0#" -94.9009 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -304 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$1_9/a_n132_0#" "m1_n236_n2985#"
+merge "via_dev$38_2/m1_0_0#" "vref" -526.481 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15200 -1464 0 0 0 0 0 0 0 0
+merge "vref" "ppolyf_u_resistor$1_13/a_160_0#"
+merge "ppolyf_u_resistor$1_13/a_160_0#" "ppolyf_u_resistor$1_12/a_160_0#"
+merge "ppolyf_u_resistor$1_12/a_160_0#" "m1_132_n2057#"
+merge "m1_132_n2057#" "ppolyf_u_resistor$1_10/a_160_0#"
+merge "ppolyf_u_resistor$1_10/a_160_0#" "m1_308_n2483#"
+merge "m1_308_n2483#" "ppolyf_u_resistor$1_11/a_160_0#"
+merge "ppolyf_u_resistor$1_11/a_160_0#" "m1_132_n2559#"
+merge "ppolyf_u_resistor$1_0/a_160_0#" "ppolyf_u_resistor$1_2/a_160_0#" -142.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -304 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$1_2/a_160_0#" "m1_308_n4993#"
+merge "ppolyf_u_resistor$1_5/a_n132_0#" "ppolyf_u_resistor$1_2/a_n132_0#" -98.1011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -76 -306 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$1_2/a_n132_0#" "m1_600_n4492#"
+merge "via_dev$38_1/m1_0_0#" "vspike_down" -435.603 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10488 -1036 0 0 0 0 0 0 0 0
+merge "vspike_down" "ppolyf_u_resistor$1_8/a_160_0#"
+merge "ppolyf_u_resistor$1_8/a_160_0#" "ppolyf_u_resistor$1_9/a_160_0#"
+merge "ppolyf_u_resistor$1_9/a_160_0#" "m1_132_n3061#"
+merge "m1_132_n3061#" "ppolyf_u_resistor$1_7/a_n132_0#"
+merge "ppolyf_u_resistor$1_7/a_n132_0#" "m1_n236_n3487#"
+merge "ppolyf_u_resistor$1_10/a_n132_0#" "ppolyf_u_resistor$1_8/a_n132_0#" -98.143 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -304 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$1_8/a_n132_0#" "m1_600_n2985#"
+merge "ppolyf_u_resistor$1_12/a_n132_0#" "ppolyf_u_resistor$1_14/a_n132_0#" -95.2144 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -304 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$1_14/a_n132_0#" "m1_n236_n1981#"
+merge "ppolyf_u_resistor$1_20/a_160_0#" "ppolyf_u_resistor$1_21/a_160_0#" -129.228 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -300 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$1_21/a_160_0#" "m1_132_n49#"
+merge "ppolyf_u_resistor$1_0/a_n132_0#" "ppolyf_u_resistor$1_1/a_n132_0#" -97.8883 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -304 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$1_1/a_n132_0#" "vss"
+merge "ppolyf_u_resistor$1_4/a_n132_0#" "ppolyf_u_resistor$1_3/a_n132_0#" -95.2144 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -304 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$1_3/a_n132_0#" "m1_n236_n4491#"
+merge "ppolyf_u_resistor$1_16/a_160_0#" "ppolyf_u_resistor$1_15/a_160_0#" -148.782 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -304 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$1_15/a_160_0#" "m1_308_n1479#"
+merge "ppolyf_u_resistor$1_18/a_160_0#" "ppolyf_u_resistor$1_19/a_160_0#" -141.147 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -304 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$1_19/a_160_0#" "m1_132_n551#"
+merge "ppolyf_u_resistor$1_1/a_160_0#" "ppolyf_u_resistor$1_3/a_160_0#" -145.141 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -304 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$1_3/a_160_0#" "m1_56_n4993#"
+merge "ppolyf_u_resistor$1_13/a_n132_0#" "ppolyf_u_resistor$1_15/a_n132_0#" -98.1358 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -304 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$1_15/a_n132_0#" "m1_600_n1981#"
+merge "via_dev$38_3/m1_0_0#" "ppolyf_u_resistor$1_19/a_n132_0#" -358.428 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10640 -888 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$1_19/a_n132_0#" "ppolyf_u_resistor$1_16/a_n132_0#"
+merge "ppolyf_u_resistor$1_16/a_n132_0#" "ppolyf_u_resistor$1_17/a_n132_0#"
+merge "ppolyf_u_resistor$1_17/a_n132_0#" "m1_n236_n977#"
+merge "ppolyf_u_resistor$1_6/a_n132_0#" "via_dev$38_0/m1_0_0#" -440.481 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15200 -1160 0 0 0 0 0 0 0 0
+merge "via_dev$38_0/m1_0_0#" "vres"
+merge "vres" "ppolyf_u_resistor$1_5/a_160_0#"
+merge "ppolyf_u_resistor$1_5/a_160_0#" "m1_308_n3989#"
+merge "m1_308_n3989#" "ppolyf_u_resistor$1_4/a_160_0#"
+merge "ppolyf_u_resistor$1_4/a_160_0#" "m1_132_n4065#"
+merge "ppolyf_u_resistor$1_17/a_160_0#" "ppolyf_u_resistor$1_14/a_160_0#" -151.588 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -304 0 0 0 0 0 0 0 0
+merge "ppolyf_u_resistor$1_14/a_160_0#" "m1_56_n1479#"
