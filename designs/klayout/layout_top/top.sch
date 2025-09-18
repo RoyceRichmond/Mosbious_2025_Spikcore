@@ -7,7 +7,7 @@ E {}
 L 4 -500 170 -380 170 {}
 L 4 -380 170 -380 410 {}
 L 4 -500 410 -380 410 {}
-L 4 -550 170 -550 410 {}
+L 4 -560 170 -560 410 {}
 L 4 -500 -540 -380 -540 {}
 L 4 -380 -540 -380 -480 {}
 L 4 -500 -480 -380 -480 {}
@@ -17,7 +17,7 @@ L 4 -550 -270 -550 -210 {}
 L 4 -500 -210 -380 -210 {}
 L 4 -380 -270 -380 -210 {}
 L 4 -500 -170 -380 -170 {}
-L 4 -550 -170 -550 130 {}
+L 4 -570 -170 -570 130 {}
 L 4 -500 130 -380 130 {}
 L 4 -380 -170 -380 130 {}
 L 4 -500 -380 -380 -380 {}
@@ -168,3 +168,28 @@ C {lab_pin.sym} 830 -250 0 0 {name=p108 sig_type=std_logic lab=clk_schmitt}
 C {lab_pin.sym} 830 -270 0 0 {name=p109 sig_type=std_logic lab=EN}
 C {noconn.sym} 1130 -290 2 0 {name=l1}
 C {noconn.sym} 1130 -270 2 0 {name=l2}
+C {lab_pin.sym} 1130 -250 2 0 {name=p13 sig_type=std_logic lab=PIN[1:24]}
+C {lab_pin.sym} -490 -110 0 0 {name=p111 sig_type=std_logic lab=PIN[3]}
+C {lab_pin.sym} -490 -90 0 0 {name=p114 sig_type=std_logic lab=PIN[4]}
+C {lab_pin.sym} -490 -250 0 0 {name=p115 sig_type=std_logic lab=PIN[1]}
+C {lab_pin.sym} -490 -230 0 0 {name=p116 sig_type=std_logic lab=PIN[2]}
+C {lab_pin.sym} -490 -70 0 0 {name=p117 sig_type=std_logic lab=PIN[5]}
+C {lab_pin.sym} -490 -50 0 0 {name=p118 sig_type=std_logic lab=PIN[6]}
+C {lab_pin.sym} -490 -30 0 0 {name=p119 sig_type=std_logic lab=PIN[7]}
+C {lab_pin.sym} -490 -10 0 0 {name=p120 sig_type=std_logic lab=PIN[8]}
+C {lab_pin.sym} -490 10 0 0 {name=p121 sig_type=std_logic lab=PIN[9]}
+C {lab_pin.sym} -490 30 0 0 {name=p122 sig_type=std_logic lab=PIN[10]}
+C {lab_pin.sym} -490 50 0 0 {name=p123 sig_type=std_logic lab=PIN[11]}
+C {lab_pin.sym} -490 70 0 0 {name=p124 sig_type=std_logic lab=PIN[12]}
+C {lab_pin.sym} -490 90 0 0 {name=p125 sig_type=std_logic lab=PIN[13]}
+C {lab_pin.sym} -490 110 0 0 {name=p126 sig_type=std_logic lab=PIN[14]}
+C {lab_pin.sym} -480 190 0 0 {name=p127 sig_type=std_logic lab=PIN[15]}
+C {lab_pin.sym} -480 210 0 0 {name=p128 sig_type=std_logic lab=PIN[16]}
+C {lab_pin.sym} -480 230 0 0 {name=p129 sig_type=std_logic lab=PIN[17]}
+C {lab_pin.sym} -480 250 0 0 {name=p130 sig_type=std_logic lab=PIN[18]}
+C {lab_pin.sym} -480 270 0 0 {name=p131 sig_type=std_logic lab=PIN[19]}
+C {lab_pin.sym} -480 290 0 0 {name=p132 sig_type=std_logic lab=PIN[20]}
+C {lab_pin.sym} -480 310 0 0 {name=p133 sig_type=std_logic lab=PIN[21]}
+C {lab_pin.sym} -480 330 0 0 {name=p134 sig_type=std_logic lab=PIN[22]}
+C {lab_pin.sym} -480 350 0 0 {name=p135 sig_type=std_logic lab=PIN[23]}
+C {lab_pin.sym} -480 370 0 0 {name=p136 sig_type=std_logic lab=PIN[24]}
