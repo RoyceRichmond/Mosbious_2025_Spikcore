@@ -46,6 +46,15 @@ N 1250 -190 1250 -160 {lab=#net1}
 N 800 -160 1250 -160 {lab=#net1}
 N 800 -160 800 -130 {lab=#net1}
 N 800 -130 830 -130 {lab=#net1}
+N 1130 -230 1170 -230 {lab=#net2}
+N 1170 -230 1170 -180 {lab=#net2}
+N 780 -180 1170 -180 {lab=#net2}
+N 780 -180 780 -110 {lab=#net2}
+N 780 -110 830 -110 {lab=#net2}
+N 760 -200 1130 -200 {lab=#net3}
+N 760 -200 760 -100 {lab=#net3}
+N 760 -90 830 -90 {lab=#net3}
+N 760 -100 760 -90 {lab=#net3}
 C {designs/libs/core_LIF_comp/LIF_comp.sym} 110 -640 0 0 {name=x5}
 C {designs/libs/core_synapse/synapse.sym} 10 480 0 0 {name=x6}
 C {lab_pin.sym} 110 -570 0 0 {name=p3 sig_type=std_logic lab=VSS}
@@ -142,7 +151,6 @@ C {lab_pin.sym} 840 -370 0 0 {name=p5 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 840 -470 0 0 {name=p6 sig_type=std_logic lab=VDD3V3}
 C {lab_pin.sym} 800 -420 0 0 {name=p98 sig_type=std_logic lab=DATA}
 C {lab_pin.sym} 920 -420 2 0 {name=p103 sig_type=std_logic lab=data_schmitt}
-C {designs/libs/switch_matrix_gf180mcu_9t5v0/swmatrix_24_10/swmatrix_24_by_10.sym} 980 -240 0 0 {name=x15}
 C {lab_pin.sym} 830 -230 0 0 {name=p104 sig_type=std_logic lab=VDD3V3}
 C {lab_pin.sym} 830 -210 0 0 {name=p105 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 830 -290 0 0 {name=p106 sig_type=std_logic lab=data_schmitt}
@@ -175,8 +183,15 @@ C {lab_pin.sym} 530 490 2 0 {name=p146 sig_type=std_logic lab=PIN[12]}
 C {lab_pin.sym} 320 680 0 0 {name=p147 sig_type=std_logic lab=PIN[13]}
 C {lab_pin.sym} 530 680 2 0 {name=p148 sig_type=std_logic lab=PIN[14]}
 C {designs/libs/switch_matrix_gf180mcu_9t5v0/ShiftReg_row_10_2/ShiftReg_row_10_2.sym} 980 -90 0 0 {name=x16}
-C {lab_pin.sym} 780 -100 0 0 {name=p48 sig_type=std_logic lab=clk_schmitt}
 C {noconn.sym} 1130 -110 2 0 {name=l1}
 C {lab_pin.sym} 830 -30 0 0 {name=p50 sig_type=std_logic lab=VDD3V3}
 C {lab_pin.sym} 830 -50 0 0 {name=p52 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 830 -70 0 0 {name=p54 sig_type=std_logic lab=EN}
+C {designs/libs/switch_matrix_gf180mcu_9t5v0/swmatrix_24_10/swmatrix_24_by_10_dchain.sym} 980 -240 0 0 {name=x17}
+C {lab_pin.sym} 1130 -130 2 0 {name=p46 sig_type=std_logic lab=Q[1:10]}
+C {lab_pin.sym} -70 240 0 0 {name=p48 sig_type=std_logic lab=Q[1]}
+C {lab_pin.sym} -70 440 0 0 {name=p56 sig_type=std_logic lab=Q[2]}
+C {lab_pin.sym} 320 240 0 0 {name=p77 sig_type=std_logic lab=Q[4]}
+C {lab_pin.sym} 320 440 0 0 {name=p79 sig_type=std_logic lab=Q[5]}
+C {lab_pin.sym} 320 630 0 0 {name=p81 sig_type=std_logic lab=Q[6]}
+C {lab_pin.sym} -70 630 0 0 {name=p83 sig_type=std_logic lab=Q[3]}

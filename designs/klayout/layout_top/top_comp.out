@@ -81,7 +81,7 @@ VSS                                        |VSS
 VDD                                        |VDD                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes gf180mcu_fd_sc_mcu9t5v0__latq_1 and gf180mcu_fd_sc_mcu9t5v0__latq_1 are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__latq_1$1 and gf180mcu_fd_sc_mcu9t5v0__latq_1 are equivalent.
 
 Subcircuit summary:
 Circuit 1: gf180mcu_fd_sc_mcu9t5v0__nand2_ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__nand2_ 
@@ -105,10 +105,10 @@ VNW                                        |VNW
 ZN                                         |ZN                                         
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes gf180mcu_fd_sc_mcu9t5v0__nand2_1 and gf180mcu_fd_sc_mcu9t5v0__nand2_1 are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__nand2_1$3 and gf180mcu_fd_sc_mcu9t5v0__nand2_1 are equivalent.
 
 Subcircuit summary:
-Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1$ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
 -------------------------------------------|-------------------------------------------
 pfet_05v0 (1)                              |pfet_06v0 (1)                              
 nfet_05v0 (1)                              |nfet_06v0 (1)                              
@@ -118,7 +118,7 @@ Number of nets: 6                          |Number of nets: 6
 Netlists match uniquely.
 
 Subcircuit pins:
-Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1$ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
 -------------------------------------------|-------------------------------------------
 VSS                                        |VSS                                        
 VPW                                        |VPW                                        
@@ -128,7 +128,7 @@ ZN                                         |ZN
 I                                          |I                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1$6 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
 
 Circuit 1 cell cap_mim_2f0_m4m5_noshield and Circuit 2 cell cap_mim_2f0fF are black boxes.
 Warning: Equate pins:  cell cap_mim_2f0_m4m5_noshield is a placeholder, treated as a black box.
@@ -164,14 +164,14 @@ ZN                                         |ZN
 I                                          |I                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1$1 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1$7 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
 
 Subcircuit summary:
 Circuit 1: DFF_2phase_1$1                  |Circuit 2: DFF_2phase_1                    
 -------------------------------------------|-------------------------------------------
-gf180mcu_fd_sc_mcu9t5v0__latq_1 (2)        |gf180mcu_fd_sc_mcu9t5v0__latq_1 (2)        
-gf180mcu_fd_sc_mcu9t5v0__nand2_1 (1)       |gf180mcu_fd_sc_mcu9t5v0__nand2_1 (1)       
-gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         |gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         
+gf180mcu_fd_sc_mcu9t5v0__latq_1$1 (2)      |gf180mcu_fd_sc_mcu9t5v0__latq_1 (2)        
+gf180mcu_fd_sc_mcu9t5v0__nand2_1$3 (1)     |gf180mcu_fd_sc_mcu9t5v0__nand2_1 (1)       
+gf180mcu_fd_sc_mcu9t5v0__inv_1$6 (1)       |gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         
 Number of devices: 4                       |Number of devices: 4                       
 Number of nets: 10                         |Number of nets: 10                         
 ---------------------------------------------------------------------------------------
@@ -266,14 +266,14 @@ vdd                                        |vdd
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes ota_1stage and ota_1stage are equivalent.
-Flattening unmatched subcell pfet$5 in circuit swmatrix_Tgate (0)(1 instance)
-Flattening unmatched subcell nfet$6 in circuit swmatrix_Tgate (0)(1 instance)
+Flattening unmatched subcell pfet$24 in circuit swmatrix_Tgate$1 (0)(1 instance)
+Flattening unmatched subcell nfet$39 in circuit swmatrix_Tgate$1 (0)(1 instance)
 
-Class swmatrix_Tgate (0):  Merged 22 parallel devices.
+Class swmatrix_Tgate$1 (0):  Merged 22 parallel devices.
 Subcircuit summary:
-Circuit 1: swmatrix_Tgate                  |Circuit 2: swmatrix_Tgate                  
+Circuit 1: swmatrix_Tgate$1                |Circuit 2: swmatrix_Tgate                  
 -------------------------------------------|-------------------------------------------
-gf180mcu_fd_sc_mcu9t5v0__inv_1$1 (1)       |gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         
+gf180mcu_fd_sc_mcu9t5v0__inv_1$7 (1)       |gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         
 pfet_03v3 (18->1)                          |pfet_03v3 (1)                              
 nfet_03v3 (6->1)                           |nfet_03v3 (1)                              
 Number of devices: 3                       |Number of devices: 3                       
@@ -284,7 +284,7 @@ Resolving symmetries by pin name.
 Netlists match uniquely.
 
 Subcircuit pins:
-Circuit 1: swmatrix_Tgate                  |Circuit 2: swmatrix_Tgate                  
+Circuit 1: swmatrix_Tgate$1                |Circuit 2: swmatrix_Tgate                  
 -------------------------------------------|-------------------------------------------
 VSS                                        |VSS                                        
 VDD                                        |VDD                                        
@@ -293,10 +293,10 @@ T2                                         |T2
 T1                                         |T1                                         
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes swmatrix_Tgate and swmatrix_Tgate are equivalent.
+Device classes swmatrix_Tgate$1 and swmatrix_Tgate are equivalent.
 
 Subcircuit summary:
-Circuit 1: ShiftReg_row_10_2               |Circuit 2: ShiftReg_row_10_2               
+Circuit 1: ShiftReg_row_10_2$1             |Circuit 2: ShiftReg_row_10_2               
 -------------------------------------------|-------------------------------------------
 DFF_2phase_1$1 (10)                        |DFF_2phase_1 (10)                          
 Number of devices: 10                      |Number of devices: 10                      
@@ -305,7 +305,7 @@ Number of nets: 26                         |Number of nets: 26
 Netlists match uniquely.
 
 Subcircuit pins:
-Circuit 1: ShiftReg_row_10_2               |Circuit 2: ShiftReg_row_10_2               
+Circuit 1: ShiftReg_row_10_2$1             |Circuit 2: ShiftReg_row_10_2               
 -------------------------------------------|-------------------------------------------
 Q[1]                                       |Q[1]                                       
 Q[2]                                       |Q[2]                                       
@@ -335,7 +335,7 @@ Q[10]                                      |Q[10]
 gc[10]                                     |gc[10]                                     
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes ShiftReg_row_10_2 and ShiftReg_row_10_2 are equivalent.
+Device classes ShiftReg_row_10_2$1 and ShiftReg_row_10_2 are equivalent.
 
 Subcircuit summary:
 Circuit 1: gf180mcu_fd_sc_mcu9t5v0__and2_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__and2_1 
@@ -382,7 +382,30 @@ ZN                                         |ZN
 I                                          |I                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1$3 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1$4 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1$ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
+-------------------------------------------|-------------------------------------------
+pfet_05v0 (1)                              |pfet_06v0 (1)                              
+nfet_05v0 (1)                              |nfet_06v0 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1$ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VPW                                        |VPW                                        
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+ZN                                         |ZN                                         
+I                                          |I                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1$5 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
 
 Subcircuit summary:
 Circuit 1: gf180mcu_fd_sc_mcu9t5v0__nand2_ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__nand2_ 
@@ -407,29 +430,6 @@ ZN                                         |ZN
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes gf180mcu_fd_sc_mcu9t5v0__nand2_1$2 and gf180mcu_fd_sc_mcu9t5v0__nand2_1 are equivalent.
-
-Subcircuit summary:
-Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1$ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
--------------------------------------------|-------------------------------------------
-pfet_05v0 (1)                              |pfet_06v0 (1)                              
-nfet_05v0 (1)                              |nfet_06v0 (1)                              
-Number of devices: 2                       |Number of devices: 2                       
-Number of nets: 6                          |Number of nets: 6                          
----------------------------------------------------------------------------------------
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1$ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
--------------------------------------------|-------------------------------------------
-VSS                                        |VSS                                        
-VPW                                        |VPW                                        
-VDD                                        |VDD                                        
-VNW                                        |VNW                                        
-ZN                                         |ZN                                         
-I                                          |I                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1$4 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
 Flattening unmatched subcell nfet$9 in circuit nvdiv (0)(1 instance)
 Flattening unmatched subcell nfet$7 in circuit nvdiv (0)(3 instances)
 Flattening unmatched subcell nfet$8 in circuit nvdiv (0)(2 instances)
@@ -617,10 +617,81 @@ Cell pin lists are equivalent.
 Device classes conmutator$1$1 and conmutator are equivalent.
 
 Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__nand2_ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__nand2_ 
+-------------------------------------------|-------------------------------------------
+pfet_05v0 (2)                              |pfet_06v0 (2)                              
+nfet_05v0 (2)                              |nfet_06v0 (2)                              
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__nand2_ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__nand2_ 
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+A2                                         |A2                                         
+VPW                                        |VPW                                        
+A1                                         |A1                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+ZN                                         |ZN                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__nand2_1 and gf180mcu_fd_sc_mcu9t5v0__nand2_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
+-------------------------------------------|-------------------------------------------
+pfet_05v0 (1)                              |pfet_06v0 (1)                              
+nfet_05v0 (1)                              |nfet_06v0 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VPW                                        |VPW                                        
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+ZN                                         |ZN                                         
+I                                          |I                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__latq_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__latq_1 
+-------------------------------------------|-------------------------------------------
+nfet_05v0 (8)                              |nfet_06v0 (8)                              
+pfet_05v0 (8)                              |pfet_06v0 (8)                              
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 15                         |Number of nets: 15                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__latq_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__latq_1 
+-------------------------------------------|-------------------------------------------
+E                                          |E                                          
+D                                          |D                                          
+Q                                          |Q                                          
+VPW                                        |VPW                                        
+VNW                                        |VNW                                        
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__latq_1$1$1 and gf180mcu_fd_sc_mcu9t5v0__latq_1 are equivalent.
+
+Subcircuit summary:
 Circuit 1: swmatrix_row_10                 |Circuit 2: swmatrix_row_10                 
 -------------------------------------------|-------------------------------------------
-swmatrix_Tgate (10)                        |swmatrix_Tgate (10)                        
-ShiftReg_row_10_2 (1)                      |ShiftReg_row_10_2 (1)                      
+swmatrix_Tgate$1 (10)                      |swmatrix_Tgate (10)                        
+ShiftReg_row_10_2$1 (1)                    |ShiftReg_row_10_2 (1)                      
 Number of devices: 11                      |Number of devices: 11                      
 Number of nets: 37                         |Number of nets: 37                         
 ---------------------------------------------------------------------------------------
@@ -629,11 +700,11 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: swmatrix_row_10                 |Circuit 2: swmatrix_row_10                 
 -------------------------------------------|-------------------------------------------
-ShiftReg_row_10_2_0/D_in                   |D_in **Mismatch**                          
+ShiftReg_row_10_2$1_0/D_in                 |D_in **Mismatch**                          
 d_out                                      |D_out                                      
-ShiftReg_row_10_2_0/PHI_1                  |PHI_1 **Mismatch**                         
-ShiftReg_row_10_2_0/PHI_2                  |PHI_2 **Mismatch**                         
-ShiftReg_row_10_2_0/EN                     |enable **Mismatch**                        
+ShiftReg_row_10_2$1_0/PHI_1                |PHI_1 **Mismatch**                         
+ShiftReg_row_10_2$1_0/PHI_2                |PHI_2 **Mismatch**                         
+ShiftReg_row_10_2$1_0/EN                   |enable **Mismatch**                        
 BUS[1]                                     |BUS[1]                                     
 BUS[2]                                     |BUS[2]                                     
 BUS[4]                                     |BUS[4]                                     
@@ -645,7 +716,7 @@ BUS[10]                                    |BUS[10]
 BUS[9]                                     |BUS[9]                                     
 BUS[7]                                     |BUS[7]                                     
 pin                                        |pin                                        
-swmatrix_Tgate_9/VDD                       |VDD **Mismatch**                           
+swmatrix_Tgate$1_9/VDD                     |VDD **Mismatch**                           
 VSUBS                                      |VSS **Mismatch**                           
 ---------------------------------------------------------------------------------------
 Cell pin lists for swmatrix_row_10 and swmatrix_row_10 altered to match.
@@ -655,7 +726,7 @@ Subcircuit summary:
 Circuit 1: En_clk_din                      |Circuit 2: En_clk_din                      
 -------------------------------------------|-------------------------------------------
 gf180mcu_fd_sc_mcu9t5v0__and2_1 (2)        |gf180mcu_fd_sc_mcu9t5v0__and2_1 (2)        
-gf180mcu_fd_sc_mcu9t5v0__inv_1$3 (2)       |gf180mcu_fd_sc_mcu9t5v0__inv_1 (2)         
+gf180mcu_fd_sc_mcu9t5v0__inv_1$4 (2)       |gf180mcu_fd_sc_mcu9t5v0__inv_1 (2)         
 Number of devices: 4                       |Number of devices: 4                       
 Number of nets: 9                          |Number of nets: 9                          
 ---------------------------------------------------------------------------------------
@@ -680,8 +751,8 @@ Device classes En_clk_din and En_clk_din are equivalent.
 Subcircuit summary:
 Circuit 1: NO_ClkGen                       |Circuit 2: NO_ClkGen                       
 -------------------------------------------|-------------------------------------------
+gf180mcu_fd_sc_mcu9t5v0__inv_1$5 (18)      |gf180mcu_fd_sc_mcu9t5v0__inv_1 (18)        
 gf180mcu_fd_sc_mcu9t5v0__nand2_1$2 (2)     |gf180mcu_fd_sc_mcu9t5v0__nand2_1 (2)       
-gf180mcu_fd_sc_mcu9t5v0__inv_1$4 (18)      |gf180mcu_fd_sc_mcu9t5v0__inv_1 (18)        
 Number of devices: 20                      |Number of devices: 20                      
 Number of nets: 23                         |Number of nets: 23                         
 ---------------------------------------------------------------------------------------
@@ -698,16 +769,16 @@ phi_1                                      |PHI_1
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes NO_ClkGen and NO_ClkGen are equivalent.
-Flattening unmatched subcell pfet$14 in circuit ota_1stage$2 (0)(2 instances)
 Flattening unmatched subcell nfet$27 in circuit ota_1stage$2 (0)(2 instances)
-Flattening unmatched subcell nfet$25 in circuit ota_1stage$2 (0)(1 instance)
-Flattening unmatched subcell nfet$26 in circuit ota_1stage$2 (0)(2 instances)
+Flattening unmatched subcell pfet$15 in circuit ota_1stage$2 (0)(2 instances)
+Flattening unmatched subcell nfet$28 in circuit ota_1stage$2 (0)(2 instances)
+Flattening unmatched subcell nfet$26 in circuit ota_1stage$2 (0)(1 instance)
 
 Subcircuit summary:
 Circuit 1: ota_1stage$2                    |Circuit 2: ota_1stage                      
 -------------------------------------------|-------------------------------------------
-pfet_03v3 (2)                              |pfet_03v3 (2)                              
 nfet_03v3 (5)                              |nfet_03v3 (5)                              
+pfet_03v3 (2)                              |pfet_03v3 (2)                              
 Number of devices: 7                       |Number of devices: 7                       
 Number of nets: 8                          |Number of nets: 8                          
 ---------------------------------------------------------------------------------------
@@ -716,20 +787,20 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: ota_1stage$2                    |Circuit 2: ota_1stage                      
 -------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+vout                                       |vout                                       
 vp                                         |vp                                         
 vn                                         |vn                                         
 vss                                        |vss                                        
-vout                                       |vout                                       
-vdd                                        |vdd                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes ota_1stage$2 and ota_1stage are equivalent.
-Flattening unmatched subcell nfet$22 in circuit ota_2stage (0)(1 instance)
-Flattening unmatched subcell nfet$20 in circuit ota_2stage (0)(1 instance)
-Flattening unmatched subcell pfet$12 in circuit ota_2stage (0)(2 instances)
+Flattening unmatched subcell nfet$22 in circuit ota_2stage (0)(2 instances)
+Flattening unmatched subcell pfet$14 in circuit ota_2stage (0)(1 instance)
+Flattening unmatched subcell nfet$25 in circuit ota_2stage (0)(1 instance)
 Flattening unmatched subcell nfet$23 in circuit ota_2stage (0)(1 instance)
-Flattening unmatched subcell nfet$21 in circuit ota_2stage (0)(2 instances)
-Flattening unmatched subcell pfet$13 in circuit ota_2stage (0)(1 instance)
+Flattening unmatched subcell nfet$21 in circuit ota_2stage (0)(1 instance)
+Flattening unmatched subcell pfet$13 in circuit ota_2stage (0)(2 instances)
 Flattening unmatched subcell cap_mim$1 in circuit ota_2stage (0)(1 instance)
 Flattening unmatched subcell nfet$24 in circuit ota_2stage (0)(1 instance)
 
@@ -747,16 +818,16 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: ota_2stage                      |Circuit 2: ota_2stage                      
 -------------------------------------------|-------------------------------------------
-vn                                         |vn                                         
-vp                                         |vp                                         
 vdd                                        |vdd                                        
 vout                                       |vout                                       
+vn                                         |vn                                         
+vp                                         |vp                                         
 vss                                        |vss                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes ota_2stage and ota_2stage are equivalent.
-Flattening unmatched subcell pfet$16 in circuit switch$1 (0)(2 instances)
-Flattening unmatched subcell nfet$29 in circuit switch$1 (0)(2 instances)
+Flattening unmatched subcell pfet$17 in circuit switch$1 (0)(2 instances)
+Flattening unmatched subcell nfet$30 in circuit switch$1 (0)(2 instances)
 
 Subcircuit summary:
 Circuit 1: switch$1                        |Circuit 2: switch                          
@@ -781,8 +852,8 @@ vss                                        |vss
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes switch$1 and switch are equivalent.
-Flattening unmatched subcell pfet$15 in circuit conmutator$1 (0)(3 instances)
-Flattening unmatched subcell nfet$28 in circuit conmutator$1 (0)(3 instances)
+Flattening unmatched subcell pfet$16 in circuit conmutator$1 (0)(3 instances)
+Flattening unmatched subcell nfet$29 in circuit conmutator$1 (0)(3 instances)
 
 Subcircuit summary:
 Circuit 1: conmutator$1                    |Circuit 2: conmutator                      
@@ -875,6 +946,32 @@ Instance: conmutator$1$1_0                 |Instance: conmutator:20
 Netlists do not match.
 Port matching may fail to disambiguate symmetries.
   Flattening non-matched subcircuits phaseUpulse phaseUpulse
+
+Subcircuit summary:
+Circuit 1: DFF_2phase_1$1$1                |Circuit 2: DFF_2phase_1                    
+-------------------------------------------|-------------------------------------------
+gf180mcu_fd_sc_mcu9t5v0__nand2_1 (1)       |gf180mcu_fd_sc_mcu9t5v0__nand2_1 (1)       
+gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         |gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         
+gf180mcu_fd_sc_mcu9t5v0__latq_1$1$1 (2)    |gf180mcu_fd_sc_mcu9t5v0__latq_1 (2)        
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: DFF_2phase_1$1$1                |Circuit 2: DFF_2phase_1                    
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+Q                                          |Q                                          
+D                                          |D                                          
+PHI_1                                      |PHI_1                                      
+PHI_2                                      |PHI_2                                      
+gated_control                              |gated_control                              
+EN                                         |EN                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes DFF_2phase_1$1$1 and DFF_2phase_1 are equivalent.
 Flattening unmatched subcell nfet$47 in circuit schmitt_trigger (0)(1 instance)
 Flattening unmatched subcell nfet$45 in circuit schmitt_trigger (0)(1 instance)
 Flattening unmatched subcell nfet$43 in circuit schmitt_trigger (0)(1 instance)
@@ -909,72 +1006,14 @@ vss                                        |vss
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes schmitt_trigger and schmitt_trigger are equivalent.
-
-Subcircuit summary:
-Circuit 1: swmatrix_24_by_10               |Circuit 2: swmatrix_24_by_10               
--------------------------------------------|-------------------------------------------
-swmatrix_row_10 (24)                       |swmatrix_row_10 (24)                       
-En_clk_din (1)                             |En_clk_din (1)                             
-NO_ClkGen (1)                              |NO_ClkGen (1)                              
-Number of devices: 26                      |Number of devices: 26                      
-Number of nets: 67                         |Number of nets: 67                         
----------------------------------------------------------------------------------------
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: swmatrix_24_by_10               |Circuit 2: swmatrix_24_by_10               
--------------------------------------------|-------------------------------------------
-vdd                                        |VDD                                        
-vss                                        |VSS                                        
-Enable                                     |enable                                     
-BUS[1]                                     |BUS[1]                                     
-BUS[2]                                     |BUS[2]                                     
-BUS[3]                                     |BUS[3]                                     
-BUS[4]                                     |BUS[4]                                     
-BUS[5]                                     |BUS[5]                                     
-BUS[6]                                     |BUS[6]                                     
-BUS[7]                                     |BUS[7]                                     
-BUS[8]                                     |BUS[8]                                     
-BUS[9]                                     |BUS[9]                                     
-BUS[10]                                    |BUS[10]                                    
-PIN[1]                                     |PIN[1]                                     
-PIN[23]                                    |PIN[23]                                    
-PIN[2]                                     |PIN[2]                                     
-PIN[3]                                     |PIN[3]                                     
-PIN[21]                                    |PIN[21]                                    
-PIN[4]                                     |PIN[4]                                     
-PIN[19]                                    |PIN[19]                                    
-PIN[5]                                     |PIN[5]                                     
-PIN[6]                                     |PIN[6]                                     
-PIN[7]                                     |PIN[7]                                     
-PIN[17]                                    |PIN[17]                                    
-PIN[8]                                     |PIN[8]                                     
-PIN[15]                                    |PIN[15]                                    
-PIN[10]                                    |PIN[10]                                    
-PIN[13]                                    |PIN[13]                                    
-PIN[12]                                    |PIN[12]                                    
-PIN[11]                                    |PIN[11]                                    
-PIN[14]                                    |PIN[14]                                    
-PIN[9]                                     |PIN[9]                                     
-PIN[16]                                    |PIN[16]                                    
-PIN[18]                                    |PIN[18]                                    
-PIN[20]                                    |PIN[20]                                    
-PIN[22]                                    |PIN[22]                                    
-D_out                                      |D_out                                      
-PIN[24]                                    |PIN[24]                                    
-clk                                        |clk                                        
-d_in                                       |D_in                                       
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes swmatrix_24_by_10 and swmatrix_24_by_10 are equivalent.
-Flattening unmatched subcell pfet$21 in circuit synapse (0)(3 instances)
-Flattening unmatched subcell nfet$36 in circuit synapse (0)(1 instance)
-Flattening unmatched subcell nfet$34 in circuit synapse (0)(1 instance)
-Flattening unmatched subcell pfet$19 in circuit synapse (0)(1 instance)
-Flattening unmatched subcell pfet$22 in circuit synapse (0)(1 instance)
+Flattening unmatched subcell pfet$23 in circuit synapse (0)(1 instance)
+Flattening unmatched subcell pfet$21 in circuit synapse (0)(1 instance)
+Flattening unmatched subcell nfet$38 in circuit synapse (0)(1 instance)
+Flattening unmatched subcell nfet$36 in circuit synapse (0)(3 instances)
+Flattening unmatched subcell pfet$22 in circuit synapse (0)(3 instances)
 Flattening unmatched subcell pfet$20 in circuit synapse (0)(1 instance)
 Flattening unmatched subcell nfet$37 in circuit synapse (0)(1 instance)
-Flattening unmatched subcell nfet$35 in circuit synapse (0)(3 instances)
+Flattening unmatched subcell nfet$35 in circuit synapse (0)(1 instance)
 
 Subcircuit summary:
 Circuit 1: synapse                         |Circuit 2: synapse                         
@@ -984,25 +1023,26 @@ nfet_03v3 (6)                              |nfet_03v3 (6)
 Number of devices: 12                      |Number of devices: 12                      
 Number of nets: 14                         |Number of nets: 14                         
 ---------------------------------------------------------------------------------------
-Netlists match uniquely.
+Netlists match uniquely with port errors.
 
 Subcircuit pins:
 Circuit 1: synapse                         |Circuit 2: synapse                         
 -------------------------------------------|-------------------------------------------
-ve                                         |ve                                         
-vi                                         |vi                                         
+v_in                                       |v_in                                       
+m1_344_2455#                               |(no pin, node is net4)                     
 v_out                                      |v_out                                      
 v_ctrl                                     |v_ctrl                                     
 vdd                                        |vdd                                        
 vss                                        |vss                                        
-v_in                                       |v_in                                       
+ve                                         |ve                                         
+vi                                         |vi                                         
 ---------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
+Cell pin lists for synapse and synapse altered to match.
 Device classes synapse and synapse are equivalent.
 Flattening unmatched subcell cap_mim$2 in circuit AH_neuron (0)(1 instance)
+Flattening unmatched subcell nfet$34 in circuit AH_neuron (0)(1 instance)
+Flattening unmatched subcell pfet$19 in circuit AH_neuron (0)(1 instance)
 Flattening unmatched subcell nfet$32 in circuit AH_neuron (0)(1 instance)
-Flattening unmatched subcell pfet$17 in circuit AH_neuron (0)(1 instance)
-Flattening unmatched subcell nfet$30 in circuit AH_neuron (0)(1 instance)
 Flattening unmatched subcell nfet$33 in circuit AH_neuron (0)(1 instance)
 Flattening unmatched subcell pfet$18 in circuit AH_neuron (0)(1 instance)
 Flattening unmatched subcell nfet$31 in circuit AH_neuron (0)(1 instance)
@@ -1021,16 +1061,16 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: AH_neuron                       |Circuit 2: AH_neuron                       
 -------------------------------------------|-------------------------------------------
-v_bias                                     |v_bias                                     
 vss                                        |vss                                        
+v_bias                                     |v_bias                                     
 vout                                       |vout                                       
 vdd                                        |vdd                                        
 Current_in                                 |Current_in                                 
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes AH_neuron and AH_neuron are equivalent.
-Flattening unmatched subcell nfet$38 in circuit LIF_comp (0)(1 instance)
 Flattening unmatched subcell cap_mim$3 in circuit LIF_comp (0)(1 instance)
+Flattening unmatched subcell nfet$40 in circuit LIF_comp (0)(1 instance)
 
 Flattening instances of switch$1 in cell LIF_comp (0) makes a better match
 Flattening instances of switch in cell LIF_comp (1) makes a better match
@@ -1044,9 +1084,9 @@ Subcircuit summary:
 Circuit 1: LIF_comp                        |Circuit 2: LIF_comp                        
 -------------------------------------------|-------------------------------------------
 ota_1stage$2 (1)                           |ota_1stage (1)                             
-nfet_03v3 (21)                             |nfet_03v3 (21)                             
 ota_2stage (1)                             |ota_2stage (1)                             
 pfet_03v3 (20)                             |pfet_03v3 (20)                             
+nfet_03v3 (21)                             |nfet_03v3 (21)                             
 cap_mim_2f0_m4m5_noshield (1)              |cap_mim_2f0fF (1)                          
 nvdiv (1)                                  |nvdiv (1)                                  
 not (1)                                    |not (1)                                    
@@ -1071,156 +1111,611 @@ Cell pin lists are equivalent.
 Device classes LIF_comp and LIF_comp are equivalent.
 
 Subcircuit summary:
+Circuit 1: ShiftReg_row_10_2$2             |Circuit 2: ShiftReg_row_10_2               
+-------------------------------------------|-------------------------------------------
+DFF_2phase_1$1$1 (10)                      |DFF_2phase_1 (10)                          
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 26                         |Number of nets: 26                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: ShiftReg_row_10_2$2             |Circuit 2: ShiftReg_row_10_2               
+-------------------------------------------|-------------------------------------------
+Q[1]                                       |Q[1]                                       
+Q[2]                                       |Q[2]                                       
+Q[3]                                       |Q[3]                                       
+Q[4]                                       |Q[4]                                       
+Q[5]                                       |Q[5]                                       
+Q[6]                                       |Q[6]                                       
+Q[7]                                       |Q[7]                                       
+Q[8]                                       |Q[8]                                       
+Q[9]                                       |Q[9]                                       
+D_in                                       |D_in                                       
+gc[1]                                      |gc[1]                                      
+gc[2]                                      |gc[2]                                      
+gc[3]                                      |gc[3]                                      
+gc[4]                                      |gc[4]                                      
+gc[5]                                      |gc[5]                                      
+gc[6]                                      |gc[6]                                      
+gc[7]                                      |gc[7]                                      
+gc[8]                                      |gc[8]                                      
+gc[9]                                      |gc[9]                                      
+Q[10]                                      |Q[10]                                      
+gc[10]                                     |gc[10]                                     
+PHI_1                                      |PHI_1                                      
+PHI_2                                      |PHI_2                                      
+EN                                         |EN                                         
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ShiftReg_row_10_2$2 and ShiftReg_row_10_2 are equivalent.
+Flattening unmatched subcell swmatrix_24_by_10 in circuit top (0)(1 instance)
+Flattening unmatched subcell swmatrix_24_by_10_dchain in circuit top (1)(1 instance)
+
+Subcircuit summary:
 Circuit 1: top                             |Circuit 2: top                             
 -------------------------------------------|-------------------------------------------
 schmitt_trigger (2)                        |schmitt_trigger (2)                        
-swmatrix_24_by_10 (1)                      |swmatrix_24_by_10 (1)                      
+swmatrix_row_10 (24)                       |swmatrix_row_10 (24)                       
+En_clk_din (1)                             |En_clk_din (1)                             
+NO_ClkGen (1)                              |NO_ClkGen (1)                              
 synapse (6)                                |synapse (6)                                
 AH_neuron (5)                              |AH_neuron (5)                              
 LIF_comp (1)                               |LIF_comp (1)                               
-Number of devices: 15                      |Number of devices: 15                      
-Number of nets: 51 **Mismatch**            |Number of nets: 42 **Mismatch**            
+ShiftReg_row_10_2$2 (1)                    |ShiftReg_row_10_2 (1)                      
+Number of devices: 41                      |Number of devices: 41                      
+Number of nets: 99 **Mismatch**            |Number of nets: 80 **Mismatch**            
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: top                             |Circuit 2: top                             
 
 ---------------------------------------------------------------------------------------
-Net: BUS[1]                                |Net: net8                                  
-  swmatrix_24_by_10/BUS[1] = 1             |  swmatrix_24_by_10/BUS[1] = 1             
-                                           |  swmatrix_24_by_10/BUS[2] = 1             
-                                           |  swmatrix_24_by_10/BUS[3] = 1             
-                                           |  swmatrix_24_by_10/BUS[4] = 1             
-                                           |  swmatrix_24_by_10/BUS[5] = 1             
-                                           |  swmatrix_24_by_10/BUS[6] = 1             
-                                           |  swmatrix_24_by_10/BUS[7] = 1             
-                                           |  swmatrix_24_by_10/BUS[8] = 1             
-                                           |  swmatrix_24_by_10/BUS[9] = 1             
-                                           |  swmatrix_24_by_10/BUS[10] = 1            
+Net: Q[1]                                  |Net: Q[1]                                  
+  synapse/m1_344_2455# = 1                 |  synapse/v_ctrl = 1                       
+  ShiftReg_row_10_2$2/Q[1] = 1             |  ShiftReg_row_10_2/Q[1] = 1               
                                            |                                           
-Net: BUS[2]                                |(no matching net)                          
-  swmatrix_24_by_10/BUS[2] = 1             |                                           
+Net: Q[2]                                  |Net: Q[2]                                  
+  ShiftReg_row_10_2$2/Q[2] = 1             |  synapse/v_ctrl = 1                       
+                                           |  ShiftReg_row_10_2/Q[2] = 1               
+                                           |                                           
+Net: Q[3]                                  |Net: Q[3]                                  
+  synapse/m1_344_2455# = 1                 |  synapse/v_ctrl = 1                       
+  ShiftReg_row_10_2$2/Q[3] = 1             |  ShiftReg_row_10_2/Q[3] = 1               
+                                           |                                           
+Net: Q[4]                                  |Net: Q[4]                                  
+  synapse/m1_344_2455# = 1                 |  synapse/v_ctrl = 1                       
+  ShiftReg_row_10_2$2/Q[4] = 1             |  ShiftReg_row_10_2/Q[4] = 1               
+                                           |                                           
+Net: Q[5]                                  |Net: Q[5]                                  
+  synapse/m1_344_2455# = 1                 |  synapse/v_ctrl = 1                       
+  ShiftReg_row_10_2$2/Q[5] = 1             |  ShiftReg_row_10_2/Q[5] = 1               
+                                           |                                           
+Net: Q[6]                                  |Net: Q[6]                                  
+  synapse/m1_344_2455# = 1                 |  synapse/v_ctrl = 1                       
+  ShiftReg_row_10_2$2/Q[6] = 1             |  ShiftReg_row_10_2/Q[6] = 1               
+                                           |                                           
+Net: synapse_1/v_ctrl                      |Net: dummy_52                              
+  synapse/v_ctrl = 1                       |  synapse/proxym1_344_2455# = 1            
+                                           |                                           
+Net: synapse_2/v_ctrl                      |Net: dummy_53                              
+  synapse/v_ctrl = 1                       |  synapse/proxym1_344_2455# = 1            
+                                           |                                           
+Net: synapse_4/v_ctrl                      |Net: dummy_51                              
+  synapse/v_ctrl = 1                       |  synapse/proxym1_344_2455# = 1            
+                                           |                                           
+Net: synapse_5/v_ctrl                      |Net: dummy_54                              
+  synapse/v_ctrl = 1                       |  synapse/proxym1_344_2455# = 1            
+                                           |                                           
+Net: synapse_3/v_ctrl                      |Net: dummy_50                              
+  synapse/v_ctrl = 1                       |  synapse/proxym1_344_2455# = 1            
+                                           |                                           
+Net: synapse_2/m1_344_2455#                |Net: dummy_55                              
+  synapse/m1_344_2455# = 1                 |  synapse/proxym1_344_2455# = 1            
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[1]           |Net: net5                                  
+  ShiftReg_row_10_2$2/gc[1] = 1            |  ShiftReg_row_10_2/gc[1] = 1              
+                                           |  ShiftReg_row_10_2/gc[2] = 1              
+                                           |  ShiftReg_row_10_2/gc[3] = 1              
+                                           |  ShiftReg_row_10_2/gc[4] = 1              
+                                           |  ShiftReg_row_10_2/gc[5] = 1              
+                                           |  ShiftReg_row_10_2/gc[6] = 1              
+                                           |  ShiftReg_row_10_2/gc[7] = 1              
+                                           |  ShiftReg_row_10_2/gc[8] = 1              
+                                           |  ShiftReg_row_10_2/gc[9] = 1              
+                                           |  ShiftReg_row_10_2/gc[10] = 1             
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[2]           |Net: net4                                  
+  ShiftReg_row_10_2$2/gc[2] = 1            |  swmatrix_row_10/BUS[1] = 24              
+                                           |  swmatrix_row_10/BUS[3] = 24              
+                                           |  swmatrix_row_10/BUS[4] = 24              
+                                           |  swmatrix_row_10/BUS[6] = 24              
+                                           |  swmatrix_row_10/BUS[7] = 24              
+                                           |  swmatrix_row_10/BUS[8] = 24              
+                                           |  swmatrix_row_10/BUS[9] = 24              
+                                           |  swmatrix_row_10/BUS[2] = 24              
+                                           |  swmatrix_row_10/BUS[5] = 24              
+                                           |  swmatrix_row_10/BUS[10] = 24             
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[3]           |(no matching net)                          
+  ShiftReg_row_10_2$2/gc[3] = 1            |                                           
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[4]           |(no matching net)                          
+  ShiftReg_row_10_2$2/gc[4] = 1            |                                           
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[5]           |(no matching net)                          
+  ShiftReg_row_10_2$2/gc[5] = 1            |                                           
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[6]           |(no matching net)                          
+  ShiftReg_row_10_2$2/gc[6] = 1            |                                           
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[7]           |(no matching net)                          
+  ShiftReg_row_10_2$2/gc[7] = 1            |                                           
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[8]           |(no matching net)                          
+  ShiftReg_row_10_2$2/gc[8] = 1            |                                           
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[9]           |(no matching net)                          
+  ShiftReg_row_10_2$2/gc[9] = 1            |                                           
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[10]          |(no matching net)                          
+  ShiftReg_row_10_2$2/gc[10] = 1           |                                           
+                                           |                                           
+Net: synapse_0/v_ctrl                      |(no matching net)                          
+  synapse/v_ctrl = 1                       |                                           
+                                           |                                           
+Net: swmatrix_24_by_10_0/BUS[1]            |(no matching net)                          
+  swmatrix_row_10/BUS[1] = 24              |                                           
+                                           |                                           
+Net: swmatrix_24_by_10_0/BUS[2]            |(no matching net)                          
+  swmatrix_row_10/BUS[2] = 24              |                                           
                                            |                                           
 Net: swmatrix_24_by_10_0/BUS[3]            |(no matching net)                          
-  swmatrix_24_by_10/BUS[3] = 1             |                                           
+  swmatrix_row_10/BUS[3] = 24              |                                           
                                            |                                           
 Net: swmatrix_24_by_10_0/BUS[4]            |(no matching net)                          
-  swmatrix_24_by_10/BUS[4] = 1             |                                           
+  swmatrix_row_10/BUS[4] = 24              |                                           
                                            |                                           
 Net: swmatrix_24_by_10_0/BUS[5]            |(no matching net)                          
-  swmatrix_24_by_10/BUS[5] = 1             |                                           
+  swmatrix_row_10/BUS[5] = 24              |                                           
                                            |                                           
 Net: swmatrix_24_by_10_0/BUS[6]            |(no matching net)                          
-  swmatrix_24_by_10/BUS[6] = 1             |                                           
+  swmatrix_row_10/BUS[6] = 24              |                                           
                                            |                                           
 Net: swmatrix_24_by_10_0/BUS[7]            |(no matching net)                          
-  swmatrix_24_by_10/BUS[7] = 1             |                                           
+  swmatrix_row_10/BUS[7] = 24              |                                           
                                            |                                           
 Net: swmatrix_24_by_10_0/BUS[8]            |(no matching net)                          
-  swmatrix_24_by_10/BUS[8] = 1             |                                           
+  swmatrix_row_10/BUS[8] = 24              |                                           
                                            |                                           
 Net: swmatrix_24_by_10_0/BUS[9]            |(no matching net)                          
-  swmatrix_24_by_10/BUS[9] = 1             |                                           
+  swmatrix_row_10/BUS[9] = 24              |                                           
                                            |                                           
 Net: swmatrix_24_by_10_0/BUS[10]           |(no matching net)                          
-  swmatrix_24_by_10/BUS[10] = 1            |                                           
+  swmatrix_row_10/BUS[10] = 24             |                                           
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Net: vin_s0                                |Net: PIN[24]                               
-  swmatrix_24_by_10/PIN[24] = 1            |  AH_neuron/vout = 1                       
-  synapse/v_in = 1                         |  swmatrix_24_by_10/PIN[24] = 1            
+Net: /swmatrix_24_by_10_0/En_clk_din_0/dat |Net: swmatrix_24_by_10_dchain:17/Data_in   
+  En_clk_din/data_in = 1                   |  En_clk_din/Data_in = 1                   
+  swmatrix_row_10/ShiftReg_row_10_2$1_0/D_ |  swmatrix_row_10/D_in = 1                 
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /swmatrix_24_by_10_0/swmatrix_row_10_ |Net: swmatrix_24_by_10_dchain:17/D_out_row 
+  swmatrix_row_10/d_out = 1                |  swmatrix_row_10/D_out = 1                
+  swmatrix_row_10/ShiftReg_row_10_2$1_0/D_ |  swmatrix_row_10/D_in = 1                 
                                            |                                           
-Net: vout_s0                               |Net: PIN[23]                               
-  swmatrix_24_by_10/PIN[23] = 1            |  AH_neuron/Current_in = 1                 
-  synapse/v_out = 1                        |  swmatrix_24_by_10/PIN[23] = 1            
+Net: /swmatrix_24_by_10_0/swmatrix_row_10_ |Net: swmatrix_24_by_10_dchain:17/D_out_row 
+  swmatrix_row_10/d_out = 1                |  swmatrix_row_10/D_out = 1                
+  swmatrix_row_10/ShiftReg_row_10_2$1_0/D_ |  swmatrix_row_10/D_in = 1                 
                                            |                                           
-Net: vin_s1                                |Net: PIN[22]                               
-  swmatrix_24_by_10/PIN[22] = 1            |  AH_neuron/vout = 1                       
-  synapse/v_in = 1                         |  swmatrix_24_by_10/PIN[22] = 1            
+Net: /swmatrix_24_by_10_0/swmatrix_row_10_ |Net: swmatrix_24_by_10_dchain:17/D_out_row 
+  swmatrix_row_10/d_out = 1                |  swmatrix_row_10/D_out = 1                
+  swmatrix_row_10/ShiftReg_row_10_2$1_0/D_ |  swmatrix_row_10/D_in = 1                 
                                            |                                           
-Net: vin_s2                                |Net: PIN[21]                               
-  swmatrix_24_by_10/PIN[20] = 1            |  AH_neuron/Current_in = 1                 
-  synapse/v_in = 1                         |  swmatrix_24_by_10/PIN[21] = 1            
+Net: /swmatrix_24_by_10_0/swmatrix_row_10_ |Net: swmatrix_24_by_10_dchain:17/D_out_row 
+  swmatrix_row_10/d_out = 1                |  swmatrix_row_10/D_out = 1                
+  swmatrix_row_10/ShiftReg_row_10_2$1_0/D_ |  swmatrix_row_10/D_in = 1                 
                                            |                                           
-Net: vout_s2                               |Net: PIN[20]                               
-  swmatrix_24_by_10/PIN[19] = 1            |  AH_neuron/vout = 1                       
-  synapse/v_out = 1                        |  swmatrix_24_by_10/PIN[20] = 1            
+Net: /swmatrix_24_by_10_0/swmatrix_row_10_ |Net: swmatrix_24_by_10_dchain:17/D_out_row 
+  swmatrix_row_10/d_out = 1                |  swmatrix_row_10/D_out = 1                
+  swmatrix_row_10/ShiftReg_row_10_2$1_0/D_ |  swmatrix_row_10/D_in = 1                 
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vin_s0                                |Net: PIN[3]                                
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  synapse/v_in = 1                         |  synapse/v_in = 1                         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vin_s1                                |Net: PIN[13]                               
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  synapse/v_in = 1                         |  synapse/v_in = 1                         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vin_s5                                |Net: PIN[5]                                
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  synapse/v_in = 1                         |  synapse/v_in = 1                         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vin_s2                                |Net: PIN[11]                               
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  synapse/v_in = 1                         |  synapse/v_in = 1                         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vin_s4                                |Net: PIN[7]                                
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  synapse/v_in = 1                         |  synapse/v_in = 1                         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vin_s3                                |Net: PIN[9]                                
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  synapse/v_in = 1                         |  synapse/v_in = 1                         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vout_s0                               |Net: PIN[14]                               
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  synapse/v_out = 1                        |  synapse/v_out = 1                        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vout_s5                               |Net: PIN[4]                                
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  synapse/v_out = 1                        |  synapse/v_out = 1                        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vout_s1                               |Net: PIN[12]                               
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  synapse/v_out = 1                        |  synapse/v_out = 1                        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vout_s4                               |Net: PIN[6]                                
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  synapse/v_out = 1                        |  synapse/v_out = 1                        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vout_s2                               |Net: PIN[10]                               
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  synapse/v_out = 1                        |  synapse/v_out = 1                        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vout_s3                               |Net: PIN[8]                                
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  synapse/v_out = 1                        |  synapse/v_out = 1                        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: i_in4                                 |Net: PIN[23]                               
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  AH_neuron/Current_in = 1                 |  AH_neuron/Current_in = 1                 
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: i_in0                                 |Net: PIN[15]                               
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  AH_neuron/Current_in = 1                 |  AH_neuron/Current_in = 1                 
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: i_in3                                 |Net: PIN[21]                               
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  AH_neuron/Current_in = 1                 |  AH_neuron/Current_in = 1                 
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: i_in1                                 |Net: PIN[17]                               
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  AH_neuron/Current_in = 1                 |  AH_neuron/Current_in = 1                 
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: i_in2                                 |Net: PIN[19]                               
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  AH_neuron/Current_in = 1                 |  AH_neuron/Current_in = 1                 
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vout_0                                |Net: PIN[24]                               
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  AH_neuron/vout = 1                       |  AH_neuron/vout = 1                       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vout_4                                |Net: PIN[22]                               
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  AH_neuron/vout = 1                       |  AH_neuron/vout = 1                       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vout_1                                |Net: PIN[16]                               
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  AH_neuron/vout = 1                       |  AH_neuron/vout = 1                       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vout_3                                |Net: PIN[20]                               
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  AH_neuron/vout = 1                       |  AH_neuron/vout = 1                       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vout_2                                |Net: PIN[18]                               
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  AH_neuron/vout = 1                       |  AH_neuron/vout = 1                       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vin_lif                               |Net: PIN[1]                                
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  LIF_comp/vin = 1                         |  LIF_comp/vin = 1                         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vout_lif                              |Net: PIN[2]                                
+  swmatrix_row_10/pin = 1                  |  swmatrix_row_10/pin = 1                  
+  LIF_comp/vout = 1                        |  LIF_comp/vout = 1                        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: swmatrix_24_by_10_0/D_out             |Net: net1                                  
+  swmatrix_row_10/d_out = 1                |  swmatrix_row_10/D_out = 1                
+  ShiftReg_row_10_2$2/D_in = 1             |  ShiftReg_row_10_2/D_in = 1               
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VAH_bias                              |Net: VAH_bias                              
+  AH_neuron/v_bias = 5                     |  AH_neuron/v_bias = 5                     
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: v_ex                                  |Net: V_EX                                  
+  synapse/ve = 6                           |  synapse/ve = 6                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: v_inh                                 |Net: V_INH                                 
+  synapse/vi = 6                           |  synapse/vi = 6                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: ShiftReg_row_10_2$2_0/PHI_1           |Net: net2                                  
+  swmatrix_row_10/ShiftReg_row_10_2$1_0/PH |  ShiftReg_row_10_2/PHI_1 = 1              
+  NO_ClkGen/phi_1 = 1                      |  NO_ClkGen/PHI_1 = 1                      
+  ShiftReg_row_10_2$2/PHI_1 = 1            |  swmatrix_row_10/PHI_1 = 24               
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: ShiftReg_row_10_2$2_0/PHI_2           |Net: net3                                  
+  swmatrix_row_10/ShiftReg_row_10_2$1_0/PH |  ShiftReg_row_10_2/PHI_2 = 1              
+  NO_ClkGen/phi_2 = 1                      |  NO_ClkGen/PHI_2 = 1                      
+  ShiftReg_row_10_2$2/PHI_2 = 1            |  swmatrix_row_10/PHI_2 = 24               
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: enable                                |Net: EN                                    
+  swmatrix_row_10/ShiftReg_row_10_2$1_0/EN |  ShiftReg_row_10_2/EN = 1                 
+  En_clk_din/Enable = 1                    |  En_clk_din/enable = 1                    
+  ShiftReg_row_10_2$2/EN = 1               |  swmatrix_row_10/enable = 24              
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vss                                   |Net: VSS                                   
+  schmitt_trigger/vss = 2                  |  schmitt_trigger/vss = 2                  
+  swmatrix_row_10/VSUBS = 24               |  ShiftReg_row_10_2/VSS = 1                
+  En_clk_din/vss = 1                       |  En_clk_din/VSS = 1                       
+  NO_ClkGen/vss = 1                        |  NO_ClkGen/VSS = 1                        
+  synapse/vss = 6                          |  synapse/vss = 6                          
+  AH_neuron/vss = 5                        |  AH_neuron/vss = 5                        
+  LIF_comp/v_rew = 1                       |  LIF_comp/v_rew = 1                       
+  LIF_comp/vss = 1                         |  LIF_comp/vss = 1                         
+  ShiftReg_row_10_2$2/VSS = 1              |  swmatrix_row_10/VSS = 24                 
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vdd                                   |Net: VDD                                   
+  schmitt_trigger/vdd = 2                  |  schmitt_trigger/vdd = 2                  
+  swmatrix_row_10/swmatrix_Tgate$1_9/VDD = |  ShiftReg_row_10_2/VDD = 1                
+  En_clk_din/vdd = 1                       |  En_clk_din/VDD = 1                       
+  NO_ClkGen/vdd = 1                        |  NO_ClkGen/VDD = 1                        
+  synapse/vdd = 6                          |  synapse/vdd = 6                          
+  AH_neuron/vdd = 5                        |  AH_neuron/vdd = 5                        
+  LIF_comp/vdd = 1                         |  LIF_comp/vdd = 1                         
+  ShiftReg_row_10_2$2/VDD = 1              |  swmatrix_row_10/VDD = 24                 
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: top                             |Circuit 2: top                             
+
+---------------------------------------------------------------------------------------
+Instance: AH_neuron_0                      |Instance: AH_neuron:11                     
+  vdd = 41                                 |  vdd = 41                                 
+  Current_in = 2                           |  Current_in = 2                           
+  v_bias = 5                               |  v_bias = 5                               
+  vout = 2                                 |  vout = 2                                 
+  vss = 42                                 |  vss = 42                                 
                                            |                                           
-Net: vin_s3                                |Net: PIN[19]                               
-  swmatrix_24_by_10/PIN[18] = 1            |  AH_neuron/Current_in = 1                 
-  synapse/v_in = 1                         |  swmatrix_24_by_10/PIN[19] = 1            
+Instance: AH_neuron_1                      |Instance: AH_neuron:12                     
+  vdd = 41                                 |  vdd = 41                                 
+  Current_in = 2                           |  Current_in = 2                           
+  v_bias = 5                               |  v_bias = 5                               
+  vout = 2                                 |  vout = 2                                 
+  vss = 42                                 |  vss = 42                                 
                                            |                                           
-Net: vout_s1                               |Net: PIN[18]                               
-  swmatrix_24_by_10/PIN[21] = 1            |  AH_neuron/vout = 1                       
-  synapse/v_out = 1                        |  swmatrix_24_by_10/PIN[18] = 1            
+Instance: AH_neuron_2                      |Instance: AH_neuron:10                     
+  vdd = 41                                 |  vdd = 41                                 
+  Current_in = 2                           |  Current_in = 2                           
+  v_bias = 5                               |  v_bias = 5                               
+  vout = 2                                 |  vout = 2                                 
+  vss = 42                                 |  vss = 42                                 
                                            |                                           
-Net: vout_s3                               |Net: PIN[17]                               
-  swmatrix_24_by_10/PIN[17] = 1            |  AH_neuron/Current_in = 1                 
-  synapse/v_out = 1                        |  swmatrix_24_by_10/PIN[17] = 1            
+Instance: AH_neuron_3                      |Instance: AH_neuron:13                     
+  vdd = 41                                 |  vdd = 41                                 
+  Current_in = 2                           |  Current_in = 2                           
+  v_bias = 5                               |  v_bias = 5                               
+  vout = 2                                 |  vout = 2                                 
+  vss = 42                                 |  vss = 42                                 
                                            |                                           
-Net: vin_s4                                |Net: PIN[16]                               
-  swmatrix_24_by_10/PIN[16] = 1            |  AH_neuron/vout = 1                       
-  synapse/v_in = 1                         |  swmatrix_24_by_10/PIN[16] = 1            
+Instance: AH_neuron_4                      |Instance: AH_neuron:14                     
+  vdd = 41                                 |  vdd = 41                                 
+  Current_in = 2                           |  Current_in = 2                           
+  v_bias = 5                               |  v_bias = 5                               
+  vout = 2                                 |  vout = 2                                 
+  vss = 42                                 |  vss = 42                                 
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: synapse_0                        |Instance: synapse:3                        
+  vi = 6                                   |  vi = 6                                   
+  v_ctrl = 1                               |  v_ctrl = 2                               
+  v_in = 2                                 |  v_in = 2                                 
+  ve = 6                                   |  ve = 6                                   
+  vdd = 41                                 |  vdd = 41                                 
+  v_out = 2                                |  v_out = 2                                
+  m1_344_2455# = 2                         |  proxym1_344_2455# = 1                    
+  vss = 42                                 |  vss = 42                                 
                                            |                                           
-Net: vout_s4                               |Net: PIN[15]                               
-  swmatrix_24_by_10/PIN[15] = 1            |  AH_neuron/Current_in = 1                 
-  synapse/v_out = 1                        |  swmatrix_24_by_10/PIN[15] = 1            
+Instance: synapse_1                        |Instance: synapse:7                        
+  vi = 6                                   |  vi = 6                                   
+  v_ctrl = 1                               |  v_ctrl = 2                               
+  v_in = 2                                 |  v_in = 2                                 
+  ve = 6                                   |  ve = 6                                   
+  vdd = 41                                 |  vdd = 41                                 
+  v_out = 2                                |  v_out = 2                                
+  m1_344_2455# = 2                         |  proxym1_344_2455# = 1                    
+  vss = 42                                 |  vss = 42                                 
                                            |                                           
-Net: vin_s5                                |Net: PIN[14]                               
-  swmatrix_24_by_10/PIN[14] = 1            |  synapse/v_out = 1                        
-  synapse/v_in = 1                         |  swmatrix_24_by_10/PIN[14] = 1            
+Instance: synapse_2                        |Instance: synapse:2                        
+  vi = 6                                   |  vi = 6                                   
+  v_ctrl = 1                               |  v_ctrl = 2                               
+  v_in = 2                                 |  v_in = 2                                 
+  ve = 6                                   |  ve = 6                                   
+  vdd = 41                                 |  vdd = 41                                 
+  v_out = 2                                |  v_out = 2                                
+  m1_344_2455# = 1                         |  proxym1_344_2455# = 1                    
+  vss = 42                                 |  vss = 42                                 
                                            |                                           
-Net: vout_s5                               |Net: PIN[13]                               
-  swmatrix_24_by_10/PIN[13] = 1            |  synapse/v_in = 1                         
-  synapse/v_out = 1                        |  swmatrix_24_by_10/PIN[13] = 1            
+Instance: synapse_4                        |Instance: synapse:8                        
+  vi = 6                                   |  vi = 6                                   
+  v_ctrl = 1                               |  v_ctrl = 2                               
+  v_in = 2                                 |  v_in = 2                                 
+  ve = 6                                   |  ve = 6                                   
+  vdd = 41                                 |  vdd = 41                                 
+  v_out = 2                                |  v_out = 2                                
+  m1_344_2455# = 2                         |  proxym1_344_2455# = 1                    
+  vss = 42                                 |  vss = 42                                 
                                            |                                           
-Net: i_in4                                 |Net: PIN[12]                               
-  swmatrix_24_by_10/PIN[12] = 1            |  synapse/v_out = 1                        
-  AH_neuron/Current_in = 1                 |  swmatrix_24_by_10/PIN[12] = 1            
+Instance: synapse_5                        |Instance: synapse:6                        
+  vi = 6                                   |  vi = 6                                   
+  v_ctrl = 1                               |  v_ctrl = 2                               
+  v_in = 2                                 |  v_in = 2                                 
+  ve = 6                                   |  ve = 6                                   
+  vdd = 41                                 |  vdd = 41                                 
+  v_out = 2                                |  v_out = 2                                
+  m1_344_2455# = 2                         |  proxym1_344_2455# = 1                    
+  vss = 42                                 |  vss = 42                                 
                                            |                                           
-Net: vout_4                                |Net: PIN[11]                               
-  swmatrix_24_by_10/PIN[11] = 1            |  synapse/v_in = 1                         
-  AH_neuron/vout = 1                       |  swmatrix_24_by_10/PIN[11] = 1            
+Instance: synapse_3                        |Instance: synapse:9                        
+  vi = 6                                   |  vi = 6                                   
+  v_ctrl = 1                               |  v_ctrl = 2                               
+  v_in = 2                                 |  v_in = 2                                 
+  ve = 6                                   |  ve = 6                                   
+  vdd = 41                                 |  vdd = 41                                 
+  v_out = 2                                |  v_out = 2                                
+  m1_344_2455# = 2                         |  proxym1_344_2455# = 1                    
+  vss = 42                                 |  vss = 42                                 
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: swmatrix_24_by_10_0//swmatrix_ro |Instance: swmatrix_24_by_10_dchain:17/swma 
+  pin = 2                                  |  pin = 2                                  
+  BUS[1] = 24                              |  BUS[1] = 240                             
+  BUS[3] = 24                              |  BUS[3] = 240                             
+  BUS[4] = 24                              |  BUS[4] = 240                             
+  BUS[6] = 24                              |  BUS[6] = 240                             
+  BUS[7] = 24                              |  BUS[7] = 240                             
+  BUS[8] = 24                              |  BUS[8] = 240                             
+  BUS[9] = 24                              |  BUS[9] = 240                             
+  d_out = 2                                |  D_out = 2                                
+  BUS[2] = 24                              |  BUS[2] = 240                             
+  BUS[5] = 24                              |  BUS[5] = 240                             
+  BUS[10] = 24                             |  BUS[10] = 240                            
+  ShiftReg_row_10_2$1_0/EN = 26            |  enable = 26                              
+  ShiftReg_row_10_2$1_0/D_in = 2           |  D_in = 2                                 
+  ShiftReg_row_10_2$1_0/PHI_2 = 26         |  PHI_2 = 26                               
+  ShiftReg_row_10_2$1_0/PHI_1 = 26         |  PHI_1 = 26                               
+  VSUBS = 42                               |  VSS = 42                                 
+  swmatrix_Tgate$1_9/VDD = 41              |  VDD = 41                                 
                                            |                                           
-Net: i_in3                                 |Net: PIN[10]                               
-  swmatrix_24_by_10/PIN[10] = 1            |  synapse/v_out = 1                        
-  AH_neuron/Current_in = 1                 |  swmatrix_24_by_10/PIN[10] = 1            
+Instance: swmatrix_24_by_10_0//swmatrix_ro |Instance: swmatrix_24_by_10_dchain:17/swma 
+  pin = 2                                  |  pin = 2                                  
+  BUS[1] = 24                              |  BUS[1] = 240                             
+  BUS[3] = 24                              |  BUS[3] = 240                             
+  BUS[4] = 24                              |  BUS[4] = 240                             
+  BUS[6] = 24                              |  BUS[6] = 240                             
+  BUS[7] = 24                              |  BUS[7] = 240                             
+  BUS[8] = 24                              |  BUS[8] = 240                             
+  BUS[9] = 24                              |  BUS[9] = 240                             
+  d_out = 2                                |  D_out = 2                                
+  BUS[2] = 24                              |  BUS[2] = 240                             
+  BUS[5] = 24                              |  BUS[5] = 240                             
+  BUS[10] = 24                             |  BUS[10] = 240                            
+  ShiftReg_row_10_2$1_0/EN = 26            |  enable = 26                              
+  ShiftReg_row_10_2$1_0/D_in = 2           |  D_in = 2                                 
+  ShiftReg_row_10_2$1_0/PHI_2 = 26         |  PHI_2 = 26                               
+  ShiftReg_row_10_2$1_0/PHI_1 = 26         |  PHI_1 = 26                               
+  VSUBS = 42                               |  VSS = 42                                 
+  swmatrix_Tgate$1_9/VDD = 41              |  VDD = 41                                 
                                            |                                           
-Net: vout_3                                |Net: PIN[9]                                
-  swmatrix_24_by_10/PIN[9] = 1             |  synapse/v_in = 1                         
-  AH_neuron/vout = 1                       |  swmatrix_24_by_10/PIN[9] = 1             
+Instance: swmatrix_24_by_10_0//swmatrix_ro |Instance: swmatrix_24_by_10_dchain:17/swma 
+  pin = 2                                  |  pin = 2                                  
+  BUS[1] = 24                              |  BUS[1] = 240                             
+  BUS[3] = 24                              |  BUS[3] = 240                             
+  BUS[4] = 24                              |  BUS[4] = 240                             
+  BUS[6] = 24                              |  BUS[6] = 240                             
+  BUS[7] = 24                              |  BUS[7] = 240                             
+  BUS[8] = 24                              |  BUS[8] = 240                             
+  BUS[9] = 24                              |  BUS[9] = 240                             
+  d_out = 2                                |  D_out = 2                                
+  BUS[2] = 24                              |  BUS[2] = 240                             
+  BUS[5] = 24                              |  BUS[5] = 240                             
+  BUS[10] = 24                             |  BUS[10] = 240                            
+  ShiftReg_row_10_2$1_0/EN = 26            |  enable = 26                              
+  ShiftReg_row_10_2$1_0/D_in = 2           |  D_in = 2                                 
+  ShiftReg_row_10_2$1_0/PHI_2 = 26         |  PHI_2 = 26                               
+  ShiftReg_row_10_2$1_0/PHI_1 = 26         |  PHI_1 = 26                               
+  VSUBS = 42                               |  VSS = 42                                 
+  swmatrix_Tgate$1_9/VDD = 41              |  VDD = 41                                 
                                            |                                           
-Net: i_in2                                 |Net: PIN[8]                                
-  swmatrix_24_by_10/PIN[8] = 1             |  synapse/v_out = 1                        
-  AH_neuron/Current_in = 1                 |  swmatrix_24_by_10/PIN[8] = 1             
-                                           |                                           
-Net: vout_2                                |Net: PIN[7]                                
-  swmatrix_24_by_10/PIN[7] = 1             |  synapse/v_in = 1                         
-  AH_neuron/vout = 1                       |  swmatrix_24_by_10/PIN[7] = 1             
-                                           |                                           
-Net: i_in1                                 |Net: PIN[6]                                
-  swmatrix_24_by_10/PIN[6] = 1             |  synapse/v_out = 1                        
-  AH_neuron/Current_in = 1                 |  swmatrix_24_by_10/PIN[6] = 1             
-                                           |                                           
-Net: vout_1                                |Net: PIN[5]                                
-  swmatrix_24_by_10/PIN[5] = 1             |  synapse/v_in = 1                         
-  AH_neuron/vout = 1                       |  swmatrix_24_by_10/PIN[5] = 1             
-                                           |                                           
-Net: i_in0                                 |Net: PIN[4]                                
-  swmatrix_24_by_10/PIN[4] = 1             |  synapse/v_out = 1                        
-  AH_neuron/Current_in = 1                 |  swmatrix_24_by_10/PIN[4] = 1             
-                                           |                                           
-Net: vout_0                                |Net: PIN[3]                                
-  swmatrix_24_by_10/PIN[3] = 1             |  synapse/v_in = 1                         
-  AH_neuron/vout = 1                       |  swmatrix_24_by_10/PIN[3] = 1             
-                                           |                                           
-Net: vin_lif                               |Net: PIN[2]                                
-  swmatrix_24_by_10/PIN[2] = 1             |  LIF_comp/vout = 1                        
-  LIF_comp/vin = 1                         |  swmatrix_24_by_10/PIN[2] = 1             
-                                           |                                           
-Net: vout_lif                              |Net: PIN[1]                                
-  swmatrix_24_by_10/PIN[1] = 1             |  LIF_comp/vin = 1                         
-  LIF_comp/vout = 1                        |  swmatrix_24_by_10/PIN[1] = 1             
+Instance: swmatrix_24_by_10_0//swmatrix_ro |Instance: swmatrix_24_by_10_dchain:17/swma 
+  pin = 2                                  |  pin = 2                                  
+  BUS[1] = 24                              |  BUS[1] = 240                             
+  BUS[3] = 24                              |  BUS[3] = 240                             
+  BUS[4] = 24                              |  BUS[4] = 240                             
+  BUS[6] = 24                              |  BUS[6] = 240                             
+  BUS[7] = 24                              |  BUS[7] = 240                             
+  BUS[8] = 24                              |  BUS[8] = 240                             
+  BUS[9] = 24                              |  BUS[9] = 240                             
+  d_out = 2                                |  D_out = 2                                
+  BUS[2] = 24                              |  BUS[2] = 240                             
+  BUS[5] = 24                              |  BUS[5] = 240                             
+  BUS[10] = 24                             |  BUS[10] = 240                            
+  ShiftReg_row_10_2$1_0/EN = 26            |  enable = 26                              
+  ShiftReg_row_10_2$1_0/D_in = 2           |  D_in = 2                                 
+  ShiftReg_row_10_2$1_0/PHI_2 = 26         |  PHI_2 = 26                               
+  ShiftReg_row_10_2$1_0/PHI_1 = 26         |  PHI_1 = 26                               
+  VSUBS = 42                               |  VSS = 42                                 
+  swmatrix_Tgate$1_9/VDD = 41              |  VDD = 41                                 
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 Port matching may fail to disambiguate symmetries.
@@ -1228,7 +1723,11 @@ Port matching may fail to disambiguate symmetries.
 Subcircuit pins:
 Circuit 1: top                             |Circuit 2: top                             
 -------------------------------------------|-------------------------------------------
-BUS[1]                                     |(no pin, node is net8)                     
+Q[6]                                       |(no pin, node is Q[1])                     
+Q[5]                                       |(no pin, node is Q[2])                     
+Q[1]                                       |(no pin, node is Q[3])                     
+Q[4]                                       |(no pin, node is Q[4])                     
+Q[3]                                       |(no pin, node is Q[5])                     
 Cell pin lists are equivalent.
 Device classes top and top are equivalent.
 
