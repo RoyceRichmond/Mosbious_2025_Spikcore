@@ -74,4 +74,4 @@ C {designs/libs/core_LIF_comp/core_refractory/refractory.sym} 410 -290 0 0 {name
 C {lab_pin.sym} 410 -340 2 0 {name=p8 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 410 -240 2 0 {name=p9 sig_type=std_logic lab=vss}
 C {opin.sym} 20 -600 0 0 {name=p11 lab=vres}
-C {designs/libs/core_LIF_comp/core_vdiv/vdiv.sym} 870 -210 0 0 {name=x3}
+C {designs/libs/core_LIF_comp/core_vdiv/nvdiv.sym} 870 -210 0 0 {name=x2}
