@@ -1,5 +1,74 @@
 * NGSPICE file created from top.ext - technology: gf180mcuD
 
+.subckt nfet$47 a_280_0# a_158_0# a_38_n60# a_n84_0#
+X0 a_158_0# a_38_n60# a_n84_0# a_280_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.6u
+.ends
+
+.subckt nfet$45 a_216_0# a_30_280# a_n84_0# a_94_0#
+X0 a_94_0# a_30_280# a_n84_0# a_216_0# nfet_03v3 ad=0.671p pd=3.42u as=0.671p ps=3.42u w=1.1u l=0.28u
+.ends
+
+.subckt nfet$43 a_216_0# a_n84_0# a_94_0# a_30_480#
+X0 a_94_0# a_30_480# a_n84_0# a_216_0# nfet_03v3 ad=1.281p pd=5.42u as=1.281p ps=5.42u w=2.1u l=0.28u
+.ends
+
+.subckt nfet$41 a_216_0# a_30_560# a_n84_0# a_94_0#
+X0 a_94_0# a_30_560# a_n84_0# a_216_0# nfet_03v3 ad=1.525p pd=6.22u as=1.525p ps=6.22u w=2.5u l=0.28u
+.ends
+
+.subckt pfet$28 a_n92_0# a_94_0# a_28_220# w_n230_n138#
+X0 a_94_0# a_28_220# a_n92_0# w_n230_n138# pfet_03v3 ad=0.52p pd=2.9u as=0.52p ps=2.9u w=0.8u l=0.28u
+.ends
+
+.subckt pfet$26 a_n92_0# a_94_0# a_28_260# w_n230_n138#
+X0 a_94_0# a_28_260# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=0.28u
+.ends
+
+.subckt nfet$48 a_n84_n2# a_560_n2# a_38_n60# a_438_0#
+X0 a_438_0# a_38_n60# a_n84_n2# a_560_n2# nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=2u
+.ends
+
+.subckt nfet$46 a_216_0# a_30_260# a_n84_0# a_94_0#
+X0 a_94_0# a_30_260# a_n84_0# a_216_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.28u
+.ends
+
+.subckt nfet$44 a_32_260# a_98_0# a_n84_0# a_220_0#
+X0 a_98_0# a_32_260# a_n84_0# a_220_0# nfet_03v3 ad=0.61p pd=3.22u as=0.61p ps=3.22u w=1u l=0.3u
+.ends
+
+.subckt pfet$29 a_38_n60# a_n92_0# a_198_0# w_n230_n138#
+X0 a_198_0# a_38_n60# a_n92_0# w_n230_n138# pfet_03v3 ad=1.04p pd=4.5u as=1.04p ps=4.5u w=1.6u l=0.8u
+.ends
+
+.subckt nfet$42 a_216_0# a_n84_0# a_94_0# a_30_460#
+X0 a_94_0# a_30_460# a_n84_0# a_216_0# nfet_03v3 ad=1.22p pd=5.22u as=1.22p ps=5.22u w=2u l=0.28u
+.ends
+
+.subckt pfet$27 a_238_0# a_38_n60# a_n92_0# w_n230_n138#
+X0 a_238_0# a_38_n60# a_n92_0# w_n230_n138# pfet_03v3 ad=0.65p pd=3.3u as=0.65p ps=3.3u w=1u l=1u
+.ends
+
+.subckt pfet$25 a_28_144# w_n232_n142# a_94_0# a_n92_n2#
+X0 a_94_0# a_28_144# a_n92_n2# w_n232_n142# pfet_03v3 ad=0.2822p pd=2.18u as=0.2822p ps=2.18u w=0.42u l=0.28u
+.ends
+
+.subckt schmitt_trigger vdd out in vss
+Xnfet$47_0 vss vss vdd m3_n9961_n6054# nfet$47
+Xnfet$45_0 vss m3_n8390_n6986# m2_n8799_n7122# vdd nfet$45
+Xnfet$43_0 vss m2_n8799_n7122# vss in nfet$43
+Xnfet$41_0 vss in m3_n9961_n6054# m3_n8390_n6986# nfet$41
+Xpfet$28_0 m2_n8799_n7122# vdd m2_n8799_n7122# vdd pfet$28
+Xpfet$26_0 m3_n9961_n6054# vdd vss vdd pfet$26
+Xpfet$26_1 out vdd m3_n9961_n6054# vdd pfet$26
+Xnfet$48_0 m3_n8390_n6986# vss vdd vss nfet$48
+Xnfet$46_0 vss m3_n9961_n6054# out vss nfet$46
+Xnfet$44_0 m3_n9961_n6054# vdd m3_n8390_n6986# vss nfet$44
+Xpfet$29_0 vss m3_n8390_n6986# vdd vdd pfet$29
+Xnfet$42_0 vss m2_n8799_n7122# m3_n8390_n6986# in nfet$42
+Xpfet$27_0 vdd out m3_n9961_n6054# vdd pfet$27
+Xpfet$25_0 in vdd vdd m3_n9961_n6054# pfet$25
+.ends
+
 .subckt pfet$16 a_1534_0# a_2174_0# a_1054_0# a_734_0# a_828_n136# a_28_n136# a_2588_n136#
 + a_1694_0# a_254_0# a_1628_n136# a_894_0# a_188_n136# a_988_n136# a_2814_0# a_2748_n136#
 + a_1788_n136# a_2334_0# a_348_n136# a_1214_0# a_1148_n136# a_1854_0# a_414_0# a_2108_n136#
@@ -724,12 +793,15 @@ XphaseUpulse_0 phi_fire phaseUpulse_0/vin vspike v_rew v_th vdd v_ref vss phaseU
 .subckt top vss vdd vout_s4 vin_s5 vout_s5 vout_lif vin_lif i_in0 vout_0 i_in1 vout_1
 + i_in2 vout_2 i_in3 vout_3 i_in4 vout_4 VAH_bias v_ex v_inh vin_s0 vout_s0 vin_s1
 + vout_s1 vin_s2 vout_s2 vin_s3 vout_s3 vin_s4 enable clk d_in
+Xschmitt_trigger_0 vdd schmitt_trigger_0/out d_in vss schmitt_trigger
+Xschmitt_trigger_1 vdd schmitt_trigger_1/out clk vss schmitt_trigger
 Xswmatrix_24_by_10_0 swmatrix_24_by_10_0/D_out vout_lif vin_lif vout_0 i_in0 vout_1
 + i_in1 vout_2 i_in2 vout_3 i_in3 vout_4 i_in4 vout_s5 vin_s5 vout_s4 vin_s4 vout_s3
 + vout_s1 vin_s3 vout_s2 vin_s2 vin_s1 vout_s0 vin_s0 swmatrix_24_by_10_0/BUS[1] swmatrix_24_by_10_0/BUS[2]
 + swmatrix_24_by_10_0/BUS[3] swmatrix_24_by_10_0/BUS[4] swmatrix_24_by_10_0/BUS[5]
 + swmatrix_24_by_10_0/BUS[6] swmatrix_24_by_10_0/BUS[7] swmatrix_24_by_10_0/BUS[8]
-+ swmatrix_24_by_10_0/BUS[9] swmatrix_24_by_10_0/BUS[10] enable clk d_in vss vdd swmatrix_24_by_10
++ swmatrix_24_by_10_0/BUS[9] swmatrix_24_by_10_0/BUS[10] enable schmitt_trigger_1/out
++ schmitt_trigger_0/out vss vdd swmatrix_24_by_10
 Xsynapse_0 v_inh synapse_0/v_ctrl vin_s0 v_ex vdd vout_s0 vss synapse
 Xsynapse_1 v_inh synapse_1/v_ctrl vin_s1 v_ex vdd vout_s1 vss synapse
 Xsynapse_2 v_inh synapse_2/v_ctrl vin_s4 v_ex vdd vout_s4 vss synapse

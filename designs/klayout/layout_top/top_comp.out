@@ -875,6 +875,40 @@ Instance: conmutator$1$1_0                 |Instance: conmutator:20
 Netlists do not match.
 Port matching may fail to disambiguate symmetries.
   Flattening non-matched subcircuits phaseUpulse phaseUpulse
+Flattening unmatched subcell nfet$47 in circuit schmitt_trigger (0)(1 instance)
+Flattening unmatched subcell nfet$45 in circuit schmitt_trigger (0)(1 instance)
+Flattening unmatched subcell nfet$43 in circuit schmitt_trigger (0)(1 instance)
+Flattening unmatched subcell nfet$41 in circuit schmitt_trigger (0)(1 instance)
+Flattening unmatched subcell pfet$28 in circuit schmitt_trigger (0)(1 instance)
+Flattening unmatched subcell pfet$26 in circuit schmitt_trigger (0)(2 instances)
+Flattening unmatched subcell nfet$48 in circuit schmitt_trigger (0)(1 instance)
+Flattening unmatched subcell nfet$46 in circuit schmitt_trigger (0)(1 instance)
+Flattening unmatched subcell nfet$44 in circuit schmitt_trigger (0)(1 instance)
+Flattening unmatched subcell pfet$29 in circuit schmitt_trigger (0)(1 instance)
+Flattening unmatched subcell nfet$42 in circuit schmitt_trigger (0)(1 instance)
+Flattening unmatched subcell pfet$27 in circuit schmitt_trigger (0)(1 instance)
+Flattening unmatched subcell pfet$25 in circuit schmitt_trigger (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: schmitt_trigger                 |Circuit 2: schmitt_trigger                 
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (8)                              |nfet_03v3 (8)                              
+pfet_03v3 (6)                              |pfet_03v3 (6)                              
+Number of devices: 14                      |Number of devices: 14                      
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: schmitt_trigger                 |Circuit 2: schmitt_trigger                 
+-------------------------------------------|-------------------------------------------
+out                                        |out                                        
+in                                         |in                                         
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes schmitt_trigger and schmitt_trigger are equivalent.
 
 Subcircuit summary:
 Circuit 1: swmatrix_24_by_10               |Circuit 2: swmatrix_24_by_10               
@@ -1035,86 +1069,24 @@ vdd                                        |vdd
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes LIF_comp and LIF_comp are equivalent.
-Flattening unmatched subcell schmitt_trigger in circuit top (1)(2 instances)
 
 Subcircuit summary:
 Circuit 1: top                             |Circuit 2: top                             
 -------------------------------------------|-------------------------------------------
+schmitt_trigger (2)                        |schmitt_trigger (2)                        
 swmatrix_24_by_10 (1)                      |swmatrix_24_by_10 (1)                      
 synapse (6)                                |synapse (6)                                
 AH_neuron (5)                              |AH_neuron (5)                              
 LIF_comp (1)                               |LIF_comp (1)                               
-(no matching element)                      |pfet_03v3 (12)                             
-(no matching element)                      |nfet_03v3 (16)                             
-Number of devices: 13 **Mismatch**         |Number of devices: 41 **Mismatch**         
-Number of nets: 49 **Mismatch**            |Number of nets: 48 **Mismatch**            
+Number of devices: 15                      |Number of devices: 15                      
+Number of nets: 51 **Mismatch**            |Number of nets: 42 **Mismatch**            
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: top                             |Circuit 2: top                             
 
 ---------------------------------------------------------------------------------------
-Net: swmatrix_24_by_10_0/BUS[1]            |Net: schmitt_trigger:1/outy                
-  swmatrix_24_by_10/BUS[1] = 1             |  nfet_03v3/(1|3) = 4                      
-                                           |  nfet_03v3/2 = 1                          
-                                           |  pfet_03v3/(1|3) = 1                      
-                                           |                                           
-Net: swmatrix_24_by_10_0/BUS[2]            |Net: schmitt_trigger:4/outy                
-  swmatrix_24_by_10/BUS[2] = 1             |  nfet_03v3/(1|3) = 4                      
-                                           |  nfet_03v3/2 = 1                          
-                                           |  pfet_03v3/(1|3) = 1                      
-                                           |                                           
-Net: swmatrix_24_by_10_0/BUS[3]            |Net: schmitt_trigger:1/outz                
-  swmatrix_24_by_10/BUS[3] = 1             |  nfet_03v3/(1|3) = 3                      
-                                           |  pfet_03v3/(1|3) = 1                      
-                                           |  pfet_03v3/2 = 1                          
-                                           |                                           
-Net: swmatrix_24_by_10_0/BUS[4]            |Net: schmitt_trigger:4/outz                
-  swmatrix_24_by_10/BUS[4] = 1             |  nfet_03v3/(1|3) = 3                      
-                                           |  pfet_03v3/(1|3) = 1                      
-                                           |  pfet_03v3/2 = 1                          
-                                           |                                           
-Net: vdd                                   |Net: VDD                                   
-  swmatrix_24_by_10/vdd = 1                |  swmatrix_24_by_10/VDD = 1                
-  synapse/vdd = 6                          |  synapse/vdd = 6                          
-  AH_neuron/vdd = 5                        |  AH_neuron/vdd = 5                        
-  LIF_comp/vdd = 1                         |  LIF_comp/vdd = 1                         
-                                           |  pfet_03v3/4 = 12                         
-                                           |  nfet_03v3/(1|3) = 4                      
-                                           |  nfet_03v3/2 = 4                          
-                                           |  pfet_03v3/(1|3) = 12                     
-                                           |                                           
-Net: vss                                   |Net: VSS                                   
-  swmatrix_24_by_10/vss = 1                |  swmatrix_24_by_10/VSS = 1                
-  synapse/vss = 6                          |  synapse/vss = 6                          
-  AH_neuron/vss = 5                        |  AH_neuron/vss = 5                        
-  LIF_comp/v_rew = 1                       |  LIF_comp/v_rew = 1                       
-  LIF_comp/vss = 1                         |  LIF_comp/vss = 1                         
-                                           |  nfet_03v3/4 = 16                         
-                                           |  pfet_03v3/2 = 4                          
-                                           |  nfet_03v3/(1|3) = 8                      
-                                           |                                           
-Net: swmatrix_24_by_10_0/BUS[7]            |Net: clk_schmitt                           
-  swmatrix_24_by_10/BUS[7] = 1             |  nfet_03v3/(1|3) = 1                      
-                                           |  pfet_03v3/(1|3) = 1                      
-                                           |  pfet_03v3/2 = 1                          
-                                           |  swmatrix_24_by_10/clk = 1                
-                                           |                                           
-Net: clk                                   |Net: CLK                                   
-  swmatrix_24_by_10/clk = 1                |  pfet_03v3/2 = 1                          
-                                           |  nfet_03v3/2 = 3                          
-                                           |                                           
-Net: swmatrix_24_by_10_0/BUS[9]            |Net: DATA                                  
-  swmatrix_24_by_10/BUS[9] = 1             |  pfet_03v3/2 = 1                          
-                                           |  nfet_03v3/2 = 3                          
-                                           |                                           
-Net: swmatrix_24_by_10_0/BUS[10]           |Net: data_schmitt                          
-  swmatrix_24_by_10/BUS[10] = 1            |  nfet_03v3/(1|3) = 1                      
-                                           |  pfet_03v3/(1|3) = 1                      
-                                           |  pfet_03v3/2 = 1                          
-                                           |  swmatrix_24_by_10/D_in = 1               
-                                           |                                           
-Net: swmatrix_24_by_10_0/BUS[8]            |Net: net8                                  
-  swmatrix_24_by_10/BUS[8] = 1             |  swmatrix_24_by_10/BUS[1] = 1             
+Net: swmatrix_24_by_10_0/BUS[1]            |Net: net8                                  
+  swmatrix_24_by_10/BUS[1] = 1             |  swmatrix_24_by_10/BUS[1] = 1             
                                            |  swmatrix_24_by_10/BUS[2] = 1             
                                            |  swmatrix_24_by_10/BUS[3] = 1             
                                            |  swmatrix_24_by_10/BUS[4] = 1             
@@ -1125,20 +1097,32 @@ Net: swmatrix_24_by_10_0/BUS[8]            |Net: net8
                                            |  swmatrix_24_by_10/BUS[9] = 1             
                                            |  swmatrix_24_by_10/BUS[10] = 1            
                                            |                                           
-Net: d_in                                  |Net: schmitt_trigger:1/outx                
-  swmatrix_24_by_10/d_in = 1               |  pfet_03v3/(1|3) = 3                      
-                                           |  nfet_03v3/(1|3) = 2                      
-                                           |  nfet_03v3/2 = 2                          
-                                           |  pfet_03v3/2 = 1                          
+Net: swmatrix_24_by_10_0/BUS[2]            |(no matching net)                          
+  swmatrix_24_by_10/BUS[2] = 1             |                                           
                                            |                                           
-Net: swmatrix_24_by_10_0/BUS[6]            |Net: schmitt_trigger:4/outx                
-  swmatrix_24_by_10/BUS[6] = 1             |  pfet_03v3/(1|3) = 3                      
-                                           |  nfet_03v3/(1|3) = 2                      
-                                           |  nfet_03v3/2 = 2                          
-                                           |  pfet_03v3/2 = 1                          
+Net: swmatrix_24_by_10_0/BUS[3]            |(no matching net)                          
+  swmatrix_24_by_10/BUS[3] = 1             |                                           
+                                           |                                           
+Net: swmatrix_24_by_10_0/BUS[4]            |(no matching net)                          
+  swmatrix_24_by_10/BUS[4] = 1             |                                           
                                            |                                           
 Net: swmatrix_24_by_10_0/BUS[5]            |(no matching net)                          
   swmatrix_24_by_10/BUS[5] = 1             |                                           
+                                           |                                           
+Net: swmatrix_24_by_10_0/BUS[6]            |(no matching net)                          
+  swmatrix_24_by_10/BUS[6] = 1             |                                           
+                                           |                                           
+Net: swmatrix_24_by_10_0/BUS[7]            |(no matching net)                          
+  swmatrix_24_by_10/BUS[7] = 1             |                                           
+                                           |                                           
+Net: swmatrix_24_by_10_0/BUS[8]            |(no matching net)                          
+  swmatrix_24_by_10/BUS[8] = 1             |                                           
+                                           |                                           
+Net: swmatrix_24_by_10_0/BUS[9]            |(no matching net)                          
+  swmatrix_24_by_10/BUS[9] = 1             |                                           
+                                           |                                           
+Net: swmatrix_24_by_10_0/BUS[10]           |(no matching net)                          
+  swmatrix_24_by_10/BUS[10] = 1            |                                           
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -1238,189 +1222,46 @@ Net: vout_lif                              |Net: PIN[1]
   swmatrix_24_by_10/PIN[1] = 1             |  LIF_comp/vin = 1                         
   LIF_comp/vout = 1                        |  swmatrix_24_by_10/PIN[1] = 1             
 ---------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: top                             |Circuit 2: top                             
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: schmitt_trigger:1/pfet_03v3:M2   
-                                           |  (1,3) = (45,8)                           
-                                           |  2 = 4                                    
-                                           |  4 = 45                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:1/pfet_03v3:M7   
-                                           |  (1,3) = (45,4)                           
-                                           |  2 = 8                                    
-                                           |  4 = 45                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:1/pfet_03v3:M10  
-                                           |  (1,3) = (45,6)                           
-                                           |  2 = 42                                   
-                                           |  4 = 45                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:1/pfet_03v3:M11  
-                                           |  (1,3) = (45,8)                           
-                                           |  2 = 42                                   
-                                           |  4 = 45                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:1/pfet_03v3:M19  
-                                           |  (1,3) = (45,5)                           
-                                           |  2 = 5                                    
-                                           |  4 = 45                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:1/pfet_03v3:M15  
-                                           |  (1,3) = (45,8)                           
-                                           |  2 = 4                                    
-                                           |  4 = 45                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:4/pfet_03v3:M2   
-                                           |  (1,3) = (45,8)                           
-                                           |  2 = 4                                    
-                                           |  4 = 45                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:4/pfet_03v3:M7   
-                                           |  (1,3) = (45,4)                           
-                                           |  2 = 8                                    
-                                           |  4 = 45                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:4/pfet_03v3:M10  
-                                           |  (1,3) = (45,6)                           
-                                           |  2 = 42                                   
-                                           |  4 = 45                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:4/pfet_03v3:M11  
-                                           |  (1,3) = (45,8)                           
-                                           |  2 = 42                                   
-                                           |  4 = 45                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:4/pfet_03v3:M19  
-                                           |  (1,3) = (45,5)                           
-                                           |  2 = 5                                    
-                                           |  4 = 45                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:4/pfet_03v3:M15  
-                                           |  (1,3) = (45,8)                           
-                                           |  2 = 4                                    
-                                           |  4 = 45                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:1/nfet_03v3:M1   
-                                           |  (1,3) = (42,5)                           
-                                           |  2 = 4                                    
-                                           |  4 = 42                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:1/nfet_03v3:M4   
-                                           |  (1,3) = (6,5)                            
-                                           |  2 = 4                                    
-                                           |  4 = 42                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:1/nfet_03v3:M3   
-                                           |  (1,3) = (8,6)                            
-                                           |  2 = 4                                    
-                                           |  4 = 42                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:1/nfet_03v3:M5   
-                                           |  (1,3) = (45,5)                           
-                                           |  2 = 6                                    
-                                           |  4 = 42                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:1/nfet_03v3:M6   
-                                           |  (1,3) = (45,6)                           
-                                           |  2 = 8                                    
-                                           |  4 = 42                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:1/nfet_03v3:M8   
-                                           |  (1,3) = (42,4)                           
-                                           |  2 = 8                                    
-                                           |  4 = 42                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:1/nfet_03v3:M12  
-                                           |  (1,3) = (42,6)                           
-                                           |  2 = 45                                   
-                                           |  4 = 42                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:1/nfet_03v3:M13  
-                                           |  (1,3) = (42,8)                           
-                                           |  2 = 45                                   
-                                           |  4 = 42                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:4/nfet_03v3:M1   
-                                           |  (1,3) = (42,5)                           
-                                           |  2 = 4                                    
-                                           |  4 = 42                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:4/nfet_03v3:M4   
-                                           |  (1,3) = (6,5)                            
-                                           |  2 = 4                                    
-                                           |  4 = 42                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:4/nfet_03v3:M3   
-                                           |  (1,3) = (8,6)                            
-                                           |  2 = 4                                    
-                                           |  4 = 42                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:4/nfet_03v3:M5   
-                                           |  (1,3) = (45,5)                           
-                                           |  2 = 6                                    
-                                           |  4 = 42                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:4/nfet_03v3:M6   
-                                           |  (1,3) = (45,6)                           
-                                           |  2 = 8                                    
-                                           |  4 = 42                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:4/nfet_03v3:M8   
-                                           |  (1,3) = (42,4)                           
-                                           |  2 = 8                                    
-                                           |  4 = 42                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:4/nfet_03v3:M12  
-                                           |  (1,3) = (42,6)                           
-                                           |  2 = 45                                   
-                                           |  4 = 42                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: schmitt_trigger:4/nfet_03v3:M13  
-                                           |  (1,3) = (42,8)                           
-                                           |  2 = 45                                   
-                                           |  4 = 42                                   
-                                           |                                           
----------------------------------------------------------------------------------------
 Netlists do not match.
 Port matching may fail to disambiguate symmetries.
 
 Subcircuit pins:
 Circuit 1: top                             |Circuit 2: top                             
 -------------------------------------------|-------------------------------------------
-clk                                        |(no pin, node is net8)                     
-d_in                                       |(no pin, node is schmitt_trigger:1/outx)   
-vss                                        |(no pin, node is schmitt_trigger:4/outx)   
-Cell pin lists are equivalent.
+enable                                     |EN **Mismatch**                            
+clk                                        |CLK                                        
+d_in                                       |DATA **Mismatch**                          
+VAH_bias                                   |VAH_bias                                   
+v_ex                                       |V_EX                                       
+v_inh                                      |V_INH                                      
+vss                                        |VSS                                        
+vin_s0                                     |PIN[24] **Mismatch**                       
+vout_s0                                    |PIN[23] **Mismatch**                       
+vin_s1                                     |PIN[22] **Mismatch**                       
+vin_s2                                     |PIN[21] **Mismatch**                       
+vout_s2                                    |PIN[20] **Mismatch**                       
+vin_s3                                     |PIN[19] **Mismatch**                       
+vout_s1                                    |PIN[18] **Mismatch**                       
+vout_s3                                    |PIN[17] **Mismatch**                       
+vin_s4                                     |PIN[16] **Mismatch**                       
+vout_s4                                    |PIN[15] **Mismatch**                       
+vin_s5                                     |PIN[14] **Mismatch**                       
+vout_s5                                    |PIN[13] **Mismatch**                       
+i_in4                                      |PIN[12] **Mismatch**                       
+vout_4                                     |PIN[11] **Mismatch**                       
+i_in3                                      |PIN[10] **Mismatch**                       
+vout_3                                     |PIN[9] **Mismatch**                        
+i_in2                                      |PIN[8] **Mismatch**                        
+vout_2                                     |PIN[7] **Mismatch**                        
+i_in1                                      |PIN[6] **Mismatch**                        
+vout_1                                     |PIN[5] **Mismatch**                        
+i_in0                                      |PIN[4] **Mismatch**                        
+vout_0                                     |PIN[3] **Mismatch**                        
+vin_lif                                    |PIN[2] **Mismatch**                        
+vout_lif                                   |PIN[1] **Mismatch**                        
+vdd                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for top and top altered to match.
 Device classes top and top are equivalent.
 
-Final result: Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Final result: Top level cell failed pin matching.
