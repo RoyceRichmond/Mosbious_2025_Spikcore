@@ -1,23 +1,23 @@
-timestamp 1586832301
+timestamp 1586874257
 version 8.3
 tech gf180mcuD
 style ngspice()
 scale 1000 1 0.5
 resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
-use via_dev$23 via_dev$23_0 1 0 -1986 0 1 -2091
-use nfet$14 nfet$14_0 1 0 -1904 0 1 -2087
-use nfet$13 nfet$13_0 0 -1 1150 1 0 -1419
-use via_dev$23 via_dev$23_1 1 0 -1986 0 1 -1392
-use via_dev$23 via_dev$23_2 1 0 -492 0 1 -1285
-use via_dev$21 via_dev$21_0 1 0 860 0 1 -416
-use nfet$12 nfet$12_0 1 0 942 0 1 -658
-use via_dev$22 via_dev$22_0 1 0 -492 0 1 -416
-use via_dev$20 via_dev$20_2 1 0 860 0 1 -648
-use via_dev$19 via_dev$19_0 1 0 256 0 1 -416
-use nfet$12 nfet$12_1 1 0 942 0 1 -20
-use via_dev$21 via_dev$21_1 1 0 1120 0 1 243
-use via_dev$20 via_dev$20_1 1 0 1120 0 1 -10
-use via_dev$20 via_dev$20_0 1 0 860 0 1 -10
+use via_dev$24 via_dev$24_0 1 0 -1986 0 1 -2091
+use nfet$13 nfet$13_0 1 0 -1904 0 1 -2087
+use nfet$12 nfet$12_0 0 -1 1150 1 0 -1419
+use via_dev$24 via_dev$24_1 1 0 -1986 0 1 -1392
+use via_dev$24 via_dev$24_2 1 0 -492 0 1 -1285
+use via_dev$22 via_dev$22_0 1 0 860 0 1 -416
+use nfet$11 nfet$11_0 1 0 942 0 1 -658
+use via_dev$23 via_dev$23_0 1 0 -492 0 1 -416
+use via_dev$21 via_dev$21_2 1 0 860 0 1 -648
+use via_dev$20 via_dev$20_0 1 0 256 0 1 -416
+use nfet$11 nfet$11_1 1 0 942 0 1 -20
+use via_dev$22 via_dev$22_1 1 0 1120 0 1 243
+use via_dev$21 via_dev$21_1 1 0 1120 0 1 -10
+use via_dev$21 via_dev$21_0 1 0 860 0 1 -10
 use ota_1stage ota_1stage_0 1 0 -70 0 1 97
 port "vdd" 4 -1200 1429 -1200 1429 m1
 port "vspike_down" 3 1159 -602 1159 -602 m1
@@ -37,144 +37,144 @@ node "m1_n1986_n1392#" 0 331.147 -1986 -1392 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "m1_990_n794#" 0 375.884 990 -794 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24316 778 0 0 0 0 0 0 0 0
 node "m1_860_n156#" 0 380.458 860 -156 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24880 782 0 0 0 0 0 0 0 0
 substrate "vss" 0 0 1261 -2257 m1 0 0 0 0 0 0 1776046 40692 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2553588 31310 0 0 0 0 0 0 0 0
-cap "m3_860_n595#" "m2_385_243#" 5.89529
-cap "m2_385_243#" "m1_860_n156#" 4.84428
-cap "m2_385_243#" "vrefrac" 24.8511
-cap "m1_990_n794#" "m2_385_243#" 0.569109
-cap "m2_385_243#" "m2_314_n416#" 38.4142
-cap "m3_860_n595#" "m3_n492_n1253#" 10.8691
-cap "m3_n1986_n2021#" "m1_n1986_n1392#" 6.13501
-cap "m3_860_n595#" "m1_860_n156#" 10.3478
-cap "m1_990_n794#" "m3_n492_n1253#" 0.508703
-cap "m3_n492_n1253#" "m2_314_n416#" 0.565796
-cap "m1_n1986_n1392#" "m3_n492_n1253#" 0.252426
-cap "vneg" "m2_314_n416#" 0.18709
-cap "m3_860_n595#" "m2_314_n416#" 32.4241
 cap "m1_860_n156#" "m2_314_n416#" 2.01152
-cap "m1_990_n794#" "vrefrac" 1.02377
-cap "ota_1stage_0/vp" "nfet$13_0/a_n84_0#" 18.1608
-cap "ota_1stage_0/vss" "nfet$14_0/a_2638_0#" 1118.81
-cap "ota_1stage_0/nfet_0/a_38_n60#" "nfet$14_0/a_2638_0#" 0.276528
-cap "nfet$13_0/a_n84_0#" "ota_1stage_0/vss" 452.526
-cap "ota_1stage_0/nfet_0/a_n84_n2#" "nfet$14_0/a_2638_0#" 0.440527
+cap "vneg" "m2_314_n416#" 0.18709
+cap "m1_n1986_n1392#" "m3_n1986_n2021#" 6.13501
+cap "m3_860_n595#" "m1_860_n156#" 10.3478
+cap "vrefrac" "m1_990_n794#" 1.02377
+cap "m2_385_243#" "m2_314_n416#" 38.4142
+cap "m2_385_243#" "m1_990_n794#" 0.569109
+cap "m3_860_n595#" "m2_385_243#" 5.89529
+cap "m1_n1986_n1392#" "m3_n492_n1253#" 0.252426
+cap "m3_n492_n1253#" "m2_314_n416#" 0.565796
+cap "m2_385_243#" "m1_860_n156#" 4.84428
+cap "m3_n492_n1253#" "m1_990_n794#" 0.508703
+cap "m3_860_n595#" "m3_n492_n1253#" 10.8691
+cap "m3_860_n595#" "m2_314_n416#" 32.4241
+cap "m2_385_243#" "vrefrac" 24.8511
+cap "nfet$13_0/a_2638_0#" "ota_1stage_0/nfet$3_0/a_n84_n2#" 0.440527
+cap "nfet$13_0/a_2638_0#" "ota_1stage_0/nfet$3_0/a_38_n60#" 0.276528
+cap "ota_1stage_0/vp" "nfet$12_0/a_n84_0#" 18.1608
+cap "nfet$13_0/a_2638_0#" "ota_1stage_0/vss" 1118.81
+cap "nfet$13_0/a_2638_0#" "nfet$12_0/a_n84_0#" 4.00843
+cap "ota_1stage_0/vp" "ota_1stage_0/nfet$3_0/a_n84_n2#" 0.428867
+cap "ota_1stage_0/vp" "ota_1stage_0/nfet$3_0/a_38_n60#" 6.90816
+cap "ota_1stage_0/vss" "nfet$12_0/a_n84_0#" 452.526
+cap "nfet$13_0/a_2638_0#" "ota_1stage_0/vp" 39.4138
 cap "ota_1stage_0/vp" "ota_1stage_0/vss" 542.476
-cap "ota_1stage_0/nfet_0/a_38_n60#" "ota_1stage_0/vp" 6.90816
-cap "ota_1stage_0/vp" "ota_1stage_0/nfet_0/a_n84_n2#" 0.428867
-cap "nfet$13_0/a_n84_0#" "nfet$14_0/a_2638_0#" 4.00843
-cap "ota_1stage_0/vp" "nfet$14_0/a_2638_0#" 39.4138
-cap "ota_1stage_0/vss" "ota_1stage_0/vout" -0.191672
-cap "nfet$14_0/a_2638_0#" "ota_1stage_0/vss" 1477.75
+cap "ota_1stage_0/vp" "nfet$13_0/a_2638_0#" 6.053
 cap "ota_1stage_0/vss" "ota_1stage_0/vn" -1.07826
-cap "nfet$14_0/a_2638_0#" "ota_1stage_0/vn" 0.371367
+cap "ota_1stage_0/vout" "ota_1stage_0/vss" -0.191672
+cap "nfet$13_0/a_2638_0#" "ota_1stage_0/vss" 1477.75
+cap "nfet$13_0/a_2638_0#" "ota_1stage_0/vn" 0.371367
 cap "ota_1stage_0/vp" "ota_1stage_0/vss" 620.86
-cap "nfet$14_0/a_2638_0#" "ota_1stage_0/vp" 6.053
-cap "ota_1stage_0/vss" "ota_1stage_0/vn" -0.0520541
-cap "ota_1stage_0/vss" "ota_1stage_0/vp" 247.122
-cap "ota_1stage_0/vss" "nfet$13_0/a_30_3060#" 20.0852
-cap "vspike_down" "nfet$13_0/a_30_3060#" 0.2713
-cap "ota_1stage_0/vp" "nfet$14_0/a_2638_0#" 0.247374
-cap "ota_1stage_0/vss" "nfet$14_0/a_2638_0#" 141.842
+cap "nfet$12_0/a_30_3060#" "vspike_down" 0.2713
 cap "ota_1stage_0/vss" "ota_1stage_0/vout" -0.012253
-cap "ota_1stage_0/vout" "nfet$13_0/a_30_3060#" 0.0604769
-cap "ota_1stage_0/nfet_0/a_n84_n2#" "nfet$14_0/a_2638_0#" 0.712827
-cap "ota_1stage_0/vp" "ota_1stage_0/nfet_0/a_n84_n2#" 10.4884
-cap "ota_1stage_0/nfet_0/a_n84_n2#" "nfet$13_0/a_n84_0#" 2.53414
-cap "ota_1stage_0/vss" "ota_1stage_0/nfet_0/a_n84_n2#" 6.61124
-cap "ota_1stage_0/vss" "ota_1stage_0/nfet$2_1/a_94_0#" 0.591456
-cap "vdd" "nfet$14_0/a_2638_0#" 0.277411
-cap "ota_1stage_0/nfet_0/a_n84_n2#" "ota_1stage_0/vn" -0.207948
-cap "ota_1stage_0/vp" "vdd" 1.28151
-cap "nfet$13_0/a_n84_0#" "vdd" 0.0737571
+cap "ota_1stage_0/vss" "ota_1stage_0/vp" 247.122
+cap "ota_1stage_0/vss" "nfet$13_0/a_2638_0#" 141.842
+cap "nfet$12_0/a_30_3060#" "ota_1stage_0/vout" 0.0604769
+cap "nfet$12_0/a_30_3060#" "ota_1stage_0/vss" 20.0852
+cap "ota_1stage_0/vss" "ota_1stage_0/vn" -0.0520541
+cap "nfet$13_0/a_2638_0#" "ota_1stage_0/vp" 0.247374
+cap "ota_1stage_0/vss" "ota_1stage_0/nfet$3_0/a_n84_n2#" 6.61124
 cap "ota_1stage_0/vss" "vdd" 2.0575
-cap "ota_1stage_0/vp" "vdd" 2.37771
-cap "ota_1stage_0/nfet$2_1/a_94_0#" "ota_1stage_0/vout" 0.154197
-cap "ota_1stage_0/vout" "ota_1stage_0/vn" 19.3808
-cap "ota_1stage_0/vss" "ota_1stage_0/vout" 48.9332
-cap "ota_1stage_0/vp" "ota_1stage_0/vout" 0.31505
-cap "ota_1stage_0/vp" "vspike_down" 0.190271
-cap "ota_1stage_0/vout" "vdd" 8.93223
-cap "ota_1stage_0/pfet_0/a_28_228#" "ota_1stage_0/vn" 1.61211
-cap "ota_1stage_0/vss" "ota_1stage_0/pfet_0/a_28_228#" 0.174987
-cap "ota_1stage_0/vp" "ota_1stage_0/pfet_0/a_28_228#" 2.54294
-cap "ota_1stage_0/nfet$2_1/a_94_0#" "ota_1stage_0/vn" 3.7551
-cap "ota_1stage_0/vss" "ota_1stage_0/nfet$2_1/a_94_0#" 5.68658
-cap "nfet$14_0/a_2638_0#" "ota_1stage_0/vn" 1.01954
-cap "ota_1stage_0/vss" "ota_1stage_0/vn" 89.6863
-cap "ota_1stage_0/nfet_0/a_n84_n2#" "ota_1stage_0/vp" 6.84532
-cap "ota_1stage_0/vp" "ota_1stage_0/vn" 11.7325
-cap "ota_1stage_0/nfet$2_1/a_94_0#" "ota_1stage_0/vp" 13.9536
-cap "ota_1stage_0/vp" "nfet$14_0/a_2638_0#" 0.274189
-cap "ota_1stage_0/vss" "ota_1stage_0/vp" 113.643
+cap "ota_1stage_0/vss" "ota_1stage_0/nfet$5_1/a_94_0#" 0.591456
+cap "vdd" "nfet$12_0/a_n84_0#" 0.0737571
+cap "ota_1stage_0/vn" "ota_1stage_0/nfet$3_0/a_n84_n2#" -0.207948
+cap "ota_1stage_0/nfet$3_0/a_n84_n2#" "nfet$12_0/a_n84_0#" 2.53414
+cap "ota_1stage_0/vp" "vdd" 1.28151
+cap "ota_1stage_0/vp" "ota_1stage_0/nfet$3_0/a_n84_n2#" 10.4884
+cap "ota_1stage_0/nfet$3_0/a_n84_n2#" "nfet$13_0/a_2638_0#" 0.712827
+cap "vdd" "nfet$13_0/a_2638_0#" 0.277411
+cap "nfet$13_0/a_2638_0#" "ota_1stage_0/vn" 1.01954
 cap "vdd" "ota_1stage_0/vn" 1.18023
-cap "ota_1stage_0/vn" "ota_1stage_0/vp" 6.45986
-cap "ota_1stage_0/vss" "vspike_down" 46.4611
-cap "ota_1stage_0/vout" "ota_1stage_0/pfet_0/a_28_228#" 0.393054
-cap "ota_1stage_0/vn" "ota_1stage_0/nfet$1_1/a_n84_0#" 7.8485
-cap "nfet$14_0/a_2638_0#" "ota_1stage_0/vn" 0.239455
-cap "ota_1stage_0/vn" "vspike_down" 12.7331
-cap "ota_1stage_0/vout" "ota_1stage_0/vp" 0.809393
-cap "ota_1stage_0/vn" "nfet$13_0/a_30_3060#" 1.41431
-cap "ota_1stage_0/vout" "ota_1stage_0/nfet$1_1/a_n84_0#" 1.55209
-cap "ota_1stage_0/vout" "vspike_down" 2.8691
-cap "ota_1stage_0/vp" "vspike_down" 0.346375
-cap "ota_1stage_0/vdd" "ota_1stage_0/vout" 6.17908
-cap "ota_1stage_0/vout" "nfet$13_0/a_30_3060#" 0.40584
+cap "ota_1stage_0/nfet$3_0/a_n84_n2#" "ota_1stage_0/vp" 6.84532
+cap "ota_1stage_0/nfet$5_1/a_94_0#" "ota_1stage_0/vn" 3.7551
+cap "ota_1stage_0/vn" "ota_1stage_0/vp" 11.7325
+cap "vdd" "ota_1stage_0/vout" 8.93223
+cap "ota_1stage_0/vss" "ota_1stage_0/nfet$5_1/a_94_0#" 5.68658
+cap "ota_1stage_0/vss" "ota_1stage_0/vp" 113.643
+cap "ota_1stage_0/pfet$4_0/a_28_228#" "ota_1stage_0/vp" 2.54294
+cap "ota_1stage_0/vout" "ota_1stage_0/vp" 0.31505
+cap "ota_1stage_0/nfet$5_1/a_94_0#" "ota_1stage_0/vout" 0.154197
+cap "nfet$13_0/a_2638_0#" "ota_1stage_0/vp" 0.274189
+cap "ota_1stage_0/vn" "ota_1stage_0/pfet$4_0/a_28_228#" 1.61211
+cap "ota_1stage_0/vss" "ota_1stage_0/vn" 89.6863
+cap "vdd" "ota_1stage_0/vp" 2.37771
+cap "ota_1stage_0/vss" "ota_1stage_0/pfet$4_0/a_28_228#" 0.174987
+cap "ota_1stage_0/vn" "ota_1stage_0/vout" 19.3808
+cap "ota_1stage_0/nfet$5_1/a_94_0#" "ota_1stage_0/vp" 13.9536
+cap "vspike_down" "ota_1stage_0/vp" 0.190271
+cap "ota_1stage_0/vss" "ota_1stage_0/vout" 48.9332
 cap "ota_1stage_0/vss" "ota_1stage_0/vn" 185.446
-cap "ota_1stage_0/vss" "ota_1stage_0/vout" 90.1842
-cap "ota_1stage_0/vn" "ota_1stage_0/pfet_0/a_28_228#" 1.61784
+cap "ota_1stage_0/vout" "ota_1stage_0/pfet$4_0/a_28_228#" 0.393054
+cap "ota_1stage_0/vout" "ota_1stage_0/vdd" 6.17908
+cap "ota_1stage_0/vout" "ota_1stage_0/vss" 90.1842
+cap "ota_1stage_0/vout" "ota_1stage_0/vn" 63.2342
 cap "ota_1stage_0/vss" "ota_1stage_0/vp" -0.823717
-cap "ota_1stage_0/vn" "ota_1stage_0/vout" 63.2342
-cap "ota_1stage_0/vss" "ota_1stage_0/nfet$2_1/a_94_0#" 0.121665
-cap "ota_1stage_0/pfet_0/a_28_228#" "ota_1stage_0/vss" 3.55271e-15
-cap "ota_1stage_0/pfet_0/a_28_228#" "vdd" -2.27374e-13
+cap "ota_1stage_0/vp" "ota_1stage_0/vn" 6.45986
+cap "ota_1stage_0/vout" "ota_1stage_0/vp" 0.809393
+cap "ota_1stage_0/vn" "nfet$13_0/a_2638_0#" 0.239455
+cap "nfet$12_0/a_30_3060#" "ota_1stage_0/vn" 1.41431
+cap "ota_1stage_0/vout" "nfet$12_0/a_30_3060#" 0.40584
+cap "vspike_down" "ota_1stage_0/vss" 46.4611
+cap "vspike_down" "ota_1stage_0/vn" 12.7331
+cap "ota_1stage_0/vn" "ota_1stage_0/nfet$4_1/a_n84_0#" 7.8485
+cap "vspike_down" "ota_1stage_0/vout" 2.8691
+cap "ota_1stage_0/vout" "ota_1stage_0/nfet$4_1/a_n84_0#" 1.55209
+cap "vspike_down" "ota_1stage_0/vp" 0.346375
+cap "ota_1stage_0/pfet$4_0/a_28_228#" "ota_1stage_0/vn" 1.61784
 cap "ota_1stage_0/vout" "ota_1stage_0/vss" 1.64685
-cap "ota_1stage_0/vp" "ota_1stage_0/pfet_0/a_28_228#" 0.0014057
-cap "ota_1stage_0/pfet_0/a_28_228#" "ota_1stage_0/vn" 1.08658
+cap "vdd" "ota_1stage_0/pfet$4_0/a_28_228#" -2.27374e-13
+cap "ota_1stage_0/pfet$4_0/a_28_228#" "ota_1stage_0/vp" 0.0014057
+cap "ota_1stage_0/pfet$4_0/a_28_228#" "ota_1stage_0/vss" 3.55271e-15
+cap "ota_1stage_0/vss" "ota_1stage_0/nfet$5_1/a_94_0#" 0.121665
+cap "ota_1stage_0/pfet$4_0/a_28_228#" "ota_1stage_0/vn" 1.08658
 cap "ota_1stage_0/vdd" "ota_1stage_0/vss" 14.9115
-merge "via_dev$20_1/m1_0_0#" "nfet$12_1/a_138_0#" -404.383 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5776 -304 -9680 -562 -7280 -502 0 0 0 0
-merge "nfet$12_1/a_138_0#" "via_dev$21_1/m2_0_0#"
-merge "via_dev$21_1/m2_0_0#" "vrefrac"
+merge "via_dev$21_1/m1_0_0#" "nfet$11_1/a_138_0#" -404.383 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5776 -304 -9680 -562 -7280 -502 0 0 0 0
+merge "nfet$11_1/a_138_0#" "via_dev$22_1/m2_0_0#"
+merge "via_dev$22_1/m2_0_0#" "vrefrac"
 merge "vrefrac" "ota_1stage_0/vout"
 merge "ota_1stage_0/vout" "m2_385_243#"
-merge "via_dev$20_0/VSUBS" "via_dev$20_1/VSUBS" -2812.55 0 0 0 0 0 0 -330750 -47432 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8706 0 0 0 0 0 0 0 0
-merge "via_dev$20_1/VSUBS" "via_dev$21_1/VSUBS"
-merge "via_dev$21_1/VSUBS" "via_dev$20_2/VSUBS"
-merge "via_dev$20_2/VSUBS" "via_dev$21_0/VSUBS"
-merge "via_dev$21_0/VSUBS" "nfet$13_0/a_n84_0#"
-merge "nfet$13_0/a_n84_0#" "ota_1stage_0/vss"
-merge "ota_1stage_0/vss" "nfet$12_1/a_n256_n272#"
-merge "nfet$12_1/a_n256_n272#" "via_dev$19_0/VSUBS"
-merge "via_dev$19_0/VSUBS" "via_dev$22_0/VSUBS"
-merge "via_dev$22_0/VSUBS" "nfet$12_0/a_n256_n272#"
-merge "nfet$12_0/a_n256_n272#" "via_dev$23_2/VSUBS"
-merge "via_dev$23_2/VSUBS" "via_dev$23_1/VSUBS"
-merge "via_dev$23_1/VSUBS" "nfet$13_0/a_n256_n198#"
-merge "nfet$13_0/a_n256_n198#" "nfet$14_0/a_n256_n198#"
-merge "nfet$14_0/a_n256_n198#" "via_dev$23_0/VSUBS"
-merge "via_dev$23_0/VSUBS" "vss"
-merge "nfet$14_0/a_2638_0#" "nfet$14_0/a_38_n60#" -724.706 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -912 -328 0 0 0 0 0 0 0 0
-merge "nfet$14_0/a_38_n60#" "vneg"
-merge "ota_1stage_0/vp" "via_dev$22_0/m1_0_0#" -1227.79 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -29808 -1696 0 0 -10480 -902 0 0 0 0
-merge "via_dev$22_0/m1_0_0#" "via_dev$23_2/m1_0_0#"
-merge "via_dev$23_2/m1_0_0#" "m3_n492_n1253#"
-merge "m3_n492_n1253#" "via_dev$23_1/m1_0_0#"
-merge "via_dev$23_1/m1_0_0#" "nfet$14_0/a_n84_n2#"
-merge "nfet$14_0/a_n84_n2#" "via_dev$23_0/m1_0_0#"
-merge "via_dev$23_0/m1_0_0#" "m3_n1986_n2021#"
-merge "m3_n1986_n2021#" "nfet$13_0/a_94_0#"
-merge "nfet$13_0/a_94_0#" "nfet$13_0/a_30_3060#"
-merge "nfet$13_0/a_30_3060#" "m1_n1986_n1392#"
-merge "nfet$12_0/a_38_n132#" "nfet$12_0/a_138_0#" -113.427 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8284 -522 0 0 0 0 0 0 0 0
-merge "nfet$12_0/a_138_0#" "vspike_down"
-merge "vspike_down" "m1_990_n794#"
-merge "via_dev$20_0/m1_0_0#" "nfet$12_1/a_38_n132#" -752.463 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25904 -1446 -5120 -448 -11920 -778 0 0 0 0
-merge "nfet$12_1/a_38_n132#" "nfet$12_1/a_n84_0#"
-merge "nfet$12_1/a_n84_0#" "m1_860_n156#"
-merge "m1_860_n156#" "via_dev$20_2/m1_0_0#"
-merge "via_dev$20_2/m1_0_0#" "nfet$12_0/a_n84_0#"
-merge "nfet$12_0/a_n84_0#" "via_dev$21_0/m2_0_0#"
-merge "via_dev$21_0/m2_0_0#" "m3_860_n595#"
+merge "via_dev$21_0/m1_0_0#" "nfet$11_1/a_38_n132#" -752.463 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25904 -1446 -5120 -448 -11920 -778 0 0 0 0
+merge "nfet$11_1/a_38_n132#" "nfet$11_1/a_n84_0#"
+merge "nfet$11_1/a_n84_0#" "m1_860_n156#"
+merge "m1_860_n156#" "via_dev$21_2/m1_0_0#"
+merge "via_dev$21_2/m1_0_0#" "nfet$11_0/a_n84_0#"
+merge "nfet$11_0/a_n84_0#" "via_dev$22_0/m2_0_0#"
+merge "via_dev$22_0/m2_0_0#" "m3_860_n595#"
 merge "m3_860_n595#" "ota_1stage_0/vn"
-merge "ota_1stage_0/vn" "via_dev$19_0/m1_0_0#"
-merge "via_dev$19_0/m1_0_0#" "m2_314_n416#"
+merge "ota_1stage_0/vn" "via_dev$20_0/m1_0_0#"
+merge "via_dev$20_0/m1_0_0#" "m2_314_n416#"
+merge "nfet$13_0/a_2638_0#" "nfet$13_0/a_38_n60#" -724.706 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -912 -328 0 0 0 0 0 0 0 0
+merge "nfet$13_0/a_38_n60#" "vneg"
+merge "nfet$11_0/a_38_n132#" "nfet$11_0/a_138_0#" -113.427 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8284 -522 0 0 0 0 0 0 0 0
+merge "nfet$11_0/a_138_0#" "vspike_down"
+merge "vspike_down" "m1_990_n794#"
+merge "ota_1stage_0/vp" "via_dev$23_0/m1_0_0#" -1227.79 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -29808 -1696 0 0 -10480 -902 0 0 0 0
+merge "via_dev$23_0/m1_0_0#" "via_dev$24_2/m1_0_0#"
+merge "via_dev$24_2/m1_0_0#" "m3_n492_n1253#"
+merge "m3_n492_n1253#" "via_dev$24_1/m1_0_0#"
+merge "via_dev$24_1/m1_0_0#" "nfet$13_0/a_n84_n2#"
+merge "nfet$13_0/a_n84_n2#" "via_dev$24_0/m1_0_0#"
+merge "via_dev$24_0/m1_0_0#" "m3_n1986_n2021#"
+merge "m3_n1986_n2021#" "nfet$12_0/a_94_0#"
+merge "nfet$12_0/a_94_0#" "nfet$12_0/a_30_3060#"
+merge "nfet$12_0/a_30_3060#" "m1_n1986_n1392#"
+merge "via_dev$21_0/VSUBS" "via_dev$21_1/VSUBS" -2812.55 0 0 0 0 0 0 -330750 -47432 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8706 0 0 0 0 0 0 0 0
+merge "via_dev$21_1/VSUBS" "via_dev$22_1/VSUBS"
+merge "via_dev$22_1/VSUBS" "via_dev$21_2/VSUBS"
+merge "via_dev$21_2/VSUBS" "via_dev$22_0/VSUBS"
+merge "via_dev$22_0/VSUBS" "nfet$12_0/a_n84_0#"
+merge "nfet$12_0/a_n84_0#" "ota_1stage_0/vss"
+merge "ota_1stage_0/vss" "nfet$11_1/a_n256_n272#"
+merge "nfet$11_1/a_n256_n272#" "via_dev$20_0/VSUBS"
+merge "via_dev$20_0/VSUBS" "via_dev$23_0/VSUBS"
+merge "via_dev$23_0/VSUBS" "nfet$11_0/a_n256_n272#"
+merge "nfet$11_0/a_n256_n272#" "via_dev$24_2/VSUBS"
+merge "via_dev$24_2/VSUBS" "via_dev$24_1/VSUBS"
+merge "via_dev$24_1/VSUBS" "nfet$12_0/a_n256_n198#"
+merge "nfet$12_0/a_n256_n198#" "nfet$13_0/a_n256_n198#"
+merge "nfet$13_0/a_n256_n198#" "via_dev$24_0/VSUBS"
+merge "via_dev$24_0/VSUBS" "vss"
 merge "ota_1stage_0/vdd" "vdd" -7.95654 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
