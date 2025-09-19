@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>DRC Run Report at</description>
- <original-file>/foss/designs/Mosbious_2025_Spikcore/designs/klayout/Padframe submission/M13_spikcore_padless.gds</original-file>
+ <original-file>Padframe submission/M13_spikcore_padless.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
  <top-cell>M13_spikcore</top-cell>
  <tags>
@@ -3992,139 +3992,19 @@
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (2107.725,530.48;2419.175,530.48)|(2419.405,530.5;2107.725,530.5)</value>
+    <value>edge-pair: (2419.37,525.44;2419.37,525.46)|(2419.175,525.46;2419.175,525.44)</value>
    </values>
   </item>
   <item>
    <tags/>
-   <category>'DV.2'</category>
+   <category>'M1.2a'</category>
    <cell>M13_spikcore</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (2599.175,2380.33;2599.175,2385.93)|(2598.875,2385.93;2598.875,2380.33)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'NW.2b_MV'</category>
-   <cell>M13_spikcore</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (2386.685,530.46;2394.565,530.46)|(2392.865,530.475;2388.385,530.475)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'NW.2b_MV'</category>
-   <cell>M13_spikcore</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (2293.085,530.46;2300.965,530.46)|(2299.265,530.475;2294.785,530.475)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'NW.2b_MV'</category>
-   <cell>M13_spikcore</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (2355.485,530.46;2363.365,530.46)|(2361.665,530.475;2357.185,530.475)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'NW.2b_MV'</category>
-   <cell>M13_spikcore</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (2137.085,530.46;2144.965,530.46)|(2143.265,530.475;2138.785,530.475)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'NW.2b_MV'</category>
-   <cell>M13_spikcore</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (2324.285,530.46;2332.165,530.46)|(2330.465,530.475;2325.985,530.475)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'NW.2b_MV'</category>
-   <cell>M13_spikcore</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (2230.685,530.46;2238.565,530.46)|(2236.865,530.475;2232.385,530.475)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'NW.2b_MV'</category>
-   <cell>M13_spikcore</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (2199.485,530.46;2207.365,530.46)|(2205.665,530.475;2201.185,530.475)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'NW.2b_MV'</category>
-   <cell>M13_spikcore</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (2106.715,530.46;2113.305,530.46)|(2111.605,530.475;2107.125,530.475)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'NW.2b_MV'</category>
-   <cell>M13_spikcore</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (2261.885,530.46;2269.765,530.46)|(2268.065,530.475;2263.585,530.475)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'NW.2b_MV'</category>
-   <cell>M13_spikcore</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (2168.285,530.46;2176.165,530.46)|(2174.465,530.475;2169.985,530.475)</value>
+    <value>edge-pair: (2106.715,524.54;2418.955,524.54)|(2418.955,524.56;2106.715,524.56)</value>
    </values>
   </item>
  </items>
