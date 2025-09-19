@@ -31,7 +31,7 @@ X0 ZN I VDD VNW pfet_05v0 ad=0.8052p pd=4.54u as=0.8052p ps=4.54u w=1.83u l=0.5u
 X1 ZN I VSS VPW nfet_05v0 ad=0.5808p pd=3.52u as=0.5808p ps=3.52u w=1.32u l=0.6u
 .ends
 
-.subckt DFF_2phase_1 gated_control PHI_1 D EN PHI_2 Q VSS VDD
+.subckt DFF_2phase_1 gated_control PHI_1 D EN VDD Q PHI_2 VSS
 Xgf180mcu_fd_sc_mcu9t5v0__nand2_1_0 EN Q VDD VSS gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I
 + VDD VSS gf180mcu_fd_sc_mcu9t5v0__nand2_1
 Xgf180mcu_fd_sc_mcu9t5v0__latq_1$1_0 gf180mcu_fd_sc_mcu9t5v0__latq_1$1_1/Q PHI_2 Q
@@ -42,19 +42,18 @@ Xgf180mcu_fd_sc_mcu9t5v0__inv_1_0 gf180mcu_fd_sc_mcu9t5v0__inv_1_0/I VDD VSS gat
 + VDD VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
 .ends
 
-.subckt ShiftReg_row_10_2$1 gc[1] gc[2] gc[3] gc[4] gc[5] gc[6] gc[7] gc[8] gc[9]
-+ gc[10] Q[10] PHI_1 PHI_2 D_in Q[4] Q[9] Q[3] Q[8] Q[5] Q[7] Q[6] Q[1] Q[2] EN VDD
-+ VSS
-XDFF_2phase_1_0 gc[10] PHI_1 Q[9] EN PHI_2 Q[10] VSS VDD DFF_2phase_1
-XDFF_2phase_1_1 gc[9] PHI_1 Q[8] EN PHI_2 Q[9] VSS VDD DFF_2phase_1
-XDFF_2phase_1_2 gc[8] PHI_1 Q[7] EN PHI_2 Q[8] VSS VDD DFF_2phase_1
-XDFF_2phase_1_3 gc[7] PHI_1 Q[6] EN PHI_2 Q[7] VSS VDD DFF_2phase_1
-XDFF_2phase_1_4 gc[6] PHI_1 Q[5] EN PHI_2 Q[6] VSS VDD DFF_2phase_1
-XDFF_2phase_1_5 gc[5] PHI_1 Q[4] EN PHI_2 Q[5] VSS VDD DFF_2phase_1
-XDFF_2phase_1_6 gc[4] PHI_1 Q[3] EN PHI_2 Q[4] VSS VDD DFF_2phase_1
-XDFF_2phase_1_7 gc[3] PHI_1 Q[2] EN PHI_2 Q[3] VSS VDD DFF_2phase_1
-XDFF_2phase_1_8 gc[1] PHI_1 D_in EN PHI_2 Q[1] VSS VDD DFF_2phase_1
-XDFF_2phase_1_9 gc[2] PHI_1 Q[1] EN PHI_2 Q[2] VSS VDD DFF_2phase_1
+.subckt ShiftReg_row_10_2$1 VDD gc[1] gc[2] gc[3] gc[4] gc[5] gc[6] gc[7] gc[8] gc[9]
++ gc[10] Q[10] PHI_1 PHI_2 D_in Q[4] Q[9] Q[3] Q[8] Q[5] Q[7] Q[6] Q[1] Q[2] EN VSS
+XDFF_2phase_1_0 gc[10] PHI_1 Q[9] EN VDD Q[10] PHI_2 VSS DFF_2phase_1
+XDFF_2phase_1_1 gc[9] PHI_1 Q[8] EN VDD Q[9] PHI_2 VSS DFF_2phase_1
+XDFF_2phase_1_2 gc[8] PHI_1 Q[7] EN VDD Q[8] PHI_2 VSS DFF_2phase_1
+XDFF_2phase_1_3 gc[7] PHI_1 Q[6] EN VDD Q[7] PHI_2 VSS DFF_2phase_1
+XDFF_2phase_1_4 gc[6] PHI_1 Q[5] EN VDD Q[6] PHI_2 VSS DFF_2phase_1
+XDFF_2phase_1_5 gc[5] PHI_1 Q[4] EN VDD Q[5] PHI_2 VSS DFF_2phase_1
+XDFF_2phase_1_6 gc[4] PHI_1 Q[3] EN VDD Q[4] PHI_2 VSS DFF_2phase_1
+XDFF_2phase_1_7 gc[3] PHI_1 Q[2] EN VDD Q[3] PHI_2 VSS DFF_2phase_1
+XDFF_2phase_1_8 gc[1] PHI_1 D_in EN VDD Q[1] PHI_2 VSS DFF_2phase_1
+XDFF_2phase_1_9 gc[2] PHI_1 Q[1] EN VDD Q[2] PHI_2 VSS DFF_2phase_1
 .ends
 
 .subckt pfet a_1534_0# a_2174_0# a_1054_0# a_734_0# a_828_n136# a_28_n136# a_2588_n136#
@@ -113,24 +112,36 @@ Xnfet_0 VSS T2 gated_control T1 T1 gated_control gated_control T2 gated_control 
 + T2 gated_control T1 gated_control nfet
 .ends
 
-.subckt swmatrix_row_10 vdd vss PHI_1 PHI_2 D_in pin enable BUS[1] BUS[2] BUS[3] BUS[4]
-+ BUS[5] BUS[6] BUS[7] BUS[8] BUS[9] BUS[10] d_out
-XShiftReg_row_10_2$1_0 ShiftReg_row_10_2$1_0/gc[1] ShiftReg_row_10_2$1_0/gc[2] ShiftReg_row_10_2$1_0/gc[3]
-+ ShiftReg_row_10_2$1_0/gc[4] ShiftReg_row_10_2$1_0/gc[5] ShiftReg_row_10_2$1_0/gc[6]
-+ ShiftReg_row_10_2$1_0/gc[7] ShiftReg_row_10_2$1_0/gc[8] ShiftReg_row_10_2$1_0/gc[9]
-+ ShiftReg_row_10_2$1_0/gc[10] d_out PHI_1 PHI_2 D_in ShiftReg_row_10_2$1_0/Q[4] ShiftReg_row_10_2$1_0/Q[9]
-+ ShiftReg_row_10_2$1_0/Q[3] ShiftReg_row_10_2$1_0/Q[8] ShiftReg_row_10_2$1_0/Q[5]
-+ ShiftReg_row_10_2$1_0/Q[7] ShiftReg_row_10_2$1_0/Q[6] ShiftReg_row_10_2$1_0/Q[1]
-+ ShiftReg_row_10_2$1_0/Q[2] enable vdd vss ShiftReg_row_10_2$1
-Xswmatrix_Tgate_0 vss vdd pin ShiftReg_row_10_2$1_0/gc[7] BUS[7] swmatrix_Tgate
-Xswmatrix_Tgate_1 vss vdd pin ShiftReg_row_10_2$1_0/gc[9] BUS[9] swmatrix_Tgate
-Xswmatrix_Tgate_2 vss vdd pin ShiftReg_row_10_2$1_0/gc[10] BUS[10] swmatrix_Tgate
-Xswmatrix_Tgate_3 vss vdd pin ShiftReg_row_10_2$1_0/gc[8] BUS[8] swmatrix_Tgate
-Xswmatrix_Tgate_4 vss vdd pin ShiftReg_row_10_2$1_0/gc[3] BUS[3] swmatrix_Tgate
-Xswmatrix_Tgate_5 vss vdd pin ShiftReg_row_10_2$1_0/gc[5] BUS[5] swmatrix_Tgate
-Xswmatrix_Tgate_6 vss vdd pin ShiftReg_row_10_2$1_0/gc[6] BUS[6] swmatrix_Tgate
-Xswmatrix_Tgate_7 vss vdd pin ShiftReg_row_10_2$1_0/gc[4] BUS[4] swmatrix_Tgate
-Xswmatrix_Tgate_8 vss vdd pin ShiftReg_row_10_2$1_0/gc[2] BUS[2] swmatrix_Tgate
-Xswmatrix_Tgate_9 vss vdd pin ShiftReg_row_10_2$1_0/gc[1] BUS[1] swmatrix_Tgate
+.subckt swmatrix_row_10 pin BUS[1] BUS[2] BUS[3] BUS[4] BUS[5] BUS[6] BUS[7] BUS[8]
++ BUS[9] BUS[10] d_out
+XShiftReg_row_10_2$1_0 swmatrix_Tgate_9/VDD ShiftReg_row_10_2$1_0/gc[1] ShiftReg_row_10_2$1_0/gc[2]
++ ShiftReg_row_10_2$1_0/gc[3] ShiftReg_row_10_2$1_0/gc[4] ShiftReg_row_10_2$1_0/gc[5]
++ ShiftReg_row_10_2$1_0/gc[6] ShiftReg_row_10_2$1_0/gc[7] ShiftReg_row_10_2$1_0/gc[8]
++ ShiftReg_row_10_2$1_0/gc[9] ShiftReg_row_10_2$1_0/gc[10] d_out ShiftReg_row_10_2$1_0/PHI_1
++ ShiftReg_row_10_2$1_0/PHI_2 ShiftReg_row_10_2$1_0/D_in ShiftReg_row_10_2$1_0/Q[4]
++ ShiftReg_row_10_2$1_0/Q[9] ShiftReg_row_10_2$1_0/Q[3] ShiftReg_row_10_2$1_0/Q[8]
++ ShiftReg_row_10_2$1_0/Q[5] ShiftReg_row_10_2$1_0/Q[7] ShiftReg_row_10_2$1_0/Q[6]
++ ShiftReg_row_10_2$1_0/Q[1] ShiftReg_row_10_2$1_0/Q[2] ShiftReg_row_10_2$1_0/EN VSUBS
++ ShiftReg_row_10_2$1
+Xswmatrix_Tgate_0 VSUBS swmatrix_Tgate_9/VDD pin ShiftReg_row_10_2$1_0/gc[7] BUS[7]
++ swmatrix_Tgate
+Xswmatrix_Tgate_1 VSUBS swmatrix_Tgate_9/VDD pin ShiftReg_row_10_2$1_0/gc[9] BUS[9]
++ swmatrix_Tgate
+Xswmatrix_Tgate_2 VSUBS swmatrix_Tgate_9/VDD pin ShiftReg_row_10_2$1_0/gc[10] BUS[10]
++ swmatrix_Tgate
+Xswmatrix_Tgate_3 VSUBS swmatrix_Tgate_9/VDD pin ShiftReg_row_10_2$1_0/gc[8] BUS[8]
++ swmatrix_Tgate
+Xswmatrix_Tgate_4 VSUBS swmatrix_Tgate_9/VDD pin ShiftReg_row_10_2$1_0/gc[3] BUS[3]
++ swmatrix_Tgate
+Xswmatrix_Tgate_5 VSUBS swmatrix_Tgate_9/VDD pin ShiftReg_row_10_2$1_0/gc[5] BUS[5]
++ swmatrix_Tgate
+Xswmatrix_Tgate_6 VSUBS swmatrix_Tgate_9/VDD pin ShiftReg_row_10_2$1_0/gc[6] BUS[6]
++ swmatrix_Tgate
+Xswmatrix_Tgate_7 VSUBS swmatrix_Tgate_9/VDD pin ShiftReg_row_10_2$1_0/gc[4] BUS[4]
++ swmatrix_Tgate
+Xswmatrix_Tgate_8 VSUBS swmatrix_Tgate_9/VDD pin ShiftReg_row_10_2$1_0/gc[2] BUS[2]
++ swmatrix_Tgate
+Xswmatrix_Tgate_9 VSUBS swmatrix_Tgate_9/VDD pin ShiftReg_row_10_2$1_0/gc[1] BUS[1]
++ swmatrix_Tgate
 .ends
 

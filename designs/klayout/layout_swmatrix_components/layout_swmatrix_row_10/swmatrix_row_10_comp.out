@@ -54,6 +54,30 @@ Cell pin lists are equivalent.
 Device classes gf180mcu_fd_sc_mcu9t5v0__nand2_1 and gf180mcu_fd_sc_mcu9t5v0__nand2_1 are equivalent.
 
 Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__latq_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__latq_1 
+-------------------------------------------|-------------------------------------------
+nfet_05v0 (8)                              |nfet_06v0 (8)                              
+pfet_05v0 (8)                              |pfet_06v0 (8)                              
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 15                         |Number of nets: 15                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__latq_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__latq_1 
+-------------------------------------------|-------------------------------------------
+E                                          |E                                          
+D                                          |D                                          
+Q                                          |Q                                          
+VPW                                        |VPW                                        
+VNW                                        |VNW                                        
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__latq_1$1 and gf180mcu_fd_sc_mcu9t5v0__latq_1 are equivalent.
+
+Subcircuit summary:
 Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
 -------------------------------------------|-------------------------------------------
 pfet_05v0 (1)                              |pfet_06v0 (1)                              
@@ -109,51 +133,108 @@ Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes nfet_03v3 and nfet_03v3 are equivalent.
-Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__latq_1$1 in circuit DFF_2phase_1 (0)(2 instances)
-Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__latq_1 in circuit DFF_2phase_1 (1)(2 instances)
 
 Subcircuit summary:
 Circuit 1: DFF_2phase_1                    |Circuit 2: DFF_2phase_1                    
 -------------------------------------------|-------------------------------------------
 gf180mcu_fd_sc_mcu9t5v0__nand2_1 (1)       |gf180mcu_fd_sc_mcu9t5v0__nand2_1 (1)       
-nfet_05v0 (16)                             |nfet_06v0 (16)                             
-pfet_05v0 (16)                             |pfet_06v0 (16)                             
+gf180mcu_fd_sc_mcu9t5v0__latq_1$1 (2)      |gf180mcu_fd_sc_mcu9t5v0__latq_1 (2)        
 gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         |gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         
-Number of devices: 34                      |Number of devices: 34                      
-Number of nets: 26                         |Number of nets: 26                         
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 10                         |Number of nets: 10                         
 ---------------------------------------------------------------------------------------
 Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: DFF_2phase_1                    |Circuit 2: DFF_2phase_1                    
 -------------------------------------------|-------------------------------------------
-D                                          |D                                          
-PHI_1                                      |PHI_1                                      
-PHI_2                                      |PHI_2                                      
 VDD                                        |VDD                                        
 VSS                                        |VSS                                        
 Q                                          |Q                                          
+D                                          |D                                          
+PHI_1                                      |PHI_1                                      
+PHI_2                                      |PHI_2                                      
 gated_control                              |gated_control                              
 EN                                         |EN                                         
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes DFF_2phase_1 and DFF_2phase_1 are equivalent.
-Flattening unmatched subcell pfet in circuit swmatrix_Tgate (0)(1 instance)
-Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__inv_1$1 in circuit swmatrix_Tgate (0)(1 instance)
-Flattening unmatched subcell nfet in circuit swmatrix_Tgate (0)(1 instance)
 
-Flattening instances of gf180mcu_fd_sc_mcu9t5v0__inv_1 in cell swmatrix_Tgate (1) makes a better match
-Making another compare attempt.
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1$ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
+-------------------------------------------|-------------------------------------------
+pfet_05v0 (1)                              |pfet_06v0 (1)                              
+nfet_05v0 (1)                              |nfet_06v0 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1$ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VPW                                        |VPW                                        
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+ZN                                         |ZN                                         
+I                                          |I                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1$1 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: ShiftReg_row_10_2$1             |Circuit 2: ShiftReg_row_10_2               
+-------------------------------------------|-------------------------------------------
+DFF_2phase_1 (10)                          |DFF_2phase_1 (10)                          
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 26                         |Number of nets: 26                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: ShiftReg_row_10_2$1             |Circuit 2: ShiftReg_row_10_2               
+-------------------------------------------|-------------------------------------------
+Q[1]                                       |Q[1]                                       
+Q[2]                                       |Q[2]                                       
+Q[3]                                       |Q[3]                                       
+Q[4]                                       |Q[4]                                       
+Q[5]                                       |Q[5]                                       
+Q[6]                                       |Q[6]                                       
+Q[7]                                       |Q[7]                                       
+Q[8]                                       |Q[8]                                       
+Q[9]                                       |Q[9]                                       
+PHI_1                                      |PHI_1                                      
+PHI_2                                      |PHI_2                                      
+EN                                         |EN                                         
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+D_in                                       |D_in                                       
+gc[1]                                      |gc[1]                                      
+gc[2]                                      |gc[2]                                      
+gc[3]                                      |gc[3]                                      
+gc[4]                                      |gc[4]                                      
+gc[5]                                      |gc[5]                                      
+gc[6]                                      |gc[6]                                      
+gc[7]                                      |gc[7]                                      
+gc[8]                                      |gc[8]                                      
+gc[9]                                      |gc[9]                                      
+Q[10]                                      |Q[10]                                      
+gc[10]                                     |gc[10]                                     
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ShiftReg_row_10_2$1 and ShiftReg_row_10_2 are equivalent.
+Flattening unmatched subcell pfet in circuit swmatrix_Tgate (0)(1 instance)
+Flattening unmatched subcell nfet in circuit swmatrix_Tgate (0)(1 instance)
 
 Class swmatrix_Tgate (0):  Merged 22 parallel devices.
 Subcircuit summary:
 Circuit 1: swmatrix_Tgate                  |Circuit 2: swmatrix_Tgate                  
 -------------------------------------------|-------------------------------------------
 pfet_03v3 (18->1)                          |pfet_03v3 (1)                              
-pfet_05v0 (1)                              |pfet_06v0 (1)                              
-nfet_05v0 (1)                              |nfet_06v0 (1)                              
+gf180mcu_fd_sc_mcu9t5v0__inv_1$1 (1)       |gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         
 nfet_03v3 (6->1)                           |nfet_03v3 (1)                              
-Number of devices: 4                       |Number of devices: 4                       
+Number of devices: 3                       |Number of devices: 3                       
 Number of nets: 14                         |Number of nets: 14                         
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
@@ -188,26 +269,20 @@ Net: /pfet_0/dummy_39                      |Net: dummy_7
 ---------------------------------------------------------------------------------------
 Net: VDD                                   |Net: VDD                                   
   pfet_03v3/4 = 1                          |  pfet_03v3/bulk = 1                       
-  pfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
-  pfet_05v0/4 = 1                          |  pfet_06v0/4 = 1                          
-                                           |                                           
-Net: gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0/ZN |Net: gated_controlb                        
-  pfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
-  pfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
-  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VDD = 1 |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VDD = 1   
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VNW = 1 |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VNW = 1   
                                            |                                           
 Net: VSS                                   |Net: VSS                                   
-  nfet_05v0/(1|3) = 1                      |  nfet_03v3/bulk = 1                       
-  nfet_05v0/4 = 1                          |  nfet_06v0/(1|3) = 1                      
-  nfet_03v3/4 = 1                          |  nfet_06v0/4 = 1                          
-                                           |                                           
-Net: gated_control                         |Net: gated_control                         
-  pfet_05v0/2 = 1                          |  nfet_03v3/gate = 1                       
-  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
-  nfet_03v3/2 = 1                          |  pfet_06v0/2 = 1                          
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VSS = 1 |  nfet_03v3/bulk = 1                       
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VPW = 1 |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VSS = 1   
+  nfet_03v3/4 = 1                          |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VPW = 1   
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
+Net: gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0/ZN |Net: gated_controlb                        
+  pfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/ZN = 1  |  gf180mcu_fd_sc_mcu9t5v0__inv_1/ZN = 1    
+                                           |                                           
 Net: T2                                    |Net: T2                                    
   pfet_03v3/(1|3) = 1                      |  nfet_03v3/(drain|source) = 1             
   nfet_03v3/(1|3) = 1                      |  pfet_03v3/(drain|source) = 1             
@@ -215,6 +290,10 @@ Net: T2                                    |Net: T2
 Net: T1                                    |Net: T1                                    
   pfet_03v3/(1|3) = 1                      |  nfet_03v3/(drain|source) = 1             
   nfet_03v3/(1|3) = 1                      |  pfet_03v3/(drain|source) = 1             
+                                           |                                           
+Net: gated_control                         |Net: gated_control                         
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/I = 1   |  nfet_03v3/gate = 1                       
+  nfet_03v3/2 = 1                          |  gf180mcu_fd_sc_mcu9t5v0__inv_1/I = 1     
 ---------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
 Circuit 1: swmatrix_Tgate                  |Circuit 2: swmatrix_Tgate                  
@@ -222,39 +301,36 @@ Circuit 1: swmatrix_Tgate                  |Circuit 2: swmatrix_Tgate
 ---------------------------------------------------------------------------------------
 Instance: nfet_0/nfet_03v3:0               |Instance: nfet_03v3:1                      
   (1,3) = (2,2)                            |  proxy1 = 1                               
-  2 = 3                                    |  proxy2 = 1                               
+  2 = 2                                    |  proxy2 = 1                               
   4 = 3                                    |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (2,2)                   
-  proxysource = 1                          |  gate = 3                                 
+  proxysource = 1                          |  gate = 2                                 
   proxybulk = 1                            |  bulk = 3                                 
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
 Instance: pfet_0/pfet_03v3:0               |Instance: pfet_03v3:2                      
   (1,3) = (2,2)                            |  proxy1 = 1                               
-  2 = 3                                    |  proxy2 = 1                               
+  2 = 2                                    |  proxy2 = 1                               
   4 = 3                                    |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (2,2)                   
-  proxysource = 1                          |  gate = 3                                 
+  proxysource = 1                          |  gate = 2                                 
   proxybulk = 1                            |  bulk = 3                                 
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 Port matching may fail to disambiguate symmetries.
   Flattening non-matched subcircuits swmatrix_Tgate swmatrix_Tgate
-Flattening unmatched subcell ShiftReg_row_10_2$1 in circuit swmatrix_row_10 (0)(1 instance)
-Flattening unmatched subcell ShiftReg_row_10_2 in circuit swmatrix_row_10 (1)(1 instance)
 
 Subcircuit summary:
 Circuit 1: swmatrix_row_10                 |Circuit 2: swmatrix_row_10                 
 -------------------------------------------|-------------------------------------------
-DFF_2phase_1 (10)                          |DFF_2phase_1 (10)                          
+ShiftReg_row_10_2$1 (1)                    |ShiftReg_row_10_2 (1)                      
 pfet_03v3 (180->10)                        |pfet_03v3 (10)                             
-pfet_05v0 (10)                             |pfet_06v0 (10)                             
-nfet_05v0 (10)                             |nfet_06v0 (10)                             
+gf180mcu_fd_sc_mcu9t5v0__inv_1$1 (10)      |gf180mcu_fd_sc_mcu9t5v0__inv_1 (10)        
 nfet_03v3 (60->10)                         |nfet_03v3 (10)                             
-Number of devices: 50                      |Number of devices: 50                      
+Number of devices: 31                      |Number of devices: 31                      
 Number of nets: 127                        |Number of nets: 127                        
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
@@ -263,76 +339,44 @@ Circuit 1: swmatrix_row_10                 |Circuit 2: swmatrix_row_10
 ---------------------------------------------------------------------------------------
 Net: /swmatrix_Tgate_9/gf180mcu_fd_sc_mcu9 |Net: swmatrix_Tgate:Tgates[10]/gated_contr 
   pfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
-  pfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
-  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/ZN = 1  |  gf180mcu_fd_sc_mcu9t5v0__inv_1/ZN = 1    
                                            |                                           
 Net: /swmatrix_Tgate_8/gf180mcu_fd_sc_mcu9 |Net: swmatrix_Tgate:Tgates[9]/gated_contro 
   pfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
-  pfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
-  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/ZN = 1  |  gf180mcu_fd_sc_mcu9t5v0__inv_1/ZN = 1    
                                            |                                           
 Net: /swmatrix_Tgate_7/gf180mcu_fd_sc_mcu9 |Net: swmatrix_Tgate:Tgates[8]/gated_contro 
   pfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
-  pfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
-  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/ZN = 1  |  gf180mcu_fd_sc_mcu9t5v0__inv_1/ZN = 1    
                                            |                                           
 Net: /swmatrix_Tgate_6/gf180mcu_fd_sc_mcu9 |Net: swmatrix_Tgate:Tgates[7]/gated_contro 
   pfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
-  pfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
-  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/ZN = 1  |  gf180mcu_fd_sc_mcu9t5v0__inv_1/ZN = 1    
                                            |                                           
 Net: /swmatrix_Tgate_5/gf180mcu_fd_sc_mcu9 |Net: swmatrix_Tgate:Tgates[6]/gated_contro 
   pfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
-  pfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
-  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/ZN = 1  |  gf180mcu_fd_sc_mcu9t5v0__inv_1/ZN = 1    
                                            |                                           
 Net: /swmatrix_Tgate_4/gf180mcu_fd_sc_mcu9 |Net: swmatrix_Tgate:Tgates[5]/gated_contro 
   pfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
-  pfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
-  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/ZN = 1  |  gf180mcu_fd_sc_mcu9t5v0__inv_1/ZN = 1    
                                            |                                           
 Net: /swmatrix_Tgate_3/gf180mcu_fd_sc_mcu9 |Net: swmatrix_Tgate:Tgates[4]/gated_contro 
   pfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
-  pfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
-  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/ZN = 1  |  gf180mcu_fd_sc_mcu9t5v0__inv_1/ZN = 1    
                                            |                                           
 Net: /swmatrix_Tgate_2/gf180mcu_fd_sc_mcu9 |Net: swmatrix_Tgate:Tgates[3]/gated_contro 
   pfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
-  pfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
-  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/ZN = 1  |  gf180mcu_fd_sc_mcu9t5v0__inv_1/ZN = 1    
                                            |                                           
 Net: /swmatrix_Tgate_1/gf180mcu_fd_sc_mcu9 |Net: swmatrix_Tgate:Tgates[2]/gated_contro 
   pfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
-  pfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
-  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/ZN = 1  |  gf180mcu_fd_sc_mcu9t5v0__inv_1/ZN = 1    
                                            |                                           
 Net: /swmatrix_Tgate_0/gf180mcu_fd_sc_mcu9 |Net: swmatrix_Tgate:Tgates[1]/gated_contro 
   pfet_03v3/2 = 1                          |  pfet_03v3/gate = 1                       
-  pfet_05v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
-  nfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: pin                                   |Net: pin                                   
-  pfet_03v3/(1|3) = 10                     |  nfet_03v3/(drain|source) = 10            
-  nfet_03v3/(1|3) = 10                     |  pfet_03v3/(drain|source) = 10            
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: vss                                   |Net: VSS                                   
-  DFF_2phase_1/VSS = 10                    |  DFF_2phase_1/VSS = 10                    
-  nfet_05v0/(1|3) = 10                     |  nfet_03v3/bulk = 10                      
-  nfet_05v0/4 = 10                         |  nfet_06v0/(1|3) = 10                     
-  nfet_03v3/4 = 10                         |  nfet_06v0/4 = 10                         
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/ZN = 1  |  gf180mcu_fd_sc_mcu9t5v0__inv_1/ZN = 1    
                                            |                                           
-Net: vdd                                   |Net: VDD                                   
-  DFF_2phase_1/VDD = 10                    |  DFF_2phase_1/VDD = 10                    
-  pfet_03v3/4 = 10                         |  pfet_03v3/bulk = 10                      
-  pfet_05v0/(1|3) = 10                     |  pfet_06v0/(1|3) = 10                     
-  pfet_05v0/4 = 10                         |  pfet_06v0/4 = 10                         
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
 Net: BUS[10]                               |Net: BUS[10]                               
   pfet_03v3/(1|3) = 1                      |  nfet_03v3/(drain|source) = 1             
   nfet_03v3/(1|3) = 1                      |  pfet_03v3/(drain|source) = 1             
@@ -372,6 +416,12 @@ Net: BUS[2]                                |Net: BUS[2]
 Net: BUS[1]                                |Net: BUS[1]                                
   pfet_03v3/(1|3) = 1                      |  nfet_03v3/(drain|source) = 1             
   nfet_03v3/(1|3) = 1                      |  pfet_03v3/(drain|source) = 1             
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: pin                                   |Net: pin                                   
+  pfet_03v3/(1|3) = 10                     |  nfet_03v3/(drain|source) = 10            
+  nfet_03v3/(1|3) = 10                     |  pfet_03v3/(drain|source) = 10            
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -618,64 +668,68 @@ Net: /swmatrix_Tgate_0//pfet_0/dummy_39    |Net: swmatrix_Tgate:Tgates[1]/dummy_
 
 ---------------------------------------------------------------------------------------
 Net: ShiftReg_row_10_2$1_0/gc[10]          |Net: gc[10]                                
-  DFF_2phase_1/gated_control = 1           |  DFF_2phase_1/gated_control = 1           
-  pfet_05v0/2 = 1                          |  nfet_03v3/gate = 1                       
-  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
-  nfet_03v3/2 = 1                          |  pfet_06v0/2 = 1                          
+  ShiftReg_row_10_2$1/gc[10] = 1           |  ShiftReg_row_10_2/gc[10] = 1             
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/I = 1   |  nfet_03v3/gate = 1                       
+  nfet_03v3/2 = 1                          |  gf180mcu_fd_sc_mcu9t5v0__inv_1/I = 1     
                                            |                                           
 Net: ShiftReg_row_10_2$1_0/gc[9]           |Net: gc[9]                                 
-  DFF_2phase_1/gated_control = 1           |  DFF_2phase_1/gated_control = 1           
-  pfet_05v0/2 = 1                          |  nfet_03v3/gate = 1                       
-  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
-  nfet_03v3/2 = 1                          |  pfet_06v0/2 = 1                          
+  ShiftReg_row_10_2$1/gc[9] = 1            |  ShiftReg_row_10_2/gc[9] = 1              
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/I = 1   |  nfet_03v3/gate = 1                       
+  nfet_03v3/2 = 1                          |  gf180mcu_fd_sc_mcu9t5v0__inv_1/I = 1     
                                            |                                           
 Net: ShiftReg_row_10_2$1_0/gc[8]           |Net: gc[8]                                 
-  DFF_2phase_1/gated_control = 1           |  DFF_2phase_1/gated_control = 1           
-  pfet_05v0/2 = 1                          |  nfet_03v3/gate = 1                       
-  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
-  nfet_03v3/2 = 1                          |  pfet_06v0/2 = 1                          
+  ShiftReg_row_10_2$1/gc[8] = 1            |  ShiftReg_row_10_2/gc[8] = 1              
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/I = 1   |  nfet_03v3/gate = 1                       
+  nfet_03v3/2 = 1                          |  gf180mcu_fd_sc_mcu9t5v0__inv_1/I = 1     
                                            |                                           
 Net: ShiftReg_row_10_2$1_0/gc[7]           |Net: gc[7]                                 
-  DFF_2phase_1/gated_control = 1           |  DFF_2phase_1/gated_control = 1           
-  pfet_05v0/2 = 1                          |  nfet_03v3/gate = 1                       
-  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
-  nfet_03v3/2 = 1                          |  pfet_06v0/2 = 1                          
+  ShiftReg_row_10_2$1/gc[7] = 1            |  ShiftReg_row_10_2/gc[7] = 1              
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/I = 1   |  nfet_03v3/gate = 1                       
+  nfet_03v3/2 = 1                          |  gf180mcu_fd_sc_mcu9t5v0__inv_1/I = 1     
                                            |                                           
 Net: ShiftReg_row_10_2$1_0/gc[6]           |Net: gc[6]                                 
-  DFF_2phase_1/gated_control = 1           |  DFF_2phase_1/gated_control = 1           
-  pfet_05v0/2 = 1                          |  nfet_03v3/gate = 1                       
-  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
-  nfet_03v3/2 = 1                          |  pfet_06v0/2 = 1                          
+  ShiftReg_row_10_2$1/gc[6] = 1            |  ShiftReg_row_10_2/gc[6] = 1              
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/I = 1   |  nfet_03v3/gate = 1                       
+  nfet_03v3/2 = 1                          |  gf180mcu_fd_sc_mcu9t5v0__inv_1/I = 1     
                                            |                                           
 Net: ShiftReg_row_10_2$1_0/gc[5]           |Net: gc[5]                                 
-  DFF_2phase_1/gated_control = 1           |  DFF_2phase_1/gated_control = 1           
-  pfet_05v0/2 = 1                          |  nfet_03v3/gate = 1                       
-  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
-  nfet_03v3/2 = 1                          |  pfet_06v0/2 = 1                          
+  ShiftReg_row_10_2$1/gc[5] = 1            |  ShiftReg_row_10_2/gc[5] = 1              
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/I = 1   |  nfet_03v3/gate = 1                       
+  nfet_03v3/2 = 1                          |  gf180mcu_fd_sc_mcu9t5v0__inv_1/I = 1     
                                            |                                           
 Net: ShiftReg_row_10_2$1_0/gc[4]           |Net: gc[4]                                 
-  DFF_2phase_1/gated_control = 1           |  DFF_2phase_1/gated_control = 1           
-  pfet_05v0/2 = 1                          |  nfet_03v3/gate = 1                       
-  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
-  nfet_03v3/2 = 1                          |  pfet_06v0/2 = 1                          
+  ShiftReg_row_10_2$1/gc[4] = 1            |  ShiftReg_row_10_2/gc[4] = 1              
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/I = 1   |  nfet_03v3/gate = 1                       
+  nfet_03v3/2 = 1                          |  gf180mcu_fd_sc_mcu9t5v0__inv_1/I = 1     
                                            |                                           
 Net: ShiftReg_row_10_2$1_0/gc[3]           |Net: gc[3]                                 
-  DFF_2phase_1/gated_control = 1           |  DFF_2phase_1/gated_control = 1           
-  pfet_05v0/2 = 1                          |  nfet_03v3/gate = 1                       
-  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
-  nfet_03v3/2 = 1                          |  pfet_06v0/2 = 1                          
+  ShiftReg_row_10_2$1/gc[3] = 1            |  ShiftReg_row_10_2/gc[3] = 1              
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/I = 1   |  nfet_03v3/gate = 1                       
+  nfet_03v3/2 = 1                          |  gf180mcu_fd_sc_mcu9t5v0__inv_1/I = 1     
                                            |                                           
 Net: ShiftReg_row_10_2$1_0/gc[2]           |Net: gc[2]                                 
-  DFF_2phase_1/gated_control = 1           |  DFF_2phase_1/gated_control = 1           
-  pfet_05v0/2 = 1                          |  nfet_03v3/gate = 1                       
-  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
-  nfet_03v3/2 = 1                          |  pfet_06v0/2 = 1                          
+  ShiftReg_row_10_2$1/gc[2] = 1            |  ShiftReg_row_10_2/gc[2] = 1              
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/I = 1   |  nfet_03v3/gate = 1                       
+  nfet_03v3/2 = 1                          |  gf180mcu_fd_sc_mcu9t5v0__inv_1/I = 1     
                                            |                                           
 Net: ShiftReg_row_10_2$1_0/gc[1]           |Net: gc[1]                                 
-  DFF_2phase_1/gated_control = 1           |  DFF_2phase_1/gated_control = 1           
-  pfet_05v0/2 = 1                          |  nfet_03v3/gate = 1                       
-  nfet_05v0/2 = 1                          |  nfet_06v0/2 = 1                          
-  nfet_03v3/2 = 1                          |  pfet_06v0/2 = 1                          
+  ShiftReg_row_10_2$1/gc[1] = 1            |  ShiftReg_row_10_2/gc[1] = 1              
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/I = 1   |  nfet_03v3/gate = 1                       
+  nfet_03v3/2 = 1                          |  gf180mcu_fd_sc_mcu9t5v0__inv_1/I = 1     
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VSUBS                                 |Net: VSS                                   
+  ShiftReg_row_10_2$1/VSS = 1              |  ShiftReg_row_10_2/VSS = 1                
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VSS = 1 |  nfet_03v3/bulk = 10                      
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VPW = 1 |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VSS = 10  
+  nfet_03v3/4 = 10                         |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VPW = 10  
+                                           |                                           
+Net: swmatrix_Tgate_9/VDD                  |Net: VDD                                   
+  ShiftReg_row_10_2$1/VDD = 1              |  ShiftReg_row_10_2/VDD = 1                
+  pfet_03v3/4 = 10                         |  pfet_03v3/bulk = 10                      
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VDD = 1 |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VDD = 10  
+  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VNW = 1 |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VNW = 10  
 ---------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
 Circuit 1: swmatrix_row_10                 |Circuit 2: swmatrix_row_10                 
@@ -683,185 +737,185 @@ Circuit 1: swmatrix_row_10                 |Circuit 2: swmatrix_row_10
 ---------------------------------------------------------------------------------------
 Instance: swmatrix_Tgate_9//nfet_0/nfet_03 |Instance: swmatrix_Tgate:Tgates[10]/nfet_0 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 4                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 3                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 4                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 3                                 
+  proxybulk = 1                            |  bulk = 31                                
                                            |                                           
 Instance: swmatrix_Tgate_8//nfet_0/nfet_03 |Instance: swmatrix_Tgate:Tgates[9]/nfet_03 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 4                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 3                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 4                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 3                                 
+  proxybulk = 1                            |  bulk = 31                                
                                            |                                           
 Instance: swmatrix_Tgate_7//nfet_0/nfet_03 |Instance: swmatrix_Tgate:Tgates[8]/nfet_03 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 4                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 3                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 4                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 3                                 
+  proxybulk = 1                            |  bulk = 31                                
                                            |                                           
 Instance: swmatrix_Tgate_6//nfet_0/nfet_03 |Instance: swmatrix_Tgate:Tgates[7]/nfet_03 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 4                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 3                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 4                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 3                                 
+  proxybulk = 1                            |  bulk = 31                                
                                            |                                           
 Instance: swmatrix_Tgate_5//nfet_0/nfet_03 |Instance: swmatrix_Tgate:Tgates[6]/nfet_03 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 4                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 3                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 4                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 3                                 
+  proxybulk = 1                            |  bulk = 31                                
                                            |                                           
 Instance: swmatrix_Tgate_4//nfet_0/nfet_03 |Instance: swmatrix_Tgate:Tgates[5]/nfet_03 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 4                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 3                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 4                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 3                                 
+  proxybulk = 1                            |  bulk = 31                                
                                            |                                           
 Instance: swmatrix_Tgate_3//nfet_0/nfet_03 |Instance: swmatrix_Tgate:Tgates[4]/nfet_03 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 4                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 3                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 4                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 3                                 
+  proxybulk = 1                            |  bulk = 31                                
                                            |                                           
 Instance: swmatrix_Tgate_2//nfet_0/nfet_03 |Instance: swmatrix_Tgate:Tgates[3]/nfet_03 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 4                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 3                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 4                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 3                                 
+  proxybulk = 1                            |  bulk = 31                                
                                            |                                           
 Instance: swmatrix_Tgate_1//nfet_0/nfet_03 |Instance: swmatrix_Tgate:Tgates[2]/nfet_03 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 4                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 3                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 4                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 3                                 
+  proxybulk = 1                            |  bulk = 31                                
                                            |                                           
 Instance: swmatrix_Tgate_0//nfet_0/nfet_03 |Instance: swmatrix_Tgate:Tgates[1]/nfet_03 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 4                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 3                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 4                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 3                                 
+  proxybulk = 1                            |  bulk = 31                                
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
 Instance: swmatrix_Tgate_9//pfet_0/pfet_03 |Instance: swmatrix_Tgate:Tgates[10]/pfet_0 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 3                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 2                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 3                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 2                                 
+  proxybulk = 1                            |  bulk = 31                                
                                            |                                           
 Instance: swmatrix_Tgate_8//pfet_0/pfet_03 |Instance: swmatrix_Tgate:Tgates[9]/pfet_03 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 3                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 2                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 3                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 2                                 
+  proxybulk = 1                            |  bulk = 31                                
                                            |                                           
 Instance: swmatrix_Tgate_7//pfet_0/pfet_03 |Instance: swmatrix_Tgate:Tgates[8]/pfet_03 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 3                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 2                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 3                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 2                                 
+  proxybulk = 1                            |  bulk = 31                                
                                            |                                           
 Instance: swmatrix_Tgate_6//pfet_0/pfet_03 |Instance: swmatrix_Tgate:Tgates[7]/pfet_03 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 3                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 2                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 3                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 2                                 
+  proxybulk = 1                            |  bulk = 31                                
                                            |                                           
 Instance: swmatrix_Tgate_5//pfet_0/pfet_03 |Instance: swmatrix_Tgate:Tgates[6]/pfet_03 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 3                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 2                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 3                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 2                                 
+  proxybulk = 1                            |  bulk = 31                                
                                            |                                           
 Instance: swmatrix_Tgate_4//pfet_0/pfet_03 |Instance: swmatrix_Tgate:Tgates[5]/pfet_03 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 3                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 2                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 3                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 2                                 
+  proxybulk = 1                            |  bulk = 31                                
                                            |                                           
 Instance: swmatrix_Tgate_3//pfet_0/pfet_03 |Instance: swmatrix_Tgate:Tgates[4]/pfet_03 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 3                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 2                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 3                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 2                                 
+  proxybulk = 1                            |  bulk = 31                                
                                            |                                           
 Instance: swmatrix_Tgate_2//pfet_0/pfet_03 |Instance: swmatrix_Tgate:Tgates[3]/pfet_03 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 3                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 2                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 3                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 2                                 
+  proxybulk = 1                            |  bulk = 31                                
                                            |                                           
 Instance: swmatrix_Tgate_1//pfet_0/pfet_03 |Instance: swmatrix_Tgate:Tgates[2]/pfet_03 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 3                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 2                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 3                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 2                                 
+  proxybulk = 1                            |  bulk = 31                                
                                            |                                           
 Instance: swmatrix_Tgate_0//pfet_0/pfet_03 |Instance: swmatrix_Tgate:Tgates[1]/pfet_03 
   (1,3) = (20,2)                           |  proxy1 = 1                               
-  2 = 3                                    |  proxy2 = 1                               
-  4 = 40                                   |  proxy3 = 1                               
+  2 = 2                                    |  proxy2 = 1                               
+  4 = 31                                   |  proxy3 = 1                               
   proxydrain = 1                           |  proxy4 = 1                               
   proxygate = 1                            |  (drain,source) = (20,2)                  
-  proxysource = 1                          |  gate = 3                                 
-  proxybulk = 1                            |  bulk = 40                                
+  proxysource = 1                          |  gate = 2                                 
+  proxybulk = 1                            |  bulk = 31                                
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 Port matching may fail to disambiguate symmetries.
@@ -869,9 +923,6 @@ Port matching may fail to disambiguate symmetries.
 Subcircuit pins:
 Circuit 1: swmatrix_row_10                 |Circuit 2: swmatrix_row_10                 
 -------------------------------------------|-------------------------------------------
-pin                                        |pin                                        
-vss                                        |VSS                                        
-vdd                                        |VDD                                        
 BUS[1]                                     |BUS[10] **Mismatch**                       
 BUS[2]                                     |BUS[9] **Mismatch**                        
 BUS[4]                                     |BUS[8] **Mismatch**                        
@@ -882,11 +933,14 @@ BUS[8]                                     |BUS[4] **Mismatch**
 BUS[10]                                    |BUS[3] **Mismatch**                        
 BUS[9]                                     |BUS[2] **Mismatch**                        
 BUS[7]                                     |BUS[1] **Mismatch**                        
-PHI_1                                      |PHI_1                                      
-PHI_2                                      |PHI_2                                      
-enable                                     |enable                                     
-D_in                                       |D_in                                       
+pin                                        |pin                                        
 d_out                                      |D_out                                      
+(no pin, node is ShiftReg_row_10_2$1_0/D_i |D_in                                       
+(no pin, node is ShiftReg_row_10_2$1_0/PHI |PHI_1                                      
+(no pin, node is ShiftReg_row_10_2$1_0/PHI |PHI_2                                      
+(no pin, node is ShiftReg_row_10_2$1_0/EN) |enable                                     
+(no pin, node is swmatrix_Tgate_9/VDD)     |VDD                                        
+(no pin, node is swmatrix_Tgate_9/VDD)     |VSS                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists for swmatrix_row_10 and swmatrix_row_10 altered to match.
 Device classes swmatrix_row_10 and swmatrix_row_10 are equivalent.

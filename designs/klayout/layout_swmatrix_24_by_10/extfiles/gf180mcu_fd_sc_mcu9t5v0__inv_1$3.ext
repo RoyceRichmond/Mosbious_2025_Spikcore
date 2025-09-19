@@ -1,4 +1,4 @@
-timestamp 1586698114
+timestamp 1586767783
 version 8.3
 tech gf180mcuD
 style ngspice()
@@ -32,7 +32,7 @@ cap "VDD" "I" 45.0679
 cap "VNW" "ZN" 33.0135
 cap "VDD" "VNW" 89.6661
 cap "VSS" "I" 120.342
-cap "VSS" "VNW" 10.5514
 cap "VDD" "ZN" 112.918
+cap "VSS" "VNW" 10.5514
 device msubckt nfet_05v0 124 69 125 70 l=120 w=264 "VPW" "I" 240 0 "VSS" 264 23232,704 "ZN" 264 23232,704
 device msubckt pfet_05v0 144 573 145 574 l=100 w=366 "VNW" "I" 200 0 "VDD" 366 32208,908 "ZN" 366 32208,908
