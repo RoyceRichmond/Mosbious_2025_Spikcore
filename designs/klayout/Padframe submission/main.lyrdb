@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>DRC Run Report at</description>
- <original-file>Padframe submission/M13_spikcore_padless.gds</original-file>
+ <original-file>/foss/designs/Mosbious_2025_Spikcore/designs/klayout/Padframe submission/M13_spikcore_padless.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
  <top-cell>M13_spikcore</top-cell>
  <tags>
@@ -3983,29 +3983,5 @@
   </cell>
  </cells>
  <items>
-  <item>
-   <tags/>
-   <category>'M1.2a'</category>
-   <cell>M13_spikcore</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (2419.37,525.44;2419.37,525.46)|(2419.175,525.46;2419.175,525.44)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M1.2a'</category>
-   <cell>M13_spikcore</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (2106.715,524.54;2418.955,524.54)|(2418.955,524.56;2106.715,524.56)</value>
-   </values>
-  </item>
  </items>
 </report-database>
