@@ -8,10 +8,10 @@ L 4 -500 170 -380 170 {}
 L 4 -380 170 -380 410 {}
 L 4 -500 410 -380 410 {}
 L 4 -560 170 -560 410 {}
-L 4 -500 -540 -380 -540 {}
-L 4 -380 -540 -380 -480 {}
-L 4 -500 -480 -380 -480 {}
-L 4 -500 -540 -500 -480 {}
+L 4 -500 -610 -380 -610 {}
+L 4 -380 -610 -380 -550 {}
+L 4 -500 -550 -380 -550 {}
+L 4 -500 -610 -500 -550 {}
 L 4 -500 -270 -380 -270 {}
 L 4 -550 -270 -550 -210 {}
 L 4 -500 -210 -380 -210 {}
@@ -32,13 +32,18 @@ L 4 -180 180 660 180 {}
 L 4 660 180 660 810 {}
 L 4 -180 810 660 810 {}
 L 4 -180 180 -180 810 {}
+L 4 -500 -490 -500 -410 {}
+L 4 -500 -490 -380 -490 {}
+L 4 -380 -490 -380 -410 {}
+L 4 -500 -410 -380 -410 {}
 T {AH Neurons pins} -500 150 0 0 0.3 0.3 {}
-T {Power pins} -500 -560 0 0 0.3 0.3 {}
+T {Power pins} -500 -630 0 0 0.3 0.3 {}
 T {LIF neurons pins} -500 -290 0 0 0.3 0.3 {}
 T {synapses pins} -500 -190 0 0 0.3 0.3 {}
 T {Mosbius pins} -500 -400 0 0 0.3 0.3 {}
 T {AH Neurons} 160 -490 0 0 0.3 0.3 {}
 T {synapses} 160 150 0 0 0.3 0.3 {}
+T {TG control pin} -500 -510 0 0 0.3 0.3 {}
 N 180 -640 200 -640 {lab=PIN[2]}
 N 1130 -290 1250 -290 {lab=#net1}
 N 1250 -290 1250 -190 {lab=#net1}
@@ -55,6 +60,11 @@ N 760 -200 1130 -200 {lab=#net3}
 N 760 -200 760 -100 {lab=#net3}
 N 760 -90 830 -90 {lab=#net3}
 N 760 -100 760 -90 {lab=#net3}
+N 1180 160 1310 160 {lab=#net4}
+N 1310 160 1310 180 {lab=#net4}
+N 1180 180 1180 330 {lab=#net5}
+N 1180 330 1310 330 {lab=#net5}
+N 1310 300 1310 330 {lab=#net5}
 C {designs/libs/core_LIF_comp/LIF_comp.sym} 110 -640 0 0 {name=x5}
 C {designs/libs/core_synapse/synapse.sym} 10 480 0 0 {name=x6}
 C {lab_pin.sym} 110 -570 0 0 {name=p3 sig_type=std_logic lab=VSS}
@@ -67,8 +77,8 @@ C {iopin.sym} -480 270 0 0 {name=p19 lab=PIN[19]}
 C {iopin.sym} -480 290 0 0 {name=p20 lab=PIN[20]}
 C {iopin.sym} -480 310 0 0 {name=p21 lab=PIN[21]}
 C {iopin.sym} -480 330 0 0 {name=p22 lab=PIN[22]}
-C {iopin.sym} -490 -520 0 0 {name=p23 lab=VDD3V3}
-C {iopin.sym} -490 -500 0 0 {name=p24 lab=VSS}
+C {iopin.sym} -490 -590 0 0 {name=p23 lab=VDD3V3}
+C {iopin.sym} -490 -570 0 0 {name=p24 lab=VSS}
 C {iopin.sym} -490 -250 0 0 {name=p25 lab=PIN[1]}
 C {iopin.sym} -490 -230 0 0 {name=p26 lab=PIN[2]}
 C {iopin.sym} -490 -150 0 0 {name=p27 lab=V_EX}
@@ -141,16 +151,16 @@ C {lab_pin.sym} 380 -300 0 0 {name=p12 sig_type=std_logic lab=VDD3V3}
 C {lab_pin.sym} 50 -90 0 0 {name=p35 sig_type=std_logic lab=VDD3V3}
 C {lab_pin.sym} 380 -130 0 0 {name=p94 sig_type=std_logic lab=VDD3V3}
 C {lab_pin.sym} 40 -630 3 0 {name=p7 sig_type=std_logic lab=VSS}
-C {designs/libs/core_schmitt_trigger/schmitt_trigger.sym} 950 -560 0 0 {name=x1}
-C {lab_pin.sym} 840 -510 0 0 {name=p8 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 840 -610 0 0 {name=p60 sig_type=std_logic lab=VDD3V3}
-C {lab_pin.sym} 800 -560 0 0 {name=p99 sig_type=std_logic lab=CLK}
-C {lab_pin.sym} 920 -560 2 0 {name=p100 sig_type=std_logic lab=clk_schmitt}
-C {designs/libs/core_schmitt_trigger/schmitt_trigger.sym} 950 -420 0 0 {name=x4}
-C {lab_pin.sym} 840 -370 0 0 {name=p5 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 840 -470 0 0 {name=p6 sig_type=std_logic lab=VDD3V3}
-C {lab_pin.sym} 800 -420 0 0 {name=p98 sig_type=std_logic lab=DATA}
-C {lab_pin.sym} 920 -420 2 0 {name=p103 sig_type=std_logic lab=data_schmitt}
+C {designs/libs/core_schmitt_trigger/schmitt_trigger.sym} 930 -700 0 0 {name=x1}
+C {lab_pin.sym} 820 -650 0 0 {name=p8 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 820 -750 0 0 {name=p60 sig_type=std_logic lab=VDD3V3}
+C {lab_pin.sym} 780 -700 0 0 {name=p99 sig_type=std_logic lab=CLK}
+C {lab_pin.sym} 900 -700 2 0 {name=p100 sig_type=std_logic lab=clk_schmitt}
+C {designs/libs/core_schmitt_trigger/schmitt_trigger.sym} 930 -560 0 0 {name=x4}
+C {lab_pin.sym} 820 -510 0 0 {name=p5 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 820 -610 0 0 {name=p6 sig_type=std_logic lab=VDD3V3}
+C {lab_pin.sym} 780 -560 0 0 {name=p98 sig_type=std_logic lab=DATA}
+C {lab_pin.sym} 900 -560 2 0 {name=p103 sig_type=std_logic lab=data_schmitt}
 C {lab_pin.sym} 830 -230 0 0 {name=p104 sig_type=std_logic lab=VDD3V3}
 C {lab_pin.sym} 830 -210 0 0 {name=p105 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 830 -290 0 0 {name=p106 sig_type=std_logic lab=data_schmitt}
@@ -195,3 +205,15 @@ C {lab_pin.sym} 320 240 0 0 {name=p77 sig_type=std_logic lab=Q[4]}
 C {lab_pin.sym} 320 440 0 0 {name=p79 sig_type=std_logic lab=Q[5]}
 C {lab_pin.sym} 320 630 0 0 {name=p81 sig_type=std_logic lab=Q[6]}
 C {lab_pin.sym} -70 630 0 0 {name=p83 sig_type=std_logic lab=Q[3]}
+C {iopin.sym} -490 -470 0 0 {name=p85 lab=CLK_TG}
+C {designs/libs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym} 1030 170 0 0 {name=x15}
+C {designs/libs/core_TG_bootstrapped/TG_bootstrapped.sym} 1400 240 0 0 {name=x18}
+C {lab_pin.sym} 880 210 0 0 {name=p87 sig_type=std_logic lab=VDD3V3}
+C {lab_pin.sym} 880 230 0 0 {name=p111 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 1270 180 0 0 {name=p114 sig_type=std_logic lab=VDD3V3}
+C {lab_pin.sym} 1270 300 0 0 {name=p115 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 880 160 0 0 {name=p116 sig_type=std_logic lab=CLK_TG}
+C {lab_pin.sym} 1250 240 0 0 {name=p117 sig_type=std_logic lab=TG_in}
+C {lab_pin.sym} 1380 240 2 0 {name=p118 sig_type=std_logic lab=TG_out}
+C {iopin.sym} -490 -450 0 0 {name=p119 lab=TG_in}
+C {iopin.sym} -490 -430 0 0 {name=p120 lab=TG_out}

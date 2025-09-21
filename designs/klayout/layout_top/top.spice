@@ -1,9 +1,9 @@
 ** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/klayout/layout_top/top.sch
 .subckt top PIN[15] PIN[16] PIN[17] PIN[18] PIN[19] PIN[20] PIN[21] PIN[22] VDD VSS PIN[1] PIN[2] V_EX V_INH PIN[3] PIN[4]
-+ PIN[5] PIN[6] PIN[7] PIN[8] EN DATA CLK PIN[23] PIN[24] PIN[9] PIN[10] PIN[11] PIN[12] PIN[13] PIN[14] VAH_bias
++ PIN[5] PIN[6] PIN[7] PIN[8] EN DATA CLK PIN[23] PIN[24] PIN[9] PIN[10] PIN[11] PIN[12] PIN[13] PIN[14] VAH_bias CLK_TG TG_in TG_out
 *.PININFO PIN[15]:B PIN[16]:B PIN[17]:B PIN[18]:B PIN[19]:B PIN[20]:B PIN[21]:B PIN[22]:B VDD:B VSS:B PIN[1]:B PIN[2]:B V_EX:B
 *+ V_INH:B PIN[3]:B PIN[4]:B PIN[5]:B PIN[6]:B PIN[7]:B PIN[8]:B EN:B DATA:B CLK:B PIN[23]:B PIN[24]:B PIN[9]:B PIN[10]:B PIN[11]:B
-*+ PIN[12]:B PIN[13]:B PIN[14]:B VAH_bias:B
+*+ PIN[12]:B PIN[13]:B PIN[14]:B VAH_bias:B CLK_TG:B TG_in:B TG_out:B
 x5 VDD VSS PIN[1] VSS PIN[2] LIF_comp
 x6 VDD PIN[3] V_EX Q[1] PIN[4] V_INH VSS synapse
 x2 VDD PIN[5] V_EX Q[2] PIN[6] V_INH VSS synapse
@@ -18,13 +18,15 @@ x13 VDD PIN[21] PIN[22] VSS VAH_bias AH_neuron
 x14 VDD PIN[23] PIN[24] VSS VAH_bias AH_neuron
 x1 clk_schmitt CLK VDD VSS schmitt_trigger
 x4 data_schmitt DATA VDD VSS schmitt_trigger
-* noconn #net4
-x16 net1 Q[1] Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[9] Q[10] net5 net5 net5 net5 net5 net5 net5 net5 net5 net5 net2 net3 EN VDD
+* noconn #net6
+x16 net1 Q[1] Q[2] Q[3] Q[4] Q[5] Q[6] Q[7] Q[8] Q[9] Q[10] net7 net7 net7 net7 net7 net7 net7 net7 net7 net7 net2 net3 EN VDD
 + VSS ShiftReg_row_10_2
-* noconn #net5
-x17 net1 net4 net4 net4 net4 net4 net4 net4 net4 net4 net4 PIN[1] PIN[2] PIN[3] PIN[4] PIN[5] PIN[6] PIN[7] PIN[8] PIN[9] PIN[10]
+* noconn #net7
+x17 net1 net6 net6 net6 net6 net6 net6 net6 net6 net6 net6 PIN[1] PIN[2] PIN[3] PIN[4] PIN[5] PIN[6] PIN[7] PIN[8] PIN[9] PIN[10]
 + PIN[11] PIN[12] PIN[13] PIN[14] PIN[15] PIN[16] PIN[17] PIN[18] PIN[19] PIN[20] PIN[21] PIN[22] PIN[23] PIN[24] data_schmitt VDD EN
 + VSS clk_schmitt net2 net3 swmatrix_24_by_10_dchain
+x15 net5 CLK_TG net4 VDD VSS NO_ClkGen
+x18 VDD VSS net4 net5 TG_in TG_out TG_bootstrapped
 .ends
 
 * expanding   symbol:  designs/libs/core_LIF_comp/LIF_comp.sym # of pins=5
@@ -180,6 +182,64 @@ x4 VDD VSS clk clock enable D_in Data_in En_clk_din
 .ends
 
 
+* expanding   symbol:  designs/libs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym # of pins=5
+** sym_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym
+** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sch
+.subckt NO_ClkGen PHI_2 CLK PHI_1 VDD VSS
+*.PININFO CLK:I PHI_2:O PHI_1:O VDD:B VSS:B
+x1 CLKB OUT_bot_d OUT_top VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x2 OUT_top_d CLKbuf OUT_bot VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x3 OUT_top PHI_2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x4 PHI_2 net5 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x5 net3 net2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x6 OUT_bot PHI_1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x7 PHI_1 net6 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x8 net4 net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x9 CLKB CLKbuf VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x10 CLK CLKB VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x11 net5 net3 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x12 net6 net4 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x13 net2 net7 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x15 net1 net8 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x17 net7 net9 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x18 net8 net12 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x14 net9 net10 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x16 net12 net11 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x19 net10 OUT_top_d VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+x20 net11 OUT_bot_d VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
+* noconn VDD
+* noconn VSS
+.ends
+
+
+* expanding   symbol:  designs/libs/core_TG_bootstrapped/TG_bootstrapped.sym # of pins=6
+** sym_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_TG_bootstrapped/TG_bootstrapped.sym
+** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_TG_bootstrapped/TG_bootstrapped.sch
+.subckt TG_bootstrapped vdd vss clk nclk vin vout
+*.PININFO vdd:B vss:B clk:B vin:B vout:B nclk:B
+XM1 net3 nclk vss vss nfet_03v3 L=0.28u W=0.56u nf=1 m=1
+XM2 net1 clk vdd vdd pfet_03v3 L=0.28u W=1.12u nf=1 m=1
+XM3 net2 clk net1 vss nfet_03v3 L=0.84u W=0.84u nf=1 m=1
+XM4 net2 nclk net1 vdd pfet_03v3 L=0.84u W=1.68u nf=1 m=1
+XM5 net2 nclk vss vss nfet_03v3 L=0.84u W=0.84u nf=1 m=1
+XM6 net2 clk vss vdd pfet_03v3 L=0.84u W=1.68u nf=1 m=1
+XM7 net3 clk vin vss nfet_03v3 L=0.84u W=0.84u nf=1 m=1
+XM8 net3 nclk vin vdd pfet_03v3 L=0.84u W=1.68u nf=1 m=1
+XM9 net5 clk vss vss nfet_03v3 L=0.28u W=0.56u nf=1 m=1
+XM10 net4 nclk vdd vdd pfet_03v3 L=0.28u W=1.12u nf=1 m=1
+XC1 net4 net5 cap_mim_2f0fF c_width=7e-6 c_length=8e-6 m=1
+XM11 net6 clk net5 vss nfet_03v3 L=0.84u W=0.84u nf=1 m=1
+XM12 net6 nclk net5 vdd pfet_03v3 L=0.84u W=1.68u nf=1 m=1
+XM13 net6 nclk vdd vss nfet_03v3 L=0.84u W=0.84u nf=1 m=1
+XM14 net6 clk vdd vdd pfet_03v3 L=0.84u W=1.68u nf=1 m=1
+XM15 vin clk net4 vss nfet_03v3 L=0.84u W=0.84u nf=1 m=1
+XM16 vin nclk net4 vdd pfet_03v3 L=0.84u W=1.68u nf=1 m=1
+XM17 vout net2 vin vss nfet_03v3 L=0.42u W=3.915u nf=1 m=16
+XM18 vout net6 vin vdd pfet_03v3 L=0.42u W=3.132u nf=1 m=20
+XC2 net3 net1 cap_mim_2f0fF c_width=7e-6 c_length=8e-6 m=1
+.ends
+
+
 * expanding   symbol:  designs/libs/core_LIF_comp/core_conmutator/conmutator.sym # of pins=6
 ** sym_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_conmutator/conmutator.sym
 ** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_LIF_comp/core_conmutator/conmutator.sch
@@ -289,44 +349,14 @@ xTgates[10] gc[10] BUS[10] pin VSS VDD swmatrix_Tgate
 .ends
 
 
-* expanding   symbol:  designs/libs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym # of pins=5
-** sym_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sym
-** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sch
-.subckt NO_ClkGen PHI_2 CLK PHI_1 VDD VSS
-*.PININFO CLK:I PHI_2:O PHI_1:O VDD:B VSS:B
-x1 OUT_bot_d CLKB OUT_top VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__nand2_1
-x2 OUT_top_d CLKbuf OUT_bot VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__nand2_1
-x3 OUT_top PHI_2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x4 PHI_2 net5 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x5 net3 net2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x6 OUT_bot PHI_1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x7 PHI_1 net6 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x8 net4 net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x9 CLKB CLKbuf VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x10 CLK CLKB VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x11 net5 net3 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x12 net6 net4 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x13 net2 net7 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x15 net1 net8 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x17 net7 net9 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x18 net8 net12 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x14 net9 net10 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x16 net12 net11 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x19 net10 OUT_top_d VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x20 net11 OUT_bot_d VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-* noconn VDD
-* noconn VSS
-.ends
-
-
 * expanding   symbol:  designs/libs/switch_matrix_gf180mcu_9t5v0/En_clk_din/En_clk_din.sym # of pins=7
 ** sym_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/switch_matrix_gf180mcu_9t5v0/En_clk_din/En_clk_din.sym
 ** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/switch_matrix_gf180mcu_9t5v0/En_clk_din/En_clk_din.sch
 .subckt En_clk_din VDD VSS clk clock enable D_in Data_in
 *.PININFO D_in:I enable:I clk:B VDD:B VSS:B clock:O Data_in:O
-x6 net1 D_in Data_in VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
+x6 D_in net1 Data_in VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
 x15 enable net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x2 net2 clk clock VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
+x2 clk net2 clock VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
 x3 enable net2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
 * noconn VSS
 * noconn VDD
@@ -424,3 +454,4 @@ XM3 net1 B vss vss nfet_03v3 L=0.28u W=1u nf=1 m=1
 XM2 Z A net1 vss nfet_03v3 L=0.28u W=1u nf=1 m=1
 XM4 Z B vdd vdd pfet_03v3 L=0.28u W=1u nf=1 m=1
 .ends
+
