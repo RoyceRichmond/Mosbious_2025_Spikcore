@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-2.0917494e-07
-x2=5.5726292e-07
+x1=0
+x2=5.5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -33,8 +33,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-2.0917494e-07
-x2=5.5726292e-07
+x1=0
+x2=5.5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -47,15 +47,15 @@ logx=0
 logy=0
 }
 B 2 -580 20 -10 360 {flags=graph
-y1=-0.017
+y1=-0.0024
 y2=3.4
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-2.0917494e-07
-x2=5.5726292e-07
+x1=0
+x2=5.5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -69,6 +69,28 @@ color="4 9"
 node="vout
 
 vout_pex"
+rawfile=$netlist_dir/TG_bootstrapped_pex.raw}
+B 2 -580 360 -10 700 {flags=graph
+y1=-0.0076
+y2=0.085
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=5.5e-07
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+dataset=-1
+unitx=1
+logx=0
+logy=0
+hilight_wave=-1
+color=4
+node="\\"diff;vout vout_pex -\\""
 rawfile=$netlist_dir/TG_bootstrapped_pex.raw}
 N -530 -170 -530 -140 {lab=GND}
 N -530 -360 -530 -350 {lab=vdd}
@@ -93,12 +115,15 @@ N 200 -160 200 -150 {lab=GND}
 N 260 -220 260 -210 {lab=vout_pex}
 N 200 -220 260 -220 {lab=vout_pex}
 N 200 -150 260 -150 {lab=GND}
+N -470 -540 -420 -540 {lab=#net3}
+N -470 -540 -470 -330 {lab=#net3}
 C {designs/libs/core_TG_bootstrapped/TG_bootstrapped.sym} -50 -220 0 0 {name=x1}
 C {vsource.sym} -530 -200 0 0 {name=V1 value=3.3 savecurrent=false}
-C {devices/code_shown.sym} -1120 -720 0 0 {name=s1 only_toplevel=false value="
+C {devices/code_shown.sym} -1130 -890 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
 .tran 0.1n 550n
 .include /foss/designs/Mosbious_2025_Spikcore/designs/pex/TG_bootstrapped/TG_bootstrapped_pex.spice
+.include /foss/designs/Mosbious_2025_Spikcore/designs/pex/NO_ClkGen/NO_ClkGen_pex.spice
 .save allcurrents
 .options save currents
 .control
@@ -141,7 +166,7 @@ value=10
 footprint=1206
 device=resistor
 m=1}
-C {lab_pin.sym} -390 -490 1 0 {name=p3 sig_type=std_logic lab=nclk}
+C {lab_pin.sym} -120 -520 2 0 {name=p3 sig_type=std_logic lab=nclk}
 C {lab_pin.sym} -350 -430 0 0 {name=p4 sig_type=std_logic lab=vin}
 C {lab_pin.sym} -140 -280 0 0 {name=p6 sig_type=std_logic lab=clk}
 C {lab_pin.sym} -140 -160 2 0 {name=p7 sig_type=std_logic lab=nclk}
@@ -153,16 +178,13 @@ footprint=1206
 device=resistor
 m=1}
 C {gnd.sym} -70 -150 0 0 {name=l1 lab=GND}
-C {designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} -470 -370 3 0 {name=x2 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {lab_pin.sym} -470 -490 0 0 {name=p10 sig_type=std_logic lab=clk}
+C {lab_pin.sym} -120 -540 2 0 {name=p10 sig_type=std_logic lab=clk}
 C {title.sym} -980 750 0 0 {name=l4 author="Rosendo Valdes"}
 C {devices/vsource.sym} -620 -290 0 0 {name=V5 value=0 savecurrent=false}
 C {devices/gnd.sym} -620 -230 0 0 {name=l5 lab=GND}
 C {devices/vsource.sym} -620 -400 0 0 {name=V6 value=3.3 savecurrent=false}
 C {devices/lab_wire.sym} -620 -340 0 0 {name=p2 sig_type=std_logic lab=VSSd}
 C {devices/lab_wire.sym} -620 -460 0 0 {name=p11 sig_type=std_logic lab=VDDd}
-C {designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} -470 -450 3 0 {name=x3 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} -430 -490 0 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {capa.sym} -10 -180 0 0 {name=C1
 m=1
 value=1p
@@ -190,3 +212,6 @@ C {launcher.sym} 70 100 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/TG_bootstrapped_pex.raw tran"
 }
+C {designs/pex/NO_ClkGen/NO_ClkGen_pex.sym} -270 -530 0 0 {name=x4}
+C {gnd.sym} -420 -470 0 0 {name=l8 lab=GND}
+C {devices/lab_wire.sym} -420 -490 0 0 {name=p17 sig_type=std_logic lab=VDDd}
