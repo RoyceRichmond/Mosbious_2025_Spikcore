@@ -75,16 +75,13 @@ N -530 -360 -530 -350 {lab=vdd}
 N -470 -170 -470 -140 {lab=GND}
 N -530 -140 -470 -140 {lab=GND}
 N -470 -140 -410 -140 {lab=GND}
-N -410 -220 -410 -140 {lab=GND}
 N -470 -250 -470 -230 {lab=#net1}
-N -410 -300 -410 -280 {lab=#net2}
-N -350 -350 -350 -330 {lab=#net3}
+N -350 -350 -350 -330 {lab=#net2}
 N -350 -270 -350 -140 {lab=GND}
 N -410 -140 -350 -140 {lab=GND}
-N -470 -330 -470 -320 {lab=#net4}
-N -470 -320 -470 -310 {lab=#net4}
+N -470 -330 -470 -320 {lab=#net3}
+N -470 -320 -470 -310 {lab=#net3}
 N -350 -430 -350 -410 {lab=vin}
-N -410 -380 -410 -360 {lab=#net5}
 N -70 -160 -70 -150 {lab=GND}
 N -10 -220 -10 -210 {lab=vout}
 N -70 -220 -10 -220 {lab=vout}
@@ -98,7 +95,7 @@ N 200 -220 260 -220 {lab=vout_pex}
 N 200 -150 260 -150 {lab=GND}
 C {designs/libs/core_TG_bootstrapped/TG_bootstrapped.sym} -50 -220 0 0 {name=x1}
 C {vsource.sym} -530 -200 0 0 {name=V1 value=3.3 savecurrent=false}
-C {devices/code_shown.sym} -1120 -630 0 0 {name=s1 only_toplevel=false value="
+C {devices/code_shown.sym} -1120 -720 0 0 {name=s1 only_toplevel=false value="
 .option method=gear seed=12
 .tran 0.1n 550n
 .include /foss/designs/Mosbious_2025_Spikcore/designs/pex/TG_bootstrapped/TG_bootstrapped_pex.spice
@@ -133,13 +130,7 @@ C {gnd.sym} -530 -140 0 0 {name=l2 lab=GND}
 C {lab_pin.sym} -180 -280 0 0 {name=p5 sig_type=std_logic lab=vdd}
 C {gnd.sym} -180 -160 0 0 {name=l3 lab=GND}
 C {vsource.sym} -470 -200 0 0 {name=V2 value="PULSE(0 3.3 0 10p 10p 2.5n 5n)" savecurrent=false}
-C {vsource.sym} -410 -250 0 0 {name=V3 value="PULSE(3.3 0 0 10p 10p 2.5n 5n)" savecurrent=false}
 C {res.sym} -470 -280 0 0 {name=R2
-value=10
-footprint=1206
-device=resistor
-m=1}
-C {res.sym} -410 -330 0 0 {name=R3
 value=10
 footprint=1206
 device=resistor
@@ -150,7 +141,7 @@ value=10
 footprint=1206
 device=resistor
 m=1}
-C {lab_pin.sym} -410 -540 0 0 {name=p3 sig_type=std_logic lab=nclk}
+C {lab_pin.sym} -390 -490 1 0 {name=p3 sig_type=std_logic lab=nclk}
 C {lab_pin.sym} -350 -430 0 0 {name=p4 sig_type=std_logic lab=vin}
 C {lab_pin.sym} -140 -280 0 0 {name=p6 sig_type=std_logic lab=clk}
 C {lab_pin.sym} -140 -160 2 0 {name=p7 sig_type=std_logic lab=nclk}
@@ -171,8 +162,7 @@ C {devices/vsource.sym} -620 -400 0 0 {name=V6 value=3.3 savecurrent=false}
 C {devices/lab_wire.sym} -620 -340 0 0 {name=p2 sig_type=std_logic lab=VSSd}
 C {devices/lab_wire.sym} -620 -460 0 0 {name=p11 sig_type=std_logic lab=VDDd}
 C {designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} -470 -450 3 0 {name=x3 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} -410 -420 3 0 {name=x4 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
-C {designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} -410 -500 3 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
+C {designs/libs/gf180mcu_fd_sc_mcu9t5v0_symbols/inv_1.sym} -430 -490 0 0 {name=x5 VGND=VSSd VNB=VDDd VPB=VSSd VPWR=VDDd prefix=gf180mcu_fd_sc_mcu9t5v0__ }
 C {capa.sym} -10 -180 0 0 {name=C1
 m=1
 value=1p
