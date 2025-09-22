@@ -1153,6 +1153,17 @@ Cell pin lists are equivalent.
 Device classes ShiftReg_row_10_2$2 and ShiftReg_row_10_2 are equivalent.
 Flattening unmatched subcell swmatrix_24_by_10 in circuit top (0)(1 instance)
 Flattening unmatched subcell swmatrix_24_by_10_dchain in circuit top (1)(1 instance)
+Flattening unmatched subcell TG_bootstrapped in circuit top (1)(1 instance)
+
+Flattening instances of NO_ClkGen in cell top (0) makes a better match
+Flattening instances of NO_ClkGen in cell top (1) makes a better match
+Making another compare attempt.
+
+Flattening instances of gf180mcu_fd_sc_mcu9t5v0__inv_1 in cell top (0) makes a better match
+Flattening instances of gf180mcu_fd_sc_mcu9t5v0__inv_1 in cell top (1) makes a better match
+Flattening instances of gf180mcu_fd_sc_mcu9t5v0__nand2_1 in cell top (0) makes a better match
+Flattening instances of gf180mcu_fd_sc_mcu9t5v0__nand2_1 in cell top (1) makes a better match
+Making another compare attempt.
 
 Subcircuit summary:
 Circuit 1: top                             |Circuit 2: top                             
@@ -1160,62 +1171,254 @@ Circuit 1: top                             |Circuit 2: top
 schmitt_trigger (2)                        |schmitt_trigger (2)                        
 swmatrix_row_10 (24)                       |swmatrix_row_10 (24)                       
 En_clk_din (1)                             |En_clk_din (1)                             
-NO_ClkGen (1)                              |NO_ClkGen (1)                              
+pfet_05v0 (22)                             |pfet_06v0 (44) **Mismatch**                
+nfet_05v0 (22)                             |nfet_06v0 (44) **Mismatch**                
 synapse (6)                                |synapse (6)                                
 AH_neuron (5)                              |AH_neuron (5)                              
 LIF_comp (1)                               |LIF_comp (1)                               
 ShiftReg_row_10_2$2 (1)                    |ShiftReg_row_10_2 (1)                      
-Number of devices: 41                      |Number of devices: 41                      
-Number of nets: 99 **Mismatch**            |Number of nets: 80 **Mismatch**            
+(no matching element)                      |nfet_03v3 (24->9)                          
+(no matching element)                      |pfet_03v3 (28->9)                          
+(no matching element)                      |cap_mim_2f0fF (2)                          
+Number of devices: 84 **Mismatch**         |Number of devices: 148 **Mismatch**        
+Number of nets: 119 **Mismatch**           |Number of nets: 131 **Mismatch**           
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: top                             |Circuit 2: top                             
 
 ---------------------------------------------------------------------------------------
-Net: Q[1]                                  |Net: Q[1]                                  
-  synapse/m1_344_2455# = 1                 |  synapse/v_ctrl = 1                       
-  ShiftReg_row_10_2$2/Q[1] = 1             |  ShiftReg_row_10_2/Q[1] = 1               
-                                           |                                           
-Net: Q[2]                                  |Net: Q[2]                                  
-  ShiftReg_row_10_2$2/Q[2] = 1             |  synapse/v_ctrl = 1                       
-                                           |  ShiftReg_row_10_2/Q[2] = 1               
-                                           |                                           
-Net: Q[3]                                  |Net: Q[3]                                  
-  synapse/m1_344_2455# = 1                 |  synapse/v_ctrl = 1                       
-  ShiftReg_row_10_2$2/Q[3] = 1             |  ShiftReg_row_10_2/Q[3] = 1               
-                                           |                                           
-Net: Q[4]                                  |Net: Q[4]                                  
-  synapse/m1_344_2455# = 1                 |  synapse/v_ctrl = 1                       
-  ShiftReg_row_10_2$2/Q[4] = 1             |  ShiftReg_row_10_2/Q[4] = 1               
-                                           |                                           
-Net: Q[5]                                  |Net: Q[5]                                  
-  synapse/m1_344_2455# = 1                 |  synapse/v_ctrl = 1                       
-  ShiftReg_row_10_2$2/Q[5] = 1             |  ShiftReg_row_10_2/Q[5] = 1               
+Net: vdd                                   |Net: VDD                                   
+  schmitt_trigger/vdd = 2                  |  schmitt_trigger/vdd = 2                  
+  swmatrix_row_10/swmatrix_Tgate_9/VDD = 2 |  swmatrix_row_10/VDD = 24                 
+  En_clk_din/vdd = 1                       |  En_clk_din/VDD = 1                       
+  pfet_05v0/(1|3) = 22                     |  pfet_06v0/4 = 44                         
+  pfet_05v0/4 = 22                         |  ShiftReg_row_10_2/VDD = 1                
+  synapse/vdd = 6                          |  synapse/vdd = 6                          
+  AH_neuron/vdd = 5                        |  AH_neuron/vdd = 5                        
+  LIF_comp/vdd = 1                         |  LIF_comp/vdd = 1                         
+  ShiftReg_row_10_2$2/VDD = 1              |  pfet_06v0/(1|3) = 44                     
+                                           |  pfet_03v3/(1|3) = 3                      
+                                           |  pfet_03v3/4 = 9                          
+                                           |  nfet_03v3/(1|3) = 1                      
                                            |                                           
 Net: Q[6]                                  |Net: Q[6]                                  
   synapse/m1_344_2455# = 1                 |  synapse/v_ctrl = 1                       
   ShiftReg_row_10_2$2/Q[6] = 1             |  ShiftReg_row_10_2/Q[6] = 1               
                                            |                                           
-Net: synapse_1/v_ctrl                      |Net: dummy_52                              
+Net: Q[5]                                  |Net: Q[5]                                  
+  synapse/m1_344_2455# = 1                 |  synapse/v_ctrl = 1                       
+  ShiftReg_row_10_2$2/Q[5] = 1             |  ShiftReg_row_10_2/Q[5] = 1               
+                                           |                                           
+Net: Q[1]                                  |Net: Q[1]                                  
+  synapse/m1_344_2455# = 1                 |  synapse/v_ctrl = 1                       
+  ShiftReg_row_10_2$2/Q[1] = 1             |  ShiftReg_row_10_2/Q[1] = 1               
+                                           |                                           
+Net: Q[4]                                  |Net: Q[4]                                  
+  synapse/m1_344_2455# = 1                 |  synapse/v_ctrl = 1                       
+  ShiftReg_row_10_2$2/Q[4] = 1             |  ShiftReg_row_10_2/Q[4] = 1               
+                                           |                                           
+Net: Q[3]                                  |Net: Q[3]                                  
+  synapse/m1_344_2455# = 1                 |  synapse/v_ctrl = 1                       
+  ShiftReg_row_10_2$2/Q[3] = 1             |  ShiftReg_row_10_2/Q[3] = 1               
+                                           |                                           
+Net: synapse_0/v_ctrl                      |Net: NO_ClkGen:15/OUT_top_d                
+  synapse/v_ctrl = 1                       |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 1                      
+                                           |                                           
+Net: synapse_1/v_ctrl                      |Net: Q[7]                                  
+  synapse/v_ctrl = 1                       |  LIF_comp/v_rew = 1                       
+                                           |  ShiftReg_row_10_2/Q[7] = 1               
+                                           |                                           
+Net: synapse_2/v_ctrl                      |Net: NO_ClkGen:15/gf180mcu_fd_sc_mcu9t5v0_ 
+  synapse/v_ctrl = 1                       |  nfet_06v0/(1|3) = 2                      
+                                           |                                           
+Net: synapse_4/v_ctrl                      |Net: CLK_TG                                
+  synapse/v_ctrl = 1                       |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: synapse_5/v_ctrl                      |Net: TG_out                                
+  synapse/v_ctrl = 1                       |  nfet_03v3/(1|3) = 1                      
+                                           |  pfet_03v3/(1|3) = 1                      
+                                           |                                           
+Net: synapse_3/v_ctrl                      |Net: dummy_57                              
   synapse/v_ctrl = 1                       |  synapse/proxym1_344_2455# = 1            
                                            |                                           
-Net: synapse_2/v_ctrl                      |Net: dummy_53                              
-  synapse/v_ctrl = 1                       |  synapse/proxym1_344_2455# = 1            
-                                           |                                           
-Net: synapse_4/v_ctrl                      |Net: dummy_51                              
-  synapse/v_ctrl = 1                       |  synapse/proxym1_344_2455# = 1            
-                                           |                                           
-Net: synapse_5/v_ctrl                      |Net: dummy_54                              
-  synapse/v_ctrl = 1                       |  synapse/proxym1_344_2455# = 1            
-                                           |                                           
-Net: synapse_3/v_ctrl                      |Net: dummy_50                              
-  synapse/v_ctrl = 1                       |  synapse/proxym1_344_2455# = 1            
-                                           |                                           
-Net: synapse_2/m1_344_2455#                |Net: dummy_55                              
+Net: synapse_2/m1_344_2455#                |Net: dummy_58                              
   synapse/m1_344_2455# = 1                 |  synapse/proxym1_344_2455# = 1            
                                            |                                           
-Net: ShiftReg_row_10_2$2_0/gc[1]           |Net: net5                                  
-  ShiftReg_row_10_2$2/gc[1] = 1            |  ShiftReg_row_10_2/gc[1] = 1              
+Net: ShiftReg_row_10_2$2_0/gc[1]           |Net: dummy_56                              
+  ShiftReg_row_10_2$2/gc[1] = 1            |  synapse/proxym1_344_2455# = 1            
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[2]           |Net: dummy_59                              
+  ShiftReg_row_10_2$2/gc[2] = 1            |  synapse/proxym1_344_2455# = 1            
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[3]           |Net: dummy_55                              
+  ShiftReg_row_10_2$2/gc[3] = 1            |  synapse/proxym1_344_2455# = 1            
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[4]           |Net: dummy_60                              
+  ShiftReg_row_10_2$2/gc[4] = 1            |  synapse/proxym1_344_2455# = 1            
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[5]           |Net: TG_in                                 
+  ShiftReg_row_10_2$2/gc[5] = 1            |  nfet_03v3/(1|3) = 3                      
+                                           |  pfet_03v3/(1|3) = 3                      
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[6]           |Net: NO_ClkGen:15/CLKB                     
+  ShiftReg_row_10_2$2/gc[6] = 1            |  nfet_06v0/2 = 2                          
+                                           |  pfet_06v0/2 = 2                          
+                                           |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 1                      
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[7]           |Net: TG_bootstrapped:18/net2               
+  ShiftReg_row_10_2$2/gc[7] = 1            |  nfet_03v3/(1|3) = 2                      
+                                           |  pfet_03v3/(1|3) = 2                      
+                                           |  nfet_03v3/2 = 1                          
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[8]           |Net: TG_bootstrapped:18/net6               
+  ShiftReg_row_10_2$2/gc[8] = 1            |  nfet_03v3/(1|3) = 2                      
+                                           |  pfet_03v3/(1|3) = 2                      
+                                           |  pfet_03v3/2 = 1                          
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[9]           |Net: NO_ClkGen:15/OUT_top                  
+  ShiftReg_row_10_2$2/gc[9] = 1            |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 2                      
+                                           |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/gc[10]          |Net: NO_ClkGen:15/OUT_bot                  
+  ShiftReg_row_10_2$2/gc[10] = 1           |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 2                      
+                                           |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: ShiftReg_row_10_2$2_0/Q[7]            |Net: NO_ClkGen:15/OUT_bot_d                
+  ShiftReg_row_10_2$2/Q[7] = 1             |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 1                      
+                                           |                                           
+Net: Q[2]                                  |Net: Q[2]                                  
+  ShiftReg_row_10_2$2/Q[2] = 1             |  synapse/v_ctrl = 1                       
+                                           |  ShiftReg_row_10_2/Q[2] = 1               
+                                           |                                           
+Net: vss                                   |Net: VSS                                   
+  schmitt_trigger/vss = 2                  |  schmitt_trigger/vss = 2                  
+  swmatrix_row_10/VSUBS = 24               |  swmatrix_row_10/VSS = 24                 
+  En_clk_din/vss = 1                       |  En_clk_din/VSS = 1                       
+  nfet_05v0/4 = 22                         |  nfet_06v0/(1|3) = 40                     
+  nfet_05v0/(1|3) = 20                     |  ShiftReg_row_10_2/VSS = 1                
+  synapse/vss = 6                          |  synapse/vss = 6                          
+  AH_neuron/vss = 5                        |  AH_neuron/vss = 5                        
+  LIF_comp/v_rew = 1                       |  nfet_06v0/4 = 44                         
+  LIF_comp/vss = 1                         |  LIF_comp/vss = 1                         
+  ShiftReg_row_10_2$2/VSS = 1              |  nfet_03v3/(1|3) = 3                      
+                                           |  nfet_03v3/4 = 9                          
+                                           |  pfet_03v3/(1|3) = 1                      
+                                           |                                           
+Net: swmatrix_24_by_10_0/BUS[1]            |Net: NO_ClkGen:15/net5                     
+  swmatrix_row_10/BUS[1] = 24              |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 1                      
+                                           |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: swmatrix_24_by_10_0/BUS[2]            |Net: NO_ClkGen:15/net3                     
+  swmatrix_row_10/BUS[2] = 24              |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 1                      
+                                           |                                           
+Net: swmatrix_24_by_10_0/BUS[3]            |Net: NO_ClkGen:15/net2                     
+  swmatrix_row_10/BUS[3] = 24              |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 1                      
+                                           |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: swmatrix_24_by_10_0/BUS[4]            |Net: NO_ClkGen:15/net6                     
+  swmatrix_row_10/BUS[4] = 24              |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 1                      
+                                           |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: swmatrix_24_by_10_0/BUS[5]            |Net: NO_ClkGen:15/net4                     
+  swmatrix_row_10/BUS[5] = 24              |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 1                      
+                                           |                                           
+Net: swmatrix_24_by_10_0/BUS[6]            |Net: NO_ClkGen:15/net1                     
+  swmatrix_row_10/BUS[6] = 24              |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 1                      
+                                           |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: swmatrix_24_by_10_0/BUS[7]            |Net: NO_ClkGen:15/net7                     
+  swmatrix_row_10/BUS[7] = 24              |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 1                      
+                                           |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: swmatrix_24_by_10_0/BUS[8]            |Net: NO_ClkGen:15/net8                     
+  swmatrix_row_10/BUS[8] = 24              |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 1                      
+                                           |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: swmatrix_24_by_10_0/BUS[9]            |Net: NO_ClkGen:15/net9                     
+  swmatrix_row_10/BUS[9] = 24              |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 1                      
+                                           |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |                                           
+Net: swmatrix_24_by_10_0/BUS[10]           |Net: NO_ClkGen:15/net12                    
+  swmatrix_row_10/BUS[10] = 24             |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 1                      
+                                           |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |                                           
+(no matching net)                          |Net: NO_ClkGen:15/net10                    
+                                           |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 1                      
+                                           |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |                                           
+(no matching net)                          |Net: NO_ClkGen:15/net11                    
+                                           |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 1                      
+                                           |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |                                           
+(no matching net)                          |Net: TG_bootstrapped:18/net3               
+                                           |  nfet_03v3/(1|3) = 2                      
+                                           |  pfet_03v3/(1|3) = 1                      
+                                           |  cap_mim_2f0fF/1 = 1                      
+                                           |                                           
+(no matching net)                          |Net: TG_bootstrapped:18/net1               
+                                           |  pfet_03v3/(1|3) = 2                      
+                                           |  nfet_03v3/(1|3) = 1                      
+                                           |  cap_mim_2f0fF/2 = 1                      
+                                           |                                           
+(no matching net)                          |Net: TG_bootstrapped:18/net5               
+                                           |  nfet_03v3/(1|3) = 2                      
+                                           |  cap_mim_2f0fF/2 = 1                      
+                                           |  pfet_03v3/(1|3) = 1                      
+                                           |                                           
+(no matching net)                          |Net: TG_bootstrapped:18/net4               
+                                           |  pfet_03v3/(1|3) = 2                      
+                                           |  cap_mim_2f0fF/1 = 1                      
+                                           |  nfet_03v3/(1|3) = 1                      
+                                           |                                           
+(no matching net)                          |Net: NO_ClkGen:15/gf180mcu_fd_sc_mcu9t5v0_ 
+                                           |  nfet_06v0/(1|3) = 2                      
+                                           |                                           
+(no matching net)                          |Net: NO_ClkGen:15/CLKbuf                   
+                                           |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 1                      
+                                           |                                           
+(no matching net)                          |Net: net7                                  
+                                           |  ShiftReg_row_10_2/gc[1] = 1              
                                            |  ShiftReg_row_10_2/gc[2] = 1              
                                            |  ShiftReg_row_10_2/gc[3] = 1              
                                            |  ShiftReg_row_10_2/gc[4] = 1              
@@ -1226,8 +1429,8 @@ Net: ShiftReg_row_10_2$2_0/gc[1]           |Net: net5
                                            |  ShiftReg_row_10_2/gc[9] = 1              
                                            |  ShiftReg_row_10_2/gc[10] = 1             
                                            |                                           
-Net: ShiftReg_row_10_2$2_0/gc[2]           |Net: net4                                  
-  ShiftReg_row_10_2$2/gc[2] = 1            |  swmatrix_row_10/BUS[2] = 24              
+(no matching net)                          |Net: net6                                  
+                                           |  swmatrix_row_10/BUS[2] = 24              
                                            |  swmatrix_row_10/BUS[5] = 24              
                                            |  swmatrix_row_10/BUS[6] = 24              
                                            |  swmatrix_row_10/BUS[7] = 24              
@@ -1238,62 +1441,36 @@ Net: ShiftReg_row_10_2$2_0/gc[2]           |Net: net4
                                            |  swmatrix_row_10/BUS[3] = 24              
                                            |  swmatrix_row_10/BUS[1] = 24              
                                            |                                           
-Net: ShiftReg_row_10_2$2_0/gc[3]           |(no matching net)                          
-  ShiftReg_row_10_2$2/gc[3] = 1            |                                           
+(no matching net)                          |Net: net5                                  
+                                           |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 1                      
+                                           |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |  nfet_03v3/2 = 3                          
+                                           |  pfet_03v3/2 = 5                          
                                            |                                           
-Net: ShiftReg_row_10_2$2_0/gc[4]           |(no matching net)                          
-  ShiftReg_row_10_2$2/gc[4] = 1            |                                           
-                                           |                                           
-Net: ShiftReg_row_10_2$2_0/gc[5]           |(no matching net)                          
-  ShiftReg_row_10_2$2/gc[5] = 1            |                                           
-                                           |                                           
-Net: ShiftReg_row_10_2$2_0/gc[6]           |(no matching net)                          
-  ShiftReg_row_10_2$2/gc[6] = 1            |                                           
-                                           |                                           
-Net: ShiftReg_row_10_2$2_0/gc[7]           |(no matching net)                          
-  ShiftReg_row_10_2$2/gc[7] = 1            |                                           
-                                           |                                           
-Net: ShiftReg_row_10_2$2_0/gc[8]           |(no matching net)                          
-  ShiftReg_row_10_2$2/gc[8] = 1            |                                           
-                                           |                                           
-Net: ShiftReg_row_10_2$2_0/gc[9]           |(no matching net)                          
-  ShiftReg_row_10_2$2/gc[9] = 1            |                                           
-                                           |                                           
-Net: ShiftReg_row_10_2$2_0/gc[10]          |(no matching net)                          
-  ShiftReg_row_10_2$2/gc[10] = 1           |                                           
-                                           |                                           
-Net: synapse_0/v_ctrl                      |(no matching net)                          
-  synapse/v_ctrl = 1                       |                                           
-                                           |                                           
-Net: swmatrix_24_by_10_0/BUS[1]            |(no matching net)                          
-  swmatrix_row_10/BUS[1] = 24              |                                           
-                                           |                                           
-Net: swmatrix_24_by_10_0/BUS[2]            |(no matching net)                          
-  swmatrix_row_10/BUS[2] = 24              |                                           
-                                           |                                           
-Net: swmatrix_24_by_10_0/BUS[3]            |(no matching net)                          
-  swmatrix_row_10/BUS[3] = 24              |                                           
-                                           |                                           
-Net: swmatrix_24_by_10_0/BUS[4]            |(no matching net)                          
-  swmatrix_row_10/BUS[4] = 24              |                                           
-                                           |                                           
-Net: swmatrix_24_by_10_0/BUS[5]            |(no matching net)                          
-  swmatrix_row_10/BUS[5] = 24              |                                           
-                                           |                                           
-Net: swmatrix_24_by_10_0/BUS[6]            |(no matching net)                          
-  swmatrix_row_10/BUS[6] = 24              |                                           
-                                           |                                           
-Net: swmatrix_24_by_10_0/BUS[7]            |(no matching net)                          
-  swmatrix_row_10/BUS[7] = 24              |                                           
-                                           |                                           
-Net: swmatrix_24_by_10_0/BUS[8]            |(no matching net)                          
-  swmatrix_row_10/BUS[8] = 24              |                                           
-                                           |                                           
-Net: swmatrix_24_by_10_0/BUS[9]            |(no matching net)                          
-  swmatrix_row_10/BUS[9] = 24              |                                           
-                                           |                                           
-Net: swmatrix_24_by_10_0/BUS[10]           |(no matching net)                          
-  swmatrix_row_10/BUS[10] = 24             |                                           
+(no matching net)                          |Net: net4                                  
+                                           |  nfet_06v0/(1|3) = 1                      
+                                           |  pfet_06v0/(1|3) = 1                      
+                                           |  nfet_06v0/2 = 1                          
+                                           |  pfet_06v0/2 = 1                          
+                                           |  pfet_03v3/2 = 3                          
+                                           |  nfet_03v3/2 = 5                          
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VAH_bias                              |Net: VAH_bias                              
+  AH_neuron/v_bias = 5                     |  AH_neuron/v_bias = 5                     
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: v_ex                                  |Net: V_EX                                  
+  synapse/ve = 6                           |  synapse/ve = 6                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: v_inh                                 |Net: V_INH                                 
+  synapse/vi = 6                           |  synapse/vi = 6                           
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -1475,35 +1652,6 @@ Net: swmatrix_24_by_10_0/D_out             |Net: net1
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Net: VAH_bias                              |Net: VAH_bias                              
-  AH_neuron/v_bias = 5                     |  AH_neuron/v_bias = 5                     
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: v_ex                                  |Net: V_EX                                  
-  synapse/ve = 6                           |  synapse/ve = 6                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: v_inh                                 |Net: V_INH                                 
-  synapse/vi = 6                           |  synapse/vi = 6                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: ShiftReg_row_10_2$2_0/PHI_1           |Net: net2                                  
-  swmatrix_row_10/ShiftReg_row_10_2_0/PHI_ |  ShiftReg_row_10_2/PHI_1 = 1              
-  NO_ClkGen/phi_1 = 1                      |  NO_ClkGen/PHI_1 = 1                      
-  ShiftReg_row_10_2$2/PHI_1 = 1            |  swmatrix_row_10/PHI_1 = 24               
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: ShiftReg_row_10_2$2_0/PHI_2           |Net: net3                                  
-  swmatrix_row_10/ShiftReg_row_10_2_0/PHI_ |  ShiftReg_row_10_2/PHI_2 = 1              
-  NO_ClkGen/phi_2 = 1                      |  NO_ClkGen/PHI_2 = 1                      
-  ShiftReg_row_10_2$2/PHI_2 = 1            |  swmatrix_row_10/PHI_2 = 24               
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
 Net: enable                                |Net: EN                                    
   swmatrix_row_10/ShiftReg_row_10_2_0/EN = |  ShiftReg_row_10_2/EN = 1                 
   En_clk_din/Enable = 1                    |  En_clk_din/enable = 1                    
@@ -1511,67 +1659,444 @@ Net: enable                                |Net: EN
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Net: vss                                   |Net: VSS                                   
-  schmitt_trigger/vss = 2                  |  schmitt_trigger/vss = 2                  
-  swmatrix_row_10/VSUBS = 24               |  ShiftReg_row_10_2/VSS = 1                
-  En_clk_din/vss = 1                       |  En_clk_din/VSS = 1                       
-  NO_ClkGen/vss = 1                        |  NO_ClkGen/VSS = 1                        
-  synapse/vss = 6                          |  synapse/vss = 6                          
-  AH_neuron/vss = 5                        |  AH_neuron/vss = 5                        
-  LIF_comp/v_rew = 1                       |  LIF_comp/v_rew = 1                       
-  LIF_comp/vss = 1                         |  LIF_comp/vss = 1                         
-  ShiftReg_row_10_2$2/VSS = 1              |  swmatrix_row_10/VSS = 24                 
+Net: ShiftReg_row_10_2$2_0/PHI_1           |Net: net2                                  
+  swmatrix_row_10/ShiftReg_row_10_2_0/PHI_ |  ShiftReg_row_10_2/PHI_1 = 1              
+  pfet_05v0/2 = 1                          |  swmatrix_row_10/PHI_1 = 24               
+  nfet_05v0/2 = 1                          |  nfet_06v0/(1|3) = 1                      
+  pfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  nfet_05v0/(1|3) = 1                      |  nfet_06v0/2 = 1                          
+  ShiftReg_row_10_2$2/PHI_1 = 1            |  pfet_06v0/2 = 1                          
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Net: vdd                                   |Net: VDD                                   
-  schmitt_trigger/vdd = 2                  |  schmitt_trigger/vdd = 2                  
-  swmatrix_row_10/swmatrix_Tgate_9/VDD = 2 |  ShiftReg_row_10_2/VDD = 1                
-  En_clk_din/vdd = 1                       |  En_clk_din/VDD = 1                       
-  NO_ClkGen/vdd = 1                        |  NO_ClkGen/VDD = 1                        
-  synapse/vdd = 6                          |  synapse/vdd = 6                          
-  AH_neuron/vdd = 5                        |  AH_neuron/vdd = 5                        
-  LIF_comp/vdd = 1                         |  LIF_comp/vdd = 1                         
-  ShiftReg_row_10_2$2/VDD = 1              |  swmatrix_row_10/VDD = 24                 
+Net: ShiftReg_row_10_2$2_0/PHI_2           |Net: net3                                  
+  swmatrix_row_10/ShiftReg_row_10_2_0/PHI_ |  ShiftReg_row_10_2/PHI_2 = 1              
+  pfet_05v0/2 = 1                          |  swmatrix_row_10/PHI_2 = 24               
+  nfet_05v0/2 = 1                          |  nfet_06v0/(1|3) = 1                      
+  pfet_05v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  nfet_05v0/(1|3) = 1                      |  nfet_06v0/2 = 1                          
+  ShiftReg_row_10_2$2/PHI_2 = 1            |  pfet_06v0/2 = 1                          
 ---------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
 Circuit 1: top                             |Circuit 2: top                             
 
 ---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,5)                          
+                                           |  2 = 6                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,5)                          
+                                           |  2 = 4                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,5)                          
+                                           |  2 = 4                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,5)                          
+                                           |  2 = 4                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,12)                         
+                                           |  2 = 5                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,4)                          
+                                           |  2 = 12                                   
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,12)                         
+                                           |  2 = 5                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,4)                          
+                                           |  2 = 12                                   
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,4)                          
+                                           |  2 = 6                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,6)                          
+                                           |  2 = 2                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (141,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,2)                          
+                                           |  2 = 6                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (5,2)                            
+                                           |  2 = 4                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,2)                          
+                                           |  2 = 4                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (5,2)                            
+                                           |  2 = 4                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,12)                         
+                                           |  2 = 5                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,4)                          
+                                           |  2 = 12                                   
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,12)                         
+                                           |  2 = 5                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,4)                          
+                                           |  2 = 12                                   
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,4)                          
+                                           |  2 = 6                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,6)                          
+                                           |  2 = 2                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: NO_ClkGen:15/gf180mcu_fd_sc_mcu9 
+                                           |  (1,3) = (137,4)                          
+                                           |  2 = 4                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/nfet_03v3:M1  
+                                           |  (1,3) = (137,4)                          
+                                           |  2 = 12                                   
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/nfet_03v3:M3  
+                                           |  (1,3) = (5,4)                            
+                                           |  2 = 12                                   
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/nfet_03v3:M5  
+                                           |  (1,3) = (137,5)                          
+                                           |  2 = 12                                   
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/nfet_03v3:M7  
+                                           |  (1,3) = (6,4)                            
+                                           |  2 = 12                                   
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/nfet_03v3:M9  
+                                           |  (1,3) = (137,4)                          
+                                           |  2 = 12                                   
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/nfet_03v3:M11 
+                                           |  (1,3) = (5,4)                            
+                                           |  2 = 12                                   
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/nfet_03v3:M13 
+                                           |  (1,3) = (141,5)                          
+                                           |  2 = 12                                   
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/nfet_03v3:M15 
+                                           |  (1,3) = (6,4)                            
+                                           |  2 = 12                                   
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/nfet_03v3:M17 
+                                           |  (1,3) = (6,2)                            
+                                           |  2 = 5                                    
+                                           |  4 = 137                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/pfet_03v3:M2  
+                                           |  (1,3) = (141,4)                          
+                                           |  2 = 12                                   
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/pfet_03v3:M4  
+                                           |  (1,3) = (5,4)                            
+                                           |  2 = 12                                   
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/pfet_03v3:M6  
+                                           |  (1,3) = (137,5)                          
+                                           |  2 = 12                                   
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/pfet_03v3:M8  
+                                           |  (1,3) = (6,4)                            
+                                           |  2 = 12                                   
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/pfet_03v3:M10 
+                                           |  (1,3) = (141,4)                          
+                                           |  2 = 12                                   
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/pfet_03v3:M12 
+                                           |  (1,3) = (5,4)                            
+                                           |  2 = 12                                   
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/pfet_03v3:M14 
+                                           |  (1,3) = (141,5)                          
+                                           |  2 = 12                                   
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/pfet_03v3:M16 
+                                           |  (1,3) = (6,4)                            
+                                           |  2 = 12                                   
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/pfet_03v3:M18 
+                                           |  (1,3) = (6,2)                            
+                                           |  2 = 5                                    
+                                           |  4 = 141                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/cap_mim_2f0fF 
+                                           |  1 = 4                                    
+                                           |  2 = 4                                    
+                                           |                                           
+(no matching instance)                     |Instance: TG_bootstrapped:18/cap_mim_2f0fF 
+                                           |  1 = 4                                    
+                                           |  2 = 4                                    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
 Instance: AH_neuron_0                      |Instance: AH_neuron:11                     
-  vdd = 41                                 |  vdd = 41                                 
+  vdd = 84                                 |  vdd = 141                                
   Current_in = 2                           |  Current_in = 2                           
   v_bias = 5                               |  v_bias = 5                               
   vout = 2                                 |  vout = 2                                 
-  vss = 42                                 |  vss = 42                                 
+  vss = 83                                 |  vss = 137                                
                                            |                                           
 Instance: AH_neuron_1                      |Instance: AH_neuron:12                     
-  vdd = 41                                 |  vdd = 41                                 
+  vdd = 84                                 |  vdd = 141                                
   Current_in = 2                           |  Current_in = 2                           
   v_bias = 5                               |  v_bias = 5                               
   vout = 2                                 |  vout = 2                                 
-  vss = 42                                 |  vss = 42                                 
+  vss = 83                                 |  vss = 137                                
                                            |                                           
 Instance: AH_neuron_2                      |Instance: AH_neuron:10                     
-  vdd = 41                                 |  vdd = 41                                 
+  vdd = 84                                 |  vdd = 141                                
   Current_in = 2                           |  Current_in = 2                           
   v_bias = 5                               |  v_bias = 5                               
   vout = 2                                 |  vout = 2                                 
-  vss = 42                                 |  vss = 42                                 
+  vss = 83                                 |  vss = 137                                
                                            |                                           
 Instance: AH_neuron_3                      |Instance: AH_neuron:13                     
-  vdd = 41                                 |  vdd = 41                                 
+  vdd = 84                                 |  vdd = 141                                
   Current_in = 2                           |  Current_in = 2                           
   v_bias = 5                               |  v_bias = 5                               
   vout = 2                                 |  vout = 2                                 
-  vss = 42                                 |  vss = 42                                 
+  vss = 83                                 |  vss = 137                                
                                            |                                           
 Instance: AH_neuron_4                      |Instance: AH_neuron:14                     
-  vdd = 41                                 |  vdd = 41                                 
+  vdd = 84                                 |  vdd = 141                                
   Current_in = 2                           |  Current_in = 2                           
   v_bias = 5                               |  v_bias = 5                               
   vout = 2                                 |  vout = 2                                 
-  vss = 42                                 |  vss = 42                                 
+  vss = 83                                 |  vss = 137                                
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -1580,60 +2105,60 @@ Instance: synapse_0                        |Instance: synapse:3
   v_ctrl = 1                               |  v_ctrl = 2                               
   v_in = 2                                 |  v_in = 2                                 
   ve = 6                                   |  ve = 6                                   
-  vdd = 41                                 |  vdd = 41                                 
+  vdd = 84                                 |  vdd = 141                                
   v_out = 2                                |  v_out = 2                                
   m1_344_2455# = 2                         |  proxym1_344_2455# = 1                    
-  vss = 42                                 |  vss = 42                                 
+  vss = 83                                 |  vss = 137                                
                                            |                                           
 Instance: synapse_1                        |Instance: synapse:7                        
   vi = 6                                   |  vi = 6                                   
   v_ctrl = 1                               |  v_ctrl = 2                               
   v_in = 2                                 |  v_in = 2                                 
   ve = 6                                   |  ve = 6                                   
-  vdd = 41                                 |  vdd = 41                                 
+  vdd = 84                                 |  vdd = 141                                
   v_out = 2                                |  v_out = 2                                
   m1_344_2455# = 2                         |  proxym1_344_2455# = 1                    
-  vss = 42                                 |  vss = 42                                 
+  vss = 83                                 |  vss = 137                                
                                            |                                           
 Instance: synapse_2                        |Instance: synapse:2                        
   vi = 6                                   |  vi = 6                                   
   v_ctrl = 1                               |  v_ctrl = 2                               
   v_in = 2                                 |  v_in = 2                                 
   ve = 6                                   |  ve = 6                                   
-  vdd = 41                                 |  vdd = 41                                 
+  vdd = 84                                 |  vdd = 141                                
   v_out = 2                                |  v_out = 2                                
   m1_344_2455# = 1                         |  proxym1_344_2455# = 1                    
-  vss = 42                                 |  vss = 42                                 
+  vss = 83                                 |  vss = 137                                
                                            |                                           
 Instance: synapse_4                        |Instance: synapse:8                        
   vi = 6                                   |  vi = 6                                   
   v_ctrl = 1                               |  v_ctrl = 2                               
   v_in = 2                                 |  v_in = 2                                 
   ve = 6                                   |  ve = 6                                   
-  vdd = 41                                 |  vdd = 41                                 
+  vdd = 84                                 |  vdd = 141                                
   v_out = 2                                |  v_out = 2                                
   m1_344_2455# = 2                         |  proxym1_344_2455# = 1                    
-  vss = 42                                 |  vss = 42                                 
+  vss = 83                                 |  vss = 137                                
                                            |                                           
 Instance: synapse_5                        |Instance: synapse:6                        
   vi = 6                                   |  vi = 6                                   
   v_ctrl = 1                               |  v_ctrl = 2                               
   v_in = 2                                 |  v_in = 2                                 
   ve = 6                                   |  ve = 6                                   
-  vdd = 41                                 |  vdd = 41                                 
+  vdd = 84                                 |  vdd = 141                                
   v_out = 2                                |  v_out = 2                                
   m1_344_2455# = 2                         |  proxym1_344_2455# = 1                    
-  vss = 42                                 |  vss = 42                                 
+  vss = 83                                 |  vss = 137                                
                                            |                                           
 Instance: synapse_3                        |Instance: synapse:9                        
   vi = 6                                   |  vi = 6                                   
   v_ctrl = 1                               |  v_ctrl = 2                               
   v_in = 2                                 |  v_in = 2                                 
   ve = 6                                   |  ve = 6                                   
-  vdd = 41                                 |  vdd = 41                                 
+  vdd = 84                                 |  vdd = 141                                
   v_out = 2                                |  v_out = 2                                
   m1_344_2455# = 2                         |  proxym1_344_2455# = 1                    
-  vss = 42                                 |  vss = 42                                 
+  vss = 83                                 |  vss = 137                                
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -1651,11 +2176,11 @@ Instance: swmatrix_24_by_10_0//swmatrix_ro |Instance: swmatrix_24_by_10_dchain:1
   ShiftReg_row_10_2_0/D_in = 2             |  D_in = 2                                 
   BUS[3] = 24                              |  BUS[3] = 240                             
   ShiftReg_row_10_2_0/EN = 26              |  enable = 26                              
-  ShiftReg_row_10_2_0/PHI_2 = 26           |  PHI_2 = 26                               
-  swmatrix_Tgate_9/VDD = 41                |  VDD = 41                                 
-  ShiftReg_row_10_2_0/PHI_1 = 26           |  PHI_1 = 26                               
+  ShiftReg_row_10_2_0/PHI_2 = 29           |  PHI_2 = 29                               
+  swmatrix_Tgate_9/VDD = 84                |  VDD = 141                                
+  ShiftReg_row_10_2_0/PHI_1 = 29           |  PHI_1 = 29                               
   BUS[1] = 24                              |  BUS[1] = 240                             
-  VSUBS = 42                               |  VSS = 42                                 
+  VSUBS = 83                               |  VSS = 137                                
                                            |                                           
 Instance: swmatrix_24_by_10_0//swmatrix_ro |Instance: swmatrix_24_by_10_dchain:17/swma 
   pin = 2                                  |  pin = 2                                  
@@ -1671,11 +2196,11 @@ Instance: swmatrix_24_by_10_0//swmatrix_ro |Instance: swmatrix_24_by_10_dchain:1
   ShiftReg_row_10_2_0/D_in = 2             |  D_in = 2                                 
   BUS[3] = 24                              |  BUS[3] = 240                             
   ShiftReg_row_10_2_0/EN = 26              |  enable = 26                              
-  ShiftReg_row_10_2_0/PHI_2 = 26           |  PHI_2 = 26                               
-  swmatrix_Tgate_9/VDD = 41                |  VDD = 41                                 
-  ShiftReg_row_10_2_0/PHI_1 = 26           |  PHI_1 = 26                               
+  ShiftReg_row_10_2_0/PHI_2 = 29           |  PHI_2 = 29                               
+  swmatrix_Tgate_9/VDD = 84                |  VDD = 141                                
+  ShiftReg_row_10_2_0/PHI_1 = 29           |  PHI_1 = 29                               
   BUS[1] = 24                              |  BUS[1] = 240                             
-  VSUBS = 42                               |  VSS = 42                                 
+  VSUBS = 83                               |  VSS = 137                                
                                            |                                           
 Instance: swmatrix_24_by_10_0//swmatrix_ro |Instance: swmatrix_24_by_10_dchain:17/swma 
   pin = 2                                  |  pin = 2                                  
@@ -1691,11 +2216,11 @@ Instance: swmatrix_24_by_10_0//swmatrix_ro |Instance: swmatrix_24_by_10_dchain:1
   ShiftReg_row_10_2_0/D_in = 2             |  D_in = 2                                 
   BUS[3] = 24                              |  BUS[3] = 240                             
   ShiftReg_row_10_2_0/EN = 26              |  enable = 26                              
-  ShiftReg_row_10_2_0/PHI_2 = 26           |  PHI_2 = 26                               
-  swmatrix_Tgate_9/VDD = 41                |  VDD = 41                                 
-  ShiftReg_row_10_2_0/PHI_1 = 26           |  PHI_1 = 26                               
+  ShiftReg_row_10_2_0/PHI_2 = 29           |  PHI_2 = 29                               
+  swmatrix_Tgate_9/VDD = 84                |  VDD = 141                                
+  ShiftReg_row_10_2_0/PHI_1 = 29           |  PHI_1 = 29                               
   BUS[1] = 24                              |  BUS[1] = 240                             
-  VSUBS = 42                               |  VSS = 42                                 
+  VSUBS = 83                               |  VSS = 137                                
                                            |                                           
 Instance: swmatrix_24_by_10_0//swmatrix_ro |Instance: swmatrix_24_by_10_dchain:17/swma 
   pin = 2                                  |  pin = 2                                  
@@ -1711,11 +2236,11 @@ Instance: swmatrix_24_by_10_0//swmatrix_ro |Instance: swmatrix_24_by_10_dchain:1
   ShiftReg_row_10_2_0/D_in = 2             |  D_in = 2                                 
   BUS[3] = 24                              |  BUS[3] = 240                             
   ShiftReg_row_10_2_0/EN = 26              |  enable = 26                              
-  ShiftReg_row_10_2_0/PHI_2 = 26           |  PHI_2 = 26                               
-  swmatrix_Tgate_9/VDD = 41                |  VDD = 41                                 
-  ShiftReg_row_10_2_0/PHI_1 = 26           |  PHI_1 = 26                               
+  ShiftReg_row_10_2_0/PHI_2 = 29           |  PHI_2 = 29                               
+  swmatrix_Tgate_9/VDD = 84                |  VDD = 141                                
+  ShiftReg_row_10_2_0/PHI_1 = 29           |  PHI_1 = 29                               
   BUS[1] = 24                              |  BUS[1] = 240                             
-  VSUBS = 42                               |  VSS = 42                                 
+  VSUBS = 83                               |  VSS = 137                                
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 Port matching may fail to disambiguate symmetries.
@@ -1723,13 +2248,51 @@ Port matching may fail to disambiguate symmetries.
 Subcircuit pins:
 Circuit 1: top                             |Circuit 2: top                             
 -------------------------------------------|-------------------------------------------
-Q[6]                                       |(no pin, node is Q[1])                     
-Q[5]                                       |(no pin, node is Q[2])                     
-Q[1]                                       |(no pin, node is Q[3])                     
-Q[4]                                       |(no pin, node is Q[4])                     
-Q[3]                                       |(no pin, node is Q[5])                     
-Cell pin lists are equivalent.
+vdd                                        |(no pin, node is NO_ClkGen:15/gf180mcu_fd_ 
+Q[6]                                       |(no pin, node is NO_ClkGen:15/gf180mcu_fd_ 
+Q[5]                                       |(no pin, node is Q[7])                     
+Q[1]                                       |(no pin, node is Q[1])                     
+Q[4]                                       |(no pin, node is Q[2])                     
+Q[3]                                       |(no pin, node is Q[3])                     
+Q[2]                                       |(no pin, node is NO_ClkGen:15/OUT_top_d)   
+vss                                        |(no pin, node is NO_ClkGen:15/CLKbuf)      
+VAH_bias                                   |VAH_bias                                   
+v_ex                                       |V_EX                                       
+v_inh                                      |V_INH                                      
+clk                                        |CLK                                        
+d_in                                       |DATA **Mismatch**                          
+vin_s0                                     |PIN[3] **Mismatch**                        
+vin_s1                                     |PIN[13] **Mismatch**                       
+vin_s5                                     |PIN[5] **Mismatch**                        
+vin_s2                                     |PIN[11] **Mismatch**                       
+vin_s4                                     |PIN[7] **Mismatch**                        
+vin_s3                                     |PIN[9] **Mismatch**                        
+vout_s0                                    |PIN[14] **Mismatch**                       
+vout_s5                                    |PIN[4] **Mismatch**                        
+vout_s1                                    |PIN[12] **Mismatch**                       
+vout_s4                                    |PIN[6] **Mismatch**                        
+vout_s2                                    |PIN[10] **Mismatch**                       
+vout_s3                                    |PIN[8] **Mismatch**                        
+i_in4                                      |PIN[23] **Mismatch**                       
+i_in0                                      |PIN[15] **Mismatch**                       
+i_in3                                      |PIN[21] **Mismatch**                       
+i_in1                                      |PIN[17] **Mismatch**                       
+i_in2                                      |PIN[19] **Mismatch**                       
+vout_0                                     |PIN[24] **Mismatch**                       
+vout_4                                     |PIN[22] **Mismatch**                       
+vout_1                                     |PIN[16] **Mismatch**                       
+vout_3                                     |PIN[20] **Mismatch**                       
+vout_2                                     |PIN[18] **Mismatch**                       
+vin_lif                                    |PIN[1] **Mismatch**                        
+vout_lif                                   |PIN[2] **Mismatch**                        
+enable                                     |EN **Mismatch**                            
+(no pin, node is swmatrix_24_by_10_0/BUS[1 |VDD                                        
+(no pin, node is swmatrix_24_by_10_0/BUS[1 |VSS                                        
+(no pin, node is swmatrix_24_by_10_0/BUS[1 |CLK_TG                                     
+(no pin, node is swmatrix_24_by_10_0/BUS[1 |TG_in                                      
+(no pin, node is swmatrix_24_by_10_0/BUS[1 |TG_out                                     
+---------------------------------------------------------------------------------------
+Cell pin lists for top and top altered to match.
 Device classes top and top are equivalent.
 
-Final result: Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Final result: Top level cell failed pin matching.

@@ -187,7 +187,7 @@ x4 VDD VSS clk clock enable D_in Data_in En_clk_din
 ** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/switch_matrix_gf180mcu_9t5v0/NO_ClkGen/NO_ClkGen.sch
 .subckt NO_ClkGen PHI_2 CLK PHI_1 VDD VSS
 *.PININFO CLK:I PHI_2:O PHI_1:O VDD:B VSS:B
-x1 CLKB OUT_bot_d OUT_top VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__nand2_1
+x1 OUT_bot_d CLKB OUT_top VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__nand2_1
 x2 OUT_top_d CLKbuf OUT_bot VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__nand2_1
 x3 OUT_top PHI_2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
 x4 PHI_2 net5 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
@@ -354,9 +354,9 @@ xTgates[10] gc[10] BUS[10] pin VSS VDD swmatrix_Tgate
 ** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/switch_matrix_gf180mcu_9t5v0/En_clk_din/En_clk_din.sch
 .subckt En_clk_din VDD VSS clk clock enable D_in Data_in
 *.PININFO D_in:I enable:I clk:B VDD:B VSS:B clock:O Data_in:O
-x6 D_in net1 Data_in VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
+x6 net1 D_in Data_in VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
 x15 enable net1 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
-x2 clk net2 clock VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
+x2 net2 clk clock VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__and2_1
 x3 enable net2 VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
 * noconn VSS
 * noconn VDD
