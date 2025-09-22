@@ -1,27 +1,27 @@
-timestamp 1586874257
+timestamp 1587121818
 version 8.3
 tech gf180mcuD
 style ngspice()
 scale 1000 1 0.5
 resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
-use nfet$20 nfet$20_1 -1 0 -280 0 1 -728
-use via_dev$33 via_dev$33_4 1 0 -930 0 1 -472
-use via_dev$33 via_dev$33_2 1 0 -667 0 1 -472
-use nfet$20 nfet$20_0 -1 0 -824 0 1 -728
-use nfet$20 nfet$20_2 1 0 -28 0 1 -728
-use via_dev$33 via_dev$33_11 1 0 -2 0 1 -472
-use via_dev$33 via_dev$33_8 1 0 -386 0 1 -472
-use via_dev$33 via_dev$33_7 1 0 -667 0 1 -296
-use pfet$12 pfet$12_1 -1 0 -287 0 1 -158
-use via_dev$33 via_dev$33_5 1 0 -944 0 1 -296
-use via_dev$33 via_dev$33_3 1 0 -825 0 1 -98
-use pfet$12 pfet$12_0 -1 0 -831 0 1 -158
-use via_dev$33 via_dev$33_0 1 0 -944 0 1 42
-use pfet$12 pfet$12_2 1 0 -35 0 1 -158
-use via_dev$33 via_dev$33_10 1 0 -128 0 1 -296
-use via_dev$33 via_dev$33_9 1 0 -400 0 1 -296
-use via_dev$33 via_dev$33_6 1 0 -519 0 1 -98
-use via_dev$33 via_dev$33_1 1 0 -2 0 1 42
+use nfet$11 nfet$11_1 -1 0 -280 0 1 -728
+use via_dev$24 via_dev$24_4 1 0 -930 0 1 -472
+use via_dev$24 via_dev$24_2 1 0 -667 0 1 -472
+use nfet$11 nfet$11_0 -1 0 -824 0 1 -728
+use nfet$11 nfet$11_2 1 0 -28 0 1 -728
+use via_dev$24 via_dev$24_11 1 0 -2 0 1 -472
+use via_dev$24 via_dev$24_8 1 0 -386 0 1 -472
+use via_dev$24 via_dev$24_7 1 0 -667 0 1 -296
+use pfet$6 pfet$6_1 -1 0 -287 0 1 -158
+use via_dev$24 via_dev$24_5 1 0 -944 0 1 -296
+use via_dev$24 via_dev$24_3 1 0 -825 0 1 -98
+use pfet$6 pfet$6_0 -1 0 -831 0 1 -158
+use via_dev$24 via_dev$24_0 1 0 -944 0 1 42
+use pfet$6 pfet$6_2 1 0 -35 0 1 -158
+use via_dev$24 via_dev$24_10 1 0 -128 0 1 -296
+use via_dev$24 via_dev$24_9 1 0 -400 0 1 -296
+use via_dev$24 via_dev$24_6 1 0 -519 0 1 -98
+use via_dev$24 via_dev$24_1 1 0 -2 0 1 42
 port "cntrl" 4 31 -342 31 -342 m1
 port "in2" 3 -229 -343 -229 -343 m1
 port "out" 1 -776 -347 -776 -347 m1
@@ -47,185 +47,185 @@ node "vss" 3 935.202 -715 -833 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "vdd" 3 870.579 -733 216 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 208472 5496 0 0 0 0 0 0 0 0
 node "w_n1353_180#" 23000 441.6 -1353 180 nw 147200 3840 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "m1_n512_n666#" "m2_n925_52#" 4.73591
-cap "m1_n667_n431#" "vdd" 14.6438
-cap "vdd" "m2_n322_n472#" 0.674413
-cap "vdd" "m1_n111_n666#" 10.1684
-cap "m1_n937_n254#" "m2_n643_n296#" 0.644912
-cap "vdd" "in2" 13.4329
-cap "out" "m2_n746_n98#" 12.5992
-cap "m1_n937_n254#" "m2_n925_52#" 14.373
-cap "vdd" "vss" 66.2581
-cap "vdd" "m1_5_n218#" 133.769
-cap "vdd" "m2_n850_n472#" 0.412906
-cap "m1_n512_n666#" "m2_n331_n296#" 1.92322
-cap "vdd" "m2_n643_n296#" 1.1663
-cap "m1_n937_n254#" "in1" 161.106
-cap "m1_n667_n431#" "m2_n746_n98#" 2.9105
-cap "m1_n111_n666#" "m2_n746_n98#" 0.124775
-cap "m1_n667_n431#" "out" 117.105
 cap "m2_n322_n472#" "cntrl" 0.933173
-cap "m1_n111_n666#" "cntrl" 106.611
-cap "in2" "m2_n746_n98#" 2.68452
-cap "vdd" "m2_n925_52#" 120.436
-cap "in2" "out" 5.4188
-cap "m2_n746_n98#" "vss" 0.410589
-cap "m2_n746_n98#" "m1_5_n218#" 0.40907
+cap "m2_n643_n296#" "m2_n925_52#" 17.3423
 cap "vss" "cntrl" 8.018
-cap "out" "vss" 54.5294
-cap "m2_n850_n472#" "m2_n746_n98#" 13.9936
-cap "m1_5_n218#" "cntrl" 40.512
-cap "m1_n667_n431#" "m2_n322_n472#" 0.200965
-cap "vdd" "in1" 10.5683
-cap "m1_n111_n666#" "m2_n322_n472#" 29.2786
-cap "m2_n850_n472#" "out" 32.9932
-cap "m2_n746_n98#" "m2_n643_n296#" 34.7738
-cap "in2" "m1_n111_n666#" 311.836
-cap "in2" "m2_n322_n472#" 27.1869
-cap "out" "m2_n643_n296#" 4.10542
-cap "vdd" "m2_n331_n296#" 0.998067
-cap "vdd" "m1_n512_n666#" 10.5683
-cap "m1_n667_n431#" "vss" 16.6317
-cap "m2_n925_52#" "m2_n746_n98#" 88.7984
-cap "m2_n322_n472#" "vss" 6.17339
-cap "m1_n111_n666#" "vss" 43.8764
-cap "m2_n322_n472#" "m1_5_n218#" 0.0617015
-cap "m1_n111_n666#" "m1_5_n218#" 129.073
-cap "out" "m2_n925_52#" 8.96439
-cap "m2_n925_52#" "cntrl" 0.858155
-cap "in2" "vss" 22.788
-cap "m1_n667_n431#" "m2_n850_n472#" 12.5077
-cap "m2_n850_n472#" "m2_n322_n472#" 11.1276
-cap "in2" "m1_5_n218#" 12.871
-cap "m1_n667_n431#" "m2_n643_n296#" 13.1953
-cap "m2_n746_n98#" "in1" 0.242442
-cap "vdd" "m1_n937_n254#" 69.6102
-cap "in2" "m2_n643_n296#" 1.15402
-cap "m2_n850_n472#" "vss" 6.69707
-cap "out" "in1" 94.8349
-cap "m1_n667_n431#" "m2_n925_52#" 0.0348866
-cap "m2_n322_n472#" "m2_n925_52#" 7.8524
-cap "m1_n111_n666#" "m2_n925_52#" 5.48027
-cap "vss" "m2_n643_n296#" 3.52047
-cap "in2" "m2_n925_52#" 7.67324
-cap "m1_n512_n666#" "m2_n746_n98#" 2.20701
-cap "m2_n331_n296#" "cntrl" 0.0932446
-cap "m2_n850_n472#" "m2_n643_n296#" 11.2038
-cap "m1_n512_n666#" "out" 59.5656
-cap "m2_n925_52#" "vss" 1.35283
-cap "m2_n925_52#" "m1_5_n218#" 14.0935
-cap "m2_n850_n472#" "m2_n925_52#" 9.83916
-cap "m1_n937_n254#" "m2_n746_n98#" 2.49675
-cap "m2_n925_52#" "m2_n643_n296#" 17.3423
-cap "m2_n331_n296#" "m2_n322_n472#" 78.4268
-cap "m2_n331_n296#" "m1_n111_n666#" 16.018
-cap "m1_n667_n431#" "m1_n512_n666#" 115.303
-cap "m1_n937_n254#" "out" 160.675
-cap "m1_n512_n666#" "m2_n322_n472#" 4.18664
-cap "in1" "vss" 109.398
-cap "m2_n331_n296#" "in2" 27.611
+cap "m2_n746_n98#" "m1_5_n218#" 0.40907
+cap "m2_n322_n472#" "m1_n667_n431#" 0.200965
 cap "m1_n512_n666#" "in2" 134.196
-cap "m2_n850_n472#" "in1" 3.47868
-cap "vdd" "w_n1353_180#" 107.839
-cap "m2_n331_n296#" "vss" 0.758972
-cap "in1" "m2_n643_n296#" 0.786225
-cap "m1_n512_n666#" "vss" 109.398
-cap "m2_n331_n296#" "m1_5_n218#" 0.0809256
-cap "vdd" "m2_n746_n98#" 11.4327
-cap "m1_n512_n666#" "m2_n850_n472#" 4.74716
-cap "vdd" "out" 13.4329
-cap "vdd" "cntrl" 0.873103
-cap "m2_n331_n296#" "m2_n643_n296#" 31.4192
+cap "vss" "m1_n667_n431#" 16.6317
+cap "m2_n746_n98#" "out" 12.5992
+cap "m2_n643_n296#" "m2_n331_n296#" 31.4192
+cap "m2_n322_n472#" "m1_5_n218#" 0.0617015
+cap "in1" "m2_n850_n472#" 3.47868
+cap "m1_n512_n666#" "vdd" 10.5683
+cap "m1_n512_n666#" "m2_n925_52#" 4.73591
+cap "in1" "m1_n937_n254#" 161.106
+cap "vss" "out" 54.5294
+cap "cntrl" "m1_5_n218#" 40.512
+cap "m1_n512_n666#" "m2_n331_n296#" 1.92322
+cap "m2_n746_n98#" "m2_n643_n296#" 34.7738
+cap "m1_n111_n666#" "in2" 311.836
+cap "out" "m1_n667_n431#" 117.105
+cap "m2_n850_n472#" "vdd" 0.412906
+cap "m2_n850_n472#" "m2_n925_52#" 9.83916
+cap "vss" "m2_n643_n296#" 3.52047
+cap "m1_n937_n254#" "vdd" 69.6102
+cap "m1_n111_n666#" "vdd" 10.1684
+cap "m2_n925_52#" "m1_n937_n254#" 14.373
+cap "m1_n111_n666#" "m2_n925_52#" 5.48027
+cap "m2_n746_n98#" "m1_n512_n666#" 2.20701
+cap "in1" "vdd" 10.5683
+cap "m1_n111_n666#" "m2_n331_n296#" 16.018
+cap "m2_n322_n472#" "m1_n512_n666#" 4.18664
+cap "m2_n643_n296#" "m1_n667_n431#" 13.1953
+cap "vss" "m1_n512_n666#" 109.398
+cap "in2" "vdd" 13.4329
+cap "in2" "m2_n925_52#" 7.67324
+cap "m2_n746_n98#" "m2_n850_n472#" 13.9936
+cap "out" "m2_n643_n296#" 4.10542
+cap "m1_n512_n666#" "m1_n667_n431#" 115.303
+cap "m2_n746_n98#" "m1_n937_n254#" 2.49675
+cap "m2_n746_n98#" "m1_n111_n666#" 0.124775
+cap "m2_n925_52#" "vdd" 120.436
+cap "in2" "m2_n331_n296#" 27.611
+cap "m2_n322_n472#" "m2_n850_n472#" 11.1276
+cap "vss" "m2_n850_n472#" 6.69707
+cap "m2_n746_n98#" "in1" 0.242442
+cap "m2_n322_n472#" "m1_n111_n666#" 29.2786
+cap "vss" "m1_n937_n254#" 4.94803
+cap "vss" "m1_n111_n666#" 43.8764
+cap "out" "m1_n512_n666#" 59.5656
+cap "vdd" "m2_n331_n296#" 0.998067
+cap "m2_n925_52#" "m2_n331_n296#" 37.33
+cap "vss" "in1" 109.398
+cap "m1_n111_n666#" "cntrl" 106.611
+cap "m2_n850_n472#" "m1_n667_n431#" 12.5077
+cap "m2_n746_n98#" "in2" 2.68452
+cap "m2_n746_n98#" "vdd" 11.4327
+cap "m2_n322_n472#" "in2" 27.1869
+cap "m2_n746_n98#" "m2_n925_52#" 88.7984
+cap "vss" "in2" 22.788
+cap "m1_n111_n666#" "m1_5_n218#" 129.073
 cap "m1_n512_n666#" "m2_n643_n296#" 32.1516
-cap "m1_n937_n254#" "vss" 4.94803
-cap "m2_n331_n296#" "m2_n925_52#" 37.33
-cap "via_dev$33_1/m1_0_0#" "via_dev$33_6/m1_0_0#" 212.761
-cap "via_dev$33_1/m1_0_0#" "nfet$20_2/a_216_0#" 28.34
-cap "via_dev$33_1/m1_0_0#" "via_dev$33_9/m1_0_0#" 433.881
-cap "via_dev$33_6/m1_0_0#" "nfet$20_2/a_216_0#" -14.5351
-cap "pfet$12_0/a_108_0#" "pfet$12_2/a_108_0#" 39.77
-cap "via_dev$33_6/m1_0_0#" "via_dev$33_9/m1_0_0#" 324.271
-cap "via_dev$33_9/m1_0_0#" "nfet$20_2/a_216_0#" 44.3359
-cap "pfet$12_2/a_108_0#" "pfet$12_1/a_n92_0#" 22.495
-cap "via_dev$33_1/m1_0_0#" "pfet$12_0/a_108_0#" 133.813
-cap "via_dev$33_1/m1_0_0#" "pfet$12_2/a_108_0#" 165.076
-cap "via_dev$33_6/m1_0_0#" "pfet$12_0/a_108_0#" -62.7219
-cap "via_dev$33_6/m1_0_0#" "pfet$12_2/a_108_0#" 143.16
-cap "pfet$12_0/a_108_0#" "nfet$20_2/a_216_0#" -31.4364
-cap "nfet$20_2/a_216_0#" "pfet$12_2/a_108_0#" 11.2244
-cap "pfet$12_0/a_108_0#" "via_dev$33_9/m1_0_0#" 70.7547
-cap "via_dev$33_1/m1_0_0#" "pfet$12_1/a_n92_0#" 95.7676
-cap "via_dev$33_9/m1_0_0#" "pfet$12_2/a_108_0#" 82.9861
-cap "via_dev$33_6/m1_0_0#" "pfet$12_1/a_n92_0#" -56.7234
-cap "nfet$20_2/a_216_0#" "pfet$12_1/a_n92_0#" 12.9555
-cap "via_dev$33_9/m1_0_0#" "pfet$12_1/a_n92_0#" 124.331
-cap "pfet$12_2/a_108_0#" "via_dev$33_9/m1_0_0#" -11.3761
-cap "via_dev$33_6/m1_0_0#" "nfet$20_2/a_216_0#" 0.596981
-cap "via_dev$33_1/m1_0_0#" "nfet$20_2/a_216_0#" 8.83082
-cap "pfet$12_2/a_108_0#" "via_dev$33_1/m1_0_0#" 57.021
-cap "pfet$12_1/a_n92_0#" "nfet$20_2/a_216_0#" 0.945713
-cap "pfet$12_2/a_108_0#" "nfet$20_2/a_216_0#" 15.8784
-cap "via_dev$33_9/m1_0_0#" "nfet$20_2/a_216_0#" -8.80573
-merge "via_dev$33_6/m1_0_0#" "pfet$12_1/a_108_0#" -519.054 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25200 -1560 -160 -324 0 0 0 0 0 0
-merge "pfet$12_1/a_108_0#" "nfet$20_1/a_94_0#"
-merge "nfet$20_1/a_94_0#" "m1_n512_n666#"
-merge "m1_n512_n666#" "pfet$12_0/a_n92_0#"
-merge "pfet$12_0/a_n92_0#" "via_dev$33_3/m1_0_0#"
-merge "via_dev$33_3/m1_0_0#" "m2_n746_n98#"
-merge "m2_n746_n98#" "nfet$20_0/a_n84_0#"
-merge "nfet$20_0/a_n84_0#" "out"
-merge "via_dev$33_1/VSUBS" "via_dev$33_6/VSUBS" -327.892 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23104 -1216 0 0 0 0 0 0 0 0
-merge "via_dev$33_6/VSUBS" "via_dev$33_9/VSUBS"
-merge "via_dev$33_9/VSUBS" "via_dev$33_10/VSUBS"
-merge "via_dev$33_10/VSUBS" "pfet$12_2/VSUBS"
-merge "pfet$12_2/VSUBS" "via_dev$33_0/VSUBS"
-merge "via_dev$33_0/VSUBS" "pfet$12_0/VSUBS"
-merge "pfet$12_0/VSUBS" "via_dev$33_3/VSUBS"
-merge "via_dev$33_3/VSUBS" "via_dev$33_5/VSUBS"
-merge "via_dev$33_5/VSUBS" "pfet$12_1/VSUBS"
-merge "pfet$12_1/VSUBS" "via_dev$33_7/VSUBS"
-merge "via_dev$33_7/VSUBS" "via_dev$33_8/VSUBS"
-merge "via_dev$33_8/VSUBS" "via_dev$33_11/VSUBS"
-merge "via_dev$33_11/VSUBS" "nfet$20_2/a_216_0#"
-merge "nfet$20_2/a_216_0#" "nfet$20_2/a_94_0#"
-merge "nfet$20_2/a_94_0#" "nfet$20_0/a_216_0#"
-merge "nfet$20_0/a_216_0#" "via_dev$33_2/VSUBS"
-merge "via_dev$33_2/VSUBS" "via_dev$33_4/VSUBS"
-merge "via_dev$33_4/VSUBS" "nfet$20_1/a_216_0#"
-merge "nfet$20_1/a_216_0#" "VSUBS"
-merge "VSUBS" "vss"
-merge "via_dev$33_9/m1_0_0#" "via_dev$33_10/m1_0_0#" -921.138 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -29217 -1820 -14160 -1314 0 0 0 0 0 0
-merge "via_dev$33_10/m1_0_0#" "m2_n331_n296#"
-merge "m2_n331_n296#" "pfet$12_2/a_n92_0#"
-merge "pfet$12_2/a_n92_0#" "nfet$20_2/a_n84_0#"
-merge "nfet$20_2/a_n84_0#" "m1_n111_n666#"
-merge "m1_n111_n666#" "pfet$12_1/a_35_n136#"
-merge "pfet$12_1/a_35_n136#" "via_dev$33_7/m1_0_0#"
-merge "via_dev$33_7/m1_0_0#" "m2_n643_n296#"
-merge "m2_n643_n296#" "nfet$20_0/a_30_260#"
-merge "nfet$20_0/a_30_260#" "via_dev$33_2/m1_0_0#"
-merge "via_dev$33_2/m1_0_0#" "m1_n667_n431#"
-merge "m1_n667_n431#" "via_dev$33_4/m1_0_0#"
-merge "via_dev$33_4/m1_0_0#" "m2_n850_n472#"
-merge "via_dev$33_1/m1_0_0#" "via_dev$33_0/m1_0_0#" -1034.04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24130 -1946 -10460 -892 0 0 0 0 0 0
-merge "via_dev$33_0/m1_0_0#" "m2_n925_52#"
-merge "m2_n925_52#" "pfet$12_0/a_35_n136#"
-merge "pfet$12_0/a_35_n136#" "via_dev$33_5/m1_0_0#"
-merge "via_dev$33_5/m1_0_0#" "m1_n937_n254#"
-merge "m1_n937_n254#" "pfet$12_2/a_35_n136#"
-merge "pfet$12_2/a_35_n136#" "m1_5_n218#"
-merge "m1_5_n218#" "via_dev$33_8/m1_0_0#"
-merge "via_dev$33_8/m1_0_0#" "nfet$20_1/a_30_260#"
-merge "nfet$20_1/a_30_260#" "via_dev$33_11/m1_0_0#"
-merge "via_dev$33_11/m1_0_0#" "m2_n322_n472#"
-merge "m2_n322_n472#" "nfet$20_2/a_30_260#"
-merge "nfet$20_2/a_30_260#" "cntrl"
-merge "pfet$12_0/a_108_0#" "nfet$20_0/a_94_0#" -109.043 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4354 -402 0 0 0 0 0 0 0 0
-merge "nfet$20_0/a_94_0#" "in1"
-merge "pfet$12_1/a_n92_0#" "nfet$20_1/a_n84_0#" -139.942 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8892 -538 0 0 0 0 0 0 0 0
-merge "nfet$20_1/a_n84_0#" "in2"
-merge "pfet$12_2/a_108_0#" "pfet$12_2/w_n230_n138#" -1120.8 -198016 -6416 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11552 -912 0 0 0 0 0 0 0 0
-merge "pfet$12_2/w_n230_n138#" "pfet$12_0/w_n230_n138#"
-merge "pfet$12_0/w_n230_n138#" "pfet$12_1/w_n230_n138#"
-merge "pfet$12_1/w_n230_n138#" "vdd"
+cap "out" "m2_n850_n472#" 32.9932
+cap "out" "m1_n937_n254#" 160.675
+cap "m2_n322_n472#" "vdd" 0.674413
+cap "vss" "vdd" 66.2581
+cap "m2_n322_n472#" "m2_n925_52#" 7.8524
+cap "vss" "m2_n925_52#" 1.35283
+cap "out" "in1" 94.8349
+cap "m2_n322_n472#" "m2_n331_n296#" 78.4268
+cap "cntrl" "vdd" 0.873103
+cap "vss" "m2_n331_n296#" 0.758972
+cap "cntrl" "m2_n925_52#" 0.858155
+cap "in2" "m1_5_n218#" 12.871
+cap "m2_n643_n296#" "m2_n850_n472#" 11.2038
+cap "m1_n667_n431#" "vdd" 14.6438
+cap "m1_n667_n431#" "m2_n925_52#" 0.0348866
+cap "m2_n643_n296#" "m1_n937_n254#" 0.644912
+cap "out" "in2" 5.4188
+cap "cntrl" "m2_n331_n296#" 0.0932446
+cap "m1_5_n218#" "vdd" 133.769
+cap "m2_n925_52#" "m1_5_n218#" 14.0935
+cap "w_n1353_180#" "vdd" 107.839
+cap "m2_n643_n296#" "in1" 0.786225
+cap "out" "vdd" 13.4329
+cap "out" "m2_n925_52#" 8.96439
+cap "m1_n512_n666#" "m2_n850_n472#" 4.74716
+cap "vss" "m2_n746_n98#" 0.410589
+cap "m1_5_n218#" "m2_n331_n296#" 0.0809256
+cap "vss" "m2_n322_n472#" 6.17339
+cap "m2_n643_n296#" "in2" 1.15402
+cap "m2_n746_n98#" "m1_n667_n431#" 2.9105
+cap "m2_n643_n296#" "vdd" 1.1663
+cap "via_dev$24_6/m1_0_0#" "pfet$6_1/a_n92_0#" -56.7234
+cap "pfet$6_2/a_108_0#" "via_dev$24_9/m1_0_0#" 82.9861
+cap "pfet$6_2/a_108_0#" "nfet$11_2/a_216_0#" 11.2244
+cap "via_dev$24_6/m1_0_0#" "via_dev$24_9/m1_0_0#" 324.271
+cap "via_dev$24_6/m1_0_0#" "nfet$11_2/a_216_0#" -14.5351
+cap "pfet$6_1/a_n92_0#" "via_dev$24_1/m1_0_0#" 95.7676
+cap "pfet$6_2/a_108_0#" "pfet$6_0/a_108_0#" 39.77
+cap "via_dev$24_1/m1_0_0#" "via_dev$24_9/m1_0_0#" 433.881
+cap "via_dev$24_1/m1_0_0#" "nfet$11_2/a_216_0#" 28.34
+cap "via_dev$24_6/m1_0_0#" "pfet$6_0/a_108_0#" -62.7219
+cap "pfet$6_1/a_n92_0#" "via_dev$24_9/m1_0_0#" 124.331
+cap "pfet$6_1/a_n92_0#" "nfet$11_2/a_216_0#" 12.9555
+cap "via_dev$24_9/m1_0_0#" "nfet$11_2/a_216_0#" 44.3359
+cap "via_dev$24_6/m1_0_0#" "pfet$6_2/a_108_0#" 143.16
+cap "via_dev$24_1/m1_0_0#" "pfet$6_0/a_108_0#" 133.813
+cap "via_dev$24_9/m1_0_0#" "pfet$6_0/a_108_0#" 70.7547
+cap "pfet$6_0/a_108_0#" "nfet$11_2/a_216_0#" -31.4364
+cap "pfet$6_2/a_108_0#" "via_dev$24_1/m1_0_0#" 165.076
+cap "pfet$6_1/a_n92_0#" "pfet$6_2/a_108_0#" 22.495
+cap "via_dev$24_6/m1_0_0#" "via_dev$24_1/m1_0_0#" 212.761
+cap "nfet$11_2/a_216_0#" "via_dev$24_6/m1_0_0#" 0.596981
+cap "pfet$6_2/a_108_0#" "via_dev$24_9/m1_0_0#" -11.3761
+cap "nfet$11_2/a_216_0#" "pfet$6_1/a_n92_0#" 0.945713
+cap "nfet$11_2/a_216_0#" "pfet$6_2/a_108_0#" 15.8784
+cap "pfet$6_2/a_108_0#" "via_dev$24_1/m1_0_0#" 57.021
+cap "nfet$11_2/a_216_0#" "via_dev$24_9/m1_0_0#" -8.80573
+cap "nfet$11_2/a_216_0#" "via_dev$24_1/m1_0_0#" 8.83082
+merge "via_dev$24_1/m1_0_0#" "via_dev$24_0/m1_0_0#" -1034.04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24130 -1946 -10460 -892 0 0 0 0 0 0
+merge "via_dev$24_0/m1_0_0#" "m2_n925_52#"
+merge "m2_n925_52#" "pfet$6_0/a_35_n136#"
+merge "pfet$6_0/a_35_n136#" "via_dev$24_5/m1_0_0#"
+merge "via_dev$24_5/m1_0_0#" "m1_n937_n254#"
+merge "m1_n937_n254#" "pfet$6_2/a_35_n136#"
+merge "pfet$6_2/a_35_n136#" "m1_5_n218#"
+merge "m1_5_n218#" "via_dev$24_8/m1_0_0#"
+merge "via_dev$24_8/m1_0_0#" "nfet$11_1/a_30_260#"
+merge "nfet$11_1/a_30_260#" "via_dev$24_11/m1_0_0#"
+merge "via_dev$24_11/m1_0_0#" "m2_n322_n472#"
+merge "m2_n322_n472#" "nfet$11_2/a_30_260#"
+merge "nfet$11_2/a_30_260#" "cntrl"
+merge "pfet$6_2/a_108_0#" "pfet$6_2/w_n230_n138#" -1120.8 -198016 -6416 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11552 -912 0 0 0 0 0 0 0 0
+merge "pfet$6_2/w_n230_n138#" "pfet$6_0/w_n230_n138#"
+merge "pfet$6_0/w_n230_n138#" "pfet$6_1/w_n230_n138#"
+merge "pfet$6_1/w_n230_n138#" "vdd"
 merge "vdd" "w_n1353_180#"
+merge "via_dev$24_9/m1_0_0#" "via_dev$24_10/m1_0_0#" -921.138 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -29217 -1820 -14160 -1314 0 0 0 0 0 0
+merge "via_dev$24_10/m1_0_0#" "m2_n331_n296#"
+merge "m2_n331_n296#" "pfet$6_2/a_n92_0#"
+merge "pfet$6_2/a_n92_0#" "nfet$11_2/a_n84_0#"
+merge "nfet$11_2/a_n84_0#" "m1_n111_n666#"
+merge "m1_n111_n666#" "pfet$6_1/a_35_n136#"
+merge "pfet$6_1/a_35_n136#" "via_dev$24_7/m1_0_0#"
+merge "via_dev$24_7/m1_0_0#" "m2_n643_n296#"
+merge "m2_n643_n296#" "nfet$11_0/a_30_260#"
+merge "nfet$11_0/a_30_260#" "via_dev$24_2/m1_0_0#"
+merge "via_dev$24_2/m1_0_0#" "m1_n667_n431#"
+merge "m1_n667_n431#" "via_dev$24_4/m1_0_0#"
+merge "via_dev$24_4/m1_0_0#" "m2_n850_n472#"
+merge "pfet$6_0/a_108_0#" "nfet$11_0/a_94_0#" -109.043 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4354 -402 0 0 0 0 0 0 0 0
+merge "nfet$11_0/a_94_0#" "in1"
+merge "via_dev$24_1/VSUBS" "via_dev$24_6/VSUBS" -327.892 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23104 -1216 0 0 0 0 0 0 0 0
+merge "via_dev$24_6/VSUBS" "via_dev$24_9/VSUBS"
+merge "via_dev$24_9/VSUBS" "via_dev$24_10/VSUBS"
+merge "via_dev$24_10/VSUBS" "pfet$6_2/VSUBS"
+merge "pfet$6_2/VSUBS" "via_dev$24_0/VSUBS"
+merge "via_dev$24_0/VSUBS" "pfet$6_0/VSUBS"
+merge "pfet$6_0/VSUBS" "via_dev$24_3/VSUBS"
+merge "via_dev$24_3/VSUBS" "via_dev$24_5/VSUBS"
+merge "via_dev$24_5/VSUBS" "pfet$6_1/VSUBS"
+merge "pfet$6_1/VSUBS" "via_dev$24_7/VSUBS"
+merge "via_dev$24_7/VSUBS" "via_dev$24_8/VSUBS"
+merge "via_dev$24_8/VSUBS" "via_dev$24_11/VSUBS"
+merge "via_dev$24_11/VSUBS" "nfet$11_2/a_216_0#"
+merge "nfet$11_2/a_216_0#" "nfet$11_2/a_94_0#"
+merge "nfet$11_2/a_94_0#" "nfet$11_0/a_216_0#"
+merge "nfet$11_0/a_216_0#" "via_dev$24_2/VSUBS"
+merge "via_dev$24_2/VSUBS" "via_dev$24_4/VSUBS"
+merge "via_dev$24_4/VSUBS" "nfet$11_1/a_216_0#"
+merge "nfet$11_1/a_216_0#" "VSUBS"
+merge "VSUBS" "vss"
+merge "via_dev$24_6/m1_0_0#" "pfet$6_1/a_108_0#" -519.054 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25200 -1560 -160 -324 0 0 0 0 0 0
+merge "pfet$6_1/a_108_0#" "nfet$11_1/a_94_0#"
+merge "nfet$11_1/a_94_0#" "m1_n512_n666#"
+merge "m1_n512_n666#" "pfet$6_0/a_n92_0#"
+merge "pfet$6_0/a_n92_0#" "via_dev$24_3/m1_0_0#"
+merge "via_dev$24_3/m1_0_0#" "m2_n746_n98#"
+merge "m2_n746_n98#" "nfet$11_0/a_n84_0#"
+merge "nfet$11_0/a_n84_0#" "out"
+merge "pfet$6_1/a_n92_0#" "nfet$11_1/a_n84_0#" -139.942 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8892 -538 0 0 0 0 0 0 0 0
+merge "nfet$11_1/a_n84_0#" "in2"
