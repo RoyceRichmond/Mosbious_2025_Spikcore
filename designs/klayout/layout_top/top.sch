@@ -150,7 +150,7 @@ C {lab_pin.sym} 50 -240 0 0 {name=p1 sig_type=std_logic lab=VDD3V3}
 C {lab_pin.sym} 380 -300 0 0 {name=p12 sig_type=std_logic lab=VDD3V3}
 C {lab_pin.sym} 50 -90 0 0 {name=p35 sig_type=std_logic lab=VDD3V3}
 C {lab_pin.sym} 380 -130 0 0 {name=p94 sig_type=std_logic lab=VDD3V3}
-C {lab_pin.sym} 40 -630 3 0 {name=p7 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 40 -630 3 0 {name=p7 sig_type=std_logic lab=Q[7]}
 C {designs/libs/core_schmitt_trigger/schmitt_trigger.sym} 930 -700 0 0 {name=x1}
 C {lab_pin.sym} 820 -650 0 0 {name=p8 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 820 -750 0 0 {name=p60 sig_type=std_logic lab=VDD3V3}
