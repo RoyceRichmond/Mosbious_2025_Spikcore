@@ -3983,5 +3983,17 @@
   </cell>
  </cells>
  <items>
+  <item>
+   <tags/>
+   <category>'M1.2a'</category>
+   <cell>M13_spikcore</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (2582.085,2214.295;2582.485,2214.295)|(2582.485,2214.495;2582.085,2214.495)</value>
+   </values>
+  </item>
  </items>
 </report-database>
