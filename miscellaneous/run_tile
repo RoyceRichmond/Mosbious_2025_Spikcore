@@ -5,5 +5,8 @@ write the python3 command that I have shown in the meeting as is.
 
 
 cd ../pdks/gf180mcuD/libs.tech/klayout/drc/
-
 python3 run_drc.py --path=/foss/designs/integration_padframe_2025_sscs/Padframe_submission/Chipathon2025_3_padring_integrated.gds --variant=D --run_dir=/foss/designs/td/ --mp=10 --thr=10 --run_mode=tiling --no_connectivity
+
+
+
+M13
