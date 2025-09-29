@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>GF180 DENSITY DRC Run Report at</description>
- <original-file>./designs/klayout/layout_TG_bootstrapped/TG_bootstrapped.gds</original-file>
+ <original-file>/foss/designs/Mosbious_2025_Spikcore/designs/klayout/layout_TG_bootstrapped/TG_bootstrapped.gds</original-file>
  <generator>drc: script='/foss/pdks/gf180mcuD/libs.tech/klayout/macros/gf180mcu_drc.lydrc'</generator>
  <top-cell>TG_bootstrapped</top-cell>
  <tags>
@@ -2158,30 +2158,6 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (31.77,14.515;31.77,14.915;32.17,14.915;32.17,14.515)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M3.4'</category>
-   <cell>TG_bootstrapped</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (29.945,14.795;29.945,15.195;30.345,15.195;30.345,14.795)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M3.4'</category>
-   <cell>TG_bootstrapped</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
     <value>polygon: (40.055,12.495;40.055,13.275;40.215,13.275;40.215,15.265;40.615,15.265;40.615,13.275;40.835,13.275;40.835,12.495)</value>
    </values>
   </item>
@@ -2194,31 +2170,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (31.77,15.215;31.77,15.615;32.17,15.615;32.17,15.215)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M3.4'</category>
-   <cell>TG_bootstrapped</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (31.77,15.915;31.77,16.315;32.17,16.315;32.17,15.915)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'M3.4'</category>
-   <cell>TG_bootstrapped</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (31.77,16.615;31.77,17.015;32.17,17.015;32.17,16.615)</value>
+    <value>polygon: (28.28,14.515;28.28,17.015;32.17,17.015;32.17,14.515)</value>
    </values>
   </item>
   <item>
@@ -2314,7 +2266,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (29.945,14.795;29.945,15.195;30.345,15.195;30.345,14.795)</value>
+    <value>polygon: (28.28,14.515;28.28,14.915;28.285,14.915;28.285,15.215;28.28,15.215;28.28,15.615;28.285,15.615;28.285,15.915;28.28,15.915;28.28,16.315;28.285,16.315;28.285,16.615;28.28,16.615;28.28,17.015;28.68,17.015;28.68,14.515)</value>
    </values>
   </item>
   <item>
@@ -2326,7 +2278,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (31.77,14.515;31.77,23.715;40.49,23.715;40.49,14.515)</value>
+    <value>polygon: (29.945,14.515;29.945,17.46;31.77,17.46;31.77,23.715;40.49,23.715;40.49,14.515)</value>
    </values>
   </item>
   <item>
@@ -2339,6 +2291,18 @@
    <image/>
    <values>
     <value>polygon: (32.885,-14.815;32.885,-6.815;39.525,-6.815;39.525,-6.09;40.405,-6.09;40.405,-3.475;41.395,-3.475;41.395,-14.815)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M5.4'</category>
+   <cell>TG_bootstrapped</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (28.28,14.515;28.28,14.915;28.285,14.915;28.285,15.215;28.28,15.215;28.28,15.615;28.285,15.615;28.285,15.915;28.28,15.915;28.28,16.315;28.285,16.315;28.285,16.615;28.28,16.615;28.28,17.015;32.17,17.015;32.17,14.515)</value>
    </values>
   </item>
   <item>
@@ -2363,6 +2327,18 @@
    <image/>
    <values>
     <value>polygon: (32.885,-14.815;32.885,-6.815;39.525,-6.815;39.525,-6.09;40.405,-6.09;40.405,-3.475;41.395,-3.475;41.395,-14.815)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MT.3'</category>
+   <cell>TG_bootstrapped</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (28.28,14.515;28.28,14.915;28.285,14.915;28.285,15.215;28.28,15.215;28.28,15.615;28.285,15.615;28.285,15.915;28.28,15.915;28.28,16.315;28.285,16.315;28.285,16.615;28.28,16.615;28.28,17.015;32.17,17.015;32.17,14.515)</value>
    </values>
   </item>
   <item>
