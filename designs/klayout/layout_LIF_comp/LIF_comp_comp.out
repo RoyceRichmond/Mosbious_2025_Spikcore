@@ -41,9 +41,86 @@ Circuit 1: cap_mim_2f0_m4m5_noshield       |Circuit 2: cap_mim_2f0fF
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes cap_mim_2f0_m4m5_noshield and cap_mim_2f0fF are equivalent.
-Flattening unmatched subcell pfet$26 in circuit switch (0)(2 instances)
-Flattening unmatched subcell nfet$42 in circuit switch (0)(2 instances)
-Flattening unmatched subcell not in circuit switch (1)(1 instance)
+Flattening unmatched subcell pfet$10 in circuit not$3 (0)(1 instance)
+Flattening unmatched subcell nfet$53 in circuit not$3 (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: not$3                           |Circuit 2: not                             
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (1)                              |pfet_03v3 (1)                              
+nfet_03v3 (1)                              |nfet_03v3 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: not$3                           |Circuit 2: not                             
+-------------------------------------------|-------------------------------------------
+out                                        |out                                        
+in                                         |in                                         
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes not$3 and not are equivalent.
+Flattening unmatched subcell pfet$8 in circuit nand$1 (0)(1 instance)
+Flattening unmatched subcell nfet$52 in circuit nand$1 (0)(1 instance)
+Flattening unmatched subcell pfet$9 in circuit nand$1 (0)(1 instance)
+Flattening unmatched subcell nfet$51 in circuit nand$1 (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: nand$1                          |Circuit 2: nand                            
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (2)                              |pfet_03v3 (2)                              
+nfet_03v3 (2)                              |nfet_03v3 (2)                              
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: nand$1                          |Circuit 2: nand                            
+-------------------------------------------|-------------------------------------------
+Z                                          |Z                                          
+vss                                        |vss                                        
+vdd                                        |vdd                                        
+B                                          |B                                          
+A                                          |A                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nand$1 and nand are equivalent.
+Flattening unmatched subcell pfet$19 in circuit ota_1stage$1 (0)(2 instances)
+Flattening unmatched subcell nfet$32 in circuit ota_1stage$1 (0)(2 instances)
+Flattening unmatched subcell nfet$30 in circuit ota_1stage$1 (0)(1 instance)
+Flattening unmatched subcell nfet$31 in circuit ota_1stage$1 (0)(2 instances)
+
+Subcircuit summary:
+Circuit 1: ota_1stage$1                    |Circuit 2: ota_1stage                      
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (2)                              |pfet_03v3 (2)                              
+nfet_03v3 (5)                              |nfet_03v3 (5)                              
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: ota_1stage$1                    |Circuit 2: ota_1stage                      
+-------------------------------------------|-------------------------------------------
+vp                                         |vp                                         
+vn                                         |vn                                         
+vout                                       |vout                                       
+vss                                        |vss                                        
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ota_1stage$1 and ota_1stage are equivalent.
+Flattening unmatched subcell pfet$24 in circuit switch (0)(2 instances)
+Flattening unmatched subcell nfet$37 in circuit switch (0)(2 instances)
+
+Flattening instances of not in cell switch (1) makes a better match
+Making another compare attempt.
 
 Subcircuit summary:
 Circuit 1: switch                          |Circuit 2: switch                          
@@ -94,27 +171,18 @@ vss                                        |vss
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes nvdiv and nvdiv are equivalent.
-Flattening unmatched subcell cap_mim$2 in circuit monostable (0)(2 instances)
-Flattening unmatched subcell nfet$32 in circuit monostable (0)(2 instances)
-Flattening unmatched subcell not$1 in circuit monostable (0)(4 instances)
-Flattening unmatched subcell pfet$20 in circuit monostable (0)(4 instances)
-Flattening unmatched subcell nfet$31 in circuit monostable (0)(4 instances)
-Flattening unmatched subcell nand$1 in circuit monostable (0)(2 instances)
-Flattening unmatched subcell nfet$29 in circuit monostable (0)(2 instances)
-Flattening unmatched subcell pfet$19 in circuit monostable (0)(2 instances)
-Flattening unmatched subcell nfet$30 in circuit monostable (0)(2 instances)
-Flattening unmatched subcell pfet$18 in circuit monostable (0)(2 instances)
-Flattening unmatched subcell not in circuit monostable (1)(4 instances)
-Flattening unmatched subcell nand in circuit monostable (1)(2 instances)
+Flattening unmatched subcell nfet$54 in circuit monostable (0)(2 instances)
+Flattening unmatched subcell cap_mim$4 in circuit monostable (0)(2 instances)
 
 Subcircuit summary:
 Circuit 1: monostable                      |Circuit 2: monostable                      
 -------------------------------------------|-------------------------------------------
+nfet_03v3 (2)                              |nfet_03v3 (2)                              
 cap_mim_2f0_m4m5_noshield (2)              |cap_mim_2f0fF (2)                          
-nfet_03v3 (10)                             |nfet_03v3 (10)                             
-pfet_03v3 (8)                              |pfet_03v3 (8)                              
-Number of devices: 20                      |Number of devices: 20                      
-Number of nets: 14                         |Number of nets: 14                         
+not$3 (4)                                  |not (4)                                    
+nand$1 (2)                                 |nand (2)                                   
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 12                         |Number of nets: 12                         
 ---------------------------------------------------------------------------------------
 Netlists match uniquely.
 
@@ -122,19 +190,19 @@ Subcircuit pins:
 Circuit 1: monostable                      |Circuit 2: monostable                      
 -------------------------------------------|-------------------------------------------
 vdd                                        |vdd                                        
-vneg                                       |vneg                                       
-vres                                       |vres                                       
 vin                                        |vin                                        
 phi_2                                      |phi_2                                      
-vss                                        |vss                                        
+vres                                       |vres                                       
 phi_1                                      |phi_1                                      
+vneg                                       |vneg                                       
+vss                                        |vss                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes monostable and monostable are equivalent.
-Flattening unmatched subcell pfet$23 in circuit nor (0)(1 instance)
-Flattening unmatched subcell pfet$24 in circuit nor (0)(1 instance)
-Flattening unmatched subcell nfet$39 in circuit nor (0)(1 instance)
-Flattening unmatched subcell nfet$40 in circuit nor (0)(1 instance)
+Flattening unmatched subcell pfet$21 in circuit nor (0)(1 instance)
+Flattening unmatched subcell nfet$34 in circuit nor (0)(1 instance)
+Flattening unmatched subcell pfet$22 in circuit nor (0)(1 instance)
+Flattening unmatched subcell nfet$35 in circuit nor (0)(1 instance)
 
 Subcircuit summary:
 Circuit 1: nor                             |Circuit 2: nor                             
@@ -157,9 +225,11 @@ B                                          |B
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes nor and nor are equivalent.
-Flattening unmatched subcell nfet$43 in circuit conmutator (0)(3 instances)
-Flattening unmatched subcell pfet$27 in circuit conmutator (0)(3 instances)
-Flattening unmatched subcell not in circuit conmutator (1)(1 instance)
+Flattening unmatched subcell nfet$38 in circuit conmutator (0)(3 instances)
+Flattening unmatched subcell pfet$25 in circuit conmutator (0)(3 instances)
+
+Flattening instances of not in cell conmutator (1) makes a better match
+Making another compare attempt.
 
 Subcircuit summary:
 Circuit 1: conmutator                      |Circuit 2: conmutator                      
@@ -183,23 +253,17 @@ out                                        |out
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes conmutator and conmutator are equivalent.
-Flattening unmatched subcell nfet$38 in circuit refractory (0)(1 instance)
-Flattening unmatched subcell nfet$34 in circuit refractory (0)(1 instance)
-Flattening unmatched subcell ota_1stage$1 in circuit refractory (0)(1 instance)
-Flattening unmatched subcell pfet$21 in circuit refractory (0)(2 instances)
-Flattening unmatched subcell nfet$36 in circuit refractory (0)(2 instances)
-Flattening unmatched subcell nfet$37 in circuit refractory (0)(2 instances)
-Flattening unmatched subcell nfet$35 in circuit refractory (0)(1 instance)
-Flattening unmatched subcell nfet$33 in circuit refractory (0)(2 instances)
-Flattening unmatched subcell ota_1stage in circuit refractory (1)(1 instance)
+Flattening unmatched subcell nfet$29 in circuit refractory (0)(1 instance)
+Flattening unmatched subcell nfet$28 in circuit refractory (0)(2 instances)
+Flattening unmatched subcell nfet$33 in circuit refractory (0)(1 instance)
 
 Subcircuit summary:
 Circuit 1: refractory                      |Circuit 2: refractory                      
 -------------------------------------------|-------------------------------------------
-nfet_03v3 (9)                              |nfet_03v3 (9)                              
-pfet_03v3 (2)                              |pfet_03v3 (2)                              
-Number of devices: 11                      |Number of devices: 11                      
-Number of nets: 10                         |Number of nets: 10                         
+nfet_03v3 (4)                              |nfet_03v3 (4)                              
+ota_1stage$1 (1)                           |ota_1stage (1)                             
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 7                          |Number of nets: 7                          
 ---------------------------------------------------------------------------------------
 Netlists match uniquely.
 
@@ -207,28 +271,77 @@ Subcircuit pins:
 Circuit 1: refractory                      |Circuit 2: refractory                      
 -------------------------------------------|-------------------------------------------
 vrefrac                                    |vrefrac                                    
+vneg                                       |vneg                                       
+vspike_down                                |vspike_down                                
 vdd                                        |vdd                                        
 vss                                        |vss                                        
-vspike_down                                |vspike_down                                
-vneg                                       |vneg                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes refractory and refractory are equivalent.
-Flattening unmatched subcell pfet$16 in circuit ota_2stage (0)(1 instance)
-Flattening unmatched subcell nfet$27 in circuit ota_2stage (0)(1 instance)
-Flattening unmatched subcell nfet$25 in circuit ota_2stage (0)(2 instances)
-Flattening unmatched subcell pfet$15 in circuit ota_2stage (0)(2 instances)
-Flattening unmatched subcell cap_mim$1 in circuit ota_2stage (0)(1 instance)
-Flattening unmatched subcell nfet$28 in circuit ota_2stage (0)(1 instance)
-Flattening unmatched subcell nfet$26 in circuit ota_2stage (0)(1 instance)
-Flattening unmatched subcell nfet$24 in circuit ota_2stage (0)(1 instance)
+Flattening unmatched subcell pfet$23 in circuit not$2 (0)(1 instance)
+Flattening unmatched subcell nfet$36 in circuit not$2 (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: not$2                           |Circuit 2: not                             
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (1)                              |pfet_03v3 (1)                              
+nfet_03v3 (1)                              |nfet_03v3 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: not$2                           |Circuit 2: not                             
+-------------------------------------------|-------------------------------------------
+out                                        |out                                        
+in                                         |in                                         
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes not$2 and not are equivalent.
+Flattening unmatched subcell pfet in circuit ota_1stage$2 (0)(2 instances)
+Flattening unmatched subcell nfet$1 in circuit ota_1stage$2 (0)(2 instances)
+Flattening unmatched subcell nfet in circuit ota_1stage$2 (0)(1 instance)
+Flattening unmatched subcell nfet$2 in circuit ota_1stage$2 (0)(2 instances)
+
+Subcircuit summary:
+Circuit 1: ota_1stage$2                    |Circuit 2: ota_1stage                      
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (2)                              |pfet_03v3 (2)                              
+nfet_03v3 (5)                              |nfet_03v3 (5)                              
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: ota_1stage$2                    |Circuit 2: ota_1stage                      
+-------------------------------------------|-------------------------------------------
+vp                                         |vp                                         
+vn                                         |vn                                         
+vss                                        |vss                                        
+vout                                       |vout                                       
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ota_1stage$2 and ota_1stage are equivalent.
+Flattening unmatched subcell nfet$47 in circuit ota_2stage (0)(1 instance)
+Flattening unmatched subcell nfet$45 in circuit ota_2stage (0)(2 instances)
+Flattening unmatched subcell cap_mim$2 in circuit ota_2stage (0)(1 instance)
+Flattening unmatched subcell pfet$28 in circuit ota_2stage (0)(2 instances)
+Flattening unmatched subcell nfet$48 in circuit ota_2stage (0)(1 instance)
+Flattening unmatched subcell nfet$46 in circuit ota_2stage (0)(1 instance)
+Flattening unmatched subcell nfet$44 in circuit ota_2stage (0)(1 instance)
+Flattening unmatched subcell pfet$29 in circuit ota_2stage (0)(1 instance)
 
 Subcircuit summary:
 Circuit 1: ota_2stage                      |Circuit 2: ota_2stage                      
 -------------------------------------------|-------------------------------------------
-pfet_03v3 (3)                              |pfet_03v3 (8->3)                           
 nfet_03v3 (6)                              |nfet_03v3 (6)                              
 cap_mim_2f0_m4m5_noshield (1)              |cap_mim_2f0fF (1)                          
+pfet_03v3 (3)                              |pfet_03v3 (8->3)                           
 Number of devices: 10                      |Number of devices: 10                      
 Number of nets: 9                          |Number of nets: 9                          
 ---------------------------------------------------------------------------------------
@@ -237,18 +350,65 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: ota_2stage                      |Circuit 2: ota_2stage                      
 -------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+vout                                       |vout                                       
 vn                                         |vn                                         
 vp                                         |vp                                         
 vss                                        |vss                                        
-vout                                       |vout                                       
-vdd                                        |vdd                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes ota_2stage and ota_2stage are equivalent.
-Flattening unmatched subcell not$2 in circuit phaseUpulse (0)(1 instance)
-Flattening unmatched subcell nfet$41 in circuit phaseUpulse (0)(1 instance)
-Flattening unmatched subcell pfet$25 in circuit phaseUpulse (0)(1 instance)
-Flattening unmatched subcell not in circuit phaseUpulse (1)(1 instance)
+Flattening unmatched subcell pfet$6 in circuit switch$1 (0)(2 instances)
+Flattening unmatched subcell nfet$7 in circuit switch$1 (0)(2 instances)
+
+Subcircuit summary:
+Circuit 1: switch$1                        |Circuit 2: switch                          
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (2)                              |pfet_03v3 (2)                              
+nfet_03v3 (2)                              |nfet_03v3 (2)                              
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: switch$1                        |Circuit 2: switch                          
+-------------------------------------------|-------------------------------------------
+out                                        |out                                        
+in                                         |in                                         
+vdd                                        |vdd                                        
+cntrl                                      |cntrl                                      
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes switch$1 and switch are equivalent.
+Flattening unmatched subcell pfet$5 in circuit conmutator$1 (0)(3 instances)
+Flattening unmatched subcell nfet$6 in circuit conmutator$1 (0)(3 instances)
+
+Subcircuit summary:
+Circuit 1: conmutator$1                    |Circuit 2: conmutator                      
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (3)                              |pfet_03v3 (3)                              
+nfet_03v3 (3)                              |nfet_03v3 (3)                              
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: conmutator$1                    |Circuit 2: conmutator                      
+-------------------------------------------|-------------------------------------------
+in2                                        |in2                                        
+in1                                        |in1                                        
+vdd                                        |vdd                                        
+cntrl                                      |cntrl                                      
+vss                                        |vss                                        
+out                                        |out                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes conmutator$1 and conmutator are equivalent.
 
 Subcircuit summary:
 Circuit 1: phaseUpulse                     |Circuit 2: phaseUpulse                     
@@ -259,65 +419,151 @@ monostable (1)                             |monostable (1)
 nor (1)                                    |nor (1)                                    
 conmutator (1)                             |conmutator (1)                             
 refractory (1)                             |refractory (1)                             
-nfet_03v3 (1)                              |nfet_03v3 (1)                              
-pfet_03v3 (1)                              |pfet_03v3 (1)                              
-Number of devices: 10                      |Number of devices: 10                      
+not$2 (1)                                  |not (1)                                    
+Number of devices: 9                       |Number of devices: 9                       
 Number of nets: 16                         |Number of nets: 16                         
 ---------------------------------------------------------------------------------------
-Netlists match uniquely.
-
-Subcircuit pins:
+NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: phaseUpulse                     |Circuit 2: phaseUpulse                     
--------------------------------------------|-------------------------------------------
-reward                                     |reward                                     
-vin                                        |vin                                        
-phi_fire                                   |phi_fire                                   
-vref                                       |vref                                       
-vres                                       |vres                                       
-vss                                        |vss                                        
-vdd                                        |vdd                                        
-vspike                                     |vspike                                     
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes phaseUpulse and phaseUpulse are equivalent.
-Flattening unmatched subcell ota_1stage$2 in circuit LIF_comp (0)(1 instance)
-Flattening unmatched subcell pfet in circuit LIF_comp (0)(2 instances)
-Flattening unmatched subcell nfet$1 in circuit LIF_comp (0)(2 instances)
-Flattening unmatched subcell nfet in circuit LIF_comp (0)(1 instance)
-Flattening unmatched subcell nfet$2 in circuit LIF_comp (0)(2 instances)
-Flattening unmatched subcell nfet$50 in circuit LIF_comp (0)(1 instance)
-Flattening unmatched subcell switch$1 in circuit LIF_comp (0)(1 instance)
-Flattening unmatched subcell pfet$6 in circuit LIF_comp (0)(2 instances)
-Flattening unmatched subcell nfet$7 in circuit LIF_comp (0)(2 instances)
-Flattening unmatched subcell conmutator$1 in circuit LIF_comp (0)(3 instances)
-Flattening unmatched subcell pfet$5 in circuit LIF_comp (0)(9 instances)
-Flattening unmatched subcell nfet$6 in circuit LIF_comp (0)(9 instances)
-Flattening unmatched subcell cap_mim$3 in circuit LIF_comp (0)(1 instance)
-Flattening unmatched subcell ota_1stage in circuit LIF_comp (1)(1 instance)
 
-Flattening instances of conmutator in cell LIF_comp (1) makes a better match
+---------------------------------------------------------------------------------------
+Net: reward                                |Net: reward                                
+  conmutator/cntrl = 1                     |  conmutator/cntrl = 1                     
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vspike_up                             |Net: vspike_up                             
+  nvdiv/vspike_up = 1                      |  nvdiv/vspike_up = 1                      
+  conmutator/in1 = 1                       |  conmutator/in1 = 1                       
+                                           |                                           
+Net: vrefrac                               |Net: vrefrac                               
+  switch/out = 1                           |  switch/out = 1                           
+  refractory/vrefrac = 1                   |  refractory/vrefrac = 1                   
+                                           |                                           
+Net: vref                                  |Net: vref                                  
+  switch/out = 1                           |  switch/out = 1                           
+  nvdiv/vref = 1                           |  nvdiv/vref = 1                           
+                                           |                                           
+Net: switch_0/out                          |Net: net1                                  
+  switch/out = 1                           |  switch/out = 1                           
+  conmutator/out = 1                       |  conmutator/out = 1                       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vss                                   |Net: vss                                   
+  switch/vss = 3                           |  switch/vss = 3                           
+  nvdiv/vss = 1                            |  nvdiv/vss = 1                            
+  monostable/vss = 1                       |  monostable/vss = 1                       
+  nor/vss = 1                              |  nor/vss = 1                              
+  conmutator/vss = 1                       |  conmutator/vss = 1                       
+  refractory/vss = 1                       |  refractory/vss = 1                       
+  not$2/vss = 1                            |  not/vss = 1                              
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vdd                                   |Net: vdd                                   
+  switch/vdd = 3                           |  switch/vdd = 3                           
+  nvdiv/vdd = 1                            |  nvdiv/vdd = 1                            
+  monostable/vdd = 1                       |  monostable/vdd = 1                       
+  nor/vdd = 1                              |  nor/vdd = 1                              
+  conmutator/in2 = 1                       |  conmutator/in2 = 1                       
+  conmutator/vdd = 1                       |  conmutator/vdd = 1                       
+  refractory/vdd = 1                       |  refractory/vdd = 1                       
+  not$2/vdd = 1                            |  not/vdd = 1                              
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vspike                                |Net: vspike                                
+  switch/in = 3                            |  switch/in = 3                            
+                                           |                                           
+Net: phi_2                                 |Net: phi_2                                 
+  switch/cntrl = 1                         |  switch/cntrl = 1                         
+  monostable/phi_2 = 1                     |  monostable/phi_2 = 1                     
+  nor/B = 1                                |  nor/B = 1                                
+                                           |                                           
+Net: phi_1                                 |Net: phi_1                                 
+  switch/cntrl = 1                         |  switch/cntrl = 1                         
+  monostable/phi_1 = 1                     |  monostable/phi_1 = 1                     
+  nor/A = 1                                |  nor/A = 1                                
+                                           |                                           
+Net: phi_int                               |Net: phi_int                               
+  switch/cntrl = 1                         |  switch/cntrl = 1                         
+  nor/Z = 1                                |  nor/Z = 1                                
+  not$2/in = 1                             |  not/in = 1                               
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: phaseUpulse                     |Circuit 2: phaseUpulse                     
+
+---------------------------------------------------------------------------------------
+Instance: conmutator_0                     |Instance: conmutator:20                    
+  out = 2                                  |  out = 2                                  
+  in1 = 2                                  |  in1 = 2                                  
+  in2 = 10                                 |  in2 = 10                                 
+  cntrl = 1                                |  cntrl = 1                                
+  vdd = 10                                 |  vdd = 10                                 
+  vss = 9                                  |  vss = 9                                  
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: switch_2                         |Instance: switch:18                        
+  cntrl = 3                                |  out = 2                                  
+  in = 3                                   |  cntrl = 3                                
+  vdd = 10                                 |  in = 3                                   
+  vss = 9                                  |  vdd = 10                                 
+  out = 2                                  |  vss = 9                                  
+                                           |                                           
+Instance: switch_1                         |Instance: switch:10                        
+  cntrl = 3                                |  out = 2                                  
+  in = 3                                   |  cntrl = 3                                
+  vdd = 10                                 |  in = 3                                   
+  vss = 9                                  |  vdd = 10                                 
+  out = 2                                  |  vss = 9                                  
+                                           |                                           
+Instance: switch_0                         |Instance: switch:7                         
+  cntrl = 3                                |  out = 2                                  
+  in = 3                                   |  cntrl = 3                                
+  vdd = 10                                 |  in = 3                                   
+  vss = 9                                  |  vdd = 10                                 
+  out = 2                                  |  vss = 9                                  
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits phaseUpulse phaseUpulse
+Flattening unmatched subcell nfet$50 in circuit LIF_comp (0)(1 instance)
+Flattening unmatched subcell cap_mim$3 in circuit LIF_comp (0)(1 instance)
+
+Flattening instances of conmutator in cell LIF_comp (0) makes a better match
+Flattening instances of switch$1 in cell LIF_comp (0) makes a better match
 Flattening instances of switch in cell LIF_comp (1) makes a better match
+Flattening instances of conmutator$1 in cell LIF_comp (0) makes a better match
+Flattening instances of conmutator in cell LIF_comp (1) makes a better match
+Flattening instances of switch in cell LIF_comp (0) makes a better match
 Making another compare attempt.
 
 Subcircuit summary:
 Circuit 1: LIF_comp                        |Circuit 2: LIF_comp                        
 -------------------------------------------|-------------------------------------------
-pfet_03v3 (13)                             |pfet_03v3 (13)                             
-nfet_03v3 (17)                             |nfet_03v3 (17)                             
+ota_1stage$2 (1)                           |ota_1stage (1)                             
+nfet_03v3 (21)                             |nfet_03v3 (21)                             
 ota_2stage (1)                             |ota_2stage (1)                             
+pfet_03v3 (20)                             |pfet_03v3 (20)                             
 cap_mim_2f0_m4m5_noshield (1)              |cap_mim_2f0fF (1)                          
-phaseUpulse (1)                            |phaseUpulse (1)                            
-Number of devices: 33                      |Number of devices: 33                      
-Number of nets: 20                         |Number of nets: 20                         
+nvdiv (1)                                  |nvdiv (1)                                  
+monostable (1)                             |monostable (1)                             
+nor (1)                                    |nor (1)                                    
+refractory (1)                             |refractory (1)                             
+not$2 (1)                                  |not (1)                                    
+Number of devices: 49                      |Number of devices: 49                      
+Number of nets: 29                         |Number of nets: 29                         
 ---------------------------------------------------------------------------------------
 Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: LIF_comp                        |Circuit 2: LIF_comp                        
 -------------------------------------------|-------------------------------------------
-v_rew                                      |v_rew                                      
-vout                                       |vout                                       
 vss                                        |vss                                        
+vout                                       |vout                                       
+v_rew                                      |v_rew                                      
 vin                                        |vin                                        
 vdd                                        |vdd                                        
 ---------------------------------------------------------------------------------------
