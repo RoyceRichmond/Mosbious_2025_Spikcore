@@ -78,3 +78,15 @@ Documentation on the pads and config can be found [here](https://gf180mcu-pdk.re
 
 Report on the padring on the [chipathon 2023](https://docs.google.com/presentation/d/1bg6gA1EwBESlcAxqpyheD7kwKJdteA6P6Jksey-j1Jw/edit?slide=id.p#slide=id.p)
 
+
+## verification
+
+| Table  | Description                         |
+|--------|-------------------------------------|
+| geom | GEOMETRY RULES      |
+
+```
+python3 run_drc.py --path=/foss/designs/Integration_padframe_2025_sscs/Padframe_submission/Chipathon2025_3_padring_integrated.gds --variant=D --run_dir=/foss/designs/tp/ --mp=8 --thr=12 --run_mode=tiling --no_connectivity --table=geom
+```
+
+
