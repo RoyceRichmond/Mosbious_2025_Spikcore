@@ -1,4 +1,19 @@
 
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
 Circuit 1 cell pfet_05v0 and Circuit 2 cell pfet_06v0 are black boxes.
 Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
 Warning: Equate pins:  cell pfet_06v0 is a placeholder, treated as a black box.
@@ -44,21 +59,6 @@ Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3
 Cell pin lists are equivalent.
 Device classes nfet_03v3 and nfet_03v3 are equivalent.
 
-Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
-Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
--------------------------------------------|-------------------------------------------
-1                                          |1                                          
-2                                          |2                                          
-3                                          |3                                          
-4                                          |4                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes pfet_03v3 and pfet_03v3 are equivalent.
-
 Subcircuit summary:
 Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
 -------------------------------------------|-------------------------------------------
@@ -81,16 +81,16 @@ I                                          |I
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
+Flattening unmatched subcell pfet in circuit swmatrix_Tgate (0)(1 instance)
 Flattening unmatched subcell nfet in circuit swmatrix_Tgate (0)(1 instance)
-Flattening unmatched subcell pfet$1 in circuit swmatrix_Tgate (0)(1 instance)
 
-Class swmatrix_Tgate (0):  Merged 22 parallel devices.
+Class swmatrix_Tgate (0):  Merged 21 parallel devices.
 Subcircuit summary:
 Circuit 1: swmatrix_Tgate                  |Circuit 2: swmatrix_Tgate                  
 -------------------------------------------|-------------------------------------------
+pfet_03v3 (17->1)                          |pfet_03v3 (1)                              
 gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         |gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         
 nfet_03v3 (6->1)                           |nfet_03v3 (1)                              
-pfet_03v3 (18->1)                          |pfet_03v3 (1)                              
 Number of devices: 3                       |Number of devices: 3                       
 Number of nets: 6                          |Number of nets: 6                          
 ---------------------------------------------------------------------------------------
