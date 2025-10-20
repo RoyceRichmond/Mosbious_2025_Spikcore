@@ -40,15 +40,8 @@ xFF[10] Q[10] Q[9] PHI_1 gc[10] PHI_2 EN VDD VSS DFF_2phase_1
 ** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/switch_matrix_gf180mcu_9t5v0/swmatrix_Tgate/swmatrix_Tgate.sch
 .subckt swmatrix_Tgate gated_control T2 T1 VSS VDD
 *.PININFO T1:B T2:B VDD:B VSS:B gated_control:I
-M1 T1 gated_control T2 VSS nfet_03v3 L=0.28u W=mn_w nf=6 m=1
-M2 T1 gated_controlb T2 VDD pfet_03v3 L=0.28u W=mp_w nf=6 m=1
-**** begin user architecture code
-
-
-.param mn_w=24u
-.param mp_w=72u
-
-**** end user architecture code
+XM1 T1 gated_control T2 VSS nfet_03v3 L=0.28u W=24u nf=6 m=1
+XM2 T1 gated_controlb T2 VDD pfet_03v3 L=0.28u W=68u nf=6 m=1
 x1 gated_control gated_controlb VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
 .ends
 
