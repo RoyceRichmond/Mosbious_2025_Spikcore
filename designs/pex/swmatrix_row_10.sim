@@ -1,0 +1,1427 @@
+| units: 0.5 tech: gf180mcuD format: MIT
+x swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[5] vdd s=41600,904 d=41600,904 l=56 w=800 x=29516 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd swmatrix_Tgate_3.gated_control vdd s=32208,908 d=32208,908 l=100 w=366 x=49060 y=2043 pfet_05v0
+x a_51256_2002# a_51116_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=51256 y=2046 pfet_05v0
+x a_25952_2122# vss a_26296_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=26560 y=1577 nfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss a_34508_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=34388 y=1577 nfet_05v0
+x swmatrix_Tgate_3.gated_control pin BUS[8] vss s=41600,904 d=41600,904 l=56 w=800 x=44892 y=242 nfet_03v3
+x a_52392_1562# a_53376_2122# a_53620_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=53500 y=1577 nfet_05v0
+x swmatrix_Tgate_9.gated_control BUS[1] pin vss s=41600,904 d=97600,1844 l=56 w=800 x=1600 y=242 nfet_03v3
+x a_6248_1562# vss a_6716_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=6596 y=1580 nfet_05v0
+x swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[3] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=15596 y=243 pfet_03v3
+x swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[1] vdd s=41600,904 d=41600,904 l=56 w=800 x=4784 y=243 pfet_03v3
+x phi_2 a_39912_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=40020 y=2043 pfet_05v0
+x swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[8] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=48076 y=243 pfet_03v3
+x swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[6] pin vdd s=41600,904 d=104000,1860 l=56 w=800 x=36236 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.Q[1] vss a_4921_1539# vss s=23232,704 d=8448,328 l=120 w=264 x=4801 y=1539 nfet_05v0
+x swmatrix_Tgate_5.gated_control swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=25280 y=211 pfet_05v0
+x swmatrix_Tgate_2.gated_control BUS[10] pin vss s=41600,904 d=41600,904 l=56 w=800 x=57212 y=242 nfet_03v3
+x a_45016_2002# a_44916_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=45056 y=1577 nfet_05v0
+x a_3456_2122# ShiftReg_row_10_2$1_0.Q[1] vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=4432 y=2043 pfet_05v0
+x a_38776_2002# a_38676_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=38816 y=1577 nfet_05v0
+x enable a_11161_1539# ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss s=8448,328 d=23232,704 l=120 w=264 x=11225 y=1539 nfet_05v0
+x swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[8] vdd s=41600,904 d=41600,904 l=56 w=800 x=48556 y=243 pfet_03v3
+x a_43688_1562# vss a_44156_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=44036 y=1580 nfet_05v0
+x a_12488_1562# a_13324_2122# a_13472_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=13372 y=2122 pfet_05v0
+x ShiftReg_row_10_2$1_0.Q[3] vdd a_19564_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=19464 y=2122 pfet_05v0
+x a_53720_2002# a_53580_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=53720 y=2046 pfet_05v0
+x swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[2] vdd s=41600,904 d=41600,904 l=56 w=800 x=10476 y=243 pfet_03v3
+x phi_1 a_56168_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=56256 y=1562 nfet_05v0
+x enable ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd vdd s=17108,433 d=28952,834 l=100 w=329 x=5005 y=2043 pfet_05v0
+x a_25436_1580# a_25952_2122# a_26156_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=26056 y=2122 pfet_05v0
+x a_56168_1562# vdd a_56636_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=56536 y=2119 pfet_05v0
+x a_19196_1580# a_19712_2122# a_19916_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=19816 y=2122 pfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd swmatrix_Tgate_7.gated_control vdd s=32208,908 d=32208,908 l=100 w=366 x=24100 y=2043 pfet_05v0
+x swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[4] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=22796 y=243 pfet_03v3
+x swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[1] vdd s=41600,904 d=41600,904 l=56 w=800 x=3184 y=243 pfet_03v3
+x swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[2] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=10956 y=243 pfet_03v3
+x phi_1 a_12488_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=12596 y=2043 pfet_05v0
+x a_7232_2122# vdd a_7576_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=7780 y=2046 pfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd swmatrix_Tgate_2.gated_control vdd s=32208,908 d=32208,908 l=100 w=366 x=61540 y=2043 pfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss swmatrix_Tgate_1.gated_control vss s=23232,704 d=23232,704 l=120 w=264 x=55280 y=1539 nfet_05v0
+x a_47480_2002# a_47380_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=47520 y=1577 nfet_05v0
+x phi_1 a_8_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=116 y=2043 pfet_05v0
+x swmatrix_Tgate_2.gated_control swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vss vss s=23232,704 d=23232,704 l=120 w=264 x=56480 y=817 nfet_05v0
+x swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[1] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=3664 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.Q[8] vss a_48601_1539# vss s=23232,704 d=8448,328 l=120 w=264 x=48481 y=1539 nfet_05v0
+x a_46152_1562# vss a_46620_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=46500 y=1580 nfet_05v0
+x swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[6] vdd s=41600,904 d=41600,904 l=56 w=800 x=35116 y=243 pfet_03v3
+x phi_2 a_58632_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=58720 y=1562 nfet_05v0
+x a_33672_1562# a_34656_2122# a_34900_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=34780 y=1577 nfet_05v0
+x a_27900_1580# a_28416_2122# a_28620_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=28520 y=2122 pfet_05v0
+x swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[3] pin vdd s=104000,1860 d=41600,904 l=56 w=800 x=14956 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.Q[5] vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd s=28952,834 d=17108,433 l=100 w=329 x=29761 y=2043 pfet_05v0
+x a_32192_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss vss s=23232,704 d=23232,704 l=120 w=264 x=33168 y=1539 nfet_05v0
+x swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[10] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=59276 y=243 pfet_03v3
+x a_25952_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss vss s=23232,704 d=23232,704 l=120 w=264 x=26928 y=1539 nfet_05v0
+x swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[8] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=47436 y=243 pfet_03v3
+x swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[4] pin vdd s=104000,1860 d=41600,904 l=56 w=800 x=21196 y=243 pfet_03v3
+x a_44672_2122# vdd a_45016_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=45220 y=2046 pfet_05v0
+x phi_1 a_8_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=96 y=1562 nfet_05v0
+x swmatrix_Tgate_1.gated_control BUS[9] pin vss s=41600,904 d=41600,904 l=56 w=800 x=50972 y=242 nfet_03v3
+x swmatrix_Tgate_4.gated_control swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=12800 y=211 pfet_05v0
+x phi_2 a_2472_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=2560 y=1562 nfet_05v0
+x a_13472_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=14448 y=2043 pfet_05v0
+x ShiftReg_row_10_2$1_0.Q[5] vdd a_32044_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=31944 y=2122 pfet_05v0
+x swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[10] vdd s=41600,904 d=41600,904 l=56 w=800 x=59756 y=243 pfet_03v3
+x swmatrix_Tgate_8.gated_control swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vss vss s=23232,704 d=23232,704 l=120 w=264 x=6560 y=817 nfet_05v0
+x a_2472_1562# vdd a_2940_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=2840 y=2119 pfet_05v0
+x swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[8] vdd s=41600,904 d=41600,904 l=56 w=800 x=47916 y=243 pfet_03v3
+x a_52860_1580# a_53228_1577# a_53376_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=53276 y=1577 nfet_05v0
+x swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[4] vdd s=41600,904 d=41600,904 l=56 w=800 x=21676 y=243 pfet_03v3
+x swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[9] vdd s=41600,904 d=41600,904 l=56 w=800 x=54156 y=243 pfet_03v3
+x swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[7] vdd s=41600,904 d=41600,904 l=56 w=800 x=42316 y=243 pfet_03v3
+x a_50912_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=51888 y=2043 pfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss swmatrix_Tgate_5.gated_control vss s=23232,704 d=23232,704 l=120 w=264 x=30320 y=1539 nfet_05v0
+x swmatrix_Tgate_4.gated_control pin BUS[3] vss s=41600,904 d=41600,904 l=56 w=800 x=13692 y=242 nfet_03v3
+x a_28416_2122# vss a_28760_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=29024 y=1577 nfet_05v0
+x swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[6] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=33996 y=243 pfet_03v3
+x swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[2] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=9356 y=243 pfet_03v3
+x swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[1] vdd s=41600,904 d=41600,904 l=56 w=800 x=2544 y=243 pfet_03v3
+x a_47136_2122# vdd a_47480_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=47684 y=2046 pfet_05v0
+x a_34656_2122# ShiftReg_row_10_2$1_0.Q[6] vss vss s=23232,704 d=23232,704 l=120 w=264 x=35632 y=1539 nfet_05v0
+x ShiftReg_row_10_2$1_0.Q[4] vss a_23641_1539# vss s=23232,704 d=8448,328 l=120 w=264 x=23521 y=1539 nfet_05v0
+x phi_2 a_39912_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=40000 y=1562 nfet_05v0
+x swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[9] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=54636 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.Q[1] vss a_7084_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=6964 y=1577 nfet_05v0
+x a_992_2122# vss a_1336_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=1600 y=1577 nfet_05v0
+x a_22176_2122# ShiftReg_row_10_2$1_0.Q[4] vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=23152 y=2043 pfet_05v0
+x ShiftReg_row_10_2$1_0.Q[2] vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd s=28952,834 d=17108,433 l=100 w=329 x=11041 y=2043 pfet_05v0
+x a_15936_2122# ShiftReg_row_10_2$1_0.Q[3] vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=16912 y=2043 pfet_05v0
+x swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[2] vdd s=41600,904 d=41600,904 l=56 w=800 x=9836 y=243 pfet_03v3
+x d_out vss a_61081_1539# vss s=23232,704 d=8448,328 l=120 w=264 x=60961 y=1539 nfet_05v0
+x swmatrix_Tgate_5.gated_control BUS[5] pin vss s=41600,904 d=41600,904 l=56 w=800 x=26012 y=242 nfet_03v3
+x swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[8] vdd s=41600,904 d=41600,904 l=56 w=800 x=46316 y=243 pfet_03v3
+x a_27432_1562# vss a_27900_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=27780 y=1580 nfet_05v0
+x swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[5] vdd s=41600,904 d=41600,904 l=56 w=800 x=29196 y=243 pfet_03v3
+x swmatrix_Tgate_1.gated_control swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vss vss s=23232,704 d=23232,704 l=120 w=264 x=50240 y=817 nfet_05v0
+x swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[3] vdd s=41600,904 d=41600,904 l=56 w=800 x=17356 y=243 pfet_03v3
+x a_59616_2122# d_out vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=60592 y=2043 pfet_05v0
+x a_31676_1580# a_32044_1577# a_32192_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=32092 y=1577 nfet_05v0
+x a_25436_1580# a_25804_1577# a_25952_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=25852 y=1577 nfet_05v0
+x swmatrix_Tgate_0.gated_control pin BUS[7] vss s=97600,1844 d=41600,904 l=56 w=800 x=38332 y=242 nfet_03v3
+x swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[10] pin vdd s=104000,1860 d=41600,904 l=56 w=800 x=58636 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.Q[7] vss a_44524_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=44404 y=1577 nfet_05v0
+x swmatrix_Tgate_9.gated_control BUS[1] pin vss s=41600,904 d=41600,904 l=56 w=800 x=1280 y=242 nfet_03v3
+x phi_1 a_49928_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=50036 y=2043 pfet_05v0
+x enable ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd vdd s=17108,433 d=28952,834 l=100 w=329 x=61165 y=2043 pfet_05v0
+x swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[5] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=29676 y=243 pfet_03v3
+x enable ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd vdd s=17108,433 d=28952,834 l=100 w=329 x=54925 y=2043 pfet_05v0
+x enable a_48601_1539# ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss s=8448,328 d=23232,704 l=120 w=264 x=48665 y=1539 nfet_05v0
+x phi_1 a_12488_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=12576 y=1562 nfet_05v0
+x swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[9] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=53036 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd a_59468_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=59368 y=2122 pfet_05v0
+x a_52392_1562# a_53228_2122# a_53376_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=53276 y=2122 pfet_05v0
+x swmatrix_Tgate_0.gated_control BUS[7] pin vss s=41600,904 d=41600,904 l=56 w=800 x=38812 y=242 nfet_03v3
+x a_12488_1562# vdd a_12956_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=12856 y=2119 pfet_05v0
+x a_22176_2122# vdd a_22520_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=22724 y=2046 pfet_05v0
+x swmatrix_Tgate_3.gated_control BUS[8] pin vss s=41600,904 d=41600,904 l=56 w=800 x=45052 y=242 nfet_03v3
+x swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[9] vdd s=41600,904 d=41600,904 l=56 w=800 x=53516 y=243 pfet_03v3
+x a_44672_2122# vss a_45016_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=45280 y=1577 nfet_05v0
+x swmatrix_Tgate_5.gated_control swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vss vss s=23232,704 d=23232,704 l=120 w=264 x=25280 y=817 nfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss a_46988_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=46868 y=1577 nfet_05v0
+x a_40896_2122# vss a_41240_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=41504 y=1577 nfet_05v0
+x D_in vdd a_844_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=744 y=2122 pfet_05v0
+x a_10040_2002# a_9940_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=10080 y=1577 nfet_05v0
+x swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[2] pin vdd s=104000,1860 d=41600,904 l=56 w=800 x=8716 y=243 pfet_03v3
+x swmatrix_Tgate_2.gated_control pin BUS[10] vss s=41600,904 d=41600,904 l=56 w=800 x=57372 y=242 nfet_03v3
+x phi_2 a_52392_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=52500 y=2043 pfet_05v0
+x phi_2 a_21192_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=21280 y=1562 nfet_05v0
+x a_35000_2002# a_34860_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=35000 y=2046 pfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd swmatrix_Tgate_9.gated_control vdd s=32208,908 d=32208,908 l=100 w=366 x=5380 y=2043 pfet_05v0
+x swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[5] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=28076 y=243 pfet_03v3
+x swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[3] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=16236 y=243 pfet_03v3
+x a_21192_1562# vdd a_21660_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=21560 y=2119 pfet_05v0
+x swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[10] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=60236 y=243 pfet_03v3
+x swmatrix_Tgate_2.gated_control BUS[10] pin vss s=41600,904 d=97600,1844 l=56 w=800 x=57852 y=242 nfet_03v3
+x a_57496_2002# a_57396_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=57536 y=1577 nfet_05v0
+x ShiftReg_row_10_2$1_0.Q[6] vdd a_38284_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=38184 y=2122 pfet_05v0
+x ShiftReg_row_10_2$1_0.Q[1] vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd s=28952,834 d=17108,433 l=100 w=329 x=4801 y=2043 pfet_05v0
+x enable a_23641_1539# ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss s=8448,328 d=23232,704 l=120 w=264 x=23705 y=1539 nfet_05v0
+x a_31208_1562# a_32044_2122# a_32192_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=32092 y=2122 pfet_05v0
+x a_56168_1562# vss a_56636_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=56516 y=1580 nfet_05v0
+x a_8712_1562# vdd a_9180_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=9080 y=2119 pfet_05v0
+x a_24968_1562# a_25804_2122# a_25952_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=25852 y=2122 pfet_05v0
+x swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[5] vdd s=41600,904 d=41600,904 l=56 w=800 x=28556 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd a_34508_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=34408 y=2122 pfet_05v0
+x swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[3] vdd s=41600,904 d=41600,904 l=56 w=800 x=16716 y=243 pfet_03v3
+x swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[10] vdd s=41600,904 d=41600,904 l=56 w=800 x=60716 y=243 pfet_03v3
+x a_43688_1562# a_44672_2122# a_44916_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=44796 y=1577 nfet_05v0
+x a_37916_1580# a_38432_2122# a_38636_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=38536 y=2122 pfet_05v0
+x swmatrix_Tgate_8.gated_control pin BUS[2] vss s=41600,904 d=41600,904 l=56 w=800 x=7452 y=242 nfet_03v3
+x swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[2] vdd s=41600,904 d=41600,904 l=56 w=800 x=11116 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.Q[4] vss a_25804_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=25684 y=1577 nfet_05v0
+x a_1336_2002# a_1236_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=1376 y=1577 nfet_05v0
+x a_19712_2122# vss a_20056_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=20320 y=1577 nfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss a_22028_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=21908 y=1577 nfet_05v0
+x swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[6] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=35276 y=243 pfet_03v3
+x a_14952_1562# a_15936_2122# a_16180_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=16060 y=1577 nfet_05v0
+x swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[4] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=23436 y=243 pfet_03v3
+x swmatrix_Tgate_8.gated_control BUS[2] pin vss s=41600,904 d=97600,1844 l=56 w=800 x=7932 y=242 nfet_03v3
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss a_9548_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=9428 y=1577 nfet_05v0
+x swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[8] vdd s=41600,904 d=41600,904 l=56 w=800 x=47596 y=243 pfet_03v3
+x swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[6] vdd s=41600,904 d=41600,904 l=56 w=800 x=35756 y=243 pfet_03v3
+x swmatrix_Tgate_4.gated_control swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vss vss s=23232,704 d=23232,704 l=120 w=264 x=12800 y=817 nfet_05v0
+x swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[3] vdd s=41600,904 d=41600,904 l=56 w=800 x=15116 y=243 pfet_03v3
+x swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[1] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=4304 y=243 pfet_03v3
+x a_46620_1580# a_47136_2122# a_47340_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=47240 y=2122 pfet_05v0
+x a_22176_2122# vss a_22520_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=22784 y=1577 nfet_05v0
+x ShiftReg_row_10_2$1_0.Q[8] vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd s=28952,834 d=17108,433 l=100 w=329 x=48481 y=2043 pfet_05v0
+x ShiftReg_row_10_2$1_0.Q[2] vdd a_13324_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=13224 y=2122 pfet_05v0
+x a_44672_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss vss s=23232,704 d=23232,704 l=120 w=264 x=45648 y=1539 nfet_05v0
+x a_3800_2002# a_3700_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=3840 y=1577 nfet_05v0
+x phi_2 a_33672_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=33780 y=2043 pfet_05v0
+x phi_1 a_49928_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=50016 y=1562 nfet_05v0
+x a_27900_1580# a_28268_1577# a_28416_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=28316 y=1577 nfet_05v0
+x swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[5] pin vdd s=104000,1860 d=41600,904 l=56 w=800 x=27436 y=243 pfet_03v3
+x a_57152_2122# vdd a_57496_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=57700 y=2046 pfet_05v0
+x a_2472_1562# vss a_2940_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=2820 y=1580 nfet_05v0
+x a_16280_2002# a_16140_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=16280 y=2046 pfet_05v0
+x swmatrix_Tgate_1.gated_control pin BUS[9] vss s=41600,904 d=41600,904 l=56 w=800 x=51132 y=242 nfet_03v3
+x a_32192_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=33168 y=2043 pfet_05v0
+x a_25952_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=26928 y=2043 pfet_05v0
+x ShiftReg_row_10_2$1_0.Q[8] vdd a_50764_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=50664 y=2122 pfet_05v0
+x swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[7] pin vdd s=41600,904 d=104000,1860 l=56 w=800 x=42476 y=243 pfet_03v3
+x a_18728_1562# vdd a_19196_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=19096 y=2119 pfet_05v0
+x a_6248_1562# a_7232_2122# a_7476_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=7356 y=1577 nfet_05v0
+x swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[5] vdd s=41600,904 d=41600,904 l=56 w=800 x=27916 y=243 pfet_03v3
+x a_37448_1562# vss a_37916_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=37796 y=1580 nfet_05v0
+x swmatrix_Tgate_1.gated_control BUS[9] pin vss s=41600,904 d=97600,1844 l=56 w=800 x=51612 y=242 nfet_03v3
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd a_15788_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=15688 y=2122 pfet_05v0
+x a_992_2122# vdd a_1336_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=1540 y=2046 pfet_05v0
+x swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[9] vdd s=41600,904 d=41600,904 l=56 w=800 x=54796 y=243 pfet_03v3
+x swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[6] vdd s=41600,904 d=41600,904 l=56 w=800 x=34156 y=243 pfet_03v3
+x swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[4] vdd s=41600,904 d=41600,904 l=56 w=800 x=22316 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss swmatrix_Tgate_0.gated_control vss s=23232,704 d=23232,704 l=120 w=264 x=42800 y=1539 nfet_05v0
+x swmatrix_Tgate_7.gated_control pin BUS[4] vss s=41600,904 d=41600,904 l=56 w=800 x=19932 y=242 nfet_03v3
+x a_53376_2122# ShiftReg_row_10_2$1_0.Q[9] vss vss s=23232,704 d=23232,704 l=120 w=264 x=54352 y=1539 nfet_05v0
+x swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[2] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=9996 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.Q[7] vss a_42361_1539# vss s=23232,704 d=8448,328 l=120 w=264 x=42241 y=1539 nfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd swmatrix_Tgate_4.gated_control vdd s=32208,908 d=32208,908 l=100 w=366 x=17860 y=2043 pfet_05v0
+x swmatrix_Tgate_5.gated_control pin BUS[5] vss s=41600,904 d=41600,904 l=56 w=800 x=26172 y=242 nfet_03v3
+x swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[8] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=46476 y=243 pfet_03v3
+x swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[6] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=34636 y=243 pfet_03v3
+x a_34656_2122# ShiftReg_row_10_2$1_0.Q[6] vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=35632 y=2043 pfet_05v0
+x a_7576_2002# a_7436_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=7576 y=2046 pfet_05v0
+x ShiftReg_row_10_2$1_0.Q[4] vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd s=28952,834 d=17108,433 l=100 w=329 x=23521 y=2043 pfet_05v0
+x swmatrix_Tgate_9.gated_control pin BUS[1] vss s=97600,1844 d=41600,904 l=56 w=800 x=800 y=242 nfet_03v3
+x a_8712_1562# a_9696_2122# a_9940_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=9820 y=1577 nfet_05v0
+x swmatrix_Tgate_0.gated_control BUS[7] pin vss s=41600,904 d=41600,904 l=56 w=800 x=38492 y=242 nfet_03v3
+x swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[10] vdd s=41600,904 d=41600,904 l=56 w=800 x=58796 y=243 pfet_03v3
+x swmatrix_Tgate_5.gated_control BUS[5] pin vss s=41600,904 d=97600,1844 l=56 w=800 x=26652 y=242 nfet_03v3
+x enable ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd vdd s=17108,433 d=28952,834 l=100 w=329 x=36205 y=2043 pfet_05v0
+x swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[8] vdd s=41600,904 d=41600,904 l=56 w=800 x=46956 y=243 pfet_03v3
+x a_7232_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss vss s=23232,704 d=23232,704 l=120 w=264 x=8208 y=1539 nfet_05v0
+x d_out vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd s=28952,834 d=17108,433 l=100 w=329 x=60961 y=2043 pfet_05v0
+x a_44156_1580# a_44524_1577# a_44672_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=44572 y=1577 nfet_05v0
+x a_20056_2002# a_19956_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=20096 y=1577 nfet_05v0
+x a_27432_1562# a_28268_2122# a_28416_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=28316 y=2122 pfet_05v0
+x swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[9] vdd s=41600,904 d=41600,904 l=56 w=800 x=53196 y=243 pfet_03v3
+x swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[7] vdd s=41600,904 d=41600,904 l=56 w=800 x=41356 y=243 pfet_03v3
+x a_13816_2002# a_13716_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=13856 y=1577 nfet_05v0
+x swmatrix_Tgate_0.gated_control pin BUS[7] vss s=41600,904 d=41600,904 l=56 w=800 x=38972 y=242 nfet_03v3
+x a_12488_1562# vss a_12956_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=12836 y=1580 nfet_05v0
+x phi_1 a_31208_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=31296 y=1562 nfet_05v0
+x a_45016_2002# a_44876_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=45016 y=2046 pfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss a_28268_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=28148 y=1577 nfet_05v0
+x a_38432_2122# vdd a_38776_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=38980 y=2046 pfet_05v0
+x swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[9] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=53676 y=243 pfet_03v3
+x a_31208_1562# vdd a_31676_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=31576 y=2119 pfet_05v0
+x swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[7] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=41836 y=243 pfet_03v3
+x a_40896_2122# vdd a_41240_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=41444 y=2046 pfet_05v0
+x swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[2] vdd s=41600,904 d=41600,904 l=56 w=800 x=8876 y=243 pfet_03v3
+x a_57152_2122# vss a_57496_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=57760 y=1577 nfet_05v0
+x a_59616_2122# vss a_59960_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=60224 y=1577 nfet_05v0
+x enable a_4921_1539# ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss s=8448,328 d=23232,704 l=120 w=264 x=4985 y=1539 nfet_05v0
+x a_22520_2002# a_22420_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=22560 y=1577 nfet_05v0
+x swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[3] vdd s=41600,904 d=41600,904 l=56 w=800 x=16396 y=243 pfet_03v3
+x swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[10] vdd s=41600,904 d=41600,904 l=56 w=800 x=60396 y=243 pfet_03v3
+x a_21192_1562# vss a_21660_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=21540 y=1580 nfet_05v0
+x phi_2 a_33672_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=33760 y=1562 nfet_05v0
+x a_39912_1562# vdd a_40380_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=40280 y=2119 pfet_05v0
+x a_8712_1562# vss a_9180_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=9060 y=1580 nfet_05v0
+x a_24968_1562# a_25952_2122# a_26196_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=26076 y=1577 nfet_05v0
+x swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[3] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=16876 y=243 pfet_03v3
+x a_18728_1562# a_19712_2122# a_19956_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=19836 y=1577 nfet_05v0
+x swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[7] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=40236 y=243 pfet_03v3
+x swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[10] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=60876 y=243 pfet_03v3
+x enable a_42361_1539# ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss s=8448,328 d=23232,704 l=120 w=264 x=42425 y=1539 nfet_05v0
+x a_6716_1580# a_7084_1577# a_7232_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=7132 y=1577 nfet_05v0
+x a_19712_2122# vdd a_20056_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=20260 y=2046 pfet_05v0
+x swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[2] pin vdd s=41600,904 d=104000,1860 l=56 w=800 x=11276 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd a_53228_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=53128 y=2122 pfet_05v0
+x a_43688_1562# a_44524_2122# a_44672_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=44572 y=2122 pfet_05v0
+x enable ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd vdd s=17108,433 d=28952,834 l=100 w=329 x=17485 y=2043 pfet_05v0
+x swmatrix_Tgate_6.gated_control BUS[6] pin vss s=41600,904 d=41600,904 l=56 w=800 x=32252 y=242 nfet_03v3
+x swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[9] vdd s=41600,904 d=41600,904 l=56 w=800 x=52556 y=243 pfet_03v3
+x swmatrix_Tgate_7.gated_control BUS[4] pin vss s=41600,904 d=97600,1844 l=56 w=800 x=20412 y=242 nfet_03v3
+x a_56636_1580# a_57152_2122# a_57356_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=57256 y=2122 pfet_05v0
+x swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[7] vdd s=41600,904 d=41600,904 l=56 w=800 x=40716 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd swmatrix_Tgate_1.gated_control vdd s=32208,908 d=32208,908 l=100 w=366 x=55300 y=2043 pfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss swmatrix_Tgate_3.gated_control vss s=23232,704 d=23232,704 l=120 w=264 x=49040 y=1539 nfet_05v0
+x swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[4] vdd s=41600,904 d=41600,904 l=56 w=800 x=23596 y=243 pfet_03v3
+x a_3456_2122# vdd a_3800_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=4004 y=2046 pfet_05v0
+x a_32192_2122# vss a_32536_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=32800 y=1577 nfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss a_40748_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=40628 y=1577 nfet_05v0
+x phi_1 a_43688_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=43796 y=2043 pfet_05v0
+x swmatrix_Tgate_3.gated_control pin BUS[8] vss s=97600,1844 d=41600,904 l=56 w=800 x=44572 y=242 nfet_03v3
+x swmatrix_Tgate_9.gated_control swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=228 y=211 pfet_05v0
+x swmatrix_Tgate_6.gated_control pin BUS[6] vss s=41600,904 d=41600,904 l=56 w=800 x=32732 y=242 nfet_03v3
+x a_26296_2002# a_26156_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=26296 y=2046 pfet_05v0
+x a_9180_1580# a_9548_1577# a_9696_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=9596 y=1577 nfet_05v0
+x a_27432_1562# a_28416_2122# a_28660_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=28540 y=1577 nfet_05v0
+x swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[3] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=15276 y=243 pfet_03v3
+x a_58632_1562# vdd a_59100_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=59000 y=2119 pfet_05v0
+x swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[1] vdd s=41600,904 d=41600,904 l=56 w=800 x=4464 y=243 pfet_03v3
+x a_476_1580# a_992_2122# a_1196_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=1096 y=2122 pfet_05v0
+x a_9696_2122# ShiftReg_row_10_2$1_0.Q[2] vss vss s=23232,704 d=23232,704 l=120 w=264 x=10672 y=1539 nfet_05v0
+x phi_2 a_14952_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=15060 y=2043 pfet_05v0
+x a_8_1562# vdd a_476_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=376 y=2119 pfet_05v0
+x swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[5] vdd s=41600,904 d=41600,904 l=56 w=800 x=27596 y=243 pfet_03v3
+x swmatrix_Tgate_1.gated_control BUS[9] pin vss s=41600,904 d=41600,904 l=56 w=800 x=51292 y=242 nfet_03v3
+x swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[3] vdd s=41600,904 d=41600,904 l=56 w=800 x=15756 y=243 pfet_03v3
+x a_59100_1580# a_59616_2122# a_59820_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=59720 y=2122 pfet_05v0
+x swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[1] pin vdd s=41600,904 d=104000,1860 l=56 w=800 x=4944 y=243 pfet_03v3
+x swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[8] vdd s=41600,904 d=41600,904 l=56 w=800 x=48236 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.Q[4] vdd a_25804_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=25704 y=2122 pfet_05v0
+x a_46620_1580# a_46988_1577# a_47136_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=47036 y=1577 nfet_05v0
+x swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[2] vdd s=41600,904 d=41600,904 l=56 w=800 x=10156 y=243 pfet_03v3
+x a_18728_1562# vss a_19196_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=19076 y=1580 nfet_05v0
+x a_28760_2002# a_28620_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=28760 y=2046 pfet_05v0
+x a_6248_1562# a_7084_2122# a_7232_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=7132 y=2122 pfet_05v0
+x a_44672_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=45648 y=2043 pfet_05v0
+x a_2940_1580# a_3456_2122# a_3660_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=3560 y=2122 pfet_05v0
+x swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[8] pin vdd s=41600,904 d=104000,1860 l=56 w=800 x=48716 y=243 pfet_03v3
+x swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[4] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=22476 y=243 pfet_03v3
+x swmatrix_Tgate_0.gated_control swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=37760 y=211 pfet_05v0
+x swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[2] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=10636 y=243 pfet_03v3
+x a_992_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss vss s=23232,704 d=23232,704 l=120 w=264 x=1968 y=1539 nfet_05v0
+x a_59960_2002# a_59860_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=60000 y=1577 nfet_05v0
+x phi_1 a_6248_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=6356 y=2043 pfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss swmatrix_Tgate_2.gated_control vss s=23232,704 d=23232,704 l=120 w=264 x=61520 y=1539 nfet_05v0
+x swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[6] vdd s=41600,904 d=41600,904 l=56 w=800 x=34796 y=243 pfet_03v3
+x swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[1] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=3344 y=243 pfet_03v3
+x swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[4] vdd s=41600,904 d=41600,904 l=56 w=800 x=22956 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd swmatrix_Tgate_6.gated_control vdd s=32208,908 d=32208,908 l=100 w=366 x=36580 y=2043 pfet_05v0
+x ShiftReg_row_10_2$1_0.Q[9] vss a_54841_1539# vss s=23232,704 d=8448,328 l=120 w=264 x=54721 y=1539 nfet_05v0
+x a_8712_1562# a_9548_2122# a_9696_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=9596 y=2122 pfet_05v0
+x swmatrix_Tgate_9.gated_control BUS[1] pin vss s=41600,904 d=41600,904 l=56 w=800 x=960 y=242 nfet_03v3
+x a_40380_1580# a_40896_2122# a_41100_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=41000 y=2122 pfet_05v0
+x a_53376_2122# ShiftReg_row_10_2$1_0.Q[9] vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=54352 y=2043 pfet_05v0
+x swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[1] vdd s=41600,904 d=41600,904 l=56 w=800 x=3824 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.Q[7] vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd s=28952,834 d=17108,433 l=100 w=329 x=42241 y=2043 pfet_05v0
+x a_19196_1580# a_19564_1577# a_19712_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=19612 y=1577 nfet_05v0
+x swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[8] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=47116 y=243 pfet_03v3
+x a_3456_2122# vss a_3800_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=4064 y=1577 nfet_05v0
+x a_10040_2002# a_9900_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=10040 y=2046 pfet_05v0
+x a_58632_1562# vss a_59100_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=58980 y=1580 nfet_05v0
+x phi_2 a_8712_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=8820 y=2043 pfet_05v0
+x swmatrix_Tgate_0.gated_control BUS[7] pin vss s=41600,904 d=97600,1844 l=56 w=800 x=39132 y=242 nfet_03v3
+x a_46152_1562# a_46988_2122# a_47136_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=47036 y=2122 pfet_05v0
+x a_32536_2002# a_32436_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=32576 y=1577 nfet_05v0
+x swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[10] vdd s=41600,904 d=41600,904 l=56 w=800 x=59436 y=243 pfet_03v3
+x a_8_1562# a_992_2122# a_1236_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=1116 y=1577 nfet_05v0
+x swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[7] vdd s=41600,904 d=41600,904 l=56 w=800 x=41996 y=243 pfet_03v3
+x swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[4] vdd s=41600,904 d=41600,904 l=56 w=800 x=21356 y=243 pfet_03v3
+x a_31208_1562# vss a_31676_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=31556 y=1580 nfet_05v0
+x a_7232_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=8208 y=2043 pfet_05v0
+x phi_1 a_43688_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=43776 y=1562 nfet_05v0
+x a_38432_2122# vss a_38776_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=39040 y=1577 nfet_05v0
+x a_59616_2122# vdd a_59960_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=60164 y=2046 pfet_05v0
+x a_49928_1562# vdd a_50396_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=50296 y=2119 pfet_05v0
+x swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[10] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=59916 y=243 pfet_03v3
+x a_53376_2122# vdd a_53720_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=53924 y=2046 pfet_05v0
+x a_12956_1580# a_13472_2122# a_13676_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=13576 y=2122 pfet_05v0
+x swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[6] pin vdd s=104000,1860 d=41600,904 l=56 w=800 x=33676 y=243 pfet_03v3
+x swmatrix_Tgate_4.gated_control pin BUS[3] vss s=97600,1844 d=41600,904 l=56 w=800 x=13372 y=242 nfet_03v3
+x swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[2] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=9036 y=243 pfet_03v3
+x swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[4] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=21836 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd swmatrix_Tgate_8.gated_control vdd s=32208,908 d=32208,908 l=100 w=366 x=11620 y=2043 pfet_05v0
+x swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[9] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=54316 y=243 pfet_03v3
+x phi_2 a_14952_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=15040 y=1562 nfet_05v0
+x swmatrix_Tgate_6.gated_control swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=31520 y=211 pfet_05v0
+x a_1336_2002# a_1196_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=1336 y=2046 pfet_05v0
+x swmatrix_Tgate_4.gated_control BUS[3] pin vss s=41600,904 d=41600,904 l=56 w=800 x=13852 y=242 nfet_03v3
+x swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[2] vdd s=41600,904 d=41600,904 l=56 w=800 x=9516 y=243 pfet_03v3
+x a_41240_2002# a_41140_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=41280 y=1577 nfet_05v0
+x a_14952_1562# vdd a_15420_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=15320 y=2119 pfet_05v0
+x swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[1] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=2704 y=243 pfet_03v3
+x a_39912_1562# vss a_40380_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=40260 y=1580 nfet_05v0
+x swmatrix_Tgate_7.gated_control BUS[4] pin vss s=41600,904 d=41600,904 l=56 w=800 x=20092 y=242 nfet_03v3
+x swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[7] vdd s=41600,904 d=41600,904 l=56 w=800 x=40396 y=243 pfet_03v3
+x phi_2 a_52392_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=52480 y=1562 nfet_05v0
+x a_18728_1562# a_19564_2122# a_19712_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=19612 y=2122 pfet_05v0
+x swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[3] vdd s=41600,904 d=41600,904 l=56 w=800 x=17036 y=243 pfet_03v3
+x a_21660_1580# a_22176_2122# a_22380_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=22280 y=2122 pfet_05v0
+x swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[10] vdd s=41600,904 d=41600,904 l=56 w=800 x=61036 y=243 pfet_03v3
+x a_52392_1562# vdd a_52860_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=52760 y=2119 pfet_05v0
+x a_37448_1562# a_38432_2122# a_38676_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=38556 y=1577 nfet_05v0
+x a_19712_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss vss s=23232,704 d=23232,704 l=120 w=264 x=20688 y=1539 nfet_05v0
+x enable a_61081_1539# ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss s=8448,328 d=23232,704 l=120 w=264 x=61145 y=1539 nfet_05v0
+x swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[7] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=40876 y=243 pfet_03v3
+x enable a_54841_1539# ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss s=8448,328 d=23232,704 l=120 w=264 x=54905 y=1539 nfet_05v0
+x ShiftReg_row_10_2$1_0.Q[3] vss a_19564_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=19444 y=1577 nfet_05v0
+x swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[5] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=29356 y=243 pfet_03v3
+x swmatrix_Tgate_9.gated_control swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vss vss s=23232,704 d=23232,704 l=120 w=264 x=228 y=817 nfet_05v0
+x phi_1 a_24968_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=25076 y=2043 pfet_05v0
+x a_32192_2122# vdd a_32536_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=32740 y=2046 pfet_05v0
+x swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[3] pin vdd s=41600,904 d=104000,1860 l=56 w=800 x=17516 y=243 pfet_03v3
+x phi_1 a_18728_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=18836 y=2043 pfet_05v0
+x enable ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd vdd s=17108,433 d=28952,834 l=100 w=329 x=29965 y=2043 pfet_05v0
+x a_3800_2002# a_3660_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=3800 y=2046 pfet_05v0
+x swmatrix_Tgate_6.gated_control BUS[6] pin vss s=41600,904 d=97600,1844 l=56 w=800 x=32892 y=242 nfet_03v3
+x phi_1 a_6248_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=6336 y=1562 nfet_05v0
+x swmatrix_Tgate_9.gated_control pin BUS[1] vss s=41600,904 d=41600,904 l=56 w=800 x=1440 y=242 nfet_03v3
+x ShiftReg_row_10_2$1_0.Q[9] vss a_57004_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=56884 y=1577 nfet_05v0
+x swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[5] vdd s=41600,904 d=41600,904 l=56 w=800 x=29836 y=243 pfet_03v3
+x a_40380_1580# a_40748_1577# a_40896_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=40796 y=1577 nfet_05v0
+x a_6248_1562# vdd a_6716_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=6616 y=2119 pfet_05v0
+x a_50912_2122# vss a_51256_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=51520 y=1577 nfet_05v0
+x ShiftReg_row_10_2$1_0.Q[1] vdd a_7084_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=6984 y=2122 pfet_05v0
+x a_38776_2002# a_38636_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=38776 y=2046 pfet_05v0
+x swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[6] vdd s=41600,904 d=41600,904 l=56 w=800 x=36076 y=243 pfet_03v3
+x a_46152_1562# a_47136_2122# a_47380_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=47260 y=1577 nfet_05v0
+x a_15936_2122# vss a_16280_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=16544 y=1577 nfet_05v0
+x swmatrix_Tgate_2.gated_control pin BUS[10] vss s=97600,1844 d=41600,904 l=56 w=800 x=57052 y=242 nfet_03v3
+x a_8_1562# vss a_476_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=356 y=1580 nfet_05v0
+x swmatrix_Tgate_3.gated_control pin BUS[8] vss s=41600,904 d=41600,904 l=56 w=800 x=45212 y=242 nfet_03v3
+x a_38432_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss vss s=23232,704 d=23232,704 l=120 w=264 x=39408 y=1539 nfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss swmatrix_Tgate_9.gated_control vss s=23232,704 d=23232,704 l=120 w=264 x=5360 y=1539 nfet_05v0
+x phi_2 a_27432_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=27540 y=2043 pfet_05v0
+x swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[8] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=48396 y=243 pfet_03v3
+x a_9696_2122# ShiftReg_row_10_2$1_0.Q[2] vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=10672 y=2043 pfet_05v0
+x swmatrix_Tgate_2.gated_control BUS[10] pin vss s=41600,904 d=41600,904 l=56 w=800 x=57532 y=242 nfet_03v3
+x a_53376_2122# vss a_53720_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=53984 y=1577 nfet_05v0
+x phi_2 a_8712_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=8800 y=1562 nfet_05v0
+x ShiftReg_row_10_2$1_0.Q[7] vdd a_44524_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=44424 y=2122 pfet_05v0
+x swmatrix_Tgate_0.gated_control swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vss vss s=23232,704 d=23232,704 l=120 w=264 x=37760 y=817 nfet_05v0
+x a_59100_1580# a_59468_1577# a_59616_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=59516 y=1577 nfet_05v0
+x enable ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd vdd s=17108,433 d=28952,834 l=100 w=329 x=11245 y=2043 pfet_05v0
+x swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[5] vdd s=41600,904 d=41600,904 l=56 w=800 x=28236 y=243 pfet_03v3
+x a_47480_2002# a_47340_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=47480 y=2046 pfet_05v0
+x swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[2] vdd s=41600,904 d=41600,904 l=56 w=800 x=10796 y=243 pfet_03v3
+x a_50396_1580# a_50912_2122# a_51116_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=51016 y=2122 pfet_05v0
+x swmatrix_Tgate_8.gated_control pin BUS[2] vss s=97600,1844 d=41600,904 l=56 w=800 x=7132 y=242 nfet_03v3
+x ShiftReg_row_10_2$1_0.Q[5] vss a_32044_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=31924 y=1577 nfet_05v0
+x a_47136_2122# ShiftReg_row_10_2$1_0.Q[8] vss vss s=23232,704 d=23232,704 l=120 w=264 x=48112 y=1539 nfet_05v0
+x ShiftReg_row_10_2$1_0.Q[6] vss a_36121_1539# vss s=23232,704 d=8448,328 l=120 w=264 x=36001 y=1539 nfet_05v0
+x swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[5] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=28716 y=243 pfet_03v3
+x a_20056_2002# a_19916_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=20056 y=2046 pfet_05v0
+x a_2940_1580# a_3308_1577# a_3456_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=3356 y=1577 nfet_05v0
+x a_13816_2002# a_13676_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=13816 y=2046 pfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd a_46988_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=46888 y=2122 pfet_05v0
+x a_21192_1562# a_22176_2122# a_22420_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=22300 y=1577 nfet_05v0
+x a_39912_1562# a_40748_2122# a_40896_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=40796 y=2122 pfet_05v0
+x swmatrix_Tgate_8.gated_control BUS[2] pin vss s=41600,904 d=41600,904 l=56 w=800 x=7612 y=242 nfet_03v3
+x swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[4] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=23116 y=243 pfet_03v3
+x swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[1] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=3984 y=243 pfet_03v3
+x a_992_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=1968 y=2043 pfet_05v0
+x swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[8] vdd s=41600,904 d=41600,904 l=56 w=800 x=47276 y=243 pfet_03v3
+x swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[6] vdd s=41600,904 d=41600,904 l=56 w=800 x=35436 y=243 pfet_03v3
+x a_37916_1580# a_38284_1577# a_38432_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=38332 y=1577 nfet_05v0
+x ShiftReg_row_10_2$1_0.Q[9] vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd s=28952,834 d=17108,433 l=100 w=329 x=54721 y=2043 pfet_05v0
+x swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[10] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=59596 y=243 pfet_03v3
+x swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[8] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=47756 y=243 pfet_03v3
+x a_22520_2002# a_22380_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=22520 y=2046 pfet_05v0
+x swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[6] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=35916 y=243 pfet_03v3
+x phi_1 a_24968_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=25056 y=1562 nfet_05v0
+x phi_1 a_18728_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=18816 y=1562 nfet_05v0
+x a_58632_1562# a_59468_2122# a_59616_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=59516 y=2122 pfet_05v0
+x a_34656_2122# vdd a_35000_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=35204 y=2046 pfet_05v0
+x swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[7] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=42156 y=243 pfet_03v3
+x a_51256_2002# a_51156_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=51296 y=1577 nfet_05v0
+x a_24968_1562# vdd a_25436_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=25336 y=2119 pfet_05v0
+x swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[2] vdd s=41600,904 d=41600,904 l=56 w=800 x=9196 y=243 pfet_03v3
+x a_49928_1562# vss a_50396_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=50276 y=1580 nfet_05v0
+x swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[4] vdd s=41600,904 d=41600,904 l=56 w=800 x=21996 y=243 pfet_03v3
+x swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[1] pin vdd s=104000,1860 d=41600,904 l=56 w=800 x=2384 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd a_22028_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=21928 y=2122 pfet_05v0
+x swmatrix_Tgate_6.gated_control swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vss vss s=23232,704 d=23232,704 l=120 w=264 x=31520 y=817 nfet_05v0
+x swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[9] vdd s=41600,904 d=41600,904 l=56 w=800 x=54476 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss a_59468_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=59348 y=1577 nfet_05v0
+x a_31676_1580# a_32192_2122# a_32396_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=32296 y=2122 pfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss swmatrix_Tgate_7.gated_control vss s=23232,704 d=23232,704 l=120 w=264 x=24080 y=1539 nfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd swmatrix_Tgate_5.gated_control vdd s=32208,908 d=32208,908 l=100 w=366 x=30340 y=2043 pfet_05v0
+x swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[7] pin vdd s=104000,1860 d=41600,904 l=56 w=800 x=39916 y=243 pfet_03v3
+x swmatrix_Tgate_7.gated_control pin BUS[4] vss s=97600,1844 d=41600,904 l=56 w=800 x=19612 y=242 nfet_03v3
+x a_2472_1562# a_3308_2122# a_3456_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=3356 y=2122 pfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd a_9548_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=9448 y=2122 pfet_05v0
+x a_16280_2002# a_16180_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=16320 y=1577 nfet_05v0
+x swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[2] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=9676 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss swmatrix_Tgate_4.gated_control vss s=23232,704 d=23232,704 l=120 w=264 x=17840 y=1539 nfet_05v0
+x swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[1] vdd s=41600,904 d=41600,904 l=56 w=800 x=2864 y=243 pfet_03v3
+x a_14952_1562# vss a_15420_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=15300 y=1580 nfet_05v0
+x a_28416_2122# ShiftReg_row_10_2$1_0.Q[5] vss vss s=23232,704 d=23232,704 l=120 w=264 x=29392 y=1539 nfet_05v0
+x ShiftReg_row_10_2$1_0.Q[3] vss a_17401_1539# vss s=23232,704 d=8448,328 l=120 w=264 x=17281 y=1539 nfet_05v0
+x swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[8] pin vdd s=104000,1860 d=41600,904 l=56 w=800 x=46156 y=243 pfet_03v3
+x swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[9] pin vdd s=41600,904 d=104000,1860 l=56 w=800 x=54956 y=243 pfet_03v3
+x swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[6] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=34316 y=243 pfet_03v3
+x swmatrix_Tgate_4.gated_control pin BUS[3] vss s=41600,904 d=41600,904 l=56 w=800 x=14012 y=242 nfet_03v3
+x phi_2 a_27432_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=27520 y=1562 nfet_05v0
+x D_in vss a_844_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=724 y=1577 nfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss a_3308_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=3188 y=1577 nfet_05v0
+x a_33672_1562# vdd a_34140_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=34040 y=2119 pfet_05v0
+x swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[3] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=17196 y=243 pfet_03v3
+x a_53720_2002# a_53620_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=53760 y=1577 nfet_05v0
+x a_27432_1562# vdd a_27900_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=27800 y=2119 pfet_05v0
+x swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[10] pin vdd s=41600,904 d=104000,1860 l=56 w=800 x=61196 y=243 pfet_03v3
+x swmatrix_Tgate_3.gated_control swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=44000 y=211 pfet_05v0
+x a_52392_1562# vss a_52860_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=52740 y=1580 nfet_05v0
+x swmatrix_Tgate_5.gated_control BUS[5] pin vss s=41600,904 d=41600,904 l=56 w=800 x=26332 y=242 nfet_03v3
+x a_37448_1562# a_38284_2122# a_38432_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=38332 y=2122 pfet_05v0
+x swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[8] vdd s=41600,904 d=41600,904 l=56 w=800 x=46636 y=243 pfet_03v3
+x a_13472_2122# vdd a_13816_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=14020 y=2046 pfet_05v0
+x a_50396_1580# a_50764_1577# a_50912_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=50812 y=1577 nfet_05v0
+x a_34140_1580# a_34656_2122# a_34860_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=34760 y=2122 pfet_05v0
+x a_56168_1562# a_57152_2122# a_57396_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=57276 y=1577 nfet_05v0
+x swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[7] vdd s=41600,904 d=41600,904 l=56 w=800 x=41036 y=243 pfet_03v3
+x swmatrix_Tgate_0.gated_control pin BUS[7] vss s=41600,904 d=41600,904 l=56 w=800 x=38652 y=242 nfet_03v3
+x swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[10] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=58956 y=243 pfet_03v3
+x a_21660_1580# a_22028_1577# a_22176_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=22076 y=1577 nfet_05v0
+x ShiftReg_row_10_2$1_0.Q[6] vss a_38284_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=38164 y=1577 nfet_05v0
+x a_7576_2002# a_7476_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=7616 y=1577 nfet_05v0
+x a_15420_1580# a_15788_1577# a_15936_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=15836 y=1577 nfet_05v0
+x phi_1 a_37448_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=37556 y=2043 pfet_05v0
+x a_50912_2122# vdd a_51256_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=51460 y=2046 pfet_05v0
+x swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[5] pin vdd s=41600,904 d=104000,1860 l=56 w=800 x=29996 y=243 pfet_03v3
+x enable ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd vdd s=17108,433 d=28952,834 l=100 w=329 x=48685 y=2043 pfet_05v0
+x swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[9] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=53356 y=243 pfet_03v3
+x a_19712_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=20688 y=2043 pfet_05v0
+x swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[7] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=41516 y=243 pfet_03v3
+x a_15936_2122# vdd a_16280_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=16484 y=2046 pfet_05v0
+x swmatrix_Tgate_7.gated_control swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=19040 y=211 pfet_05v0
+x swmatrix_Tgate_3.gated_control BUS[8] pin vss s=41600,904 d=97600,1844 l=56 w=800 x=45372 y=242 nfet_03v3
+x swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[9] vdd s=41600,904 d=41600,904 l=56 w=800 x=53836 y=243 pfet_03v3
+x a_57496_2002# a_57356_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=57496 y=2046 pfet_05v0
+x swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[3] vdd s=41600,904 d=41600,904 l=56 w=800 x=16076 y=243 pfet_03v3
+x a_58632_1562# a_59616_2122# a_59860_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=59740 y=1577 nfet_05v0
+x a_34656_2122# vss a_35000_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=35264 y=1577 nfet_05v0
+x swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[10] vdd s=41600,904 d=41600,904 l=56 w=800 x=60076 y=243 pfet_03v3
+x a_40896_2122# ShiftReg_row_10_2$1_0.Q[7] vss vss s=23232,704 d=23232,704 l=120 w=264 x=41872 y=1539 nfet_05v0
+x swmatrix_Tgate_2.gated_control pin BUS[10] vss s=41600,904 d=41600,904 l=56 w=800 x=57692 y=242 nfet_03v3
+x a_57152_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss vss s=23232,704 d=23232,704 l=120 w=264 x=58128 y=1539 nfet_05v0
+x phi_2 a_46152_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=46260 y=2043 pfet_05v0
+x swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[5] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=28396 y=243 pfet_03v3
+x a_31208_1562# a_32192_2122# a_32436_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=32316 y=1577 nfet_05v0
+x swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[3] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=16556 y=243 pfet_03v3
+x swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[10] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=60556 y=243 pfet_03v3
+x a_38432_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=39408 y=2043 pfet_05v0
+x a_2472_1562# a_3456_2122# a_3700_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=3580 y=1577 nfet_05v0
+x ShiftReg_row_10_2$1_0.Q[2] vss a_13324_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=13204 y=1577 nfet_05v0
+x swmatrix_Tgate_8.gated_control BUS[2] pin vss s=41600,904 d=41600,904 l=56 w=800 x=7292 y=242 nfet_03v3
+x ShiftReg_row_10_2$1_0.Q[9] vdd a_57004_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=56904 y=2122 pfet_05v0
+x a_49928_1562# a_50764_2122# a_50912_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=50812 y=2122 pfet_05v0
+x enable a_17401_1539# ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss s=8448,328 d=23232,704 l=120 w=264 x=17465 y=1539 nfet_05v0
+x enable ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd vdd s=17108,433 d=28952,834 l=100 w=329 x=23725 y=2043 pfet_05v0
+x swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[5] vdd s=41600,904 d=41600,904 l=56 w=800 x=28876 y=243 pfet_03v3
+x a_59960_2002# a_59820_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=59960 y=2046 pfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd a_28268_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=28168 y=2122 pfet_05v0
+x a_21192_1562# a_22028_2122# a_22176_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=22076 y=2122 pfet_05v0
+x a_14952_1562# a_15788_2122# a_15936_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=15836 y=2122 pfet_05v0
+x ShiftReg_row_10_2$1_0.Q[8] vss a_50764_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=50644 y=1577 nfet_05v0
+x swmatrix_Tgate_8.gated_control pin BUS[2] vss s=41600,904 d=41600,904 l=56 w=800 x=7772 y=242 nfet_03v3
+x swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[4] vdd s=41600,904 d=41600,904 l=56 w=800 x=23276 y=243 pfet_03v3
+x a_32536_2002# a_32396_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=32536 y=2046 pfet_05v0
+x a_13472_2122# vss a_13816_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=14080 y=1577 nfet_05v0
+x swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[9] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=52716 y=243 pfet_03v3
+x swmatrix_Tgate_6.gated_control pin BUS[6] vss s=41600,904 d=41600,904 l=56 w=800 x=32412 y=242 nfet_03v3
+x a_39912_1562# a_40896_2122# a_41140_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=41020 y=1577 nfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss a_15788_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=15668 y=1577 nfet_05v0
+x a_9696_2122# vss a_10040_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=10304 y=1577 nfet_05v0
+x swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[6] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=35596 y=243 pfet_03v3
+x swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[1] vdd s=41600,904 d=41600,904 l=56 w=800 x=4144 y=243 pfet_03v3
+x a_47136_2122# ShiftReg_row_10_2$1_0.Q[8] vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=48112 y=2043 pfet_05v0
+x ShiftReg_row_10_2$1_0.Q[6] vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd s=28952,834 d=17108,433 l=100 w=329 x=36001 y=2043 pfet_05v0
+x swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[4] pin vdd s=41600,904 d=104000,1860 l=56 w=800 x=23756 y=243 pfet_03v3
+x phi_2 a_21192_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=21300 y=2043 pfet_05v0
+x swmatrix_Tgate_3.gated_control BUS[8] pin vss s=41600,904 d=41600,904 l=56 w=800 x=44732 y=242 nfet_03v3
+x a_3456_2122# ShiftReg_row_10_2$1_0.Q[1] vss vss s=23232,704 d=23232,704 l=120 w=264 x=4432 y=1539 nfet_05v0
+x swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[3] vdd s=41600,904 d=41600,904 l=56 w=800 x=15436 y=243 pfet_03v3
+x swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[1] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=4624 y=243 pfet_03v3
+x a_56636_1580# a_57004_1577# a_57152_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=57052 y=1577 nfet_05v0
+x a_26296_2002# a_26196_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=26336 y=1577 nfet_05v0
+x a_41240_2002# a_41100_2122# vdd vdd s=17040,416 d=14352,380 l=100 w=276 x=41240 y=2046 pfet_05v0
+x a_24968_1562# vss a_25436_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=25316 y=1580 nfet_05v0
+x swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[5] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=27756 y=243 pfet_03v3
+x phi_1 a_37448_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=37536 y=1562 nfet_05v0
+x swmatrix_Tgate_1.gated_control pin BUS[9] vss s=41600,904 d=41600,904 l=56 w=800 x=51452 y=242 nfet_03v3
+x swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[3] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=15916 y=243 pfet_03v3
+x a_12488_1562# a_13472_2122# a_13716_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=13596 y=1577 nfet_05v0
+x a_43688_1562# vdd a_44156_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=44056 y=2119 pfet_05v0
+x a_37448_1562# vdd a_37916_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=37816 y=2119 pfet_05v0
+x swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[4] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=22156 y=243 pfet_03v3
+x swmatrix_Tgate_7.gated_control BUS[4] pin vss s=41600,904 d=41600,904 l=56 w=800 x=19772 y=242 nfet_03v3
+x swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[2] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=10316 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd a_40748_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=40648 y=2122 pfet_05v0
+x swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[6] vdd s=41600,904 d=41600,904 l=56 w=800 x=34476 y=243 pfet_03v3
+x swmatrix_Tgate_4.gated_control BUS[3] pin vss s=41600,904 d=97600,1844 l=56 w=800 x=14172 y=242 nfet_03v3
+x a_44156_1580# a_44672_2122# a_44876_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=44776 y=2122 pfet_05v0
+x a_35000_2002# a_34900_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=35040 y=1577 nfet_05v0
+x swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[4] vdd s=41600,904 d=41600,904 l=56 w=800 x=22636 y=243 pfet_03v3
+x swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[1] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=3024 y=243 pfet_03v3
+x a_28760_2002# a_28660_1577# vss vss s=10520,298 d=8216,262 l=120 w=158 x=28800 y=1577 nfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss swmatrix_Tgate_6.gated_control vss s=23232,704 d=23232,704 l=120 w=264 x=36560 y=1539 nfet_05v0
+x swmatrix_Tgate_3.gated_control swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vss vss s=23232,704 d=23232,704 l=120 w=264 x=44000 y=817 nfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd swmatrix_Tgate_0.gated_control vdd s=32208,908 d=32208,908 l=100 w=366 x=42820 y=2043 pfet_05v0
+x a_33672_1562# vss a_34140_1580# vss s=10520,298 d=12320,456 l=120 w=140 x=34020 y=1580 nfet_05v0
+x ShiftReg_row_10_2$1_0.Q[5] vss a_29881_1539# vss s=23232,704 d=8448,328 l=120 w=264 x=29761 y=1539 nfet_05v0
+x phi_2 a_46152_1562# vss vss s=13904,492 d=10520,298 l=120 w=158 x=46240 y=1562 nfet_05v0
+x swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[8] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=46796 y=243 pfet_03v3
+x swmatrix_Tgate_5.gated_control pin BUS[5] vss s=41600,904 d=41600,904 l=56 w=800 x=26492 y=242 nfet_03v3
+x a_476_1580# a_844_1577# a_992_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=892 y=1577 nfet_05v0
+x swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[6] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=34956 y=243 pfet_03v3
+x swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[1] vdd s=41600,904 d=41600,904 l=56 w=800 x=3504 y=243 pfet_03v3
+x a_46152_1562# vdd a_46620_1580# vdd s=19040,436 d=17600,576 l=100 w=200 x=46520 y=2119 pfet_05v0
+x a_7232_2122# vss a_7576_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=7840 y=1577 nfet_05v0
+x a_15420_1580# a_15936_2122# a_16140_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=16040 y=2122 pfet_05v0
+x a_28416_2122# ShiftReg_row_10_2$1_0.Q[5] vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=29392 y=2043 pfet_05v0
+x ShiftReg_row_10_2$1_0.Q[3] vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd s=28952,834 d=17108,433 l=100 w=329 x=17281 y=2043 pfet_05v0
+x a_13472_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss vss s=23232,704 d=23232,704 l=120 w=264 x=14448 y=1539 nfet_05v0
+x swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[7] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=41196 y=243 pfet_03v3
+x swmatrix_Tgate_2.gated_control swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=56480 y=211 pfet_05v0
+x a_56168_1562# a_57004_2122# a_57152_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=57052 y=2122 pfet_05v0
+x a_25952_2122# vdd a_26296_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=26500 y=2046 pfet_05v0
+x a_52860_1580# a_53376_2122# a_53580_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=53480 y=2122 pfet_05v0
+x swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[10] vdd s=41600,904 d=41600,904 l=56 w=800 x=59116 y=243 pfet_03v3
+x swmatrix_Tgate_7.gated_control swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vss vss s=23232,704 d=23232,704 l=120 w=264 x=19040 y=817 nfet_05v0
+x a_50912_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss vss s=23232,704 d=23232,704 l=120 w=264 x=51888 y=1539 nfet_05v0
+x swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[7] vdd s=41600,904 d=41600,904 l=56 w=800 x=41676 y=243 pfet_03v3
+x a_34140_1580# a_34508_1577# a_34656_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=34556 y=1577 nfet_05v0
+x phi_1 a_56168_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=56276 y=2043 pfet_05v0
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vss a_53228_1577# vss s=12320,456 d=3360,188 l=120 w=140 x=53108 y=1577 nfet_05v0
+x swmatrix_Tgate_1.gated_control pin BUS[9] vss s=97600,1844 d=41600,904 l=56 w=800 x=50812 y=242 nfet_03v3
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd a_3308_2122# vdd s=17600,576 d=4800,248 l=100 w=200 x=3208 y=2122 pfet_05v0
+x swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[9] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=53996 y=243 pfet_03v3
+x ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss swmatrix_Tgate_8.gated_control vss s=23232,704 d=23232,704 l=120 w=264 x=11600 y=1539 nfet_05v0
+x swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[4] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=21516 y=243 pfet_03v3
+x a_22176_2122# ShiftReg_row_10_2$1_0.Q[4] vss vss s=23232,704 d=23232,704 l=120 w=264 x=23152 y=1539 nfet_05v0
+x a_28416_2122# vdd a_28760_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=28964 y=2046 pfet_05v0
+x a_6716_1580# a_7232_2122# a_7436_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=7336 y=2122 pfet_05v0
+x ShiftReg_row_10_2$1_0.Q[2] vss a_11161_1539# vss s=23232,704 d=8448,328 l=120 w=264 x=11041 y=1539 nfet_05v0
+x a_15936_2122# ShiftReg_row_10_2$1_0.Q[3] vss vss s=23232,704 d=23232,704 l=120 w=264 x=16912 y=1539 nfet_05v0
+x swmatrix_Tgate_8.gated_control swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=6560 y=211 pfet_05v0
+x swmatrix_Tgate_4.gated_control BUS[3] pin vss s=41600,904 d=41600,904 l=56 w=800 x=13532 y=242 nfet_03v3
+x swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[6] vdd s=41600,904 d=41600,904 l=56 w=800 x=33836 y=243 pfet_03v3
+x a_59616_2122# d_out vss vss s=23232,704 d=23232,704 l=120 w=264 x=60592 y=1539 nfet_05v0
+x a_47136_2122# vss a_47480_2002# vss s=8216,262 d=13904,492 l=120 w=158 x=47744 y=1577 nfet_05v0
+x a_8_1562# a_844_2122# a_992_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=892 y=2122 pfet_05v0
+x swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[7] vdd s=41600,904 d=41600,904 l=56 w=800 x=40076 y=243 pfet_03v3
+x phi_2 a_58632_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=58740 y=2043 pfet_05v0
+x swmatrix_Tgate_5.gated_control pin BUS[5] vss s=97600,1844 d=41600,904 l=56 w=800 x=25852 y=242 nfet_03v3
+x a_49928_1562# a_50912_2122# a_51156_1577# vss s=7280,244 d=10520,298 l=120 w=140 x=51036 y=1577 nfet_05v0
+x a_40896_2122# ShiftReg_row_10_2$1_0.Q[7] vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=41872 y=2043 pfet_05v0
+x a_12956_1580# a_13324_1577# a_13472_2122# vss s=3360,188 d=7280,244 l=120 w=140 x=13372 y=1577 nfet_05v0
+x a_57152_2122# ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=58128 y=2043 pfet_05v0
+x swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[9] pin vdd s=104000,1860 d=41600,904 l=56 w=800 x=52396 y=243 pfet_03v3
+x swmatrix_Tgate_6.gated_control pin BUS[6] vss s=97600,1844 d=41600,904 l=56 w=800 x=32092 y=242 nfet_03v3
+x swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[7] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=40556 y=243 pfet_03v3
+x swmatrix_Tgate_7.gated_control pin BUS[4] vss s=41600,904 d=41600,904 l=56 w=800 x=20252 y=242 nfet_03v3
+x phi_1 a_31208_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=31316 y=2043 pfet_05v0
+x a_9180_1580# a_9696_2122# a_9900_2122# vdd s=10400,304 d=17040,416 l=100 w=200 x=9800 y=2122 pfet_05v0
+x enable a_36121_1539# ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss s=8448,328 d=23232,704 l=120 w=264 x=36185 y=1539 nfet_05v0
+x swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN BUS[5] pin vdd s=41600,904 d=41600,904 l=56 w=800 x=29036 y=243 pfet_03v3
+x enable ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vdd vdd s=17108,433 d=28952,834 l=100 w=329 x=42445 y=2043 pfet_05v0
+x enable a_29881_1539# ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I vss s=8448,328 d=23232,704 l=120 w=264 x=29945 y=1539 nfet_05v0
+x phi_2 a_2472_1562# vdd vdd s=24288,728 d=19040,436 l=100 w=276 x=2580 y=2043 pfet_05v0
+x swmatrix_Tgate_1.gated_control swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd vdd s=32208,908 d=32208,908 l=100 w=366 x=50240 y=211 pfet_05v0
+x a_9696_2122# vdd a_10040_2002# vdd s=14352,380 d=24288,728 l=100 w=276 x=10244 y=2046 pfet_05v0
+x a_33672_1562# a_34508_2122# a_34656_2122# vdd s=4800,248 d=10400,304 l=100 w=200 x=34556 y=2122 pfet_05v0
+x swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN pin BUS[9] vdd s=41600,904 d=41600,904 l=56 w=800 x=52876 y=243 pfet_03v3
+x swmatrix_Tgate_6.gated_control BUS[6] pin vss s=41600,904 d=41600,904 l=56 w=800 x=32572 y=242 nfet_03v3
+x swmatrix_Tgate_9.gated_control pin BUS[1] vss s=41600,904 d=41600,904 l=56 w=800 x=1120 y=242 nfet_03v3
+C BUS[7] pin 10.6
+C vdd enable 4.2
+C phi_1 vdd 10.0
+C BUS[8] pin 10.6
+C BUS[3] pin 10.6
+C pin BUS[1] 10.6
+C swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd 5.0
+C BUS[5] pin 10.6
+C phi_2 vdd 4.9
+C swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd 5.0
+C swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd 5.0
+C swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd 5.0
+C swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd 5.0
+C phi_2 phi_1 25.4
+C swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd 5.0
+C vdd swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 5.0
+C vdd swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 5.0
+C pin vdd 9.8
+C BUS[6] pin 10.6
+C swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd 5.0
+C BUS[2] pin 10.6
+C pin BUS[9] 10.6
+C swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN vdd 5.0
+C pin BUS[4] 10.6
+C BUS[10] pin 10.6
+C d_out vdd 20.7
+C BUS[10]0 2.8
+R BUS[10] 794
+= BUS[10] swmatrix_Tgate_2.T2
+C BUS[9]0 2.8
+R BUS[9] 794
+= BUS[9] swmatrix_Tgate_1.T2
+C BUS[8]0 2.8
+R BUS[8] 794
+= BUS[8] swmatrix_Tgate_3.T2
+C BUS[7]0 2.8
+R BUS[7] 794
+= BUS[7] swmatrix_Tgate_0.T2
+C BUS[6]0 2.8
+R BUS[6] 794
+= BUS[6] swmatrix_Tgate_6.T2
+C BUS[5]0 2.8
+R BUS[5] 794
+= BUS[5] swmatrix_Tgate_5.T2
+C BUS[4]0 2.8
+R BUS[4] 794
+= BUS[4] swmatrix_Tgate_7.T2
+C BUS[3]0 2.8
+R BUS[3] 794
+= BUS[3] swmatrix_Tgate_4.T2
+C BUS[2]0 2.8
+R BUS[2] 794
+= BUS[2] swmatrix_Tgate_8.T2
+C BUS[1]0 2.8
+R BUS[1] 794
+= BUS[1] swmatrix_Tgate_9.T2
+C pin0 19.7
+R pin 8634
+= pin swmatrix_Tgate_0.T1
+= pin swmatrix_Tgate_1.T1
+= pin swmatrix_Tgate_2.T1
+= pin swmatrix_Tgate_3.T1
+= pin swmatrix_Tgate_6.T1
+= pin swmatrix_Tgate_5.T1
+= pin swmatrix_Tgate_7.T1
+= pin swmatrix_Tgate_4.T1
+= pin swmatrix_Tgate_8.T1
+= pin swmatrix_Tgate_9.T1
+C d_out0 12.1
+R d_out 176
+= d_out ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A2
+= d_out ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q
+= d_out ShiftReg_row_10_2$1_0.DFF_2phase_1_0.Q
+= d_out ShiftReg_row_10_2$1_0.Q[10]
+C enable0 22.6
+R enable 867
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A1
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_9.EN
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A1
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_8.EN
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A1
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_7.EN
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A1
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_6.EN
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A1
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_5.EN
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A1
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_4.EN
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A1
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_3.EN
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A1
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_2.EN
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A1
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_1.EN
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A1
+= enable ShiftReg_row_10_2$1_0.DFF_2phase_1_0.EN
+= enable ShiftReg_row_10_2$1_0.EN
+C phi_20 5.2
+R phi_2 815
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_9.PHI_2
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_8.PHI_2
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_7.PHI_2
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_6.PHI_2
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_5.PHI_2
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_4.PHI_2
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_3.PHI_2
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_2.PHI_2
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_1.PHI_2
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.E
+= phi_2 ShiftReg_row_10_2$1_0.DFF_2phase_1_0.PHI_2
+= phi_2 ShiftReg_row_10_2$1_0.PHI_2
+R D_in 61
+= D_in ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D
+= D_in ShiftReg_row_10_2$1_0.DFF_2phase_1_8.D
+= D_in ShiftReg_row_10_2$1_0.D_in
+C phi_10 12.8
+R phi_1 818
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_9.PHI_1
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_8.PHI_1
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_7.PHI_1
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_6.PHI_1
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_5.PHI_1
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_4.PHI_1
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_3.PHI_1
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_2.PHI_1
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_1.PHI_1
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.E
+= phi_1 ShiftReg_row_10_2$1_0.DFF_2phase_1_0.PHI_1
+= phi_1 ShiftReg_row_10_2$1_0.PHI_1
+C vdd0 295.6
+R vdd 189939
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_9.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_8.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_7.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_6.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_5.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_4.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_3.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_2.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VNW
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.DFF_2phase_1_0.VDD
+= vdd ShiftReg_row_10_2$1_0.VDD
+= vdd swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VDD
+= vdd swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW
+= vdd swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VDD
+= vdd swmatrix_Tgate_0.VDD
+= vdd swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VDD
+= vdd swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW
+= vdd swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VDD
+= vdd swmatrix_Tgate_1.VDD
+= vdd swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VDD
+= vdd swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW
+= vdd swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VDD
+= vdd swmatrix_Tgate_2.VDD
+= vdd swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VDD
+= vdd swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW
+= vdd swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VDD
+= vdd swmatrix_Tgate_3.VDD
+= vdd swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VDD
+= vdd swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW
+= vdd swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VDD
+= vdd swmatrix_Tgate_6.VDD
+= vdd swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VDD
+= vdd swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW
+= vdd swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VDD
+= vdd swmatrix_Tgate_5.VDD
+= vdd swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VDD
+= vdd swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW
+= vdd swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VDD
+= vdd swmatrix_Tgate_7.VDD
+= vdd swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VDD
+= vdd swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW
+= vdd swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VDD
+= vdd swmatrix_Tgate_4.VDD
+= vdd swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VDD
+= vdd swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW
+= vdd swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VDD
+= vdd swmatrix_Tgate_8.VDD
+= vdd swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VDD
+= vdd swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VNW
+= vdd swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VDD
+= vdd swmatrix_Tgate_9.VDD
+R swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 2530
+R swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 2530
+R swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 2530
+R swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 2530
+R swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 2530
+R swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 2530
+R swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 2530
+R swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 2530
+R swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 2530
+R swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.ZN 2530
+R a_61081_1539# 26
+R a_59468_1577# 18
+C swmatrix_Tgate_2.gated_control0 3.1
+R swmatrix_Tgate_2.gated_control 965
+= swmatrix_Tgate_2.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.ZN
+= swmatrix_Tgate_2.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gated_control
+= swmatrix_Tgate_2.gated_control ShiftReg_row_10_2$1_0.gc[10]
+= swmatrix_Tgate_2.gated_control swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.I
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.ZN
+R a_57004_1577# 18
+R a_59820_2122# 19
+R a_59468_2122# 29
+R a_59960_2002# 105
+R a_59100_1580# 100
+R a_59616_2122# 190
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q
+R a_54841_1539# 26
+R a_53228_1577# 18
+R a_57356_2122# 19
+R a_57004_2122# 29
+R a_57496_2002# 105
+R a_56636_1580# 100
+R a_58632_1562# 256
+R a_57152_2122# 190
+C swmatrix_Tgate_1.gated_control0 3.1
+R swmatrix_Tgate_1.gated_control 965
+= swmatrix_Tgate_1.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.ZN
+= swmatrix_Tgate_1.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gated_control
+= swmatrix_Tgate_1.gated_control ShiftReg_row_10_2$1_0.gc[9]
+= swmatrix_Tgate_1.gated_control swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.I
+R a_56168_1562# 256
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.ZN
+R ShiftReg_row_10_2$1_0.Q[9] 195
+= ShiftReg_row_10_2$1_0.Q[9] ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A2
+= ShiftReg_row_10_2$1_0.Q[9] ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q
+= ShiftReg_row_10_2$1_0.Q[9] ShiftReg_row_10_2$1_0.DFF_2phase_1_1.Q
+= ShiftReg_row_10_2$1_0.Q[9] ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D
+= ShiftReg_row_10_2$1_0.Q[9] ShiftReg_row_10_2$1_0.DFF_2phase_1_0.D
+R a_50764_1577# 18
+R a_53580_2122# 19
+R a_53228_2122# 29
+R a_53720_2002# 105
+R a_52860_1580# 100
+R a_53376_2122# 190
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q
+R a_48601_1539# 26
+R a_46988_1577# 18
+R a_51116_2122# 19
+R a_50764_2122# 29
+R a_51256_2002# 105
+R a_50396_1580# 100
+R a_52392_1562# 256
+R a_50912_2122# 190
+C swmatrix_Tgate_3.gated_control0 3.1
+R swmatrix_Tgate_3.gated_control 965
+= swmatrix_Tgate_3.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.ZN
+= swmatrix_Tgate_3.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gated_control
+= swmatrix_Tgate_3.gated_control ShiftReg_row_10_2$1_0.gc[8]
+= swmatrix_Tgate_3.gated_control swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.I
+R a_49928_1562# 256
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.ZN
+R ShiftReg_row_10_2$1_0.Q[8] 195
+= ShiftReg_row_10_2$1_0.Q[8] ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A2
+= ShiftReg_row_10_2$1_0.Q[8] ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q
+= ShiftReg_row_10_2$1_0.Q[8] ShiftReg_row_10_2$1_0.DFF_2phase_1_2.Q
+= ShiftReg_row_10_2$1_0.Q[8] ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D
+= ShiftReg_row_10_2$1_0.Q[8] ShiftReg_row_10_2$1_0.DFF_2phase_1_1.D
+R a_44524_1577# 18
+R a_47340_2122# 19
+R a_46988_2122# 29
+R a_47480_2002# 105
+R a_46620_1580# 100
+R a_47136_2122# 190
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q
+R a_42361_1539# 26
+R a_40748_1577# 18
+R a_44876_2122# 19
+R a_44524_2122# 29
+R a_45016_2002# 105
+R a_44156_1580# 100
+R a_46152_1562# 256
+R a_44672_2122# 190
+C swmatrix_Tgate_0.gated_control0 3.1
+R swmatrix_Tgate_0.gated_control 965
+= swmatrix_Tgate_0.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.ZN
+= swmatrix_Tgate_0.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gated_control
+= swmatrix_Tgate_0.gated_control ShiftReg_row_10_2$1_0.gc[7]
+= swmatrix_Tgate_0.gated_control swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.I
+R a_43688_1562# 256
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.ZN
+R ShiftReg_row_10_2$1_0.Q[7] 195
+= ShiftReg_row_10_2$1_0.Q[7] ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A2
+= ShiftReg_row_10_2$1_0.Q[7] ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q
+= ShiftReg_row_10_2$1_0.Q[7] ShiftReg_row_10_2$1_0.DFF_2phase_1_3.Q
+= ShiftReg_row_10_2$1_0.Q[7] ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D
+= ShiftReg_row_10_2$1_0.Q[7] ShiftReg_row_10_2$1_0.DFF_2phase_1_2.D
+R a_38284_1577# 18
+R a_41100_2122# 19
+R a_40748_2122# 29
+R a_41240_2002# 105
+R a_40380_1580# 100
+R a_40896_2122# 190
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q
+R a_36121_1539# 26
+R a_34508_1577# 18
+R a_38636_2122# 19
+R a_38284_2122# 29
+R a_38776_2002# 105
+R a_37916_1580# 100
+R a_39912_1562# 256
+R a_38432_2122# 190
+C swmatrix_Tgate_6.gated_control0 3.1
+R swmatrix_Tgate_6.gated_control 965
+= swmatrix_Tgate_6.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.ZN
+= swmatrix_Tgate_6.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gated_control
+= swmatrix_Tgate_6.gated_control ShiftReg_row_10_2$1_0.gc[6]
+= swmatrix_Tgate_6.gated_control swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.I
+R a_37448_1562# 256
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.ZN
+R ShiftReg_row_10_2$1_0.Q[6] 195
+= ShiftReg_row_10_2$1_0.Q[6] ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A2
+= ShiftReg_row_10_2$1_0.Q[6] ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q
+= ShiftReg_row_10_2$1_0.Q[6] ShiftReg_row_10_2$1_0.DFF_2phase_1_4.Q
+= ShiftReg_row_10_2$1_0.Q[6] ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D
+= ShiftReg_row_10_2$1_0.Q[6] ShiftReg_row_10_2$1_0.DFF_2phase_1_3.D
+R a_32044_1577# 18
+R a_34860_2122# 19
+R a_34508_2122# 29
+R a_35000_2002# 105
+R a_34140_1580# 100
+R a_34656_2122# 190
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q
+R a_29881_1539# 26
+R a_28268_1577# 18
+R a_32396_2122# 19
+R a_32044_2122# 29
+R a_32536_2002# 105
+R a_31676_1580# 100
+R a_33672_1562# 256
+R a_32192_2122# 190
+C swmatrix_Tgate_5.gated_control0 3.1
+R swmatrix_Tgate_5.gated_control 965
+= swmatrix_Tgate_5.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.ZN
+= swmatrix_Tgate_5.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gated_control
+= swmatrix_Tgate_5.gated_control ShiftReg_row_10_2$1_0.gc[5]
+= swmatrix_Tgate_5.gated_control swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.I
+R a_31208_1562# 256
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.ZN
+R ShiftReg_row_10_2$1_0.Q[5] 195
+= ShiftReg_row_10_2$1_0.Q[5] ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A2
+= ShiftReg_row_10_2$1_0.Q[5] ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q
+= ShiftReg_row_10_2$1_0.Q[5] ShiftReg_row_10_2$1_0.DFF_2phase_1_5.Q
+= ShiftReg_row_10_2$1_0.Q[5] ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D
+= ShiftReg_row_10_2$1_0.Q[5] ShiftReg_row_10_2$1_0.DFF_2phase_1_4.D
+R a_25804_1577# 18
+R a_28620_2122# 19
+R a_28268_2122# 29
+R a_28760_2002# 105
+R a_27900_1580# 100
+R a_28416_2122# 190
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q
+R a_23641_1539# 26
+R a_22028_1577# 18
+R a_26156_2122# 19
+R a_25804_2122# 29
+R a_26296_2002# 105
+R a_25436_1580# 100
+R a_27432_1562# 256
+R a_25952_2122# 190
+C swmatrix_Tgate_7.gated_control0 3.1
+R swmatrix_Tgate_7.gated_control 965
+= swmatrix_Tgate_7.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.ZN
+= swmatrix_Tgate_7.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gated_control
+= swmatrix_Tgate_7.gated_control ShiftReg_row_10_2$1_0.gc[4]
+= swmatrix_Tgate_7.gated_control swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.I
+R a_24968_1562# 256
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.ZN
+R ShiftReg_row_10_2$1_0.Q[4] 195
+= ShiftReg_row_10_2$1_0.Q[4] ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A2
+= ShiftReg_row_10_2$1_0.Q[4] ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q
+= ShiftReg_row_10_2$1_0.Q[4] ShiftReg_row_10_2$1_0.DFF_2phase_1_6.Q
+= ShiftReg_row_10_2$1_0.Q[4] ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D
+= ShiftReg_row_10_2$1_0.Q[4] ShiftReg_row_10_2$1_0.DFF_2phase_1_5.D
+R a_19564_1577# 18
+R a_22380_2122# 19
+R a_22028_2122# 29
+R a_22520_2002# 105
+R a_21660_1580# 100
+R a_22176_2122# 190
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q
+R a_17401_1539# 26
+R a_15788_1577# 18
+R a_19916_2122# 19
+R a_19564_2122# 29
+R a_20056_2002# 105
+R a_19196_1580# 100
+R a_21192_1562# 256
+R a_19712_2122# 190
+C swmatrix_Tgate_4.gated_control0 3.1
+R swmatrix_Tgate_4.gated_control 965
+= swmatrix_Tgate_4.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.ZN
+= swmatrix_Tgate_4.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gated_control
+= swmatrix_Tgate_4.gated_control ShiftReg_row_10_2$1_0.gc[3]
+= swmatrix_Tgate_4.gated_control swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.I
+R a_18728_1562# 256
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.ZN
+R ShiftReg_row_10_2$1_0.Q[3] 195
+= ShiftReg_row_10_2$1_0.Q[3] ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A2
+= ShiftReg_row_10_2$1_0.Q[3] ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q
+= ShiftReg_row_10_2$1_0.Q[3] ShiftReg_row_10_2$1_0.DFF_2phase_1_7.Q
+= ShiftReg_row_10_2$1_0.Q[3] ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D
+= ShiftReg_row_10_2$1_0.Q[3] ShiftReg_row_10_2$1_0.DFF_2phase_1_6.D
+R a_13324_1577# 18
+R a_16140_2122# 19
+R a_15788_2122# 29
+R a_16280_2002# 105
+R a_15420_1580# 100
+R a_15936_2122# 190
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q
+R a_11161_1539# 26
+R a_9548_1577# 18
+R a_13676_2122# 19
+R a_13324_2122# 29
+R a_13816_2002# 105
+R a_12956_1580# 100
+R a_14952_1562# 256
+R a_13472_2122# 190
+C swmatrix_Tgate_8.gated_control0 3.1
+R swmatrix_Tgate_8.gated_control 965
+= swmatrix_Tgate_8.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.ZN
+= swmatrix_Tgate_8.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gated_control
+= swmatrix_Tgate_8.gated_control ShiftReg_row_10_2$1_0.gc[2]
+= swmatrix_Tgate_8.gated_control swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.I
+R a_12488_1562# 256
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.ZN
+R ShiftReg_row_10_2$1_0.Q[2] 195
+= ShiftReg_row_10_2$1_0.Q[2] ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A2
+= ShiftReg_row_10_2$1_0.Q[2] ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q
+= ShiftReg_row_10_2$1_0.Q[2] ShiftReg_row_10_2$1_0.DFF_2phase_1_9.Q
+= ShiftReg_row_10_2$1_0.Q[2] ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D
+= ShiftReg_row_10_2$1_0.Q[2] ShiftReg_row_10_2$1_0.DFF_2phase_1_7.D
+R a_7084_1577# 18
+R a_9900_2122# 19
+R a_9548_2122# 29
+R a_10040_2002# 105
+R a_9180_1580# 100
+R a_9696_2122# 190
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q
+R a_4921_1539# 26
+R a_3308_1577# 18
+R a_7436_2122# 19
+R a_7084_2122# 29
+R a_7576_2002# 105
+R a_6716_1580# 100
+R a_8712_1562# 256
+R a_7232_2122# 190
+C swmatrix_Tgate_9.gated_control0 3.1
+R swmatrix_Tgate_9.gated_control 965
+= swmatrix_Tgate_9.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.ZN
+= swmatrix_Tgate_9.gated_control ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gated_control
+= swmatrix_Tgate_9.gated_control ShiftReg_row_10_2$1_0.gc[1]
+= swmatrix_Tgate_9.gated_control swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.I
+R a_6248_1562# 256
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.I ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.ZN
+R ShiftReg_row_10_2$1_0.Q[1] 195
+= ShiftReg_row_10_2$1_0.Q[1] ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.D
+= ShiftReg_row_10_2$1_0.Q[1] ShiftReg_row_10_2$1_0.DFF_2phase_1_9.D
+= ShiftReg_row_10_2$1_0.Q[1] ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.A2
+= ShiftReg_row_10_2$1_0.Q[1] ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.Q
+= ShiftReg_row_10_2$1_0.Q[1] ShiftReg_row_10_2$1_0.DFF_2phase_1_8.Q
+R a_844_1577# 18
+R a_3660_2122# 19
+R a_3308_2122# 29
+R a_3800_2002# 105
+R a_2940_1580# 100
+R a_3456_2122# 190
+R ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D 111
+= ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.D ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.Q
+R a_1196_2122# 19
+R a_844_2122# 29
+R a_1336_2002# 105
+R a_476_1580# 100
+R a_2472_1562# 256
+R a_992_2122# 190
+R a_8_1562# 256
+R vss 5438
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_9.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_8.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_8.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_7.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_7.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_6.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_6.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_5.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_5.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_4.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_4.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_3.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_3.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_2.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_2.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_1.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__filltie_2.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__filltie_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__filltie_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__nand2_1$1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__inv_1$1_0.VSS
+= vss swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_0.gf180mcu_fd_sc_mcu9t5v0__latq_1_0.VSS
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_0.VSS
+= vss ShiftReg_row_10_2$1_0.VSS
+= vss swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VSS
+= vss swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW
+= vss swmatrix_Tgate_0.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VSS
+= vss swmatrix_Tgate_0.nfet_0.vss
+= vss swmatrix_Tgate_0.VSS
+= vss swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VSS
+= vss swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW
+= vss swmatrix_Tgate_1.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VSS
+= vss swmatrix_Tgate_1.nfet_0.vss
+= vss swmatrix_Tgate_1.VSS
+= vss swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VSS
+= vss swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW
+= vss swmatrix_Tgate_2.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VSS
+= vss swmatrix_Tgate_2.nfet_0.vss
+= vss swmatrix_Tgate_2.VSS
+= vss swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VSS
+= vss swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW
+= vss swmatrix_Tgate_3.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VSS
+= vss swmatrix_Tgate_3.nfet_0.vss
+= vss swmatrix_Tgate_3.VSS
+= vss swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VSS
+= vss swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW
+= vss swmatrix_Tgate_6.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VSS
+= vss swmatrix_Tgate_6.nfet_0.vss
+= vss swmatrix_Tgate_6.VSS
+= vss swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VSS
+= vss swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW
+= vss swmatrix_Tgate_5.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VSS
+= vss swmatrix_Tgate_5.nfet_0.vss
+= vss swmatrix_Tgate_5.VSS
+= vss swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VSS
+= vss swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW
+= vss swmatrix_Tgate_7.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VSS
+= vss swmatrix_Tgate_7.nfet_0.vss
+= vss swmatrix_Tgate_7.VSS
+= vss swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VSS
+= vss swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW
+= vss swmatrix_Tgate_4.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VSS
+= vss swmatrix_Tgate_4.nfet_0.vss
+= vss swmatrix_Tgate_4.VSS
+= vss swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VSS
+= vss swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VPW
+= vss ShiftReg_row_10_2$1_0.DFF_2phase_1_9.gf180mcu_fd_sc_mcu9t5v0__latq_1_1.VPW
+= vss swmatrix_Tgate_8.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VSS
+= vss swmatrix_Tgate_8.nfet_0.vss
+= vss swmatrix_Tgate_8.VSS
+= vss swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__endcap_0.VSS
+= vss swmatrix_Tgate_9.gf180mcu_fd_sc_mcu9t5v0__inv_1_0.VSS
+= vss swmatrix_Tgate_9.nfet_0.vss
+= vss swmatrix_Tgate_9.VSS
