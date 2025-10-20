@@ -1,19 +1,4 @@
 
-Circuit 1 cell pfet_05v0 and Circuit 2 cell pfet_06v0 are black boxes.
-Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell pfet_06v0 is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: pfet_05v0                       |Circuit 2: pfet_06v0                       
--------------------------------------------|-------------------------------------------
-1                                          |1                                          
-2                                          |2                                          
-3                                          |3                                          
-4                                          |4                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes pfet_05v0 and pfet_06v0 are equivalent.
-
 Circuit 1 cell nfet_05v0 and Circuit 2 cell nfet_06v0 are black boxes.
 Warning: Equate pins:  cell nfet_05v0 is a placeholder, treated as a black box.
 Warning: Equate pins:  cell nfet_06v0 is a placeholder, treated as a black box.
@@ -28,6 +13,21 @@ Circuit 1: nfet_05v0                       |Circuit 2: nfet_06v0
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes nfet_05v0 and nfet_06v0 are equivalent.
+
+Circuit 1 cell pfet_05v0 and Circuit 2 cell pfet_06v0 are black boxes.
+Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_06v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_05v0                       |Circuit 2: pfet_06v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_05v0 and pfet_06v0 are equivalent.
 
 Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
 Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
@@ -58,53 +58,6 @@ Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes pfet_03v3 and pfet_03v3 are equivalent.
-
-Subcircuit summary:
-Circuit 1: gf180mcu_fd_sc_mcu9t5v0__nand2_ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__nand2_ 
--------------------------------------------|-------------------------------------------
-pfet_05v0 (2)                              |pfet_06v0 (2)                              
-nfet_05v0 (2)                              |nfet_06v0 (2)                              
-Number of devices: 4                       |Number of devices: 4                       
-Number of nets: 8                          |Number of nets: 8                          
----------------------------------------------------------------------------------------
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: gf180mcu_fd_sc_mcu9t5v0__nand2_ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__nand2_ 
--------------------------------------------|-------------------------------------------
-VSS                                        |VSS                                        
-A2                                         |A2                                         
-VPW                                        |VPW                                        
-A1                                         |A1                                         
-VDD                                        |VDD                                        
-VNW                                        |VNW                                        
-ZN                                         |ZN                                         
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes gf180mcu_fd_sc_mcu9t5v0__nand2_1$2 and gf180mcu_fd_sc_mcu9t5v0__nand2_1 are equivalent.
-
-Subcircuit summary:
-Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1$ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
--------------------------------------------|-------------------------------------------
-pfet_05v0 (1)                              |pfet_06v0 (1)                              
-nfet_05v0 (1)                              |nfet_06v0 (1)                              
-Number of devices: 2                       |Number of devices: 2                       
-Number of nets: 6                          |Number of nets: 6                          
----------------------------------------------------------------------------------------
-Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1$ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
--------------------------------------------|-------------------------------------------
-VSS                                        |VSS                                        
-VPW                                        |VPW                                        
-VDD                                        |VDD                                        
-VNW                                        |VNW                                        
-ZN                                         |ZN                                         
-I                                          |I                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1$3 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
 
 Subcircuit summary:
 Circuit 1: gf180mcu_fd_sc_mcu9t5v0__latq_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__latq_1 
@@ -151,14 +104,61 @@ ZN                                         |ZN
 I                                          |I                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1$4 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1$1 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__nand2_ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__nand2_ 
+-------------------------------------------|-------------------------------------------
+pfet_05v0 (2)                              |pfet_06v0 (2)                              
+nfet_05v0 (2)                              |nfet_06v0 (2)                              
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__nand2_ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__nand2_ 
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+A2                                         |A2                                         
+VPW                                        |VPW                                        
+A1                                         |A1                                         
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+ZN                                         |ZN                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__nand2_1$1 and gf180mcu_fd_sc_mcu9t5v0__nand2_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
+-------------------------------------------|-------------------------------------------
+pfet_05v0 (1)                              |pfet_06v0 (1)                              
+nfet_05v0 (1)                              |nfet_06v0 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VPW                                        |VPW                                        
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+ZN                                         |ZN                                         
+I                                          |I                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
 
 Subcircuit summary:
 Circuit 1: DFF_2phase_1$1                  |Circuit 2: DFF_2phase_1                    
 -------------------------------------------|-------------------------------------------
-gf180mcu_fd_sc_mcu9t5v0__nand2_1$2 (1)     |gf180mcu_fd_sc_mcu9t5v0__nand2_1 (1)       
-gf180mcu_fd_sc_mcu9t5v0__inv_1$3 (1)       |gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         
 gf180mcu_fd_sc_mcu9t5v0__latq_1$1 (2)      |gf180mcu_fd_sc_mcu9t5v0__latq_1 (2)        
+gf180mcu_fd_sc_mcu9t5v0__inv_1$1 (1)       |gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         
+gf180mcu_fd_sc_mcu9t5v0__nand2_1$1 (1)     |gf180mcu_fd_sc_mcu9t5v0__nand2_1 (1)       
 Number of devices: 4                       |Number of devices: 4                       
 Number of nets: 10                         |Number of nets: 10                         
 ---------------------------------------------------------------------------------------
@@ -169,25 +169,25 @@ Circuit 1: DFF_2phase_1$1                  |Circuit 2: DFF_2phase_1
 -------------------------------------------|-------------------------------------------
 VDD                                        |VDD                                        
 VSS                                        |VSS                                        
-Q                                          |Q                                          
 D                                          |D                                          
 PHI_1                                      |PHI_1                                      
 PHI_2                                      |PHI_2                                      
 gated_control                              |gated_control                              
 EN                                         |EN                                         
+Q                                          |Q                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes DFF_2phase_1$1 and DFF_2phase_1 are equivalent.
 Flattening unmatched subcell nfet$1 in circuit swmatrix_Tgate (0)(1 instance)
 Flattening unmatched subcell pfet$1 in circuit swmatrix_Tgate (0)(1 instance)
 
-Class swmatrix_Tgate (0):  Merged 22 parallel devices.
+Class swmatrix_Tgate (0):  Merged 21 parallel devices.
 Subcircuit summary:
 Circuit 1: swmatrix_Tgate                  |Circuit 2: swmatrix_Tgate                  
 -------------------------------------------|-------------------------------------------
+gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         |gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         
 nfet_03v3 (6->1)                           |nfet_03v3 (1)                              
-gf180mcu_fd_sc_mcu9t5v0__inv_1$4 (1)       |gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)         
-pfet_03v3 (18->1)                          |pfet_03v3 (1)                              
+pfet_03v3 (17->1)                          |pfet_03v3 (1)                              
 Number of devices: 3                       |Number of devices: 3                       
 Number of nets: 6                          |Number of nets: 6                          
 ---------------------------------------------------------------------------------------
@@ -198,11 +198,11 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: swmatrix_Tgate                  |Circuit 2: swmatrix_Tgate                  
 -------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
 gated_control                              |gated_control                              
 T1                                         |T1                                         
 T2                                         |T2                                         
-VSS                                        |VSS                                        
-VDD                                        |VDD                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes swmatrix_Tgate and swmatrix_Tgate are equivalent.
@@ -356,11 +356,11 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: swmatrix_row_10                 |Circuit 2: swmatrix_row_10                 
 -------------------------------------------|-------------------------------------------
-ShiftReg_row_10_2_0/D_in                   |D_in **Mismatch**                          
+D_in                                       |D_in                                       
 d_out                                      |D_out                                      
-ShiftReg_row_10_2_0/PHI_1                  |PHI_1 **Mismatch**                         
-ShiftReg_row_10_2_0/PHI_2                  |PHI_2 **Mismatch**                         
-ShiftReg_row_10_2_0/EN                     |enable **Mismatch**                        
+phi_1                                      |PHI_1                                      
+phi_2                                      |PHI_2                                      
+enable                                     |enable                                     
 BUS[1]                                     |BUS[1]                                     
 BUS[2]                                     |BUS[2]                                     
 BUS[4]                                     |BUS[4]                                     
@@ -372,10 +372,10 @@ BUS[10]                                    |BUS[10]
 BUS[9]                                     |BUS[9]                                     
 BUS[7]                                     |BUS[7]                                     
 pin                                        |pin                                        
-swmatrix_Tgate_9/VDD                       |VDD **Mismatch**                           
-VSUBS                                      |VSS **Mismatch**                           
+vdd                                        |VDD                                        
+vss                                        |VSS                                        
 ---------------------------------------------------------------------------------------
-Cell pin lists for swmatrix_row_10 and swmatrix_row_10 altered to match.
+Cell pin lists are equivalent.
 Device classes swmatrix_row_10 and swmatrix_row_10 are equivalent.
 
 Subcircuit summary:
@@ -442,7 +442,6 @@ Circuit 1: swmatrix_24_by_10               |Circuit 2: swmatrix_24_by_10
 -------------------------------------------|-------------------------------------------
 vdd                                        |VDD                                        
 vss                                        |VSS                                        
-Enable                                     |enable                                     
 BUS[1]                                     |BUS[1]                                     
 BUS[2]                                     |BUS[2]                                     
 BUS[3]                                     |BUS[3]                                     
@@ -480,6 +479,7 @@ D_out                                      |D_out
 PIN[24]                                    |PIN[24]                                    
 clk                                        |clk                                        
 d_in                                       |D_in                                       
+Enable                                     |enable                                     
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes swmatrix_24_by_10 and swmatrix_24_by_10 are equivalent.

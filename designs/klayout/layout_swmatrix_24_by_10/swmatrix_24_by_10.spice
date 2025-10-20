@@ -145,7 +145,7 @@ xFF[10] Q[10] Q[9] PHI_1 gc[10] PHI_2 EN VDD VSS DFF_2phase_1
 .subckt swmatrix_Tgate gated_control T2 T1 VSS VDD
 *.PININFO T1:B T2:B VDD:B VSS:B gated_control:I
 XM1 T1 gated_control T2 VSS nfet_03v3 L=0.28u W=24u nf=6 m=1
-XM2 T1 gated_controlb T2 VDD pfet_03v3 L=0.28u W=72u nf=6 m=1
+XM2 T1 gated_controlb T2 VDD pfet_03v3 L=0.28u W=68u nf=6 m=1
 **** begin user architecture code
 **** end user architecture code
 x1 gated_control gated_controlb VDD VDD VSS VSS gf180mcu_fd_sc_mcu9t5v0__inv_1
