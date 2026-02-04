@@ -23,3 +23,11 @@ Spikcore is a proof-of-concept for a neuromorphic system on chip (NeuroSoC)
 ### Transmission Gates
 
 ### Flip-flops
+
+
+# Remember, remember the 5th of november
+
+```bash
+~/.klayout > mkdir libraries
+cp sky130_ef_io__analog.gds ~/.klayout/libraries/
+```
