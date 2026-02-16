@@ -65,28 +65,15 @@ N 420 150 490 150 {lab=GND}
 N 210 0 210 60 {lab=#net1}
 N 270 80 290 80 {lab=vmem}
 N 80 260 80 290 {lab=GND}
-C {vsource.sym} 80 20 0 0 {name=V1 value=vd_v savecurrent=false}
-C {devices/code_shown.sym} -435 -100 0 0 {name=s1 only_toplevel=false value="
-.option method=gear seed=12
-.tran 100n 5m
+C {vsource.sym} 80 20 0 0 {name=V1 value=\{vd_v\} savecurrent=false}
+C {devices/code_shown.sym} -485 -460 0 0 {name=s1 only_toplevel=false value="
+* Configuracion de Simulacion
 .param vd_v=3.3
-.save allcurrents
-.options save currents
-.control
-    let start_v=3.3
-    let stop_v=3.3
-    let delta_v=1.6
-    let v_act=start_v
-    while v_act le stop_v
-	alterparam vd_v = $&v_act
-	reset
-	save all
-        run
-        write sub_th_ah.raw
-	let v_act=v_act+delta_v
-	set appendwrite
-    end
-.endc
+.options device temp=27
+.options timeint method=7
+.tran 100n 5m
+.STEP vd_v 3.3 4.9 1.6
+.print tran format=raw file=sub_th_ah.raw v(vmem) v(vout) i(V1)
 "
 spice_ignore=False}
 C {lab_pin.sym} 80 -140 0 0 {name=p1 sig_type=std_logic lab=vdd}
@@ -97,12 +84,12 @@ C {lab_pin.sym} 420 0 0 0 {name=p3 sig_type=std_logic lab=vdd}
 C {devices/code_shown.sym} -480 380 0 0 {name=MODELS1 only_toplevel=true
 format="tcleval( @value )"
 value="
-.include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
-.lib $::180MCU_MODELS/sm141064.ngspice cap_mim
-.lib $::180MCU_MODELS/sm141064.ngspice res_typical
-.lib $::180MCU_MODELS/sm141064.ngspice moscap_typical
-.lib $::180MCU_MODELS/sm141064.ngspice mimcap_typical
+.include /foss/pdks/gf180mcuD/libs.tech/xyce/design.xyce
+.lib /foss/pdks/gf180mcuD/libs.tech/xyce/sm141064.xyce typical
+.lib /foss/pdks/gf180mcuD/libs.tech/xyce/sm141064.xyce cap_mim
+.lib /foss/pdks/gf180mcuD/libs.tech/xyce/sm141064.xyce res_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/xyce/sm141064.xyce moscap_typical
+.lib /foss/pdks/gf180mcuD/libs.tech/xyce/sm141064.xyce mimcap_typical
 "}
 C {lab_pin.sym} 490 80 2 0 {name=p6 sig_type=std_logic lab=vout}
 C {launcher.sym} 420 190 0 0 {name=h5
