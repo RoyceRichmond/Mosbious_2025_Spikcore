@@ -58,19 +58,36 @@ cap_mim_2f0_m4m5_noshield (1)              |cap_mim_2f0fF (1)
 Number of devices: 7                       |Number of devices: 7                       
 Number of nets: 7                          |Number of nets: 7                          
 ---------------------------------------------------------------------------------------
-Netlists match uniquely.
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: AH_neuron                       |Circuit 2: AH_neuron                       
+
+---------------------------------------------------------------------------------------
+Net: Current_in                            |Net: Current_in                            
+  nfet_03v3/2 = 1                          |  nfet_03v3/2 = 1                          
+  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
+  pfet_03v3/2 = 1                          |  pfet_03v3/2 = 1                          
+                                           |  cap_mim_2f0fF/2 = 1                      
+                                           |                                           
+Net: vss                                   |Net: vss                                   
+  nfet_03v3/(1|3) = 5                      |  nfet_03v3/(1|3) = 3                      
+  nfet_03v3/4 = 4                          |  nfet_03v3/4 = 4                          
+                                           |                                           
+Net: m5_n980_1139#                         |Net: net2                                  
+  cap_mim_2f0_m4m5_noshield/2 = 1          |  nfet_03v3/(1|3) = 2                      
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
 
 Subcircuit pins:
 Circuit 1: AH_neuron                       |Circuit 2: AH_neuron                       
 -------------------------------------------|-------------------------------------------
+vss                                        |Current_in **Mismatch**                    
+Current_in                                 |vss **Mismatch**                           
 v_bias                                     |v_bias                                     
-vss                                        |vss                                        
-vout                                       |vout                                       
 vdd                                        |vdd                                        
-Current_in                                 |Current_in                                 
+vout                                       |vout                                       
 ---------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
+Cell pin lists for AH_neuron and AH_neuron altered to match.
 Device classes AH_neuron and AH_neuron are equivalent.
 
-Final result: Circuits match uniquely.
-.
+Final result: Top level cell failed pin matching.

@@ -73,8 +73,8 @@ netgen -batch source run_lvs.tcl | tee netgen.log
 #-------------------------------------------
 # Clean up
 #-------------------------------------------
-# rm -r extfiles
-# rm run_lvs.tcl
+rm -r extfiles
+rm run_lvs.tcl
 
 echo "Circuit 1 == layout ; Circuit 2 == schematic"
 echo "Done with LVS for $CIRCUIT_NAME!"
