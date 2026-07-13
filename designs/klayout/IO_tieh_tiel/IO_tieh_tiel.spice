@@ -1,0 +1,8 @@
+** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_TieL_TieH/tieH.sch
+.subckt tieH vdd vss Z_H Z_L
+*.PININFO vdd:B vss:B Z_H:B Z_L:B
+XM1 g g vss vss nfet_03v3 L=0.6u W=0.82u nf=1
+XM2 Z_H g vdd vdd pfet_03v3 L=0.5u W=1.22u nf=1
+XM3 Z_L g1 vss vss nfet_03v3 L=0.5u W=1.22u nf=1
+XM4 g1 g1 vdd vdd pfet_03v3 L=0.5u W=1.22u nf=1
+.ends
