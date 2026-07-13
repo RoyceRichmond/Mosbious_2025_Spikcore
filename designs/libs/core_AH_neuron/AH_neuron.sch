@@ -1,8 +1,9 @@
-v {xschem version=3.4.7 file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 T {og 0.22/2.4
 1.6 0.42u/4.2u} -250 100 0 0 0.2 0.2 {}
@@ -124,7 +125,7 @@ C {iopin.sym} -240 -100 0 0 {name=p1 lab=vdd}
 C {iopin.sym} -240 -70 0 0 {name=p8 lab=vss}
 C {iopin.sym} -210 0 2 0 {name=p9 lab=Current_in}
 C {iopin.sym} 290 0 0 0 {name=p10 lab=vout}
-C {lab_pin.sym} -20 100 0 0 {name=p12 sig_type=std_logic lab=vss}
+C {lab_pin.sym} -20 90 2 0 {name=p12 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 150 100 0 0 {name=p13 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -90 220 0 0 {name=p5 sig_type=std_logic lab=vss}
 C {title.sym} -260 310 0 0 {name=l1 author="Royce Richmond"}

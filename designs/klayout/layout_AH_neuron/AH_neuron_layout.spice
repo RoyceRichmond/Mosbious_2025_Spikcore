@@ -28,7 +28,7 @@ X0 a_150_0# a_38_n60# a_n92_0# w_n230_n138# pfet_03v3 ad=0.286p pd=2.18u as=0.28
 X0 a_194_0# a_38_n132# a_n84_n2# w_n710_n726# nfet_03v3 ad=0.2646p pd=2.1u as=0.2646p ps=2.1u w=0.42u l=0.78u
 .ends
 
-.subckt AH_neuron vdd Current_in v_bias vss vout
+.subckt AH_neuron vss vdd Current_in v_bias vout
 Xpfet_0 m2_381_1901# vout vdd vdd pfet
 Xnfet$7_0 m1_335_n170# vss nfet_0/dw_n710_n726# vout vss nfet$7
 Xcap_mim_0 Current_in vout cap_mim
