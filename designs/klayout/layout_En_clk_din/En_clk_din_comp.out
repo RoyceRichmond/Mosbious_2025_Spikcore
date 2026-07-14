@@ -75,44 +75,32 @@ I                                          |I
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1 and gf180mcu_fd_sc_mcu9t5v0__inv_1 are equivalent.
-Flattening unmatched subcell gf180mcu_fd_sc_mcu9t5v0__inv_2 in circuit En_clk_din (1)(1 instance)
 
-Flattening instances of gf180mcu_fd_sc_mcu9t5v0__inv_1 in cell En_clk_din (0) makes a better match
-Flattening instances of gf180mcu_fd_sc_mcu9t5v0__inv_1 in cell En_clk_din (1) makes a better match
-Making another compare attempt.
-
-Class En_clk_din (1):  Merged 2 parallel devices.
 Subcircuit summary:
 Circuit 1: En_clk_din                      |Circuit 2: En_clk_din                      
 -------------------------------------------|-------------------------------------------
 gf180mcu_fd_sc_mcu9t5v0__and2_1 (2)        |gf180mcu_fd_sc_mcu9t5v0__and2_1 (2)        
-pfet_05v0 (2)                              |pfet_06v0 (3->2)                           
-nfet_05v0 (2)                              |nfet_06v0 (3->2)                           
-Number of devices: 6                       |Number of devices: 6                       
+gf180mcu_fd_sc_mcu9t5v0__inv_1 (2)         |gf180mcu_fd_sc_mcu9t5v0__inv_1 (2)         
+Number of devices: 4                       |Number of devices: 4                       
 Number of nets: 9                          |Number of nets: 9                          
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
-Netlists match uniquely with property errors.
-gf180mcu_fd_sc_mcu9t5v0__inv_1_0/nfet_05v0:1 vs. gf180mcu_fd_sc_mcu9t5v0__inv_2:3/nfet_06v0:_i_0_0:
- w circuit1: 1.32e-06   circuit2: 2.64e-06   (delta=66.7%, cutoff=1%)
-gf180mcu_fd_sc_mcu9t5v0__inv_1_0/pfet_05v0:0 vs. gf180mcu_fd_sc_mcu9t5v0__inv_2:3/pfet_06v0:_i_1_0:
- w circuit1: 1.83e-06   circuit2: 3.66e-06   (delta=66.7%, cutoff=1%)
+Resolving symmetries by pin name.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: En_clk_din                      |Circuit 2: En_clk_din                      
 -------------------------------------------|-------------------------------------------
-Enable                                     |enable                                     
 vdd                                        |VDD                                        
 vss                                        |VSS                                        
-d_in                                       |clk **Mismatch**                           
-clk                                        |D_in **Mismatch**                          
-data_in                                    |clock **Mismatch**                         
-clock                                      |Data_in **Mismatch**                       
+d_in                                       |D_in                                       
+clk                                        |clk                                        
+data_in                                    |Data_in                                    
+clock                                      |clock                                      
+Enable                                     |enable                                     
 ---------------------------------------------------------------------------------------
-Cell pin lists for En_clk_din and En_clk_din altered to match.
+Cell pin lists are equivalent.
 Device classes En_clk_din and En_clk_din are equivalent.
 
-Final result: Top level cell failed pin matching.
-
-The following cells had property errors:
- En_clk_din
+Final result: Circuits match uniquely.
+.
