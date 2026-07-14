@@ -63,8 +63,8 @@ Circuit 1: LIF_ring                        |Circuit 2: LIF_ring
 -------------------------------------------|-------------------------------------------
 vout                                       |vout                                       
 vss                                        |vss                                        
-vlk                                        |vlk                                        
 vdd                                        |vdd                                        
+vlk                                        |vlk                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes LIF_ring and LIF_ring are equivalent.
