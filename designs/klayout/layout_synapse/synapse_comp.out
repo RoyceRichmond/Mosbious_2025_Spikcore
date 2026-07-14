@@ -43,49 +43,23 @@ Circuit 1: synapse                         |Circuit 2: synapse
 pfet_03v3 (6)                              |pfet_03v3 (6)                              
 nfet_03v3 (6)                              |nfet_03v3 (6)                              
 Number of devices: 12                      |Number of devices: 12                      
-Number of nets: 10 **Mismatch**            |Number of nets: 14 **Mismatch**            
+Number of nets: 14                         |Number of nets: 14                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: synapse                         |Circuit 2: synapse                         
-
----------------------------------------------------------------------------------------
-Net: vdd                                   |Net: vdd                                   
-  pfet_03v3/(1|3) = 8                      |  pfet_03v3/(1|3) = 4                      
-  pfet_03v3/4 = 6                          |  pfet_03v3/4 = 6                          
-                                           |                                           
-Net: vss                                   |Net: vss                                   
-  nfet_03v3/(1|3) = 8                      |  nfet_03v3/(1|3) = 4                      
-  nfet_03v3/4 = 6                          |  nfet_03v3/4 = 6                          
-                                           |                                           
-(no matching net)                          |Net: net7                                  
-                                           |  pfet_03v3/(1|3) = 2                      
-                                           |                                           
-(no matching net)                          |Net: net6                                  
-                                           |  nfet_03v3/(1|3) = 2                      
-                                           |                                           
-(no matching net)                          |Net: net3                                  
-                                           |  nfet_03v3/(1|3) = 2                      
-                                           |                                           
-(no matching net)                          |Net: net5                                  
-                                           |  pfet_03v3/(1|3) = 2                      
----------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: synapse                         |Circuit 2: synapse                         
 -------------------------------------------|-------------------------------------------
-vdd                                        |(no pin, node is net3)                     
-vss                                        |(no pin, node is net5)                     
+v_in                                       |v_in                                       
 v_out                                      |v_out                                      
 v_ctrl                                     |v_ctrl                                     
-v_in                                       |v_in                                       
+vdd                                        |vdd                                        
+vss                                        |vss                                        
 ve                                         |ve                                         
 vi                                         |vi                                         
-(no pin, node is vss)                      |vdd                                        
-(no pin, node is vss)                      |vss                                        
 ---------------------------------------------------------------------------------------
-Cell pin lists for synapse and synapse altered to match.
+Cell pin lists are equivalent.
 Device classes synapse and synapse are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Circuits match uniquely.
+.

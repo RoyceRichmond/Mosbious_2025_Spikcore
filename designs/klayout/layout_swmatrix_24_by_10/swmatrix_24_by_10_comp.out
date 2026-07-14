@@ -1,10 +1,10 @@
 
-Circuit 1 cell pfet_05v0 and Circuit 2 cell pfet_05v0 are black boxes.
+Circuit 1 cell pfet_05v0 and Circuit 2 cell pfet_06v0 are black boxes.
 Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_06v0 is a placeholder, treated as a black box.
 
 Subcircuit pins:
-Circuit 1: pfet_05v0                       |Circuit 2: pfet_05v0                       
+Circuit 1: pfet_05v0                       |Circuit 2: pfet_06v0                       
 -------------------------------------------|-------------------------------------------
 1                                          |1                                          
 2                                          |2                                          
@@ -12,14 +12,14 @@ Circuit 1: pfet_05v0                       |Circuit 2: pfet_05v0
 4                                          |4                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes pfet_05v0 and pfet_05v0 are equivalent.
+Device classes pfet_05v0 and pfet_06v0 are equivalent.
 
-Circuit 1 cell nfet_05v0 and Circuit 2 cell nfet_05v0 are black boxes.
+Circuit 1 cell nfet_05v0 and Circuit 2 cell nfet_06v0 are black boxes.
 Warning: Equate pins:  cell nfet_05v0 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell nfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_06v0 is a placeholder, treated as a black box.
 
 Subcircuit pins:
-Circuit 1: nfet_05v0                       |Circuit 2: nfet_05v0                       
+Circuit 1: nfet_05v0                       |Circuit 2: nfet_06v0                       
 -------------------------------------------|-------------------------------------------
 1                                          |1                                          
 2                                          |2                                          
@@ -27,13 +27,13 @@ Circuit 1: nfet_05v0                       |Circuit 2: nfet_05v0
 4                                          |4                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes nfet_05v0 and nfet_05v0 are equivalent.
+Device classes nfet_05v0 and nfet_06v0 are equivalent.
 
 Subcircuit summary:
 Circuit 1: gf180mcu_fd_sc_mcu9t5v0__nand2_ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__nand2_ 
 -------------------------------------------|-------------------------------------------
-pfet_05v0 (2)                              |pfet_05v0 (2)                              
-nfet_05v0 (2)                              |nfet_05v0 (2)                              
+pfet_05v0 (2)                              |pfet_06v0 (2)                              
+nfet_05v0 (2)                              |nfet_06v0 (2)                              
 Number of devices: 4                       |Number of devices: 4                       
 Number of nets: 8                          |Number of nets: 8                          
 ---------------------------------------------------------------------------------------
@@ -56,8 +56,8 @@ Device classes gf180mcu_fd_sc_mcu9t5v0__nand2_1 and gf180mcu_fd_sc_mcu9t5v0__nan
 Subcircuit summary:
 Circuit 1: gf180mcu_fd_sc_mcu9t5v0__latq_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__latq_1 
 -------------------------------------------|-------------------------------------------
-nfet_05v0 (8)                              |nfet_05v0 (8)                              
-pfet_05v0 (8)                              |pfet_05v0 (8)                              
+nfet_05v0 (8)                              |nfet_06v0 (8)                              
+pfet_05v0 (8)                              |pfet_06v0 (8)                              
 Number of devices: 16                      |Number of devices: 16                      
 Number of nets: 15                         |Number of nets: 15                         
 ---------------------------------------------------------------------------------------
@@ -80,8 +80,8 @@ Device classes gf180mcu_fd_sc_mcu9t5v0__latq_1$1 and gf180mcu_fd_sc_mcu9t5v0__la
 Subcircuit summary:
 Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1  |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
 -------------------------------------------|-------------------------------------------
-pfet_05v0 (1)                              |pfet_05v0 (1)                              
-nfet_05v0 (1)                              |nfet_05v0 (1)                              
+pfet_05v0 (1)                              |pfet_06v0 (1)                              
+nfet_05v0 (1)                              |nfet_06v0 (1)                              
 Number of devices: 2                       |Number of devices: 2                       
 Number of nets: 6                          |Number of nets: 6                          
 ---------------------------------------------------------------------------------------
@@ -159,8 +159,8 @@ Device classes DFF_2phase_1$1 and DFF_2phase_1 are equivalent.
 Subcircuit summary:
 Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1$ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
 -------------------------------------------|-------------------------------------------
-pfet_05v0 (1)                              |pfet_05v0 (1)                              
-nfet_05v0 (1)                              |nfet_05v0 (1)                              
+pfet_05v0 (1)                              |pfet_06v0 (1)                              
+nfet_05v0 (1)                              |nfet_06v0 (1)                              
 Number of devices: 2                       |Number of devices: 2                       
 Number of nets: 6                          |Number of nets: 6                          
 ---------------------------------------------------------------------------------------
@@ -231,45 +231,29 @@ gf180mcu_fd_sc_mcu9t5v0__inv_1$1 (1)       |gf180mcu_fd_sc_mcu9t5v0__inv_1 (1)
 nfet_03v3 (6->1)                           |nfet_03v3 (1)                              
 pfet_03v3 (17->1)                          |pfet_03v3 (1)                              
 Number of devices: 3                       |Number of devices: 3                       
-Number of nets: 4 **Mismatch**             |Number of nets: 6 **Mismatch**             
+Number of nets: 6                          |Number of nets: 6                          
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: swmatrix_Tgate                  |Circuit 2: swmatrix_Tgate                  
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
 
+Subcircuit pins:
+Circuit 1: swmatrix_Tgate                  |Circuit 2: swmatrix_Tgate                  
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+gated_control                              |gated_control                              
+T1                                         |T1                                         
+T2                                         |T2                                         
 ---------------------------------------------------------------------------------------
-Net: T2                                    |Net: T2                                    
-  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
-  pfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 1                      
-                                           |                                           
-Net: T1                                    |Net: T1                                    
-  nfet_03v3/(1|3) = 1                      |  nfet_03v3/(1|3) = 1                      
-  pfet_03v3/(1|3) = 1                      |  pfet_03v3/(1|3) = 1                      
-  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VNW = 1 |                                           
-  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VPW = 1 |                                           
-  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VDD = 1 |                                           
-  nfet_03v3/4 = 1                          |                                           
-  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VSS = 1 |                                           
-  pfet_03v3/4 = 1                          |                                           
-                                           |                                           
-(no matching net)                          |Net: VSS                                   
-                                           |  nfet_03v3/4 = 1                          
-                                           |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VSS = 1   
-                                           |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VPW = 1   
-                                           |                                           
-(no matching net)                          |Net: VDD                                   
-                                           |  pfet_03v3/4 = 1                          
-                                           |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VDD = 1   
-                                           |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VNW = 1   
----------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
-  Flattening non-matched subcircuits swmatrix_Tgate swmatrix_Tgate
+Cell pin lists are equivalent.
+Device classes swmatrix_Tgate and swmatrix_Tgate are equivalent.
 
 Subcircuit summary:
 Circuit 1: gf180mcu_fd_sc_mcu9t5v0__and2_1 |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__and2_1 
 -------------------------------------------|-------------------------------------------
-pfet_05v0 (3)                              |pfet_05v0 (3)                              
-nfet_05v0 (3)                              |nfet_05v0 (3)                              
+pfet_05v0 (3)                              |pfet_06v0 (3)                              
+nfet_05v0 (3)                              |nfet_06v0 (3)                              
 Number of devices: 6                       |Number of devices: 6                       
 Number of nets: 9                          |Number of nets: 9                          
 ---------------------------------------------------------------------------------------
@@ -292,8 +276,8 @@ Device classes gf180mcu_fd_sc_mcu9t5v0__and2_1 and gf180mcu_fd_sc_mcu9t5v0__and2
 Subcircuit summary:
 Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1$ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
 -------------------------------------------|-------------------------------------------
-pfet_05v0 (1)                              |pfet_05v0 (1)                              
-nfet_05v0 (1)                              |nfet_05v0 (1)                              
+pfet_05v0 (1)                              |pfet_06v0 (1)                              
+nfet_05v0 (1)                              |nfet_06v0 (1)                              
 Number of devices: 2                       |Number of devices: 2                       
 Number of nets: 6                          |Number of nets: 6                          
 ---------------------------------------------------------------------------------------
@@ -315,8 +299,8 @@ Device classes gf180mcu_fd_sc_mcu9t5v0__inv_1$5 and gf180mcu_fd_sc_mcu9t5v0__inv
 Subcircuit summary:
 Circuit 1: gf180mcu_fd_sc_mcu9t5v0__nand2_ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__nand2_ 
 -------------------------------------------|-------------------------------------------
-pfet_05v0 (2)                              |pfet_05v0 (2)                              
-nfet_05v0 (2)                              |nfet_05v0 (2)                              
+pfet_05v0 (2)                              |pfet_06v0 (2)                              
+nfet_05v0 (2)                              |nfet_06v0 (2)                              
 Number of devices: 4                       |Number of devices: 4                       
 Number of nets: 8                          |Number of nets: 8                          
 ---------------------------------------------------------------------------------------
@@ -339,8 +323,8 @@ Device classes gf180mcu_fd_sc_mcu9t5v0__nand2_1$2 and gf180mcu_fd_sc_mcu9t5v0__n
 Subcircuit summary:
 Circuit 1: gf180mcu_fd_sc_mcu9t5v0__inv_1$ |Circuit 2: gf180mcu_fd_sc_mcu9t5v0__inv_1  
 -------------------------------------------|-------------------------------------------
-pfet_05v0 (1)                              |pfet_05v0 (1)                              
-nfet_05v0 (1)                              |nfet_05v0 (1)                              
+pfet_05v0 (1)                              |pfet_06v0 (1)                              
+nfet_05v0 (1)                              |nfet_06v0 (1)                              
 Number of devices: 2                       |Number of devices: 2                       
 Number of nets: 6                          |Number of nets: 6                          
 ---------------------------------------------------------------------------------------
@@ -363,41 +347,36 @@ Subcircuit summary:
 Circuit 1: swmatrix_row_10                 |Circuit 2: swmatrix_row_10                 
 -------------------------------------------|-------------------------------------------
 ShiftReg_row_10_2$1 (1)                    |ShiftReg_row_10_2 (1)                      
-gf180mcu_fd_sc_mcu9t5v0__inv_1$1 (10)      |gf180mcu_fd_sc_mcu9t5v0__inv_1 (10)        
-nfet_03v3 (60->10)                         |nfet_03v3 (10)                             
-pfet_03v3 (170->10)                        |pfet_03v3 (10)                             
-Number of devices: 31                      |Number of devices: 31                      
-Number of nets: 45 **Mismatch**            |Number of nets: 47 **Mismatch**            
+swmatrix_Tgate (10)                        |swmatrix_Tgate (10)                        
+Number of devices: 11                      |Number of devices: 11                      
+Number of nets: 37                         |Number of nets: 37                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: swmatrix_row_10                 |Circuit 2: swmatrix_row_10                 
+Netlists match uniquely.
 
+Subcircuit pins:
+Circuit 1: swmatrix_row_10                 |Circuit 2: swmatrix_row_10                 
+-------------------------------------------|-------------------------------------------
+pin                                        |pin                                        
+vdd                                        |VDD                                        
+vss                                        |VSS                                        
+D_in                                       |D_in                                       
+d_out                                      |D_out                                      
+phi_1                                      |PHI_1                                      
+phi_2                                      |PHI_2                                      
+enable                                     |enable                                     
+BUS[1]                                     |BUS[1]                                     
+BUS[2]                                     |BUS[2]                                     
+BUS[4]                                     |BUS[4]                                     
+BUS[6]                                     |BUS[6]                                     
+BUS[5]                                     |BUS[5]                                     
+BUS[3]                                     |BUS[3]                                     
+BUS[8]                                     |BUS[8]                                     
+BUS[10]                                    |BUS[10]                                    
+BUS[9]                                     |BUS[9]                                     
+BUS[7]                                     |BUS[7]                                     
 ---------------------------------------------------------------------------------------
-Net: vss                                   |Net: VSS                                   
-  ShiftReg_row_10_2$1/VDD = 1              |  ShiftReg_row_10_2/VSS = 1                
-  nfet_03v3/4 = 10                         |  nfet_03v3/4 = 10                         
-  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VDD = 1 |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VSS = 10  
-  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VSS = 1 |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VPW = 10  
-  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VNW = 1 |                                           
-  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VPW = 1 |                                           
-  nfet_03v3/(1|3) = 10                     |                                           
-  ShiftReg_row_10_2$1/VSS = 1              |                                           
-  pfet_03v3/(1|3) = 10                     |                                           
-  pfet_03v3/4 = 10                         |                                           
-                                           |                                           
-(no matching net)                          |Net: VDD                                   
-                                           |  ShiftReg_row_10_2/VDD = 1                
-                                           |  pfet_03v3/4 = 10                         
-                                           |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VDD = 10  
-                                           |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VNW = 10  
-                                           |                                           
-(no matching net)                          |Net: pin                                   
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
----------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
-  Flattening non-matched subcircuits swmatrix_row_10 swmatrix_row_10
+Cell pin lists are equivalent.
+Device classes swmatrix_row_10 and swmatrix_row_10 are equivalent.
 
 Subcircuit summary:
 Circuit 1: En_clk_din                      |Circuit 2: En_clk_din                      
@@ -441,8 +420,8 @@ Circuit 1: NO_ClkGen                       |Circuit 2: NO_ClkGen
 clk                                        |CLK                                        
 vdd                                        |VDD                                        
 vss                                        |VSS                                        
-phi_1                                      |PHI_1                                      
 phi_2                                      |PHI_2                                      
+phi_1                                      |PHI_1                                      
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes NO_ClkGen and NO_ClkGen are equivalent.
@@ -450,187 +429,60 @@ Device classes NO_ClkGen and NO_ClkGen are equivalent.
 Subcircuit summary:
 Circuit 1: swmatrix_24_by_10               |Circuit 2: swmatrix_24_by_10               
 -------------------------------------------|-------------------------------------------
-ShiftReg_row_10_2$1 (24)                   |ShiftReg_row_10_2 (24)                     
-gf180mcu_fd_sc_mcu9t5v0__inv_1$1 (240)     |gf180mcu_fd_sc_mcu9t5v0__inv_1 (240)       
-nfet_03v3 (1440->240)                      |nfet_03v3 (240)                            
-pfet_03v3 (4080->240)                      |pfet_03v3 (240)                            
+swmatrix_row_10 (24)                       |swmatrix_row_10 (24)                       
 En_clk_din (1)                             |En_clk_din (1)                             
 NO_ClkGen (1)                              |NO_ClkGen (1)                              
-Number of devices: 746                     |Number of devices: 746                     
-Number of nets: 738 **Mismatch**           |Number of nets: 763 **Mismatch**           
+Number of devices: 26                      |Number of devices: 26                      
+Number of nets: 67                         |Number of nets: 67                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: swmatrix_24_by_10               |Circuit 2: swmatrix_24_by_10               
-
----------------------------------------------------------------------------------------
-Net: vss                                   |Net: VSS                                   
-  ShiftReg_row_10_2$1/VDD = 24             |  ShiftReg_row_10_2/VSS = 24               
-  nfet_03v3/4 = 240                        |  nfet_03v3/4 = 240                        
-  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VDD = 2 |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VSS = 240 
-  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VSS = 2 |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VPW = 240 
-  NO_ClkGen/vss = 1                        |  NO_ClkGen/VSS = 1                        
-  En_clk_din/vss = 1                       |  En_clk_din/VSS = 1                       
-  nfet_03v3/(1|3) = 240                    |                                           
-  ShiftReg_row_10_2$1/VSS = 24             |                                           
-  pfet_03v3/(1|3) = 240                    |                                           
-  pfet_03v3/4 = 240                        |                                           
-  En_clk_din/vdd = 1                       |                                           
-  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VPW = 2 |                                           
-  NO_ClkGen/vdd = 1                        |                                           
-  gf180mcu_fd_sc_mcu9t5v0__inv_1$1/VNW = 2 |                                           
-                                           |                                           
-(no matching net)                          |Net: VDD                                   
-                                           |  ShiftReg_row_10_2/VDD = 24               
-                                           |  pfet_03v3/4 = 240                        
-                                           |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VDD = 240 
-                                           |  gf180mcu_fd_sc_mcu9t5v0__inv_1/VNW = 240 
-                                           |  NO_ClkGen/VDD = 1                        
-                                           |  En_clk_din/VDD = 1                       
-                                           |                                           
-(no matching net)                          |Net: PIN[1]                                
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[2]                                
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[3]                                
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[4]                                
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[5]                                
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[6]                                
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[7]                                
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[8]                                
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[9]                                
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[10]                               
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[11]                               
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[12]                               
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[13]                               
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[14]                               
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[15]                               
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[16]                               
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[17]                               
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[18]                               
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[19]                               
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[20]                               
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[21]                               
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[22]                               
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[23]                               
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
-                                           |                                           
-(no matching net)                          |Net: PIN[24]                               
-                                           |  nfet_03v3/(1|3) = 10                     
-                                           |  pfet_03v3/(1|3) = 10                     
----------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: swmatrix_24_by_10               |Circuit 2: swmatrix_24_by_10               
 -------------------------------------------|-------------------------------------------
-vss                                        |VDD **Mismatch**                           
-D_out                                      |D_out                                      
-clk                                        |clk                                        
-d_in                                       |D_in                                       
+vdd                                        |VDD                                        
+vss                                        |VSS                                        
 Enable                                     |enable                                     
 BUS[1]                                     |BUS[1]                                     
+BUS[2]                                     |BUS[2]                                     
 BUS[3]                                     |BUS[3]                                     
 BUS[4]                                     |BUS[4]                                     
-BUS[10]                                    |BUS[10]                                    
-BUS[9]                                     |BUS[9]                                     
-BUS[8]                                     |BUS[8]                                     
-BUS[7]                                     |BUS[7]                                     
-BUS[6]                                     |BUS[6]                                     
 BUS[5]                                     |BUS[5]                                     
-BUS[2]                                     |BUS[2]                                     
-(no pin, node is vss)                      |PIN[1]                                     
-(no pin, node is vss)                      |PIN[2]                                     
-(no pin, node is vss)                      |PIN[3]                                     
-(no pin, node is vss)                      |PIN[4]                                     
-(no pin, node is vss)                      |PIN[5]                                     
-(no pin, node is vss)                      |PIN[6]                                     
-(no pin, node is vss)                      |PIN[7]                                     
-(no pin, node is vss)                      |PIN[8]                                     
-(no pin, node is vss)                      |PIN[9]                                     
-(no pin, node is vss)                      |PIN[10]                                    
-(no pin, node is vss)                      |PIN[11]                                    
-(no pin, node is vss)                      |PIN[12]                                    
-(no pin, node is vss)                      |PIN[13]                                    
-(no pin, node is vss)                      |PIN[14]                                    
-(no pin, node is vss)                      |PIN[15]                                    
-(no pin, node is vss)                      |PIN[16]                                    
-(no pin, node is vss)                      |PIN[17]                                    
-(no pin, node is vss)                      |PIN[18]                                    
-(no pin, node is vss)                      |PIN[19]                                    
-(no pin, node is vss)                      |PIN[20]                                    
-(no pin, node is vss)                      |PIN[21]                                    
-(no pin, node is vss)                      |PIN[22]                                    
-(no pin, node is vss)                      |PIN[23]                                    
-(no pin, node is vss)                      |PIN[24]                                    
-(no pin, node is vss)                      |VSS                                        
+BUS[6]                                     |BUS[6]                                     
+BUS[7]                                     |BUS[7]                                     
+BUS[8]                                     |BUS[8]                                     
+BUS[9]                                     |BUS[9]                                     
+BUS[10]                                    |BUS[10]                                    
+PIN[1]                                     |PIN[1]                                     
+PIN[23]                                    |PIN[23]                                    
+PIN[2]                                     |PIN[2]                                     
+PIN[3]                                     |PIN[3]                                     
+PIN[21]                                    |PIN[21]                                    
+PIN[4]                                     |PIN[4]                                     
+PIN[19]                                    |PIN[19]                                    
+PIN[5]                                     |PIN[5]                                     
+PIN[6]                                     |PIN[6]                                     
+PIN[7]                                     |PIN[7]                                     
+PIN[17]                                    |PIN[17]                                    
+PIN[8]                                     |PIN[8]                                     
+PIN[15]                                    |PIN[15]                                    
+PIN[10]                                    |PIN[10]                                    
+PIN[13]                                    |PIN[13]                                    
+PIN[12]                                    |PIN[12]                                    
+PIN[11]                                    |PIN[11]                                    
+PIN[14]                                    |PIN[14]                                    
+PIN[9]                                     |PIN[9]                                     
+PIN[16]                                    |PIN[16]                                    
+PIN[18]                                    |PIN[18]                                    
+PIN[20]                                    |PIN[20]                                    
+PIN[22]                                    |PIN[22]                                    
+D_out                                      |D_out                                      
+PIN[24]                                    |PIN[24]                                    
+clk                                        |clk                                        
+d_in                                       |D_in                                       
 ---------------------------------------------------------------------------------------
-Cell pin lists for swmatrix_24_by_10 and swmatrix_24_by_10 altered to match.
+Cell pin lists are equivalent.
 Device classes swmatrix_24_by_10 and swmatrix_24_by_10 are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Circuits match uniquely.
+.
