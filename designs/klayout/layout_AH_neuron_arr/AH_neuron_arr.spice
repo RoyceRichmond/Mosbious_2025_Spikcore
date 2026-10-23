@@ -1,0 +1,24 @@
+** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_AH_neuron_arr/AH_neuron_arr.sch
+.SUBCKT AH_neuron_arr vdd vss vout_0 I_in_0 I_in_1 vout_1 I_in_2 vout_2 vout_3 I_in_3 vout_4 I_in_4 vbias
+*.PININFO vdd:B vss:B I_in_0:B vout_0:B I_in_1:B vout_1:B I_in_2:B vout_2:B I_in_3:B vout_3:B I_in_4:B vout_4:B vbias:B
+x0 vdd I_in_0 vout_0 vss vbias AH_neuron
+x1 vdd I_in_1 vout_1 vss vbias AH_neuron
+x2 vdd I_in_2 vout_2 vss vbias AH_neuron
+x4 vdd I_in_4 vout_4 vss vbias AH_neuron
+x3 vdd I_in_3 vout_3 vss vbias AH_neuron
+.ENDS
+
+* expanding   symbol:  designs/libs/core_AH_neuron/AH_neuron.sym # of pins=5
+** sym_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_AH_neuron/AH_neuron.sym
+** sch_path: /foss/designs/Mosbious_2025_Spikcore/designs/libs/core_AH_neuron/AH_neuron.sch
+.SUBCKT AH_neuron vdd Current_in vout vss v_bias
+*.PININFO vdd:B vss:B Current_in:B vout:B v_bias:B
+XM5 vout net1 vdd vdd pfet_03v3 L=1.4u W=0.84u nf=1
+XM1 net1 Current_in vdd vdd pfet_03v3 L=0.56u W=0.44u nf=1
+XM2 vout net1 vss vss nfet_03v3 L=0.78u W=0.42u nf=1
+XM3 net1 Current_in vss vss nfet_03v3 L=0.56u W=0.44u nf=1
+XM4 net2 vout vss vss nfet_03v3 L=1.68u W=0.42u nf=1
+XC3 vout Current_in cap_mim_2f0fF c_width=6e-6 c_length=5e-6
+XM6 Current_in v_bias net2 vss nfet_03v3 L=5.6u W=0.42u nf=1
+.ENDS
+
