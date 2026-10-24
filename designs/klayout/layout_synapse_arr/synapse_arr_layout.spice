@@ -50,11 +50,11 @@ Xnfet$37$1_0 m1_1434_n778# nfet$39$1_0/dw_n710_n652# ve vss vss nfet$37$1
 .subckt synapse_arr ve vi v_in_0 v_in_1 vout_1 v_in_2 vout_2 v_in_3 vout_3 v_in_4
 + vout_4 v_in_5 vout_5 vout_0 vss vdd v_ctrl_5 v_ctrl_4 v_ctrl_3 v_ctrl_2 v_ctrl_1
 + v_ctrl_0
-Xsynapse_0 vi synapse_0/v_ctrl v_in_0 ve vdd vout_0 vss synapse
-Xsynapse_1 vi synapse_1/v_ctrl v_in_1 ve vdd vout_1 vss synapse
-Xsynapse_2 vi synapse_2/v_ctrl v_in_4 ve vdd vout_4 vss synapse
-Xsynapse_3 vi synapse_3/v_ctrl v_in_5 ve vdd vout_5 vss synapse
-Xsynapse_4 vi synapse_4/v_ctrl v_in_2 ve vdd vout_2 vss synapse
-Xsynapse_5 vi synapse_5/v_ctrl v_in_3 ve vdd vout_3 vss synapse
+Xsynapse_0 vi v_ctrl_0 v_in_0 ve vdd vout_0 vss synapse
+Xsynapse_1 vi v_ctrl_1 v_in_1 ve vdd vout_1 vss synapse
+Xsynapse_2 vi v_ctrl_4 v_in_4 ve vdd vout_4 vss synapse
+Xsynapse_3 vi v_ctrl_5 v_in_5 ve vdd vout_5 vss synapse
+Xsynapse_4 vi v_ctrl_2 v_in_2 ve vdd vout_2 vss synapse
+Xsynapse_5 vi v_ctrl_3 v_in_3 ve vdd vout_3 vss synapse
 .ends
 
