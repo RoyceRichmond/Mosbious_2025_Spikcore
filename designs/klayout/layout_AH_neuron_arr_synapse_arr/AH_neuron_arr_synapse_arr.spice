@@ -1,0 +1,74 @@
+** sch_path: /foss/designs/Spikcore/designs/libs/core AH_neuron_arr_synapse_arr/AH_neuron_arr_synapse_arr.sch
+.SUBCKT AH_neuron_arr_synapse_arr vbias vout_0 I_in_0 vout_1 I_in_1 vout_2 I_in_2 I_in_3 vout_3 I_in_4 vout_4 vdd vss vi ve v_in_0
++ v_ctrl_0 v_in_1 v_ctrl_1 v_in_2 v_ctrl_2 v_in_3 v_ctrl_3 v_in_4 v_ctrl_4 vout_5 v_in_5 v_ctrl_5
+*.PININFO I_in_0:B vout_0:B I_in_1:B vout_1:B I_in_2:B vout_2:B I_in_3:B vout_3:B I_in_4:B vout_4:B vbias:B vdd:B vss:B v_in_0:B
+*+ vout_0:B v_in_1:B vout_1:B v_in_2:B vout_2:B v_in_3:B vout_3:B v_in_4:B vout_4:B vi:B ve:B v_in_5:B vout_5:B v_ctrl_0:B v_ctrl_1:B
+*+ v_ctrl_2:B v_ctrl_3:B v_ctrl_4:B v_ctrl_5:B
+x1 vdd vss vout_0 I_in_0 I_in_1 vout_1 I_in_2 vout_2 vout_3 I_in_3 vout_4 I_in_4 vbias AH_neuron_arr
+x2 vdd vss vi ve vout_0 v_in_0 v_ctrl_0 vout_1 v_in_1 v_ctrl_1 v_in_2 vout_2 v_ctrl_2 vout_3 v_in_3 v_ctrl_3 vout_4 v_in_4
++ v_ctrl_4 vout_5 v_in_5 v_ctrl_5 synapse_arr
+.ENDS
+
+* expanding   symbol:  designs/libs/core_AH_neuron_arr/AH_neuron_arr.sym # of pins=13
+** sym_path: /foss/designs/Spikcore/designs/libs/core_AH_neuron_arr/AH_neuron_arr.sym
+** sch_path: /foss/designs/Spikcore/designs/libs/core_AH_neuron_arr/AH_neuron_arr.sch
+.SUBCKT AH_neuron_arr vdd vss vout_0 I_in_0 I_in_1 vout_1 I_in_2 vout_2 vout_3 I_in_3 vout_4 I_in_4 vbias
+*.PININFO vdd:B vss:B I_in_0:B vout_0:B I_in_1:B vout_1:B I_in_2:B vout_2:B I_in_3:B vout_3:B I_in_4:B vout_4:B vbias:B
+x3 vdd I_in_3 vout_3 vss vbias AH_neuron
+x0 vdd I_in_0 vout_0 vss vbias AH_neuron
+x1 vdd I_in_1 vout_1 vss vbias AH_neuron
+x4 vdd I_in_4 vout_4 vss vbias AH_neuron
+x2 vdd I_in_2 vout_2 vss vbias AH_neuron
+.ENDS
+
+
+* expanding   symbol:  designs/libs/core_synapse_arr/synapse_arr.sym # of pins=22
+** sym_path: /foss/designs/Spikcore/designs/libs/core_synapse_arr/synapse_arr.sym
+** sch_path: /foss/designs/Spikcore/designs/libs/core_synapse_arr/synapse_arr.sch
+.SUBCKT synapse_arr vdd vss vi ve vout_0 v_in_0 v_ctrl_0 vout_1 v_in_1 v_ctrl_1 v_in_2 vout_2 v_ctrl_2 vout_3 v_in_3 v_ctrl_3
++ vout_4 v_in_4 v_ctrl_4 vout_5 v_in_5 v_ctrl_5
+*.PININFO vdd:B vss:B v_in_0:B vout_0:B v_in_1:B vout_1:B v_in_2:B vout_2:B v_in_3:B vout_3:B v_in_4:B vout_4:B vi:B ve:B v_in_5:B
+*+ vout_5:B v_ctrl_0:B v_ctrl_1:B v_ctrl_2:B v_ctrl_3:B v_ctrl_4:B v_ctrl_5:B
+x0 vdd v_in_0 ve v_ctrl_0 vout_0 vi vss synapse
+x1 vdd v_in_1 ve v_ctrl_1 vout_1 vi vss synapse
+x2 vdd v_in_2 ve v_ctrl_2 vout_2 vi vss synapse
+x3 vdd v_in_3 ve v_ctrl_3 vout_3 vi vss synapse
+x4 vdd v_in_4 ve v_ctrl_4 vout_4 vi vss synapse
+x5 vdd v_in_5 ve v_ctrl_5 vout_5 vi vss synapse
+.ENDS
+
+
+* expanding   symbol:  designs/libs/core_AH_neuron/AH_neuron.sym # of pins=5
+** sym_path: /foss/designs/Spikcore/designs/libs/core_AH_neuron/AH_neuron.sym
+** sch_path: /foss/designs/Spikcore/designs/libs/core_AH_neuron/AH_neuron.sch
+.SUBCKT AH_neuron vdd Current_in vout vss v_bias
+*.PININFO vdd:B vss:B Current_in:B vout:B v_bias:B
+M5 vout net1 vdd vdd pfet_03v3 L=1.4u W=0.84u nf=1
+M1 net1 Current_in vdd vdd pfet_03v3 L=0.56u W=0.44u nf=1
+M2 vout net1 vss vss nfet_03v3 L=0.78u W=0.42u nf=1
+M3 net1 Current_in vss vss nfet_03v3 L=0.56u W=0.44u nf=1
+M4 net2 vout vss vss nfet_03v3 L=1.68u W=0.42u nf=1
+XC3 vout Current_in cap_mim_2f0fF c_width=6e-6 c_length=5e-6
+M6 Current_in v_bias net2 vss nfet_03v3 L=5.6u W=0.42u nf=1
+.ENDS
+
+
+* expanding   symbol:  designs/libs/core_synapse/synapse.sym # of pins=7
+** sym_path: /foss/designs/Spikcore/designs/libs/core_synapse/synapse.sym
+** sch_path: /foss/designs/Spikcore/designs/libs/core_synapse/synapse.sch
+.SUBCKT synapse vdd v_in ve v_ctrl v_out vi vss
+*.PININFO v_out:B v_ctrl:B ve:B vi:B v_in:B vdd:B vss:B
+M5 net2 net2 vdd vdd pfet_03v3 L=0.28u W=0.42u nf=1
+M1 net1 v_in vdd vdd pfet_03v3 L=0.28u W=0.42u nf=1
+M3 net1 v_in vss vss nfet_03v3 L=0.28u W=0.42u nf=1
+M4 net2 v_in net3 vss nfet_03v3 L=0.28u W=0.42u nf=1
+M6 net3 ve vss vss nfet_03v3 L=0.28u W=0.42u nf=1
+M7 net5 vi vdd vdd pfet_03v3 L=0.28u W=0.42u nf=1
+M8 net4 net1 net5 vdd pfet_03v3 L=0.28u W=0.42u nf=1
+M9 net4 net4 vss vss nfet_03v3 L=0.28u W=0.42u nf=1
+M2 net7 net2 vdd vdd pfet_03v3 L=0.28u W=2.8u nf=1
+M10 v_out v_ctrl net7 vdd pfet_03v3 L=0.28u W=2.8u nf=1
+M11 v_out v_ctrl net6 vss nfet_03v3 L=0.28u W=2u nf=1
+M12 net6 net4 vss vss nfet_03v3 L=0.28u W=1u nf=1
+.ENDS
+
